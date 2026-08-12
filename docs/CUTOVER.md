@@ -127,7 +127,23 @@ It shortens the window where a mistake is stuck in caches.
 
 ### 5. Change nameservers at the registrar
 
-Squarespace domains panel → nameservers → Cloudflare's assigned pair.
+Squarespace domains panel → nameservers → replace all eight current entries
+(four NS1 + four Squarespace) with the Cloudflare pair assigned to this zone:
+
+```
+felicity.ns.cloudflare.com
+pat.ns.cloudflare.com
+```
+
+**This is the commit point.** Everything before it is reversible in seconds;
+this is the step that actually moves the domain.
+
+DNSSEC was verified OFF on 2026-08-12 — no DS record at `.com`, no DNSKEY, no
+AD flag. So Cloudflare's "turn off DNSSEC first" warning does not apply. That
+warning matters because changing nameservers with DNSSEC still enabled makes
+the domain stop resolving altogether, which is a hard outage rather than a
+wobble. Re-check with `dig +short DS paulmartynconstruction.com` if time has
+passed, since enabling it later would reintroduce the risk.
 
 Propagation is usually well under an hour but can take up to 24. During the
 overlap some visitors hit Squarespace and some hit Railway — both serve a
@@ -219,5 +235,6 @@ ones that stop email dying — do not leave them until last.
 - [ ] MX `@` → `alt4.aspmx.l.google.com` (10)
 - [ ] TXT `@` → `v=spf1 include:_spf.google.com ~all`
 - [ ] All five MX rows re-read and confirmed against the list above
-- [ ] Nameservers changed at the registrar (Squarespace domains panel)
+- [ ] DNSSEC confirmed still off: `dig +short DS paulmartynconstruction.com` (blank)
+- [ ] Nameservers changed at registrar to `felicity.ns.cloudflare.com` + `pat.ns.cloudflare.com`
 - [ ] Test email sent to `Paul@paulmartynconstruction.com` from outside — arrived

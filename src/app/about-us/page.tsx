@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { BoxLinks } from "@/components/sites/paulmartyn/BoxLinks";
 import {
+  BROCHURE,
   INTRO,
   SERVICES,
 } from "@/components/sites/paulmartyn/content";
@@ -31,6 +32,27 @@ export default function AboutPage() {
             <p className="mt-6 max-w-[620px] text-[17px] font-normal leading-[26px] text-pm-slate">
               {SERVICES.lead}
             </p>
+
+            <a
+              href={BROCHURE.href}
+              download
+              className="mt-9 inline-flex h-[58px] items-center gap-3 bg-pm-teal px-7 text-[15px] font-normal text-white transition-colors hover:bg-pm-gold"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-[18px] w-[18px] shrink-0"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16" />
+              </svg>
+              {BROCHURE.label}
+              <span className="font-light text-white/70">({BROCHURE.size})</span>
+            </a>
           </div>
 
           <div

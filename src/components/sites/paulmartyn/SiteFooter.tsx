@@ -1,5 +1,6 @@
 import {
   AREAS,
+  BROCHURE,
   CONTACT,
   FOOTER,
   FOOTER_PAGES,
@@ -45,6 +46,27 @@ export function SiteFooter() {
             <p className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
               {CONTACT.location}
             </p>
+
+            <a
+              href={BROCHURE.href}
+              download
+              className="mt-7 inline-flex h-[52px] items-center gap-3 border border-pm-rule px-6 text-[15px] font-medium text-pm-ink transition-colors hover:border-pm-gold hover:text-pm-gold"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-[18px] w-[18px] shrink-0"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16" />
+              </svg>
+              {BROCHURE.label}
+              <span className="font-light text-pm-slate">({BROCHURE.size})</span>
+            </a>
 
             <p className="mt-7 max-w-[520px] border-t border-pm-rule pt-7 text-[15px] font-normal leading-[22.5px] text-pm-slate">
               {FOOTER.blurb}

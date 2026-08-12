@@ -83,19 +83,20 @@ export const HERO = {
 };
 
 /**
- * "About us".
+ * "About us". Client-supplied copy.
  *
- * Client-supplied copy. The opening sentence is lifted into the display
- * heading (dropping the leading "At Paul Martyn Construction,") because the
- * wordmark sits directly above it and the following sentence already says
- * "Family-run and based in the Surrey Hills" — naming the company three times
- * in two lines read badly. Restore the full sentence to `body[0]` if preferred.
+ * Used twice: the homepage intro band and the /about-us page, both of which
+ * render every paragraph in `body`. `body[0]` also becomes the About page's
+ * meta description, so keep the first paragraph self-contained and roughly
+ * 150–160 characters.
  */
 export const INTRO = {
   eyebrow: "ABOUT US",
-  heading: "We build spaces people love living and working in.",
+  heading: "We build exceptional spaces for living and working.",
   body: [
-    "Family-run and based in the Surrey Hills, we've spent 16 years delivering residential and commercial projects across Surrey — each one shaped around what our clients actually want, and built to a standard we'd be happy to put our own name on. Which, of course, we do.",
+    "Family-run and based in the Surrey Hills, we have spent the past 16 years delivering high-quality residential and commercial projects across Surrey and the surrounding areas.",
+    "Our approach is straightforward: understand what our clients want to achieve, provide the experience and expertise to make it happen, and deliver every project with careful attention to quality, detail, programme and cost.",
+    "From individual homes and complex renovations to commercial and hospitality projects, we take pride in the standard of our work and the relationships we build along the way. We believe good construction is about more than the finished building — it is about providing a professional, well-managed service from the first conversation through to completion.",
   ],
   image: `${IMG}/about-intro.jpg`,
 };
@@ -512,6 +513,20 @@ export const FOOTER = {
   blurb:
     "Paul Martyn — Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
   copyright: "© 2026 P Martyn Co Ltd. All rights reserved",
+};
+
+/**
+ * Company brochure.
+ *
+ * `size` is shown in the link text on purpose. It's a print-resolution export,
+ * so it is a heavy download on mobile data and a visitor deserves to know
+ * before tapping. Replace the file with a web-optimised export and update
+ * `size` when one is available.
+ */
+export const BROCHURE = {
+  label: "Download our brochure",
+  href: "/downloads/paulmartyn-brochure.pdf",
+  size: "PDF, 38 MB",
 };
 
 /**

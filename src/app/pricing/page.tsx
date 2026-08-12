@@ -30,7 +30,7 @@ export default function PricingPage() {
             ))}
 
             <div
-              className="mt-10 h-[320px] bg-cover bg-center"
+              className="mt-10 h-[240px] bg-cover bg-center sm:h-[320px]"
               style={{ backgroundImage: `url(${SERVICES.image})` }}
               role="img"
               aria-label="Paul Martyn project"

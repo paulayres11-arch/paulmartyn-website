@@ -26,7 +26,7 @@ export function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative h-[600px] overflow-hidden">
+    <section className="relative h-[520px] overflow-hidden sm:h-[600px]">
       {HERO.slides.map((slide, i) => (
         <div
           key={slide.image}

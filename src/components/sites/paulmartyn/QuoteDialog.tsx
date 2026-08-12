@@ -20,9 +20,15 @@ interface QuoteDialogProps {
   /** Classes for the trigger button, so the header keeps its own sizing. */
   className?: string;
   label?: string;
+  /** Fired when the dialog opens — the mobile nav uses it to close itself. */
+  onOpen?: () => void;
 }
 
-export function QuoteDialog({ className, label = "Get a quote" }: QuoteDialogProps) {
+export function QuoteDialog({
+  className,
+  label = "Get a quote",
+  onOpen,
+}: QuoteDialogProps) {
   const ref = useRef<HTMLDialogElement>(null);
   const [sent, setSent] = useState(false);
   const [fields, setFields] = useState({
@@ -35,6 +41,7 @@ export function QuoteDialog({ className, label = "Get a quote" }: QuoteDialogPro
 
   const open = () => {
     setSent(false);
+    onOpen?.();
     ref.current?.showModal();
   };
   const close = () => ref.current?.close();

@@ -34,7 +34,7 @@ export default function AboutPage() {
           </div>
 
           <div
-            className="h-[450px] shrink-0 bg-cover bg-center md:w-[38%]"
+            className="h-[300px] shrink-0 bg-cover bg-center sm:h-[380px] md:h-[450px] md:w-[38%]"
             style={{ backgroundImage: `url(${INTRO.image})` }}
             role="img"
             aria-label="Paul Martyn project"

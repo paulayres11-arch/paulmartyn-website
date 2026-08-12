@@ -28,7 +28,7 @@ export function BoxLinks() {
       >
         <div className="absolute inset-0 bg-[#265457]/80" />
 
-        <div className="relative mx-auto flex min-h-[515px] max-w-[2000px] flex-col justify-center px-[3%] py-[64px]">
+        <div className="relative mx-auto flex min-h-[380px] max-w-[2000px] flex-col justify-center px-[3%] py-[64px] sm:min-h-[515px]">
           <h3 className="t-h3-lg mx-auto block w-full max-w-[620px] self-center text-center font-medium text-white">
             {WHY_US.heading}
           </h3>

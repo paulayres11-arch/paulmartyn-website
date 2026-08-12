@@ -43,7 +43,7 @@ export function ServicesTabs() {
         </div>
 
         <div
-          className="h-[575px] bg-cover bg-center md:w-7/12"
+          className="h-[320px] bg-cover bg-center sm:h-[440px] md:h-[575px] md:w-7/12"
           style={{ backgroundImage: `url(${SERVICES.image})` }}
           role="img"
           aria-label="Paul Martyn project"

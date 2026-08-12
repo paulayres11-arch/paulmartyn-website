@@ -8,7 +8,7 @@ import { QuoteDialog } from "./QuoteDialog";
 export function QuoteCta() {
   return (
     <section
-      className="relative flex h-[445px] items-center justify-center bg-cover bg-center"
+      className="relative flex h-[340px] items-center justify-center bg-cover bg-center sm:h-[445px]"
       style={{ backgroundImage: `url(${CONTACT_CTA.background})` }}
     >
       <div className="absolute inset-0 bg-[rgba(1,32,34,0.84)]" />

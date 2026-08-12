@@ -9,7 +9,7 @@ export function CommitmentSection() {
     <section className="bg-white py-[68px]">
       <div className="mx-auto flex max-w-[2000px] flex-col gap-12 px-[3%] md:flex-row md:items-start md:gap-20">
         <div
-          className="h-[507px] bg-cover bg-center md:w-7/12"
+          className="h-[300px] bg-cover bg-center sm:h-[400px] md:h-[507px] md:w-7/12"
           style={{ backgroundImage: `url(${PROCESS.image})` }}
           role="img"
           aria-label="Paul Martyn project"

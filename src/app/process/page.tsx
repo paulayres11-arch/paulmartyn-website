@@ -35,7 +35,7 @@ export default function ProcessPage() {
           </ol>
 
           <div
-            className="mt-14 h-[420px] bg-cover bg-center"
+            className="mt-14 h-[260px] bg-cover bg-center sm:h-[420px]"
             style={{ backgroundImage: `url(${PROCESS.image})` }}
             role="img"
             aria-label="Paul Martyn project"

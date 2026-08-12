@@ -7,6 +7,31 @@ interface ServiceDetailProps {
 }
 
 /**
+ * Renders `**bold**` inside a copy string as <strong>, leaving everything else
+ * as plain text. Copy is authored with those markers so emphasis lives with the
+ * words in `content.ts` rather than being hard-coded into the markup — but the
+ * paragraphs are plain strings, so without this the asterisks would show.
+ *
+ * Deliberately only handles bold: no link or list parsing, nothing that would
+ * need dangerouslySetInnerHTML.
+ */
+function RichText({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+        part.startsWith("**") && part.endsWith("**") ? (
+          <strong key={i} className="font-medium text-pm-ink">
+            {part.slice(2, -2)}
+          </strong>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
+/**
  * Body of a single service page: copy + photograph, then the other services
  * as onward links (the reference site's `.sectionpad.related` block).
  */
@@ -33,7 +58,11 @@ export function ServiceDetail({ service }: ServiceDetailProps) {
           )}
 
           <div className="md:w-1/2">
-            <p className="max-w-[460px] text-[15px] font-normal leading-[22.5px] text-pm-slate">
+            {/* Matches the long-form `detail` paragraphs below (17px/27px).
+                The reference site set this intro at 15px, but on this page it
+                sits directly above that copy and the step down read as a
+                mistake. */}
+            <p className="max-w-[460px] text-[17px] font-normal leading-[27px] text-pm-slate">
               {service.body}
             </p>
 
@@ -60,7 +89,7 @@ export function ServiceDetail({ service }: ServiceDetailProps) {
                     i === 0 ? "" : "mt-6"
                   }`}
                 >
-                  {paragraph}
+                  <RichText text={paragraph} />
                 </p>
               ))}
 

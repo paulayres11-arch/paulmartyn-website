@@ -180,6 +180,9 @@ export const SERVICES = {
         { src: `${RENO}/strip-out-first-fix.jpg`, alt: "Interior stripped back to the frame at first fix, with insulation board, steelwork and new services run" },
         { src: `${RENO}/vaulted-barn-kitchen.jpg`, alt: "Barn conversion opened up to the roof, with a new mezzanine, exposed trusses, rooflights and a kitchen fitted below" },
         { src: `${RENO}/panelled-bedroom.jpg`, alt: "Bedroom with a full-height panelled feature wall, brass swing-arm wall lights and an upholstered bed" },
+        { src: `${RENO}/barn-frame-pendants.jpg`, alt: "Stairwell of a barn conversion, looking down past the original oak frame to a cluster of wire pendant lights and a slatted timber wall" },
+        { src: `${RENO}/kitchen-island-rooflight.jpg`, alt: "Open-plan kitchen with a slot rooflight over a quartz-topped island, dark green walls and shaker cabinetry" },
+        { src: `${RENO}/fitted-wardrobes-green.jpg`, alt: "Wall of bespoke fitted wardrobes in sage green with slim brass handles, built into a bedroom recess" },
       ],
     },
     {

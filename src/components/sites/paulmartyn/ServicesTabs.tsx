@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { SERVICES } from "./content";
 import { GalleryRail } from "./GalleryRail";
@@ -20,6 +20,37 @@ import { GalleryRail } from "./GalleryRail";
 export function ServicesTabs() {
   const [active, setActive] = useState(0);
   const pane = SERVICES.tabs[active];
+
+  const paneRef = useRef<HTMLDivElement>(null);
+  /** Only scroll in response to a tap, never on first render. */
+  const tappedRef = useRef(false);
+
+  /**
+   * Bring the pane into view after a tab is tapped.
+   *
+   * On desktop the pills sit in a 4-column grid and the pane is already on
+   * screen directly beneath them, so tapping is self-evidently doing something.
+   * On mobile they stack into nine full-width blocks — roughly 750px of them —
+   * which pushes the pane far below the fold. The tab highlighted correctly but
+   * the content it revealed was off-screen, so it read as a dead button.
+   *
+   * Scrolling only when the pane is actually out of view keeps the desktop
+   * behaviour untouched rather than jerking the page on every click.
+   */
+  useEffect(() => {
+    if (!tappedRef.current) return;
+    tappedRef.current = false;
+
+    const el = paneRef.current;
+    if (!el) return;
+
+    const belowTheFold =
+      el.getBoundingClientRect().top > window.innerHeight * 0.6;
+    if (!belowTheFold) return;
+
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+  }, [active]);
 
   return (
     /* Two .sectionpad.zeropaddingtop blocks on the target: padding 0 0 10vh.
@@ -65,7 +96,10 @@ export function ServicesTabs() {
               id={`tab-${tab.id}`}
               aria-selected={i === active}
               aria-controls={tab.id}
-              onClick={() => setActive(i)}
+              onClick={() => {
+                tappedRef.current = true;
+                setActive(i);
+              }}
               className={cn(
                 "h-[58px] text-[15px] font-normal leading-[19.5px] text-white transition-colors",
                 i === active ? "bg-pm-gold" : "bg-pm-teal hover:bg-pm-gold",
@@ -88,9 +122,12 @@ export function ServicesTabs() {
       <div
         key={pane.id}
         id={pane.id}
+        ref={paneRef}
         role="tabpanel"
         aria-labelledby={`tab-${pane.id}`}
-        className="mx-auto mt-[60px] flex max-w-[2000px] flex-col gap-12 px-[3%] pb-[10vh] animate-[pm-fade-in_0.15s_linear] md:flex-row md:items-center md:gap-24"
+        /* scroll-mt clears the 69px sticky header so the heading is not tucked
+           under it when the pane is scrolled to. */
+        className="mx-auto mt-[60px] flex max-w-[2000px] scroll-mt-[85px] flex-col gap-12 px-[3%] pb-[10vh] animate-[pm-fade-in_0.15s_linear] md:flex-row md:items-center md:gap-24"
       >
         {pane.gallery?.length ? (
           <GalleryRail

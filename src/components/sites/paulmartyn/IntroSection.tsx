@@ -40,9 +40,9 @@ export function IntroSection() {
 
         <div
           className="h-[300px] shrink-0 bg-cover bg-center sm:h-[380px] md:h-[450px] md:w-[34.4%]"
-          style={{ backgroundImage: `url(${INTRO.image})` }}
+          style={{ backgroundImage: `url(${INTRO.homeImage})` }}
           role="img"
-          aria-label="Paul Martyn project"
+          aria-label="Rear elevation of a completed Paul Martyn new build, rendered upper floors over brickwork, with the garden laid out below"
         />
       </div>
     </section>

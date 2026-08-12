@@ -92,6 +92,15 @@ export function UserIcon(props: IconProps) {
   );
 }
 
+/** Accordion disclosure caret. Rotated 180° by the caller when open. */
+export function ChevronDownIcon(props: IconProps) {
+  return (
+    <svg {...base(props)} fill="none" stroke="currentColor" strokeWidth={2}>
+      <path d="m5 9 7 7 7-7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function ArrowRightIcon(props: IconProps) {
   return (
     <svg {...base(props)} fill="none" stroke="currentColor" strokeWidth="1.5">

@@ -98,7 +98,10 @@ export const INTRO = {
     "Our approach is straightforward: understand what our clients want to achieve, provide the experience and expertise to make it happen, and deliver every project with careful attention to quality, detail, programme and cost.",
     "From individual homes and complex renovations to commercial and hospitality projects, we take pride in the standard of our work and the relationships we build along the way. We believe good construction is about more than the finished building — it is about providing a professional, well-managed service from the first conversation through to completion.",
   ],
+  /** About Us page. */
   image: `${IMG}/about-intro.jpg`,
+  /** Homepage intro band — a completed Paul Martyn new build at Stocton Road. */
+  homeImage: `${NEWBUILD}/stocton-road.jpg`,
 };
 
 export const WHY_US = {
@@ -138,7 +141,10 @@ export const SERVICES = {
   ],
   pullQuote:
     "Most of our work comes through recommendation, and we think that says more than anything we could write here.",
+  /** Contact and Pricing pages. */
   image: `${IMG}/services-overview.jpg`,
+  /** Homepage services band — the barn-conversion restaurant fit-out. */
+  homeImage: `${COMMERCIAL}/barn-restaurant.jpg`,
   viewAll: { label: "All services", path: "/services" },
   tabs: [
     {

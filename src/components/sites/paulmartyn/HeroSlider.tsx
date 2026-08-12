@@ -26,7 +26,10 @@ export function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative h-[520px] overflow-hidden sm:h-[600px]">
+    /* No fixed height on phones. The header is absolutely positioned over this
+       band, so the content reserves room for it with pt below sm and the band
+       grows if the heading wraps to more lines. */
+    <section className="relative overflow-hidden sm:h-[600px]">
       {HERO.slides.map((slide, i) => (
         <div
           key={slide.image}
@@ -43,8 +46,10 @@ export function HeroSlider() {
       <div className="absolute inset-0 bg-[rgba(1,32,34,0.84)]" />
 
       {/* Content sits low in the band: 258px from the top, 89px below the
-          buttons at 600px tall. justify-end + pb reproduces that at any height. */}
-      <div className="relative mx-auto flex h-full max-w-[2000px] flex-col justify-end px-[3%] pb-[89px]">
+          buttons at 600px tall. justify-end + pb reproduces that at any height.
+          pt-[125px] below sm clears the 107px header that overlays this band —
+          without it the heading runs through the wordmark and burger. */}
+      <div className="relative mx-auto flex min-h-[600px] max-w-[2000px] flex-col justify-end px-[3%] pb-[56px] pt-[125px] sm:h-full sm:min-h-0 sm:pb-[89px] sm:pt-0">
         <h2 className="t-hero mb-[0.3em] max-w-[900px] pb-[0.12em] font-medium text-white">
           {HERO.heading}
         </h2>
@@ -53,16 +58,18 @@ export function HeroSlider() {
           {HERO.subheading}
         </p>
 
-        <div className="flex flex-wrap gap-3">
+        {/* Full width on phones (two 196px buttons don't fit side by side, and
+            stacked at that width they look stranded), designed size from sm. */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
             href={HERO.primaryCta.path}
-            className="flex h-[61px] w-[196px] items-center justify-center bg-[rgba(38,84,87,0.85)] text-[15px] font-light text-white transition-colors hover:bg-[rgba(52,104,107,0.92)]"
+            className="flex h-[61px] w-full items-center justify-center bg-[rgba(38,84,87,0.85)] text-[15px] font-light text-white transition-colors hover:bg-[rgba(52,104,107,0.92)] sm:w-[196px]"
           >
             {HERO.primaryCta.label}
           </a>
           <a
             href={HERO.secondaryCta.path}
-            className="flex h-[61px] w-[196px] items-center justify-center bg-[rgba(38,84,87,0.85)] text-[15px] font-light text-white transition-colors hover:bg-[rgba(52,104,107,0.92)]"
+            className="flex h-[61px] w-full items-center justify-center bg-[rgba(38,84,87,0.85)] text-[15px] font-light text-white transition-colors hover:bg-[rgba(52,104,107,0.92)] sm:w-[196px]"
           >
             {HERO.secondaryCta.label}
           </a>

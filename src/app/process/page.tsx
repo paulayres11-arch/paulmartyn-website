@@ -1,0 +1,47 @@
+import type { Metadata } from "next";
+import { PageShell } from "@/components/sites/paulmartyn/PageShell";
+import { PROCESS } from "@/components/sites/paulmartyn/content";
+
+export const metadata: Metadata = {
+  title: "Our Process | Paul Martyn",
+  description:
+    "How a Paul Martyn project runs, from first conversation through to handover.",
+};
+
+export default function ProcessPage() {
+  return (
+    <PageShell eyebrow="How we work" title={PROCESS.heading}>
+      <section className="bg-white pb-[10vh]">
+        <div className="mx-auto max-w-[2000px] px-[3%]">
+          <ol className="grid gap-[25px] sm:grid-cols-2 lg:grid-cols-4">
+            {PROCESS.steps.map((step, i) => (
+              <li
+                key={step.title}
+                className="flex flex-col border-t-4 border-pm-gold bg-pm-cream p-8"
+              >
+                <span className="text-[15px] font-medium tabular-nums text-pm-gold">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+
+                <h2 className="mt-4 text-[21px] font-medium leading-[26px] text-pm-ink">
+                  {step.title}
+                </h2>
+
+                <p className="mt-3 text-[15px] font-normal leading-[22.5px] text-pm-slate">
+                  {step.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+
+          <div
+            className="mt-14 h-[420px] bg-cover bg-center"
+            style={{ backgroundImage: `url(${PROCESS.image})` }}
+            role="img"
+            aria-label="Paul Martyn project"
+          />
+        </div>
+      </section>
+    </PageShell>
+  );
+}

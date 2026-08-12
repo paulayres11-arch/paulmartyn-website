@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import { PageShell } from "@/components/sites/paulmartyn/PageShell";
+import { ServiceDetail } from "@/components/sites/paulmartyn/ServiceDetail";
+import { SERVICES } from "@/components/sites/paulmartyn/content";
+
+const service = SERVICES.tabs[5];
+
+export const metadata: Metadata = {
+  title: `${service.heading} | Paul Martyn`,
+  description: service.body,
+};
+
+export default function Page() {
+  return (
+    <PageShell title={service.heading}>
+      <ServiceDetail service={service} />
+    </PageShell>
+  );
+}

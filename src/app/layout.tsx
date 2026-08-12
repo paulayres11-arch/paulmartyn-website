@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+/**
+ * No webfont is loaded here on purpose.
+ *
+ * The type stack names `articulat-cf` first, but it is not licensed for this
+ * site and no matching @font-face is served, so the pages render in the system
+ * sans-serif (Helvetica on macOS) — which is what the design was measured
+ * against. Keep articulat-cf first so the type upgrades if it is ever licensed.
+ * See docs/research/paulmartyn/DESIGN_TOKENS.md
+ */
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Paul Martyn | Builders in the Surrey Hills",
+  description:
+    "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
 };
 
 export default function RootLayout({
@@ -23,10 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en-GB" className="h-full antialiased">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

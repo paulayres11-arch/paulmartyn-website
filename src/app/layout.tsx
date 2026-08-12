@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   title: "Paul Martyn | Builders in the Surrey Hills",
   description:
     "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+  /**
+   * PREVIEW ONLY — REMOVE BEFORE LAUNCH.
+   *
+   * Keeps the shareable preview out of Google. Indexing an unfinished site
+   * splits ranking signals with the real domain later and can leave stale
+   * pages in results. Delete this `robots` block when the site goes live.
+   */
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({

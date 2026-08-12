@@ -75,10 +75,29 @@ export const HERO = {
     "A family-run construction company delivering residential renovations, new builds and listed building work — managed properly, priced transparently, finished to last.",
   primaryCta: { label: "View our services", path: "/services" },
   secondaryCta: { label: "Get in touch", path: "/contact" },
+  /**
+   * Paul Martyn's own projects. The three images previously here were
+   * stand-in reference photography carried over from the design reference and
+   * were never Paul Martyn work — they should not have been on the live site.
+   *
+   * The band is 600px tall and full-bleed, so `bg-cover` crops hard to the
+   * vertical middle. Wider source images survive that better, which is why
+   * these are the widest genuine photographs in the library. Anything chosen
+   * here needs its subject in the middle third or it gets cut off.
+   */
   slides: [
-    { image: `${IMG}/hero-balcony-extension.jpg`, alt: "" },
-    { image: `${IMG}/hero-panorama.jpg`, alt: "" },
-    { image: `${IMG}/hero-panorama-2.jpg`, alt: "" },
+    {
+      image: `${IMG}/hero-new-build-frontage.jpg`,
+      alt: "Front elevation of a completed new build — brick with tile hanging, gabled roof and an arched oak entrance",
+    },
+    {
+      image: `${IMG}/hero-pool-garden-room.jpg`,
+      alt: "Landscaped rear garden with a new outdoor pool, patterned terrace and a cedar-clad garden room",
+    },
+    {
+      image: `${IMG}/hero-reroof-solar.jpg`,
+      alt: "Aerial view of a re-roofed house with new clay tiles, a dormer and integrated solar panels",
+    },
   ] satisfies HeroSlide[],
 };
 

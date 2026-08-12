@@ -10,6 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us | Paul Martyn",
   description: INTRO.body[0],
+  alternates: { canonical: "/about-us" },
 };
 
 export default function AboutPage() {

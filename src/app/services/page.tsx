@@ -5,6 +5,7 @@ import { SERVICES } from "@/components/sites/paulmartyn/content";
 export const metadata: Metadata = {
   title: "Services | Paul Martyn",
   description: SERVICES.lead,
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {

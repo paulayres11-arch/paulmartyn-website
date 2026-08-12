@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Our Process | Paul Martyn",
   description:
     "How a Paul Martyn project runs, from first conversation through to handover.",
+  alternates: { canonical: "/process" },
 };
 
 export default function ProcessPage() {

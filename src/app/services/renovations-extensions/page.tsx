@@ -8,6 +8,7 @@ const service = SERVICES.tabs[0];
 export const metadata: Metadata = {
   title: `${service.heading} | Paul Martyn`,
   description: service.body,
+  alternates: { canonical: "/services/renovations-extensions" },
 };
 
 export default function Page() {

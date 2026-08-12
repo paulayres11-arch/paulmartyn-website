@@ -16,6 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact | Paul Martyn",
   description: CONTACT_CTA.body,
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

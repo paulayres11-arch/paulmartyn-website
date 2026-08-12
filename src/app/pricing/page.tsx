@@ -9,6 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "Pricing | Paul Martyn",
   description: PRICING.intro[0],
+  alternates: { canonical: "/pricing" },
 };
 
 export default function PricingPage() {

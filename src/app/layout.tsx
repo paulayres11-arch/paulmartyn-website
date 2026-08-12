@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 /**
@@ -12,22 +13,34 @@ import "./globals.css";
  */
 
 export const metadata: Metadata = {
+  /**
+   * Resolves every relative canonical and og:url against the live www host.
+   * Without this Next emits relative canonicals, which at cutover would leave
+   * Google free to pick its own preferred host and split signals between the
+   * apex and www versions of each page.
+   */
+  metadataBase: new URL(SITE_URL),
   title: "Paul Martyn | Builders in the Surrey Hills",
   description:
     "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Paul Martyn",
+    locale: "en_GB",
+    url: "/",
+    title: "Paul Martyn | Builders in the Surrey Hills",
+    description:
+      "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+  },
   /**
-   * Search indexing is OFF unless SITE_INDEXABLE=true is set on the host.
+   * No `robots` key on purpose.
    *
-   * The Railway preview must stay out of Google: indexing an unfinished site
-   * competes with the real domain and leaves stale pages in results. Rather
-   * than a comment saying "remember to delete this", it's a switch — set
-   * SITE_INDEXABLE=true in the Railway variables at cutover and the site
-   * becomes indexable with no code change and nothing to forget.
+   * These pages are statically prerendered, so anything decided here is baked
+   * into the HTML at build time — which is why the previous env-var switch
+   * could not work. Indexing is controlled per request by the X-Robots-Tag
+   * header in src/middleware.ts, keyed on the request host.
    */
-  robots:
-    process.env.SITE_INDEXABLE === "true"
-      ? undefined
-      : { index: false, follow: false },
 };
 
 export default function RootLayout({

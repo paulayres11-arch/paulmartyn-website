@@ -102,6 +102,8 @@ export const INTRO = {
   image: `${IMG}/about-intro.jpg`,
   /** Homepage intro band — a completed Paul Martyn new build at Stocton Road. */
   homeImage: `${NEWBUILD}/stocton-road.jpg`,
+  /** Project credit shown under the photo. Keep captions this short. */
+  homeImageCaption: "Stocton Road, Guildford",
 };
 
 export const WHY_US = {
@@ -356,8 +358,21 @@ export const SERVICES = {
       path: "/services/project-management",
       image: `${PROJMAN}/rooflight-extension-joinery.jpg`,
       imageAlt: "Extension with a structural rooflight, cove lighting and fitted joinery run to the window line",
+      /**
+       * A short film rather than a photograph — project management is about
+       * how a site is run, which a still cannot really show.
+       *
+       * `src` is a locally hosted frame from the video, so no request reaches
+       * YouTube until someone presses play. The still photo that was here is
+       * still in the repo at ${PROJMAN}/rooflight-extension-joinery.jpg and is
+       * kept as `image` above, which is what the "other services" cards use.
+       */
       gallery: [
-        { src: `${PROJMAN}/rooflight-extension-joinery.jpg`, alt: "Extension with a structural rooflight and cove lighting, and a run of fitted oak joinery set out to the window line — the sequencing that lets each trade do its best work" },
+        {
+          src: `${VIDEO}/project-management-short.jpg`,
+          alt: "Short film from a kitchen fit-out — pendants bagged and the room sheeted up while the trades work through",
+          youtubeId: "Er6C6Lq28sI",
+        },
       ],
       detail: [
         "It's the part of building work nobody sees in the photos — but it's the reason the photos look the way they do. A beautiful finish is never an accident. It comes from hundreds of decisions made in the right order: the electrician's first fix done before the plasterer arrives, the joinery measured only once the walls are true. Get the sequence right and every trade does their best work. Get it wrong and even excellent tradespeople end up rushing or working around each other — and you can see it in the finish every time.",

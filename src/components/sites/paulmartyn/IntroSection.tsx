@@ -38,12 +38,25 @@ export function IntroSection() {
           ))}
         </div>
 
-        <div
-          className="h-[300px] shrink-0 bg-cover bg-center sm:h-[380px] md:h-[450px] md:w-[34.4%]"
-          style={{ backgroundImage: `url(${INTRO.homeImage})` }}
-          role="img"
-          aria-label="Rear elevation of a completed Paul Martyn new build, rendered upper floors over brickwork, with the garden laid out below"
-        />
+        <figure className="shrink-0 md:w-[37.8%]">
+          <div
+            /* 10% larger than the reference site's 450px/34.4% — the photo was
+               sitting small against the intro copy at desktop widths. */
+            className="h-[330px] bg-cover bg-center sm:h-[418px] md:h-[495px]"
+            style={{ backgroundImage: `url(${INTRO.homeImage})` }}
+            role="img"
+            aria-label="Rear elevation of a completed Paul Martyn new build, rendered upper floors over brickwork, with the garden laid out below"
+          />
+
+          {/* Project credit.
+              13.5px — the site's small-label size, as used by the inner-page
+              eyebrows. Deliberately NOT `t-eyebrow`, which is 18px and reads as
+              a section label rather than a caption. Keep every caption at this
+              size so they stay subordinate to the headings above them. */}
+          <figcaption className="mt-4 text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+            {INTRO.homeImageCaption}
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

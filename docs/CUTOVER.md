@@ -67,14 +67,7 @@ Do not redo these by hand in Cloudflare — they are in the app and tested.
 
 ## Cutover steps
 
-### 1. Get the DNS targets from Railway
-
-Railway dashboard → service `paulmartyn-website` → **Settings → Networking**.
-Both `paulmartynconstruction.com` and `www.paulmartynconstruction.com` are
-already added and ACTIVE. Each shows the CNAME value to point at — copy both.
-(They are not exposed via the CLI, so they have to come from the dashboard.)
-
-### 2. Add the zone to Cloudflare — but do not change nameservers yet
+### 1. Add the zone to Cloudflare — but do not change nameservers yet
 
 Cloudflare → Add a site → `paulmartynconstruction.com`. Cloudflare scans the
 existing zone and imports what it can find.
@@ -83,20 +76,49 @@ existing zone and imports what it can find.
 records it cannot enumerate. Confirm all five Google MX records are present and
 correct before going any further.
 
-### 3. Build the target records in Cloudflare
+### 2. Build the target records in Cloudflare
+
+Read off the Railway dashboard on 2026-08-12. Both custom domains need a CNAME
+**and** a verification TXT — the CNAME alone will not activate the domain, and
+the two TXT records sit at different labels, so copy the Name column exactly.
 
 | Type | Name | Value | Proxy |
 |---|---|---|---|
-| CNAME | `www` | *(Railway target for www)* | **DNS only** at first |
-| CNAME | `@` | *(Railway target for apex)* | **DNS only** at first |
-| MX ×5 | `@` | the five Google entries above | n/a |
+| CNAME | `@` | `z5qgknmh.up.railway.app` | **DNS only** at first |
+| TXT | `_railway-verify` | `railway-verify=842e7bf59c082837e316897d69af8db9d493c5b6bdd45f63d9f58748970039f5` | n/a |
+| CNAME | `www` | `1hl2mdge.up.railway.app` | **DNS only** at first |
+| TXT | `_railway-verify.www` | `railway-verify=4b723d819aabb5527fb3f338a39f5301d723ea7aca19ef3c62deef05cd18133b` | n/a |
+| MX | `@` | `aspmx.l.google.com` — priority **1** | n/a |
+| MX | `@` | `alt1.aspmx.l.google.com` — priority **5** | n/a |
+| MX | `@` | `alt2.aspmx.l.google.com` — priority **5** | n/a |
+| MX | `@` | `alt3.aspmx.l.google.com` — priority **10** | n/a |
+| MX | `@` | `alt4.aspmx.l.google.com` — priority **10** | n/a |
 | TXT | `@` | `v=spf1 include:_spf.google.com ~all` | n/a |
+
+Notes:
+
+- The `www` CNAME **replaces** the existing `ext-sq.squarespace.com` value.
+  That is the record that moves traffic off Squarespace.
+- `_railway-verify` and `_railway-verify.www` are different labels. Type them
+  exactly; Cloudflare appends the zone automatically, so do not add
+  `.paulmartynconstruction.com` yourself.
+- The verify TXT values are truncated in Railway's dialog. The full 64-character
+  values are above.
+- A CNAME on the bare apex is illegal in standard DNS. Cloudflare's CNAME
+  flattening handles it, which is one of the better reasons to be on Cloudflare
+  here — most DNS hosts cannot do this.
 
 Start **DNS only** (grey cloud). It is the simplest thing that works, and it
 keeps Railway's own certificate in play so there is no TLS ambiguity on day
 one. Turn the proxy on afterwards as a separate, revertible change — and if you
 do, set SSL/TLS mode to **Full (strict)**. Flexible mode will cause redirect
 loops against Railway.
+
+### 3. Note the plan limit
+
+The Railway plan is at its custom-domain limit with these two. It does not
+affect the cutover, but a third hostname (a staging domain, say) needs an
+upgrade first.
 
 ### 4. Lower TTLs first (optional but cheap)
 
@@ -178,3 +200,24 @@ step to forget on the day.
 If the canonical host ever changes, change `CANONICAL_HOST` in `src/lib/site.ts`
 — it is the single source of truth for the redirect, the canonicals, the
 sitemap and the indexing rule.
+
+---
+
+## Appendix: the record set as a checklist
+
+Tick these off in Cloudflare before touching nameservers. The MX rows are the
+ones that stop email dying — do not leave them until last.
+
+- [ ] CNAME `@` → `z5qgknmh.up.railway.app` (DNS only)
+- [ ] TXT `_railway-verify` → `railway-verify=842e7bf59c082837e316897d69af8db9d493c5b6bdd45f63d9f58748970039f5`
+- [ ] CNAME `www` → `1hl2mdge.up.railway.app` (DNS only)
+- [ ] TXT `_railway-verify.www` → `railway-verify=4b723d819aabb5527fb3f338a39f5301d723ea7aca19ef3c62deef05cd18133b`
+- [ ] MX `@` → `aspmx.l.google.com` (1)
+- [ ] MX `@` → `alt1.aspmx.l.google.com` (5)
+- [ ] MX `@` → `alt2.aspmx.l.google.com` (5)
+- [ ] MX `@` → `alt3.aspmx.l.google.com` (10)
+- [ ] MX `@` → `alt4.aspmx.l.google.com` (10)
+- [ ] TXT `@` → `v=spf1 include:_spf.google.com ~all`
+- [ ] All five MX rows re-read and confirmed against the list above
+- [ ] Nameservers changed at the registrar (Squarespace domains panel)
+- [ ] Test email sent to `Paul@paulmartynconstruction.com` from outside — arrived

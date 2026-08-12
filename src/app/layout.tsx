@@ -16,13 +16,18 @@ export const metadata: Metadata = {
   description:
     "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
   /**
-   * PREVIEW ONLY — REMOVE BEFORE LAUNCH.
+   * Search indexing is OFF unless SITE_INDEXABLE=true is set on the host.
    *
-   * Keeps the shareable preview out of Google. Indexing an unfinished site
-   * splits ranking signals with the real domain later and can leave stale
-   * pages in results. Delete this `robots` block when the site goes live.
+   * The Railway preview must stay out of Google: indexing an unfinished site
+   * competes with the real domain and leaves stale pages in results. Rather
+   * than a comment saying "remember to delete this", it's a switch — set
+   * SITE_INDEXABLE=true in the Railway variables at cutover and the site
+   * becomes indexable with no code change and nothing to forget.
    */
-  robots: { index: false, follow: false },
+  robots:
+    process.env.SITE_INDEXABLE === "true"
+      ? undefined
+      : { index: false, follow: false },
 };
 
 export default function RootLayout({

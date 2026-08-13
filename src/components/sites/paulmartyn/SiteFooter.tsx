@@ -7,7 +7,13 @@ import {
   FOOTER_SERVICES,
   SOCIALS,
 } from "./content";
-import { FacebookIcon, InstagramIcon } from "./shared/icons";
+import {
+  AtIcon,
+  FacebookIcon,
+  InstagramIcon,
+  MobileIcon,
+  PhoneIcon,
+} from "./shared/icons";
 import { Logo } from "./shared/Logo";
 
 /**
@@ -27,21 +33,46 @@ export function SiteFooter() {
           <div className="lg:max-w-[620px]">
 <Logo tone="ink" height={28} />
 
-            <p className="mt-11 text-[25.5px] font-light leading-[38.25px] text-pm-slate">
-              Call us on{" "}
-              <a href={CONTACT.phoneHref} className="text-pm-ink transition-colors hover:text-pm-gold">
-                {CONTACT.phone}
-              </a>
-              , mobile{" "}
-              <a href={CONTACT.mobileHref} className="text-pm-ink transition-colors hover:text-pm-gold">
-                {CONTACT.mobile}
-              </a>
-              <br />
-              or email{" "}
-              <a href={CONTACT.emailHref} className="break-all text-pm-ink transition-colors hover:text-pm-gold">
-                {CONTACT.email}
-              </a>
-            </p>
+            {/* Contact details as a stacked list.
+                20.4px is 20% down from the previous 25.5px, and the leading
+                scales with it. The icons carry the meaning that "Call us on",
+                "mobile" and "or email" used to, so the labels are gone — but
+                they are decorative to a screen reader, which is why each link
+                carries its own aria-label. */}
+            <ul className="mt-11 space-y-3 text-[20.4px] font-light leading-[30.6px] text-pm-slate">
+              <li className="flex items-center gap-4">
+                <PhoneIcon className="h-[22px] w-[22px] shrink-0 text-pm-gold" />
+                <a
+                  href={CONTACT.phoneHref}
+                  aria-label={`Call ${CONTACT.phone}`}
+                  className="text-pm-ink transition-colors hover:text-pm-gold"
+                >
+                  {CONTACT.phone}
+                </a>
+              </li>
+
+              <li className="flex items-center gap-4">
+                <MobileIcon className="h-[22px] w-[22px] shrink-0 text-pm-gold" />
+                <a
+                  href={CONTACT.mobileHref}
+                  aria-label={`Call the mobile, ${CONTACT.mobile}`}
+                  className="text-pm-ink transition-colors hover:text-pm-gold"
+                >
+                  {CONTACT.mobile}
+                </a>
+              </li>
+
+              <li className="flex items-center gap-4">
+                <AtIcon className="h-[22px] w-[22px] shrink-0 text-pm-gold" />
+                <a
+                  href={CONTACT.emailHref}
+                  aria-label={`Email ${CONTACT.email}`}
+                  className="break-all text-pm-ink transition-colors hover:text-pm-gold"
+                >
+                  {CONTACT.email}
+                </a>
+              </li>
+            </ul>
 
             <p className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
               {CONTACT.location}

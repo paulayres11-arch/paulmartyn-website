@@ -204,6 +204,14 @@ export const SERVICES = {
         { src: `${RENO}/fitted-wardrobes-green.jpg`, alt: "Wall of bespoke fitted wardrobes in sage green with slim brass handles, built into a bedroom recess" },
         { src: `${RENO}/rooflight-hallway-herringbone.jpg`, alt: "Hallway between navy cabinetry, lit by a flush rooflight, with herringbone oak flooring and a full-height window onto the terrace" },
         { src: `${RENO}/crittall-doors-herringbone.jpg`, alt: "Black Crittall-style internal glazed doors set into a stud opening, opening from a herringbone oak hallway into the kitchen" },
+        /**
+         * Lazell Gardens — Paul Martyn's own project. The file carries C2PA
+         * metadata marking it as AI-generated because it was retouched through
+         * an image model, not because the room is invented. Confirmed by Paul
+         * on 2026-08-13. Worth knowing before anyone reads the metadata and
+         * assumes otherwise.
+         */
+        { src: `${RENO}/lazell-gardens-ensuite.jpg`, alt: "Loft ensuite at Lazell Gardens — twin basins in a solid surface top, fluted vanity units, black brassware and a rooflight over the shower" },
       ],
     },
     {

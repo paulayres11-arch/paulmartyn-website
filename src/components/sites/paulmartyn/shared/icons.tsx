@@ -92,6 +92,29 @@ export function UserIcon(props: IconProps) {
   );
 }
 
+/** Mobile handset — distinguishes the mobile number from the landline. */
+export function MobileIcon(props: IconProps) {
+  return (
+    <svg {...base(props)} fill="none" stroke="currentColor" strokeWidth={1.8}>
+      <rect x="7" y="2.5" width="10" height="19" rx="2" />
+      <path d="M10.75 18.5h2.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+/** At sign, for the email line. */
+export function AtIcon(props: IconProps) {
+  return (
+    <svg {...base(props)} fill="none" stroke="currentColor" strokeWidth={1.8}>
+      <circle cx="12" cy="12" r="3.6" />
+      <path
+        d="M15.6 8.4v4.6a2.6 2.6 0 0 0 5.2 0V12a8.8 8.8 0 1 0-3.5 7"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 /** Accordion disclosure caret. Rotated 180° by the caller when open. */
 export function ChevronDownIcon(props: IconProps) {
   return (

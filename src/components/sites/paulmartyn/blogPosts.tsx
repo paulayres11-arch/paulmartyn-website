@@ -16,6 +16,72 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "bathroom-fitting-cost-cranleigh",
+    title: "What a bathroom fitting costs in Cranleigh, and what changes the price",
+    category: "Bathrooms",
+    date: "2026-08-13",
+    seoTitle: "Bathroom Fitting Cost in Cranleigh | 2026 Price Guide",
+    metaDescription:
+      "What a bathroom fitting costs in Cranleigh in 2026, and what actually moves the price — from Checkatrade's cost guide to Waverley's older housing stock.",
+    imageAlt:
+      "Illustration of a Cranleigh bathroom split in two: a finished tiled bath on one side, and a cutaway of the wall behind it on the other showing old corroded pipework with a price tag marking the hidden cost of moving it",
+    body: [
+      "What does a bathroom cost in Cranleigh? Checkatrade's 2026 cost guide puts a typical UK refit, materials included, at roughly £5,500 to £8,000, rising past £14,000 for a larger or higher-spec room — a guide only, since your own quote depends on what's behind the wall.",
+      "In Cranleigh and the wider Waverley area, that's usually the pipework. Many of the village's older cottages and 1930s semis have plumbing runs that were never meant to move, so relocating a bath or shower — rather than replacing it where it stands — is normally the single biggest addition to a job.",
+      "Layout comes next, then tiling and waterproofing.",
+      "We always walk the room in Cranleigh before quoting — a like-for-like swap and a full reconfiguration are different jobs entirely.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+      <defs>
+        <linearGradient id="cbwall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#dfe7ea"/><stop offset="1" stopColor="#c3d0d5"/>
+        </linearGradient>
+        <linearGradient id="cbstud" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#cdb896"/><stop offset="1" stopColor="#a98f68"/>
+        </linearGradient>
+        <radialGradient id="cbglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stopColor="#e08a2b" stopOpacity=".35"/><stop offset="1" stopColor="#e08a2b" stopOpacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="400" fill="#eef2f4"/>
+      <rect y="300" width="400" height="100" fill="#1f2a30"/>
+      <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">What moves the price</text>
+      <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh bathroom fittings — Checkatrade, 2026</text>
+      <rect x="24" y="72" width="162" height="196" fill="url(#cbwall)"/>
+      <path d="M24 104 h162 M24 136 h162 M24 168 h162 M24 200 h162 M24 232 h162 M24 264 h162" stroke="#b7c5cb" strokeWidth="1"/>
+      <path d="M65 72 v196 M106 72 v196 M147 72 v196" stroke="#b7c5cb" strokeWidth="1"/>
+      <rect x="98" y="80" width="18" height="46" rx="3" fill="#dfe7ea" stroke="#9fb0b6" strokeWidth="1.5"/>
+      <circle cx="107" cy="92" r="3" fill="#9fb0b6"/>
+      <path d="M107 95 v14" stroke="#9fb0b6" strokeWidth="2"/>
+      <path d="M34 240 q0 -22 22 -22 h96 q22 0 22 22 v18 h-140 z" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2"/>
+      <rect x="34" y="258" width="140" height="10" fill="#dfe7ea" stroke="#9fb0b6" strokeWidth="1.5"/>
+      <rect x="30" y="266" width="8" height="10" rx="2" fill="#c3d0d5"/>
+      <rect x="166" y="266" width="8" height="10" rx="2" fill="#c3d0d5"/>
+      <path d="M186 72 L200 96 L189 118 L200 146 L188 172 L200 198 L189 224 L200 250 L188 268 L186 268 Z" fill="#f6f8f9"/>
+      <path d="M186 72 L200 96 L189 118 L200 146 L188 172 L200 198 L189 224 L200 250 L188 268" fill="none" stroke="#b7c5cb" strokeWidth="1.5"/>
+      <rect x="200" y="72" width="176" height="196" fill="url(#cbstud)"/>
+      <rect x="228" y="72" width="10" height="196" fill="#8f7550" opacity=".6"/>
+      <rect x="330" y="72" width="10" height="196" fill="#8f7550" opacity=".6"/>
+      <circle cx="284" cy="180" r="70" fill="url(#cbglow)"/>
+      <path d="M280 78 q10 20 -6 38 q-16 18 4 34 q18 14 -4 36 q-18 18 6 40 q14 16 -8 34 q-14 12 2 30" fill="none" stroke="#6b4a30" strokeWidth="9" strokeLinecap="round"/>
+      <path d="M280 78 q10 20 -6 38 q-16 18 4 34 q18 14 -4 36 q-18 18 6 40 q14 16 -8 34 q-14 12 2 30" fill="none" stroke="#b0703f" strokeWidth="5" strokeLinecap="round"/>
+      <circle cx="270" cy="128" r="5" fill="#5a3a24"/>
+      <circle cx="292" cy="176" r="4" fill="#5a3a24"/>
+      <circle cx="266" cy="230" r="4.5" fill="#5a3a24"/>
+      <path d="M270 240 q-4 10 2 16" fill="none" stroke="#7a97a3" strokeWidth="2" opacity=".7"/>
+      <path d="M296 270 l30 -4 l4 16 l-14 10 l-16 -6 z" fill="#e08a2b"/>
+      <circle cx="308" cy="272" r="2.6" fill="#1f2a30"/>
+      <text x="311" y="285" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#1f2a30" textAnchor="middle">+£</text>
+      <path d="M280 254 q10 8 16 16" fill="none" stroke="#e08a2b" strokeWidth="2"/>
+      <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">The pipe behind the wall, not the suite</text>
+      <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Full refit, materials included: £5,500–£14,000+</text>
+      <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Checkatrade 2026 cost guide, not a fixed quote</text>
+      <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+    </svg>
+    ),
+  },
+  {
     slug: "bat-surveys-timing-surrey",
     title: "Bat surveys: why timing can cost you a year",
     category: "Planning & surveys",

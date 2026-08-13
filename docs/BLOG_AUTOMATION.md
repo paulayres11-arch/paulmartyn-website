@@ -70,7 +70,8 @@ Rules that matter:
 ## 5. Topic backlog
 
 Already published: bat surveys (2026-08-13), bathroom tanking
-(2026-08-13), trees and foundation depth (2026-08-13).
+(2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
+cost in Cranleigh (2026-08-13).
 
 **Alternate the two streams below**, starting with LOCAL. Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
@@ -87,7 +88,7 @@ posts per town over time, each answering a genuine question rather than
 repeating the same copy with the place name swapped — Google spots that, and
 so do readers.
 
-- [ ] What a bathroom fitting costs in Cranleigh, and what changes the price
+- [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
 - [ ] Extending a 1930s semi in Cobham: what to expect
 - [ ] Does an extension add value in Cobham? What the numbers say
 - [ ] Loft conversions in Guildford: which roofs work and which do not

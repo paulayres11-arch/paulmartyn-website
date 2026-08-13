@@ -359,7 +359,7 @@ export default function HouseExtensionCostsPage() {
 
             <a
               href={BROCHURE.href}
-              className="mt-6 inline-flex items-center gap-2 bg-pm-teal px-8 py-4 text-[15px] font-medium text-white transition-colors hover:bg-pm-teal-dark"
+              className="mt-6 inline-flex items-center gap-2 bg-pm-teal px-8 py-4 text-[15px] font-medium text-white transition-colors hover:bg-pm-gold"
             >
               {BROCHURE.label}{" "}
               <span className="font-light text-white/70">

@@ -480,7 +480,7 @@ export const PROCESS = {
     {
       title: "Detailed Design & Cost Plan",
       charging: "Paid design stage",
-      body: "Turns every specification into a firm, line-by-line price: kitchen and bathroom specifications, flooring and wall finishes, mechanical and electrical design, structural fabrication drawings and quotes, drainage design, and a firmed line-by-line cost plan.",
+      body: "Turns every specification into a firm, line-by-line price: kitchen and bathroom specifications, flooring and wall finishes, mechanical and electrical design, structural fabrication drawings and quotes, drainage design, structural design fees, building control fees, and a firmed line-by-line cost plan.",
     },
     {
       title: "Fixed Price & Contract",

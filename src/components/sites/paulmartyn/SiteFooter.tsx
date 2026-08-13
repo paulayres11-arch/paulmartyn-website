@@ -81,7 +81,10 @@ export function SiteFooter() {
             <a
               href={BROCHURE.href}
               download
-              className="mt-7 inline-flex h-[52px] items-center gap-3 border border-pm-rule px-6 text-[15px] font-medium text-pm-ink transition-colors hover:border-pm-gold hover:text-pm-gold"
+              /* Solid teal, matching the same button on the About Us page.
+                 It was an outlined link here and disappeared into the footer
+                 rules around it — this is a download worth noticing. */
+              className="mt-7 inline-flex h-[52px] items-center gap-3 bg-pm-teal px-6 text-[15px] font-normal text-white transition-colors hover:bg-pm-gold"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -96,7 +99,7 @@ export function SiteFooter() {
                 <path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16" />
               </svg>
               {BROCHURE.label}
-              <span className="font-light text-pm-slate">({BROCHURE.size})</span>
+              <span className="font-light text-white/70">({BROCHURE.size})</span>
             </a>
 
             <p className="mt-7 max-w-[520px] border-t border-pm-rule pt-7 text-[15px] font-normal leading-[22.5px] text-pm-slate">

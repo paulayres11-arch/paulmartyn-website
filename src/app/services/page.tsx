@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
+import { ReadMore } from "@/components/sites/paulmartyn/ReadMore";
 import { SERVICES } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
@@ -18,18 +19,29 @@ export default function ServicesPage() {
               {SERVICES.lead}
             </p>
 
-            {SERVICES.body.map((paragraph, i) => (
-              <p
-                key={i}
-                className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate"
-              >
-                {paragraph}
-              </p>
-            ))}
-
-            <p className="mt-9 border-l-4 border-pm-gold pl-6 text-[19px] font-normal leading-[29px] text-pm-ink">
-              {SERVICES.pullQuote}
+            {/* First paragraph always shows; the rest sits behind "Read more".
+                Four full paragraphs plus the pull quote was a wall of text
+                before anyone reached the service cards below. The hidden copy
+                stays in the DOM, so it is still indexed and still findable
+                with ⌘F. */}
+            <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
+              {SERVICES.body[0]}
             </p>
+
+            <ReadMore>
+              {SERVICES.body.slice(1).map((paragraph, i) => (
+                <p
+                  key={i}
+                  className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate"
+                >
+                  {paragraph}
+                </p>
+              ))}
+
+              <p className="mt-9 border-l-4 border-pm-gold pl-6 text-[19px] font-normal leading-[29px] text-pm-ink">
+                {SERVICES.pullQuote}
+              </p>
+            </ReadMore>
           </div>
 
           <div className="mt-16 grid gap-[25px] sm:grid-cols-2 lg:grid-cols-3">

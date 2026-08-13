@@ -879,15 +879,15 @@ export const PRICING = {
       body: [
         "Architect-designed new homes from groundworks to handover, with tight cost control and a programme you can rely on.",
       ],
-      rate: "£2,000 per m²",
+      rate: "£2,700 per m²",
     },
     {
       label: "Listed buildings & heritage work",
       body: [
         "Sensitive restoration and alteration of listed and period property, working with conservation officers and specialist trades.",
-        "It's careful, skilled work — and it's priced accordingly. In our experience, heritage projects typically fall between £2,300 and £2,900 per m², depending on the building's condition, the extent of the works and the level of specification.",
+        "It's careful, skilled work — and it's priced accordingly. In our experience, heritage projects typically fall between £3,400 and £4,200 per m², depending on the building's condition, the extent of the works and the level of specification.",
       ],
-      emphasise: ["£2,300 and £2,900 per m²"],
+      emphasise: ["£3,400 and £4,200 per m²"],
     },
     {
       label: "Commercial, bars & hotels",

@@ -23,31 +23,47 @@ import { SITE_URL } from "@/lib/site";
 
 const PUBLISHED = "2025-04-27";
 
+/**
+ * Rates realigned 2026-08-13 to match the build cost estimator, which is the
+ * figure a visitor will actually see when they use the calculator.
+ *
+ * The estimator produces £2,720–£3,110 per m² of floor area for a single
+ * storey across its full spread of wall, roof and foundation options, and
+ * £2,610–£2,960 for two storeys. Two storeys costs LESS per m² because the
+ * foundations and the roof are shared across twice the floor area — which is
+ * why the old "add 40–60%" line has gone; it described the total, not the
+ * rate, and read as though a second storey were the more expensive way to buy
+ * a square metre.
+ *
+ * Single storey, double storey and rear-extension figures are taken straight
+ * from the estimator. Kitchen and loft are NOT modelled by it — those are
+ * uplifts on the base build and need Paul's confirmation.
+ */
 const COST_RANGES = [
   {
     label: "Single storey extension",
-    value: "£1,800 – £2,400 per m²",
+    value: "£2,700 – £3,100 per m²",
     note: "Base build",
   },
   {
     label: "Double storey extension",
-    value: "Add 40–60%",
-    note: "On top of the single storey cost",
+    value: "£2,600 – £3,000 per m²",
+    note: "Per m² of floor area — foundations and roof are shared",
   },
   {
     label: "Kitchen extension",
-    value: "£3,000 – £4,000 per m²",
+    value: "£3,500 – £4,500 per m²",
     note: "Including fit-out",
   },
   {
     label: "Rear extension with glazing and skylights",
-    value: "£2,500 – £3,500 per m²",
+    value: "£3,000 – £3,800 per m²",
     note: "",
   },
   {
     label: "Loft conversion",
-    value: "£1,500 – £2,500 per m²",
-    note: "",
+    value: "£2,000 – £2,800 per m²",
+    note: "No new foundations, so lower than a ground floor extension",
   },
 ];
 

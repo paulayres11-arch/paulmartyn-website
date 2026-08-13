@@ -34,7 +34,7 @@ export default function PricingPage() {
               className="mt-10 h-[240px] bg-cover bg-center sm:h-[320px]"
               style={{ backgroundImage: `url(${SERVICES.image})` }}
               role="img"
-              aria-label="Paul Martyn project"
+              aria-label="Newly built oak-framed cart lodge with clay tiled roof, dormer and painted timber garage doors"
             />
           </div>
 

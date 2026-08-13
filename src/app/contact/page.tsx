@@ -115,7 +115,7 @@ export default function ContactPage() {
             className="mt-[25px] h-[280px] bg-cover bg-center"
             style={{ backgroundImage: `url(${SERVICES.image})` }}
             role="img"
-            aria-label="Paul Martyn project"
+            aria-label="Newly built oak-framed cart lodge with clay tiled roof, dormer and painted timber garage doors"
           />
         </div>
       </section>

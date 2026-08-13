@@ -162,8 +162,18 @@ export const SERVICES = {
   ],
   pullQuote:
     "Most of our work comes through recommendation, and we think that says more than anything we could write here.",
-  /** Contact and Pricing pages. */
-  image: `${IMG}/services-overview.jpg`,
+  /**
+   * Contact and Pricing pages.
+   *
+   * Cropped to roughly 1.9:1 on purpose. Both pages drop this into a wide,
+   * shallow band (280px and 240–320px tall) with `bg-cover`, so a portrait
+   * original would have shown a thin horizontal slice through the middle of
+   * the building rather than the building. The crop keeps the roof, dormer and
+   * doors in frame at both widths.
+   *
+   * Replaced a stock photograph of a kitchen that was not Paul Martyn's work.
+   */
+  image: `${IMG}/new-builds/cart-lodge-garaging.jpg`,
   /** Homepage services band — the barn-conversion restaurant fit-out. */
   homeImage: `${COMMERCIAL}/barn-restaurant.jpg`,
   viewAll: { label: "All services", path: "/services" },

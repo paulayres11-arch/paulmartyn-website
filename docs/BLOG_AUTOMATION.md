@@ -52,10 +52,18 @@ Rules that matter:
   stock, product renders or press photography on a commercial site is a real
   legal exposure, and the brief forbids it.
 - Square, `viewBox="0 0 400 400"`, so it fits the card grid.
-- House style: background `#1f2a30`, amber accent `#e08a2b`, pale text
-  `#e8e4dc`, muted `#8fa0a8`, `PAUL MARTYN` in a corner at 11px, letter-spaced.
-- Draw the *idea*, not decoration: a seasonal wheel, a wall cutaway, a depth
-  chart. If a topic has no natural diagram, pick a different topic.
+- **Illustrated, not flat.** Draw the scene, not just a chart: sky and soil
+  layers with roots for a ground post, a night sky behind a seasonal wheel, a
+  wall cutaway with the waterproof layer picked out and water running down it.
+  Use real colour — sky blue, grass green, soil brown, tile grey — and gradients
+  where they help. A flat bar chart is not shareable; an illustration is.
+- Keep the accent `#e08a2b` and `PAUL MARTYN` in a corner at ~10px,
+  letter-spaced, on every image. That is the through-line.
+- Dark slate `#1f2a30` remains the default background for night or underground
+  scenes and for caption bands; a light ground is fine when the subject calls
+  for it, as long as the amber accent and brand mark are present.
+- Draw the *idea*, not decoration. If a topic has no natural picture, pick a
+  different topic.
 - `imageAlt` must describe what the graphic shows, in a sentence. It is read by
   search engines and by anyone using a screen reader.
 

@@ -34,38 +34,24 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     art: (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <rect width="400" height="400" fill="#1f2a30"/>
-      <text x="32" y="46" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e8e4dc">Bat activity surveys</text>
-      <text x="32" y="68" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#8fa0a8">When they can legally be carried out</text>
-      <path d="M 201.55 122.02 L 202.68 68.03 A 128 128 0 0 1 261.66 83.83 L 235.65 131.15 A 74 74 0 0 0 201.55 122.02 Z" fill="#2c3a42"/>
-      <text x="238.8" y="51.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">J</text>
-      <path d="M 238.33 132.70 L 266.31 86.51 A 128 128 0 0 1 309.49 129.69 L 263.30 157.67 A 74 74 0 0 0 238.33 132.70 Z" fill="#2c3a42"/>
-      <text x="306.1" y="89.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">F</text>
-      <path d="M 264.85 160.35 L 312.17 134.34 A 128 128 0 0 1 327.97 193.32 L 273.98 194.45 A 74 74 0 0 0 264.85 160.35 Z" fill="#2c3a42"/>
-      <text x="344.9" y="157.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">M</text>
-      <path d="M 273.98 197.55 L 327.97 198.68 A 128 128 0 0 1 312.17 257.66 L 264.85 231.65 A 74 74 0 0 0 273.98 197.55 Z" fill="#2c3a42"/>
-      <text x="344.9" y="234.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">A</text>
-      <path d="M 263.30 234.33 L 309.49 262.31 A 128 128 0 0 1 266.31 305.49 L 238.33 259.30 A 74 74 0 0 0 263.30 234.33 Z" fill="#e08a2b"/>
-      <text x="306.1" y="302.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e08a2b" textAnchor="middle" dominantBaseline="central">M</text>
-      <path d="M 235.65 260.85 L 261.66 308.17 A 128 128 0 0 1 202.68 323.97 L 201.55 269.98 A 74 74 0 0 0 235.65 260.85 Z" fill="#e08a2b"/>
-      <text x="238.8" y="340.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e08a2b" textAnchor="middle" dominantBaseline="central">J</text>
-      <path d="M 198.45 269.98 L 197.32 323.97 A 128 128 0 0 1 138.34 308.17 L 164.35 260.85 A 74 74 0 0 0 198.45 269.98 Z" fill="#e08a2b"/>
-      <text x="161.2" y="340.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e08a2b" textAnchor="middle" dominantBaseline="central">J</text>
-      <path d="M 161.67 259.30 L 133.69 305.49 A 128 128 0 0 1 90.51 262.31 L 136.70 234.33 A 74 74 0 0 0 161.67 259.30 Z" fill="#e08a2b"/>
-      <text x="93.9" y="302.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e08a2b" textAnchor="middle" dominantBaseline="central">A</text>
-      <path d="M 135.15 231.65 L 87.83 257.66 A 128 128 0 0 1 72.03 198.68 L 126.02 197.55 A 74 74 0 0 0 135.15 231.65 Z" fill="#2c3a42"/>
-      <text x="55.1" y="234.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">S</text>
-      <path d="M 126.02 194.45 L 72.03 193.32 A 128 128 0 0 1 87.83 134.34 L 135.15 160.35 A 74 74 0 0 0 126.02 194.45 Z" fill="#2c3a42"/>
-      <text x="55.1" y="157.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">O</text>
-      <path d="M 136.70 157.67 L 90.51 129.69 A 128 128 0 0 1 133.69 86.51 L 161.67 132.70 A 74 74 0 0 0 136.70 157.67 Z" fill="#2c3a42"/>
-      <text x="93.9" y="89.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">N</text>
-      <path d="M 164.35 131.15 L 138.34 83.83 A 128 128 0 0 1 197.32 68.03 L 198.45 122.02 A 74 74 0 0 0 164.35 131.15 Z" fill="#2c3a42"/>
-      <text x="161.2" y="51.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central">D</text>
-      <text x="200" y="186" fontFamily="Helvetica,Arial,sans-serif" fontSize="30" fontWeight="700" fill="#e8e4dc" textAnchor="middle">MAY</text>
-      <text x="200" y="208" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fill="#8fa0a8" textAnchor="middle">to</text>
-      <text x="200" y="236" fontFamily="Helvetica,Arial,sans-serif" fontSize="30" fontWeight="700" fill="#e8e4dc" textAnchor="middle">AUG</text>
-      <text x="32" y="356" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#8fa0a8">Preliminary roost assessment: any time of year</text>
-      <text x="32" y="378" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#e08a2b" letterSpacing="1.4">PAUL MARTYN</text>
+      <defs>
+        <radialGradient id="bnight" cx="50%" cy="45%" r="65%">
+          <stop offset="0" stopColor="#2b3a44"/><stop offset="1" stopColor="#141d23"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="400" fill="url(#bnight)"/>
+      <circle cx="52" cy="52" r="1.6" fill="#e8e4dc" opacity=".7"/>
+      <circle cx="352" cy="70" r="1.4" fill="#e8e4dc" opacity=".6"/>
+      <circle cx="330" cy="330" r="1.5" fill="#e8e4dc" opacity=".5"/>
+      <circle cx="66" cy="342" r="1.3" fill="#e8e4dc" opacity=".55"/>
+      <text x="200" y="40" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e8e4dc" textAnchor="middle">Bat activity surveys</text>
+      <path d="M 202.25 120.03 L 203.66 66.05 A 140 140 0 0 1 266.80 82.97 L 241.04 130.42 A 86 86 0 0 0 202.25 120.03 Z" fill="#31424b"/><text x="229.2" y="96.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(15 229.2 96.9)">Jan</text><path d="M 244.93 132.67 L 273.15 86.63 A 140 140 0 0 1 319.37 132.85 L 273.33 161.07 A 86 86 0 0 0 244.93 132.67 Z" fill="#31424b"/><text x="279.9" y="126.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(45 279.9 126.1)">Feb</text><path d="M 275.58 164.96 L 323.03 139.20 A 140 140 0 0 1 339.95 202.34 L 285.97 203.75 A 86 86 0 0 0 275.58 164.96 Z" fill="#31424b"/><text x="309.1" y="176.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(75 309.1 176.8)">Mar</text><path d="M 285.97 208.25 L 339.95 209.66 A 140 140 0 0 1 323.03 272.80 L 275.58 247.04 A 86 86 0 0 0 285.97 208.25 Z" fill="#31424b"/><text x="309.1" y="235.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(105 309.1 235.2)">Apr</text><path d="M 273.33 250.93 L 319.37 279.15 A 140 140 0 0 1 273.15 325.37 L 244.93 279.33 A 86 86 0 0 0 273.33 250.93 Z" fill="#e08a2b"/><text x="279.9" y="285.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(135 279.9 285.9)">May</text><path d="M 241.04 281.58 L 266.80 329.03 A 140 140 0 0 1 203.66 345.95 L 202.25 291.97 A 86 86 0 0 0 241.04 281.58 Z" fill="#e08a2b"/><text x="229.2" y="315.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(165 229.2 315.1)">Jun</text><path d="M 197.75 291.97 L 196.34 345.95 A 140 140 0 0 1 133.20 329.03 L 158.96 281.58 A 86 86 0 0 0 197.75 291.97 Z" fill="#e08a2b"/><text x="170.8" y="315.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(195 170.8 315.1)">Jul</text><path d="M 155.07 279.33 L 126.85 325.37 A 140 140 0 0 1 80.63 279.15 L 126.67 250.93 A 86 86 0 0 0 155.07 279.33 Z" fill="#e08a2b"/><text x="120.1" y="285.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(225 120.1 285.9)">Aug</text><path d="M 124.42 247.04 L 76.97 272.80 A 140 140 0 0 1 60.05 209.66 L 114.03 208.25 A 86 86 0 0 0 124.42 247.04 Z" fill="#31424b"/><text x="90.9" y="235.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(255 90.9 235.2)">Sep</text><path d="M 114.03 203.75 L 60.05 202.34 A 140 140 0 0 1 76.97 139.20 L 124.42 164.96 A 86 86 0 0 0 114.03 203.75 Z" fill="#31424b"/><text x="90.9" y="176.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(285 90.9 176.8)">Oct</text><path d="M 126.67 161.07 L 80.63 132.85 A 140 140 0 0 1 126.85 86.63 L 155.07 132.67 A 86 86 0 0 0 126.67 161.07 Z" fill="#31424b"/><text x="120.1" y="126.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(315 120.1 126.1)">Nov</text><path d="M 158.96 130.42 L 133.20 82.97 A 140 140 0 0 1 196.34 66.05 L 197.75 120.03 A 86 86 0 0 0 158.96 130.42 Z" fill="#31424b"/><text x="170.8" y="96.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(345 170.8 96.9)">Dec</text>
+      <circle cx="200" cy="206" r="76" fill="#0f1619"/>
+      <path d="M200 196 l7 -9 l3 11 l16 -10 q18 -10 34 2 q-16 2 -24 12 q-9 12 -25 12 l-11 6 l-11 -6 q-16 0 -25 -12 q-8 -10 -24 -12 q16 -12 34 -2 l16 10 l3 -11 z" fill="#e08a2b"/>
+      <text x="200" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="26" fontWeight="700" fill="#e8e4dc" textAnchor="middle">MAY–AUG</text>
+      <text x="200" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8" textAnchor="middle">the only window</text>
+      <text x="200" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#8fa0a8" textAnchor="middle">Preliminary roost assessment: any time of year</text>
+      <text x="376" y="394" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
     </svg>
     ),
   },
@@ -88,19 +74,38 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     art: (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <rect width="400" height="400" fill="#1f2a30"/>
-      <text x="32" y="46" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e8e4dc">What sits behind the tile</text>
-      <text x="32" y="68" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#8fa0a8">BS 5385-1 — wet areas, in order</text>
-      <rect x="150" y="120" width="180" height="58" fill="#2c3a42"/><text x="342" y="149" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#e8e4dc" dominantBaseline="central">Substrate</text><rect x="150" y="178" width="180" height="20" fill="#e08a2b"/><text x="342" y="188" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#e8e4dc" dominantBaseline="central">Tanking membrane</text><rect x="150" y="198" width="180" height="16" fill="#46555e"/><text x="342" y="206" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#e8e4dc" dominantBaseline="central">Adhesive</text><rect x="150" y="214" width="180" height="26" fill="#5b6b74"/><text x="342" y="227" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#e8e4dc" dominantBaseline="central">Tile</text>
-      <rect x="150" y="120" width="180" height="120" fill="none" stroke="#0f1619" strokeWidth="1"/>
-      <path d="M138 120 L138 240" stroke="#e08a2b" strokeWidth="2"/>
-      <path d="M132 120 L144 120 M132 240 L144 240" stroke="#e08a2b" strokeWidth="2"/>
-      <text x="126" y="180" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e08a2b" textAnchor="end" dominantBaseline="central">150mm</text>
-      <text x="32" y="286" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#e8e4dc">Minimum upstand above finished floor</text>
-      <path d="M32 316 L330 316" stroke="#2c3a42" strokeWidth="1"/>
-      <text x="32" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#e8e4dc">Wet room floor fall</text>
-      <text x="330" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e08a2b" textAnchor="end">1:80 min</text>
-      <text x="32" y="378" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#e08a2b" letterSpacing="1.4">PAUL MARTYN</text>
+      <defs>
+        <linearGradient id="wtile" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#dfe7ea"/><stop offset="1" stopColor="#c3d0d5"/>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="400" fill="#eef2f4"/>
+      <rect y="286" width="400" height="114" fill="#1f2a30"/>
+      <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Tiles are not waterproof</text>
+      <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">What has to sit behind them — BS 5385-1</text>
+      <rect x="150" y="70" width="34" height="216" fill="#8d99a0"/>
+      <rect x="184" y="70" width="16" height="216" fill="#e08a2b"/>
+      <rect x="200" y="70" width="10" height="216" fill="#a9b6bb"/>
+      <rect x="210" y="70" width="26" height="216" fill="url(#wtile)"/>
+      <path d="M210 104 h26 M210 138 h26 M210 172 h26 M210 206 h26 M210 240 h26" stroke="#9fb0b6" strokeWidth="1.5"/>
+      <path d="M196 92 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/><path d="M232 74 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/><path d="M266 96 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/>
+      <path d="M300 78 l-52 0" stroke="#5d7078" strokeWidth="1.4"/>
+      <text x="306" y="82" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Tile</text>
+      <path d="M300 108 l-96 0" stroke="#5d7078" strokeWidth="1.4"/>
+      <text x="306" y="112" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Adhesive</text>
+      <path d="M300 138 l-108 0" stroke="#e08a2b" strokeWidth="2"/>
+      <text x="306" y="142" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#c4741f">Tanking</text>
+      <text x="306" y="157" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#c4741f">membrane</text>
+      <path d="M300 186 l-134 0" stroke="#5d7078" strokeWidth="1.4"/>
+      <text x="306" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Substrate</text>
+      <path d="M132 214 L132 286" stroke="#e08a2b" strokeWidth="2.5"/>
+      <path d="M126 214 h12 M126 286 h12" stroke="#e08a2b" strokeWidth="2.5"/>
+      <text x="120" y="254" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#c4741f" textAnchor="end">150mm</text>
+      <text x="24" y="316" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fill="#e8e4dc">Minimum upstand above finished floor</text>
+      <text x="24" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fill="#e8e4dc">Wet room floor fall</text>
+      <text x="376" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e08a2b" textAnchor="end">1:80 min</text>
+      <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">A standard, not a statutory regulation</text>
+      <text x="376" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
     </svg>
     ),
   },
@@ -122,17 +127,40 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     art: (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <rect width="400" height="400" fill="#1f2a30"/>
-      <text x="32" y="46" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e8e4dc">Foundation depth near trees</text>
-      <text x="32" y="68" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fill="#8fa0a8">NHBC Standards, chapter 4.2 — typical range</text>
-      <path d="M60 118 l16 -28 l16 28 z" fill="#46555e"/>
-      <path d="M64 100 l12 -22 l12 22 z" fill="#46555e"/>
-      <rect x="73" y="118" width="6" height="16" fill="#46555e"/>
-      <text x="104" y="112" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#8fa0a8">Inside the zone of influence if the tree is</text>
-      <text x="104" y="128" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#8fa0a8">closer than its own mature height</text>
-      <rect x="150" y="150" width="51" height="26" fill="#46555e"/><text x="211" y="163" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc" dominantBaseline="central">0.9m</text><text x="138" y="157" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8" textAnchor="end" dominantBaseline="central">Low demand,</text><text x="138" y="171" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8" textAnchor="end" dominantBaseline="central">low shrinkage</text><rect x="150" y="216" width="102" height="26" fill="#46555e"/><text x="262" y="229" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc" dominantBaseline="central">1.8m</text><text x="138" y="223" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8" textAnchor="end" dominantBaseline="central">Moderate</text><rect x="150" y="282" width="170" height="26" fill="#e08a2b"/><text x="330" y="295" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc" dominantBaseline="central">3.0m</text><text x="138" y="289" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8" textAnchor="end" dominantBaseline="central">High demand,</text><text x="138" y="303" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8" textAnchor="end" dominantBaseline="central">high shrinkage</text>
-      <text x="32" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#8fa0a8">Site investigation required — never assume</text>
-      <text x="330" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#e08a2b" letterSpacing="1.4" textAnchor="end">PAUL MARTYN</text>
+      <defs>
+        <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#4a9fd4"/><stop offset="1" stopColor="#9fd3ea"/>
+        </linearGradient>
+        <linearGradient id="tsoil" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#5b4530"/><stop offset="1" stopColor="#3a2b1d"/>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="236" fill="url(#tsky)"/>
+      <circle cx="326" cy="58" r="22" fill="#ffe9a8" opacity=".85"/>
+      <ellipse cx="92" cy="70" rx="42" ry="15" fill="#ffffff" opacity=".55"/>
+      <ellipse cx="120" cy="62" rx="28" ry="12" fill="#ffffff" opacity=".45"/>
+      <rect y="228" width="400" height="14" fill="#6ab04a"/>
+      <rect y="242" width="400" height="158" fill="url(#tsoil)"/>
+      <path d="M150 250 Q 90 296 41 301" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 92 326 44 356" stroke="#c9b79a" strokeWidth="6" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 105 353 68 405" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 136 349 124 398" stroke="#c9b79a" strokeWidth="4" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 191 339 225 380" stroke="#c9b79a" strokeWidth="4" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 222 332 280 367" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 225 303 286 313" stroke="#c9b79a" strokeWidth="6" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 215 277 269 267" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/>
+      <rect x="144" y="196" width="13" height="58" fill="#7a5b3a"/>
+      <circle cx="150" cy="168" r="46" fill="#3f8f37"/>
+      <circle cx="118" cy="186" r="30" fill="#4aa33f"/>
+      <circle cx="182" cy="186" r="30" fill="#4aa33f"/>
+      <circle cx="150" cy="140" r="30" fill="#57b449"/>
+      <rect x="286" y="150" width="96" height="78" fill="#efe9df"/>
+      <path d="M280 152 L334 118 L388 152 Z" fill="#b4442f"/>
+      <rect x="304" y="180" width="22" height="24" fill="#8fc4dd"/>
+      <rect x="344" y="180" width="22" height="24" fill="#8fc4dd"/>
+      <rect x="286" y="242" width="96" height="86" fill="#9a9a95"/>
+      <path d="M286 242 h96" stroke="#e08a2b" strokeWidth="3"/>
+      <path d="M272 242 L272 328" stroke="#e08a2b" strokeWidth="2.5"/>
+      <path d="M266 242 h12 M266 328 h12" stroke="#e08a2b" strokeWidth="2.5"/>
+      <text x="260" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#ffd79a" textAnchor="end">0.9m</text>
+      <text x="260" y="308" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#ffd79a" textAnchor="end">to 3.0m</text>
+      <rect y="336" width="400" height="64" fill="#1f2a30" opacity=".92"/>
+      <text x="24" y="360" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Roots drink the clay. Clay shrinks.</text>
+      <text x="24" y="380" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Depth set by species and soil — NHBC ch. 4.2</text>
+      <text x="376" y="380" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
     </svg>
     ),
   },

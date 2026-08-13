@@ -30,6 +30,9 @@ const NEWBUILD = `${IMG}/new-builds`;
 const LISTED = `${IMG}/listed`;
 const PROJMAN = `${IMG}/project-management`;
 const VIDEO = "/sites/paulmartyn/videos";
+
+/** Stamped across gallery slides that are a design visualisation, not built work. */
+const PROPOSED = "Proposed — site photos coming soon";
 export const SHARED = "/sites/paulmartyn/shared";
 
 export const COMPANY = {
@@ -333,9 +336,10 @@ export const SERVICES = {
       gallery: [
         { src: `${COMMERCIAL}/barn-restaurant.jpg`, alt: "Restaurant dining room in a barn with exposed trusses and chandeliers" },
         { src: `${COMMERCIAL}/pub-bar.jpg`, alt: "Traditional pub bar with oak flooring, panelled counter and exposed beams" },
-        { src: `${COMMERCIAL}/taproom.jpg`, alt: "Industrial taproom with exposed ductwork and polished concrete floor" },
-        { src: `${COMMERCIAL}/crittall-dining.jpg`, alt: "Dining area with Crittall-style glazing and oak tables" },
-        { src: `${COMMERCIAL}/taproom-bar.jpg`, alt: "Timber bar counter with stools beneath exposed services" },
+        // Visualisations, not finished work — stamped as such until we have site photos.
+        { src: `${COMMERCIAL}/taproom.jpg`, alt: "Visualisation of an industrial taproom with exposed ductwork and a polished concrete floor", overlay: PROPOSED },
+        { src: `${COMMERCIAL}/crittall-dining.jpg`, alt: "Visualisation of a dining area with Crittall-style glazing and oak tables", overlay: PROPOSED },
+        { src: `${COMMERCIAL}/taproom-bar.jpg`, alt: "Visualisation of a timber bar counter with stools beneath exposed services", overlay: PROPOSED },
         { src: `${COMMERCIAL}/late-bar.jpg`, alt: "Late bar with backlit counter and coloured lighting" },
       ],
     },

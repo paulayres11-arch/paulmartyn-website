@@ -46,8 +46,10 @@ export interface ServiceTab {
   /** Closing line, set as a pull quote at the end of the detail copy. */
   pullQuote?: string;
   /** Recent work, shown in the picture window. A `youtubeId` turns the slide
-   *  into a click-to-play video with `src` as its poster. */
-  gallery?: { src: string; alt: string; youtubeId?: string }[];
+   *  into a click-to-play video with `src` as its poster. An `overlay` stamps
+   *  a label across the foot of the slide — used to mark a visualisation
+   *  rather than a photograph of finished work. */
+  gallery?: { src: string; alt: string; youtubeId?: string; overlay?: string }[];
 }
 
 export interface Testimonial {

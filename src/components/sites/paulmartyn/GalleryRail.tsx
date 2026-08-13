@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
  * if JS fails. Arrows and dots drive the same native scrolling.
  */
 interface GalleryRailProps {
-  images: { src: string; alt: string; youtubeId?: string }[];
+  images: { src: string; alt: string; youtubeId?: string; overlay?: string }[];
   /** Aspect of the window. Ignored when `fill` is set. */
   ratio?: "landscape" | "portrait";
   /** Fill the parent's height instead of using an aspect ratio. */
@@ -153,6 +153,14 @@ export function GalleryRail({
                   </svg>
                 </span>
               </button>
+            ) : null}
+
+            {shot.overlay ? (
+              <p
+                className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgba(1,32,34,0.7)] via-[rgba(1,32,34,0.35)] to-transparent px-5 pb-11 pt-16 text-center text-[clamp(17px,2.1vw,26px)] font-bold uppercase leading-[1.2] tracking-[0.06em] text-white [text-shadow:0_2px_12px_rgba(1,32,34,0.6)]"
+              >
+                {shot.overlay}
+              </p>
             ) : null}
           </div>
         ))}

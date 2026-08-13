@@ -238,3 +238,44 @@ ones that stop email dying — do not leave them until last.
 - [ ] DNSSEC confirmed still off: `dig +short DS paulmartynconstruction.com` (blank)
 - [ ] Nameservers changed at registrar to `felicity.ns.cloudflare.com` + `pat.ns.cloudflare.com`
 - [ ] Test email sent to `Paul@paulmartynconstruction.com` from outside — arrived
+
+---
+
+## Outcome
+
+The cutover ran on 2026-08-12 and completed successfully.
+
+| Check | Result |
+|---|---|
+| Nameservers | Moved to `felicity`/`pat.ns.cloudflare.com` |
+| **Email** | All five Google MX records intact — **verified by a real inbound test message on 2026-08-13**, not just by `dig` |
+| HTTPS | Valid. See the note below — Cloudflare provides the certificate, not Railway |
+| Site | Serving from Railway on `www` |
+| Apex → www | 308, path preserved |
+| Indexing | On for the live host; preview hosts still `noindex` |
+| Old URLs | All nine redirects resolving; the seven template pages 404 as intended |
+| Sitemap | 15 URLs |
+
+### The one thing that did not go to plan
+
+Railway never issued a TLS certificate for the custom domains. DNS was correct
+and Railway served the domain over plain HTTP, but no certificate appeared, and
+for roughly twenty minutes anyone whose resolver had updated got a browser
+security warning.
+
+The fix was to turn the Cloudflare proxy on (orange cloud), which makes
+Cloudflare terminate TLS with its own certificate. **That is what is providing
+HTTPS today.** Consequences worth knowing:
+
+- Turning the proxy off would take HTTPS with it until Railway issues its own
+  certificate. Do not set those clouds back to grey without checking.
+- SSL/TLS mode must stay on `Full`. `Flexible` causes a redirect loop, because
+  Railway redirects HTTP to HTTPS. `Full (strict)` returns 526 while Railway
+  has no valid certificate of its own.
+
+### Still open
+
+- Search Console: submit the sitemap, request indexing on `/` and
+  `/guides/house-extension-costs-surrey`.
+- Keep the Squarespace subscription active for a few weeks — it is the rollback.
+- No DMARC record. SPF was added during the move; DMARC would be the next step.

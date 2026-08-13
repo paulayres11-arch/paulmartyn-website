@@ -154,14 +154,25 @@ export const WHY_US = {
 
 export const SERVICES = {
   heading: "Services",
-  /** Standfirst — also reused on the homepage and About page. */
-  lead: "From barn conversions and listed building restorations to contemporary new builds and commercial fit-outs, we bring the same standard to every site: do it once, do it right.",
+  /**
+   * Client-supplied copy, 2026-08-13, replacing the previous services text.
+   *
+   * `lead` is the standfirst and is reused on the homepage services band, the
+   * About Us page, and as the /services meta description — so it has to stand
+   * alone and stay roughly 150–160 characters' worth of sense at the front.
+   *
+   * The closing paragraph on recommendations and repeat clients is set as the
+   * pull quote rather than a fourth body paragraph, so the page keeps the
+   * gold-ruled closing statement it was designed around.
+   */
+  lead: "From barn conversions and listed building restorations to contemporary new homes and commercial fit-outs, we bring the same level of care, expertise and attention to detail to every project.",
   body: [
-    "No two projects are the same, and that's exactly how we like it. One month we might be carefully restoring a 300-year-old timber frame, working with the conservation and heritage team; the next, we're fitting out a bar to a deadline that can't move. Whatever the job, the approach doesn't change — proper planning, honest pricing, skilled trades we've worked with for years, and a site that's run tidily and safely from day one.",
-    "We take on the projects that need thought as well as graft: awkward sites, older buildings with surprises in the walls, ambitious designs that need someone to work out how they'll actually be built. That's where 16 years of experience earns its keep. We'd rather spend an extra hour planning than an extra week fixing, and our clients tell us it shows in the finish — and in the final bill.",
+    "No two projects are the same. Each brings its own challenges, whether we are restoring a centuries-old timber-framed building in consultation with conservation and heritage teams, delivering a complex residential scheme, or completing a commercial fit-out to a fixed opening date. Whatever the project, our approach remains consistent: careful planning, transparent costs, experienced trades and well-managed sites from start to finish.",
+    "We are particularly experienced in projects that require more than simply following a set of drawings. Older and listed buildings can reveal unforeseen challenges once work begins, while ambitious contemporary designs often require practical construction knowledge to turn architectural ideas into something that can be successfully built. With 16 years of construction experience, we are able to anticipate many of these issues early, work closely with clients and their professional teams, and find practical solutions without compromising the design or quality of the finished project.",
+    "Good construction begins with good preparation. We place considerable emphasis on programming, coordination and getting the details right before work progresses on site. This helps us maintain quality, control costs and minimise unnecessary delays or remedial work.",
   ],
   pullQuote:
-    "Most of our work comes through recommendation, and we think that says more than anything we could write here.",
+    "Ultimately, our reputation has been built on the projects we deliver and the relationships we develop along the way. A significant proportion of our work comes through recommendations and repeat clients, which we believe is one of the strongest measures of the service and standard of workmanship we provide.",
   /**
    * Contact and Pricing pages.
    *

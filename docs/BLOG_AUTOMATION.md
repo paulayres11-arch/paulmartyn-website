@@ -11,13 +11,20 @@ the agent starts each run with no memory of the last one.
 ## 1. What a run does
 
 1. Read this file and `src/components/sites/paulmartyn/blogPosts.tsx`.
-2. Pick the **first topic in §5 that is not marked `[done]`**.
+2. Work out which stream is due. Count the `[done]` topics across both streams
+   in §5: the pattern is **local, local, knowledge, repeating**. Take the
+   **first topic in that stream not marked `[done]`**. If that stream is empty,
+   follow "If a stream is empty" in §5 — never fail a run for want of a topic.
 3. Research it against reputable UK sources (§3).
 4. Write the post (§2) and draw the infographic (§4).
 5. Prepend the new post object to `BLOG_POSTS` — **newest first**.
-6. Mark the topic `[done]` in §5 with the date.
+6. Mark the topic `[done]` in §5 with the date, and top the stream up if §5
+   says to.
 7. `npm run check` must pass. If it does not, fix it; never commit a red build.
-8. Commit and push.
+8. Append one line to `docs/BLOG_RUN_LOG.md` (§9). Every run writes a line,
+   including a run that failed.
+9. Commit and push.
+10. If anything went wrong, follow §9 before you finish.
 
 ## 2. Post format
 
@@ -71,7 +78,9 @@ Rules that matter:
 
 Already published: bat surveys (2026-08-13), bathroom tanking
 (2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
-cost in Cranleigh (2026-08-13).
+cost in Cranleigh (2026-08-13), extending a 1930s semi in Cobham
+(2026-08-13), loft conversions in Weybridge (2026-08-13), party wall
+notice timing (2026-08-13).
 
 **Two local posts, then one knowledge post, repeating.** Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
@@ -107,8 +116,8 @@ Guildford (East Horsley) · Woking (Woking, Knaphill) ·
 Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
 
 - [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
-- [ ] Extending a 1930s semi in Cobham: what to expect
-- [ ] Loft conversions in Weybridge: which roofs work and which do not
+- [done 2026-08-13] Extending a 1930s semi in Cobham: what to expect
+- [done 2026-08-13] Loft conversions in Weybridge: which roofs work and which do not
 - [ ] Does an extension add value in Esher? What the numbers say
 - [ ] Kitchen extensions in Godalming: layout before budget
 - [ ] Listed building work in Farnham: consent, and what it changes
@@ -124,6 +133,43 @@ Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
 - [ ] Barn conversions near Windlesham: the planning route
 - [ ] Extending in East Horsley: the Green Belt question
 - [ ] Bathroom fitting costs in Knaphill and Woking
+
+### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS
+
+These are the posts that earn links and make the blog worth reading. Each one
+must rest on a named, checkable source — an Approved Document, an NHBC chapter,
+a British Standard, an Act, a trade body's guidance.
+
+- [done 2026-08-13] Tiles are not waterproof, and why that matters
+- [done 2026-08-13] The tree in your garden sets your foundation depth
+- [done 2026-08-13] Bat surveys: why timing can cost you a year
+- [done 2026-08-13] The party wall notice that sets your start date
+- [ ] Building control: what a completion certificate is actually for
+- [ ] Part L and why your extension needs more insulation than the house
+- [ ] Trickle vents, condensation and Approved Document F
+- [ ] Structural calculations: what a building control officer looks for
+- [ ] Retention, snagging and what "practical completion" means
+- [ ] Damp: rising, penetrating and condensation are three different problems
+- [ ] Why a steel beam needs a padstone
+- [ ] Underfloor heating: screed depth, response time and floor build-up
+- [ ] Overheating and Approved Document O in a glazed extension
+- [ ] What an SAP assessment is and when you need one
+- [ ] Scaffolding, pavement licences and the neighbour conversation
+- [ ] Fire doors and escape routes in a loft conversion
+
+### If a stream is empty
+
+**Never fail a run for lack of a topic, and never publish a second post on a
+topic already marked `[done]`.** If the stream you are due to write from has no
+unmarked topic left:
+
+1. Write a topic that fits the stream, following every rule in this file, and
+   add it to the list above already marked `[done]` with today's date.
+2. In the same commit, **top the stream back up to at least ten unmarked
+   topics.** Keep them specific and genuinely different from each other.
+
+Do the same top-up whenever a stream drops below **six** unmarked topics, so it
+never runs to empty in the first place.
 
 ## 6. Local SEO — the point of the exercise
 
@@ -183,3 +229,32 @@ does not need them.
 Confirm the post is live at `https://www.paulmartynconstruction.com/blog` after
 pushing. If it is not up after a couple of minutes, say so in the run summary
 rather than pushing again.
+
+## 9. Leaving a trail, and saying when it broke
+
+Nobody watches these runs. A run that quietly does nothing looks exactly like a
+run that never happened, so **every run must leave a record in the repo.**
+
+**Always** append one line to `docs/BLOG_RUN_LOG.md`, in this shape:
+
+```
+| 2026-08-13 | OK      | party-wall-notice-timing | knowledge | live |
+| 2026-08-15 | FAILED  | —                        | local     | npm run check failed: type error in blogPosts.tsx |
+```
+
+Commit that line **even when the run failed**. A failed run should still push
+the log line, as long as the working tree is otherwise clean — that line is the
+only signal Paul gets. Never push a broken site to record a failure: if the
+build is red, revert the post changes, keep the log line, and push that alone.
+
+**On failure, also raise it.** The Gmail connector attached to this routine can
+create drafts but **cannot send mail**, so:
+
+1. Create a Gmail **draft** to `paulayres11@gmail.com`, subject
+   `BLOG AUTOMATION FAILED — <date>`, body saying which topic, which step, and
+   the actual error. It will sit in Drafts, not the inbox.
+2. State the failure plainly at the top of your final run summary, which is
+   what shows at https://claude.ai/code/routines.
+
+Do not retry a failed run more than once. A second identical failure is
+information; four commits of thrash is not.

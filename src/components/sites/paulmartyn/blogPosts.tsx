@@ -16,6 +16,225 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "party-wall-notice-timing",
+    title: "The party wall notice that sets your start date",
+    category: "Planning & surveys",
+    date: "2026-08-13",
+    seoTitle: "Party Wall Notice Periods | When You Must Serve",
+    metaDescription:
+      "Two months, one month, or fourteen days? The Party Wall etc. Act 1996 notice periods that quietly decide when your extension can actually start.",
+    imageAlt:
+      "Illustration of two semi-detached houses sharing a party wall picked out in amber, with a countdown strip beneath it marking two months' notice for work to an existing party wall, one month for excavation, and the neighbour's fourteen days to reply",
+    body: [
+      "The Party Wall etc. Act 1996 is statute, not guidance, and it quietly sets your start date.",
+      "The government's explanatory booklet is clear on the timing: two months' notice for work to an existing party wall or party structure, and one month for a new wall at the line of junction, or for excavation near a neighbour's foundations. Your neighbour then has 14 days to consent in writing. If they object — or simply say nothing — a dispute is deemed to have arisen, and surveyors are appointed.",
+      "A notice is also only valid for a year, so serving one far too early is its own mistake.",
+      "Most delays we see are not the building work. They are a notice served the week the diggers were booked. We put the notice period in the programme at the start.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="pwsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d3e4ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="pwbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c3805c" /><stop offset="1" stopColor="#9d5f42" />
+          </linearGradient>
+          <linearGradient id="pwroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="pwwall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#pwsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Before you can start</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Party Wall etc. Act 1996 — notice periods</text>
+
+        {/* the pair of houses, sharing one wall */}
+        <path d="M40 150 L118 96 L196 150 Z" fill="url(#pwroof)" />
+        <path d="M204 150 L282 96 L360 150 Z" fill="url(#pwroof)" />
+        <rect x="52" y="150" width="144" height="86" fill="url(#pwbrick)" />
+        <rect x="204" y="150" width="144" height="86" fill="url(#pwbrick)" />
+        <path d="M52 164 h144 M52 180 h144 M52 196 h144 M52 212 h144 M52 228 h144" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <path d="M204 164 h144 M204 180 h144 M204 196 h144 M204 212 h144 M204 228 h144" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="74" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="140" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="226" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="292" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="86" y="210" width="24" height="26" fill="#40525a" />
+        <rect x="290" y="210" width="24" height="26" fill="#40525a" />
+
+        {/* the party wall itself */}
+        <rect x="196" y="90" width="8" height="146" fill="url(#pwwall)" />
+        <path d="M200 78 v14" stroke="#e08a2b" strokeWidth="3" strokeLinecap="round" />
+        <circle cx="200" cy="72" r="5" fill="#e08a2b" />
+        <text x="200" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">the party wall</text>
+        <rect x="24" y="236" width="352" height="6" fill="#b9c8ce" />
+
+        {/* countdown strip */}
+        <rect x="24" y="258" width="352" height="30" rx="4" fill="#ffffff" stroke="#c3d0d5" strokeWidth="1.5" />
+        <rect x="24" y="258" width="176" height="30" rx="4" fill="#e08a2b" opacity=".16" />
+        <path d="M200 258 v30 M288 258 v30" stroke="#c3d0d5" strokeWidth="1.5" />
+        <text x="112" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">2 months</text>
+        <text x="112" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">existing party wall</text>
+        <text x="244" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">1 month</text>
+        <text x="244" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">excavation</text>
+        <text x="332" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">14 days</text>
+        <text x="332" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">to reply</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Serve it early, or it moves your start date</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Silence counts as a dispute. A notice lapses after a year.</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GOV.UK Party Wall etc. Act 1996 explanatory booklet</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
+    slug: "loft-conversions-weybridge-roof-types",
+    title: "Loft conversions in Weybridge: which roofs work and which do not",
+    category: "Loft conversions",
+    date: "2026-08-13",
+    seoTitle: "Loft Conversions in Weybridge | Which Roofs Work",
+    metaDescription:
+      "In Weybridge the roof decides your loft conversion. Cut roofs convert easily; trussed rafters do not. How to tell, and the head height to measure first.",
+    imageAlt:
+      "Illustration comparing two roof cross-sections: on the left a traditional cut roof with rafters and purlins leaving the loft space open and a 2.2 metre head height arrow, and on the right a modern W-shaped trussed rafter roof with its braced members blocking the same space",
+    body: [
+      "In Weybridge the roof decides the loft conversion, not the floor plan. Houses built before the 1960s generally have a cut roof — rafters and purlins, with the triangle underneath largely open. Later houses tend to have W-shaped trussed rafters, and as the Planning Portal puts it, the inner members of a truss cannot normally be removed.",
+      "That does not rule a trussed roof out, but it changes the job: new floor joists and collars, usually steel at ridge and floor level, and a structural engineer's design. It is a different budget, and much better known at the start than halfway through.",
+      "Measure before anything else. Building regulations allow 2.2m of head height, though 2.4m is far more comfortable once a new floor and ceiling finish have eaten into it. Take it from the ridge down to the top of the ceiling joist.",
+      "If it is marginal, we would rather tell you before you spend on drawings.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lwsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe2ee" /><stop offset="1" stopColor="#f0f5f7" />
+          </linearGradient>
+          <linearGradient id="lwtile" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7d8f97" /><stop offset="1" stopColor="#5c6d75" />
+          </linearGradient>
+          <linearGradient id="lwtimber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d8bd92" /><stop offset="1" stopColor="#b3966a" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#lwsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">The roof decides</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Weybridge loft conversions — cut roof vs trussed rafters</text>
+
+        {/* left: cut roof, convertible */}
+        <path d="M28 214 L110 108 L192 214 Z" fill="#ffffff" opacity=".72" />
+        <path d="M28 214 L110 108 L192 214" fill="none" stroke="url(#lwtile)" strokeWidth="11" strokeLinejoin="round" />
+        <rect x="56" y="164" width="9" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
+        <rect x="155" y="164" width="9" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
+        <rect x="28" y="214" width="164" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
+        <path d="M110 122 v88" stroke="#7f9aa6" strokeWidth="1.5" strokeDasharray="4 4" />
+        <path d="M110 132 v66" stroke="#e08a2b" strokeWidth="2.5" />
+        <path d="M110 128 l-5 8 h10 z M110 202 l-5 -8 h10 z" fill="#e08a2b" />
+        <text x="118" y="168" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#a8652a">2.2m</text>
+        <circle cx="110" cy="244" r="13" fill="#3f7d54" />
+        <path d="M104 244 l4 5 l8 -10" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="110" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">Cut roof</text>
+        <text x="110" y="292" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#5d7078" textAnchor="middle">pre-1960s — space is open</text>
+
+        {/* right: trussed rafters, blocked */}
+        <path d="M208 214 L290 108 L372 214 Z" fill="#ffffff" opacity=".72" />
+        <path d="M208 214 L290 108 L372 214" fill="none" stroke="url(#lwtile)" strokeWidth="11" strokeLinejoin="round" />
+        <rect x="208" y="214" width="164" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
+        <path d="M290 112 L238 214 M290 112 L342 214 M252 186 L290 214 M328 186 L290 214" stroke="url(#lwtimber)" strokeWidth="8" strokeLinecap="round" />
+        <path d="M290 112 L238 214 M290 112 L342 214 M252 186 L290 214 M328 186 L290 214" stroke="#8f7550" strokeWidth="1" opacity=".6" fill="none" />
+        <circle cx="290" cy="244" r="13" fill="#b04434" />
+        <path d="M284 238 l12 12 M296 238 l-12 12" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+        <text x="290" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">Trussed rafters</text>
+        <text x="290" y="292" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#5d7078" textAnchor="middle">later builds — members in the way</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Measure ridge to ceiling joist first</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">2.2m is the minimum; 2.4m is comfortable after finishes.</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Planning Portal loft conversion guidance</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
+    slug: "extending-1930s-semi-cobham",
+    title: "Extending a 1930s semi in Cobham: what to expect",
+    category: "Extensions",
+    date: "2026-08-13",
+    seoTitle: "Extending a 1930s Semi in Cobham | What to Expect",
+    metaDescription:
+      "How far back can you extend a 1930s semi in Cobham? The 3m and 6m permitted development limits, Elmbridge's Green Belt rules, and the foundations underneath.",
+    imageAlt:
+      "Illustration of a 1930s semi in side elevation with its rear extension drawn in two stages — the first three metres shown as solid brick under permitted development, the next three metres outlined in amber to mark the prior approval zone — with a dimension line beneath",
+    body: [
+      "Cobham has a lot of 1930s semis, and the first question is nearly always how far back you can go. The government's permitted development technical guidance allows a single-storey rear extension on a semi to project 3m beyond the original rear wall, up to 4m high. Between 3m and 6m you can still avoid a full application, but only through the larger home extension prior approval route: neighbours are consulted, and you cannot start until the council decides or 42 days pass.",
+      "Locally that is Elmbridge Borough Council, whose Home Extensions companion guide is worth reading before anything is drawn. Where a Cobham property sits in the Green Belt, Elmbridge also asks for volume, footprint and floor space calculations.",
+      "Then there is the house itself. A 1930s semi usually sits on shallow foundations, so new footings rarely match the old.",
+      "We survey that before quoting, rather than discovering it in a trench.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="cosky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="cobrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="cotile" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#cosky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">How far back can you go?</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">1930s semi, Cobham — single-storey rear extension</text>
+
+        {/* garden */}
+        <rect x="24" y="232" width="352" height="18" fill="#7ba05f" />
+        <rect x="24" y="250" width="352" height="10" fill="#5f8149" />
+
+        {/* the original house */}
+        <path d="M24 128 L86 84 L148 128 Z" fill="url(#cotile)" />
+        <rect x="34" y="128" width="104" height="104" fill="url(#cobrick)" />
+        <path d="M34 146 h104 M34 164 h104 M34 182 h104 M34 200 h104 M34 218 h104" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="46" y="140" width="30" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="96" y="140" width="30" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="102" y="92" width="14" height="30" fill="#8a5138" />
+        <text x="86" y="222" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#f2e2d8" textAnchor="middle">original house</text>
+
+        {/* original rear wall datum */}
+        <path d="M138 76 v170" stroke="#1f2a30" strokeWidth="2" strokeDasharray="5 4" />
+        <text x="138" y="70" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">original rear wall</text>
+
+        {/* first 3m — permitted development */}
+        <rect x="138" y="170" width="90" height="62" fill="url(#cobrick)" />
+        <path d="M138 186 h90 M138 202 h90 M138 218 h90" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="134" y="164" width="98" height="8" fill="#6a4034" />
+        <rect x="160" y="186" width="46" height="34" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+
+        {/* 3m to 6m — prior approval */}
+        <rect x="228" y="170" width="90" height="62" fill="#e08a2b" opacity=".14" />
+        <rect x="228" y="170" width="90" height="62" fill="none" stroke="#e08a2b" strokeWidth="2.5" strokeDasharray="7 5" />
+        <text x="273" y="196" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">prior</text>
+        <text x="273" y="210" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">approval</text>
+
+        {/* dimensions */}
+        <path d="M138 272 h90 M228 272 h90" stroke="#1f2a30" strokeWidth="1.5" />
+        <path d="M138 266 v12 M228 266 v12 M318 266 v12" stroke="#1f2a30" strokeWidth="1.5" />
+        <text x="183" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">3m</text>
+        <text x="273" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#a8652a" textAnchor="middle">to 6m</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">3m as of right. To 6m, neighbours get a say.</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">No start until Elmbridge decides, or 42 days pass.</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GOV.UK householder permitted development guidance</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "bathroom-fitting-cost-cranleigh",
     title: "What a bathroom fitting costs in Cranleigh, and what changes the price",
     category: "Bathrooms",

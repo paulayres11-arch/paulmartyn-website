@@ -446,22 +446,36 @@ export const TESTIMONIALS = {
 export const PROCESS = {
   heading: "Our process",
   image: `${IMG}/process-barn-stair.jpg`,
+  /**
+   * Paul Martyn's actual four-stage estimating ladder, taken verbatim from
+   * STAGES in the Build Estimate app (build-estimate/src/quote.js) so the
+   * website and the estimates a client receives describe the same process in
+   * the same words. If that list changes, change this to match.
+   *
+   * The `charging` labels are the point of the sequence, not decoration: two
+   * stages are free, and a client can get a measured estimate before spending
+   * anything. Do not drop them.
+   */
   steps: [
     {
-      title: "Talk it through",
-      body: "We visit, walk the site or plans with you, and listen to what you're trying to achieve.",
+      title: "Feasibility Estimate",
+      charging: "Complimentary",
+      body: "A simple per-m² budget from the initial brief; the first ballpark figure.",
     },
     {
-      title: "Plan and price",
-      body: "A detailed, itemised cost plan so you know exactly what the project involves before anyone lifts a tool.",
+      title: "Outline Estimate",
+      charging: "Complimentary",
+      body: "A measured, category-level estimate from current drawings; more accurate, still re-measurable.",
     },
     {
-      title: "Build",
-      body: "A managed programme, trusted trades, weekly updates, and a tidy site.",
+      title: "Detailed Design & Cost Plan",
+      charging: "Paid design stage",
+      body: "Turns every specification into a firm, line-by-line price: kitchen and bathroom specifications, flooring and wall finishes, mechanical and electrical design, structural fabrication drawings and quotes, drainage design, and a firmed line-by-line cost plan.",
     },
     {
-      title: "Handover",
-      body: "Snagged, finished and standing behind our work.",
+      title: "Fixed Price & Contract",
+      charging: "On signing",
+      body: "A signed, fixed-price contract with an agreed programme and start date.",
     },
   ] satisfies ProcessStep[],
 };

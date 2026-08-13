@@ -34,6 +34,11 @@ export function CommitmentSection() {
                   <h4 className="text-[17px] font-medium leading-[22px] text-pm-ink">
                     {step.title}
                   </h4>
+                  {step.charging ? (
+                    <p className="mt-1 text-[13.5px] font-medium uppercase tracking-[1px] text-pm-gold">
+                      {step.charging}
+                    </p>
+                  ) : null}
                   <p className="mt-2 text-[15px] font-normal leading-[22.5px] text-pm-slate">
                     {step.body}
                   </p>

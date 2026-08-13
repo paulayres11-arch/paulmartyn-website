@@ -58,6 +58,12 @@ export interface Testimonial {
 export interface ProcessStep {
   title: string;
   body: string;
+  /**
+   * What the stage costs the client — "Complimentary", "Paid design stage",
+   * "On signing". Rendered as a small label under the title. Optional so a
+   * stage that has no charging position can simply omit it.
+   */
+  charging?: string;
 }
 
 export type ReviewSource = "google" | "checkatrade";

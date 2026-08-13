@@ -20,10 +20,14 @@ import { CheckatradeLogo } from "./shared/CheckatradeLogo";
  * The section-level notice is derived from the data, so it disappears on its
  * own once every sample has been replaced with a real review.
  */
+/** Milliseconds between slides. Matches GalleryRail. */
+const AUTOPLAY_MS = 5000;
+
 export function ReviewsSlider() {
   const railRef = useRef<HTMLDivElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
+  const [paused, setPaused] = useState(false);
 
   const sync = useCallback(() => {
     const el = railRef.current;
@@ -44,13 +48,42 @@ export function ReviewsSlider() {
     };
   }, [sync]);
 
-  const step = (dir: 1 | -1) => {
+  const step = useCallback((dir: 1 | -1) => {
     const el = railRef.current;
     if (!el) return;
     const card = el.querySelector<HTMLElement>("[data-review-card]");
     const amount = card ? card.offsetWidth + 25 : el.clientWidth;
     el.scrollBy({ left: dir * amount, behavior: "smooth" });
-  };
+  }, []);
+
+  /**
+   * Advance on its own, matching the galleries and the hero.
+   *
+   * Steps one card at a time and wraps at the end. Pauses on hover and on
+   * focus so it cannot yank a review out from under someone mid-sentence —
+   * these are paragraphs of text, not photographs, so an unstoppable carousel
+   * is genuinely annoying here. Honours prefers-reduced-motion, and does
+   * nothing when every card already fits on screen.
+   */
+  useEffect(() => {
+    if (paused || REVIEWS.items.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const id = window.setInterval(() => {
+      const el = railRef.current;
+      if (!el) return;
+      // Nothing to scroll — all cards visible at this width.
+      if (el.scrollWidth <= el.clientWidth + 2) return;
+
+      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 2) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        step(1);
+      }
+    }, AUTOPLAY_MS);
+
+    return () => window.clearInterval(id);
+  }, [paused, step]);
 
   return (
     <section id="reviews" className="scroll-mt-[80px] bg-pm-cream py-[10vh]">
@@ -69,7 +102,14 @@ export function ReviewsSlider() {
           </p>
         ) : null}
 
-        <div className="relative mt-10">
+        <div
+          className="relative mt-10"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          onFocusCapture={() => setPaused(true)}
+          onBlurCapture={() => setPaused(false)}
+          onTouchStart={() => setPaused(true)}
+        >
           <div
             ref={railRef}
             className="no-scrollbar flex snap-x snap-mandatory gap-[20px] overflow-x-auto scroll-smooth"

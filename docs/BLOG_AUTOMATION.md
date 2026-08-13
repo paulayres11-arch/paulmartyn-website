@@ -73,54 +73,57 @@ Already published: bat surveys (2026-08-13), bathroom tanking
 (2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
 cost in Cranleigh (2026-08-13).
 
-**Alternate the two streams below**, starting with LOCAL. Local posts are what
+**Two local posts, then one knowledge post, repeating.** Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
-worth linking to and coming back to. A blog of only local posts reads as spam;
-a blog of only knowledge posts never ranks for "bathroom fitting Cranleigh".
+worth linking to. A blog of only local posts reads as spam; a blog of only
+knowledge posts never ranks for "bathroom fitting Cranleigh".
 
 Mark `[done YYYY-MM-DD]` when published. Add more when a stream runs low.
 
-### Stream A — local (service + place)
+### Stream A — local (service + place) — TWO OUT OF EVERY THREE POSTS
 
-The target is simple: if someone searches **"bathroom fitting Cranleigh"** or
-**"extension Cobham"**, a Paul Martyn post should be there. Build up several
-posts per town over time, each answering a genuine question rather than
-repeating the same copy with the place name swapped — Google spots that, and
-so do readers.
+**Weighting: two local posts, then one knowledge post, repeating.** The local
+posts are what bring work in. Knowledge posts stop the blog reading as spam and
+give people a reason to link to it, but they are the minority.
+
+The working areas, taken from `AREAS` in
+`src/components/sites/paulmartyn/content.ts` — keep the two lists in step:
+
+> Cranleigh · Ewhurst · Oxshott · Cobham · Weybridge · Esher · Haslemere ·
+> Woking · Knaphill · Godalming · Walton-on-Thames · Farnham · Virginia Water ·
+> Sunningdale · Windlesham · East Horsley · Claygate
+
+Work through the towns, varying the service so the blog builds coverage across
+both rather than ten posts about extensions. Each post must answer a genuine
+question and carry real local detail — the council, the housing stock, the
+ground, a conservation area. **Never the same post with the place name
+swapped**: that is a doorway page, Google is good at spotting it, and it can
+drag the whole site down.
+
+Councils, so the detail is right:
+Waverley (Cranleigh, Ewhurst, Godalming, Farnham, Haslemere) ·
+Elmbridge (Cobham, Esher, Weybridge, Walton-on-Thames, Oxshott, Claygate) ·
+Guildford (East Horsley) · Woking (Woking, Knaphill) ·
+Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
 
 - [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
 - [ ] Extending a 1930s semi in Cobham: what to expect
-- [ ] Does an extension add value in Cobham? What the numbers say
-- [ ] Loft conversions in Guildford: which roofs work and which do not
-- [ ] Listed building work in Godalming: consent, and what it changes
-- [ ] Kitchen extensions in Cranleigh: layout before budget
-- [ ] Building on clay in the Surrey Hills: what it means for your footings
+- [ ] Loft conversions in Weybridge: which roofs work and which do not
+- [ ] Does an extension add value in Esher? What the numbers say
+- [ ] Kitchen extensions in Godalming: layout before budget
+- [ ] Listed building work in Farnham: consent, and what it changes
+- [ ] Building on clay in Haslemere: what it means for your footings
+- [ ] Wet rooms in Ewhurst: what an older cottage needs
+- [ ] New builds around Woking: plot to handover, realistically
 - [ ] Conservation areas in Waverley: what you can and cannot do
-- [ ] Wet rooms in Ewhurst and Cranleigh: what an old cottage needs
-- [ ] New builds near Guildford: plot to handover, realistically
-
-### Stream B — knowledge and new technology
-
-Genuinely interesting or genuinely useful. New knowledge, not filler.
-
-- [ ] Air source heat pumps: what they actually need from the building fabric
-- [ ] Insulation choices and what Part L now asks for
-- [ ] What building control actually signs off, and when
-- [ ] Permitted development: what you can build without planning permission
-- [ ] Party wall agreements: when you need one and what it costs
-- [ ] AI and machine control in construction: what is real on site today
-- [ ] New materials worth knowing about: low-carbon concrete, hemp, ICF
-- [ ] Structural warranties explained: what is and is not covered
-- [ ] Timber vs steel for structural openings
-- [ ] Damp: rising, penetrating and condensation are not the same thing
-- [ ] Snagging: what to look for at handover
-- [ ] Lead times: the items that actually hold up a build
-- [ ] MVHR and airtightness: why new homes feel different
-- [ ] Solar and battery storage on a retrofit: what is worth it
-- [ ] Extend or move? The stamp duty maths
-- [ ] Material price trends and what is driving them
-- [ ] Planning reform: what is changing for householders
-- [ ] EPC rules and what they mean for older Surrey homes
+- [ ] Garden rooms and outbuildings in Oxshott: permitted development limits
+- [ ] Renovating a period house in Virginia Water: where the money goes
+- [ ] Extensions in Walton-on-Thames: access, parking and the practical stuff
+- [ ] Bathrooms in Claygate: what a full refit involves
+- [ ] Basements and lower ground floors in Sunningdale: is it worth it
+- [ ] Barn conversions near Windlesham: the planning route
+- [ ] Extending in East Horsley: the Green Belt question
+- [ ] Bathroom fitting costs in Knaphill and Woking
 
 ## 6. Local SEO — the point of the exercise
 
@@ -143,8 +146,10 @@ For every LOCAL post:
 - Reference a real price band or timescale where you can, with the
   "site-specific assessment" caveat.
 
-Towns to work through: **Cranleigh, Cobham, Guildford, Godalming, Ewhurst,
-Woking, Esher, Farnham, Haslemere.**
+Towns to work through: the `AREAS` list in `content.ts` — currently Cranleigh,
+Ewhurst, Oxshott, Cobham, Weybridge, Esher, Haslemere, Woking, Knaphill,
+Godalming, Walton-on-Thames, Farnham, Virginia Water, Sunningdale, Windlesham,
+East Horsley and Claygate. If that list changes on the site, follow it.
 
 Every post links to `/contact` (the card renders this automatically).
 

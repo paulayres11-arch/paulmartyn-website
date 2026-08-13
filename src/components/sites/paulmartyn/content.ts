@@ -202,6 +202,7 @@ export const SERVICES = {
         { src: `${RENO}/barn-frame-pendants.jpg`, alt: "Stairwell of a barn conversion, looking down past the original oak frame to a cluster of wire pendant lights and a slatted timber wall" },
         { src: `${RENO}/kitchen-island-rooflight.jpg`, alt: "Open-plan kitchen with a slot rooflight over a quartz-topped island, dark green walls and shaker cabinetry" },
         { src: `${RENO}/fitted-wardrobes-green.jpg`, alt: "Wall of bespoke fitted wardrobes in sage green with slim brass handles, built into a bedroom recess" },
+        { src: `${RENO}/rooflight-hallway-herringbone.jpg`, alt: "Hallway between navy cabinetry, lit by a flush rooflight, with herringbone oak flooring and a full-height window onto the terrace" },
       ],
     },
     {

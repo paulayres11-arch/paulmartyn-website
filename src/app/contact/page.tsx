@@ -111,8 +111,12 @@ export default function ContactPage() {
         </div>
 
         <div className="mx-auto mt-14 max-w-[2000px] px-[3%]">
+          {/* Aspect-ratio box rather than a fixed-height band, so the whole
+              photograph shows. Centred and capped in width because this column
+              runs the full page and a portrait image at that width would be
+              enormous. */}
           <div
-            className="mt-[25px] h-[280px] bg-cover bg-center"
+            className="mx-auto mt-[25px] aspect-[1206/1565] w-full max-w-[520px] bg-cover bg-center"
             style={{ backgroundImage: `url(${SERVICES.image})` }}
             role="img"
             aria-label="Newly built oak-framed cart lodge with clay tiled roof, dormer and painted timber garage doors"

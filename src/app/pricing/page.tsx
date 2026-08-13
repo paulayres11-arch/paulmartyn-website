@@ -30,8 +30,13 @@ export default function PricingPage() {
               </p>
             ))}
 
+            {/* Sized to the photograph's own aspect ratio rather than dropped
+                into a fixed-height band, so the whole building is visible.
+                A fixed band plus bg-cover cropped this to a strip through the
+                middle of the garage doors. max-w keeps a portrait photo from
+                dominating the column. */}
             <div
-              className="mt-10 h-[240px] bg-cover bg-center sm:h-[320px]"
+              className="mt-10 aspect-[1206/1565] w-full max-w-[460px] bg-cover bg-center"
               style={{ backgroundImage: `url(${SERVICES.image})` }}
               role="img"
               aria-label="Newly built oak-framed cart lodge with clay tiled roof, dormer and painted timber garage doors"

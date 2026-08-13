@@ -42,7 +42,7 @@ export function PricingAccordion() {
                     : "bg-white text-pm-ink hover:bg-pm-cream",
                 )}
               >
-                <span className="text-[15px] font-normal leading-[19px]">
+                <span className="text-[15px] font-bold leading-[19px]">
                   {band.label}
                 </span>
 

@@ -864,6 +864,8 @@ export const PRICING = {
     href: undefined as string | undefined,
     fallbackNote: "Sample quote PDF to be added — get in touch and we'll send one over.",
   },
+  /** Heading over the price-band accordion, which previously had none. */
+  bandsHeading: "Cost examples",
   bands: [
     {
       label: "Residential renovations & extensions",

@@ -134,6 +134,12 @@ export default function PricingPage() {
           </div>
 
           <div className="lg:w-[58%]">
+            {/* The accordion sat unlabelled next to "See an example quote",
+                so it read as a continuation of it rather than its own thing. */}
+            <h2 className="t-h3 mb-7 font-medium text-pm-ink">
+              {PRICING.bandsHeading}
+            </h2>
+
             <PricingAccordion />
           </div>
         </div>

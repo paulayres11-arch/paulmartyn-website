@@ -203,6 +203,7 @@ export const SERVICES = {
         { src: `${RENO}/kitchen-island-rooflight.jpg`, alt: "Open-plan kitchen with a slot rooflight over a quartz-topped island, dark green walls and shaker cabinetry" },
         { src: `${RENO}/fitted-wardrobes-green.jpg`, alt: "Wall of bespoke fitted wardrobes in sage green with slim brass handles, built into a bedroom recess" },
         { src: `${RENO}/rooflight-hallway-herringbone.jpg`, alt: "Hallway between navy cabinetry, lit by a flush rooflight, with herringbone oak flooring and a full-height window onto the terrace" },
+        { src: `${RENO}/crittall-doors-herringbone.jpg`, alt: "Black Crittall-style internal glazed doors set into a stud opening, opening from a herringbone oak hallway into the kitchen" },
       ],
     },
     {

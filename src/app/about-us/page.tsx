@@ -8,7 +8,7 @@ import {
 } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
-  title: "About Us | Paul Martyn",
+  title: "About Paul Martyn | Family-Run Builders, Surrey Hills",
   description: INTRO.body[0],
   alternates: { canonical: "/about-us" },
 };

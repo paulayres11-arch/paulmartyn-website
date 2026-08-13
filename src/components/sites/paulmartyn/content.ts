@@ -193,6 +193,7 @@ export const SERVICES = {
     {
       id: "service-renovations",
       label: "Renovations",
+      seoTitle: "House Extensions in Surrey | Renovations | Paul Martyn",
       heading: "Residential renovations & extensions",
       body: "Whole-house renovations, extensions and remodelling — opening up period properties or bringing tired homes back to life, with the structural work, finishes and detail handled under one roof.",
       detail: [
@@ -239,6 +240,7 @@ export const SERVICES = {
     {
       id: "service-new-builds",
       label: "New Builds",
+      seoTitle: "New Build Homes in Surrey | Paul Martyn Construction",
       heading: "New builds",
       body: "Architect-designed new homes delivered from groundworks to handover, with tight cost control and a build programme you can actually rely on.",
       detail: [
@@ -258,6 +260,7 @@ export const SERVICES = {
     {
       id: "service-listed",
       label: "Listed Buildings",
+      seoTitle: "Listed Building Builders Surrey | Heritage Restoration",
       heading: "Listed buildings & heritage work",
       body: "Sensitive restoration and alteration of listed and period properties, working with conservation officers and specialist trades to protect what matters while making these buildings work for modern life.",
       detail: [
@@ -287,6 +290,7 @@ export const SERVICES = {
     {
       id: "service-commercial",
       label: "Commercial",
+      seoTitle: "Commercial Fit-Outs in Surrey | Bars, Pubs & Hotels",
       heading: "Commercial, bars & hotels",
       body: "Fit-outs and refurbishments for bars, hotels and commercial premises — delivered around trading hours where needed, and built to take the wear.",
       // `**bold**` is rendered by <RichText> in ServiceDetail.
@@ -317,6 +321,7 @@ export const SERVICES = {
     {
       id: "service-bathrooms",
       label: "Bathrooms",
+      seoTitle: "Bathroom Fitting in Surrey | Wet Rooms & Tanking",
       heading: "Bathrooms",
       body: "Full bathroom installations and refurbishments — from family bathrooms and en-suites to wet rooms. First and second fix plumbing, tiling, waterproofing and finishes handled by the same team, so the detail lines up.",
       linkLabel: "Read more >>",
@@ -355,6 +360,7 @@ export const SERVICES = {
     {
       id: "service-staircases",
       label: "Staircases",
+      seoTitle: "Bespoke Staircases in Surrey | Oak & Cut String",
       heading: "Staircases",
       body: "New and replacement staircases, from straight flights to cut-string and winder designs. Made and fitted to suit the house, with the structural work, joinery and finishes coordinated around the rest of the build.",
       linkLabel: "Read more >>",
@@ -379,6 +385,7 @@ export const SERVICES = {
     {
       id: "service-kitchens",
       label: "Kitchens",
+      seoTitle: "Kitchen Fitting & Extensions in Surrey | Paul Martyn",
       heading: "Kitchens",
       body: "Kitchen installations and full refits — including knocking rooms together to open up the space. Structural work, units, worktops, plumbing, electrics and finishes handled by one team, so the detail lines up.",
       linkLabel: "Read more >>",
@@ -406,6 +413,7 @@ export const SERVICES = {
     {
       id: "service-project-management",
       label: "Project Management",
+      seoTitle: "Construction Project Management in Surrey",
       heading: "Project management",
       body: "High-level project management is what sets us apart. We plan, procure, programme and coordinate every trade on site, keeping you informed and keeping the job to budget. That covers the parts most people don't think about until they bite — structural and building control sign-offs, long lead-time items ordered early, deliveries timed so materials aren't standing out in the weather, and a programme that stops trades working on top of one another. You deal with one team from the first site visit through to handover, so you always know what's happening this week and what's coming next.",
       linkLabel: "Read more >>",

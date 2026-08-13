@@ -6,7 +6,7 @@ import { SERVICES } from "@/components/sites/paulmartyn/content";
 const service = SERVICES.tabs[0];
 
 export const metadata: Metadata = {
-  title: `${service.heading} | Paul Martyn`,
+  title: service.seoTitle ?? `${service.heading} | Paul Martyn`,
   description: service.body,
   alternates: { canonical: "/services/renovations-extensions" },
 };

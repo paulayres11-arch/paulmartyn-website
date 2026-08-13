@@ -3,7 +3,7 @@ import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { PROCESS } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
-  title: "Our Process | Paul Martyn",
+  title: "Our Build Process | Estimate to Fixed Price | Surrey",
   description:
     "How a Paul Martyn project runs, from first conversation through to handover.",
   alternates: { canonical: "/process" },

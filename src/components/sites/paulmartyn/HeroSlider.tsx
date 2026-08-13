@@ -50,9 +50,11 @@ export function HeroSlider() {
           pt-[125px] below sm clears the 107px header that overlays this band —
           without it the heading runs through the wordmark and burger. */}
       <div className="relative mx-auto flex min-h-[600px] max-w-[2000px] flex-col justify-end px-[3%] pb-[56px] pt-[125px] sm:h-full sm:min-h-0 sm:pb-[89px] sm:pt-0">
-        <h2 className="t-hero mb-[0.3em] max-w-[900px] pb-[0.12em] font-medium text-white">
+        {/* The page h1. Styling is entirely in the classes, so this is a
+            semantic change only — it looks exactly as it did. */}
+        <h1 className="t-hero mb-[0.3em] max-w-[900px] pb-[0.12em] font-medium text-white">
           {HERO.heading}
-        </h2>
+        </h1>
 
         <p className="mb-[38px] max-w-[640px] text-[17px] font-light leading-[26px] text-white/90">
           {HERO.subheading}

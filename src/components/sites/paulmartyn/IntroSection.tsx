@@ -20,11 +20,13 @@ export function IntroSection() {
     <section className="bg-white pt-[10vh]">
       <div className="mx-auto flex max-w-[2000px] flex-col gap-12 pl-[9.3%] pr-[6.8%] md:flex-row md:items-start md:justify-between md:gap-0">
         <div className="md:w-[45.5%]">
-          <h1 className="t-eyebrow mb-[20px] text-pm-ink">{INTRO.eyebrow}</h1>
+          {/* A label, not a heading — it was an h1, which made "ABOUT US"
+              the homepage's main heading as far as Google was concerned. */}
+          <p className="t-eyebrow mb-[20px] text-pm-ink">{INTRO.eyebrow}</p>
 
-          <h3 className="t-h3 mb-[1em] font-medium text-pm-ink">
+          <h2 className="t-h3 mb-[1em] font-medium text-pm-ink">
             {INTRO.heading}
-          </h3>
+          </h2>
 
           {INTRO.body.map((paragraph, i) => (
             <p

@@ -27,6 +27,12 @@ export interface BoxLink {
 }
 
 export interface ServiceTab {
+  /**
+   * Title tag for this service's page. Deliberately separate from `heading`:
+   * the heading is what a visitor reads, the seoTitle is what Google shows in
+   * results, and they want different things. ~55-60 chars.
+   */
+  seoTitle?: string;
   id: string;
   label: string;
   heading: string;

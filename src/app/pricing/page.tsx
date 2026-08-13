@@ -8,7 +8,7 @@ import {
 } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
-  title: "Pricing | Paul Martyn",
+  title: "Extension Cost Calculator | Building Prices in Surrey",
   description: PRICING.intro[0],
   alternates: { canonical: "/pricing" },
 };

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
    * apex and www versions of each page.
    */
   metadataBase: new URL(SITE_URL),
-  title: "Paul Martyn | Builders in the Surrey Hills",
+  title: "Surrey Builders | Extensions & Renovations | Paul Martyn",
   description:
     "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
   alternates: { canonical: "/" },

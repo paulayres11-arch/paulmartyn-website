@@ -14,7 +14,7 @@ import {
 } from "@/components/sites/paulmartyn/shared/icons";
 
 export const metadata: Metadata = {
-  title: "Contact | Paul Martyn",
+  title: "Contact Paul Martyn | Builders in Cranleigh, Surrey",
   description: CONTACT_CTA.body,
   alternates: { canonical: "/contact" },
 };

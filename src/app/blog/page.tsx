@@ -5,7 +5,7 @@ import { BLOG_POSTS } from "@/components/sites/paulmartyn/blogPosts";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Building advice & news | Paul Martyn",
+  title: "Building Advice for Surrey Homeowners | Paul Martyn",
   description:
     "Plain-English answers to the questions Surrey homeowners actually ask — planning, surveys, foundations, bathrooms, building control and costs.",
   alternates: { canonical: "/blog" },

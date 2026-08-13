@@ -168,17 +168,18 @@ Every post links to `/contact` (the card renders this automatically).
 
 ## 8. Deploying
 
-**`git push` does NOT deploy this site.** The Railway service has no GitHub
-integration; it deploys only via `railway up` from a machine holding Railway
-credentials.
+**A push to `master` publishes the post.** Since 2026-08-13 the Railway service
+`paulmartyn-website` is connected to this GitHub repo and auto-deploys from
+`master`. A deploy takes roughly 40-60 seconds from push to live.
 
-That means a cloud agent can commit a post but **cannot publish it**. For the
-schedule to reach the live site, one of these must be true:
+So the agent's job ends at the push — there is no separate publish step. Before
+pushing, run `npm run check`; never push a red build, because the deploy is
+automatic and a broken commit reaches the live site.
 
-1. **Connect the Railway service to this GitHub repo** so a push to `master`
-   auto-deploys. This is the fix that makes the automation actually
-   autonomous, and it removes a long-standing trap for everyone else too.
-2. Or someone runs `railway up --service paulmartyn-website` after each
-   commit, which is no longer automation.
+`railway up --service paulmartyn-website` still works as a manual fallback from
+a machine holding Railway credentials, but a cloud agent will not have those and
+does not need them.
 
-Until option 1 is done, the agent's work lands in the repo and waits.
+Confirm the post is live at `https://www.paulmartynconstruction.com/blog` after
+pushing. If it is not up after a couple of minutes, say so in the run summary
+rather than pushing again.

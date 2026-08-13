@@ -251,6 +251,9 @@ export const SERVICES = {
         { src: `${RENO}/fitted-wardrobes-green.jpg`, alt: "Wall of bespoke fitted wardrobes in sage green with slim brass handles, built into a bedroom recess" },
         { src: `${RENO}/rooflight-hallway-herringbone.jpg`, alt: "Hallway between navy cabinetry, lit by a flush rooflight, with herringbone oak flooring and a full-height window onto the terrace" },
         { src: `${RENO}/crittall-doors-herringbone.jpg`, alt: "Black Crittall-style internal glazed doors set into a stud opening, opening from a herringbone oak hallway into the kitchen" },
+        { src: `${RENO}/glass-floor-wine-cellar.jpg`, alt: "Glazed floor hatch set flush into stone tiling, looking down into a brick-lined wine cellar with racking and lighting below" },
+        { src: `${RENO}/cellar-hatch-open.jpg`, alt: "Powered floor hatch open on its ram, showing the ladder down into a new cellar formed beneath the ground floor" },
+        { src: `${RENO}/aerial-reroof-extension-solar.jpg`, alt: "Aerial view of a brick house extension with a new clay tiled roof, solar panels and full-height sliding doors onto a fresh terrace" },
         /**
          * Lazell Gardens — Paul Martyn's own project. The file carries C2PA
          * metadata marking it as AI-generated because it was retouched through
@@ -341,6 +344,7 @@ export const SERVICES = {
         { src: `${COMMERCIAL}/crittall-dining.jpg`, alt: "Visualisation of a dining area with Crittall-style glazing and oak tables", overlay: PROPOSED },
         { src: `${COMMERCIAL}/taproom-bar.jpg`, alt: "Visualisation of a timber bar counter with stools beneath exposed services", overlay: PROPOSED },
         { src: `${COMMERCIAL}/late-bar.jpg`, alt: "Late bar with backlit counter and coloured lighting" },
+        { src: `${COMMERCIAL}/club-lounge-booths.jpg`, alt: "Late-night lounge fitted out with banquette booths, low tables and backlit ice troughs, under a patterned ceiling and colour-changing lighting" },
       ],
     },
     {

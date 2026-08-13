@@ -813,13 +813,37 @@ export const VIDEOS = {
  * work is charged, guaranteed or scheduled without confirmation.
  */
 export const PRICING = {
-  title: "Clear, itemised pricing",
+  title: "Fixed-price construction",
+  /**
+   * Client-supplied copy, 2026-08-13.
+   *
+   * This replaced an open-book position — "you pay trades directly at cost, no
+   * hidden margins" — which is the opposite commercial model to a fixed price
+   * and could not sit on the same page. If open-book language reappears
+   * anywhere, it contradicts this.
+   */
   intro: [
-    "We run an open-book approach: you see where every pound goes, and you pay trades directly at cost. No hidden margins buried in the numbers.",
-    "Every project is different, and final costs depend on design, specification, access and what we find in the existing structure. So rather than a headline figure, we produce a detailed, itemised cost plan before anyone lifts a tool — you know exactly what is included, and what isn't.",
+    "We work on a fixed-price basis. Before work begins, you receive a detailed quotation covering the full scope of your build, and that price is agreed in advance. The figure we quote forms the contract; any alterations or additions along the way are client-led.",
+  ],
+  sections: [
+    {
+      heading: "How the pricing is set",
+      body: [
+        "Once we've reviewed your plans and specification, we prepare a fixed-price quotation covering every element of the work. If anything is changed or added during the build, we agree the cost of that variation with you in writing before carrying it out, so the running total is always clear.",
+      ],
+    },
+    {
+      heading: "Stage payments",
+      body: [
+        "Payments are structured around the progress of the build. We issue interim certificates every two to three weeks to keep payments moving in step with the work.",
+        "At each point, we carry out a standard evaluation of the work completed to date — an assessment of what has been built and finished on site. We then invoice against that progress, so each payment reflects the work actually completed at that stage of the build.",
+        "This keeps the process consistent throughout: work is completed, the work is evaluated, an invoice is issued against that progress, and the build moves on.",
+      ],
+    },
   ],
   included: {
-    heading: "What a cost plan covers",
+    /* Was "What a cost plan covers" — renamed to match the fixed-price copy. */
+    heading: "What the quotation covers",
     items: [
       "Full construction works, itemised trade by trade",
       "Plumbing, electrics and first/second fix",

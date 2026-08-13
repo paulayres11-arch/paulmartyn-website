@@ -30,21 +30,40 @@ export default function PricingPage() {
               </p>
             ))}
 
-            {/* Sized to the photograph's own aspect ratio rather than dropped
-                into a fixed-height band, so the whole building is visible.
-                A fixed band plus bg-cover cropped this to a strip through the
-                middle of the garage doors. max-w keeps a portrait photo from
-                dominating the column. */}
+            {PRICING.sections.map((section) => (
+              <div key={section.heading} className="mt-12 max-w-[620px]">
+                <h2 className="text-[21px] font-medium leading-[26px] text-pm-ink">
+                  {section.heading}
+                </h2>
+
+                {section.body.map((paragraph, i) => (
+                  <p
+                    key={i}
+                    className="mt-4 text-[17px] font-normal leading-[27px] text-pm-slate"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
+
+          </div>
+
+          {/* Photo and checklist share the right column so the copy on the
+              left has something beside it the whole way down, rather than the
+              text running out and the photo sitting alone underneath. */}
+          <div className="lg:w-1/2">
+            {/* Aspect-ratio box, not a fixed-height band: a band with bg-cover
+                cropped this portrait photo to a strip through the middle of
+                the garage doors. */}
             <div
-              className="mt-10 aspect-[1206/1565] w-full max-w-[460px] bg-cover bg-center"
+              className="aspect-[1206/1565] w-full max-w-[460px] bg-cover bg-center"
               style={{ backgroundImage: `url(${SERVICES.image})` }}
               role="img"
               aria-label="Newly built oak-framed cart lodge with clay tiled roof, dormer and painted timber garage doors"
             />
-          </div>
 
-          <div className="lg:w-1/2">
-            <h2 className="text-[26px] font-medium leading-[1.15] text-pm-ink">
+            <h2 className="mt-12 text-[26px] font-medium leading-[1.15] text-pm-ink">
               {PRICING.included.heading}
             </h2>
 

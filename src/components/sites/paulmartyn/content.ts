@@ -45,7 +45,14 @@ export const CONTACT = {
   mobileHref: "tel:+447894336553",
   email: "Paul@paulmartynconstruction.com",
   emailHref: "mailto:Paul@paulmartynconstruction.com",
-  location: "Based in the Surrey Hills — working across Surrey, Hampshire and West Sussex.",
+  /**
+   * Names the town, not just the region. "The Surrey Hills" is scenery; Google
+   * matches queries to places, and "Cranleigh" is a place it can match. Keep
+   * this consistent with the Contact page title tag and with anywhere the
+   * business address appears elsewhere — inconsistent naming weakens local
+   * search rather than strengthening it.
+   */
+  location: "Based in Cranleigh, Surrey — working across Surrey, Hampshire and West Sussex.",
 } as const;
 
 export const NAV: NavItem[] = [

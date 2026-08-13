@@ -53,6 +53,20 @@ export const CONTACT = {
    * search rather than strengthening it.
    */
   location: "Based in Cranleigh, Surrey — working across Surrey, Hampshire and West Sussex.",
+  /**
+   * NAP — name, address, phone. Must match the Google Business Profile
+   * EXACTLY, character for character: "1 Bridge Rd, Cranleigh GU6 7HH". Local
+   * search cross-references the two, and a mismatch (even "Road" for "Rd")
+   * weakens the match rather than helping it. If the profile changes, change
+   * this with it.
+   */
+  address: {
+    street: "1 Bridge Rd",
+    locality: "Cranleigh",
+    region: "Surrey",
+    postcode: "GU6 7HH",
+    full: "1 Bridge Rd, Cranleigh GU6 7HH",
+  },
 } as const;
 
 export const NAV: NavItem[] = [

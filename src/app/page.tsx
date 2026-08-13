@@ -24,15 +24,16 @@ import { SITE_URL } from "@/lib/site";
 /**
  * LocalBusiness structured data.
  *
+ * The address matches the Google Business Profile exactly. That is the point:
+ * Google cross-references the two, and consistent name/address/phone is one of
+ * the few local-pack signals a website can actually influence.
+ *
  * This is what tells Google the business is a builder, in Cranleigh, covering
  * a named list of towns — rather than leaving it to infer all of that from
  * prose. `GeneralContractor` is schema.org's type for a building contractor.
  *
  * Everything here is drawn from the site's own content so it cannot drift out
- * of step with what a visitor reads. No street address is claimed, because a
- * wrong or invented one is worse than none: the locality and region are what
- * local search actually matches on.
- */
+ * of step with what a visitor reads. */
 const BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
@@ -43,8 +44,10 @@ const BUSINESS_SCHEMA = {
   email: CONTACT.email,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Cranleigh",
-    addressRegion: "Surrey",
+    streetAddress: CONTACT.address.street,
+    addressLocality: CONTACT.address.locality,
+    addressRegion: CONTACT.address.region,
+    postalCode: CONTACT.address.postcode,
     addressCountry: "GB",
   },
   areaServed: AREAS.items.map((town) => ({ "@type": "Place", name: town })),

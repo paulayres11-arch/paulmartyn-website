@@ -74,9 +74,12 @@ export function SiteFooter() {
               </li>
             </ul>
 
-            <p className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
-              {CONTACT.location}
-            </p>
+            {/* div, not p: <address> is block-level and cannot legally sit
+                inside a paragraph. */}
+            <div className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
+              <address className="not-italic">{CONTACT.address.full}</address>
+              <span className="mt-2 block">{CONTACT.location}</span>
+            </div>
 
             <a
               href={BROCHURE.href}

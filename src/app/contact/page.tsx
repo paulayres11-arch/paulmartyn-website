@@ -74,7 +74,16 @@ export default function ContactPage() {
                   <dt className="text-[13px] font-medium uppercase tracking-[1px] text-pm-slate">
                     Where we work
                   </dt>
-                  <dd className="mt-1 max-w-[420px] text-[17px] font-light leading-[26px] text-pm-ink">
+                  {/* The address is printed in full and matches the Google
+                      Business Profile exactly. Schema alone is not enough —
+                      local search wants to see the same name, address and
+                      phone on the page a visitor reads. */}
+                  <dd className="mt-1 text-[17px] font-light leading-[26px] text-pm-ink">
+                    <address className="not-italic">
+                      {CONTACT.address.full}
+                    </address>
+                  </dd>
+                  <dd className="mt-3 max-w-[420px] text-[17px] font-light leading-[26px] text-pm-ink">
                     {CONTACT.location}
                   </dd>
                 </div>

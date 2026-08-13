@@ -861,6 +861,13 @@ export const PRICING = {
       "Snagging and handover",
     ],
   },
+  /**
+   * NO LONGER RENDERED. The "See an example quote" column was removed from the
+   * pricing page on 2026-08-13 to give the cost calculator the room to put its
+   * questions in the middle of the page. Kept here rather than deleted because
+   * the copy is good and the offer still stands — drop the block back into
+   * src/app/pricing/page.tsx to restore it.
+   */
   exampleQuote: {
     heading: "See an example quote",
     body: [

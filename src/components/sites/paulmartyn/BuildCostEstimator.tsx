@@ -167,178 +167,193 @@ export function BuildCostEstimator() {
   return (
     <div className="@container w-full">
       {/* Headline total */}
-      <div className="flex items-center gap-6 rounded-[8px] border border-pm-rule bg-pm-cream px-6 py-5">
-        <div className="hidden shrink-0 @sm:block" aria-hidden="true">
-          <svg viewBox="0 0 120 120" fill="none" stroke="#3a3a3a" strokeWidth="2.4" strokeLinejoin="round" strokeLinecap="round">
-        <path d="M60 14 L100 37 L60 60 L20 37 Z" fill="#ffffff"/>
-        <path d="M60 24 L86 39 L60 54 L34 39 Z" fill="#ece8e1" strokeWidth="1.6"/>
-        <path d="M20 37 L60 60 L60 100 L20 77 Z" fill="#f6f4f0"/>
-        <path d="M100 37 L60 60 L60 100 L100 77 Z" fill="#efece6"/>
-        <path d="M30 55 L42 62 L42 74 L30 67 Z" fill="#ffffff" strokeWidth="1.6"/>
-        <path d="M78 62 L90 55 L90 67 L78 74 Z" fill="#ffffff" strokeWidth="1.6"/>
-      </svg>
-        </div>
+      {/* Questions on the left of the tool, live result and illustrations
+          on the right. On the pricing page that puts the questions in the
+          middle column of the page and the running total beside them, so a
+          visitor sees the figure move as they type rather than having to
+          scroll back up to it. Collapses to one column when the container
+          is too narrow to carry two. */}
+      <div className="grid gap-8 @3xl:grid-cols-[1fr_1fr] @3xl:gap-10">
         <div>
-          <div className="text-[13px] uppercase tracking-[.09em] text-pm-slate">
-            Estimated build cost
-          </div>
-          <div className="text-[34px] font-semibold leading-[1.05] text-pm-ink @sm:text-[44px]">
-            {gbp(total)}
-          </div>
-          <div className="mt-1 text-[13px] text-pm-slate">
-            excluding VAT · indicative guide
-          </div>
-        </div>
-      </div>
-
-      {/* Illustration strip — the pointer follows whichever field is in use */}
-      <div className="mt-6 grid grid-cols-3 gap-[10px] @lg:grid-cols-5">
-        {CARDS.map((card) => {
-          const isActive = card.key === active;
-          return (
-            <button
-              key={card.key}
-              type="button"
-              onClick={() => setActive(card.key)}
-              aria-pressed={isActive}
-              className={cn(
-                "relative rounded-[8px] border bg-white px-2 pb-3 pt-4 text-center transition-colors",
-                isActive
-                  ? "border-pm-gold bg-pm-cream shadow-[0_0_0_1px_var(--color-pm-gold)]"
-                  : "border-pm-rule hover:border-pm-gold",
-              )}
-            >
-              <span
-                aria-hidden="true"
-                className={cn(
-                  "absolute -top-[9px] left-1/2 h-0 w-0 -translate-x-1/2 border-x-[8px] border-t-[9px] border-x-transparent border-t-pm-gold transition-opacity",
-                  isActive ? "opacity-100" : "opacity-0",
-                )}
+          {/* Inputs */}
+          <div className="mt-7 grid gap-5 @lg:grid-cols-2">
+            <div>
+              <label className={labelClass} htmlFor="bce-width">
+                Extension width (m)
+              </label>
+              <input
+                id="bce-width"
+                type="number"
+                min="0"
+                step="0.1"
+                inputMode="decimal"
+                value={width}
+                onChange={(e) => {
+                  setWidth(e.target.value);
+                  touch("width");
+                }}
+                onFocus={() => touch("width")}
+                className="w-full rounded-[6px] border border-pm-rule bg-white px-[14px] py-3 text-[16px] text-pm-ink outline-none transition-colors focus:border-pm-gold"
               />
-              <span className="block [&>svg]:mx-auto [&>svg]:h-auto [&>svg]:w-full">
-                {card.art}
-              </span>
-              <span
-                className={cn(
-                  "mt-2 block text-[12px] leading-[15px]",
-                  isActive ? "text-pm-ink" : "text-pm-slate",
-                )}
+            </div>
+
+            <div>
+              <label className={labelClass} htmlFor="bce-length">
+                Extension length (m)
+              </label>
+              <input
+                id="bce-length"
+                type="number"
+                min="0"
+                step="0.1"
+                inputMode="decimal"
+                value={length}
+                onChange={(e) => {
+                  setLength(e.target.value);
+                  touch("length");
+                }}
+                onFocus={() => touch("length")}
+                className="w-full rounded-[6px] border border-pm-rule bg-white px-[14px] py-3 text-[16px] text-pm-ink outline-none transition-colors focus:border-pm-gold"
+              />
+            </div>
+
+            <div>
+              <label className={labelClass} htmlFor="bce-storeys">
+                Number of storeys
+              </label>
+              <select id="bce-storeys" {...selectProps("storeys", storeys, setStoreys)}>
+                {OPTS.storeys.map(([l, v]) => (
+                  <option key={l} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className={labelClass} htmlFor="bce-walls">
+                External walls
+              </label>
+              <select id="bce-walls" {...selectProps("walls", walls, setWalls)}>
+                {OPTS.walls.map(([l, v]) => (
+                  <option key={l} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className={labelClass} htmlFor="bce-roofing">
+                Roofing material
+              </label>
+              <select id="bce-roofing" {...selectProps("roofing", roofing, setRoofing)}>
+                {OPTS.roofing.map(([l, v]) => (
+                  <option key={l} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className={labelClass} htmlFor="bce-rooftype">
+                Roof type
+              </label>
+              <select id="bce-rooftype" {...selectProps("rooftype", rooftype, setRooftype)}>
+                {OPTS.rooftype.map(([l, v]) => (
+                  <option key={l} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="@lg:col-span-2">
+              <label className={labelClass} htmlFor="bce-foundation">
+                Foundation type
+              </label>
+              <select
+                id="bce-foundation"
+                {...selectProps("foundation", foundation, setFoundation)}
               >
-                {card.label}
-              </span>
-            </button>
-          );
-        })}
-      </div>
+                {OPTS.foundation.map(([l, v]) => (
+                  <option key={l} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
 
-      {/* Inputs */}
-      <div className="mt-7 grid gap-5 @lg:grid-cols-2">
-        <div>
-          <label className={labelClass} htmlFor="bce-width">
-            Extension width (m)
-          </label>
-          <input
-            id="bce-width"
-            type="number"
-            min="0"
-            step="0.1"
-            inputMode="decimal"
-            value={width}
-            onChange={(e) => {
-              setWidth(e.target.value);
-              touch("width");
-            }}
-            onFocus={() => touch("width")}
-            className="w-full rounded-[6px] border border-pm-rule bg-white px-[14px] py-3 text-[16px] text-pm-ink outline-none transition-colors focus:border-pm-gold"
-          />
         </div>
 
         <div>
-          <label className={labelClass} htmlFor="bce-length">
-            Extension length (m)
-          </label>
-          <input
-            id="bce-length"
-            type="number"
-            min="0"
-            step="0.1"
-            inputMode="decimal"
-            value={length}
-            onChange={(e) => {
-              setLength(e.target.value);
-              touch("length");
-            }}
-            onFocus={() => touch("length")}
-            className="w-full rounded-[6px] border border-pm-rule bg-white px-[14px] py-3 text-[16px] text-pm-ink outline-none transition-colors focus:border-pm-gold"
-          />
-        </div>
+          <div className="flex items-center gap-6 rounded-[8px] border border-pm-rule bg-pm-cream px-6 py-5">
+            <div className="hidden shrink-0 @sm:block" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none" stroke="#3a3a3a" strokeWidth="2.4" strokeLinejoin="round" strokeLinecap="round">
+            <path d="M60 14 L100 37 L60 60 L20 37 Z" fill="#ffffff"/>
+            <path d="M60 24 L86 39 L60 54 L34 39 Z" fill="#ece8e1" strokeWidth="1.6"/>
+            <path d="M20 37 L60 60 L60 100 L20 77 Z" fill="#f6f4f0"/>
+            <path d="M100 37 L60 60 L60 100 L100 77 Z" fill="#efece6"/>
+            <path d="M30 55 L42 62 L42 74 L30 67 Z" fill="#ffffff" strokeWidth="1.6"/>
+            <path d="M78 62 L90 55 L90 67 L78 74 Z" fill="#ffffff" strokeWidth="1.6"/>
+          </svg>
+            </div>
+            <div>
+              <div className="text-[13px] uppercase tracking-[.09em] text-pm-slate">
+                Estimated build cost
+              </div>
+              <div className="text-[34px] font-semibold leading-[1.05] text-pm-ink @sm:text-[44px]">
+                {gbp(total)}
+              </div>
+              <div className="mt-1 text-[13px] text-pm-slate">
+                excluding VAT · indicative guide
+              </div>
+            </div>
+          </div>
 
-        <div>
-          <label className={labelClass} htmlFor="bce-storeys">
-            Number of storeys
-          </label>
-          <select id="bce-storeys" {...selectProps("storeys", storeys, setStoreys)}>
-            {OPTS.storeys.map(([l, v]) => (
-              <option key={l} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </div>
 
-        <div>
-          <label className={labelClass} htmlFor="bce-walls">
-            External walls
-          </label>
-          <select id="bce-walls" {...selectProps("walls", walls, setWalls)}>
-            {OPTS.walls.map(([l, v]) => (
-              <option key={l} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </div>
+          {/* Illustration strip — the pointer follows whichever field is in use */}
+          <div className="mt-6 grid grid-cols-3 gap-[10px] @lg:grid-cols-5">
+            {CARDS.map((card) => {
+              const isActive = card.key === active;
+              return (
+                <button
+                  key={card.key}
+                  type="button"
+                  onClick={() => setActive(card.key)}
+                  aria-pressed={isActive}
+                  className={cn(
+                    "relative rounded-[8px] border bg-white px-2 pb-3 pt-4 text-center transition-colors",
+                    isActive
+                      ? "border-pm-gold bg-pm-cream shadow-[0_0_0_1px_var(--color-pm-gold)]"
+                      : "border-pm-rule hover:border-pm-gold",
+                  )}
+                >
+                  <span
+                    aria-hidden="true"
+                    className={cn(
+                      "absolute -top-[9px] left-1/2 h-0 w-0 -translate-x-1/2 border-x-[8px] border-t-[9px] border-x-transparent border-t-pm-gold transition-opacity",
+                      isActive ? "opacity-100" : "opacity-0",
+                    )}
+                  />
+                  <span className="block [&>svg]:mx-auto [&>svg]:h-auto [&>svg]:w-full">
+                    {card.art}
+                  </span>
+                  <span
+                    className={cn(
+                      "mt-2 block text-[12px] leading-[15px]",
+                      isActive ? "text-pm-ink" : "text-pm-slate",
+                    )}
+                  >
+                    {card.label}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
 
-        <div>
-          <label className={labelClass} htmlFor="bce-roofing">
-            Roofing material
-          </label>
-          <select id="bce-roofing" {...selectProps("roofing", roofing, setRoofing)}>
-            {OPTS.roofing.map(([l, v]) => (
-              <option key={l} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className={labelClass} htmlFor="bce-rooftype">
-            Roof type
-          </label>
-          <select id="bce-rooftype" {...selectProps("rooftype", rooftype, setRooftype)}>
-            {OPTS.rooftype.map(([l, v]) => (
-              <option key={l} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="@lg:col-span-2">
-          <label className={labelClass} htmlFor="bce-foundation">
-            Foundation type
-          </label>
-          <select
-            id="bce-foundation"
-            {...selectProps("foundation", foundation, setFoundation)}
-          >
-            {OPTS.foundation.map(([l, v]) => (
-              <option key={l} value={v}>
-                {l}
-              </option>
-            ))}
-          </select>
         </div>
       </div>
 

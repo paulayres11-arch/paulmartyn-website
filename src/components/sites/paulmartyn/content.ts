@@ -515,7 +515,15 @@ export const CONTACT_CTA = {
   heading: "Ready to talk about your project?",
   body: "Whether it's a first conversation about an idea or a full set of drawings ready to price, we'd like to hear from you.",
   button: { label: "Get a quote", path: "/contact" },
-  background: `${IMG}/process.jpg`,
+  /**
+   * Paul Martyn's own staircase — replaced a stock hallway photograph.
+   *
+   * Landscape on purpose: this band is 340–445px tall and full width, so
+   * `bg-cover` crops to a shallow horizontal strip. A portrait photo would be
+   * reduced to a sliver. The 84% teal scrim over the top means it reads as
+   * texture rather than a picture, so composition matters less than shape.
+   */
+  background: `${IMG}/staircases/oak-flight.jpg`,
 };
 
 export const FOOTER_SERVICES: NavChild[] = [

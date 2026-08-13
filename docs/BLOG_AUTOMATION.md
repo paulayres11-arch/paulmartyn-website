@@ -61,38 +61,83 @@ Rules that matter:
 
 ## 5. Topic backlog
 
-Work top to bottom. Mark `[done YYYY-MM-DD]` when published.
+Already published: bat surveys (2026-08-13), bathroom tanking
+(2026-08-13), trees and foundation depth (2026-08-13).
 
-- [done 2026-08-13] Bat surveys and seasonal timing
-- [done 2026-08-13] Bathroom tanking and waterproofing
-- [done 2026-08-13] Trees, clay soil and foundation depth
-- [ ] Permitted development: what you can build without planning permission
-- [ ] What building control actually signs off, and when
-- [ ] Party wall agreements: when you need one and what it costs
-- [ ] Structural warranties explained — what is and is not covered
-- [ ] Snagging: what to look for at handover
-- [ ] Why footings vary in depth across one site
-- [ ] Extend or move? The stamp duty maths
+**Alternate the two streams below**, starting with LOCAL. Local posts are what
+win the searches that bring work in; knowledge posts are what make the site
+worth linking to and coming back to. A blog of only local posts reads as spam;
+a blog of only knowledge posts never ranks for "bathroom fitting Cranleigh".
+
+Mark `[done YYYY-MM-DD]` when published. Add more when a stream runs low.
+
+### Stream A — local (service + place)
+
+The target is simple: if someone searches **"bathroom fitting Cranleigh"** or
+**"extension Cobham"**, a Paul Martyn post should be there. Build up several
+posts per town over time, each answering a genuine question rather than
+repeating the same copy with the place name swapped — Google spots that, and
+so do readers.
+
+- [ ] What a bathroom fitting costs in Cranleigh, and what changes the price
+- [ ] Extending a 1930s semi in Cobham: what to expect
+- [ ] Does an extension add value in Cobham? What the numbers say
+- [ ] Loft conversions in Guildford: which roofs work and which do not
+- [ ] Listed building work in Godalming: consent, and what it changes
+- [ ] Kitchen extensions in Cranleigh: layout before budget
+- [ ] Building on clay in the Surrey Hills: what it means for your footings
+- [ ] Conservation areas in Waverley: what you can and cannot do
+- [ ] Wet rooms in Ewhurst and Cranleigh: what an old cottage needs
+- [ ] New builds near Guildford: plot to handover, realistically
+
+### Stream B — knowledge and new technology
+
+Genuinely interesting or genuinely useful. New knowledge, not filler.
+
+- [ ] Air source heat pumps: what they actually need from the building fabric
 - [ ] Insulation choices and what Part L now asks for
+- [ ] What building control actually signs off, and when
+- [ ] Permitted development: what you can build without planning permission
+- [ ] Party wall agreements: when you need one and what it costs
+- [ ] AI and machine control in construction: what is real on site today
+- [ ] New materials worth knowing about: low-carbon concrete, hemp, ICF
+- [ ] Structural warranties explained: what is and is not covered
 - [ ] Timber vs steel for structural openings
-- [ ] EPC rules and what they mean for older Surrey homes
+- [ ] Damp: rising, penetrating and condensation are not the same thing
+- [ ] Snagging: what to look for at handover
+- [ ] Lead times: the items that actually hold up a build
+- [ ] MVHR and airtightness: why new homes feel different
+- [ ] Solar and battery storage on a retrofit: what is worth it
+- [ ] Extend or move? The stamp duty maths
 - [ ] Material price trends and what is driving them
 - [ ] Planning reform: what is changing for householders
-- [ ] Listed building consent: what needs it
-- [ ] Damp: rising, penetrating and condensation are not the same thing
-- [ ] Lead times: the items that hold up a build
+- [ ] EPC rules and what they mean for older Surrey homes
 
-When the list runs low, add topics drawn from questions homeowners actually
-ask — search "how much does X cost UK" and "do I need planning permission for
-X" and write for the real query.
+## 6. Local SEO — the point of the exercise
 
-## 6. Local SEO
+This is the part that earns the money, so do it properly.
 
-Pair **service + place** where it reads naturally: Cranleigh, Cobham,
-Guildford, Godalming, Surrey. Never stuff keywords — one or two mentions is
-plenty, and a post that reads badly ranks badly.
+**Target the search, not the topic.** Write the post someone would want to read
+having typed the query. "bathroom fitting cranleigh cost" wants a number and
+what moves it, not a company history.
 
-Every post must link to `/contact` (the card already renders this button).
+For every LOCAL post:
+
+- Put the **service and the place in the title** and in the `seoTitle`.
+- Use the place **two or three times in the body, where it reads naturally** —
+  in an example, in a reference to local ground conditions or the local
+  authority. Never stuff it. A post that reads badly ranks badly.
+- Mention something **genuinely local**: Waverley or Guildford Borough
+  planning, the clay in the Surrey Hills, conservation areas, a typical local
+  house type. This is what a national competitor cannot fake, and it is why
+  these posts can win.
+- Reference a real price band or timescale where you can, with the
+  "site-specific assessment" caveat.
+
+Towns to work through: **Cranleigh, Cobham, Guildford, Godalming, Ewhurst,
+Woking, Esher, Farnham, Haslemere.**
+
+Every post links to `/contact` (the card renders this automatically).
 
 ## 7. Guardrails
 

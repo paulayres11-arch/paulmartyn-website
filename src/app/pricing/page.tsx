@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
+import { BuildCostEstimator } from "@/components/sites/paulmartyn/BuildCostEstimator";
 import { PricingAccordion } from "@/components/sites/paulmartyn/PricingAccordion";
 import {
   PRICING,
@@ -95,7 +96,7 @@ export default function PricingPage() {
       {/* Example quote + price bands */}
       <section className="bg-pm-cream py-[10vh]">
         <div className="mx-auto flex max-w-[2000px] flex-col gap-14 px-[3%] lg:flex-row lg:gap-20">
-          <div className="lg:w-[30%]">
+          <div className="lg:w-[28%]">
             <h2 className="t-h3 font-medium text-pm-ink">
               {PRICING.exampleQuote.heading}
             </h2>
@@ -137,7 +138,7 @@ export default function PricingPage() {
               free the right-hand third for the build cost estimator. Until that
               lands there is deliberate empty space here; it is reserved, not a
               layout bug. */}
-          <div className="lg:w-[35%]">
+          <div className="lg:w-[31%]">
             {/* The accordion sat unlabelled next to "See an example quote",
                 so it read as a continuation of it rather than its own thing. */}
             <h2 className="t-h3 mb-7 font-medium text-pm-ink">
@@ -145,6 +146,17 @@ export default function PricingPage() {
             </h2>
 
             <PricingAccordion />
+          </div>
+
+          {/* The estimator uses container queries, so it lays itself out from
+              the width of this column rather than the viewport — otherwise a
+              two-column field grid would be crammed into ~480px on a desktop. */}
+          <div className="lg:w-[32%]">
+            <h2 className="t-h3 mb-7 font-medium text-pm-ink">
+              {PRICING.estimatorHeading}
+            </h2>
+
+            <BuildCostEstimator />
           </div>
         </div>
       </section>

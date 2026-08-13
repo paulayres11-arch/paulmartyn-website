@@ -821,7 +821,7 @@ export const VIDEOS = {
  * work is charged, guaranteed or scheduled without confirmation.
  */
 export const PRICING = {
-  title: "Fixed-price construction",
+  title: "Budgets & cost calculator",
   /**
    * Client-supplied copy, 2026-08-13.
    *
@@ -874,6 +874,8 @@ export const PRICING = {
   },
   /** Heading over the price-band accordion, which previously had none. */
   bandsHeading: "Cost examples",
+  /** Heading over the build cost estimator. */
+  estimatorHeading: "Estimate your build",
   bands: [
     {
       label: "Residential renovations & extensions",

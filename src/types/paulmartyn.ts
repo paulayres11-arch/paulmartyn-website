@@ -111,3 +111,21 @@ export interface PriceBand {
   /** Phrases inside `body` to render bold — used for price figures. */
   emphasise?: string[];
 }
+
+export interface BlogPost {
+  /** URL-safe id; used for the anchor so a post can be linked to directly. */
+  slug: string;
+  title: string;
+  category: string;
+  /** ISO date, e.g. "2026-08-13". Rendered as a UK long date. */
+  date: string;
+  /** ~55–60 chars. Used if the post ever gets its own page. */
+  seoTitle: string;
+  /** ~150 chars. */
+  metaDescription: string;
+  /** Describes the infographic for screen readers and for search. */
+  imageAlt: string;
+  body: string[];
+  /** Original infographic, drawn inline as SVG. */
+  art: React.ReactNode;
+}

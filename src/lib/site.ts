@@ -44,5 +44,6 @@ export const ROUTES = [
   "/process",
   "/pricing",
   "/guides/house-extension-costs-surrey",
+  "/blog",
   "/contact",
 ] as const;

@@ -66,6 +66,7 @@ export const NAV: NavItem[] = [
   { label: "Pricing", path: "/pricing" },
   { label: "About Us", path: "/about-us" },
   { label: "Our Process", path: "/process" },
+  { label: "Advice & news", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -553,6 +554,7 @@ export const FOOTER_PAGES: NavChild[] = [
   { label: "About Us", path: "/about-us" },
   { label: "Our Process", path: "/process" },
   { label: "Testimonials", path: "/#reviews" },
+  { label: "Advice & news", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];
 

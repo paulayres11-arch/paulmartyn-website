@@ -7,6 +7,9 @@ This file exists because nobody watches the runs. A run that quietly does
 nothing is indistinguishable from a run that never fired, unless it leaves a
 line here. **A gap in the dates is the thing to look at.**
 
+There is no email alerting by design. This log and the run summaries at
+https://claude.ai/code/routines are the whole reporting story.
+
 Runs are scheduled Monday, Wednesday and Friday at 07:00 UK.
 
 | Date | Result | Slug | Stream | Note |

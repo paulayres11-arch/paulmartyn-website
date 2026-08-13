@@ -247,14 +247,13 @@ the log line, as long as the working tree is otherwise clean — that line is th
 only signal Paul gets. Never push a broken site to record a failure: if the
 build is red, revert the post changes, keep the log line, and push that alone.
 
-**On failure, also raise it.** The Gmail connector attached to this routine can
-create drafts but **cannot send mail**, so:
+**On failure, say so in the two places that are read.** There is deliberately
+no email alerting — the run log is the record:
 
-1. Create a Gmail **draft** to `paulayres11@gmail.com`, subject
-   `BLOG AUTOMATION FAILED — <date>`, body saying which topic, which step, and
-   the actual error. It will sit in Drafts, not the inbox.
-2. State the failure plainly at the top of your final run summary, which is
-   what shows at https://claude.ai/code/routines.
+1. The `FAILED` line in `docs/BLOG_RUN_LOG.md`, with the actual error in the
+   Note column. Not "failed" — the error, and the step it failed at.
+2. The top of your final run summary, which is what shows at
+   https://claude.ai/code/routines.
 
 Do not retry a failed run more than once. A second identical failure is
 information; four commits of thrash is not.

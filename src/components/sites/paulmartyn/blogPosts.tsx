@@ -16,6 +16,80 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "extension-value-esher",
+    title: "Does an extension add value in Esher? What the numbers say",
+    category: "Extensions",
+    date: "2026-08-14",
+    seoTitle: "House Extension Value in Esher | What the Data Really Says",
+    metaDescription:
+      "What does an extension actually add in Esher? Nationwide's data on value, and the Elmbridge Green Belt planning rules that decide what you can build first.",
+    imageAlt:
+      "Illustration of a house in Esher with a single-storey extension added in amber and a value tag reading plus 24 percent rising above the roofline, with a dashed Green Belt boundary line marked across the rear garden",
+    body: [
+      "Esher homeowners ask this more than most: is an extension worth the disruption, or just nice to have? Nationwide's research on home improvements found that a loft conversion or extension adding a double bedroom and bathroom can add up to around 24% to a three-bedroom house's value, with an extra bathroom alone worth roughly 6%.",
+      "Those are national averages rather than an Esher figure, and Nationwide is clear the effect varies by area — in a market this tight, a good conversion tends to sit at the stronger end.",
+      "The planning route matters as much as the value. A single-storey rear extension can often go ahead as permitted development, but plenty of Esher plots sit inside the Green Belt, where Elmbridge Borough Council requires full planning permission and measures any increase against the house's original floor area.",
+      "We check that before a client spends anything on drawings.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="evsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="evbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="evroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="evext" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="evgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#evsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Does it add value?</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Esher extensions — national data, local planning</text>
+
+        {/* garden with Green Belt boundary */}
+        <rect x="0" y="252" width="400" height="48" fill="url(#evgrass)" />
+        <path d="M0 264 h180 M228 264 h172" stroke="#1f2a30" strokeWidth="2" strokeDasharray="7 5" opacity=".55" />
+        <rect x="180" y="256" width="4" height="16" fill="#6a4034" />
+        <rect x="224" y="256" width="4" height="16" fill="#6a4034" />
+        <text x="202" y="250" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#4c6b3c" textAnchor="middle" letterSpacing="0.5">GREEN BELT</text>
+
+        {/* original house */}
+        <path d="M46 170 L108 116 L170 170 Z" fill="url(#evroof)" />
+        <rect x="58" y="170" width="100" height="82" fill="url(#evbrick)" />
+        <path d="M58 186 h100 M58 202 h100 M58 218 h100 M58 234 h100" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="70" y="182" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="118" y="182" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="92" y="222" width="24" height="30" fill="#40525a" />
+
+        {/* extension, amber to mark the added value */}
+        <rect x="158" y="204" width="66" height="48" fill="url(#evext)" />
+        <path d="M158 204 L191 178 L224 204 Z" fill="#c4741f" />
+        <rect x="172" y="216" width="24" height="24" fill="#fbe3c4" stroke="#f6cf9a" strokeWidth="2" />
+        <path d="M158 252 h66" stroke="#a8652a" strokeWidth="2" />
+
+        {/* value tag rising from the extension */}
+        <path d="M205 178 q6 -34 24 -50" stroke="#e08a2b" strokeWidth="3" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
+        <path d="M224 104 l28 -8 l7 26 l-16 12 l-19 -8 z" fill="#e08a2b" />
+        <text x="238" y="120" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">+24%</text>
+        <text x="238" y="132" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fill="#3a2a12" textAnchor="middle">nationally*</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">National data says up to 24%*</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Green Belt gardens still need permission from Elmbridge first</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">*Nationwide research on home improvements, 2025</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "party-wall-notice-timing",
     title: "The party wall notice that sets your start date",
     category: "Planning & surveys",

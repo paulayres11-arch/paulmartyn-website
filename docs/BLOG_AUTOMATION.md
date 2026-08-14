@@ -80,7 +80,8 @@ Already published: bat surveys (2026-08-13), bathroom tanking
 (2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
 cost in Cranleigh (2026-08-13), extending a 1930s semi in Cobham
 (2026-08-13), loft conversions in Weybridge (2026-08-13), party wall
-notice timing (2026-08-13).
+notice timing (2026-08-13), does an extension add value in Esher
+(2026-08-14).
 
 **Two local posts, then one knowledge post, repeating.** Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
@@ -118,7 +119,7 @@ Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
 - [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
 - [done 2026-08-13] Extending a 1930s semi in Cobham: what to expect
 - [done 2026-08-13] Loft conversions in Weybridge: which roofs work and which do not
-- [ ] Does an extension add value in Esher? What the numbers say
+- [done 2026-08-14] Does an extension add value in Esher? What the numbers say
 - [ ] Kitchen extensions in Godalming: layout before budget
 - [ ] Listed building work in Farnham: consent, and what it changes
 - [ ] Building on clay in Haslemere: what it means for your footings

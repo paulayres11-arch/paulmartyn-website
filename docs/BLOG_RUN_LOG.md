@@ -18,4 +18,4 @@ Runs are scheduled Monday, Wednesday and Friday at 07:00 UK.
 | 2026-08-13 | OK | extending-1930s-semi-cobham | local | written by hand, not by the routine |
 | 2026-08-13 | OK | loft-conversions-weybridge-roof-types | local | written by hand, not by the routine |
 | 2026-08-13 | OK | party-wall-notice-timing | knowledge | written by hand, not by the routine |
-| 2026-08-14 | OK | extension-value-esher | local | live |
+| 2026-08-14 | OK | extension-value-esher | local | pushed to master, build green; live status not verifiable from this sandbox (network egress blocked) |

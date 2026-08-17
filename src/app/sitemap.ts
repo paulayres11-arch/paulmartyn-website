@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { BLOG_POSTS } from "@/components/sites/paulmartyn/blogPosts";
 import { ROUTES, SITE_URL } from "@/lib/site";
 
 /**
@@ -21,9 +22,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return 0.7;
   };
 
+  /**
+   * The blog posts three times a week, so `/blog` — and the home page that
+   * links to it — are the two URLs whose content genuinely moves. Declaring
+   * them as `monthly` alongside the static service pages told Google the
+   * opposite, and there was no `lastmod` anywhere to correct the impression.
+   *
+   * The newest post's date IS the blog's last-modified date, so it is derived
+   * rather than hardcoded: a date someone has to remember to update is a date
+   * that goes stale, and a stale `lastmod` is worse than none — Google learns
+   * to distrust the whole file.
+   */
+  const latestPost = BLOG_POSTS.reduce(
+    (newest, post) => (post.date > newest ? post.date : newest),
+    BLOG_POSTS[0]?.date ?? "",
+  );
+  const blogUpdated = latestPost ? new Date(latestPost) : undefined;
+
+  const changeFrequencyFor = (route: string) => {
+    if (route === "/blog") return "weekly" as const;
+    return "monthly" as const;
+  };
+
   return ROUTES.map((route) => ({
     url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
-    changeFrequency: "monthly" as const,
+    lastModified: route === "/blog" ? blogUpdated : undefined,
+    changeFrequency: changeFrequencyFor(route),
     priority: priorityFor(route),
   }));
 }

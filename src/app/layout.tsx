@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 /**
@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     title: "Paul Martyn | Builders in the Surrey Hills",
     description:
       "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paul Martyn | Builders in the Surrey Hills",
+    description:
+      "Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+    images: [OG_IMAGE.url],
   },
   /**
    * No `robots` key on purpose.

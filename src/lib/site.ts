@@ -28,6 +28,27 @@ export function isIndexableHost(host: string | null | undefined): boolean {
   return hostname === CANONICAL_HOST;
 }
 
+/**
+ * The default Open Graph / Twitter card image.
+ *
+ * Until 2026-08-17 no page emitted an `og:image` at all, so every share of
+ * this site — WhatsApp, Facebook, LinkedIn, iMessage — rendered as a blank
+ * card. For a builder who gets work by recommendation, that is the one SEO
+ * defect a client actually sees.
+ *
+ * Cropped from the re-roof hero to 1200x630, the ratio the platforms expect.
+ *
+ * Every page that declares its own `openGraph` must spread this in itself:
+ * Next merges metadata shallowly, so a child's `openGraph` object REPLACES
+ * the layout's rather than inheriting its `images`.
+ */
+export const OG_IMAGE = {
+  url: "/seo/og-default.jpg",
+  width: 1200,
+  height: 630,
+  alt: "A completed Paul Martyn re-roofing project in Surrey, with new clay tiles, a dormer and solar panels",
+} as const;
+
 /** Every indexable route, used to build the sitemap. */
 export const ROUTES = [
   "/",

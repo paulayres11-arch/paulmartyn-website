@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { BlogGrid } from "@/components/sites/paulmartyn/BlogGrid";
 import { BLOG_POSTS } from "@/components/sites/paulmartyn/blogPosts";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Building Advice for Surrey Homeowners | Paul Martyn",
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "Building advice & news | Paul Martyn",
     description:
       "Plain-English answers to the questions Surrey homeowners actually ask, from a family-run builder in the Surrey Hills.",
+    images: [OG_IMAGE],
   },
 };
 

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { BROCHURE, CONTACT } from "@/components/sites/paulmartyn/content";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 /**
- * "How Much Does a House Extension Cost in 2025?"
+ * "How Much Does a House Extension Cost in 2026?"
  *
  * Ported from the old Squarespace blog, where it lived at
  * /new-blog/2025/4/27/how-much-does-a-house-extension-cost-in-2025-real-examples-from-surrey
@@ -16,12 +16,21 @@ import { SITE_URL } from "@/lib/site";
  * cutover would have thrown away the best-ranking page on the site, so the
  * copy is carried over intact.
  *
- * The copy is Paul Martyn Construction's own, reproduced as published. The
- * published date is kept because it is the date Google has associated with
- * the URL; the figures are 2025 figures and are labelled as such throughout.
+ * The copy is Paul Martyn Construction's own, reproduced as published.
+ *
+ * `PUBLISHED` is kept at the original date because it is what Google has
+ * associated with the URL — changing it would throw away the age this page
+ * has earned. `UPDATED` is what carries the freshness signal instead, and the
+ * headings say 2026 because the figures genuinely are 2026 figures: the rates
+ * were realigned to the estimator on 2026-08-13. A cost guide still titled
+ * "in 2025" in August 2026 reads as abandoned to a searcher scanning results,
+ * which is a click lost before anyone reaches the content.
+ *
+ * If the rates are realigned again, move `UPDATED` with them.
  */
 
 const PUBLISHED = "2025-04-27";
+const UPDATED = "2026-08-13";
 
 /**
  * Rates realigned 2026-08-13 to match the build cost estimator, which is the
@@ -137,7 +146,7 @@ const HIDDEN_COSTS = [
   },
 ];
 
-const TITLE = "House Extension Costs in 2025 | Real Surrey Project Examples";
+const TITLE = "House Extension Costs in 2026 | Real Surrey Project Examples";
 const DESCRIPTION =
   "What a house extension really costs in Surrey — per-square-metre ranges, the five factors that move the price, three fully costed Cobham, Weybridge and Epsom projects, and the fees most quotes leave out.";
 
@@ -151,6 +160,8 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     publishedTime: PUBLISHED,
+    modifiedTime: UPDATED,
+    images: [OG_IMAGE],
   },
 };
 
@@ -162,9 +173,10 @@ export const metadata: Metadata = {
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "How Much Does a House Extension Cost in 2025?",
+  headline: "How Much Does a House Extension Cost in 2026?",
   description: DESCRIPTION,
   datePublished: PUBLISHED,
+  dateModified: UPDATED,
   inLanguage: "en-GB",
   mainEntityOfPage: `${SITE_URL}/guides/house-extension-costs-surrey`,
   author: { "@type": "Organization", name: "Paul Martyn" },
@@ -183,7 +195,7 @@ export default function HouseExtensionCostsPage() {
   return (
     <PageShell
       eyebrow="Guide"
-      title="How Much Does a House Extension Cost in 2025?"
+      title="How Much Does a House Extension Cost in 2026?"
     >
       <script
         type="application/ld+json"
@@ -195,7 +207,7 @@ export default function HouseExtensionCostsPage() {
           <div className="max-w-[760px]">
             <p className="text-[21px] font-normal leading-[32px] text-pm-ink">
               Understanding real costs is crucial if you are planning a house
-              extension in 2025. Prices vary depending on the size, design and
+              extension in 2026. Prices vary depending on the size, design and
               finish you choose, and recent shifts in material and labour costs
               make early planning more important than ever.
             </p>
@@ -207,7 +219,7 @@ export default function HouseExtensionCostsPage() {
             </p>
 
             <SectionHeading>
-              What is the average cost of a house extension in 2025?
+              What is the average cost of a house extension in 2026?
             </SectionHeading>
 
             <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
@@ -337,7 +349,7 @@ export default function HouseExtensionCostsPage() {
               ))}
             </dl>
 
-            <SectionHeading>Is it worth extending in 2025?</SectionHeading>
+            <SectionHeading>Is it worth extending in 2026?</SectionHeading>
 
             <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
               For most Surrey homeowners, extending remains one of the smartest

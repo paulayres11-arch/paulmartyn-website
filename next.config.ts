@@ -55,6 +55,41 @@ const OLD_SITE_REDIRECTS = [
   { source: "/location", destination: "/contact", permanent: true },
 
   /**
+   * Added 2026-08-17, after a live Google search showed the old Squarespace
+   * sitelinks — "OUR WORK", "CONSTRUCTION", "Design&BUILD" — still in the
+   * index, pointing at pages that now 404.
+   *
+   * `/new-cover-page` is confirmed: it is in the Wayback Machine's record of
+   * the old site and was missing from the 18-URL map above. Squarespace cover
+   * pages are homepage-style splash pages, so it goes to `/`.
+   *
+   * The rest are defensive. The sitelink LABELS are old page titles and the
+   * URLs behind them cannot be read out of a search result, so these are the
+   * slugs those titles would most likely have had. They all 404 today, so a
+   * redirect can only be an improvement — nobody lands worse off than they
+   * already do. If Search Console later shows the real slugs under Pages ->
+   * Not found (404), replace these with the actual ones.
+   */
+  { source: "/new-cover-page", destination: "/", permanent: true },
+  { source: "/our-work", destination: "/services", permanent: true },
+  { source: "/construction", destination: "/services", permanent: true },
+  {
+    source: "/design-build",
+    destination: "/services/renovations-extensions",
+    permanent: true,
+  },
+  {
+    source: "/designbuild",
+    destination: "/services/renovations-extensions",
+    permanent: true,
+  },
+  {
+    source: "/design-and-build",
+    destination: "/services/renovations-extensions",
+    permanent: true,
+  },
+
+  /**
    * Deliberately NOT redirected, and left to 404:
    *   /amenities, /amenities-1, /contact-artesia, /event-calendar-artesia,
    *   /event-calendar-artesia/2016/5/13/lorem-ipsum-1-e268y,

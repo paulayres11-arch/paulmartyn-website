@@ -8,12 +8,20 @@ export function CommitmentSection() {
   return (
     <section className="bg-white py-[68px]">
       <div className="mx-auto flex max-w-[2000px] flex-col gap-12 px-[3%] md:flex-row md:items-start md:gap-20">
-        <div
-          className="h-[300px] bg-cover bg-center sm:h-[400px] md:h-[507px] md:w-7/12"
-          style={{ backgroundImage: `url(${PROCESS.image})` }}
-          role="img"
-          aria-label="Paul Martyn project"
-        />
+        <figure className="md:w-7/12">
+          <div
+            className="h-[300px] bg-cover bg-center sm:h-[400px] md:h-[507px]"
+            style={{ backgroundImage: `url(${PROCESS.image})` }}
+            role="img"
+            aria-label="Paul Martyn project"
+          />
+
+          {/* Project credit — same 13.5px small-label size as IntroSection's
+              caption, so every photo credit on the page matches. */}
+          <figcaption className="mt-4 text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+            {PROCESS.imageCaption}
+          </figcaption>
+        </figure>
 
         <div className="md:w-5/12">
           <h3 className="t-h3 max-w-[14ch] font-medium text-pm-ink">

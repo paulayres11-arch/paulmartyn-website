@@ -86,12 +86,20 @@ export function ServicesTabs() {
           ))}
         </div>
 
-        <div
-          className="h-[320px] bg-cover bg-center sm:h-[440px] md:h-[575px] md:w-7/12"
-          style={{ backgroundImage: `url(${SERVICES.homeImage})` }}
-          role="img"
-          aria-label="Barn-conversion restaurant fit-out, with exposed timber trusses, a white-painted vaulted roof and oak flooring"
-        />
+        <figure className="md:w-7/12">
+          <div
+            className="h-[320px] bg-cover bg-center sm:h-[440px] md:h-[575px]"
+            style={{ backgroundImage: `url(${SERVICES.homeImage})` }}
+            role="img"
+            aria-label="Barn-conversion restaurant fit-out, with exposed timber trusses, a white-painted vaulted roof and oak flooring"
+          />
+
+          {/* Project credit — same 13.5px small-label size as IntroSection's
+              caption, so every photo credit on the page matches. */}
+          <figcaption className="mt-4 text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+            {SERVICES.homeImageCaption}
+          </figcaption>
+        </figure>
       </div>
 
       {/* Block B — pills, with the open pane living inside the same grid.

@@ -212,6 +212,8 @@ export const SERVICES = {
   image: `${IMG}/new-builds/cart-lodge-garaging.jpg`,
   /** Homepage services band — the barn-conversion restaurant fit-out. */
   homeImage: `${COMMERCIAL}/barn-restaurant.jpg`,
+  /** Project credit shown under the photo. Keep captions this short. */
+  homeImageCaption: "The Grantley Arms, Wonersh",
   viewAll: { label: "All services", path: "/services" },
   tabs: [
     {
@@ -515,6 +517,8 @@ export const TESTIMONIALS = {
 export const PROCESS = {
   heading: "Our process",
   image: `${IMG}/process-barn-stair.jpg`,
+  /** Project credit shown under the photo. Keep captions this short. */
+  imageCaption: "Rake Barn, Milford",
   /**
    * Paul Martyn's actual four-stage estimating ladder, taken verbatim from
    * STAGES in the Build Estimate app (build-estimate/src/quote.js) so the

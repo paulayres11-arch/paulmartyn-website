@@ -41,12 +41,20 @@ export default function ProcessPage() {
             ))}
           </ol>
 
-          <div
-            className="mt-14 h-[260px] bg-cover bg-center sm:h-[420px]"
-            style={{ backgroundImage: `url(${PROCESS.image})` }}
-            role="img"
-            aria-label="Paul Martyn project"
-          />
+          <figure className="mt-14">
+            <div
+              className="h-[260px] bg-cover bg-center sm:h-[420px]"
+              style={{ backgroundImage: `url(${PROCESS.image})` }}
+              role="img"
+              aria-label="Paul Martyn project"
+            />
+
+            {/* Same photo as the homepage process band, so it carries the same
+                credit in the same 13.5px small-label style. */}
+            <figcaption className="mt-4 text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+              {PROCESS.imageCaption}
+            </figcaption>
+          </figure>
         </div>
       </section>
     </PageShell>

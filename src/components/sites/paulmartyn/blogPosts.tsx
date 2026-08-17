@@ -453,17 +453,17 @@ export const BLOG_POSTS: BlogPost[] = [
     ),
   },
   {
-    slug: "bat-surveys-timing-surrey",
-    title: "Bat surveys: why timing can cost you a year",
+    slug: "bat-surveys-timing-cranleigh",
+    title: "Bat surveys in Cranleigh: why timing can cost you a year",
     category: "Planning & surveys",
     date: "2026-08-13",
-    seoTitle: "Bat Surveys in Surrey | Why Timing Can Cost a Year",
+    seoTitle: "Bat Surveys in Cranleigh | Why Timing Can Cost a Year",
     metaDescription:
-      "A bat survey can delay a build by a year if you miss the May to August window. What triggers one, the law behind it, and how to plan around it.",
+      "A bat survey can delay a Cranleigh build by a year if you miss the May to August window. What triggers one, the law behind it, and how to plan around it.",
     imageAlt:
       "Twelve-month wheel showing bat activity surveys can only be carried out between May and August, with a preliminary roost assessment possible at any time of year",
     body: [
-      "If your project touches an older roof, a barn, hanging tiles or timber cladding, your council may ask for a bat survey before it will decide your application.",
+      "If your project touches an older roof, a barn, hanging tiles or timber cladding, Waverley may ask for a bat survey before it will decide your application. Around Cranleigh that catches a lot of projects, because the older cottages, tile-hung elevations and converted farm buildings here are exactly the structures bats roost in.",
       "Every UK bat species is a European protected species under the Conservation of Habitats and Species Regulations 2017. It is an offence to disturb them or damage a roost, even without meaning to.",
       "Here is the part that catches people out. A preliminary roost assessment can be done at any time of year — but if it finds evidence, the follow-up activity surveys have to happen while bats are active. That means roughly May to August, with at least two visits between mid-May and August.",
       "Miss that window and you wait until next spring.",
@@ -547,17 +547,17 @@ export const BLOG_POSTS: BlogPost[] = [
     ),
   },
   {
-    slug: "trees-and-foundation-depth",
-    title: "The tree in your garden sets your foundation depth",
+    slug: "trees-and-foundation-depth-cranleigh",
+    title: "In Cranleigh, the tree in your garden sets your foundation depth",
     category: "Foundations",
     date: "2026-08-13",
-    seoTitle: "Foundation Depth Near Trees | Clay Soil in Surrey",
+    seoTitle: "Foundation Depth Near Trees | Weald Clay in Cranleigh",
     metaDescription:
-      "A mature tree near your extension can push foundations from 0.9m to 3.0m deep. How NHBC chapter 4.2 works, and why it belongs in the budget early.",
+      "Cranleigh sits on Weald clay, so a mature tree near your extension can push foundations from 0.9m to 3.0m deep. How NHBC chapter 4.2 works, and what it costs.",
     imageAlt:
       "Bar chart of typical foundation depths near trees, from 0.9 metres for a low water demand species on low shrinkage soil to 3.0 metres for a high demand species on highly shrinkable clay",
     body: [
-      "Clay shrinks as it dries and swells as it wets. Trees drink a great deal of water, so a mature tree near your extension can move the ground beneath it — and moving ground is what cracks buildings.",
+      "Cranleigh sits on the Weald clay of the Low Weald, which makes this a local problem rather than a general one. Clay shrinks as it dries and swells as it wets, and Weald clay is stiff, fissured and particularly prone to it. Trees drink a great deal of water, so a mature tree near your extension can move the ground beneath it — and moving ground is what cracks buildings.",
       "NHBC Standards chapter 4.2 handles this with a ratio: the distance from the tree divided by that species' mature height. Broadly, if a tree stands closer than its own mature height, your foundations are inside its zone of influence.",
       "The practical range is wide. A low water demand species on low shrinkage soil may need only the standard 0.9m minimum. A thirsty species on highly shrinkable clay can push you to 3.0m.",
       "That gap is thousands of pounds of concrete, so it belongs in the budget early — confirmed by a site investigation, never a guess.",

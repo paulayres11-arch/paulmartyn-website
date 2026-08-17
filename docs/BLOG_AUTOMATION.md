@@ -105,42 +105,33 @@ Mark `[done YYYY-MM-DD]` when published. Add more when a stream runs low.
 posts are what bring work in. Knowledge posts stop the blog reading as spam and
 give people a reason to link to it, but they are the minority.
 
-**CRANLEIGH FIRST — this is the rule that overrides the town list below.**
-Paul's instruction, 2026-08-17: the blog concentrates on Cranleigh rather than
-spreading itself across the whole `AREAS` list. Cranleigh is where the business
-is based and what the Google Business Profile address says, and seventeen towns
-covered once each ranks for none of them.
+**CRANLEIGH ONLY. Every local post is a Cranleigh post.**
 
-So, of every three local posts:
+Paul's instruction, 2026-08-17, tightened the same evening: *"lets just
+concentrate on cranleigh — just make the blogs about cranleigh"*. There is no
+longer a slot for a wider town. Cranleigh is where the business is based and
+what the Google Business Profile address says, and seventeen towns covered once
+each ranks for none of them.
 
-- **Two must be Cranleigh** (or the immediate Waverley villages that share its
-  council and character — Ewhurst, Alfold, Dunsfold, Shamley Green, Bramley).
-- **One may be a wider town** from the list below, to keep genuine coverage of
-  the areas Paul actually works in.
+**Do not write a local post about Godalming, Haslemere, Farnham, Cobham,
+Weybridge, Esher, or any other town — including the villages.** The village
+pages are a separate piece of work on the website, not blog posts. If a topic
+only works for another town, pick a different topic.
 
-The working areas, taken from `AREAS` in
-`src/components/sites/paulmartyn/content.ts` — keep the two lists in step.
-**Re-cut 2026-08-17**: the north Surrey commuter towns (Oxshott, Weybridge,
-Esher, Virginia Water, Sunningdale, Windlesham, Claygate, Walton-on-Thames)
-came off the list, because a business on Bridge Road in Cranleigh was
-advertising thirteen towns 20–35 miles away and ranking for none of them.
+The one exception is a passing mention where it is genuinely true and useful —
+"the wider Waverley area", or naming a neighbouring village because that is
+where the example is. That is context, not a second target.
 
-> Cranleigh · Ewhurst · Shamley Green · Wonersh · Bramley · Alfold · Dunsfold ·
-> Loxwood · Rudgwick · Chiddingfold · Godalming · Haslemere · Farnham
-
-**The villages are empty, and that is the opportunity.** Searches for builders
-in Shamley Green, Wonersh, Alfold, Dunsfold and Loxwood return no builders at
-all — parish councils, Mumsnet threads and estate agents. Bramley and Ewhurst
-are barely contested. Godalming is the only one with real competition, so leave
-it until last. Attack in that order: Ewhurst, Shamley Green, Wonersh, Bramley,
-Alfold, Dunsfold, Loxwood, Rudgwick, Chiddingfold, then Godalming.
+**The `AREAS` list in `content.ts` is NOT your topic list.** It records what the
+business covers and it feeds the website's area pages. The blog targets one
+place. Do not treat the other names in it as a queue to work through — the
+village pages are website work, done by hand, not by this routine.
 
 **The heritage angle is the moat.** Cranleigh parish has more than eighty
-listed buildings and no competitor found offers heritage work at all. Nearly
-every target village is itself a conservation area. A firm running a template
-out of Leatherhead cannot fake Waverley's consent process, a designation date,
-or what a timber-framed cottage actually needs — so the village strategy and
-the heritage strategy are the same strategy. Write accordingly.
+listed buildings and no competitor found offers heritage work at all. A firm
+running a template out of Leatherhead cannot fake Waverley's consent process, a
+designation date, or what a timber-framed cottage actually needs. It is the
+richest seam here and it is uncontested — lean on it hard.
 
 Vary the service so the blog builds coverage across topics rather than ten posts
 about extensions. Each post must answer a genuine question and carry real local
@@ -174,21 +165,17 @@ Cranleigh facts worth reusing, all checkable:
   stays true — including the **Church of St Nicolas** at Grade II*. Note the
   spelling: St Nicolas, not Nicholas. Predominantly 15th–17th century
   timber-framed, refronted in brick or stone in the 18th and 19th.
-- Village conservation areas, for the village posts: Ewhurst and Alfold (1970),
-  Wonersh and Shamley Green (1973), Dunsfold and Bramley (1974), Chiddingfold
-  (2007). **Check each date before you publish it** — the strategy note these
-  came from had three Cranleigh figures wrong, so treat them as leads, not
-  facts.
 - 92% of Waverley is rural — 61% Metropolitan Green Belt, 31% rural area beyond
   it — so countryside policy is the norm outside the settlements, not a quirk.
+- Cranleigh sits on the **Weald clay of the Low Weald**: stiff, fissured and
+  prone to shrink-swell, especially near mature trees. This is why foundation
+  depth, subsidence and tree proximity are genuinely local topics here rather
+  than general ones.
 
-Councils for the wider towns, so the detail is right:
-Waverley (Cranleigh, Ewhurst, Godalming, Farnham, Haslemere) ·
-Elmbridge (Cobham, Esher, Weybridge, Walton-on-Thames, Oxshott, Claygate) ·
-Guildford (East Horsley) · Woking (Woking, Knaphill) ·
-Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
+The council is Waverley for every post on this list. If you find yourself
+needing a different council's rules, you have picked the wrong topic.
 
-Cranleigh and near-Cranleigh — work through these first:
+Cranleigh topics — work through these:
 
 - [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
 - [done 2026-08-13] Extending a 1930s semi in Cranleigh: what to expect
@@ -198,28 +185,13 @@ Cranleigh and near-Cranleigh — work through these first:
 - [ ] Building inside the Cranleigh Conservation Area: what needs consent
 - [ ] Cranleigh's settlement boundary: why which side you are on decides everything
 - [ ] Kitchen extensions in Cranleigh: layout before budget
-- [ ] Wet rooms in Ewhurst: what an older cottage needs
+- [ ] Wet rooms in a Cranleigh cottage: what an older building needs
 - [ ] Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves
 - [ ] Garden rooms in Cranleigh: permitted development limits, and where they stop
 - [ ] Building on the Weald clay around Cranleigh: what it means for your footings
-- [ ] Barn conversions around Alfold and Dunsfold: the planning route
+- [ ] Barn conversions around Cranleigh: the planning route
 - [ ] Annexes and multigenerational living in Cranleigh: the planning position
 
-Wider towns — one in every three local posts:
-
-- [ ] Listed building work in Farnham: consent, and what it changes
-- [ ] Kitchen extensions in Godalming: layout before budget
-- [ ] Building on clay in Haslemere: what it means for your footings
-- [ ] New builds around Woking: plot to handover, realistically
-- [ ] Conservation areas in Waverley: what you can and cannot do
-- [ ] Garden rooms and outbuildings in Oxshott: permitted development limits
-- [ ] Renovating a period house in Virginia Water: where the money goes
-- [ ] Extensions in Walton-on-Thames: access, parking and the practical stuff
-- [ ] Bathrooms in Claygate: what a full refit involves
-- [ ] Basements and lower ground floors in Sunningdale: is it worth it
-- [ ] Barn conversions near Windlesham: the planning route
-- [ ] Extending in East Horsley: the Green Belt question
-- [ ] Bathroom fitting costs in Knaphill and Woking
 
 ### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS
 
@@ -279,11 +251,8 @@ For every LOCAL post:
 - Reference a real price band or timescale where you can, with the
   "site-specific assessment" caveat.
 
-Towns to work through: **Cranleigh first — two of every three local posts**, per
-§5. The wider list is the `AREAS` list in `content.ts` — currently Cranleigh,
-Ewhurst, Oxshott, Cobham, Weybridge, Esher, Haslemere, Woking, Knaphill,
-Godalming, Walton-on-Thames, Farnham, Virginia Water, Sunningdale, Windlesham,
-East Horsley and Claygate. If that list changes on the site, follow it.
+Towns to work through: **there is only one — Cranleigh.** See §5. Vary the
+service and the angle, never the town.
 
 Every post links to `/contact` (the card renders this automatically).
 

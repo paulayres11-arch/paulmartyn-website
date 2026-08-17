@@ -94,19 +94,19 @@ export const BLOG_POSTS: BlogPost[] = [
     ),
   },
   {
-    slug: "extension-value-esher",
-    title: "Does an extension add value in Esher? What the numbers say",
+    slug: "extension-value-cranleigh",
+    title: "Does an extension add value in Cranleigh? What the numbers say",
     category: "Extensions",
     date: "2026-08-14",
-    seoTitle: "House Extension Value in Esher | What the Data Really Says",
+    seoTitle: "House Extension Value in Cranleigh | What the Data Really Says",
     metaDescription:
-      "What does an extension actually add in Esher? Nationwide's data on value, and the Elmbridge Green Belt planning rules that decide what you can build first.",
+      "What does an extension actually add in Cranleigh? Nationwide's data on value, and the Waverley settlement boundary rules that decide what you can build first.",
     imageAlt:
-      "Illustration of a house in Esher with a single-storey extension added in amber and a value tag reading plus 24 percent rising above the roofline, with a dashed Green Belt boundary line marked across the rear garden",
+      "Illustration of a house in Cranleigh with a single-storey extension added in amber and a value tag reading plus 24 percent rising above the roofline, with a dashed settlement boundary line marked across the rear garden",
     body: [
-      "Esher homeowners ask this more than most: is an extension worth the disruption, or just nice to have? Nationwide's research on home improvements found that a loft conversion or extension adding a double bedroom and bathroom can add up to around 24% to a three-bedroom house's value, with an extra bathroom alone worth roughly 6%.",
-      "Those are national averages rather than an Esher figure, and Nationwide is clear the effect varies by area — in a market this tight, a good conversion tends to sit at the stronger end.",
-      "The planning route matters as much as the value. A single-storey rear extension can often go ahead as permitted development, but plenty of Esher plots sit inside the Green Belt, where Elmbridge Borough Council requires full planning permission and measures any increase against the house's original floor area.",
+      "Cranleigh homeowners ask this more than most: is an extension worth the disruption, or just nice to have? Nationwide's research on home improvements found that a loft conversion or extension adding a double bedroom and bathroom can add up to around 24% to a three-bedroom house's value, with an extra bathroom alone worth roughly 6%.",
+      "Those are national averages rather than a Cranleigh figure, and Nationwide is clear the effect varies by area — in a village where buyers are competing for family space, a good conversion tends to sit at the stronger end.",
+      "The planning route matters as much as the value. A single-storey rear extension can often go ahead as permitted development, but where your plot sits relative to Cranleigh's settlement boundary decides how much latitude you have: the built-up area falls outside both the Green Belt and the countryside beyond it, while land past the boundary is judged against much tighter countryside policy. Since the Cranleigh Neighbourhood Plan was made in July 2024, Waverley Borough Council uses it to help determine applications here.",
       "We check that before a client spends anything on drawings.",
     ],
     art: (
@@ -131,7 +131,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <rect width="400" height="400" fill="url(#evsky)" />
         <rect y="300" width="400" height="100" fill="#1f2a30" />
         <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Does it add value?</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Esher extensions — national data, local planning</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh extensions — national data, local planning</text>
 
         {/* garden with Green Belt boundary */}
         <rect x="0" y="252" width="400" height="48" fill="url(#evgrass)" />
@@ -161,7 +161,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <text x="238" y="132" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fill="#3a2a12" textAnchor="middle">nationally*</text>
 
         <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">National data says up to 24%*</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Green Belt gardens still need permission from Elmbridge first</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Outside the settlement boundary, Waverley judges it as countryside</text>
         <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">*Nationwide research on home improvements, 2025</text>
         <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
       </svg>
@@ -244,17 +244,17 @@ export const BLOG_POSTS: BlogPost[] = [
     ),
   },
   {
-    slug: "loft-conversions-weybridge-roof-types",
-    title: "Loft conversions in Weybridge: which roofs work and which do not",
+    slug: "loft-conversions-cranleigh-roof-types",
+    title: "Loft conversions in Cranleigh: which roofs work and which do not",
     category: "Loft conversions",
     date: "2026-08-13",
-    seoTitle: "Loft Conversions in Weybridge | Which Roofs Work",
+    seoTitle: "Loft Conversions in Cranleigh | Which Roofs Work",
     metaDescription:
-      "In Weybridge the roof decides your loft conversion. Cut roofs convert easily; trussed rafters do not. How to tell, and the head height to measure first.",
+      "In Cranleigh the roof decides your loft conversion. Cut roofs convert easily; trussed rafters do not. How to tell, and the head height to measure first.",
     imageAlt:
       "Illustration comparing two roof cross-sections: on the left a traditional cut roof with rafters and purlins leaving the loft space open and a 2.2 metre head height arrow, and on the right a modern W-shaped trussed rafter roof with its braced members blocking the same space",
     body: [
-      "In Weybridge the roof decides the loft conversion, not the floor plan. Houses built before the 1960s generally have a cut roof — rafters and purlins, with the triangle underneath largely open. Later houses tend to have W-shaped trussed rafters, and as the Planning Portal puts it, the inner members of a truss cannot normally be removed.",
+      "In Cranleigh the roof decides the loft conversion, not the floor plan. Houses built before the 1960s generally have a cut roof — rafters and purlins, with the triangle underneath largely open. Later houses tend to have W-shaped trussed rafters, and as the Planning Portal puts it, the inner members of a truss cannot normally be removed.",
       "That does not rule a trussed roof out, but it changes the job: new floor joists and collars, usually steel at ridge and floor level, and a structural engineer's design. It is a different budget, and much better known at the start than halfway through.",
       "Measure before anything else. Building regulations allow 2.2m of head height, though 2.4m is far more comfortable once a new floor and ceiling finish have eaten into it. Take it from the ridge down to the top of the ceiling joist.",
       "If it is marginal, we would rather tell you before you spend on drawings.",
@@ -275,7 +275,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <rect width="400" height="400" fill="url(#lwsky)" />
         <rect y="300" width="400" height="100" fill="#1f2a30" />
         <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">The roof decides</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Weybridge loft conversions — cut roof vs trussed rafters</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh loft conversions — cut roof vs trussed rafters</text>
 
         {/* left: cut roof, convertible */}
         <path d="M28 214 L110 108 L192 214 Z" fill="#ffffff" opacity=".72" />
@@ -311,18 +311,18 @@ export const BLOG_POSTS: BlogPost[] = [
     ),
   },
   {
-    slug: "extending-1930s-semi-cobham",
-    title: "Extending a 1930s semi in Cobham: what to expect",
+    slug: "extending-1930s-semi-cranleigh",
+    title: "Extending a 1930s semi in Cranleigh: what to expect",
     category: "Extensions",
     date: "2026-08-13",
-    seoTitle: "Extending a 1930s Semi in Cobham | What to Expect",
+    seoTitle: "Extending a 1930s Semi in Cranleigh | What to Expect",
     metaDescription:
-      "How far back can you extend a 1930s semi in Cobham? The 3m and 6m permitted development limits, Elmbridge's Green Belt rules, and the foundations underneath.",
+      "How far back can you extend a 1930s semi in Cranleigh? The 3m and 6m permitted development limits, Waverley's design guidance, and the foundations underneath.",
     imageAlt:
       "Illustration of a 1930s semi in side elevation with its rear extension drawn in two stages — the first three metres shown as solid brick under permitted development, the next three metres outlined in amber to mark the prior approval zone — with a dimension line beneath",
     body: [
-      "Cobham has a lot of 1930s semis, and the first question is nearly always how far back you can go. The government's permitted development technical guidance allows a single-storey rear extension on a semi to project 3m beyond the original rear wall, up to 4m high. Between 3m and 6m you can still avoid a full application, but only through the larger home extension prior approval route: neighbours are consulted, and you cannot start until the council decides or 42 days pass.",
-      "Locally that is Elmbridge Borough Council, whose Home Extensions companion guide is worth reading before anything is drawn. Where a Cobham property sits in the Green Belt, Elmbridge also asks for volume, footprint and floor space calculations.",
+      "If you own a 1930s semi in Cranleigh, the first question is nearly always how far back you can go. The government's permitted development technical guidance allows a single-storey rear extension on a semi to project 3m beyond the original rear wall, up to 4m high. Between 3m and 6m you can still avoid a full application, but only through the larger home extension prior approval route: neighbours are consulted, and you cannot start until the council decides or 42 days pass.",
+      "Locally that is Waverley Borough Council, whose Residential Extensions SPD — adopted in October 2010 and still the guidance your application is measured against — is worth reading before anything is drawn. Waverley also expects an extension to complement the existing house in style, scale and materials, which for a 1930s semi usually means matching the eaves line and the brickwork rather than fighting them. If the property sits outside Cranleigh's settlement boundary, or inside the village conservation area, the tests are tighter again.",
       "Then there is the house itself. A 1930s semi usually sits on shallow foundations, so new footings rarely match the old.",
       "We survey that before quoting, rather than discovering it in a trench.",
     ],
@@ -342,7 +342,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <rect width="400" height="400" fill="url(#cosky)" />
         <rect y="300" width="400" height="100" fill="#1f2a30" />
         <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">How far back can you go?</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">1930s semi, Cobham — single-storey rear extension</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">1930s semi, Cranleigh — single-storey rear extension</text>
 
         {/* garden */}
         <rect x="24" y="232" width="352" height="18" fill="#7ba05f" />
@@ -380,7 +380,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <text x="273" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#a8652a" textAnchor="middle">to 6m</text>
 
         <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">3m as of right. To 6m, neighbours get a say.</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">No start until Elmbridge decides, or 42 days pass.</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">No start until Waverley decides, or 42 days pass.</text>
         <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GOV.UK householder permitted development guidance</text>
         <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
       </svg>

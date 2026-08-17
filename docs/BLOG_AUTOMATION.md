@@ -78,10 +78,19 @@ Rules that matter:
 
 Already published: bat surveys (2026-08-13), bathroom tanking
 (2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
-cost in Cranleigh (2026-08-13), extending a 1930s semi in Cobham
-(2026-08-13), loft conversions in Weybridge (2026-08-13), party wall
-notice timing (2026-08-13), does an extension add value in Esher
+cost in Cranleigh (2026-08-13), extending a 1930s semi in Cranleigh
+(2026-08-13), loft conversions in Cranleigh (2026-08-13), party wall
+notice timing (2026-08-13), does an extension add value in Cranleigh
 (2026-08-14), building control completion certificates (2026-08-17).
+
+> **Retargeted 2026-08-17.** Three of those local posts were originally written
+> for Cobham, Weybridge and Esher. Paul's instruction was to concentrate the
+> blog on Cranleigh, so they were rewritten — not merely renamed: the council
+> changed from Elmbridge to Waverley, and the Green Belt framing changed to
+> Cranleigh's settlement boundary, because Cranleigh's built-up area is not
+> Green Belt. **If you ever move a post between towns, change the local facts
+> with it.** A post citing the wrong council is worse than a post with no town
+> in it at all.
 
 **Two local posts, then one knowledge post, repeating.** Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
@@ -96,34 +105,81 @@ Mark `[done YYYY-MM-DD]` when published. Add more when a stream runs low.
 posts are what bring work in. Knowledge posts stop the blog reading as spam and
 give people a reason to link to it, but they are the minority.
 
-The working areas, taken from `AREAS` in
+**CRANLEIGH FIRST — this is the rule that overrides the town list below.**
+Paul's instruction, 2026-08-17: the blog concentrates on Cranleigh rather than
+spreading itself across the whole `AREAS` list. Cranleigh is where the business
+is based and what the Google Business Profile address says, and seventeen towns
+covered once each ranks for none of them.
+
+So, of every three local posts:
+
+- **Two must be Cranleigh** (or the immediate Waverley villages that share its
+  council and character — Ewhurst, Alfold, Dunsfold, Shamley Green, Bramley).
+- **One may be a wider town** from the list below, to keep genuine coverage of
+  the areas Paul actually works in.
+
+The wider working areas, taken from `AREAS` in
 `src/components/sites/paulmartyn/content.ts` — keep the two lists in step:
 
 > Cranleigh · Ewhurst · Oxshott · Cobham · Weybridge · Esher · Haslemere ·
 > Woking · Knaphill · Godalming · Walton-on-Thames · Farnham · Virginia Water ·
 > Sunningdale · Windlesham · East Horsley · Claygate
 
-Work through the towns, varying the service so the blog builds coverage across
-both rather than ten posts about extensions. Each post must answer a genuine
-question and carry real local detail — the council, the housing stock, the
-ground, a conservation area. **Never the same post with the place name
-swapped**: that is a doorway page, Google is good at spotting it, and it can
-drag the whole site down.
+Vary the service so the blog builds coverage across topics rather than ten posts
+about extensions. Each post must answer a genuine question and carry real local
+detail — the council, the housing stock, the ground, a conservation area.
+**Never the same post with the place name swapped**: that is a doorway page,
+Google is good at spotting it, and it can drag the whole site down.
 
-Councils, so the detail is right:
+That warning matters *more* now, not less. Concentrating on Cranleigh is exactly
+the situation where doorway pages happen by accident. Six Cranleigh posts are
+fine if they are six genuinely different questions; two Cranleigh posts that
+differ only in the service word are not.
+
+Cranleigh facts worth reusing, all checkable:
+
+- Council is **Waverley Borough Council**. Householder applications are measured
+  against its **Residential Extensions SPD, adopted 12 October 2010**.
+- The **Cranleigh Neighbourhood Plan was made on 15 July 2024** and is now used
+  to determine applications in the parish. This is recent, genuinely local, and
+  no national competitor will mention it.
+- Cranleigh's built-up area sits **outside** the Green Belt and outside the
+  countryside beyond it; the **settlement boundary** is the line that matters.
+  Rowly, in the same parish, *is* washed over by Green Belt. Do not write
+  "Cranleigh Green Belt" as though the village itself were in it.
+- **Cranleigh Conservation Area** covers the village centre; its appraisal was
+  adopted 19 July 2016. One of 43 conservation areas in the borough.
+- 92% of Waverley is rural — 61% Metropolitan Green Belt, 31% rural area beyond
+  it — so countryside policy is the norm outside the settlements, not a quirk.
+
+Councils for the wider towns, so the detail is right:
 Waverley (Cranleigh, Ewhurst, Godalming, Farnham, Haslemere) ·
 Elmbridge (Cobham, Esher, Weybridge, Walton-on-Thames, Oxshott, Claygate) ·
 Guildford (East Horsley) · Woking (Woking, Knaphill) ·
 Runnymede/Surrey Heath (Virginia Water, Sunningdale, Windlesham)
 
+Cranleigh and near-Cranleigh — work through these first:
+
 - [done 2026-08-13] What a bathroom fitting costs in Cranleigh, and what changes the price
-- [done 2026-08-13] Extending a 1930s semi in Cobham: what to expect
-- [done 2026-08-13] Loft conversions in Weybridge: which roofs work and which do not
-- [done 2026-08-14] Does an extension add value in Esher? What the numbers say
-- [ ] Kitchen extensions in Godalming: layout before budget
-- [ ] Listed building work in Farnham: consent, and what it changes
-- [ ] Building on clay in Haslemere: what it means for your footings
+- [done 2026-08-13] Extending a 1930s semi in Cranleigh: what to expect
+- [done 2026-08-13] Loft conversions in Cranleigh: which roofs work and which do not
+- [done 2026-08-14] Does an extension add value in Cranleigh? What the numbers say
+- [ ] The Cranleigh Neighbourhood Plan: what it changed for householders
+- [ ] Building inside the Cranleigh Conservation Area: what needs consent
+- [ ] Cranleigh's settlement boundary: why which side you are on decides everything
+- [ ] Kitchen extensions in Cranleigh: layout before budget
 - [ ] Wet rooms in Ewhurst: what an older cottage needs
+- [ ] Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves
+- [ ] Garden rooms in Cranleigh: permitted development limits, and where they stop
+- [ ] Building on the Weald clay around Cranleigh: what it means for your footings
+- [ ] Barn conversions around Alfold and Dunsfold: the planning route
+- [ ] Annexes and multigenerational living in Cranleigh: the planning position
+
+Wider towns — one in every three local posts:
+
+- [ ] Listed building work in Farnham: consent, and what it changes
+- [ ] Kitchen extensions in Godalming: layout before budget
+- [ ] Building on clay in Haslemere: what it means for your footings
 - [ ] New builds around Woking: plot to handover, realistically
 - [ ] Conservation areas in Waverley: what you can and cannot do
 - [ ] Garden rooms and outbuildings in Oxshott: permitted development limits
@@ -193,7 +249,8 @@ For every LOCAL post:
 - Reference a real price band or timescale where you can, with the
   "site-specific assessment" caveat.
 
-Towns to work through: the `AREAS` list in `content.ts` — currently Cranleigh,
+Towns to work through: **Cranleigh first — two of every three local posts**, per
+§5. The wider list is the `AREAS` list in `content.ts` — currently Cranleigh,
 Ewhurst, Oxshott, Cobham, Weybridge, Esher, Haslemere, Woking, Knaphill,
 Godalming, Walton-on-Thames, Farnham, Virginia Water, Sunningdale, Windlesham,
 East Horsley and Claygate. If that list changes on the site, follow it.

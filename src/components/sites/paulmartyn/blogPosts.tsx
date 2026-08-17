@@ -16,6 +16,94 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-buildings-of-local-merit",
+    title: "Cranleigh heritage: the second list your house might be on",
+    category: "Heritage",
+    date: "2026-08-17",
+    seoTitle: "Buildings of Local Merit in Cranleigh | Heritage & Planning",
+    metaDescription:
+      "Cranleigh has 81 nationally listed buildings — and 174 Buildings of Local Merit. What that second list means for your extension, and how to check before you draw.",
+    imageAlt:
+      "Illustration of a Cranleigh street elevation with two buildings picked out in amber as nationally listed and five more outlined as buildings of local merit, above the figures 81 and 174",
+    body: [
+      "Cranleigh's heritage is better known by its listed buildings: the parish has 81 of them, 80 at Grade II and one at Grade II* — the Church of St Nicolas. What far fewer owners know is that there is a second list. The Cranleigh Neighbourhood Plan records 174 Buildings of Local Merit, more than twice the number of listed ones, and your house can sit on it without being listed at all.",
+      "A Building of Local Merit is not statutory listing and does not bring listed building consent with it. It is a non-designated heritage asset, which means Waverley weighs its significance when it decides an application. People tend to discover this at the wrong moment — after the drawings are done.",
+      "The conservation area is the other half of the picture. Its extension was adopted on 19 July 2016, taking in the south side of the High Street and Cranleigh Common. The Cranleigh Society, which took part in the review alongside local historians and the Surrey Archaeological Society, said the extension \"will ultimately help to safeguard the heritage and design assets of Cranleigh village centre\".",
+      "So there are three things worth establishing before anything is drawn: whether the building is listed, whether it is on the local merit list, and whether it sits inside the conservation area. We check all three at the start, because each one changes what can be built.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lmsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="lmamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="lmroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#lmsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Two lists, not one</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh parish — listed, and locally significant</text>
+
+        {/* Street elevation. Two amber (nationally listed), five outlined
+            (buildings of local merit) — the ratio the numbers below state. */}
+        <g>
+          {/* Listed, amber */}
+          <path d="M28 150 L58 124 L88 150 Z" fill="url(#lmroof)" />
+          <rect x="34" y="150" width="48" height="72" fill="url(#lmamber)" />
+          <rect x="52" y="188" width="14" height="34" fill="#6a4034" />
+          <rect x="40" y="160" width="12" height="14" fill="#fdf3e2" />
+          <rect x="66" y="160" width="12" height="14" fill="#fdf3e2" />
+
+          {/* Local merit, outlined */}
+          <path d="M96 158 L122 134 L148 158 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="101" y="158" width="42" height="64" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="116" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+
+          <path d="M156 152 L182 128 L208 152 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="161" y="152" width="42" height="70" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="176" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+
+          {/* Listed, amber */}
+          <path d="M212 146 L242 120 L272 146 Z" fill="url(#lmroof)" />
+          <rect x="218" y="146" width="48" height="76" fill="url(#lmamber)" />
+          <rect x="236" y="188" width="14" height="34" fill="#6a4034" />
+          <rect x="224" y="156" width="12" height="14" fill="#fdf3e2" />
+          <rect x="250" y="156" width="12" height="14" fill="#fdf3e2" />
+
+          <path d="M276 158 L302 134 L328 158 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="281" y="158" width="42" height="64" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="296" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+
+          <path d="M334 152 L358 130 L382 152 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="338" y="152" width="40" height="70" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
+          <rect x="352" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
+        </g>
+
+        <rect x="24" y="222" width="354" height="2" fill="#b7c5cb" />
+
+        {/* Legend */}
+        <rect x="24" y="240" width="14" height="14" fill="url(#lmamber)" />
+        <text x="46" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30">81 nationally listed</text>
+        <text x="46" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">80 Grade II, one Grade II* — St Nicolas</text>
+
+        <rect x="222" y="240" width="14" height="14" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
+        <text x="244" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30">174 local merit</text>
+        <text x="244" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Not listed. Still weighed.</text>
+
+        <text x="24" y="330" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Your house can be heritage without being listed</text>
+        <text x="24" y="354" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Check listing, local merit and conservation area first</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Cranleigh Neighbourhood Plan; Waverley Borough Council</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "building-control-completion-certificate",
     title: "Building control: what a completion certificate is actually for",
     category: "Building control",

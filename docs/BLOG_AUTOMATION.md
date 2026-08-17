@@ -161,8 +161,12 @@ Cranleigh facts worth reusing, all checkable:
 - Inside a conservation area, demolishing a building over **115 cubic metres**
   needs consent in its own right, as does a boundary wall over 1m fronting a
   highway or over 2m elsewhere. Doing it without consent is a criminal offence.
-- The parish has **82 listed buildings** — write it as "more than eighty" so it
-  stays true — including the **Church of St Nicolas** at Grade II*. Note the
+- The parish has **81 nationally listed buildings** per the Cranleigh
+  Neighbourhood Plan — 80 Grade II and one Grade II*, the **Church of St
+  Nicolas**. (A third-party index says 82; the NP is the local authority, so
+  prefer 81, or write "more than eighty".) There are also **174 Buildings of
+  Local Merit** — non-designated heritage assets Waverley still weighs. That
+  second list is barely known locally and no competitor mentions it. Note the
   spelling: St Nicolas, not Nicholas. Predominantly 15th–17th century
   timber-framed, refronted in brick or stone in the 18th and 19th.
 - 92% of Waverley is rural — 61% Metropolitan Green Belt, 31% rural area beyond
@@ -182,6 +186,7 @@ Cranleigh topics — work through these:
 - [done 2026-08-13] Loft conversions in Cranleigh: which roofs work and which do not
 - [done 2026-08-14] Does an extension add value in Cranleigh? What the numbers say
 - [ ] The Cranleigh Neighbourhood Plan: what it changed for householders
+- [done 2026-08-17] Cranleigh heritage: the second list your house might be on (Buildings of Local Merit)
 - [ ] Building inside the Cranleigh Conservation Area: what needs consent
 - [ ] Cranleigh's settlement boundary: why which side you are on decides everything
 - [ ] Kitchen extensions in Cranleigh: layout before budget

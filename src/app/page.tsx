@@ -37,6 +37,13 @@ import { SITE_URL } from "@/lib/site";
 const BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
+  /**
+   * Shared with the Cranleigh area page, which describes the same business.
+   * Without a common `@id`, each page emitting a LocalBusiness reads as a
+   * separate contractor at the same address — fragmenting the entity that the
+   * local-pack signals are meant to consolidate.
+   */
+  "@id": `${SITE_URL}/#business`,
   name: COMPANY.name,
   legalName: COMPANY.legalName,
   url: SITE_URL,

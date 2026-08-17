@@ -18,6 +18,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (route === "/") return 1;
     if (route === "/services/renovations-extensions") return 0.9;
     if (route === "/guides/house-extension-costs-surrey") return 0.9;
+    /* The page meant to win "builders Cranleigh" — the business's own town,
+       which the site did not have a page for until 2026-08-17. */
+    if (route === "/areas/cranleigh") return 0.9;
     if (route === "/services" || route === "/contact") return 0.8;
     return 0.7;
   };

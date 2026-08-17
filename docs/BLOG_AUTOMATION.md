@@ -118,12 +118,29 @@ So, of every three local posts:
 - **One may be a wider town** from the list below, to keep genuine coverage of
   the areas Paul actually works in.
 
-The wider working areas, taken from `AREAS` in
-`src/components/sites/paulmartyn/content.ts` — keep the two lists in step:
+The working areas, taken from `AREAS` in
+`src/components/sites/paulmartyn/content.ts` — keep the two lists in step.
+**Re-cut 2026-08-17**: the north Surrey commuter towns (Oxshott, Weybridge,
+Esher, Virginia Water, Sunningdale, Windlesham, Claygate, Walton-on-Thames)
+came off the list, because a business on Bridge Road in Cranleigh was
+advertising thirteen towns 20–35 miles away and ranking for none of them.
 
-> Cranleigh · Ewhurst · Oxshott · Cobham · Weybridge · Esher · Haslemere ·
-> Woking · Knaphill · Godalming · Walton-on-Thames · Farnham · Virginia Water ·
-> Sunningdale · Windlesham · East Horsley · Claygate
+> Cranleigh · Ewhurst · Shamley Green · Wonersh · Bramley · Alfold · Dunsfold ·
+> Loxwood · Rudgwick · Chiddingfold · Godalming · Haslemere · Farnham
+
+**The villages are empty, and that is the opportunity.** Searches for builders
+in Shamley Green, Wonersh, Alfold, Dunsfold and Loxwood return no builders at
+all — parish councils, Mumsnet threads and estate agents. Bramley and Ewhurst
+are barely contested. Godalming is the only one with real competition, so leave
+it until last. Attack in that order: Ewhurst, Shamley Green, Wonersh, Bramley,
+Alfold, Dunsfold, Loxwood, Rudgwick, Chiddingfold, then Godalming.
+
+**The heritage angle is the moat.** Cranleigh parish has more than eighty
+listed buildings and no competitor found offers heritage work at all. Nearly
+every target village is itself a conservation area. A firm running a template
+out of Leatherhead cannot fake Waverley's consent process, a designation date,
+or what a timber-framed cottage actually needs — so the village strategy and
+the heritage strategy are the same strategy. Write accordingly.
 
 Vary the service so the blog builds coverage across topics rather than ten posts
 about extensions. Each post must answer a genuine question and carry real local
@@ -147,8 +164,21 @@ Cranleigh facts worth reusing, all checkable:
   countryside beyond it; the **settlement boundary** is the line that matters.
   Rowly, in the same parish, *is* washed over by Green Belt. Do not write
   "Cranleigh Green Belt" as though the village itself were in it.
-- **Cranleigh Conservation Area** covers the village centre; its appraisal was
-  adopted 19 July 2016. One of 43 conservation areas in the borough.
+- **Cranleigh Conservation Area**: the High Street was designated **October
+  1973** and extended **July 1985** and **July 2016**; the appraisal was adopted
+  19 July 2016. One of **43** conservation areas in the borough — not 44.
+- Inside a conservation area, demolishing a building over **115 cubic metres**
+  needs consent in its own right, as does a boundary wall over 1m fronting a
+  highway or over 2m elsewhere. Doing it without consent is a criminal offence.
+- The parish has **82 listed buildings** — write it as "more than eighty" so it
+  stays true — including the **Church of St Nicolas** at Grade II*. Note the
+  spelling: St Nicolas, not Nicholas. Predominantly 15th–17th century
+  timber-framed, refronted in brick or stone in the 18th and 19th.
+- Village conservation areas, for the village posts: Ewhurst and Alfold (1970),
+  Wonersh and Shamley Green (1973), Dunsfold and Bramley (1974), Chiddingfold
+  (2007). **Check each date before you publish it** — the strategy note these
+  came from had three Cranleigh figures wrong, so treat them as leads, not
+  facts.
 - 92% of Waverley is rural — 61% Metropolitan Green Belt, 31% rural area beyond
   it — so countryside policy is the norm outside the settlements, not a quirk.
 

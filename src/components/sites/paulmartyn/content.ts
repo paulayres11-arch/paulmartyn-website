@@ -624,28 +624,55 @@ export const SOCIALS = [
  * Cranleigh appeared twice in the supplied list and is deduplicated here.
  * "Ewehurst" corrected to "Ewhurst", the Surrey village next to Cranleigh.
  */
+/**
+ * Areas covered — re-cut 2026-08-17 around Cranleigh.
+ *
+ * This list was sixteen towns, thirteen of them north Surrey commuter towns
+ * 20–35 miles away — Oxshott, Weybridge, Esher, Virginia Water, Sunningdale,
+ * Windlesham, Claygate, Walton-on-Thames and the rest. The business is on
+ * Bridge Road in Cranleigh and the site appeared for no Cranleigh search at
+ * all; a coverage list weighted to Elmbridge is a large part of why.
+ *
+ * The order is deliberate and is the order the village pages get built in:
+ * Cranleigh, then the villages that ring it, then Godalming last because it
+ * is the only one of these with real competition.
+ *
+ * This is not a refusal of work in Cobham. It is telling Google what the
+ * business is the answer to. `suffix` is what keeps the wider work honest.
+ *
+ * This list feeds the `areaServed` in the homepage's LocalBusiness schema, so
+ * changing it changes what Google is told the business covers. Keep it in step
+ * with the town list in `docs/BLOG_AUTOMATION.md`.
+ */
 export const AREAS = {
   heading: "Areas covered",
   items: [
     "Cranleigh",
     "Ewhurst",
-    "Oxshott",
-    "Cobham",
-    "Weybridge",
-    "Esher",
-    "Haslemere",
-    "Woking",
-    "Knaphill",
+    "Shamley Green",
+    "Wonersh",
+    "Bramley",
+    "Alfold",
+    "Dunsfold",
+    "Loxwood",
+    "Rudgwick",
+    "Chiddingfold",
     "Godalming",
-    "Walton-on-Thames",
+    "Haslemere",
     "Farnham",
-    "Virginia Water",
-    "Sunningdale",
-    "Windlesham",
-    "East Horsley",
-    "Claygate",
   ],
-  suffix: "and surrounding areas",
+  suffix: "and across Surrey, Hampshire and West Sussex",
+};
+
+/**
+ * Which of the areas above have a page of their own yet.
+ *
+ * The footer links the ones listed here and leaves the rest as plain text, so
+ * a village page starts being linked from every page on the site the moment it
+ * is added — rather than shipping orphaned and waiting to be discovered.
+ */
+export const AREA_PAGES: Record<string, string> = {
+  Cranleigh: "/areas/cranleigh",
 };
 
 export const FOOTER = {

@@ -1,4 +1,5 @@
 import {
+  AREA_PAGES,
   AREAS,
   BROCHURE,
   CONTACT,
@@ -114,7 +115,26 @@ export function SiteFooter() {
                 {AREAS.heading}
               </h2>
               <p className="mt-3 text-[15px] font-normal leading-[22.5px] text-pm-slate">
-                {AREAS.items.join(", ")} {AREAS.suffix}.
+                {AREAS.items.map((area, i) => {
+                  const href = AREA_PAGES[area];
+
+                  return (
+                    <span key={area}>
+                      {i > 0 ? ", " : null}
+                      {href ? (
+                        <a
+                          href={href}
+                          className="text-pm-ink transition-colors hover:text-pm-gold"
+                        >
+                          {area}
+                        </a>
+                      ) : (
+                        area
+                      )}
+                    </span>
+                  );
+                })}{" "}
+                {AREAS.suffix}.
               </p>
             </div>
           </div>

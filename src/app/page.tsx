@@ -11,7 +11,12 @@ import { SiteHeader } from "@/components/sites/paulmartyn/SiteHeader";
 import { TopBar } from "@/components/sites/paulmartyn/TopBar";
 import { VideoStrip } from "@/components/sites/paulmartyn/VideoStrip";
 import { TrackRecord } from "@/components/sites/paulmartyn/TrackRecord";
-import { AREAS, COMPANY, CONTACT } from "@/components/sites/paulmartyn/content";
+import {
+  AREAS,
+  COMPANY,
+  CONTACT,
+  SOCIALS,
+} from "@/components/sites/paulmartyn/content";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -57,6 +62,20 @@ const BUSINESS_SCHEMA = {
     postalCode: CONTACT.address.postcode,
     addressCountry: "GB",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: CONTACT.geo.latitude,
+    longitude: CONTACT.geo.longitude,
+  },
+  hasMap: CONTACT.mapsHref,
+  /**
+   * Ties the profiles to the business entity. These existed in the footer as
+   * bare links and were absent from the schema entirely, so nothing told
+   * Google that this Facebook page and this website are the same business.
+   * Add the Google Business Profile URL here when it is to hand — that is the
+   * one that matters most for the map pack.
+   */
+  sameAs: SOCIALS.map((social) => social.href),
   areaServed: AREAS.items.map((town) => ({ "@type": "Place", name: town })),
   description:
     "Family-run builders based in Cranleigh, Surrey. Residential renovations and extensions, new builds, listed buildings and commercial fit-outs across Surrey, Hampshire and West Sussex.",

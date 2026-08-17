@@ -80,6 +80,21 @@ export function SiteFooter() {
             <div className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
               <address className="not-italic">{CONTACT.address.full}</address>
               <span className="mt-2 block">{CONTACT.location}</span>
+
+              {/* Directions, not an embedded map. A Google Maps iframe would
+                  add a third-party payload and Maps cookies to a site that
+                  currently makes no third-party requests, and search engines
+                  do not credit iframe content to the page hosting it — the
+                  location signal comes from the LocalBusiness schema instead.
+                  This link is the part a visitor actually wants. */}
+              <a
+                href={CONTACT.mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-pm-ink underline underline-offset-4 transition-colors hover:text-pm-gold"
+              >
+                Get directions
+              </a>
             </div>
 
             <a

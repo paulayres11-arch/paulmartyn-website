@@ -70,6 +70,28 @@ export const CONTACT = {
     postcode: "GU6 7HH",
     full: "1 Bridge Rd, Cranleigh GU6 7HH",
   },
+  /**
+   * Coordinates for GU6 7HH, from postcodes.io (ONS-derived) on 2026-08-17.
+   * Postcode-centroid accuracy, which is what `geo` is for — it disambiguates
+   * which Cranleigh-area business this is, not which doorway.
+   *
+   * This exists so the LocalBusiness schema can state a position. An embedded
+   * Google Map iframe does NOT do this job: Google does not credit iframe
+   * content to the host page, so a map embed costs a third-party payload and
+   * Maps cookies while telling search engines nothing they can use.
+   */
+  geo: { latitude: 51.140551, longitude: -0.481266 },
+  /**
+   * Directions link, by address query rather than a place ID.
+   *
+   * Google's documented `maps/search/?api=1&query=` form needs no API key and
+   * no fabricated place ID. If the Google Business Profile URL is to hand it
+   * is worth replacing this with it, and adding it to SOCIALS too — the GBP is
+   * the thing the map pack actually ranks, and linking it from the site helps
+   * Google tie the profile and the website to one business.
+   */
+  mapsHref:
+    "https://www.google.com/maps/search/?api=1&query=1+Bridge+Rd%2C+Cranleigh+GU6+7HH",
 } as const;
 
 export const NAV: NavItem[] = [

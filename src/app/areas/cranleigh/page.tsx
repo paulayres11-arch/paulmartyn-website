@@ -74,6 +74,12 @@ const AREA_SCHEMA = {
     postalCode: CONTACT.address.postcode,
     addressCountry: "GB",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: CONTACT.geo.latitude,
+    longitude: CONTACT.geo.longitude,
+  },
+  hasMap: CONTACT.mapsHref,
   areaServed: [
     "Cranleigh",
     "Ewhurst",

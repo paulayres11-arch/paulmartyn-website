@@ -88,9 +88,11 @@ export interface Review {
   score?: number;
   /** Checkatrade review headline. */
   title?: string;
-  /** Checkatrade job category, e.g. "Extensions / Conversions". */
+  /** Job category, e.g. "Extensions / Conversions". Checkatrade supplies it;
+   *  it can also be set by hand on a Google review whose job we know. */
   jobType?: string;
-  /** Checkatrade job location, e.g. "GU9". */
+  /** Job location, e.g. "GU9" or "Cranleigh". Same as `jobType`: from
+   *  Checkatrade, or stated by Paul about his own job. Never inferred. */
   jobLocation?: string;
   verified?: boolean;
   body: string;

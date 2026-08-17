@@ -755,14 +755,31 @@ const REVIEW_ITEMS: Review[] = [
   {
     source: "google",
     author: "Leone Coles",
-    when: "2 days ago",
+    /**
+     * Google showed "2 days ago" when this was captured on 2026-08-17. Stored
+     * as the absolute date because a hardcoded relative one never stops being
+     * "2 days ago" — it silently becomes a lie about how recent the work is.
+     */
+    when: "15 Aug 2026",
     rating: 5,
+    /**
+     * Confirmed by Paul, 2026-08-17: this job was in Cranleigh. The review
+     * itself does not say so — the location is his statement about his own
+     * job, not an edit to the customer's words, which is why it sits in these
+     * fields rather than in `body`.
+     *
+     * It is also the site's first named Cranleigh project, and a repeat
+     * client: kitchen first, two-storey extension a year later.
+     */
+    jobType: "Two-storey extension",
+    jobLocation: "Cranleigh",
     body: "This company did a full kitchen refurbishment where we knocked two rooms into one. I was supported throughout in helping me with design decisions and the workforce were tidy and professional. Thankyou Paulmartyn for my lovely kitchen.\n\nOne year later and Paul Martyn have completed a side two storey extension. Once again they have surpassed their reputation, and we are very happy with the work they did.",
   },
   {
     source: "google",
     author: "Daniel Harrup",
-    when: "3 days ago",
+    /* Relative date captured 2026-08-17; stored absolute so it cannot rot. */
+    when: "14 Aug 2026",
     rating: 5,
     body: "Thank-you to everyone at paul martyn for your amazing service you have provided. Great to finally deal with a highly professional construction team with a trustworthy work force. Highly recommend will be using again.",
   },

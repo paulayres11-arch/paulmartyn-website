@@ -161,6 +161,31 @@ export default function CranleighPage() {
               — which, locally, almost nobody else does.
             </Body>
 
+            <SectionHeading>Recent work in Cranleigh</SectionHeading>
+
+            <Body>
+              A two-storey side extension in Cranleigh, for a client we had
+              already built a kitchen for the year before — two rooms knocked
+              into one. Her review of the second job:
+            </Body>
+
+            {/* A real named Cranleigh client, published on Google and quoted
+                as she wrote it. The strategy note's sharpest point was that
+                the portfolio proves Cobham rather than Cranleigh; this is the
+                first piece of local proof the site has. Replace or add to it
+                as soon as there are photographs of a Cranleigh job. */}
+            <blockquote className="mt-6 border-l-2 border-pm-gold pl-6">
+              <p className="text-[17px] font-normal italic leading-[27px] text-pm-ink">
+                &ldquo;One year later and Paul Martyn have completed a side two
+                storey extension. Once again they have surpassed their
+                reputation, and we are very happy with the work they
+                did.&rdquo;
+              </p>
+              <footer className="mt-3 text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+                Leone Coles — two-storey extension, Cranleigh
+              </footer>
+            </blockquote>
+
             <SectionHeading>
               The Cranleigh Conservation Area, and why it changes the job
             </SectionHeading>

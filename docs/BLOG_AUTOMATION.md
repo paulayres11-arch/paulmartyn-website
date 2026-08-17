@@ -81,7 +81,7 @@ Already published: bat surveys (2026-08-13), bathroom tanking
 cost in Cranleigh (2026-08-13), extending a 1930s semi in Cobham
 (2026-08-13), loft conversions in Weybridge (2026-08-13), party wall
 notice timing (2026-08-13), does an extension add value in Esher
-(2026-08-14).
+(2026-08-14), building control completion certificates (2026-08-17).
 
 **Two local posts, then one knowledge post, repeating.** Local posts are what
 win the searches that bring work in; knowledge posts are what make the site
@@ -145,7 +145,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-08-13] The tree in your garden sets your foundation depth
 - [done 2026-08-13] Bat surveys: why timing can cost you a year
 - [done 2026-08-13] The party wall notice that sets your start date
-- [ ] Building control: what a completion certificate is actually for
+- [done 2026-08-17] Building control: what a completion certificate is actually for
 - [ ] Part L and why your extension needs more insulation than the house
 - [ ] Trickle vents, condensation and Approved Document F
 - [ ] Structural calculations: what a building control officer looks for

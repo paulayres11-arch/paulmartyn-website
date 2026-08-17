@@ -16,6 +16,84 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "building-control-completion-certificate",
+    title: "Building control: what a completion certificate is actually for",
+    category: "Building control",
+    date: "2026-08-17",
+    seoTitle: "Building Control Completion Certificates | What They Prove",
+    metaDescription:
+      "A completion certificate proves work meets the Building Regulations 2010. Why solicitors, lenders and insurers always ask for one before a sale completes.",
+    imageAlt:
+      "Illustration of a house beside a building control clipboard with a checklist, connected by a dashed amber line to a certificate scroll stamped with an amber wax seal, marking the eight week statutory deadline for a completion certificate",
+    body: [
+      "A completion certificate is the one building regulations document buyers' solicitors always ask for, yet plenty of homeowners have never heard of it until they come to sell.",
+      "Under regulation 17 of the Building Regulations 2010, once notifiable work finishes you must tell your local authority within five days; the council or an approved inspector then has up to eight weeks to issue the certificate, confirming the finished work meets the regulations in force when it was built.",
+      "No certificate does not mean the work is unsafe, but it does make a sale harder — lenders and insurers use it as their evidence, and its absence tends to knock money off an offer or trigger an indemnity policy.",
+      "We notify building control ourselves and chase the certificate through to completion, so it is in the file long before anyone asks for it.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="ccsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="ccbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="ccroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="ccgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="ccpaper" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
+          </linearGradient>
+          <linearGradient id="ccseal" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#ccsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">The certificate that matters</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Building Regulations 2010 — completion sign-off</text>
+
+        {/* house */}
+        <path d="M40 200 L110 140 L180 200 Z" fill="url(#ccroof)" />
+        <rect x="52" y="200" width="116" height="76" fill="url(#ccbrick)" />
+        <path d="M52 214 h116 M52 228 h116 M52 242 h116 M52 256 h116" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="64" y="210" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="120" y="210" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="94" y="250" width="24" height="26" fill="#40525a" />
+        <rect x="24" y="276" width="352" height="24" fill="url(#ccgrass)" />
+
+        {/* inspector's clipboard */}
+        <g transform="translate(228,108)">
+          <rect x="0" y="0" width="66" height="86" rx="4" fill="#e7edf1" stroke="#c3ccd1" strokeWidth="2" />
+          <rect x="20" y="-8" width="26" height="14" rx="3" fill="#8b98a0" />
+          <path d="M10 22 h46 M10 38 h46 M10 54 h32" stroke="#5d7078" strokeWidth="2" opacity=".6" />
+          <path d="M8 22 l7 7 l-7 7" stroke="#4c9a5b" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="translate(-2,44)" />
+        </g>
+
+        {/* dashed line: inspection leads to certificate */}
+        <path d="M240 196 q-10 18 -10 30" stroke="#e08a2b" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
+
+        {/* certificate scroll with amber wax seal */}
+        <g transform="translate(210,228)">
+          <rect x="0" y="0" width="150" height="56" rx="4" fill="url(#ccpaper)" stroke="#d8c9a8" strokeWidth="2" />
+          <path d="M10 16 h130 M10 28 h130 M10 40 h92" stroke="#b7a67e" strokeWidth="2" opacity=".7" />
+          <circle cx="128" cy="42" r="17" fill="url(#ccseal)" stroke="#c4741f" strokeWidth="2" />
+          <path d="M120 42 l5 5 l10 -12" stroke="#1f2a30" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        </g>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Eight weeks is the statutory deadline</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Notify within 5 days of finishing — the clock starts there</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: The Building Regulations 2010, regulation 17</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "extension-value-esher",
     title: "Does an extension add value in Esher? What the numbers say",
     category: "Extensions",

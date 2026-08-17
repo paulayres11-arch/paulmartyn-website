@@ -112,7 +112,10 @@ export const NAV: NavItem[] = [
   { label: "Pricing", path: "/pricing" },
   { label: "About Us", path: "/about-us" },
   { label: "Our Process", path: "/process" },
-  { label: "Advice & news", path: "/blog" },
+  /* "Advice & news" moved out of the top nav to the footer on 2026-08-17 at
+     Paul's request. It stays in FOOTER_PAGES, so the blog is still linked from
+     every page on the site and loses no crawlability — only its place in the
+     header. Do not remove it there as well. */
   { label: "Contact", path: "/contact" },
 ];
 

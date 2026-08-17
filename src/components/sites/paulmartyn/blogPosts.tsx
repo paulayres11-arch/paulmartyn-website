@@ -26,10 +26,10 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a Cranleigh street elevation with two buildings picked out in amber as nationally listed and five more outlined as buildings of local merit, above the figures 81 and 174",
     body: [
-      "Cranleigh's heritage is better known by its listed buildings: the parish has 81 of them, 80 at Grade II and one at Grade II* — the Church of St Nicolas. What far fewer owners know is that there is a second list. The Cranleigh Neighbourhood Plan records 174 Buildings of Local Merit, more than twice the number of listed ones, and your house can sit on it without being listed at all.",
-      "A Building of Local Merit is not statutory listing and does not bring listed building consent with it. It is a non-designated heritage asset, which means Waverley weighs its significance when it decides an application. People tend to discover this at the wrong moment — after the drawings are done.",
+      "Cranleigh's heritage is usually measured in listed buildings: the parish has 81, 80 at Grade II and one at Grade II* — the Church of St Nicolas. Fewer owners know about the second list. The Cranleigh Neighbourhood Plan records 174 Buildings of Local Merit, more than twice as many, and your house can be on it without being listed.",
+      "A Building of Local Merit is not statutory listing and brings no listed building consent with it. It is a non-designated heritage asset, so Waverley weighs its significance when deciding an application. People tend to find out at the wrong moment — after the drawings are done.",
       "The conservation area is the other half of the picture. Its extension was adopted on 19 July 2016, taking in the south side of the High Street and Cranleigh Common. The Cranleigh Society, which took part in the review alongside local historians and the Surrey Archaeological Society, said the extension \"will ultimately help to safeguard the heritage and design assets of Cranleigh village centre\".",
-      "So there are three things worth establishing before anything is drawn: whether the building is listed, whether it is on the local merit list, and whether it sits inside the conservation area. We check all three at the start, because each one changes what can be built.",
+      "So three things are worth establishing before anything is drawn: whether the building is listed, whether it is on the local merit list, and whether it sits in the conservation area. We check all three at the start, because each changes what can be built.",
     ],
     art: (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">

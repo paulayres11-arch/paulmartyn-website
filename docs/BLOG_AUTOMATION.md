@@ -185,7 +185,7 @@ Cranleigh topics — work through these:
 - [done 2026-08-13] Extending a 1930s semi in Cranleigh: what to expect
 - [done 2026-08-13] Loft conversions in Cranleigh: which roofs work and which do not
 - [done 2026-08-14] Does an extension add value in Cranleigh? What the numbers say
-- [ ] The Cranleigh Neighbourhood Plan: what it changed for householders
+- [done 2026-08-19] The Cranleigh Neighbourhood Plan: what it changed for householders
 - [done 2026-08-17] Cranleigh heritage: the second list your house might be on (Buildings of Local Merit)
 - [ ] Building inside the Cranleigh Conservation Area: what needs consent
 - [ ] Cranleigh's settlement boundary: why which side you are on decides everything

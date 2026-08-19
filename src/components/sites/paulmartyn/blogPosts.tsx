@@ -16,6 +16,98 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-neighbourhood-plan-householders",
+    title: "The Cranleigh Neighbourhood Plan: what it changed for householders",
+    category: "Planning & surveys",
+    date: "2026-08-19",
+    seoTitle: "Cranleigh Neighbourhood Plan | What Changed for Homeowners",
+    metaDescription:
+      "Made in July 2024, the Cranleigh Neighbourhood Plan now decides planning applications here. The rooflines policy that affects any extension, explained.",
+    imageAlt:
+      "Illustration of a Cranleigh street skyline with a dashed line marking the prevailing roofline across four house silhouettes, and a fifth house's amber two-storey extension breaking above it, beside a small scroll stamped MADE and dated 15 July 2024",
+    body: [
+      "Cranleigh got a new planning document in 2024, and it already shapes what extensions get approved. The Cranleigh Neighbourhood Development Plan 2021–2032 was made on 15 July 2024, after residents backed it at referendum, and now sits alongside the Waverley Local Plan, part of what Waverley Borough Council uses to decide applications here.",
+      "One policy homeowners feel directly: new development, extensions included, should not exceed two storeys or rise above the prevailing roofline unless it can be robustly shown that doing so won't harm views, the streetscape or local character. That is a higher bar than \"it looks fine\" — it wants evidence.",
+      "For a dormer or a two-storey side extension in Cranleigh, the neighbouring rooflines are now part of the design brief, not an afterthought once drawings are done.",
+      "We check the streetscene before we draw anything, so that test is answered before the application goes in, not after.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="npsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="nproof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b98a0" /><stop offset="1" stopColor="#6a7880" />
+          </linearGradient>
+          <linearGradient id="npamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="npgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="nppaper" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#npsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">One line, new limits</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh Neighbourhood Plan — made 15 July 2024</text>
+
+        {/* skyline: four houses under the prevailing roofline, one breaking it */}
+        <rect x="24" y="270" width="352" height="30" fill="url(#npgrass)" />
+
+        <path d="M24 152 L58 116 L92 152 Z" fill="url(#nproof)" />
+        <rect x="32" y="152" width="52" height="118" fill="#dfe5e8" />
+        <rect x="42" y="164" width="14" height="16" fill="#aebcc2" />
+        <rect x="62" y="164" width="14" height="16" fill="#aebcc2" />
+
+        <path d="M96 158 L128 124 L160 158 Z" fill="url(#nproof)" />
+        <rect x="104" y="158" width="48" height="112" fill="#dfe5e8" />
+        <rect x="112" y="170" width="14" height="16" fill="#aebcc2" />
+        <rect x="132" y="170" width="14" height="16" fill="#aebcc2" />
+
+        <path d="M164 150 L198 114 L232 150 Z" fill="url(#nproof)" />
+        <rect x="172" y="150" width="52" height="120" fill="#dfe5e8" />
+        <rect x="182" y="162" width="14" height="16" fill="#aebcc2" />
+        <rect x="202" y="162" width="14" height="16" fill="#aebcc2" />
+
+        <path d="M236 156 L266 122 L296 156 Z" fill="url(#nproof)" />
+        <rect x="244" y="156" width="44" height="114" fill="#dfe5e8" />
+        <rect x="252" y="168" width="14" height="16" fill="#aebcc2" />
+
+        {/* fifth house, extension in amber breaking the guideline */}
+        <path d="M300 158 L328 128 L356 158 Z" fill="url(#nproof)" />
+        <rect x="306" y="158" width="44" height="112" fill="#dfe5e8" />
+        <rect x="314" y="170" width="14" height="16" fill="#aebcc2" />
+        <path d="M330 158 L352 92 L374 158 Z" fill="url(#npamber)" />
+        <rect x="336" y="158" width="32" height="52" fill="url(#npamber)" />
+        <rect x="346" y="176" width="12" height="14" fill="#fbe3c4" />
+
+        {/* prevailing roofline guide */}
+        <path d="M20 118 h384" stroke="#1f2a30" strokeWidth="2" strokeDasharray="6 5" opacity=".55" />
+        <text x="24" y="110" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" opacity=".7">the prevailing roofline</text>
+        <path d="M352 92 l-10 20 l20 0 z" fill="#e08a2b" opacity=".9" />
+        <text x="352" y="86" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#c4741f" textAnchor="middle">evidence needed</text>
+
+        {/* the plan itself, made */}
+        <g transform="translate(28,146)">
+          <rect x="0" y="0" width="72" height="52" rx="3" fill="url(#nppaper)" stroke="#d8c9a8" strokeWidth="2" />
+          <path d="M8 12 h56 M8 22 h56 M8 32 h40" stroke="#b7a67e" strokeWidth="2" opacity=".7" />
+          <circle cx="58" cy="38" r="12" fill="url(#npamber)" stroke="#c4741f" strokeWidth="1.5" />
+          <text x="58" y="41" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#1f2a30" textAnchor="middle">MADE</text>
+        </g>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Exceed the roofline, and you need evidence</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">The Plan now sits in the development plan Waverley uses</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Cranleigh Neighbourhood Development Plan 2021–2032</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "cranleigh-buildings-of-local-merit",
     title: "Cranleigh heritage: the second list your house might be on",
     category: "Heritage",

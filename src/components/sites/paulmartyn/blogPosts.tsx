@@ -16,6 +16,88 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "part-l-extension-insulation",
+    title: "Part L and why your extension needs more insulation than the house",
+    category: "Insulation & energy",
+    date: "2026-08-21",
+    seoTitle: "Approved Document L: Why an Extension Needs More Insulation",
+    metaDescription:
+      "Extending your home? Approved Document L sets its own U-value limits for new work — the same whether the rest of the house is well insulated or not.",
+    imageAlt:
+      "Illustration of a house wall cutaway comparing an existing single-skin brick wall losing heat through blue wavy lines with a new extension wall's insulated cavity construction retaining warmth, labelled with the 0.18 W/m²K limiting U-value for new work under Approved Document L",
+    body: [
+      "Extend an older house and the new room has to perform far better than the one next to it. Building Regulations don't let an extension borrow credit from a draughty original wall — Approved Document L, Volume 1: Dwellings, sets limiting U-values for new work, currently 0.18 W/m²K for walls and floors and 0.15 W/m²K for roofs, regardless of what the rest of the house is doing.",
+      "The comparison is against a notional extension of the same size, not against the house it's joined to — so an older solid-wall property with no cavity insulation passes no allowance on to its new rooms. The new fabric has to meet the same figures a brand new house would.",
+      "It's one reason a straightforward single-storey extension often needs more insulation than people expect from a small job.",
+      "We build to the current limiting values as standard, not as an optional upgrade.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="plsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="plroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="plbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="plgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="plamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#plsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Two walls, one standard</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Approved Document L — new work vs old</text>
+
+        {/* existing house, pitched roof */}
+        <path d="M52 148 L110 88 L168 148 Z" fill="url(#plroof)" />
+        <rect x="60" y="148" width="108" height="128" fill="url(#plbrick)" />
+        <rect x="74" y="168" width="22" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+
+        {/* torn cutaway in the existing wall: single brick skin, heat escaping */}
+        <path d="M128 188 L166 184 L163 202 L166 218 L162 232 L166 248 L163 264 L166 276 L128 276 Z" fill="#a86648" />
+        <path d="M133 200 h26 M133 216 h26 M133 232 h26 M133 248 h26 M133 264 h26" stroke="#7c4a34" strokeWidth="1" opacity=".6" />
+        <path d="M124 202 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
+        <path d="M124 226 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
+        <path d="M124 250 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
+        <text x="147" y="178" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">existing wall</text>
+
+        {/* join between old and new */}
+        <path d="M168 140 v136" stroke="#1f2a30" strokeWidth="2" strokeDasharray="5 4" opacity=".5" />
+
+        {/* extension, lean-to roof */}
+        <path d="M168 140 L340 196 L340 206 L168 150 Z" fill="url(#plroof)" />
+        <rect x="176" y="200" width="156" height="76" fill="url(#plbrick)" />
+
+        {/* torn cutaway in the extension wall: full layered build-up */}
+        <rect x="200" y="216" width="14" height="54" fill="#9d6044" />
+        <rect x="214" y="216" width="46" height="54" fill="url(#plamber)" />
+        <path d="M216 220 l10 -10 M216 232 l14 -14 M216 244 l14 -14 M216 256 l14 -14 M216 266 l10 -10" stroke="#c4741f" strokeWidth="1.5" opacity=".55" />
+        <rect x="260" y="216" width="20" height="54" fill="#aeb8bd" />
+        <rect x="280" y="216" width="8" height="54" fill="#f4f0e6" />
+        <path d="M292 228 q11 -5 19 4 q9 8 19 -3" stroke="#e08a2b" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
+        <path d="M292 250 q11 -5 19 4 q9 8 19 -3" stroke="#e08a2b" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
+        <text x="255" y="188" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">new wall</text>
+        <rect x="210" y="192" width="90" height="18" rx="9" fill="url(#plamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="255" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">0.18 W/m²K</text>
+
+        <rect x="24" y="276" width="352" height="24" fill="url(#plgrass)" />
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">The new wall must out-perform the old</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Approved Document L sets its own standard for new work</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Approved Document L, Volume 1: Dwellings (2021 ed., 2023 amendments)</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "cranleigh-neighbourhood-plan-householders",
     title: "The Cranleigh Neighbourhood Plan: what it changed for householders",
     category: "Planning & surveys",

@@ -23,3 +23,4 @@ Runs are scheduled Monday, Wednesday and Friday at 07:00 UK.
 | 2026-08-17 | OK | building-control-completion-certificate | knowledge | npm run check green; pushed to master; live status not verifiable from this sandbox (WebFetch egress blocked for gov.uk/council/target site domains) |
 | 2026-08-17 | OK | cranleigh-buildings-of-local-merit | local | written by hand at Paul's request, not by the routine; heritage angle, quotes the Cranleigh Society |
 | 2026-08-19 | OK | cranleigh-neighbourhood-plan-householders | local | npm run check green; pushed to master; live status not verifiable from this sandbox (WebFetch egress blocked for council/site domains) |
+| 2026-08-21 | OK | part-l-extension-insulation | knowledge | last two done topics were both local (heritage, neighbourhood plan), so knowledge was due per §5; npm run check green; pushed to master; live status not verifiable from this sandbox (WebFetch egress blocked for gov.uk and target site domains) |

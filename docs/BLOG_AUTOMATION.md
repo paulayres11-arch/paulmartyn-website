@@ -187,7 +187,7 @@ Cranleigh topics — work through these:
 - [done 2026-08-14] Does an extension add value in Cranleigh? What the numbers say
 - [done 2026-08-19] The Cranleigh Neighbourhood Plan: what it changed for householders
 - [done 2026-08-17] Cranleigh heritage: the second list your house might be on (Buildings of Local Merit)
-- [ ] Building inside the Cranleigh Conservation Area: what needs consent
+- [done 2026-08-24] Building inside the Cranleigh Conservation Area: what needs consent
 - [ ] Cranleigh's settlement boundary: why which side you are on decides everything
 - [ ] Kitchen extensions in Cranleigh: layout before budget
 - [ ] Wet rooms in a Cranleigh cottage: what an older building needs

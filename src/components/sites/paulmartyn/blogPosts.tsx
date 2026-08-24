@@ -16,6 +16,110 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-conservation-area-consent",
+    title: "Building inside the Cranleigh Conservation Area: what needs consent",
+    category: "Heritage",
+    date: "2026-08-24",
+    seoTitle: "Cranleigh Conservation Area | What Needs Planning Consent",
+    metaDescription:
+      "Cranleigh's High Street conservation area restricts more than demolition — boundary walls and some cladding need planning consent too, per the Planning Portal.",
+    imageAlt:
+      "Illustration of a Cranleigh High Street terrace of three period buildings enclosed by a dashed conservation area boundary line, with a wrecking ball threatening a small outbuilding tagged '115 cubic metres = consent', a paint roller against a flank wall tagged 'cladding needs consent', and a low front garden wall marked at one metre from the road",
+    body: [
+      "Cranleigh's High Street conservation area has grown three times since it was designated in 1973 — extended in 1985 and again in 2016 — and it's one of 43 across Waverley. Being inside the boundary changes what you can do without asking first.",
+      "Demolishing a building of 115 cubic metres or more needs planning permission for relevant demolition, and so does taking down a garden wall, fence or gate over a metre high next to the road.",
+      "Some work that's permitted development elsewhere — cladding, rendering, or extending on a side of the house facing the street — loses that automatic right here. Conservation areas count as what planners call 'Article 2(3) land' under the Town and Country Planning (General Permitted Development) Order 2015, and the Planning Portal is clear that the rules bite harder inside one.",
+      "We always check a Cranleigh property's conservation area status before drawing anything up.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="cvsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="cvroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="cvbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="cvtimber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d8bd92" /><stop offset="1" stopColor="#b3966a" />
+          </linearGradient>
+          <linearGradient id="cvgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="cvamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#cvsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Inside the line, ask first</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh Conservation Area — designated 1973</text>
+
+        {/* dashed conservation area boundary loop */}
+        <path d="M18 96 q0 -14 14 -14 h336 q14 0 14 14 v168 q0 14 -14 14 h-336 q-14 0 -14 -14 z" fill="none" stroke="#1f2a30" strokeWidth="2.5" strokeDasharray="7 6" opacity=".55" />
+
+        {/* terrace, three buildings */}
+        <path d="M40 176 L78 138 L116 176 Z" fill="url(#cvroof)" />
+        <rect x="48" y="176" width="60" height="80" fill="url(#cvbrick)" />
+        <rect x="58" y="188" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="82" y="188" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="66" y="228" width="20" height="28" fill="#40525a" />
+
+        {/* small rear outbuilding, threatened by demolition */}
+        <rect x="112" y="216" width="30" height="40" fill="#b9a988" stroke="#8f7550" strokeWidth="1.5" />
+        <path d="M112 216 L127 200 L142 216 Z" fill="#9d8362" />
+        <path d="M160 150 l-24 44" stroke="#7c8890" strokeWidth="2" />
+        <circle cx="132" cy="204" r="13" fill="#5d6a72" stroke="#3f4a50" strokeWidth="1.5" />
+        <circle cx="160" cy="150" r="4" fill="#3f4a50" />
+        <rect x="96" y="196" width="72" height="18" rx="9" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="132" y="209" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">115m³ = consent</text>
+
+        {/* centre building, timber framed */}
+        <path d="M172 168 L212 126 L252 168 Z" fill="url(#cvroof)" />
+        <rect x="180" y="168" width="64" height="88" fill="#e7dcc4" />
+        <path d="M180 168 h64 M212 168 v88" stroke="url(#cvtimber)" strokeWidth="6" />
+        <rect x="192" y="182" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="216" y="182" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="200" y="226" width="24" height="30" fill="#40525a" />
+
+        {/* right building, flank wall flagged for cladding */}
+        <path d="M256 176 L296 132 L336 176 Z" fill="url(#cvroof)" />
+        <rect x="264" y="176" width="76" height="80" fill="url(#cvbrick)" />
+        <rect x="274" y="188" width="18" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="302" y="188" width="18" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="286" y="228" width="22" height="28" fill="#40525a" />
+        <g transform="translate(342,196)">
+          <rect x="0" y="0" width="8" height="30" rx="2" fill="#c9d2d6" />
+          <rect x="-10" y="-6" width="28" height="12" rx="4" fill="url(#cvamber)" />
+          <path d="M4 30 v14" stroke="#8b98a0" strokeWidth="2.5" />
+        </g>
+        <rect x="292" y="240" width="88" height="18" rx="9" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="336" y="253" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">cladding needs consent</text>
+
+        <rect x="18" y="256" width="364" height="22" fill="url(#cvgrass)" />
+
+        {/* low front garden wall, height marked */}
+        <rect x="18" y="278" width="364" height="22" fill="#b7a888" stroke="#8f7550" strokeWidth="1.5" />
+        <path d="M40 262 v16" stroke="#1f2a30" strokeWidth="2" strokeDasharray="2 3" />
+        <path d="M35 246 l5 -6 l5 6 z" fill="#1f2a30" opacity=".6" />
+        <text x="40" y="242" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">1m by the road</text>
+
+        {/* boundary tag pinned on the loop */}
+        <rect x="150" y="72" width="132" height="20" rx="10" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="216" y="86" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">CONSERVATION AREA</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">More needs asking inside the line</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Demolition, boundary walls and some cladding all need consent here</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Planning Portal; Cranleigh Conservation Area Appraisal, Waverley BC</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "part-l-extension-insulation",
     title: "Part L and why your extension needs more insulation than the house",
     category: "Insulation & energy",

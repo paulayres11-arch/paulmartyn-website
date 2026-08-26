@@ -16,6 +16,103 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-settlement-boundary",
+    title: "Cranleigh's settlement boundary: why which side you are on decides everything",
+    category: "Planning & surveys",
+    date: "2026-08-26",
+    seoTitle: "Cranleigh Settlement Boundary | Why It Decides Your Build",
+    metaDescription:
+      "Cranleigh parish has two settlement boundaries, not one. Which side of the line your plot sits on — village or Rowly — decides how planning treats it.",
+    imageAlt:
+      "Illustration of Cranleigh parish split by a dashed settlement boundary line, with an amber-roofed village and an open gate on the built-up Cranleigh side, and dark green trees, hedgerow and a closed padlocked gate on the Rowly Green Belt side",
+    body: [
+      "Cranleigh parish actually has two settlement boundaries, not one — Cranleigh village itself, and Rowly to the north. Waverley Borough Council's Settlement Boundaries Topic Paper (November 2020) sets out why the line matters: any land outside a settlement boundary counts as rural, whatever it's called, Green Belt or not.",
+      "Cranleigh's built-up area sits outside both the Green Belt and the Countryside beyond it, so an extension here is judged mainly on its own merits. Rowly, in the same parish, is washed over by the Green Belt, where planning policy is far more restrictive.",
+      "Two plots a few hundred metres apart can face very different rules depending on which side of that boundary they sit. We check a Cranleigh property's position against it before drawing anything up.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="sbsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="sbroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="sbwall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e7dcc4" /><stop offset="1" stopColor="#cdbf9c" />
+          </linearGradient>
+          <linearGradient id="sbgrassL" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="sbgrassR" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5f8f56" /><stop offset="1" stopColor="#436b3c" />
+          </linearGradient>
+          <linearGradient id="sbtree" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5f9a55" /><stop offset="1" stopColor="#3f6f3a" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#sbsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Which side are you on?</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh parish has two settlement boundaries</text>
+
+        {/* left: Cranleigh built-up area, open gate = normally acceptable */}
+        <rect x="20" y="250" width="172" height="30" fill="url(#sbgrassL)" />
+        <path d="M40 210 L64 186 L88 210 Z" fill="url(#sbroof)" />
+        <rect x="46" y="210" width="36" height="40" fill="url(#sbwall)" />
+        <rect x="54" y="220" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
+        <rect x="70" y="234" width="10" height="16" fill="#6a4034" />
+
+        <path d="M100 220 L128 192 L156 220 Z" fill="url(#sbroof)" />
+        <rect x="108" y="220" width="40" height="30" fill="url(#sbwall)" />
+        <rect x="116" y="228" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
+        <rect x="134" y="228" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
+
+        <g transform="translate(30,150)">
+          <rect x="0" y="0" width="4" height="34" fill="#8b98a0" />
+          <path d="M4 4 l30 -10 v28 l-30 10" fill="none" stroke="#e08a2b" strokeWidth="3" strokeLinejoin="round" />
+        </g>
+
+        <rect x="30" y="192" width="86" height="18" rx="9" fill="url(#sbroof)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="73" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">CRANLEIGH — built-up</text>
+
+        {/* right: Rowly, Green Belt, closed gate + padlock = restricted */}
+        <rect x="208" y="250" width="172" height="30" fill="url(#sbgrassR)" />
+        <ellipse cx="250" cy="230" rx="26" ry="30" fill="url(#sbtree)" />
+        <rect x="247" y="256" width="6" height="14" fill="#5a4530" />
+        <ellipse cx="300" cy="218" rx="22" ry="26" fill="url(#sbtree)" />
+        <rect x="297" y="240" width="6" height="14" fill="#5a4530" />
+        <ellipse cx="345" cy="234" rx="24" ry="28" fill="url(#sbtree)" />
+        <rect x="342" y="258" width="6" height="14" fill="#5a4530" />
+        <path d="M215 246 q10 -8 20 0 q10 -8 20 0 q10 -8 20 0 q10 -8 20 0" stroke="#3f6f3a" strokeWidth="2" fill="none" opacity=".6" />
+
+        <g transform="translate(340,150)">
+          <rect x="0" y="0" width="4" height="34" fill="#8b98a0" />
+          <rect x="4" y="6" width="30" height="4" fill="#8b98a0" />
+          <rect x="4" y="20" width="30" height="4" fill="#8b98a0" />
+          <rect x="30" y="0" width="4" height="34" fill="#8b98a0" />
+          <rect x="10" y="10" width="14" height="12" rx="2" fill="#e08a2b" stroke="#c4741f" strokeWidth="1.5" />
+          <path d="M14 10 v-4 a3 3 0 0 1 6 0 v4" fill="none" stroke="#c4741f" strokeWidth="2" />
+        </g>
+
+        <rect x="242" y="192" width="106" height="18" rx="9" fill="#4c6b3c" stroke="#3a5330" strokeWidth="1.5" />
+        <text x="295" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#eef4ea" textAnchor="middle">ROWLY — Green Belt</text>
+
+        {/* dashed boundary line down the centre */}
+        <path d="M200 78 v190" stroke="#1f2a30" strokeWidth="2.5" strokeDasharray="7 6" opacity=".6" />
+        <rect x="146" y="86" width="108" height="20" rx="10" fill="#1f2a30" />
+        <text x="200" y="100" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#e08a2b" textAnchor="middle" letterSpacing="0.5">SETTLEMENT BOUNDARY</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">One parish, two very different rules</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Outside the line, land counts as rural whatever the name</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Waverley BC Settlement Boundaries Topic Paper, Nov 2020</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "cranleigh-conservation-area-consent",
     title: "Building inside the Cranleigh Conservation Area: what needs consent",
     category: "Heritage",

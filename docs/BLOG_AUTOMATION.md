@@ -210,7 +210,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-08-13] The party wall notice that sets your start date
 - [done 2026-08-17] Building control: what a completion certificate is actually for
 - [done 2026-08-21] Part L and why your extension needs more insulation than the house
-- [ ] Trickle vents, condensation and Approved Document F
+- [done 2026-08-28] Trickle vents, condensation and Approved Document F
 - [ ] Structural calculations: what a building control officer looks for
 - [ ] Retention, snagging and what "practical completion" means
 - [ ] Damp: rising, penetrating and condensation are three different problems

@@ -16,6 +16,81 @@ import type { BlogPost } from "@/types/paulmartyn";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "trickle-vents-approved-document-f",
+    title: "Trickle vents, condensation and Approved Document F",
+    category: "Building control",
+    date: "2026-08-28",
+    seoTitle: "Trickle Vents Explained | Approved Document F Requirements",
+    metaDescription:
+      "Most replacement windows in England need trickle vents under Approved Document F, in force since 15 June 2022, even where the old frame never had one.",
+    imageAlt:
+      "Illustration comparing two windows in a wall: the left window sealed with no vent and condensation droplets running down the cold glass, the right window fitted with an amber trickle vent along its top edge letting a fresh air arrow trickle in with no condensation on the glass",
+    body: [
+      "New windows have to breathe, even sealed shut. Since Approved Document F Volume 1 took effect on 15 June 2022, most replacement windows and doors in England need trickle vents fitted — small controllable vents built into the top of the frame — even where the originals never had one.",
+      "The point is condensation, not draughts. A modern double-glazed unit seals a room far better than the window it replaces, so without background ventilation, moisture from cooking, showers and breathing has nowhere to go and ends up on cold glass and, eventually, in the frame timber.",
+      "Older and listed properties can be treated differently, so check before fitting or removing one. We build trickle vents into every window replacement we specify, not as an afterthought.",
+    ],
+    art: (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="tvsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="tvwall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0e9d8" /><stop offset="1" stopColor="#ddd0b4" />
+          </linearGradient>
+          <linearGradient id="tvframe" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e7dcc4" /><stop offset="1" stopColor="#cdbf9c" />
+          </linearGradient>
+          <linearGradient id="tvamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#tvwall)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Sealed shut, still needs to breathe</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Trickle vents under Approved Document F</text>
+
+        {/* left window: sealed, no vent, condensation */}
+        <rect x="28" y="80" width="152" height="190" rx="4" fill="url(#tvframe)" stroke="#a9967a" strokeWidth="2" />
+        <rect x="40" y="92" width="128" height="166" fill="url(#tvsky)" />
+        <rect x="40" y="172" width="128" height="2" fill="#a9967a" />
+        <rect x="103" y="92" width="2" height="166" fill="#a9967a" />
+        <path d="M62 106 q4 10 0 18 q-4 8 0 16 q4 8 0 16" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".85" />
+        <path d="M84 100 q4 12 0 22 q-4 10 0 20 q4 10 0 18" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".7" />
+        <path d="M132 106 q4 10 0 18 q-4 8 0 16 q4 8 0 16" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".8" />
+        <path d="M150 100 q4 12 0 22 q-4 10 0 20 q4 10 0 18" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".65" />
+        <circle cx="70" cy="150" r="2.5" fill="#6fa8cf" opacity=".7" />
+        <circle cx="140" cy="160" r="2.5" fill="#6fa8cf" opacity=".7" />
+        <rect x="28" y="272" width="152" height="20" rx="10" fill="#7d8790" />
+        <text x="104" y="286" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#ffffff" textAnchor="middle">NO VENT</text>
+
+        {/* right window: trickle vent fitted, dry glass, fresh air arrow */}
+        <rect x="220" y="80" width="152" height="190" rx="4" fill="url(#tvframe)" stroke="#a9967a" strokeWidth="2" />
+        <rect x="220" y="80" width="152" height="16" fill="url(#tvamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <rect x="234" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
+        <rect x="260" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
+        <rect x="286" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
+        <rect x="312" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
+        <rect x="338" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
+        <rect x="232" y="106" width="128" height="152" fill="url(#tvsky)" />
+        <rect x="232" y="176" width="128" height="2" fill="#a9967a" />
+        <rect x="295" y="106" width="2" height="152" fill="#a9967a" />
+        <path d="M296 64 q10 8 0 18 q-10 8 0 16" stroke="#e08a2b" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".9" />
+        <path d="M270 118 q22 -4 40 0 q22 4 44 0" stroke="#6a9a4c" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".85" />
+        <path d="M262 138 q22 -4 40 0 q22 4 44 0" stroke="#6a9a4c" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".6" />
+        <rect x="220" y="272" width="152" height="20" rx="10" fill="url(#tvamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <text x="296" y="286" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">TRICKLE VENT</text>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Most new windows must vent themselves</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Even where the old frame never had one fitted</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Approved Document F, Volume 1 (2021 ed.), in force from 15 June 2022</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+    ),
+  },
+  {
     slug: "cranleigh-settlement-boundary",
     title: "Cranleigh's settlement boundary: why which side you are on decides everything",
     category: "Planning & surveys",

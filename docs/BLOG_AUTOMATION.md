@@ -6,18 +6,48 @@ the agent starts each run with no memory of the last one.
 **Run cadence:** Monday, Wednesday, Friday, 07:00 UK.
 **Output:** one new post, appended to the live site.
 
+> ## THE STANDARD CHANGED ON 2026-09-04. READ THIS FIRST.
+>
+> Every post on the blog used to be 100–150 words, and all fifteen of them
+> shared the `/blog` URL and expanded in place. Between them they ranked for
+> nothing, because a 150-word page gives Google nothing to match a real
+> question against and fifteen subjects on one URL can only carry one title
+> tag.
+>
+> Both of those are now fixed and **must not be undone**:
+>
+> - **Posts are 1,400–1,800 words**, structured with `h2` sections, lists,
+>   tables, quoted site advice and an FAQ block. Not three paragraphs.
+> - **Every post has its own page** at `/blog/{slug}`, generated from
+>   `src/app/blog/[slug]/page.tsx`, with its own title, canonical, Article
+>   schema, BreadcrumbList and FAQPage schema. `/blog` is the index.
+> - **`body` is now `BlogBlock[]`**, not `string[]`. See §2.
+> - **Art lives in `blogArt.tsx`**, keyed by slug — not inline in the post.
+>
+> Paul's instruction, 2026-09-04: *"the blog is to improve SEO builders
+> cranleigh or cranleigh builders — make sure you design the blogs to improve
+> the seo this is your main goal"*, and *"the blog entries are too small they
+> need to be 10 x longer"*, and *"research and discuss customers real pain
+> points... show them how to save money or improve and save time... professional
+> quotes and tips"*. Everything in §2 comes from that instruction.
+
 ---
 
 ## 1. What a run does
 
-1. Read this file and `src/components/sites/paulmartyn/blogPosts.tsx`.
+1. Read this file, `src/components/sites/paulmartyn/blogPosts.tsx` and
+   `src/types/paulmartyn.ts` (for the `BlogBlock` union you must build).
 2. Work out which stream is due. Count the `[done]` topics across both streams
    in §5: the pattern is **local, local, knowledge, repeating**. Take the
    **first topic in that stream not marked `[done]`**. If that stream is empty,
    follow "If a stream is empty" in §5 — never fail a run for want of a topic.
 3. Research it against reputable UK sources (§3).
 4. Write the post (§2) and draw the infographic (§4).
-5. Prepend the new post object to `BLOG_POSTS` — **newest first**.
+5. Add the SVG to `BLOG_ART` in `src/components/sites/paulmartyn/blogArt.tsx`,
+   keyed by the new slug, then prepend the new post object to `BLOG_POSTS` —
+   **newest first** — referencing it as `art: BLOG_ART["your-slug"]`.
+   Set `related` to two or three existing slugs, and add the new slug to the
+   `related` array of at least one older post so the link graph is not one-way.
 6. Mark the topic `[done]` in §5 with the date, and top the stream up if §5
    says to.
 7. `npm run check` must pass. If it does not, fix it; never commit a red build.
@@ -28,16 +58,93 @@ the agent starts each run with no memory of the last one.
 
 ## 2. Post format
 
-- **100–150 words.** Count them. One clear takeaway per post.
-- Plain English, **UK spelling**, no jargon. Written for homeowners and
-  self-builders, not for other builders.
-- Shape: hook → the useful point → a light tie-back to Paul Martyn. Never a
-  hard sell. The last line should read like a builder being helpful, not an ad.
-- Fill every field in the `BlogPost` type: `slug`, `title`, `category`, `date`
-  (ISO, the run date), `seoTitle` (~55–60 chars), `metaDescription` (~150),
-  `imageAlt`, `body`, `art`.
-- **Name the source in the body**, e.g. "NHBC Standards chapter 4.2 says…".
-  It is what makes the post credible rather than merely confident.
+### Length and structure
+
+- **1,400–1,800 words of body copy.** Count them. This is the single most
+  important rule on the page — a short post is a wasted run.
+- `body` is a `BlogBlock[]`. The available blocks are defined in
+  `src/types/paulmartyn.ts`: `takeaways`, `p`, `h2`, `h3`, `ul`, `ol`, `quote`,
+  `callout`, `table`. Use them. A post that is twenty `p` blocks in a row has
+  missed the point.
+- The shape that works, and that every existing post follows:
+
+  1. A `takeaways` block of 4–5 bullets — the answer, up front, for the reader
+     who will not scroll and for the search snippet.
+  2. Two or three `p` blocks opening on the **pain point**, in the voice of
+     someone who has stood in the room. Not "here is a regulation".
+  3. **Five to seven `h2` sections.** Each is a question a homeowner would
+     type. These become the on-page contents list and the sitelinks.
+  4. At least one `table` — costs, timings, a comparison. Tables are what
+     people screenshot and what Google lifts.
+  5. At least one `quote` block in Paul's voice, attributed
+     `"Paul Martyn, P Martyn Co Ltd"`. First-hand trade experience is the part
+     a content farm cannot copy.
+  6. At least one `callout` titled "The saving" (or similar) that names a real
+     sum of money or a real number of weeks the reader can avoid losing.
+  7. A closing `p` that links to `/areas/cranleigh` with the anchor text
+     **"builders in Cranleigh"**, in a sentence, not as a footer.
+- **4–6 `faqs`**, phrased exactly as a homeowner would type them. These emit
+  FAQPage schema and are a large share of what wins featured snippets.
+- Fill every field of `BlogPost`: `slug`, `title`, `category`, `date` (ISO, the
+  run date), `seoTitle` (~55–60 chars), `metaDescription` (~150), `excerpt`
+  (1–2 sentences, shown on the index card), `imageAlt`, `body`, `faqs`,
+  `related`, `art`.
+
+### SEO — the main goal
+
+The commercial phrase this site has to win is **"builders Cranleigh" /
+"Cranleigh builders"**. The home page and `/areas/cranleigh` target it
+directly. A blog post will not, and should not try.
+
+What a post does instead:
+
+- **Ranks for the long question** — "how deep do foundations need to be near a
+  tree", "do I need a bat survey for a barn conversion", "what does a bathroom
+  cost in Cranleigh". The `seoTitle` should read as the answer to one of those.
+- **Passes authority inward** by linking to `/areas/cranleigh` with the anchor
+  text "builders in Cranleigh", and to the relevant service, `/pricing` or
+  `/guides/house-extension-costs-surrey` where it genuinely helps the reader.
+- **Links to two or three sibling posts** in the body, in context — not a link
+  dump. Internal links inside prose are worth far more than a related-posts
+  list, and the list is generated from `related` anyway.
+
+Inline markup available in any block's text: `**bold**` and
+`[label](/internal-path)`. Keep links internal. Do not use a single `*` — the
+parser only understands doubled asterisks and a stray one renders literally.
+
+### Voice
+
+- Plain English, **UK spelling**, no jargon, written for homeowners.
+- Open on the problem, not the rule. "Every winter we get the same phone call"
+  beats "Approved Document F states that".
+- Show the money. Every post should tell the reader what to budget and when to
+  book it. Cost overruns and delay are the two things homeowners fear most —
+  unforeseen costs are the single biggest cause of payment disputes in UK
+  construction — so answer those two fears explicitly.
+- Never a hard sell. The closing paragraph should read like a builder being
+  useful, with the local link inside a sentence that would stand without it.
+
+### Cost figures must agree with the rest of the site
+
+`/pricing` and `/guides/house-extension-costs-surrey` are the source of truth:
+
+| Item | Figure |
+| --- | --- |
+| Single-storey extension | £2,700 – £3,100 per m² |
+| Double-storey extension | £2,600 – £3,000 per m² |
+| Kitchen extension incl. fit-out | £3,500 – £4,500 per m² |
+| Loft conversion | £2,000 – £2,800 per m² |
+| New build | £2,700 per m² |
+| Heritage / listed | £3,400 – £4,200 per m² |
+| Full bathroom refit | from £9,000 |
+| Softwood staircase / oak staircase | from £3,600 / £5,600 |
+| Structural engineer | £1,500 – £3,000 |
+| Party wall surveyor (on dissent) | from £1,000 |
+| Householder planning fee | **£548** from 1 Apr 2026; ~£575 from 8 Dec 2026 |
+| Larger rear extension prior approval | **£249**; £310 from 8 Dec 2026 |
+
+If you change one of these, change it in all three places in the same commit.
+A site that quotes two different prices for the same thing loses the reader.
 
 ## 3. Facts and sources
 
@@ -55,6 +162,11 @@ Rules that matter:
 
 ## 4. Images
 
+- **Goes in `src/components/sites/paulmartyn/blogArt.tsx`**, as an entry in
+  `BLOG_ART` keyed by the post's slug — not inline in `blogPosts.tsx`. The post
+  then references it as `art: BLOG_ART["your-slug"]`. Art and words were split
+  on 2026-09-04 because a 1,600-word post and a 100-line SVG in one object made
+  the file unsafe to edit.
 - **Original inline SVG only.** Never take an image from the web — reusing
   stock, product renders or press photography on a commercial site is a real
   legal exposure, and the brief forbids it.
@@ -76,12 +188,31 @@ Rules that matter:
 
 ## 5. Topic backlog
 
-Already published: bat surveys (2026-08-13), bathroom tanking
-(2026-08-13), trees and foundation depth (2026-08-13), bathroom fitting
-cost in Cranleigh (2026-08-13), extending a 1930s semi in Cranleigh
-(2026-08-13), loft conversions in Cranleigh (2026-08-13), party wall
-notice timing (2026-08-13), does an extension add value in Cranleigh
-(2026-08-14), building control completion certificates (2026-08-17).
+Already published (all fifteen rewritten long-form on 2026-09-04 — do not
+re-publish any of these subjects, extend or update them instead):
+
+| Slug | Stream | Published |
+| --- | --- | --- |
+| `bat-surveys-timing-cranleigh` | local | 2026-08-13 |
+| `tiles-are-not-waterproof` | knowledge | 2026-08-13 |
+| `trees-and-foundation-depth-cranleigh` | local | 2026-08-13 |
+| `bathroom-fitting-cost-cranleigh` | local | 2026-08-13 |
+| `extending-1930s-semi-cranleigh` | local | 2026-08-13 |
+| `loft-conversions-cranleigh-roof-types` | local | 2026-08-13 |
+| `party-wall-notice-timing` | knowledge | 2026-08-13 |
+| `extension-value-cranleigh` | local | 2026-08-14 |
+| `building-control-completion-certificate` | knowledge | 2026-08-17 |
+| `cranleigh-buildings-of-local-merit` | local | 2026-08-17 |
+| `cranleigh-neighbourhood-plan-householders` | local | 2026-08-19 |
+| `part-l-extension-insulation` | knowledge | 2026-08-21 |
+| `cranleigh-conservation-area-consent` | local | 2026-08-24 |
+| `cranleigh-settlement-boundary` | local | 2026-08-26 |
+| `trickle-vents-approved-document-f` | knowledge | 2026-08-28 |
+
+**The automation stopped after 2026-08-28** — both cloud routines were deleted
+and nothing published for a week. They were recreated on 2026-09-04. If the
+gap between the newest post's date and today is more than about four days, say
+so in the run log: it means the schedule is not firing.
 
 > **Retargeted 2026-08-17.** Three of those local posts were originally written
 > for Cobham, Weybridge and Esher. Paul's instruction was to concentrate the
@@ -243,9 +374,19 @@ This is the part that earns the money, so do it properly.
 having typed the query. "bathroom fitting cranleigh cost" wants a number and
 what moves it, not a company history.
 
+**The head term is not a blog job.** "builders Cranleigh" / "Cranleigh builders"
+is won by the home page and `/areas/cranleigh`. A post's job is to rank for the
+long question and pass authority to those pages. Do not try to write a post
+targeting the head term — it will read as spam and it will not work.
+
 For every LOCAL post:
 
 - Put the **service and the place in the title** and in the `seoTitle`.
+- Link to `/areas/cranleigh` with the anchor text **"builders in Cranleigh"**,
+  once, inside a sentence in the closing paragraph. This is the single most
+  valuable line in the post from an SEO point of view. It is also the easiest
+  thing to get wrong: a footer link with that anchor on every post looks
+  automated, a sentence does not.
 - Use the place **two or three times in the body, where it reads naturally** —
   in an example, in a reference to local ground conditions or the local
   authority. Never stuff it. A post that reads badly ranks badly.
@@ -288,9 +429,15 @@ automatic and a broken commit reaches the live site.
 a machine holding Railway credentials, but a cloud agent will not have those and
 does not need them.
 
-Confirm the post is live at `https://www.paulmartynconstruction.com/blog` after
-pushing. If it is not up after a couple of minutes, say so in the run summary
-rather than pushing again.
+Confirm the post is live at its own URL —
+`https://www.paulmartynconstruction.com/blog/your-slug` — after pushing, not
+just on the index. If it is not up after a couple of minutes, say so in the run
+summary rather than pushing again.
+
+**The webhook is unreliable.** On 2026-08-17 three pushes produced one deploy.
+The cloud sandbox is usually blocked from reaching the live domain, so a missed
+webhook looks exactly like a successful post. If you cannot reach the site, say
+"live status not verified" in the log — never "published".
 
 ## 9. Leaving a trail, and saying when it broke
 

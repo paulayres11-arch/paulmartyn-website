@@ -47,10 +47,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return "monthly" as const;
   };
 
-  return ROUTES.map((route) => ({
+  const staticEntries = ROUTES.map((route) => ({
     url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
     lastModified: route === "/blog" ? blogUpdated : undefined,
     changeFrequency: changeFrequencyFor(route),
     priority: priorityFor(route),
   }));
+
+  /**
+   * Every post, as its own URL.
+   *
+   * Before 2026-09-04 the posts had no URLs to list — they expanded inside
+   * /blog — so this file offered Google one page covering fifteen subjects and
+   * Google ranked it for none of them. Each post now carries its own entry,
+   * with its own publish date as `lastModified`, which is what tells a crawler
+   * which of them is worth re-reading.
+   *
+   * Priority 0.8: below the money pages, above the rest of the furniture. The
+   * Cranleigh posts are the ones expected to bring in local search traffic.
+   */
+  const postEntries = BLOG_POSTS.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updated ?? post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticEntries, ...postEntries];
 }

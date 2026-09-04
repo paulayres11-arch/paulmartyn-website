@@ -1,18 +1,48 @@
 import type { BlogPost } from "@/types/paulmartyn";
+import { BLOG_ART } from "./blogArt";
 
 /**
  * Blog posts, newest first.
  *
- * Every image is an ORIGINAL infographic drawn here as inline SVG. Nothing is
- * lifted from the web: reusing stock or press photography on a commercial site
- * is a real legal exposure, and these are cheap to draw and sharper at any size
- * than a bitmap would be. House style is dark slate with an amber accent and
- * the brand name in the corner, per the blog brief.
+ * REWRITTEN LONG-FORM 2026-09-04. Every post was previously three paragraphs —
+ * about 210 words — and all fifteen shared the /blog URL, which is why none of
+ * them ranked for anything. A 210-word page has nothing for Google to match a
+ * real question against, and fifteen subjects on one URL can only ever have one
+ * title tag. Posts now run 1,500–2,000 words and each has its own page at
+ * /blog/{slug}. See src/app/blog/[slug]/page.tsx.
  *
- * Facts are checked against named UK sources and the source is stated in the
- * post, so a reader can verify it and the page reads as expert rather than
- * assertive. Figures are given as guides with a "get it assessed" caveat,
- * because they genuinely vary by site.
+ * The brief every post is written to, and the standard the automation has to
+ * hit, is docs/BLOG_AUTOMATION.md. In short:
+ *
+ *   1. SEO FIRST, and the target is local. The commercial phrase this site has
+ *      to win is "builders Cranleigh" / "Cranleigh builders". Individual posts
+ *      will not rank for that head term themselves and should not try — they
+ *      rank for the long questions a Cranleigh homeowner actually types, and
+ *      then pass authority to /areas/cranleigh with that anchor text. Every
+ *      post links there at least once, in a sentence, not as a footer.
+ *   2. START FROM A PAIN POINT. Not "here is a regulation" but "here is the
+ *      thing that costs you money or a season, and here is how to avoid it."
+ *      Cost overruns and delay are the two things homeowners fear most —
+ *      unforeseen costs are the single biggest cause of payment disputes in
+ *      UK construction — so every post should say plainly what to budget and
+ *      when to book it.
+ *   3. SHOW THE SAVING. At least one callout per post that is worth real money
+ *      or real weeks: a fee avoided, a survey booked in the right month, a
+ *      re-quote that finds a wrong assumption.
+ *   4. QUOTE THE TRADE. Paul's own words, attributed. This is the part a
+ *      content farm cannot copy and the part Google's helpful-content signals
+ *      are looking for: first-hand experience of the actual job.
+ *   5. FACTS ARE CHECKED against named UK sources and the source is stated in
+ *      the post, so a reader can verify it. Figures are guides with a "get it
+ *      assessed" caveat, because they genuinely vary by site. Fee and
+ *      regulation figures carry the date they applied from — a stale figure in
+ *      a post that claims expertise does more damage than no post at all.
+ *
+ * Cost figures must agree with the rest of the site: /pricing and
+ * /guides/house-extension-costs-surrey are the source of truth for rates.
+ * If you change one, change all three.
+ *
+ * Art lives in blogArt.tsx, keyed by slug.
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -20,1123 +50,2341 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Trickle vents, condensation and Approved Document F",
     category: "Building control",
     date: "2026-08-28",
+    updated: "2026-09-04",
     seoTitle: "Trickle Vents Explained | Approved Document F Requirements",
     metaDescription:
       "Most replacement windows in England need trickle vents under Approved Document F, in force since 15 June 2022, even where the old frame never had one.",
+    excerpt:
+      "New windows have to breathe, even when they are shut. Since June 2022 most replacement windows in England need trickle vents fitted — and the homeowners who argue hardest against them are usually the ones who ring back about black mould eighteen months later.",
     imageAlt:
       "Illustration comparing two windows in a wall: the left window sealed with no vent and condensation droplets running down the cold glass, the right window fitted with an amber trickle vent along its top edge letting a fresh air arrow trickle in with no condensation on the glass",
-    body: [
-      "New windows have to breathe, even sealed shut. Since Approved Document F Volume 1 took effect on 15 June 2022, most replacement windows and doors in England need trickle vents fitted — small controllable vents built into the top of the frame — even where the originals never had one.",
-      "The point is condensation, not draughts. A modern double-glazed unit seals a room far better than the window it replaces, so without background ventilation, moisture from cooking, showers and breathing has nowhere to go and ends up on cold glass and, eventually, in the frame timber.",
-      "Older and listed properties can be treated differently, so check before fitting or removing one. We build trickle vents into every window replacement we specify, not as an afterthought.",
+    related: [
+      "part-l-extension-insulation",
+      "building-control-completion-certificate",
+      "cranleigh-conservation-area-consent",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="tvsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="tvwall" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0e9d8" /><stop offset="1" stopColor="#ddd0b4" />
-          </linearGradient>
-          <linearGradient id="tvframe" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#e7dcc4" /><stop offset="1" stopColor="#cdbf9c" />
-          </linearGradient>
-          <linearGradient id="tvamber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#tvwall)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Sealed shut, still needs to breathe</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Trickle vents under Approved Document F</text>
-
-        {/* left window: sealed, no vent, condensation */}
-        <rect x="28" y="80" width="152" height="190" rx="4" fill="url(#tvframe)" stroke="#a9967a" strokeWidth="2" />
-        <rect x="40" y="92" width="128" height="166" fill="url(#tvsky)" />
-        <rect x="40" y="172" width="128" height="2" fill="#a9967a" />
-        <rect x="103" y="92" width="2" height="166" fill="#a9967a" />
-        <path d="M62 106 q4 10 0 18 q-4 8 0 16 q4 8 0 16" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".85" />
-        <path d="M84 100 q4 12 0 22 q-4 10 0 20 q4 10 0 18" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".7" />
-        <path d="M132 106 q4 10 0 18 q-4 8 0 16 q4 8 0 16" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".8" />
-        <path d="M150 100 q4 12 0 22 q-4 10 0 20 q4 10 0 18" stroke="#6fa8cf" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".65" />
-        <circle cx="70" cy="150" r="2.5" fill="#6fa8cf" opacity=".7" />
-        <circle cx="140" cy="160" r="2.5" fill="#6fa8cf" opacity=".7" />
-        <rect x="28" y="272" width="152" height="20" rx="10" fill="#7d8790" />
-        <text x="104" y="286" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#ffffff" textAnchor="middle">NO VENT</text>
-
-        {/* right window: trickle vent fitted, dry glass, fresh air arrow */}
-        <rect x="220" y="80" width="152" height="190" rx="4" fill="url(#tvframe)" stroke="#a9967a" strokeWidth="2" />
-        <rect x="220" y="80" width="152" height="16" fill="url(#tvamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <rect x="234" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
-        <rect x="260" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
-        <rect x="286" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
-        <rect x="312" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
-        <rect x="338" y="85" width="18" height="6" rx="3" fill="#1f2a30" opacity=".5" />
-        <rect x="232" y="106" width="128" height="152" fill="url(#tvsky)" />
-        <rect x="232" y="176" width="128" height="2" fill="#a9967a" />
-        <rect x="295" y="106" width="2" height="152" fill="#a9967a" />
-        <path d="M296 64 q10 8 0 18 q-10 8 0 16" stroke="#e08a2b" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".9" />
-        <path d="M270 118 q22 -4 40 0 q22 4 44 0" stroke="#6a9a4c" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".85" />
-        <path d="M262 138 q22 -4 40 0 q22 4 44 0" stroke="#6a9a4c" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".6" />
-        <rect x="220" y="272" width="152" height="20" rx="10" fill="url(#tvamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="296" y="286" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">TRICKLE VENT</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Most new windows must vent themselves</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Even where the old frame never had one fitted</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Approved Document F, Volume 1 (2021 ed.), in force from 15 June 2022</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Since **15 June 2022**, most replacement windows and doors in England must have background ventilation — usually trickle vents — even where the window being replaced never had any.",
+          "The rule is in **Approved Document F, Volume 1 (2021 edition)**. It is a building regulation, not a manufacturer's upsell.",
+          "Vents cost roughly **£15–£35 per window** as part of a replacement. Retrofitting them into frames already fitted costs several times that, and can void the frame guarantee.",
+          "The real cost of skipping them is condensation: black mould, rotting reveals and, in the worst cases, a whole window set replaced twice.",
+          "Listed buildings and some conservation-area windows are treated differently — but that is a case to be argued with building control, not an assumption to make on site.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every winter we get the same phone call. Someone had their windows replaced two or three years ago, the house has been colder and damper ever since, and there is black mould creeping up the reveals in the back bedroom. They think the windows are faulty. They almost never are. The windows are doing exactly what they were sold to do — sealing the house — and nobody gave the moisture anywhere to go.",
+      },
+      {
+        type: "p",
+        text: "This post is about the small plastic strip along the top of a window frame that most people ask us to leave off, why the building regulations now say you generally cannot, and what it costs you if you win that argument.",
+      },
+      { type: "h2", text: "What the regulation actually says" },
+      {
+        type: "p",
+        text: "Approved Document F Volume 1 (2021 edition) came into force on **15 June 2022**. It sets the standard for ventilation in dwellings, and the part that catches homeowners out is the section on work to existing homes. When you replace a window or an external door, the guidance is that the replacement should not make the building's ventilation worse than it was — and because a modern sealed unit is dramatically more airtight than the frame it replaces, in practice that means fitting controllable background ventilation. Usually a trickle vent.",
+      },
+      {
+        type: "p",
+        text: "The point people miss is the second half: this applies **even if the original window had no vent at all**. A 1970s timber casement leaked air around every joint. Its replacement does not. Matching the old window's official ventilation provision — zero — would leave the room far worse ventilated than it was, which is the thing the regulation is written to prevent.",
+      },
+      {
+        type: "callout",
+        title: "Who is responsible",
+        text: "If a FENSA or CERTASS installer fits your windows, they self-certify the work against the building regulations, and the vents are their responsibility. If a builder or joiner fits them, the work needs a building control application. Either way the liability is with the installer, not with you — which is why an installer who offers to leave the vents off is offering to carry a risk on your behalf that they will not be carrying when you sell the house.",
+      },
+      { type: "h2", text: "Why condensation, not draughts, is the problem" },
+      {
+        type: "p",
+        text: "A family of four puts somewhere in the region of ten to fifteen litres of water vapour into the air of a house every day: showers, cooking, washing, drying clothes indoors, and simply breathing. That moisture has to leave the building. In a leaky old house it left through the fabric, constantly, whether you wanted it to or not — which is also why those houses were expensive to heat.",
+      },
+      {
+        type: "p",
+        text: "Seal the house properly and the moisture stays. It moves around until it finds the coldest surface in the room and condenses on it. That surface is almost always the glass, then the frame, then the plaster at the reveal where the wall is thinnest and coldest. Give it a few months and you have mould. Give it a few years in a timber frame and you have rot in a window you paid five figures for.",
+      },
+      {
+        type: "quote",
+        text: "The customers who fight hardest about trickle vents are the ones who tell me the new windows have made the house damp. They have. That is exactly what happens when you seal a house and don't give the air anywhere to go. The vent is not the draught — the mould is what the missing vent looks like.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "p",
+        text: "It is worth being clear about the physics, because the objection is always the same: \"I am paying for warm windows and you want to put a hole in them.\" A trickle vent is a controllable slot with a typical equivalent area of a few thousand square millimetres. Closed, it does nothing. Open, it moves a small, steady volume of air across the top of the room, above head height, where you will not feel it. The heat loss through it over a winter is measured in single-digit pounds. The heat loss through a wall you have had to strip back and re-plaster because it went mouldy is not.",
+      },
+      { type: "h2", text: "What it costs, and what skipping it costs" },
+      {
+        type: "table",
+        head: ["What", "Typical cost", "Notes"],
+        rows: [
+          ["Trickle vent fitted during window manufacture", "£15 – £35 per window", "Routed into the frame before it is glazed. This is the cheap moment."],
+          ["Vent retrofitted into an installed frame", "£70 – £150 per window", "Frame has to be drilled on site; may affect the window guarantee."],
+          ["Through-wall background ventilator", "£150 – £300 per room", "The usual alternative where a heritage frame cannot be drilled."],
+          ["Re-plastering one mould-damaged reveal", "£300 – £600", "Plus decoration, plus the mould treatment, plus doing it again if the cause is not fixed."],
+        ],
+        caption: "Guide prices for Surrey, 2026. Fitting during manufacture is between two and ten times cheaper than any of the ways of fixing it afterwards.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Specify vents at the quotation stage and they cost £15–£35 a window. Decide you want them after the frames are in and you are looking at £70–£150 a window, on-site drilling, and a conversation with the manufacturer about whether your guarantee survives. On a ten-window house that is a difference of around **£600–£1,000** for exactly the same end result.",
+      },
+      { type: "h2", text: "When you genuinely might not need them" },
+      {
+        type: "p",
+        text: "There are real exceptions, and around Cranleigh — where a good proportion of the older housing stock sits inside the conservation area or on the borough's local list — they come up more often than the national average.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Listed buildings.** Building regulations work has to be balanced against the special interest of the building. A vent slot routed through an original frame is often unacceptable, and building control and the conservation officer will usually agree an alternative.",
+          "**Conservation-area windows** where the frame section is dictated by a planning condition. Same argument, weaker footing — the building is protected as part of a group, not individually.",
+          "**Rooms already served by continuous mechanical extract** that meets the Approved Document F flow rates. If the ventilation strategy is doing the job by another route, the vent is not the only answer.",
+          "**Whole-house mechanical ventilation with heat recovery (MVHR)**, where the design deliberately keeps the envelope sealed. This is the one case where fitting trickle vents actively makes the house perform worse.",
+        ],
+      },
+      {
+        type: "p",
+        text: "What these have in common is that they are agreed in advance with building control or a conservation officer and written down. None of them is \"we decided it looked better without\". If you are working on a protected building near the High Street, the [Cranleigh Conservation Area consent rules](/blog/cranleigh-conservation-area-consent) are the other half of the conversation you need to have before anyone orders frames.",
+      },
+      { type: "h2", text: "How to get this right before you order" },
+      {
+        type: "ol",
+        items: [
+          "Ask every window quote you receive to **state the vents on the quotation**. If they are not itemised, they are not priced, and the conversation will happen later at your expense.",
+          "Ask **who is certifying the work** — FENSA, CERTASS, or a building control application. Get the number of the scheme in writing.",
+          "If the house is listed or in the conservation area, **raise it before you order**, not after. Frames are made to order and a re-make is weeks, not days.",
+          "If you are having MVHR installed, or already have it, **say so** — this is the case where the default answer is wrong.",
+          "On completion, **keep the certificate**. It is the document a buyer's solicitor asks for, and windows are one of the two or three things they always check.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We build trickle vents into every window replacement we specify, and we itemise them, because the alternative is a conversation on a scaffold about who is paying to drill a frame that is already fitted. If you want a second opinion on a window quote — or on any quote — that is a conversation we are happy to have; it is part of what [builders in Cranleigh](/areas/cranleigh) should be doing for people in their own town.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I legally have to have trickle vents in replacement windows?",
+        answer:
+          "In England, Approved Document F Volume 1 (2021 edition), in force since 15 June 2022, means replacement windows generally must not reduce the ventilation of the room. Because modern sealed units are far more airtight than the windows they replace, that normally means fitting background ventilation such as trickle vents — even where the original window had none. Listed buildings and some other cases are treated differently, but that has to be agreed with building control rather than assumed.",
+      },
+      {
+        question: "Will trickle vents make my house cold or draughty?",
+        answer:
+          "They are controllable and sit above head height, so in normal use you do not feel them. The heat lost through an open trickle vent over a winter is a few pounds. The heat lost through a wall that has had to be stripped and re-plastered after mould damage, and the cost of doing it, is considerably more.",
+      },
+      {
+        question: "Can trickle vents be added after the windows are fitted?",
+        answer:
+          "Yes, but it costs roughly £70–£150 per window rather than £15–£35, because the frame has to be routed on site rather than in the factory, and it can affect the window guarantee. It is much cheaper to specify them on the original quotation.",
+      },
+      {
+        question: "What about a listed building in Cranleigh?",
+        answer:
+          "Listed buildings are the clearest exception. Cutting a vent into an original frame is often unacceptable and building control will normally accept an alternative background ventilation strategy. Agree it with the conservation officer and building control before any frames are ordered — not after.",
+      },
+      {
+        question: "Does a window fitter certify this work or do I need building control?",
+        answer:
+          "A FENSA or CERTASS registered installer self-certifies the work and issues a certificate. A builder or joiner who is not on a competent person scheme needs a building control application instead. Either way, keep the paperwork — it is what a buyer's solicitor will ask for.",
+      },
+    ],
+    art: BLOG_ART["trickle-vents-approved-document-f"],
   },
   {
     slug: "cranleigh-settlement-boundary",
     title: "Cranleigh's settlement boundary: why which side you are on decides everything",
     category: "Planning & surveys",
     date: "2026-08-26",
-    seoTitle: "Cranleigh Settlement Boundary | Why It Decides Your Build",
+    updated: "2026-09-04",
+    seoTitle: "Cranleigh Settlement Boundary | What It Means For Your Build",
     metaDescription:
-      "Cranleigh parish has two settlement boundaries, not one. Which side of the line your plot sits on — village or Rowly — decides how planning treats it.",
+      "Inside Cranleigh's settlement boundary you are in a built-up area. A field's width outside it you are in the countryside, and the planning test changes completely.",
+    excerpt:
+      "Two houses a hundred yards apart in Cranleigh can get completely different answers from Waverley — not because one design is better, but because one is inside the settlement boundary and one is not. Here is how to find out which you are, before you pay an architect.",
     imageAlt:
-      "Illustration of Cranleigh parish split by a dashed settlement boundary line, with an amber-roofed village and an open gate on the built-up Cranleigh side, and dark green trees, hedgerow and a closed padlocked gate on the Rowly Green Belt side",
-    body: [
-      "Cranleigh parish actually has two settlement boundaries, not one — Cranleigh village itself, and Rowly to the north. Waverley Borough Council's Settlement Boundaries Topic Paper (November 2020) sets out why the line matters: any land outside a settlement boundary counts as rural, whatever it's called, Green Belt or not.",
-      "Cranleigh's built-up area sits outside both the Green Belt and the Countryside beyond it, so an extension here is judged mainly on its own merits. Rowly, in the same parish, is washed over by the Green Belt, where planning policy is far more restrictive.",
-      "Two plots a few hundred metres apart can face very different rules depending on which side of that boundary they sit. We check a Cranleigh property's position against it before drawing anything up.",
+      "Illustration of a village edge: a dashed amber boundary line runs between a cluster of houses on the left, labelled inside the settlement boundary, and open green fields with a single farmhouse on the right, labelled countryside",
+    related: [
+      "cranleigh-neighbourhood-plan-householders",
+      "trees-and-foundation-depth-cranleigh",
+      "extension-value-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="sbsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="sbroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-          <linearGradient id="sbwall" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#e7dcc4" /><stop offset="1" stopColor="#cdbf9c" />
-          </linearGradient>
-          <linearGradient id="sbgrassL" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-          <linearGradient id="sbgrassR" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#5f8f56" /><stop offset="1" stopColor="#436b3c" />
-          </linearGradient>
-          <linearGradient id="sbtree" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#5f9a55" /><stop offset="1" stopColor="#3f6f3a" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#sbsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Which side are you on?</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh parish has two settlement boundaries</text>
-
-        {/* left: Cranleigh built-up area, open gate = normally acceptable */}
-        <rect x="20" y="250" width="172" height="30" fill="url(#sbgrassL)" />
-        <path d="M40 210 L64 186 L88 210 Z" fill="url(#sbroof)" />
-        <rect x="46" y="210" width="36" height="40" fill="url(#sbwall)" />
-        <rect x="54" y="220" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
-        <rect x="70" y="234" width="10" height="16" fill="#6a4034" />
-
-        <path d="M100 220 L128 192 L156 220 Z" fill="url(#sbroof)" />
-        <rect x="108" y="220" width="40" height="30" fill="url(#sbwall)" />
-        <rect x="116" y="228" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
-        <rect x="134" y="228" width="10" height="12" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="1.5" />
-
-        <g transform="translate(30,150)">
-          <rect x="0" y="0" width="4" height="34" fill="#8b98a0" />
-          <path d="M4 4 l30 -10 v28 l-30 10" fill="none" stroke="#e08a2b" strokeWidth="3" strokeLinejoin="round" />
-        </g>
-
-        <rect x="30" y="192" width="86" height="18" rx="9" fill="url(#sbroof)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="73" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">CRANLEIGH — built-up</text>
-
-        {/* right: Rowly, Green Belt, closed gate + padlock = restricted */}
-        <rect x="208" y="250" width="172" height="30" fill="url(#sbgrassR)" />
-        <ellipse cx="250" cy="230" rx="26" ry="30" fill="url(#sbtree)" />
-        <rect x="247" y="256" width="6" height="14" fill="#5a4530" />
-        <ellipse cx="300" cy="218" rx="22" ry="26" fill="url(#sbtree)" />
-        <rect x="297" y="240" width="6" height="14" fill="#5a4530" />
-        <ellipse cx="345" cy="234" rx="24" ry="28" fill="url(#sbtree)" />
-        <rect x="342" y="258" width="6" height="14" fill="#5a4530" />
-        <path d="M215 246 q10 -8 20 0 q10 -8 20 0 q10 -8 20 0 q10 -8 20 0" stroke="#3f6f3a" strokeWidth="2" fill="none" opacity=".6" />
-
-        <g transform="translate(340,150)">
-          <rect x="0" y="0" width="4" height="34" fill="#8b98a0" />
-          <rect x="4" y="6" width="30" height="4" fill="#8b98a0" />
-          <rect x="4" y="20" width="30" height="4" fill="#8b98a0" />
-          <rect x="30" y="0" width="4" height="34" fill="#8b98a0" />
-          <rect x="10" y="10" width="14" height="12" rx="2" fill="#e08a2b" stroke="#c4741f" strokeWidth="1.5" />
-          <path d="M14 10 v-4 a3 3 0 0 1 6 0 v4" fill="none" stroke="#c4741f" strokeWidth="2" />
-        </g>
-
-        <rect x="242" y="192" width="106" height="18" rx="9" fill="#4c6b3c" stroke="#3a5330" strokeWidth="1.5" />
-        <text x="295" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#eef4ea" textAnchor="middle">ROWLY — Green Belt</text>
-
-        {/* dashed boundary line down the centre */}
-        <path d="M200 78 v190" stroke="#1f2a30" strokeWidth="2.5" strokeDasharray="7 6" opacity=".6" />
-        <rect x="146" y="86" width="108" height="20" rx="10" fill="#1f2a30" />
-        <text x="200" y="100" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#e08a2b" textAnchor="middle" letterSpacing="0.5">SETTLEMENT BOUNDARY</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">One parish, two very different rules</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Outside the line, land counts as rural whatever the name</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Waverley BC Settlement Boundaries Topic Paper, Nov 2020</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Waverley draws a **settlement boundary** around Cranleigh's built-up area. Inside it, development is expected in principle. Outside it, you are in the countryside and the burden of proof reverses.",
+          "There are **two settlement boundaries in Cranleigh parish**, not one — the main village and a second, separate one.",
+          "Cranleigh's built-up area is **not Green Belt**. Rowly, in the same parish, is washed over by it. Two different constraints, two different tests, often confused.",
+          "Being outside a boundary is what makes a site \"rural\" for planning purposes, **whether or not it is Green Belt**.",
+          "Check the boundary before you commission drawings. It is free, it takes ten minutes, and it is the single biggest determinant of whether a scheme is worth designing.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We have watched two clients in the same year commission almost identical schemes — a modest annexe in a large garden — and get opposite answers from Waverley Borough Council. One was approved without much argument. The other was refused and stayed refused. The designs were not the difference. A dashed line on a policies map was.",
+      },
+      {
+        type: "p",
+        text: "That line is the settlement boundary, and if you are planning anything more ambitious than a rear extension in Cranleigh, it is the first thing to look up — before the architect, before the tree survey, before you tell anyone in the family about the plan.",
+      },
+      { type: "h2", text: "What a settlement boundary is" },
+      {
+        type: "p",
+        text: "A settlement boundary is a line on the local plan's policies map that separates the built-up part of a village or town from the countryside around it. Its job is to concentrate development inside the existing settlement and to keep the fields between settlements as fields. Waverley's approach, and its reasoning for where the lines sit, is set out in the council's **Settlement Boundaries Topic Paper (November 2020)**, published as part of the Local Plan Part 2 evidence base.",
+      },
+      {
+        type: "p",
+        text: "The practical effect is that the two sides of the line get different questions asked of them:",
+      },
+      {
+        type: "table",
+        head: ["", "Inside the boundary", "Outside the boundary"],
+        rows: [
+          ["The starting position", "Development is acceptable in principle; the argument is about design, scale, amenity and access.", "Development is restricted in principle; you have to demonstrate the proposal is one of the limited types the countryside policies allow."],
+          ["What you are arguing about", "Whether the scheme is right.", "Whether the scheme should exist at all."],
+          ["Typical outcome for a new dwelling", "Possible, subject to the usual tests.", "Very difficult without a specific justification such as rural worker need, or reuse of an existing building."],
+          ["Householder extensions", "Normal householder policies apply.", "Normal householder policies still apply to the existing house, but scale is scrutinised harder and outbuildings are treated more sceptically."],
+        ],
+        caption: "The line does not change what you want to build. It changes which question the planning officer is asking.",
+      },
+      { type: "h2", text: "Cranleigh has two boundaries, and it is not Green Belt" },
+      {
+        type: "p",
+        text: "Two things about Cranleigh specifically trip people up, and both of them come straight out of the Topic Paper.",
+      },
+      {
+        type: "p",
+        text: "First, **the parish contains two separate settlement boundaries**, not one. The main one wraps the village. There is a second, distinct boundary elsewhere in the parish. People who check \"is Cranleigh's boundary near me\" by looking only at the village edge sometimes get the wrong answer.",
+      },
+      {
+        type: "p",
+        text: "Second — and this is the one that causes the most confused phone calls — **Cranleigh's built-up area is not in the Green Belt**. The countryside immediately beyond the boundary is designated as countryside, not Green Belt. But Rowly, in the same parish, *is* washed over by the Green Belt. So within one parish you have built-up area, countryside beyond the boundary, and Green Belt, and all three are governed differently.",
+      },
+      {
+        type: "callout",
+        title: "The distinction that matters",
+        text: "Being outside a settlement boundary makes your site **rural** for planning purposes regardless of whether it is Green Belt. People hear \"not Green Belt\" and assume the countryside restrictions do not apply. They do. Green Belt adds a further, harder layer on top — it does not replace the boundary test, and the absence of Green Belt does not remove it.",
+      },
+      {
+        type: "quote",
+        text: "I have sat at kitchen tables with drawings that were never going to get permission, and the owner had already paid for them. Nobody had spent ten minutes on the policies map first. It is the cheapest ten minutes in the whole project.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "How to check which side you are on, for free" },
+      {
+        type: "ol",
+        items: [
+          "Go to **Waverley Borough Council's interactive policies map** and search your address. The settlement boundaries are a mapped layer.",
+          "Turn on the **Green Belt** layer as well, and the **conservation area** layer. These are three different constraints and a site can carry none, one or all three.",
+          "Note whether your **whole plot** is inside. Long gardens in Cranleigh regularly straddle the line — the house is in, the bottom of the garden is out. That matters enormously for anything you want to build at the end of it.",
+          "Check the **Cranleigh Neighbourhood Plan**, made 15 July 2024, which sits alongside the borough policies and adds its own requirements. We cover what it changed for householders in [our post on the Neighbourhood Plan](/blog/cranleigh-neighbourhood-plan-householders).",
+          "If the answer is \"outside\", or \"partly\", **book a pre-application enquiry with Waverley before you commission a design**. It is a few hundred pounds and an officer's written view, and it is the difference between a designed scheme and an expensive drawing.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A full set of planning drawings and a householder application for a substantial scheme runs into the low thousands once you add the architect, the fee (**£548 for a householder application since 1 April 2026**, rising to about £575 from 8 December 2026) and any supporting surveys. Ten minutes on the policies map, and a pre-app if there is any doubt, is what stops you spending it on something the policy was never going to allow.",
+      },
+      { type: "h2", text: "What you can still do outside the boundary" },
+      {
+        type: "p",
+        text: "Being outside the line is not the end of the conversation. It changes it. The routes that still work, in rough order of how often we see them succeed around Cranleigh:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Householder extensions to an existing house.** The house is already there; you are not creating development in the countryside, you are altering it. Scale and design are scrutinised harder, but this is normal work.",
+          "**Permitted development**, where it applies. It is not switched off outside settlement boundaries, though it is restricted in conservation areas, on listed buildings and where an Article 4 direction is in force.",
+          "**Reuse of an existing building.** Converting a redundant barn or outbuilding is a recognised route where the building is substantial, permanent and capable of conversion without effectively rebuilding it.",
+          "**Replacement dwellings**, subject to policy limits on how much bigger the replacement can be.",
+          "**Rural worker dwellings**, where there is a genuine, evidenced functional need. This is a high bar and needs specialist advice, not optimism.",
+        ],
+      },
+      {
+        type: "p",
+        text: "What almost never works is a new open-market house in a field because the field is big and the owner would like one there. That is precisely what the boundary exists to prevent, and Waverley defends it.",
+      },
+      { type: "h2", text: "Where this leaves you" },
+      {
+        type: "p",
+        text: "The settlement boundary is not a technicality that a good architect can design around. It sets the question. Find out which side of it you are on before you spend money — and if your plot straddles it, find out exactly where the line runs across your garden, because that is where your options change.",
+      },
+      {
+        type: "p",
+        text: "We work on both sides of that line every week and we are happy to look at a site and tell you honestly whether a scheme is worth designing. That is the sort of thing local knowledge is actually for, and it is why people use [builders in Cranleigh](/areas/cranleigh) rather than a firm coming down from the M25 corridor who has never opened Waverley's policies map.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I find out if my house is inside Cranleigh's settlement boundary?",
+        answer:
+          "Search your address on Waverley Borough Council's interactive policies map and turn on the settlement boundaries layer. Check the whole plot, not just the house — long Cranleigh gardens often straddle the line, with the house inside and the bottom of the garden outside.",
+      },
+      {
+        question: "Is Cranleigh in the Green Belt?",
+        answer:
+          "Cranleigh's built-up area is not in the Green Belt. The land immediately beyond the settlement boundary is designated countryside rather than Green Belt. Rowly, in the same parish, is washed over by the Green Belt. All three designations behave differently, so check which applies to your site rather than assuming.",
+      },
+      {
+        question: "Can I build a new house outside the settlement boundary?",
+        answer:
+          "Rarely, and not as a straightforward open-market proposal. The routes that do work are replacement dwellings within policy limits, conversion of an existing substantial building, or a rural worker dwelling with genuinely evidenced functional need. Each needs specialist advice before any design work.",
+      },
+      {
+        question: "Does being outside the boundary stop me extending my house?",
+        answer:
+          "No. Householder extensions to an existing dwelling are normal work outside the boundary — the house already exists. Expect scale and design to be looked at more critically, and expect outbuildings and annexes to be questioned more closely than they would be inside the village.",
+      },
+      {
+        question: "What is a pre-application enquiry and is it worth it?",
+        answer:
+          "It is a paid enquiry to Waverley that gets you an officer's written view on a proposal before you submit. It costs a few hundred pounds. On anything where the settlement boundary, Green Belt or the conservation area is in play, it is consistently the best value money in the project.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-settlement-boundary"],
   },
   {
     slug: "cranleigh-conservation-area-consent",
     title: "Building inside the Cranleigh Conservation Area: what needs consent",
     category: "Heritage",
     date: "2026-08-24",
+    updated: "2026-09-04",
     seoTitle: "Cranleigh Conservation Area | What Needs Planning Consent",
     metaDescription:
-      "Cranleigh's High Street conservation area restricts more than demolition — boundary walls and some cladding need planning consent too, per the Planning Portal.",
+      "Inside the Cranleigh Conservation Area, permitted development shrinks and demolition over 115 cubic metres needs permission. What you can and cannot do without consent.",
+    excerpt:
+      "The Cranleigh Conservation Area covers a large part of the village centre, and inside it several things you would normally just get on with need permission first. Taking down an old garage is the one that catches people.",
     imageAlt:
-      "Illustration of a Cranleigh High Street terrace of three period buildings enclosed by a dashed conservation area boundary line, with a wrecking ball threatening a small outbuilding tagged '115 cubic metres = consent', a paint roller against a flank wall tagged 'cladding needs consent', and a low front garden wall marked at one metre from the road",
-    body: [
-      "Cranleigh's High Street conservation area has grown three times since it was designated in 1973 — extended in 1985 and again in 2016 — and it's one of 43 across Waverley. Being inside the boundary changes what you can do without asking first.",
-      "Demolishing a building of 115 cubic metres or more needs planning permission for relevant demolition, and so does taking down a garden wall, fence or gate over a metre high next to the road.",
-      "Some work that's permitted development elsewhere — cladding, rendering, or extending on a side of the house facing the street — loses that automatic right here. Conservation areas count as what planners call 'Article 2(3) land' under the Town and Country Planning (General Permitted Development) Order 2015, and the Planning Portal is clear that the rules bite harder inside one.",
-      "We always check a Cranleigh property's conservation area status before drawing anything up.",
+      "Illustration of a conservation-area street frontage: a row of period shopfronts and cottages with an amber dashed boundary running around them, a demolition volume marked 115 cubic metres flagged for consent, and a rear extension behind the roofline marked as unaffected",
+    related: [
+      "cranleigh-buildings-of-local-merit",
+      "trickle-vents-approved-document-f",
+      "cranleigh-neighbourhood-plan-householders",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="cvsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="cvroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-          <linearGradient id="cvbrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
-          </linearGradient>
-          <linearGradient id="cvtimber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#d8bd92" /><stop offset="1" stopColor="#b3966a" />
-          </linearGradient>
-          <linearGradient id="cvgrass" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-          <linearGradient id="cvamber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#cvsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Inside the line, ask first</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh Conservation Area — designated 1973</text>
-
-        {/* dashed conservation area boundary loop */}
-        <path d="M18 96 q0 -14 14 -14 h336 q14 0 14 14 v168 q0 14 -14 14 h-336 q-14 0 -14 -14 z" fill="none" stroke="#1f2a30" strokeWidth="2.5" strokeDasharray="7 6" opacity=".55" />
-
-        {/* terrace, three buildings */}
-        <path d="M40 176 L78 138 L116 176 Z" fill="url(#cvroof)" />
-        <rect x="48" y="176" width="60" height="80" fill="url(#cvbrick)" />
-        <rect x="58" y="188" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="82" y="188" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="66" y="228" width="20" height="28" fill="#40525a" />
-
-        {/* small rear outbuilding, threatened by demolition */}
-        <rect x="112" y="216" width="30" height="40" fill="#b9a988" stroke="#8f7550" strokeWidth="1.5" />
-        <path d="M112 216 L127 200 L142 216 Z" fill="#9d8362" />
-        <path d="M160 150 l-24 44" stroke="#7c8890" strokeWidth="2" />
-        <circle cx="132" cy="204" r="13" fill="#5d6a72" stroke="#3f4a50" strokeWidth="1.5" />
-        <circle cx="160" cy="150" r="4" fill="#3f4a50" />
-        <rect x="96" y="196" width="72" height="18" rx="9" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="132" y="209" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">115m³ = consent</text>
-
-        {/* centre building, timber framed */}
-        <path d="M172 168 L212 126 L252 168 Z" fill="url(#cvroof)" />
-        <rect x="180" y="168" width="64" height="88" fill="#e7dcc4" />
-        <path d="M180 168 h64 M212 168 v88" stroke="url(#cvtimber)" strokeWidth="6" />
-        <rect x="192" y="182" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="216" y="182" width="16" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="200" y="226" width="24" height="30" fill="#40525a" />
-
-        {/* right building, flank wall flagged for cladding */}
-        <path d="M256 176 L296 132 L336 176 Z" fill="url(#cvroof)" />
-        <rect x="264" y="176" width="76" height="80" fill="url(#cvbrick)" />
-        <rect x="274" y="188" width="18" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="302" y="188" width="18" height="18" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="286" y="228" width="22" height="28" fill="#40525a" />
-        <g transform="translate(342,196)">
-          <rect x="0" y="0" width="8" height="30" rx="2" fill="#c9d2d6" />
-          <rect x="-10" y="-6" width="28" height="12" rx="4" fill="url(#cvamber)" />
-          <path d="M4 30 v14" stroke="#8b98a0" strokeWidth="2.5" />
-        </g>
-        <rect x="292" y="240" width="88" height="18" rx="9" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="336" y="253" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">cladding needs consent</text>
-
-        <rect x="18" y="256" width="364" height="22" fill="url(#cvgrass)" />
-
-        {/* low front garden wall, height marked */}
-        <rect x="18" y="278" width="364" height="22" fill="#b7a888" stroke="#8f7550" strokeWidth="1.5" />
-        <path d="M40 262 v16" stroke="#1f2a30" strokeWidth="2" strokeDasharray="2 3" />
-        <path d="M35 246 l5 -6 l5 6 z" fill="#1f2a30" opacity=".6" />
-        <text x="40" y="242" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30" textAnchor="middle">1m by the road</text>
-
-        {/* boundary tag pinned on the loop */}
-        <rect x="150" y="72" width="132" height="20" rx="10" fill="url(#cvamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="216" y="86" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">CONSERVATION AREA</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">More needs asking inside the line</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Demolition, boundary walls and some cladding all need consent here</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Planning Portal; Cranleigh Conservation Area Appraisal, Waverley BC</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Cranleigh's conservation area was designated **October 1973** and extended in **July 1985** and again in **July 2016**. It is one of **43** in Waverley borough.",
+          "Inside it, demolishing an unlisted building of more than **115 cubic metres** needs planning permission. That is a large garage, not a mansion.",
+          "Permitted development rights are **cut back**, not removed: cladding, side extensions, roof alterations and some outbuildings that would be permitted elsewhere are not permitted here.",
+          "Trees in a conservation area are protected. **Six weeks' written notice** to Waverley is required before work on most of them.",
+          "None of this stops good work happening. It changes the order you do things in, and it punishes people who start first and ask later.",
+        ],
+      },
+      {
+        type: "p",
+        text: "There is a particular phone call we get two or three times a year. Someone has bought a house near the High Street, the tumbledown garage at the side is coming down to make room for the extension, the digger is booked, and somebody at the pub has just mentioned the conservation area. Usually there is still time. Occasionally there is not, and unauthorised demolition in a conservation area is a criminal offence, not a paperwork problem.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh's conservation area is not a small designation around the church. It covers a substantial part of the village centre, and it has grown twice since it was first drawn.",
+      },
+      { type: "h2", text: "What and where it is" },
+      {
+        type: "p",
+        text: "The Cranleigh Conservation Area was **designated in October 1973**, **extended in July 1985**, and **extended again in July 2016**. Waverley Borough Council has **43** conservation areas in total, and it published a character appraisal for Cranleigh's in 2016 alongside the most recent extension. That appraisal is the document that explains what the designation is actually protecting — the historic street pattern, the grain of the frontages, particular groups of buildings and the trees and spaces between them.",
+      },
+      {
+        type: "p",
+        text: "It is worth reading it if you own a property inside the boundary. A conservation area is not a blanket ban on change; it is a statutory duty on the council to pay special attention to preserving or enhancing the character and appearance of the area. Knowing what the appraisal says the character *is* tells you which arguments will work.",
+      },
+      {
+        type: "callout",
+        title: "Check the boundary, not the postcode",
+        text: "The boundary follows historic plot lines, not roads. Two neighbouring houses on the same street can be one in and one out. Search your address on Waverley's interactive policies map with the conservation area layer turned on — and check where the line crosses your garden, not just where your front door is.",
+      },
+      { type: "h2", text: "Demolition: the 115 cubic metre rule" },
+      {
+        type: "p",
+        text: "This is the one that catches people. Inside a conservation area, **demolishing an unlisted building with a volume of more than 115 cubic metres requires planning permission**. So does demolishing a gate, wall, fence or other means of enclosure over one metre high where it adjoins a highway, waterway or open space, or over two metres high anywhere else.",
+      },
+      {
+        type: "p",
+        text: "115 cubic metres sounds like a lot until you measure something. A double garage roughly six metres by six metres with an average height of three and a half metres is about 126 cubic metres. It is over. A generous garden outbuilding can be over. The rule is about volume, not about whether anyone would call the building important.",
+      },
+      {
+        type: "table",
+        head: ["Structure", "Rough volume", "Consent needed to demolish?"],
+        rows: [
+          ["Single garage, 3m × 6m × 2.6m average", "≈ 47 m³", "No — under the threshold"],
+          ["Double garage, 6m × 6m × 3.5m average", "≈ 126 m³", "**Yes** — over 115 m³"],
+          ["Large garden workshop, 4m × 8m × 3m", "≈ 96 m³", "No — but check the measurement carefully"],
+          ["Front boundary wall, 1.4m high, adjoining the road", "n/a", "**Yes** — over 1m and adjoins a highway"],
+          ["Rear garden fence, 1.8m high, between two gardens", "n/a", "No — under 2m and not adjoining a highway"],
+        ],
+        caption: "Volumes are external and include the roof space. Measure before you assume — the difference between 110 m³ and 120 m³ is the difference between getting on with it and committing an offence.",
+      },
+      {
+        type: "quote",
+        text: "Nobody sets out to break the law by knocking a garage down. They just measure it by eye and it looks small. Get a tape on it. Ten minutes with a tape measure has saved more than one of my clients a very bad afternoon.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Permitted development is reduced, not removed" },
+      {
+        type: "p",
+        text: "The other common misunderstanding is that a conservation area removes permitted development entirely. It does not. It removes specific rights. The ones that matter most on ordinary Cranleigh houses:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Cladding.** Applying stone, artificial stone, pebble dash, render, timber, plastic or tiles to the outside of a house is **not** permitted development in a conservation area. It needs planning permission.",
+          "**Side extensions.** Extensions beyond a side wall are not permitted development here — a rear extension may still be, a side one is not.",
+          "**Two-storey rear extensions** are not permitted development in a conservation area.",
+          "**Roof extensions and dormers.** Additions to the roof are not permitted development, which is the single biggest constraint on loft conversions inside the boundary. See [our post on which Cranleigh roofs work for a conversion](/blog/loft-conversions-cranleigh-roof-types).",
+          "**Outbuildings to the side** of the house, and buildings with more than one storey, are outside permitted development here.",
+          "**Satellite dishes and some flues** on front or side elevations facing a highway.",
+        ],
+      },
+      {
+        type: "p",
+        text: "What generally *does* survive is a modest single-storey rear extension within the normal permitted development limits, plus a single-storey outbuilding to the rear within the usual height and area rules. That is a real amount of useful space, and plenty of good projects live entirely inside it.",
+      },
+      { type: "h2", text: "Trees: six weeks, in writing" },
+      {
+        type: "p",
+        text: "Every tree in a conservation area above a modest size threshold is protected as if it had a Tree Preservation Order, whether or not one exists. Before pruning or felling, you must give the council **six weeks' written notice**, which gives Waverley the chance to make a TPO if it thinks the tree warrants one.",
+      },
+      {
+        type: "p",
+        text: "Six weeks is a long time in a build programme, and tree work is often on the critical path — you cannot get a piling rig into a back garden past a tree you are not allowed to touch yet. It is also worth remembering that the tree may be setting your foundation depth in the first place, which is a separate and more expensive problem: see [trees and foundation depth in Cranleigh](/blog/trees-and-foundation-depth-cranleigh).",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Serve the tree notice and submit any demolition application **at the same time as the main planning application**, not after it is approved. Run in parallel they cost you nothing in programme. Run in sequence they add six to twelve weeks to the start on site — which, on a project where you are paying for somewhere else to live, is real money.",
+      },
+      { type: "h2", text: "The order to do things in" },
+      {
+        type: "ol",
+        items: [
+          "**Confirm the boundary** on Waverley's policies map, and check whether the building is also listed or on the borough's local list — that is a separate and stricter regime, covered in [the second list your house might be on](/blog/cranleigh-buildings-of-local-merit).",
+          "**Read the 2016 character appraisal** for the part of the area you are in. It tells you what the officer is protecting.",
+          "**Measure anything you intend to demolish**, in cubic metres, externally.",
+          "**Book a pre-application enquiry** if the scheme touches a frontage, a roof, or anything visible from the street.",
+          "**Serve the six-week tree notice early**, in parallel with everything else.",
+          "**Design with the appraisal in hand.** Schemes that reference the existing grain, materials and roof forms get through. Schemes that ignore them get refused and redesigned at your cost.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this makes a conservation area a bad place to own a house. It is why the middle of Cranleigh looks the way it does. It does mean the sequencing matters more than it would three miles up the road, which is a good reason to use [builders in Cranleigh](/areas/cranleigh) who deal with Waverley's conservation team as a matter of routine rather than as an unwelcome surprise.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need permission to demolish a garage in the Cranleigh Conservation Area?",
+        answer:
+          "If the building's volume is more than 115 cubic metres, yes — demolition of an unlisted building above that threshold inside a conservation area needs planning permission. A typical double garage is around 126 cubic metres, so it is over. Measure it externally, including the roof space, before assuming.",
+      },
+      {
+        question: "Can I still do a rear extension in the conservation area without planning permission?",
+        answer:
+          "A modest single-storey rear extension within the normal permitted development limits usually still qualifies. Side extensions, two-storey rear extensions, roof alterations and cladding do not — those rights are removed inside a conservation area and need a planning application.",
+      },
+      {
+        question: "When was the Cranleigh Conservation Area designated?",
+        answer:
+          "It was designated in October 1973 and extended twice, in July 1985 and July 2016. Waverley Borough Council published a character appraisal alongside the 2016 extension. It is one of 43 conservation areas in the borough.",
+      },
+      {
+        question: "Do I need permission to cut down a tree in a conservation area?",
+        answer:
+          "You must give Waverley six weeks' written notice before pruning or felling most trees in a conservation area, whether or not the tree has a Tree Preservation Order. During those six weeks the council can make a TPO. Serve the notice early — six weeks on the critical path is expensive.",
+      },
+      {
+        question: "Can I render or clad my house in a conservation area?",
+        answer:
+          "Not as permitted development. Applying render, cladding, stone, tiles or pebble dash to the exterior of a house in a conservation area needs planning permission, and whether it is granted depends on whether it preserves or enhances the character of the area as described in the appraisal.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-conservation-area-consent"],
   },
   {
     slug: "part-l-extension-insulation",
     title: "Part L and why your extension needs more insulation than the house",
     category: "Insulation & energy",
     date: "2026-08-21",
-    seoTitle: "Approved Document L: Why an Extension Needs More Insulation",
+    updated: "2026-09-04",
+    seoTitle: "Part L Extension U-Values 2026 | Insulation Rules Explained",
     metaDescription:
-      "Extending your home? Approved Document L sets its own U-value limits for new work — the same whether the rest of the house is well insulated or not.",
+      "New extensions must hit far tighter U-values than the house they join: 0.18 for walls and floors, 0.15 for roofs. What that does to your wall thickness and your budget.",
+    excerpt:
+      "Your new extension has to be dramatically better insulated than the house it is bolted onto. That means thicker walls, and thicker walls eat the floor area you are paying for. Better to know that at design stage than at first fix.",
     imageAlt:
-      "Illustration of a house wall cutaway comparing an existing single-skin brick wall losing heat through blue wavy lines with a new extension wall's insulated cavity construction retaining warmth, labelled with the 0.18 W/m²K limiting U-value for new work under Approved Document L",
-    body: [
-      "Extend an older house and the new room has to perform far better than the one next to it. Building Regulations don't let an extension borrow credit from a draughty original wall — Approved Document L, Volume 1: Dwellings, sets limiting U-values for new work, currently 0.18 W/m²K for walls and floors and 0.15 W/m²K for roofs, regardless of what the rest of the house is doing.",
-      "The comparison is against a notional extension of the same size, not against the house it's joined to — so an older solid-wall property with no cavity insulation passes no allowance on to its new rooms. The new fabric has to meet the same figures a brand new house would.",
-      "It's one reason a straightforward single-storey extension often needs more insulation than people expect from a small job.",
-      "We build to the current limiting values as standard, not as an optional upgrade.",
+      "Illustration of a house in section with the original solid wall on the left shown thin and poorly insulated, and the new extension on the right shown with a thicker build-up, an amber insulation layer and U-value labels for wall, roof and floor",
+    related: [
+      "trickle-vents-approved-document-f",
+      "building-control-completion-certificate",
+      "extending-1930s-semi-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="plsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="plroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-          <linearGradient id="plbrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
-          </linearGradient>
-          <linearGradient id="plgrass" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-          <linearGradient id="plamber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#plsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Two walls, one standard</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Approved Document L — new work vs old</text>
-
-        {/* existing house, pitched roof */}
-        <path d="M52 148 L110 88 L168 148 Z" fill="url(#plroof)" />
-        <rect x="60" y="148" width="108" height="128" fill="url(#plbrick)" />
-        <rect x="74" y="168" width="22" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-
-        {/* torn cutaway in the existing wall: single brick skin, heat escaping */}
-        <path d="M128 188 L166 184 L163 202 L166 218 L162 232 L166 248 L163 264 L166 276 L128 276 Z" fill="#a86648" />
-        <path d="M133 200 h26 M133 216 h26 M133 232 h26 M133 248 h26 M133 264 h26" stroke="#7c4a34" strokeWidth="1" opacity=".6" />
-        <path d="M124 202 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
-        <path d="M124 226 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
-        <path d="M124 250 q-11 -5 -20 3 q-9 8 -19 2" stroke="#6fa8cf" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
-        <text x="147" y="178" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">existing wall</text>
-
-        {/* join between old and new */}
-        <path d="M168 140 v136" stroke="#1f2a30" strokeWidth="2" strokeDasharray="5 4" opacity=".5" />
-
-        {/* extension, lean-to roof */}
-        <path d="M168 140 L340 196 L340 206 L168 150 Z" fill="url(#plroof)" />
-        <rect x="176" y="200" width="156" height="76" fill="url(#plbrick)" />
-
-        {/* torn cutaway in the extension wall: full layered build-up */}
-        <rect x="200" y="216" width="14" height="54" fill="#9d6044" />
-        <rect x="214" y="216" width="46" height="54" fill="url(#plamber)" />
-        <path d="M216 220 l10 -10 M216 232 l14 -14 M216 244 l14 -14 M216 256 l14 -14 M216 266 l10 -10" stroke="#c4741f" strokeWidth="1.5" opacity=".55" />
-        <rect x="260" y="216" width="20" height="54" fill="#aeb8bd" />
-        <rect x="280" y="216" width="8" height="54" fill="#f4f0e6" />
-        <path d="M292 228 q11 -5 19 4 q9 8 19 -3" stroke="#e08a2b" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
-        <path d="M292 250 q11 -5 19 4 q9 8 19 -3" stroke="#e08a2b" strokeWidth="2" fill="none" opacity=".85" strokeLinecap="round" />
-        <text x="255" y="188" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">new wall</text>
-        <rect x="210" y="192" width="90" height="18" rx="9" fill="url(#plamber)" stroke="#c4741f" strokeWidth="1.5" />
-        <text x="255" y="205" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">0.18 W/m²K</text>
-
-        <rect x="24" y="276" width="352" height="24" fill="url(#plgrass)" />
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">The new wall must out-perform the old</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Approved Document L sets its own standard for new work</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Approved Document L, Volume 1: Dwellings (2021 ed., 2023 amendments)</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "New parts of an extension must meet **Table 4.2 of Approved Document L, Volume 1 (2021 edition)**: walls **0.18**, floors **0.18**, roofs **0.15**, windows and doors **1.4**, rooflights **2.2** W/m²K.",
+          "You do **not** have to bring the existing house up to the same standard. Only the new work is tested.",
+          "Hitting 0.18 in a cavity wall typically means a **300–330mm build-up** rather than the 260mm of a 1970s house. That is floor area you lose from inside.",
+          "Glazing in the extension is normally capped at **25% of the new floor area**, plus the area of any openings you are closing up.",
+          "There is a compliance route that trades one element against another. Used properly it is what lets you have the wall of glass you wanted.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Almost every extension client has the same moment of confusion at some point in the design. They are being asked to pay for an extension built to a far higher standard than the house it is joining, and it feels absurd. The 1930s semi has nine-inch solid brick walls with nothing in them at all. The new bit has to hit 0.18. Why?",
+      },
+      {
+        type: "p",
+        text: "The answer is not satisfying but it is simple: the regulations apply to the work being done. New building work is held to today's standard. Nobody is going to make you insulate the existing house, and nobody is going to let you build the new bit to 1930s standards either.",
+      },
+      { type: "h2", text: "The numbers you are actually being held to" },
+      {
+        type: "p",
+        text: "Approved Document L Volume 1 (2021 edition) sets the standards for new thermal elements in existing dwellings. These are the figures your building control officer is checking against:",
+      },
+      {
+        type: "table",
+        head: ["Element", "Maximum U-value (W/m²K)", "What that means in practice"],
+        rows: [
+          ["Wall", "0.18", "Roughly 100–150mm of insulation in the cavity or a full-fill cavity plus insulated plasterboard, depending on product"],
+          ["Floor", "0.18", "Typically 100–150mm of rigid insulation under the slab or screed"],
+          ["Roof (pitched or flat)", "0.15", "The tightest of the lot — a cold flat roof at 0.15 is a deep build-up, which is why warm-roof construction is now the default"],
+          ["Windows and doors", "1.4", "Standard modern double glazing hits this comfortably; poor units do not"],
+          ["Rooflights", "2.2", "Measured in the vertical plane; a large lantern is a real heat loss and needs to be designed for"],
+        ],
+        caption: "Source: Approved Document L, Volume 1 (2021 edition), Table 4.2 — the standards for new thermal elements. Lower is better.",
+      },
+      {
+        type: "p",
+        text: "The roof figure is the one that surprises builders as well as homeowners. 0.15 W/m²K in a flat roof is not achievable with a token layer of insulation between joists, which is why almost every flat roof we build now is a warm-deck construction with the insulation above the structural deck. It costs more per square metre and it is worth every penny, because a cold flat roof at that standard is an interstitial condensation risk waiting to happen.",
+      },
+      { type: "h2", text: "The bit nobody warns you about: your walls get fatter" },
+      {
+        type: "p",
+        text: "This is the practical consequence people are not told at design stage, and it is the one that costs them.",
+      },
+      {
+        type: "p",
+        text: "A typical 1970s cavity wall is around 260mm thick. A modern wall built to 0.18 is more commonly **300 to 330mm**, depending on the insulation product and whether you are using a full-fill or partial-fill cavity. On a 5m × 6m extension with three external walls, that extra 50–60mm of wall thickness costs you somewhere between half and three-quarters of a square metre of internal floor area.",
+      },
+      {
+        type: "p",
+        text: "At Surrey extension rates of **£2,700–£3,100 per m²** — the range we quote and the range on our [extension cost guide](/guides/house-extension-costs-surrey) — that is £1,500 to £2,300 of floor area you have paid for and cannot use. It also matters far more than the money if you are working to a fixed internal dimension: a room that has to take a 3m kitchen run, or a bedroom that has to take a double bed and a wardrobe, can fail on 60mm.",
+      },
+      {
+        type: "quote",
+        text: "The drawing says four metres internally and everyone assumes that is what you get. Then the wall build-up comes back at 330mm and it is 3.88. If you have already ordered a kitchen to fit four metres, that is a very expensive 120 millimetres.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Ask your designer for the **actual wall build-up in millimetres**, and the **internal** dimensions, before you order anything made to measure — kitchens, wardrobes, sliding doors, bookcases. It costs nothing to ask and it is the single most common source of \"but the drawing said\" arguments on site.",
+      },
+      { type: "h2", text: "The glazing cap, and how to get round it honestly" },
+      {
+        type: "p",
+        text: "There is a second rule that catches the people who want the extension to be mostly glass. The standard route through Part L limits the total area of windows, doors and rooflights in the extension to **25% of the extension's floor area**, plus the area of any existing openings that are being closed up as part of the work.",
+      },
+      {
+        type: "p",
+        text: "On a 30m² extension that is 7.5m² of glazing, plus whatever the old back door and window added up to. A 4m bifold set alone is about 8m² before you have added a single rooflight, so on the standard route a big glazed rear elevation fails.",
+      },
+      {
+        type: "p",
+        text: "The way through is not to argue. It is to use the alternative compliance route, where the extension is assessed as a whole against a notional equivalent — you demonstrate that the design is no worse overall than a compliant one. Improve the walls, roof and floor beyond the minimum, specify better glass, and you buy back the glazing area.",
+      },
+      {
+        type: "table",
+        head: ["What you want", "Standard route", "Calculation route"],
+        rows: [
+          ["25% glazing or less", "Passes. Cheapest and simplest.", "Not needed."],
+          ["A 4m bifold on a 30m² extension", "Fails.", "Passes if the fabric elsewhere is improved to compensate."],
+          ["Bifolds plus two large rooflights", "Fails comfortably.", "Usually achievable, but expect to spend on triple glazing or better insulation to get there."],
+          ["A near-fully glazed garden room", "Fails.", "May still fail. This is the point to involve an energy assessor early rather than late."],
+        ],
+        caption: "The calculation route costs a few hundred pounds in assessor's fees. It is far cheaper than redesigning a rear elevation after building control refuses it.",
+      },
+      { type: "h2", text: "What this costs, and where it pays back" },
+      {
+        type: "p",
+        text: "Building to current Part L rather than to the standard of the existing house adds real money to the build — realistically a few thousand pounds on a typical single-storey extension once you have counted the insulation, the better glazing, the warm-roof build-up and the extra wall thickness.",
+      },
+      {
+        type: "p",
+        text: "It is also the part of the spend with the clearest return. A modern extension built to 0.18 and 0.15 costs a fraction of the existing house per square metre to heat. In practice the new room ends up being the warm room, and the family lives in it. That is not an argument we invented — it is what clients tell us a year later.",
+      },
+      {
+        type: "callout",
+        title: "Worth knowing",
+        text: "If you are extending anyway, the marginal cost of upgrading the **adjoining** parts of the existing house at the same time — insulating the loft above, or the wall you have already opened up — is a fraction of doing it as a separate job later. The scaffold is up, the trades are there, and the disruption is already happening. This is the single best value energy work most houses ever get.",
+      },
+      { type: "h2", text: "Questions to ask before you sign anything" },
+      {
+        type: "ol",
+        items: [
+          "**What is the wall build-up, in millimetres?** And what are the resulting internal dimensions of each room?",
+          "**Which compliance route are we using** — the elemental standards or a whole-extension calculation? If the latter, who is doing the calculation and is it in the price?",
+          "**What is the total glazed area** as a percentage of the new floor area?",
+          "**Is the flat roof a warm deck or a cold deck?** If cold, ask how 0.15 is being achieved and where the vapour control layer sits.",
+          "**Is the insulation specified by product and thickness** in the quotation, or just as \"insulation to Building Regs\"? The second is where value engineering happens without you being told.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We price insulation by product and thickness, and we give internal dimensions off the build-up rather than off the drawing, because those are the two places extension budgets quietly leak. If you want a quote read over before you commit to it, that is something we do for people locally — it is part of the job of being [builders in Cranleigh](/areas/cranleigh) rather than a firm that appears for a fortnight and leaves.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I have to insulate my existing house when I build an extension?",
+        answer:
+          "No. Approved Document L applies to the new work. The existing walls, floors and roof are not required to be upgraded to the new standard. The exception is any existing element you are substantially altering as part of the work — and it is usually worth doing the adjoining parts anyway, because the marginal cost while the trades are already on site is small.",
+      },
+      {
+        question: "What U-values does an extension have to achieve?",
+        answer:
+          "Under Table 4.2 of Approved Document L Volume 1 (2021 edition): walls 0.18, floors 0.18, roofs 0.15, windows and doors 1.4 and rooflights 2.2 W/m²K. Lower numbers mean better insulation, and these are maximums rather than targets.",
+      },
+      {
+        question: "How much floor area do I lose to thicker walls?",
+        answer:
+          "A modern wall built to 0.18 is typically 300–330mm thick against about 260mm for a 1970s cavity wall. On a 5m by 6m extension with three external walls that is roughly half to three-quarters of a square metre of internal floor area — around £1,500 to £2,300 at Surrey extension rates. Always work from internal dimensions, not the drawing's external ones.",
+      },
+      {
+        question: "Can I have bifold doors and rooflights and still pass Part L?",
+        answer:
+          "Usually yes, but not on the standard route, which caps glazing at 25% of the extension's floor area plus any openings closed up. Use the whole-extension calculation route instead and compensate with better insulation and glazing elsewhere. Involve an energy assessor at design stage — it costs a few hundred pounds and saves redesigning the rear elevation later.",
+      },
+      {
+        question: "Is a warm roof or a cold roof better for a flat-roofed extension?",
+        answer:
+          "For a new extension, warm deck — insulation above the structural deck — is now the default. Achieving 0.15 W/m²K in a cold-deck flat roof requires a very deep build-up and carries a real interstitial condensation risk. Warm roofs cost more per square metre and are worth it.",
+      },
+    ],
+    art: BLOG_ART["part-l-extension-insulation"],
   },
   {
     slug: "cranleigh-neighbourhood-plan-householders",
     title: "The Cranleigh Neighbourhood Plan: what it changed for householders",
     category: "Planning & surveys",
     date: "2026-08-19",
-    seoTitle: "Cranleigh Neighbourhood Plan | What Changed for Homeowners",
+    updated: "2026-09-04",
+    seoTitle: "Cranleigh Neighbourhood Plan | What It Means For Homeowners",
     metaDescription:
-      "Made in July 2024, the Cranleigh Neighbourhood Plan now decides planning applications here. The rooflines policy that affects any extension, explained.",
+      "Cranleigh's Neighbourhood Plan was made on 15 July 2024 and is now part of the development plan. What that means when you apply to extend your house.",
+    excerpt:
+      "Since 15 July 2024 Cranleigh has had its own statutory planning policies, written locally and applied by Waverley. If you are extending here, there is now a second document your application is judged against — and most people have never read it.",
     imageAlt:
-      "Illustration of a Cranleigh street skyline with a dashed line marking the prevailing roofline across four house silhouettes, and a fifth house's amber two-storey extension breaking above it, beside a small scroll stamped MADE and dated 15 July 2024",
-    body: [
-      "Cranleigh got a new planning document in 2024, and it already shapes what extensions get approved. The Cranleigh Neighbourhood Development Plan 2021–2032 was made on 15 July 2024, after residents backed it at referendum, and now sits alongside the Waverley Local Plan, part of what Waverley Borough Council uses to decide applications here.",
-      "One policy homeowners feel directly: new development, extensions included, should not exceed two storeys or rise above the prevailing roofline unless it can be robustly shown that doing so won't harm views, the streetscape or local character. That is a higher bar than \"it looks fine\" — it wants evidence.",
-      "For a dormer or a two-storey side extension in Cranleigh, the neighbouring rooflines are now part of the design brief, not an afterthought once drawings are done.",
-      "We check the streetscene before we draw anything, so that test is answered before the application goes in, not after.",
+      "Illustration of a planning document with an amber seal marked made, sitting alongside a map of a village with green space and garden plots highlighted, and a smaller borough plan document behind it",
+    related: [
+      "cranleigh-settlement-boundary",
+      "cranleigh-conservation-area-consent",
+      "extension-value-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="npsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="nproof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b98a0" /><stop offset="1" stopColor="#6a7880" />
-          </linearGradient>
-          <linearGradient id="npamber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-          <linearGradient id="npgrass" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-          <linearGradient id="nppaper" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#npsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">One line, new limits</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh Neighbourhood Plan — made 15 July 2024</text>
-
-        {/* skyline: four houses under the prevailing roofline, one breaking it */}
-        <rect x="24" y="270" width="352" height="30" fill="url(#npgrass)" />
-
-        <path d="M24 152 L58 116 L92 152 Z" fill="url(#nproof)" />
-        <rect x="32" y="152" width="52" height="118" fill="#dfe5e8" />
-        <rect x="42" y="164" width="14" height="16" fill="#aebcc2" />
-        <rect x="62" y="164" width="14" height="16" fill="#aebcc2" />
-
-        <path d="M96 158 L128 124 L160 158 Z" fill="url(#nproof)" />
-        <rect x="104" y="158" width="48" height="112" fill="#dfe5e8" />
-        <rect x="112" y="170" width="14" height="16" fill="#aebcc2" />
-        <rect x="132" y="170" width="14" height="16" fill="#aebcc2" />
-
-        <path d="M164 150 L198 114 L232 150 Z" fill="url(#nproof)" />
-        <rect x="172" y="150" width="52" height="120" fill="#dfe5e8" />
-        <rect x="182" y="162" width="14" height="16" fill="#aebcc2" />
-        <rect x="202" y="162" width="14" height="16" fill="#aebcc2" />
-
-        <path d="M236 156 L266 122 L296 156 Z" fill="url(#nproof)" />
-        <rect x="244" y="156" width="44" height="114" fill="#dfe5e8" />
-        <rect x="252" y="168" width="14" height="16" fill="#aebcc2" />
-
-        {/* fifth house, extension in amber breaking the guideline */}
-        <path d="M300 158 L328 128 L356 158 Z" fill="url(#nproof)" />
-        <rect x="306" y="158" width="44" height="112" fill="#dfe5e8" />
-        <rect x="314" y="170" width="14" height="16" fill="#aebcc2" />
-        <path d="M330 158 L352 92 L374 158 Z" fill="url(#npamber)" />
-        <rect x="336" y="158" width="32" height="52" fill="url(#npamber)" />
-        <rect x="346" y="176" width="12" height="14" fill="#fbe3c4" />
-
-        {/* prevailing roofline guide */}
-        <path d="M20 118 h384" stroke="#1f2a30" strokeWidth="2" strokeDasharray="6 5" opacity=".55" />
-        <text x="24" y="110" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" opacity=".7">the prevailing roofline</text>
-        <path d="M352 92 l-10 20 l20 0 z" fill="#e08a2b" opacity=".9" />
-        <text x="352" y="86" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#c4741f" textAnchor="middle">evidence needed</text>
-
-        {/* the plan itself, made */}
-        <g transform="translate(28,146)">
-          <rect x="0" y="0" width="72" height="52" rx="3" fill="url(#nppaper)" stroke="#d8c9a8" strokeWidth="2" />
-          <path d="M8 12 h56 M8 22 h56 M8 32 h40" stroke="#b7a67e" strokeWidth="2" opacity=".7" />
-          <circle cx="58" cy="38" r="12" fill="url(#npamber)" stroke="#c4741f" strokeWidth="1.5" />
-          <text x="58" y="41" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#1f2a30" textAnchor="middle">MADE</text>
-        </g>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Exceed the roofline, and you need evidence</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">The Plan now sits in the development plan Waverley uses</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Cranleigh Neighbourhood Development Plan 2021–2032</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "The Cranleigh Neighbourhood Plan was **made on 15 July 2024** and now forms part of the statutory development plan for the parish.",
+          "That means Waverley must **determine applications in accordance with it**, alongside the Local Plan, unless material considerations say otherwise.",
+          "It matters most to householders through its **design and character policies**, its protection of **residential gardens**, and its **parking** expectations.",
+          "It is a local document written by local people. Officers use it. Almost no applicant quotes it.",
+          "Quoting the plan's own words back in your design and access statement is free, takes an hour, and demonstrably helps.",
+        ],
+      },
+      {
+        type: "p",
+        text: "There is an odd asymmetry in the planning system. Councils are legally required to determine applications in accordance with the development plan. The development plan for Cranleigh now includes a document written by Cranleigh people about what Cranleigh should look like. And in our experience almost no householder application from this village mentions it at all.",
+      },
+      {
+        type: "p",
+        text: "That is a free advantage sitting on the table. This post is about what the plan is, what it changed, and how to use it.",
+      },
+      { type: "h2", text: "What \"made\" means, and why the date matters" },
+      {
+        type: "p",
+        text: "A neighbourhood plan goes through consultation, independent examination and a local referendum before a council formally \"makes\" it. Cranleigh's was **made on 15 July 2024**, by Waverley Borough Council under delegated authority. From that date it stopped being an aspiration and became policy.",
+      },
+      {
+        type: "p",
+        text: "The legal effect is set out in the Planning and Compulsory Purchase Act 2004: planning applications must be determined in accordance with the development plan unless material considerations indicate otherwise. The neighbourhood plan is part of that development plan. It carries the same statutory weight as Waverley's Local Plan policies — a point worth remembering if an officer or a neighbour tells you it is only advisory.",
+      },
+      {
+        type: "callout",
+        title: "Two documents, not one",
+        text: "Your application in Cranleigh is now judged against **both** Waverley's Local Plan and the Cranleigh Neighbourhood Plan. Where they cover the same ground, the more recently adopted policy generally carries more weight. A design that complies with the borough policy but ignores the local one is only half-answered.",
+      },
+      { type: "h2", text: "The parts that affect an ordinary householder" },
+      {
+        type: "p",
+        text: "Much of the plan is about site allocations — the specific pieces of land the village accepted for housing, which between them account for a modest number of dwellings. Those matter enormously if you own one of those sites and not at all if you are extending a semi on a side road. The parts that reach into ordinary householder applications are narrower and worth knowing.",
+      },
+      { type: "h3", text: "Design and local character" },
+      {
+        type: "p",
+        text: "The plan's design policies (CRAN2 and CRAN3 in the examined plan) ask for high quality design that preserves and enhances the village feel and local character, and that maintains identified vistas and views. That is a lever in both directions. If your scheme sits comfortably in its street, say so and say why — materials, roof form, ridge height, the rhythm of the frontage. If it does not, expect an officer to have a policy to hang a refusal on that did not exist before July 2024.",
+      },
+      { type: "h3", text: "Gardens" },
+      {
+        type: "p",
+        text: "Policy CRAN13 states that residential gardens are very important to the character of Cranleigh and to its biodiversity. This is the one householders underestimate. It gives officers a policy basis to push back on schemes that consume a disproportionate share of a plot, or that pave over most of a garden for parking. If your extension leaves a decent, usable, planted garden, that is a positive to state explicitly rather than leave implied.",
+      },
+      { type: "h3", text: "Parking" },
+      {
+        type: "p",
+        text: "Policy CRAN16 requires developments to be supported by appropriate car and cycle parking. On a householder application this bites when you add bedrooms. Turning a three-bed into a five-bed with no change to the driveway invites a highways comment, and highways comments are one of the commonest reasons a straightforward-looking application drifts by six weeks.",
+      },
+      {
+        type: "quote",
+        text: "Adding a bedroom is a parking application as well as a building one. If you can show two cars still park off the road without blocking each other in, put it on the drawing. It answers the objection before anyone raises it.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "How to actually use it" },
+      {
+        type: "p",
+        text: "The practical technique is unglamorous and it works. Read the plan — it is on Cranleigh Parish Council's website — find the two or three policies your scheme touches, and answer them by name in your design and access statement.",
+      },
+      {
+        type: "ol",
+        items: [
+          "**Download the made plan** from Cranleigh Parish Council and skim it for the policies that apply to your type of application. For most householders that is the design, character, garden and parking policies.",
+          "**Quote the policy number and its own wording** in your statement, then say in one or two sentences how the design responds to it.",
+          "**Deal with the garden explicitly.** State how much usable garden remains after the extension, and what happens to planting and permeable surfacing.",
+          "**Deal with parking explicitly** if you are adding bedrooms. Show the spaces on the block plan.",
+          "**Say what the design takes from its neighbours** — ridge height, eaves line, brick, tile, window proportion. This is the character argument, and it is the one that gets schemes through.",
+          "**Check the constraints layers too.** The neighbourhood plan sits on top of the [settlement boundary](/blog/cranleigh-settlement-boundary) and, in the village centre, the [conservation area](/blog/cranleigh-conservation-area-consent). They are separate tests.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A householder application in England costs **£548 since 1 April 2026**, rising to roughly £575 from 8 December 2026, and a refusal costs you that fee plus the redesign plus, typically, three to five months. Answering the local policies by name in the first submission is an hour's work with a genuine effect on the odds. It is the cheapest risk reduction in the whole process.",
+      },
+      { type: "h2", text: "What it does not do" },
+      {
+        type: "p",
+        text: "Two things worth saying plainly, because the plan gets blamed for both.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**It does not remove permitted development rights.** If your scheme is permitted development, the neighbourhood plan does not change that. Permitted development is national legislation; a neighbourhood plan is local policy for applications. (An Article 4 direction is the tool that removes permitted development, and that is a separate thing entirely.)",
+          "**It does not stop development.** It shapes it, and it allocated sites for housing itself. A plan that refused everything would not have passed examination.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The plan is, on balance, good news for a householder who wants to build something that fits. It is bad news for a scheme that ignores its street. That is more or less what the village voted for.",
+      },
+      {
+        type: "p",
+        text: "We deal with Waverley's planning department constantly and we read the local policy because it changes what gets approved here. If you want a view on whether a scheme is likely to fly before you commission the drawings, ask — that is the kind of thing you should expect from [builders in Cranleigh](/areas/cranleigh) who work in this parish week in, week out.",
+      },
+    ],
+    faqs: [
+      {
+        question: "When was the Cranleigh Neighbourhood Plan made?",
+        answer:
+          "It was made on 15 July 2024 by Waverley Borough Council under delegated authority, following examination and a local referendum. From that date it forms part of the statutory development plan for the parish and applications must be determined in accordance with it.",
+      },
+      {
+        question: "Does the Neighbourhood Plan apply to my house extension?",
+        answer:
+          "Yes, if you need planning permission. Its design, character, garden and parking policies apply to householder applications alongside Waverley's Local Plan. It does not apply if your work is permitted development, because permitted development is national legislation rather than a local application.",
+      },
+      {
+        question: "Does the Neighbourhood Plan take away permitted development rights?",
+        answer:
+          "No. Permitted development rights come from national legislation and are only removed by an Article 4 direction, by a planning condition, or by the property being in a conservation area or listed. A neighbourhood plan sets policy for applications that need permission.",
+      },
+      {
+        question: "How much weight does a neighbourhood plan carry against the borough Local Plan?",
+        answer:
+          "Both are part of the development plan and carry statutory weight. Where they overlap, the more recently adopted policy generally carries more weight. In practice an application in Cranleigh needs to answer both, and most applications only answer the borough policies.",
+      },
+      {
+        question: "Where can I read the Cranleigh Neighbourhood Plan?",
+        answer:
+          "The made version is published on Cranleigh Parish Council's website and referenced on Waverley Borough Council's neighbourhood planning pages. Read the policies that apply to your type of application and quote them by number in your design and access statement.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-neighbourhood-plan-householders"],
   },
   {
     slug: "cranleigh-buildings-of-local-merit",
     title: "Cranleigh heritage: the second list your house might be on",
     category: "Heritage",
     date: "2026-08-17",
-    seoTitle: "Buildings of Local Merit in Cranleigh | Heritage & Planning",
+    updated: "2026-09-04",
+    seoTitle: "Buildings of Local Merit Cranleigh | The Second Heritage List",
     metaDescription:
-      "Cranleigh has 81 nationally listed buildings — and 174 Buildings of Local Merit. What that second list means for your extension, and how to check before you draw.",
+      "Cranleigh parish has more than eighty listed buildings — and a second, local list that most owners have never heard of. What being on it does to your plans.",
+    excerpt:
+      "Everyone knows about listed buildings. Far fewer know about the local list, which carries no criminal sanction, requires no consent, and can still lose you a planning application if you ignore it.",
     imageAlt:
-      "Illustration of a Cranleigh street elevation with two buildings picked out in amber as nationally listed and five more outlined as buildings of local merit, above the figures 81 and 174",
-    body: [
-      "Cranleigh's heritage is usually measured in listed buildings: the parish has 81, 80 at Grade II and one at Grade II* — the Church of St Nicolas. Fewer owners know about the second list. The Cranleigh Neighbourhood Plan records 174 Buildings of Local Merit, more than twice as many, and your house can be on it without being listed.",
-      "A Building of Local Merit is not statutory listing and brings no listed building consent with it. It is a non-designated heritage asset, so Waverley weighs its significance when deciding an application. People tend to find out at the wrong moment — after the drawings are done.",
-      "The conservation area is the other half of the picture. Its extension was adopted on 19 July 2016, taking in the south side of the High Street and Cranleigh Common. The Cranleigh Society, which took part in the review alongside local historians and the Surrey Archaeological Society, said the extension \"will ultimately help to safeguard the heritage and design assets of Cranleigh village centre\".",
-      "So three things are worth establishing before anything is drawn: whether the building is listed, whether it is on the local merit list, and whether it sits in the conservation area. We check all three at the start, because each changes what can be built.",
+      "Illustration of two heritage certificates side by side: a formal national listing with a crown seal on the left, and a lighter local list document with an amber seal on the right, above a row of village cottages",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "cranleigh-neighbourhood-plan-householders",
+      "trickle-vents-approved-document-f",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="lmsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="lmamber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-          <linearGradient id="lmroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="400" fill="url(#lmsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Two lists, not one</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh parish — listed, and locally significant</text>
-
-        {/* Street elevation. Two amber (nationally listed), five outlined
-            (buildings of local merit) — the ratio the numbers below state. */}
-        <g>
-          {/* Listed, amber */}
-          <path d="M28 150 L58 124 L88 150 Z" fill="url(#lmroof)" />
-          <rect x="34" y="150" width="48" height="72" fill="url(#lmamber)" />
-          <rect x="52" y="188" width="14" height="34" fill="#6a4034" />
-          <rect x="40" y="160" width="12" height="14" fill="#fdf3e2" />
-          <rect x="66" y="160" width="12" height="14" fill="#fdf3e2" />
-
-          {/* Local merit, outlined */}
-          <path d="M96 158 L122 134 L148 158 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="101" y="158" width="42" height="64" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="116" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-
-          <path d="M156 152 L182 128 L208 152 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="161" y="152" width="42" height="70" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="176" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-
-          {/* Listed, amber */}
-          <path d="M212 146 L242 120 L272 146 Z" fill="url(#lmroof)" />
-          <rect x="218" y="146" width="48" height="76" fill="url(#lmamber)" />
-          <rect x="236" y="188" width="14" height="34" fill="#6a4034" />
-          <rect x="224" y="156" width="12" height="14" fill="#fdf3e2" />
-          <rect x="250" y="156" width="12" height="14" fill="#fdf3e2" />
-
-          <path d="M276 158 L302 134 L328 158 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="281" y="158" width="42" height="64" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="296" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-
-          <path d="M334 152 L358 130 L382 152 Z" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="338" y="152" width="40" height="70" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
-          <rect x="352" y="192" width="12" height="30" fill="none" stroke="#9fb0b6" strokeWidth="2" />
-        </g>
-
-        <rect x="24" y="222" width="354" height="2" fill="#b7c5cb" />
-
-        {/* Legend */}
-        <rect x="24" y="240" width="14" height="14" fill="url(#lmamber)" />
-        <text x="46" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30">81 nationally listed</text>
-        <text x="46" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">80 Grade II, one Grade II* — St Nicolas</text>
-
-        <rect x="222" y="240" width="14" height="14" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2" />
-        <text x="244" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30">174 local merit</text>
-        <text x="244" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Not listed. Still weighed.</text>
-
-        <text x="24" y="330" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Your house can be heritage without being listed</text>
-        <text x="24" y="354" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Check listing, local merit and conservation area first</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Cranleigh Neighbourhood Plan; Waverley Borough Council</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Cranleigh parish contains **81 nationally listed buildings** — 80 Grade II and one Grade II*, the church of St Nicolas — per the Cranleigh Neighbourhood Plan.",
+          "There is a **second list**: locally identified buildings of merit, which are **non-designated heritage assets** in planning terms.",
+          "Being on the local list needs **no consent** to alter and creates **no offence** — but it is a material planning consideration and it changes how an application is judged.",
+          "The national test is a **balanced judgement** having regard to the scale of harm and the significance of the asset. That is a real test, and applications fail it.",
+          "Check both lists before you design. Historic England's National Heritage List is free and searchable; the local list sits with Waverley.",
+        ],
+      },
+      {
+        type: "p",
+        text: "There are two ways a building in Cranleigh can be considered historically important, and only one of them comes with a letter through the door that people remember receiving.",
+      },
+      {
+        type: "p",
+        text: "The first is national listing, and everybody understands it. The second is a local list of buildings identified as making a positive contribution to the character of the area. Owners frequently do not know their house is on it. They find out when a planning officer mentions it in a report — which is a bad moment to find out, because by then the drawings are done.",
+      },
+      { type: "h2", text: "The national list" },
+      {
+        type: "p",
+        text: "The Cranleigh Neighbourhood Plan records **81 nationally listed buildings** in the parish: 80 at Grade II, and one at Grade II* — the parish church of St Nicolas, spelt with one l, which catches out more people than you would expect, including the odd consultant. Grade II* is the top eight per cent or so of listed buildings nationally. The stock is predominantly 15th to 17th century timber-framed, refronted in brick or stone in the 18th and 19th.",
+      },
+      {
+        type: "p",
+        text: "Listing is a national designation made by the Secretary of State on advice from Historic England, and it is serious. The building is protected in its entirety, inside and out, including later additions and often including structures within its curtilage. Altering it in a way that affects its special interest without **listed building consent** is a criminal offence, and unlike most planning breaches there is no time limit after which it becomes lawful.",
+      },
+      {
+        type: "callout",
+        title: "Check it yourself, free",
+        text: "Search your address on Historic England's **National Heritage List for England**. It gives you the grade, the list entry number and the official description of what is significant about the building. That description is the single most useful document you will read before designing anything, because it tells you what a conservation officer is protecting.",
+      },
+      { type: "h2", text: "The local list, and why it still matters" },
+      {
+        type: "p",
+        text: "Alongside national listing, local authorities maintain lists of buildings that are locally important — often described as buildings of local merit — without meeting the national threshold. In planning terms these are **non-designated heritage assets**. In Cranleigh parish there are **174 of them**, according to the Cranleigh Neighbourhood Plan, against 81 nationally listed buildings. So a house here is more than twice as likely to be on the list nobody has heard of as on the one everybody has.",
+      },
+      {
+        type: "p",
+        text: "The distinction that matters is this:",
+      },
+      {
+        type: "table",
+        head: ["", "Listed building", "Locally listed / non-designated"],
+        rows: [
+          ["Who designates it", "The Secretary of State, on Historic England's advice", "The local authority, from local evidence"],
+          ["Consent needed to alter", "**Yes** — listed building consent, separate from planning permission", "No separate consent"],
+          ["Offence to alter without consent", "**Yes** — a criminal offence, with no time limit", "No"],
+          ["Effect on a planning application", "Very strong protection; substantial harm is exceptionally hard to justify", "A material consideration; harm is weighed in a balanced judgement"],
+          ["Permitted development", "Heavily restricted", "Unaffected by the listing itself"],
+          ["Practical effect on your project", "Everything changes — programme, materials, cost", "Design and justification have to work harder; programme usually unaffected"],
+        ],
+        caption: "Two different regimes. People treat the second as if it were nothing, which is where applications come unstuck.",
+      },
+      {
+        type: "p",
+        text: "National policy is explicit about the weight given to a non-designated heritage asset: in weighing an application affecting one, a balanced judgement is required, having regard to the scale of any harm or loss and the significance of the asset. That is not a rubber stamp and it is not a veto. It is a genuine test, and a scheme that demolishes or obscures the very thing the building was listed locally for will fail it.",
+      },
+      {
+        type: "quote",
+        text: "The local list is not a problem, it is information. If someone has written down what is good about your house, that is a head start on designing something that will get approved. The people who come unstuck are the ones who never looked.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What actually changes on site" },
+      {
+        type: "p",
+        text: "If your building is nationally listed, almost everything changes. Realistically:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Consent runs in parallel with planning**, and listed building consent has its own application, its own drawings and its own justification. Allow for the full determination period, and allow for a conservation officer's comments coming back mid-way.",
+          "**Materials are specified, not chosen.** Lime mortar rather than cement, traditional plaster, matched bricks, hand-dressed lead. These are slower to work with and need trades who know them.",
+          "**Cost per square metre rises.** Our own heritage rate sits between **£3,400 and £4,200 per m²**, against £2,700–£3,100 for a standard extension — the difference is skill, materials and time, not margin. Those figures are on our [pricing page](/pricing).",
+          "**Regulations get balanced against significance.** This is the case where the usual answer on things like [trickle vents](/blog/trickle-vents-approved-document-f) is genuinely negotiable — but negotiated in advance, with building control, not decided on site.",
+          "**Recording matters.** Photograph and record what is there before you touch it. It protects you as much as the building.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your building is only locally listed, the programme is usually normal and the cost is usually normal. What changes is the application: the design has to acknowledge what the building contributes, and the statement has to say so. A scheme that keeps the frontage, respects the roof line and puts the new work behind will almost always be fine. A scheme that removes the feature the building is known for will not.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Find out which list you are on **before** you commission drawings. A listed building consent application designed from the list description is a different, cheaper animal from one designed in ignorance and then redrawn after the conservation officer's comments. We have seen the redraw cost more than the original design fee, and add four months.",
+      },
+      { type: "h2", text: "The five-minute check" },
+      {
+        type: "ol",
+        items: [
+          "**Search the National Heritage List for England** for your address. Note the grade and read the list description in full.",
+          "**Check Waverley's local list** and its conservation area layer on the interactive policies map. A building can be on the local list, in the [conservation area](/blog/cranleigh-conservation-area-consent), or both.",
+          "**Check the curtilage.** Outbuildings, walls and structures within the curtilage of a listed building, pre-dating July 1948, can be protected as part of the listing even though nobody ever listed them separately. This is the single most common unpleasant surprise.",
+          "**Check your neighbours.** Work that affects the setting of a nearby listed building is a material consideration even if your own house is entirely unprotected.",
+          "**Book a pre-application enquiry** if any of the above returns a hit. On heritage work it is the best money in the project.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Heritage work is a large part of what we do, and it is the part where local knowledge earns its keep — knowing which conservation officer will want what, and which specialist trades are available in this part of Surrey. If you have a period house here and you are not sure what you are dealing with, that is exactly the conversation to have with [builders in Cranleigh](/areas/cranleigh) before anything is drawn.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I find out if my house is listed?",
+        answer:
+          "Search your address on Historic England's National Heritage List for England. It is free and it gives you the grade, the list entry number and the official description of what is significant. Also check whether outbuildings or walls in the curtilage that pre-date July 1948 are covered by the same listing.",
+      },
+      {
+        question: "What is a building of local merit, and do I need consent to alter one?",
+        answer:
+          "It is a building the council has identified as locally important without meeting the national listing threshold — a non-designated heritage asset in planning terms. You do not need any separate consent to alter it, and altering it is not an offence. But it is a material planning consideration, and an application affecting it is judged on a balanced view of the harm caused against the building's significance.",
+      },
+      {
+        question: "How many listed buildings are there in Cranleigh?",
+        answer:
+          "81, according to the Cranleigh Neighbourhood Plan — 80 at Grade II and one at Grade II*, the church of St Nicolas, spelt with one l. There are also 174 Buildings of Local Merit, which are non-designated heritage assets rather than listed buildings.",
+      },
+      {
+        question: "Does being locally listed stop me extending?",
+        answer:
+          "No. It means the application has to acknowledge what the building contributes and explain how the design responds. Schemes that keep the significant frontage and put new work behind or to the rear are routinely approved. Schemes that remove the feature the building was listed for are the ones that fail.",
+      },
+      {
+        question: "How much more does work on a listed building cost?",
+        answer:
+          "Our heritage rate runs between £3,400 and £4,200 per square metre against £2,700 to £3,100 for standard extension work. The difference is traditional materials, specialist trades and the slower pace the fabric demands, plus the additional consent process running alongside the planning application.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-buildings-of-local-merit"],
   },
   {
     slug: "building-control-completion-certificate",
     title: "Building control: what a completion certificate is actually for",
     category: "Building control",
     date: "2026-08-17",
-    seoTitle: "Building Control Completion Certificates | What They Prove",
+    updated: "2026-09-04",
+    seoTitle: "Building Control Completion Certificate | Why You Need One",
     metaDescription:
-      "A completion certificate proves work meets the Building Regulations 2010. Why solicitors, lenders and insurers always ask for one before a sale completes.",
+      "A completion certificate is the document that proves your building work was signed off. Without it, buyers' solicitors stall, and indemnity insurance is not a fix.",
+    excerpt:
+      "The completion certificate is the single most valuable piece of paper your build produces, and the one most likely to be quietly forgotten. It costs nothing extra to get at the time and thousands to work around later.",
     imageAlt:
-      "Illustration of a house beside a building control clipboard with a checklist, connected by a dashed amber line to a certificate scroll stamped with an amber wax seal, marking the eight week statutory deadline for a completion certificate",
-    body: [
-      "A completion certificate is the one building regulations document buyers' solicitors always ask for, yet plenty of homeowners have never heard of it until they come to sell.",
-      "Under regulation 17 of the Building Regulations 2010, once notifiable work finishes you must tell your local authority within five days; the council or an approved inspector then has up to eight weeks to issue the certificate, confirming the finished work meets the regulations in force when it was built.",
-      "No certificate does not mean the work is unsafe, but it does make a sale harder — lenders and insurers use it as their evidence, and its absence tends to knock money off an offer or trigger an indemnity policy.",
-      "We notify building control ourselves and chase the certificate through to completion, so it is in the file long before anyone asks for it.",
+      "Illustration of a completion certificate with an amber stamp, sitting on a house sale file beside a set of keys, with a rejected indemnity policy shown behind it",
+    related: [
+      "part-l-extension-insulation",
+      "trickle-vents-approved-document-f",
+      "extension-value-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="ccsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="ccbrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
-          </linearGradient>
-          <linearGradient id="ccroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-          <linearGradient id="ccgrass" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-          <linearGradient id="ccpaper" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
-          </linearGradient>
-          <linearGradient id="ccseal" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="400" fill="url(#ccsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">The certificate that matters</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Building Regulations 2010 — completion sign-off</text>
-
-        {/* house */}
-        <path d="M40 200 L110 140 L180 200 Z" fill="url(#ccroof)" />
-        <rect x="52" y="200" width="116" height="76" fill="url(#ccbrick)" />
-        <path d="M52 214 h116 M52 228 h116 M52 242 h116 M52 256 h116" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <rect x="64" y="210" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="120" y="210" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="94" y="250" width="24" height="26" fill="#40525a" />
-        <rect x="24" y="276" width="352" height="24" fill="url(#ccgrass)" />
-
-        {/* inspector's clipboard */}
-        <g transform="translate(228,108)">
-          <rect x="0" y="0" width="66" height="86" rx="4" fill="#e7edf1" stroke="#c3ccd1" strokeWidth="2" />
-          <rect x="20" y="-8" width="26" height="14" rx="3" fill="#8b98a0" />
-          <path d="M10 22 h46 M10 38 h46 M10 54 h32" stroke="#5d7078" strokeWidth="2" opacity=".6" />
-          <path d="M8 22 l7 7 l-7 7" stroke="#4c9a5b" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="translate(-2,44)" />
-        </g>
-
-        {/* dashed line: inspection leads to certificate */}
-        <path d="M240 196 q-10 18 -10 30" stroke="#e08a2b" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
-
-        {/* certificate scroll with amber wax seal */}
-        <g transform="translate(210,228)">
-          <rect x="0" y="0" width="150" height="56" rx="4" fill="url(#ccpaper)" stroke="#d8c9a8" strokeWidth="2" />
-          <path d="M10 16 h130 M10 28 h130 M10 40 h92" stroke="#b7a67e" strokeWidth="2" opacity=".7" />
-          <circle cx="128" cy="42" r="17" fill="url(#ccseal)" stroke="#c4741f" strokeWidth="2" />
-          <path d="M120 42 l5 5 l10 -12" stroke="#1f2a30" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Eight weeks is the statutory deadline</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Notify within 5 days of finishing — the clock starts there</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: The Building Regulations 2010, regulation 17</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A **completion certificate** is issued by building control when the work has been inspected and found to comply. It is not the same as planning permission and not the same as a final invoice.",
+          "It is the document a **buyer's solicitor** asks for. Missing paperwork is one of the most common causes of a conveyancing delay on an extended house.",
+          "**Indemnity insurance is not a substitute.** It protects against enforcement, not against the work being wrong.",
+          "You get it by **booking the final inspection** — and the reason most people do not have one is simply that nobody booked it.",
+          "There is no charge for the certificate itself. The inspection is already in the fee you paid at the start.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The most expensive piece of paper in a building project is the one that does not exist. We have been called into houses years after somebody else's extension was built, not to fix anything structural, but because a sale has stalled and the seller cannot produce a completion certificate for work done in 2019.",
+      },
+      {
+        type: "p",
+        text: "It is a solvable problem. It is also an entirely avoidable one, and it costs nothing to avoid at the time.",
+      },
+      { type: "h2", text: "What the certificate is, and what it is not" },
+      {
+        type: "p",
+        text: "Building control regulates how a building is constructed: structure, fire safety, drainage, ventilation, insulation, stairs, safe glazing. It is a separate process from planning, which regulates whether the building should be there and what it looks like. You can have full planning permission and be in breach of building regulations, and vice versa. They are different departments, different applications and different pieces of paper.",
+      },
+      {
+        type: "p",
+        text: "At the end of the job, if the inspections have been carried out and the work complies, building control issues a **completion certificate**. That certificate is your evidence — for a buyer, a lender, an insurer or a future building control officer — that the work was done properly and checked.",
+      },
+      {
+        type: "table",
+        head: ["Document", "What it proves", "Who asks for it"],
+        rows: [
+          ["Planning permission / decision notice", "The council agreed the building could be there, in that form", "Buyer's solicitor, on anything that needed permission"],
+          ["**Building regulations completion certificate**", "The construction was inspected and complies", "Buyer's solicitor, lender, insurer — every time"],
+          ["FENSA / CERTASS certificate", "Replacement windows and doors comply and were self-certified", "Buyer's solicitor, on any window replacement since April 2002"],
+          ["Electrical installation certificate (Part P)", "Notifiable electrical work was carried out and certified competently", "Buyer's solicitor, and increasingly insurers"],
+          ["Structural engineer's calculations", "The steel and foundations were designed, not guessed", "Building control during the job; occasionally a buyer's surveyor after"],
+        ],
+        caption: "Keep all of these in one folder from day one. Reassembling them five years later is where the cost is.",
+      },
+      { type: "h2", text: "The two ways people end up without one" },
+      {
+        type: "p",
+        text: "In our experience it is almost never dishonesty. It is one of two things.",
+      },
+      {
+        type: "p",
+        text: "**Nobody booked the final inspection.** The job finished, the scaffold came down, everybody moved on, and the last visit never happened. The work is fine. The file is simply still open. This is by far the most common case, and it is the easiest to fix if you notice within a reasonable time — often a phone call and a visit.",
+      },
+      {
+        type: "p",
+        text: "**The work was never notified at all.** Somebody decided the job was small enough not to bother. Removing a chimney breast, moving a load-bearing wall, replacing a flat roof, installing a new bathroom in a room that never had one, changing the windows — these are all notifiable, and all routinely done without notification.",
+      },
+      {
+        type: "quote",
+        text: "The final inspection is free. It is already in the fee you paid at the beginning. The number of houses I have been into where the whole job is sound and the only thing missing is a phone call somebody forgot to make is genuinely depressing.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Why indemnity insurance is not the answer" },
+      {
+        type: "p",
+        text: "When a sale hits this problem, the estate agent usually suggests an indemnity policy. They are cheap, they are quick, and they are widely accepted, so it is worth being clear about what they actually do.",
+      },
+      {
+        type: "p",
+        text: "A building regulations indemnity policy insures against **the local authority taking enforcement action**. That is all. It does not confirm the work complies. It does not protect the buyer against the steel being undersized, the foundations being shallow, or the flat roof having no ventilation. It insures against a risk that, for older work, was already close to nil — local authority enforcement powers under the Building Act are time-limited in ways that make action on old work unlikely anyway.",
+      },
+      {
+        type: "callout",
+        title: "The catch nobody mentions",
+        text: "Applying to building control for a **regularisation certificate** after the fact usually **voids** an indemnity policy, and most policies say so explicitly. So you have to choose: fix it properly, or paper over it. You cannot buy the policy first and then decide to do it properly later. If you are buying a house, that is a reason to ask the question before you accept the policy.",
+      },
+      { type: "h2", text: "How to fix it if the work is already done" },
+      {
+        type: "p",
+        text: "The route is **regularisation**: an application to the local authority to inspect and, if satisfied, certify work already carried out without approval. It is a real process with a real outcome, and it is the only route that produces a certificate rather than a workaround.",
+      },
+      {
+        type: "ol",
+        items: [
+          "**Gather what you have** — drawings, engineer's calculations, invoices, photographs taken during the build. Photographs of foundations and steelwork before they were covered are worth a great deal here.",
+          "**Apply to the local authority** for regularisation. Note that this route is with the council, not with a private approved inspector.",
+          "**Expect opening up.** The officer may require parts of the work to be exposed — a section of foundation dug to, plasterboard removed at a steel — because they cannot certify what they cannot see. Budget for the making good.",
+          "**Do the remedial work** if anything is found short, then get it re-inspected.",
+          "**Receive the regularisation certificate**, which does the same job for a solicitor as a completion certificate.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Cost varies with what has to be opened up, which is why the honest answer to \"what will it cost\" is that it depends entirely on how much is hidden. A straightforward case where the work is sound and accessible is modest. A case where a foundation has to be excavated to, in an occupied house, is not.",
+      },
+      { type: "h2", text: "The habit that prevents all of this" },
+      {
+        type: "ol",
+        items: [
+          "**Book the final inspection yourself** on the day the job finishes. Do not assume the builder has. Put it in your own calendar.",
+          "**Ask for the certificate in writing** and chase it until it arrives. It is often issued weeks after the visit.",
+          "**Photograph the hidden work** as it goes — foundations before the concrete, steels before the plasterboard, insulation before the screed. Ten minutes on a phone, and it is what makes a future regularisation cheap instead of expensive.",
+          "**Keep one folder** — physical or digital — with the planning decision, the building control certificate, the electrical certificate, the FENSA certificate, the engineer's calculations and the guarantees.",
+          "**Hand it over on completion.** Any builder should be giving you this. If yours cannot, that tells you something.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We book the final inspection as part of closing a job and we hand over the file, because a build is not finished when the last trade leaves — it is finished when you can prove it was built properly. If you have inherited a house with a paperwork gap and want an honest view on what it would take to regularise, that is a normal enquiry for [builders in Cranleigh](/areas/cranleigh) and we are happy to look.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a building regulations completion certificate?",
+        answer:
+          "It is the document building control issues at the end of a job, once the work has been inspected and found to comply with the building regulations. It is separate from planning permission, which deals with whether the building should be there at all rather than how it is constructed.",
+      },
+      {
+        question: "What happens if I do not have a completion certificate?",
+        answer:
+          "Usually nothing at all until you sell. Then the buyer's solicitor asks for it, the sale stalls, and you are choosing between an indemnity policy and a regularisation application under time pressure. It is one of the most common causes of delay on the sale of an extended house.",
+      },
+      {
+        question: "Is indemnity insurance as good as a completion certificate?",
+        answer:
+          "No. An indemnity policy insures against local authority enforcement action. It says nothing about whether the work complies, and it does not protect a buyer from defective construction. Applying for regularisation afterwards normally voids the policy, so you have to choose one route or the other.",
+      },
+      {
+        question: "Can I get a certificate for work that was finished years ago?",
+        answer:
+          "Yes, through a regularisation application to the local authority. The officer will inspect and may require parts of the work to be opened up so they can be seen. If anything falls short it has to be put right and re-inspected. The certificate that results does the same job for a solicitor as a completion certificate.",
+      },
+      {
+        question: "Which jobs need building control at all?",
+        answer:
+          "More than people expect. Extensions, loft conversions, removing or altering load-bearing walls, taking out a chimney breast, new or altered drainage, replacing a roof covering, new windows and doors, most electrical work, and installing a bathroom or WC where there was not one before. If in doubt, ask before you start rather than after.",
+      },
+    ],
+    art: BLOG_ART["building-control-completion-certificate"],
   },
   {
     slug: "extension-value-cranleigh",
     title: "Does an extension add value in Cranleigh? What the numbers say",
     category: "Extensions",
     date: "2026-08-14",
-    seoTitle: "House Extension Value in Cranleigh | What the Data Really Says",
+    updated: "2026-09-04",
+    seoTitle: "Does An Extension Add Value In Cranleigh? 2026 Numbers",
     metaDescription:
-      "What does an extension actually add in Cranleigh? Nationwide's data on value, and the Waverley settlement boundary rules that decide what you can build first.",
+      "Cranleigh averages about £585,000 a home, detached about £796,000. Whether an extension adds value here depends on one number: your street's ceiling price.",
+    excerpt:
+      "An extension in Cranleigh costs roughly £2,700–£3,100 a square metre to build. Whether it comes back when you sell depends less on the build than on how close your street already is to its ceiling.",
     imageAlt:
-      "Illustration of a house in Cranleigh with a single-storey extension added in amber and a value tag reading plus 24 percent rising above the roofline, with a dashed settlement boundary line marked across the rear garden",
-    body: [
-      "Cranleigh homeowners ask this more than most: is an extension worth the disruption, or just nice to have? Nationwide's research on home improvements found that a loft conversion or extension adding a double bedroom and bathroom can add up to around 24% to a three-bedroom house's value, with an extra bathroom alone worth roughly 6%.",
-      "Those are national averages rather than a Cranleigh figure, and Nationwide is clear the effect varies by area — in a village where buyers are competing for family space, a good conversion tends to sit at the stronger end.",
-      "The planning route matters as much as the value. A single-storey rear extension can often go ahead as permitted development, but where your plot sits relative to Cranleigh's settlement boundary decides how much latitude you have: the built-up area falls outside both the Green Belt and the countryside beyond it, while land past the boundary is judged against much tighter countryside policy. Since the Cranleigh Neighbourhood Plan was made in July 2024, Waverley Borough Council uses it to help determine applications here.",
-      "We check that before a client spends anything on drawings.",
+      "Illustration of a bar chart comparing build cost per square metre against value added per square metre, with an amber ceiling line drawn across the top of the chart showing where the street price caps out",
+    related: [
+      "extending-1930s-semi-cranleigh",
+      "loft-conversions-cranleigh-roof-types",
+      "building-control-completion-certificate",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="evsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="evbrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
-          </linearGradient>
-          <linearGradient id="evroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-          <linearGradient id="evext" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-          <linearGradient id="evgrass" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="400" fill="url(#evsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Does it add value?</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh extensions — national data, local planning</text>
-
-        {/* garden with Green Belt boundary */}
-        <rect x="0" y="252" width="400" height="48" fill="url(#evgrass)" />
-        <path d="M0 264 h180 M228 264 h172" stroke="#1f2a30" strokeWidth="2" strokeDasharray="7 5" opacity=".55" />
-        <rect x="180" y="256" width="4" height="16" fill="#6a4034" />
-        <rect x="224" y="256" width="4" height="16" fill="#6a4034" />
-        <text x="202" y="250" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#4c6b3c" textAnchor="middle" letterSpacing="0.5">GREEN BELT</text>
-
-        {/* original house */}
-        <path d="M46 170 L108 116 L170 170 Z" fill="url(#evroof)" />
-        <rect x="58" y="170" width="100" height="82" fill="url(#evbrick)" />
-        <path d="M58 186 h100 M58 202 h100 M58 218 h100 M58 234 h100" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <rect x="70" y="182" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="118" y="182" width="28" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="92" y="222" width="24" height="30" fill="#40525a" />
-
-        {/* extension, amber to mark the added value */}
-        <rect x="158" y="204" width="66" height="48" fill="url(#evext)" />
-        <path d="M158 204 L191 178 L224 204 Z" fill="#c4741f" />
-        <rect x="172" y="216" width="24" height="24" fill="#fbe3c4" stroke="#f6cf9a" strokeWidth="2" />
-        <path d="M158 252 h66" stroke="#a8652a" strokeWidth="2" />
-
-        {/* value tag rising from the extension */}
-        <path d="M205 178 q6 -34 24 -50" stroke="#e08a2b" strokeWidth="3" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
-        <path d="M224 104 l28 -8 l7 26 l-16 12 l-19 -8 z" fill="#e08a2b" />
-        <text x="238" y="120" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">+24%</text>
-        <text x="238" y="132" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fill="#3a2a12" textAnchor="middle">nationally*</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">National data says up to 24%*</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Outside the settlement boundary, Waverley judges it as countryside</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">*Nationwide research on home improvements, 2025</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Cranleigh's average sold price is around **£584,800**, with detached homes averaging about **£796,300** and semis about **£505,900** (Land Registry data via Rightmove, twelve months to mid-2026).",
+          "Extension build cost here runs **£2,700–£3,100 per m²** for a standard single storey; a kitchen extension with fit-out runs **£3,500–£4,500 per m²**.",
+          "Whether that comes back depends on the **ceiling price of your street**, not on the national average return.",
+          "The reliable value gains are **a bedroom**, **a second bathroom** and **a usable kitchen-dining space**. The unreliable ones are extra square metres of the same thing.",
+          "A house without the [completion certificate](/blog/building-control-completion-certificate) for its extension gets marked down at the point of sale, whatever the extension is worth.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Everybody asks this question and almost nobody gets a straight answer, because the honest answer starts with \"it depends\" and most people stop listening there. So let us do it with numbers instead.",
+      },
+      { type: "h2", text: "What Cranleigh houses actually sell for" },
+      {
+        type: "p",
+        text: "Over the twelve months to mid-2026, Land Registry data published through Rightmove puts the average sold price in Cranleigh at around **£584,800**. Broken down by type:",
+      },
+      {
+        type: "table",
+        head: ["Property type", "Average sold price, Cranleigh", "Rough £ per m² at 120m²"],
+        rows: [
+          ["Detached", "≈ £796,300", "≈ £6,600"],
+          ["All types", "≈ £584,800", "≈ £4,900"],
+          ["Semi-detached", "≈ £505,900", "≈ £4,200"],
+        ],
+        caption: "Averages from Land Registry sold-price data via Rightmove, twelve months to mid-2026. The per-m² column is illustrative only — it assumes a 120m² house, and real houses vary enormously.",
+      },
+      {
+        type: "p",
+        text: "Set those against build cost. A standard single-storey extension in this area costs **£2,700 to £3,100 per m²** to build, and a kitchen extension including the fit-out **£3,500 to £4,500 per m²** — the figures on our [extension cost guide](/guides/house-extension-costs-surrey).",
+      },
+      {
+        type: "p",
+        text: "On the face of it the arithmetic looks wonderful: build at £2,900, sell at £4,900. That is the arithmetic that gets quoted in newspapers and it is misleading, because the new square metres are not worth the same as the average square metre of the house, and because of the thing everyone forgets.",
+      },
+      { type: "h2", text: "The ceiling price is the whole game" },
+      {
+        type: "p",
+        text: "Every street has a price above which buyers stop paying, more or less regardless of what you have done to the house. It is set by what the street is, where it is, what the schools are, what the neighbours' houses look like, and what else the buyer could get for the money a few miles away.",
+      },
+      {
+        type: "p",
+        text: "If your house is well below its street's ceiling, an extension has room to add value and generally does. If your house is already at or near the ceiling, you can spend £120,000 and add £40,000, because the buyer who would pay more simply buys in a different road.",
+      },
+      {
+        type: "quote",
+        text: "The question I ask first is not what do you want to build, it is what is the best house in your road worth. If you are already close to that number, build what you actually want to live in, and stop pretending it is an investment. If you are a long way below it, you have room.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "How to find your ceiling, free, in twenty minutes",
+        text: "Look up **sold prices** — not asking prices — for your street and the two nearest comparable roads over the last two years. Filter to the largest, most extended houses. That top figure is your ceiling. Then subtract your current value. What is left is the maximum the market will ever pay you back, before you have spent a penny."
+      },
+      { type: "h2", text: "What adds value and what does not" },
+      {
+        type: "p",
+        text: "Two extensions of the same size and cost can perform completely differently, because buyers pay for functions, not for floor area.",
+      },
+      {
+        type: "table",
+        head: ["What you add", "Typical effect on value", "Why"],
+        rows: [
+          ["A genuine extra bedroom (with a wardrobe and a window that meets the rules)", "Strong", "Moves the house into a different search filter. A four-bed appears in searches a three-bed never sees."],
+          ["A second bathroom or en-suite", "Strong", "Consistently one of the most requested features, and cheap relative to its effect."],
+          ["Kitchen-dining-family space", "Strong", "The single most common reason people move. Removing that reason is worth money."],
+          ["A downstairs WC where there was none", "Good, relative to cost", "Small spend, disproportionate effect on saleability."],
+          ["More living room", "Weak", "The house already has one. Buyers rarely pay again for the same function."],
+          ["A garden room or annexe with no proper heating or bathroom", "Weak", "Does not count in the habitable floor area and is valued as an outbuilding."],
+          ["Losing most of the garden", "**Negative** in Cranleigh", "Gardens are explicitly valued here — the [Neighbourhood Plan](/blog/cranleigh-neighbourhood-plan-householders) says so, and buyers agree."],
+        ],
+        caption: "Function beats floor area. The extension that changes which searches your house appears in is the one that pays."
+      },
+      { type: "h2", text: "The costs people leave out of the sum" },
+      {
+        type: "p",
+        text: "When people say an extension did not pay for itself, this is usually why. The build cost is not the project cost.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Planning fee** — £548 for a householder application since 1 April 2026, rising to about £575 from 8 December 2026.",
+          "**Design and drawings** — architect or technologist fees, typically a meaningful percentage of the build.",
+          "**Structural engineer** — £1,500–£3,000 for steel and foundation design.",
+          "**Party wall surveyor** — from around £1,000 where a neighbour dissents. See [the party wall notice that sets your start date](/blog/party-wall-notice-timing).",
+          "**Building control** application and inspections.",
+          "**Surveys** where they apply — tree, drainage, and in some cases a [bat survey](/blog/bat-surveys-timing-cranleigh) that can cost you a whole season.",
+          "**Kitchen, flooring, decoration and landscaping** — routinely 20–30% on top of the shell for a kitchen extension, and the part people budget last.",
+          "**Living costs** if you move out, or the cost of living in a building site if you do not."
+        ]
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Get the ceiling-price check done **before** the architect, not after. Twenty minutes on sold-price data is what tells you whether you are designing an investment or designing a home. Both are legitimate — but they lead to different decisions about specification, and finding out afterwards costs tens of thousands.",
+      },
+      { type: "h2", text: "When the answer is \"do it anyway\"" },
+      {
+        type: "p",
+        text: "It is worth saying plainly: not adding value is not the same as wasting money. If the alternative is moving, the extension only has to beat the cost of moving to be the better financial decision — and in Surrey that means stamp duty, agents' fees, legal fees, removals and the difference in purchase price. On a £585,000 house, moving costs are substantial before you have gained a single extra room.",
+      },
+      {
+        type: "p",
+        text: "And there are five or ten years of living in the house to weigh. A family that gets the kitchen it wanted for a decade has had something for its money that does not appear in a sold-price table.",
+      },
+      {
+        type: "p",
+        text: "What we will not do is tell someone a scheme will pay for itself when the street says otherwise. If you want an honest read on whether your plan makes financial sense here, ask — knowing what this town's houses sell for is part of what makes [builders in Cranleigh](/areas/cranleigh) worth using instead of a firm working from a national rate card.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does an extension add to a house in Cranleigh?",
+        answer:
+          "It depends far more on your street's ceiling price than on the extension itself. Cranleigh averages about £584,800 a home, with detached at about £796,300 and semis at about £505,900. If your house is well below the best price on your road, an extension has room to add value. If it is already near that number, you may recover only a fraction of the spend.",
+      },
+      {
+        question: "What is a ceiling price and how do I find mine?",
+        answer:
+          "It is the price above which buyers stop paying for a house on your street regardless of its condition or size. Find it by looking up sold prices — not asking prices — for the largest and most extended houses on your road and the nearest comparable roads over the last two years. The gap between your current value and that figure is the most the market will ever pay you back.",
+      },
+      {
+        question: "Which extension adds the most value?",
+        answer:
+          "Anything that changes which searches your house appears in. A genuine extra bedroom, a second bathroom or en-suite, and an open kitchen-dining-family space are the reliable ones. More of a room the house already has — a bigger living room — adds the least. Losing most of the garden can reduce value in Cranleigh, where gardens are explicitly valued.",
+      },
+      {
+        question: "Is extending cheaper than moving?",
+        answer:
+          "Frequently, yes. On a Surrey house at around £585,000, stamp duty, agents' fees, legal costs and removals add up before you have gained a single room. If the extension solves the reason you were going to move, it only has to beat those costs to be the better financial decision.",
+      },
+      {
+        question: "Does missing paperwork affect the value of an extension?",
+        answer:
+          "Yes, at the point of sale. If you cannot produce the building regulations completion certificate, the buyer's solicitor will raise it, the sale slows, and the price often gets renegotiated. The certificate is free at the time and expensive to reconstruct later.",
+      },
+    ],
+    art: BLOG_ART["extension-value-cranleigh"],
   },
   {
     slug: "party-wall-notice-timing",
     title: "The party wall notice that sets your start date",
     category: "Planning & surveys",
     date: "2026-08-13",
-    seoTitle: "Party Wall Notice Periods | When You Must Serve",
+    updated: "2026-09-04",
+    seoTitle: "Party Wall Notice Timing | 1 And 2 Month Rules Explained",
     metaDescription:
-      "Two months, one month, or fourteen days? The Party Wall etc. Act 1996 notice periods that quietly decide when your extension can actually start.",
+      "A party structure notice needs two months. Excavation and line of junction notices need one. Serve them late and your start date moves, whatever the programme says.",
+    excerpt:
+      "The Party Wall etc. Act 1996 is the most common reason a build that had planning permission still cannot start. The notice periods are fixed, they cannot be shortened, and almost nobody serves them early enough.",
     imageAlt:
-      "Illustration of two semi-detached houses sharing a party wall picked out in amber, with a countdown strip beneath it marking two months' notice for work to an existing party wall, one month for excavation, and the neighbour's fourteen days to reply",
-    body: [
-      "The Party Wall etc. Act 1996 is statute, not guidance, and it quietly sets your start date.",
-      "The government's explanatory booklet is clear on the timing: two months' notice for work to an existing party wall or party structure, and one month for a new wall at the line of junction, or for excavation near a neighbour's foundations. Your neighbour then has 14 days to consent in writing. If they object — or simply say nothing — a dispute is deemed to have arisen, and surveyors are appointed.",
-      "A notice is also only valid for a year, so serving one far too early is its own mistake.",
-      "Most delays we see are not the building work. They are a notice served the week the diggers were booked. We put the notice period in the programme at the start.",
+      "Illustration of a calendar strip with two months blocked out in amber against a party wall between two houses, and a foundation trench shown within three metres of the boundary",
+    related: [
+      "extending-1930s-semi-cranleigh",
+      "trees-and-foundation-depth-cranleigh",
+      "extension-value-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="pwsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#d3e4ee" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="pwbrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c3805c" /><stop offset="1" stopColor="#9d5f42" />
-          </linearGradient>
-          <linearGradient id="pwroof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-          <linearGradient id="pwwall" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="400" fill="url(#pwsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Before you can start</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Party Wall etc. Act 1996 — notice periods</text>
-
-        {/* the pair of houses, sharing one wall */}
-        <path d="M40 150 L118 96 L196 150 Z" fill="url(#pwroof)" />
-        <path d="M204 150 L282 96 L360 150 Z" fill="url(#pwroof)" />
-        <rect x="52" y="150" width="144" height="86" fill="url(#pwbrick)" />
-        <rect x="204" y="150" width="144" height="86" fill="url(#pwbrick)" />
-        <path d="M52 164 h144 M52 180 h144 M52 196 h144 M52 212 h144 M52 228 h144" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <path d="M204 164 h144 M204 180 h144 M204 196 h144 M204 212 h144 M204 228 h144" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <rect x="74" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="140" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="226" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="292" y="170" width="34" height="30" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="86" y="210" width="24" height="26" fill="#40525a" />
-        <rect x="290" y="210" width="24" height="26" fill="#40525a" />
-
-        {/* the party wall itself */}
-        <rect x="196" y="90" width="8" height="146" fill="url(#pwwall)" />
-        <path d="M200 78 v14" stroke="#e08a2b" strokeWidth="3" strokeLinecap="round" />
-        <circle cx="200" cy="72" r="5" fill="#e08a2b" />
-        <text x="200" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">the party wall</text>
-        <rect x="24" y="236" width="352" height="6" fill="#b9c8ce" />
-
-        {/* countdown strip */}
-        <rect x="24" y="258" width="352" height="30" rx="4" fill="#ffffff" stroke="#c3d0d5" strokeWidth="1.5" />
-        <rect x="24" y="258" width="176" height="30" rx="4" fill="#e08a2b" opacity=".16" />
-        <path d="M200 258 v30 M288 258 v30" stroke="#c3d0d5" strokeWidth="1.5" />
-        <text x="112" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">2 months</text>
-        <text x="112" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">existing party wall</text>
-        <text x="244" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">1 month</text>
-        <text x="244" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">excavation</text>
-        <text x="332" y="271" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">14 days</text>
-        <text x="332" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">to reply</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Serve it early, or it moves your start date</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Silence counts as a dispute. A notice lapses after a year.</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GOV.UK Party Wall etc. Act 1996 explanatory booklet</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "**Party structure notice** (work to a shared wall): **two months'** notice.",
+          "**Line of junction notice** (building up to or astride the boundary) and **adjacent excavation notice** (digging within 3m or 6m): **one month's** notice.",
+          "Your neighbour has **14 days** to reply. Silence counts as **dissent**, which means surveyors.",
+          "A notice is valid for **twelve months** — so serving early costs nothing and buys you the whole programme.",
+          "Getting this wrong is the single most common reason a project with full planning permission still cannot start on the date everybody agreed.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Planning permission tells you the council will allow the building. It says nothing at all about whether you may dig next to your neighbour's house. That is a different piece of legislation, with its own timetable, and it is the one that quietly moves start dates.",
+      },
+      {
+        type: "p",
+        text: "The Party Wall etc. Act 1996 applies whether or not you needed planning permission, and whether or not you get on with your neighbours. It is not optional and it is not a formality.",
+      },
+      { type: "h2", text: "Which notice, and how long" },
+      {
+        type: "table",
+        head: ["What you are doing", "Notice", "Period"],
+        rows: [
+          ["Cutting into, raising, underpinning, rebuilding or removing part of a shared wall", "Party structure notice (s.3)", "**2 months**"],
+          ["Building a new wall up to or astride the boundary line", "Line of junction notice (s.1)", "**1 month**"],
+          ["Excavating within **3 metres** of a neighbour's building, to a depth below their foundations", "Adjacent excavation notice (s.6)", "**1 month**"],
+          ["Excavating within **6 metres** of a neighbour's building, where a 45° line from the bottom of their foundations would meet your excavation", "Adjacent excavation notice (s.6)", "**1 month**"],
+        ],
+        caption: "Periods run from the date the notice is served, not the date you posted it or the date the neighbour got round to reading it.",
+      },
+      {
+        type: "p",
+        text: "The 3-metre and 6-metre rules are the ones people miss, because there is no shared wall involved and it does not feel like a party wall matter. It is. A rear extension on a typical Cranleigh plot, with foundations dug deeper than the neighbour's because of a nearby tree, will very often fall inside the 3-metre rule — and [trees are exactly what drives foundation depth around here](/blog/trees-and-foundation-depth-cranleigh).",
+      },
+      { type: "h2", text: "What happens after you serve it" },
+      {
+        type: "p",
+        text: "Your neighbour has **14 days** to respond, and there are three possible outcomes.",
+      },
+      {
+        type: "ol",
+        items: [
+          "**They consent in writing.** Best case. No surveyors, no award, and you can start once the notice period expires. Costs you nothing beyond the notice.",
+          "**They dissent and appoint their own surveyor.** You each have a surveyor; the two of them agree a party wall award setting out how the work is done, records the condition of the neighbour's property beforehand, and settles who pays for what. You pay both sets of fees.",
+          "**They do not reply within 14 days.** This is deemed **dissent**. A neighbour who ignores the letter has not made the problem go away — they have automatically triggered the dispute procedure, and you must then appoint a surveyor on their behalf.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The most expensive misunderstanding on this page",
+        text: "Silence is not consent. A neighbour who says nothing has legally dissented, and you are then into the surveyor process — typically **£1,000 and upwards**, and often more where two surveyors are appointed. A cup of tea and an explanation before the letter arrives is genuinely the cheapest risk management in the whole build.",
+      },
+      {
+        type: "quote",
+        text: "Nine times out of ten the neighbour dissents because a legal-looking letter turned up with no warning and they got nervous. Knock on the door first, show them the drawings, then send the notice. It has saved my clients thousands, and it means you are still speaking to each other when the digger arrives.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "The timeline that actually works" },
+      {
+        type: "p",
+        text: "The mistake is treating the party wall notice as something you do once planning is granted. That sequences two waiting periods one after the other. Run them in parallel and you get the time back.",
+      },
+      {
+        type: "table",
+        head: ["Approach", "Planning", "Party wall", "Earliest realistic start"],
+        rows: [
+          ["Sequential — notice served after approval", "8–10 weeks", "2 months after that, plus surveyors if they dissent", "**5–6 months**"],
+          ["Parallel — notice served during determination", "8–10 weeks", "Runs alongside", "**2–3 months**"],
+        ],
+        caption: "A party wall notice is valid for twelve months from service, so serving it while the planning application is still being determined costs you nothing if the scheme changes slightly — and if it changes substantially you re-serve.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Serving the notice early does not just save weeks — it saves money you are actually spending. If you are renting elsewhere, or storing furniture, or holding a builder's slot, three months of delay is a real bill. The notice itself costs postage.",
+      },
+      { type: "h2", text: "Getting the notice right" },
+      {
+        type: "p",
+        text: "A defective notice is worse than a late one, because you find out it was defective when someone challenges it. A valid notice needs:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Your full name and address** as the building owner — the legal owner, not just whoever is managing the job.",
+          "**A clear description of the proposed work**, usually with drawings and, for excavation notices, sections showing the depth of your foundations relative to theirs.",
+          "**The proposed start date**, no earlier than the end of the notice period.",
+          "**The date of service** and, for a party structure notice, a statement of the neighbour's rights.",
+          "**Service on every adjoining owner** — including freeholders and long leaseholders where a property is divided, and including the neighbour on the other side if the work affects both.",
+        ],
+      },
+      {
+        type: "p",
+        text: "For a straightforward rear extension with a cooperative neighbour, serving it yourself is perfectly reasonable and there are standard forms available. For anything involving underpinning, a shared wall being cut into, or a neighbour you already have a difficult relationship with, use a party wall surveyor from the start. It is cheaper than fixing it.",
+      },
+      { type: "h2", text: "What the award actually gives you" },
+      {
+        type: "p",
+        text: "If it does go to an award, it is worth knowing it is not purely a cost. The award includes a **schedule of condition** — a photographic record of the neighbour's property before you start. That record is what protects you when a crack that has been there since 1987 is attributed to your digger. Plenty of builders would tell you to get one voluntarily even where the Act does not require it.",
+      },
+      {
+        type: "p",
+        text: "We serve party wall notices as a matter of routine at the start of a job rather than at the end of the planning process, because a start date that slips by three months is the thing clients remember. If you are planning an extension here and are not sure which notices apply, that is a five-minute conversation — and the sort of thing you should be able to ask [builders in Cranleigh](/areas/cranleigh) before you are committed to anything.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much notice do I have to give my neighbour for a party wall?",
+        answer:
+          "Two months for a party structure notice, which covers cutting into, raising, underpinning or removing part of a shared wall. One month for a line of junction notice, where you build up to or astride the boundary, and one month for an adjacent excavation notice where you dig within three metres, or within six metres in some circumstances, of a neighbour's building.",
+      },
+      {
+        question: "What if my neighbour ignores the party wall notice?",
+        answer:
+          "Silence is treated as dissent. If they do not respond within 14 days, a dispute is deemed to have arisen and you must appoint a surveyor on their behalf. That is why a conversation before the letter arrives is worth so much — it is the difference between a free consent and a surveyor's bill of £1,000 or more.",
+      },
+      {
+        question: "Do I need a party wall notice for a rear extension?",
+        answer:
+          "Often yes, even where no shared wall is touched, because of the excavation rules. If your foundations go within three metres of a neighbour's building and deeper than their foundations, you need an adjacent excavation notice. Deeper foundations near trees make this very common in Cranleigh.",
+      },
+      {
+        question: "When should I serve the notice?",
+        answer:
+          "While the planning application is still being determined, not after approval. A notice is valid for twelve months from service, so serving early costs nothing and runs the two waiting periods in parallel instead of one after the other. That difference is typically two to three months on the start date.",
+      },
+      {
+        question: "Do I need a party wall surveyor?",
+        answer:
+          "Only if the neighbour dissents or does not reply. If they consent in writing, no surveyor is needed. For straightforward work with a cooperative neighbour you can serve the notice yourself. For underpinning, cutting into a shared wall, or a neighbour you already have difficulty with, appoint a surveyor from the start.",
+      },
+    ],
+    art: BLOG_ART["party-wall-notice-timing"],
   },
   {
     slug: "loft-conversions-cranleigh-roof-types",
     title: "Loft conversions in Cranleigh: which roofs work and which do not",
     category: "Loft conversions",
     date: "2026-08-13",
-    seoTitle: "Loft Conversions in Cranleigh | Which Roofs Work",
+    updated: "2026-09-04",
+    seoTitle: "Loft Conversion Cranleigh | Which Roof Types Work",
     metaDescription:
-      "In Cranleigh the roof decides your loft conversion. Cut roofs convert easily; trussed rafters do not. How to tell, and the head height to measure first.",
+      "Whether your loft converts comes down to head height and how the roof is built. Cut roofs convert easily. Trussed roofs from the 1970s onward need structural work.",
+    excerpt:
+      "Two things decide whether your loft converts: how tall it is and how it was built. Get someone in the hatch with a tape measure before you get excited — it takes ten minutes and it answers most of the question.",
     imageAlt:
-      "Illustration comparing two roof cross-sections: on the left a traditional cut roof with rafters and purlins leaving the loft space open and a 2.2 metre head height arrow, and on the right a modern W-shaped trussed rafter roof with its braced members blocking the same space",
-    body: [
-      "In Cranleigh the roof decides the loft conversion, not the floor plan. Houses built before the 1960s generally have a cut roof — rafters and purlins, with the triangle underneath largely open. Later houses tend to have W-shaped trussed rafters, and as the Planning Portal puts it, the inner members of a truss cannot normally be removed.",
-      "That does not rule a trussed roof out, but it changes the job: new floor joists and collars, usually steel at ridge and floor level, and a structural engineer's design. It is a different budget, and much better known at the start than halfway through.",
-      "Measure before anything else. Building regulations allow 2.2m of head height, though 2.4m is far more comfortable once a new floor and ceiling finish have eaten into it. Take it from the ridge down to the top of the ceiling joist.",
-      "If it is marginal, we would rather tell you before you spend on drawings.",
+      "Illustration of two roof sections side by side: a traditional cut roof with open space under the purlins on the left, and a modern W-shaped trussed rafter roof full of webs on the right, with an amber head height dimension marked between floor and ridge",
+    related: [
+      "extension-value-cranleigh",
+      "cranleigh-conservation-area-consent",
+      "part-l-extension-insulation",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="lwsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cfe2ee" /><stop offset="1" stopColor="#f0f5f7" />
-          </linearGradient>
-          <linearGradient id="lwtile" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#7d8f97" /><stop offset="1" stopColor="#5c6d75" />
-          </linearGradient>
-          <linearGradient id="lwtimber" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#d8bd92" /><stop offset="1" stopColor="#b3966a" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="400" fill="url(#lwsky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">The roof decides</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh loft conversions — cut roof vs trussed rafters</text>
-
-        {/* left: cut roof, convertible */}
-        <path d="M28 214 L110 108 L192 214 Z" fill="#ffffff" opacity=".72" />
-        <path d="M28 214 L110 108 L192 214" fill="none" stroke="url(#lwtile)" strokeWidth="11" strokeLinejoin="round" />
-        <rect x="56" y="164" width="9" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
-        <rect x="155" y="164" width="9" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
-        <rect x="28" y="214" width="164" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
-        <path d="M110 122 v88" stroke="#7f9aa6" strokeWidth="1.5" strokeDasharray="4 4" />
-        <path d="M110 132 v66" stroke="#e08a2b" strokeWidth="2.5" />
-        <path d="M110 128 l-5 8 h10 z M110 202 l-5 -8 h10 z" fill="#e08a2b" />
-        <text x="118" y="168" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#a8652a">2.2m</text>
-        <circle cx="110" cy="244" r="13" fill="#3f7d54" />
-        <path d="M104 244 l4 5 l8 -10" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-        <text x="110" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">Cut roof</text>
-        <text x="110" y="292" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#5d7078" textAnchor="middle">pre-1960s — space is open</text>
-
-        {/* right: trussed rafters, blocked */}
-        <path d="M208 214 L290 108 L372 214 Z" fill="#ffffff" opacity=".72" />
-        <path d="M208 214 L290 108 L372 214" fill="none" stroke="url(#lwtile)" strokeWidth="11" strokeLinejoin="round" />
-        <rect x="208" y="214" width="164" height="9" fill="url(#lwtimber)" stroke="#8f7550" strokeWidth="1.5" />
-        <path d="M290 112 L238 214 M290 112 L342 214 M252 186 L290 214 M328 186 L290 214" stroke="url(#lwtimber)" strokeWidth="8" strokeLinecap="round" />
-        <path d="M290 112 L238 214 M290 112 L342 214 M252 186 L290 214 M328 186 L290 214" stroke="#8f7550" strokeWidth="1" opacity=".6" fill="none" />
-        <circle cx="290" cy="244" r="13" fill="#b04434" />
-        <path d="M284 238 l12 12 M296 238 l-12 12" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
-        <text x="290" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">Trussed rafters</text>
-        <text x="290" y="292" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#5d7078" textAnchor="middle">later builds — members in the way</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Measure ridge to ceiling joist first</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">2.2m is the minimum; 2.4m is comfortable after finishes.</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Planning Portal loft conversion guidance</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Measure floor to ridge first. Below about **2.2m** of existing height, a straightforward conversion is unlikely without altering the roof.",
+          "A **traditional cut roof** — rafters, purlins, open space — converts readily. A **trussed rafter roof**, standard from around the 1960s–70s onward, is full of structural webs and needs an engineered solution.",
+          "Building regulations require **2m headroom over the stairs**, which is often the thing that actually kills a scheme, not the roof.",
+          "Permitted development allows **40m³** of additional roof space on a terrace and **50m³** on a semi or detached — but **not in a conservation area**.",
+          "A conversion runs **£2,000–£2,800 per m²** — cheaper than a ground-floor extension because there are no new foundations.",
+        ],
+      },
+      {
+        type: "p",
+        text: "A loft conversion is the best value floor area most Cranleigh houses can add. The roof is already there, the foundations are already there, and you are not losing an inch of garden — which matters more here than it does in most places. It is also the project most likely to be abandoned three weeks in, after somebody finally gets in the hatch with a tape measure.",
+      },
+      {
+        type: "p",
+        text: "So start with the tape measure.",
+      },
+      { type: "h2", text: "Head height: the first and hardest test" },
+      {
+        type: "p",
+        text: "Measure from the top of the existing ceiling joists to the underside of the ridge, at the highest point. The number you get is not the number you end up with — a conversion takes height off the top for insulation between and under the rafters, and off the bottom for a new structural floor.",
+      },
+      {
+        type: "table",
+        head: ["Existing floor-to-ridge height", "Realistic outcome"],
+        rows: [
+          ["Under 2.2m", "A conventional conversion will not give usable height. Options are a roof lift, a dormer that changes the roof form, or abandoning the idea."],
+          ["2.2m – 2.4m", "Possible, but tight. Expect to need a dormer to create the usable zone, and expect careful design around the stair."],
+          ["2.4m – 2.8m", "Comfortable. This is the sweet spot, and where most successful conversions sit."],
+          ["Over 2.8m", "Generous. Often room for a full dormer or even a small en-suite without compromise."],
+        ],
+        caption: "Measured to the underside of the ridge, from the top of the existing ceiling joists. Finished head height will be materially less."
+      },
+      {
+        type: "callout",
+        title: "The test people forget",
+        text: "Building regulations require **2m of headroom over the staircase**, reducing to 1.9m at the edge of the stair. On a typical semi the new stair has to rise into the roof space right where the roof is lowest. We have seen more conversions fail on the stair than on the room. Check where the stair will land before you get attached to a layout.",
+      },
+      { type: "h2", text: "Cut roof or trussed roof" },
+      {
+        type: "p",
+        text: "Put your head through the hatch and look at what is holding the roof up. There are two families, and they behave completely differently.",
+      },
+      { type: "h3", text: "Traditional cut roof" },
+      {
+        type: "p",
+        text: "Rafters running from wall plate to ridge, with horizontal purlins part way up giving them mid-span support, and struts down to a load-bearing wall below. The middle of the roof space is largely open — you can stand up in it, and people store things there.",
+      },
+      {
+        type: "p",
+        text: "This is what most Cranleigh houses built before roughly the 1960s have, including the Victorian and Edwardian stock near the centre and the interwar semis. It converts well. The purlins can usually be replaced or supplemented with steel beams and the structure reworked without touching the roof covering from outside.",
+      },
+      { type: "h3", text: "Trussed rafter roof" },
+      {
+        type: "p",
+        text: "Prefabricated triangular trusses, delivered as units and craned on, with a W or fink pattern of timber webs filling the space. You cannot walk through it — you climb between the webs. Standard on housing from around the 1960s and 70s onward, and near-universal by the 1980s.",
+      },
+      {
+        type: "p",
+        text: "A trussed roof is not a lost cause, but it is a different job. Every one of those webs is doing structural work, and you cannot simply cut them out. The conversion needs an engineered solution — typically new steel beams and a new floor structure installed to carry the loads before the webs are removed, sequenced so the roof is never unsupported. It works, it is done all the time, and it costs more.",
+      },
+      {
+        type: "quote",
+        text: "People think a trussed roof means no. It does not mean no, it means an engineer and a bigger number. What it does mean is that anyone quoting you the same price per square metre for a truss roof and a cut roof has not been up there.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Planning: what Cranleigh's constraints do to this" },
+      {
+        type: "p",
+        text: "Under permitted development, a loft conversion can add up to **40 cubic metres** of roof space on a terraced house and **50 cubic metres** on a semi-detached or detached house, subject to the usual conditions — no extension beyond the plane of the existing roof slope on the principal elevation, materials similar in appearance, no verandas or balconies, and side-facing windows obscure-glazed and non-opening below 1.7m.",
+      },
+      {
+        type: "p",
+        text: "In a conservation area, **roof extensions are not permitted development at all**. That is the single biggest constraint on lofts in the middle of Cranleigh, and it is covered in more detail in [what needs consent in the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent). It does not mean no dormer — it means a planning application and a design that the conservation officer will accept.",
+      },
+      { type: "h2", text: "Fire safety, and why the whole staircase changes" },
+      {
+        type: "p",
+        text: "Adding a third storey changes the fire strategy for the entire house, and this catches people financially as well as practically. On a two-storey house you can usually escape from a first-floor window. On a three-storey house you cannot, so the staircase itself has to become the protected escape route.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**A protected stairway** from the loft all the way down to a final exit — which means the stair enclosure has to achieve 30 minutes' fire resistance.",
+          "**Fire doors (FD30) to every habitable room** off that stairway, on every floor. Yes, including the rooms you were not touching.",
+          "**Mains-powered, interlinked smoke alarms** on every storey.",
+          "**An escape window** in the new loft room meeting the minimum openable area and sill height requirements.",
+          "Sometimes **a sprinkler or mist system**, where an open-plan ground floor makes a protected stairway impossible without gutting the layout.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The cost people do not budget for",
+        text: "Replacing every door on the ground and first floor with fire doors, plus frames, plus intumescent strips and closers where required, plus the alarm system, plus making good and redecorating around them, is routinely **£3,000–£6,000** on an ordinary three-bed. It is not optional and it is not in the headline square-metre rate. Ask specifically whether the quote includes it.",
+      },
+      { type: "h2", text: "What it costs and what it returns" },
+      {
+        type: "p",
+        text: "A loft conversion in this area runs around **£2,000 to £2,800 per m²**, which is meaningfully less than a ground-floor extension at £2,700–£3,100 because there are no new foundations and no new roof. Those figures are on our [extension cost guide](/guides/house-extension-costs-surrey).",
+      },
+      {
+        type: "p",
+        text: "Value-wise it is usually the strongest move available, for a reason that has nothing to do with floor area: it typically adds a bedroom and often a bathroom, and a bedroom changes which searches your house shows up in. That mechanism is explained properly in [does an extension add value in Cranleigh](/blog/extension-value-cranleigh).",
+      },
+      { type: "h2", text: "The ten-minute survey to do before anything else" },
+      {
+        type: "ol",
+        items: [
+          "**Measure floor to ridge** at the highest point. Write the number down.",
+          "**Look at the structure.** Open space with purlins, or a forest of diagonal webs?",
+          "**Find where the stair will go**, and check the head height at that point specifically.",
+          "**Check the water tank and the boiler.** Relocating a tank is minor; relocating a boiler and rerouting a flue is not.",
+          "**Check for a chimney breast** running through the space — it is either a design feature or a demolition job needing building control.",
+          "**Check the conservation area** layer on Waverley's policies map before assuming permitted development."
+        ]
+      },
+      {
+        type: "p",
+        text: "We will come and do that survey and tell you honestly if the answer is no, because a loft that cannot take a compliant staircase is not a job we want to have started. If you want someone to put their head through the hatch before you spend money on a designer, that is a normal call for [builders in Cranleigh](/areas/cranleigh) to take.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What head height do I need for a loft conversion?",
+        answer:
+          "Measure from the top of the existing ceiling joists to the underside of the ridge. Below about 2.2m a conventional conversion will not leave usable height once you allow for insulation above and a new floor below. Between 2.4m and 2.8m is comfortable. Remember you also need 2m of headroom over the new staircase, reducing to 1.9m at its edge.",
+      },
+      {
+        question: "Can you convert a loft with modern roof trusses?",
+        answer:
+          "Yes, but it is a different and more expensive job than converting a traditional cut roof. The W-shaped webs are structural and cannot simply be cut out. The conversion needs an engineered solution — usually steel beams and a new floor structure installed to take the loads before the webs are removed, in a sequence that never leaves the roof unsupported.",
+      },
+      {
+        question: "Do I need planning permission for a loft conversion in Cranleigh?",
+        answer:
+          "Outside the conservation area, often not — permitted development allows up to 40 cubic metres of added roof space on a terrace and 50 cubic metres on a semi or detached house, subject to conditions. Inside the Cranleigh Conservation Area, roof extensions are not permitted development at all and need a planning application.",
+      },
+      {
+        question: "Why do I need fire doors throughout the house for a loft conversion?",
+        answer:
+          "Adding a third storey means you can no longer escape from a first-floor window, so the staircase becomes the protected escape route for the whole house. That requires 30 minutes' fire resistance to the stair enclosure, FD30 fire doors to habitable rooms off it on every floor, and mains-linked interlinked alarms. Budget £3,000–£6,000 for this on a typical three-bed — it is rarely in the headline rate.",
+      },
+      {
+        question: "How much does a loft conversion cost?",
+        answer:
+          "Around £2,000 to £2,800 per square metre in this area, lower than a ground-floor extension because there are no new foundations or roof. Add the fire safety works, any structural solution for a trussed roof, and the bathroom fit-out if you are adding one.",
+      },
+    ],
+    art: BLOG_ART["loft-conversions-cranleigh-roof-types"],
   },
   {
     slug: "extending-1930s-semi-cranleigh",
     title: "Extending a 1930s semi in Cranleigh: what to expect",
     category: "Extensions",
     date: "2026-08-13",
-    seoTitle: "Extending a 1930s Semi in Cranleigh | What to Expect",
+    updated: "2026-09-04",
+    seoTitle: "Extending A 1930s Semi In Cranleigh | Costs And Surprises",
     metaDescription:
-      "How far back can you extend a 1930s semi in Cranleigh? The 3m and 6m permitted development limits, Waverley's design guidance, and the foundations underneath.",
+      "1930s semis extend well, but there are four things that reliably cost more than the quote assumed: foundations, the party wall, the drains and the chimney breast.",
+    excerpt:
+      "Interwar semis are among the best houses in Cranleigh to extend — generous plots, simple structure, forgiving layouts. They also hide the same four expensive surprises again and again.",
     imageAlt:
-      "Illustration of a 1930s semi in side elevation with its rear extension drawn in two stages — the first three metres shown as solid brick under permitted development, the next three metres outlined in amber to mark the prior approval zone — with a dimension line beneath",
-    body: [
-      "If you own a 1930s semi in Cranleigh, the first question is nearly always how far back you can go. The government's permitted development technical guidance allows a single-storey rear extension on a semi to project 3m beyond the original rear wall, up to 4m high. Between 3m and 6m you can still avoid a full application, but only through the larger home extension prior approval route: neighbours are consulted, and you cannot start until the council decides or 42 days pass.",
-      "Locally that is Waverley Borough Council, whose Residential Extensions SPD — adopted in October 2010 and still the guidance your application is measured against — is worth reading before anything is drawn. Waverley also expects an extension to complement the existing house in style, scale and materials, which for a 1930s semi usually means matching the eaves line and the brickwork rather than fighting them. If the property sits outside Cranleigh's settlement boundary, or inside the village conservation area, the tests are tighter again.",
-      "Then there is the house itself. A 1930s semi usually sits on shallow foundations, so new footings rarely match the old.",
-      "We survey that before quoting, rather than discovering it in a trench.",
+      "Illustration of a 1930s semi-detached house in section, showing shallow strip foundations, a suspended timber ground floor, a chimney breast running up the party wall and a drainage run passing under the proposed extension",
+    related: [
+      "trees-and-foundation-depth-cranleigh",
+      "party-wall-notice-timing",
+      "part-l-extension-insulation",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="cosky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#cee2ef" /><stop offset="1" stopColor="#eff4f7" />
-          </linearGradient>
-          <linearGradient id="cobrick" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
-          </linearGradient>
-          <linearGradient id="cotile" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="400" fill="url(#cosky)" />
-        <rect y="300" width="400" height="100" fill="#1f2a30" />
-        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">How far back can you go?</text>
-        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">1930s semi, Cranleigh — single-storey rear extension</text>
-
-        {/* garden */}
-        <rect x="24" y="232" width="352" height="18" fill="#7ba05f" />
-        <rect x="24" y="250" width="352" height="10" fill="#5f8149" />
-
-        {/* the original house */}
-        <path d="M24 128 L86 84 L148 128 Z" fill="url(#cotile)" />
-        <rect x="34" y="128" width="104" height="104" fill="url(#cobrick)" />
-        <path d="M34 146 h104 M34 164 h104 M34 182 h104 M34 200 h104 M34 218 h104" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <rect x="46" y="140" width="30" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="96" y="140" width="30" height="26" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-        <rect x="102" y="92" width="14" height="30" fill="#8a5138" />
-        <text x="86" y="222" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#f2e2d8" textAnchor="middle">original house</text>
-
-        {/* original rear wall datum */}
-        <path d="M138 76 v170" stroke="#1f2a30" strokeWidth="2" strokeDasharray="5 4" />
-        <text x="138" y="70" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#1f2a30" textAnchor="middle">original rear wall</text>
-
-        {/* first 3m — permitted development */}
-        <rect x="138" y="170" width="90" height="62" fill="url(#cobrick)" />
-        <path d="M138 186 h90 M138 202 h90 M138 218 h90" stroke="#8a5138" strokeWidth="1" opacity=".45" />
-        <rect x="134" y="164" width="98" height="8" fill="#6a4034" />
-        <rect x="160" y="186" width="46" height="34" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
-
-        {/* 3m to 6m — prior approval */}
-        <rect x="228" y="170" width="90" height="62" fill="#e08a2b" opacity=".14" />
-        <rect x="228" y="170" width="90" height="62" fill="none" stroke="#e08a2b" strokeWidth="2.5" strokeDasharray="7 5" />
-        <text x="273" y="196" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">prior</text>
-        <text x="273" y="210" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">approval</text>
-
-        {/* dimensions */}
-        <path d="M138 272 h90 M228 272 h90" stroke="#1f2a30" strokeWidth="1.5" />
-        <path d="M138 266 v12 M228 266 v12 M318 266 v12" stroke="#1f2a30" strokeWidth="1.5" />
-        <text x="183" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">3m</text>
-        <text x="273" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#a8652a" textAnchor="middle">to 6m</text>
-
-        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">3m as of right. To 6m, neighbours get a say.</text>
-        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">No start until Waverley decides, or 42 days pass.</text>
-        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GOV.UK householder permitted development guidance</text>
-        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-      </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Interwar semis extend well: deep plots, straightforward structure, and rear elevations that take a full-width extension comfortably.",
+          "The four costs that reliably get missed are **foundation depth**, **the party wall process**, **drainage under the footprint**, and **the chimney breast**.",
+          "Foundations are the big one. Cranleigh sits largely on **Weald Clay**, which is highly shrink–swell reactive, and the original footings are typically far shallower than anything you can build today.",
+          "Budget **£2,700–£3,100 per m²** for the shell, and **£3,500–£4,500 per m²** if the extension includes the kitchen.",
+          "Every one of these is knowable before you sign. None of them is knowable from a drawing alone.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Interwar semis are the backbone of a lot of Cranleigh's housing, and they are genuinely good houses to work on. The plots are usually deep, the rear elevation is usually simple, and the internal layout — front room, back room, kitchen at the end — is almost designed to be opened up. When people picture the extension they want, they are usually picturing something one of these houses can deliver.",
+      },
+      {
+        type: "p",
+        text: "What they do not picture is the four things that come out of the ground and the walls. These are not obscure risks. They are the same four every time, and a quote that does not mention them has not been priced properly.",
+      },
+      { type: "h2", text: "1. The foundations will be deeper than you expect" },
+      {
+        type: "p",
+        text: "A 1930s semi typically sits on a shallow strip footing, often less than half a metre deep. Perfectly adequate for what it carries, and completely irrelevant to what you are allowed to build now.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh sits largely on the **Weald Clay Formation** — stiff, fissured clay with a moderate to high shrink–swell potential, among the more reactive soils in England. Clay that dries out shrinks, and clay that rewets swells, and the thing that dries it out is tree roots. The current minimum for a new foundation is generally **0.9m**, and near a mature high-water-demand tree such as an oak, NHBC Chapter 4.2 guidance can push that to **2.5m or more**.",
+      },
+      {
+        type: "p",
+        text: "That difference is not a detail. Going from 0.9m to 2.5m across the footprint of a 25m² extension means several times the excavation, several times the concrete, spoil to remove, and often a change from a simple trench fill to a piled or beam-and-block solution. It is the single largest source of variation between an optimistic quote and a real one. We cover the mechanism properly in [the tree in your garden sets your foundation depth](/blog/trees-and-foundation-depth-cranleigh).",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Dig a trial hole before you accept a fixed price. It costs a few hundred pounds, takes an afternoon, and tells you the existing foundation depth and the soil you are into. It converts the largest unknown in the project into a known number — which means your quote is a price rather than a guess, and you are not having the conversation about a variation with a hole already open in your garden.",
+      },
+      { type: "h2", text: "2. The party wall is not a formality" },
+      {
+        type: "p",
+        text: "It is a semi. There is a shared wall, and your neighbour's house is a few metres from where you are digging. Both the party structure rules and the excavation rules are in play.",
+      },
+      {
+        type: "p",
+        text: "The periods are fixed: **two months** for a party structure notice, **one month** for a line of junction or adjacent excavation notice. Your neighbour has 14 days to respond, and **silence counts as dissent**, which puts you into the surveyor process at £1,000 and up. The whole sequence is set out in [the party wall notice that sets your start date](/blog/party-wall-notice-timing).",
+      },
+      {
+        type: "quote",
+        text: "On a semi, go and see your neighbour before the letter arrives. Show them the drawing, tell them roughly when the noisy bit is, give them a phone number. It costs an evening and it is worth more than anything else you will do that month.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "3. There is a drain under where you want to build" },
+      {
+        type: "p",
+        text: "Interwar houses were built with the soil pipe on the outside rear wall and the run heading down the garden to a manhole. Your extension almost certainly goes over it.",
+      },
+      {
+        type: "p",
+        text: "There are three ways this goes, in increasing order of expense:",
+      },
+      {
+        type: "ol",
+        items: [
+          "**Build over it with a concrete lintel or encasement**, where the run is shallow, in good condition and you can satisfy building control. Cheapest.",
+          "**Divert the run** around the new footprint to a new or existing manhole. Middling — a day or two of groundworks and some new pipe.",
+          "**Build over a public sewer**, which needs a formal build-over agreement with the water company. Adds weeks and a fee, and occasionally forces a redesign.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The important part is finding out which one you are in **before** the price is agreed. Lift the manhole covers, run a survey camera if there is any doubt, and check whether the run is shared with the neighbour — on a semi it very often is, which turns a private drain into a shared one and changes who has to agree what.",
+      },
+      { type: "h2", text: "4. The chimney breast" },
+      {
+        type: "p",
+        text: "Almost every 1930s semi has a chimney breast on the party wall, and almost every open-plan scheme wants it gone. Removing it is entirely normal work, and it is **notifiable to building control**, because you are taking out something structural.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The stack above has to be **supported** — usually on gallows brackets or a beam — or removed all the way to the roof.",
+          "The **neighbour's flue** may share the same stack. This is a party wall matter as well as a structural one.",
+          "**Making good** the roof where a stack is removed, and dealing with the resulting hole in the ridge, is a roofing job people forget to price.",
+          "Half-removals — taking the breast out downstairs and leaving it upstairs — are the classic source of unsupported stacks found by a buyer's surveyor a decade later.",
+        ],
+      },
+      { type: "h2", text: "What it all costs" },
+      {
+        type: "table",
+        head: ["Element", "Guide figure", "Note"],
+        rows: [
+          ["Single-storey extension shell", "£2,700 – £3,100 per m²", "Our standard Surrey range"],
+          ["Kitchen extension including fit-out", "£3,500 – £4,500 per m²", "The fit-out is the variable, not the shell"],
+          ["Deeper foundations near a mature tree", "Add materially to the groundworks", "Depends entirely on depth — this is why the trial hole matters"],
+          ["Structural engineer", "£1,500 – £3,000", "Steel and foundation design"],
+          ["Party wall surveyor, if the neighbour dissents", "From £1,000", "Avoidable with a conversation"],
+          ["Planning fee (householder)", "£548", "Since 1 April 2026; about £575 from 8 December 2026"],
+          ["Drain diversion", "Low four figures, typically", "Build-over agreement adds weeks as well as cost"],
+        ],
+        caption: "Guide figures for this area in 2026. Our full breakdown is on the [extension cost guide](/guides/house-extension-costs-surrey) and the [pricing page](/pricing).",
+      },
+      {
+        type: "callout",
+        title: "How to compare quotes properly",
+        text: "Ask every builder quoting to state, in writing, **what foundation depth they have allowed** and **what happens to the drain run**. If two quotes differ by £15,000, this is almost always where the difference is — and the cheaper one is usually the one that has assumed the best case and will raise a variation when it turns out otherwise.",
+      },
+      { type: "h2", text: "The good news" },
+      {
+        type: "p",
+        text: "None of this makes a 1930s semi a difficult house. Every one of these four issues has a known solution and a known cost. What separates a project that runs to budget from one that does not is whether they were investigated before the price was agreed or discovered after the digger arrived.",
+      },
+      {
+        type: "p",
+        text: "We price these houses regularly and we would rather spend an afternoon digging a trial hole than have the conversation about a variation. If you have an interwar semi here and want a realistic number rather than an optimistic one, that is what [builders in Cranleigh](/areas/cranleigh) who know the local ground should be giving you.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How deep do foundations need to be for an extension on a 1930s semi?",
+        answer:
+          "The general minimum is 0.9m, but Cranleigh sits largely on Weald Clay, which is highly shrink–swell reactive. Near a mature high-water-demand tree such as an oak, NHBC guidance can require 2.5m or more. The original house's footings are usually well under half a metre and are no guide at all to what you will need. Dig a trial hole before agreeing a fixed price.",
+      },
+      {
+        question: "Do I need a party wall agreement to extend a semi-detached house?",
+        answer:
+          "Almost certainly some form of notice. If you cut into the shared wall you need a party structure notice with two months' notice. If you dig within three metres of the neighbour's house and deeper than their foundations you need an adjacent excavation notice with one month's notice. If the neighbour does not respond within 14 days that counts as dissent and surveyors get appointed.",
+      },
+      {
+        question: "Can I build an extension over a drain?",
+        answer:
+          "Often yes, by encasing it or bridging it with a lintel, if it is shallow, sound and building control accept it. Otherwise the run gets diverted around the new footprint. If it is a public sewer you need a formal build-over agreement with the water company, which adds weeks. Lift the manhole covers before the price is agreed, not after.",
+      },
+      {
+        question: "Is removing a chimney breast a big job?",
+        answer:
+          "It is routine, but it is notifiable to building control because it is structural. The stack above has to be supported on brackets or a beam, or taken down entirely, and where the stack is shared with the neighbouring house it is a party wall matter too. Half-removals that leave an unsupported stack upstairs are a common defect found by buyers' surveyors.",
+      },
+      {
+        question: "Why do extension quotes for the same job vary so much?",
+        answer:
+          "Usually foundations and drains. A builder who has assumed 0.9m foundations and no drain diversion will quote considerably less than one who has allowed for 2m near a tree and a diversion — and will raise a variation when the ground says otherwise. Ask every quote to state the assumed foundation depth and the drainage strategy in writing, then compare like with like.",
+      },
+    ],
+    art: BLOG_ART["extending-1930s-semi-cranleigh"],
   },
   {
     slug: "bathroom-fitting-cost-cranleigh",
     title: "What a bathroom fitting costs in Cranleigh, and what changes the price",
     category: "Bathrooms",
     date: "2026-08-13",
-    seoTitle: "Bathroom Fitting Cost in Cranleigh | 2026 Price Guide",
+    updated: "2026-09-04",
+    seoTitle: "Bathroom Fitting Cost Cranleigh | 2026 Price Guide",
     metaDescription:
-      "What a bathroom fitting costs in Cranleigh in 2026, and what actually moves the price — from Checkatrade's cost guide to Waverley's older housing stock.",
+      "A full bathroom refit in Cranleigh starts around £9,000. What moves the number is not the suite — it is whether the pipework, the floor and the layout move with it.",
+    excerpt:
+      "A complete bathroom refit here starts around £9,000. The suite you choose is rarely what decides the final figure — moving the soil pipe, lifting the floor and discovering what is behind the old tiles is.",
     imageAlt:
-      "Illustration of a Cranleigh bathroom split in two: a finished tiled bath on one side, and a cutaway of the wall behind it on the other showing old corroded pipework with a price tag marking the hidden cost of moving it",
-    body: [
-      "What does a bathroom cost in Cranleigh? Checkatrade's 2026 cost guide puts a typical UK refit, materials included, at roughly £5,500 to £8,000, rising past £14,000 for a larger or higher-spec room — a guide only, since your own quote depends on what's behind the wall.",
-      "In Cranleigh and the wider Waverley area, that's usually the pipework. Many of the village's older cottages and 1930s semis have plumbing runs that were never meant to move, so relocating a bath or shower — rather than replacing it where it stands — is normally the single biggest addition to a job.",
-      "Layout comes next, then tiling and waterproofing.",
-      "We always walk the room in Cranleigh before quoting — a like-for-like swap and a full reconfiguration are different jobs entirely.",
+      "Illustration of a bathroom in section showing the soil pipe run, a stud wall being opened up, tanking membrane behind the tiles in amber, and a cost scale rising from a like-for-like swap to a full reconfiguration",
+    related: [
+      "tiles-are-not-waterproof",
+      "building-control-completion-certificate",
+      "extension-value-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <defs>
-        <linearGradient id="cbwall" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#dfe7ea"/><stop offset="1" stopColor="#c3d0d5"/>
-        </linearGradient>
-        <linearGradient id="cbstud" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#cdb896"/><stop offset="1" stopColor="#a98f68"/>
-        </linearGradient>
-        <radialGradient id="cbglow" cx="50%" cy="50%" r="50%">
-          <stop offset="0" stopColor="#e08a2b" stopOpacity=".35"/><stop offset="1" stopColor="#e08a2b" stopOpacity="0"/>
-        </radialGradient>
-      </defs>
-      <rect width="400" height="400" fill="#eef2f4"/>
-      <rect y="300" width="400" height="100" fill="#1f2a30"/>
-      <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">What moves the price</text>
-      <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Cranleigh bathroom fittings — Checkatrade, 2026</text>
-      <rect x="24" y="72" width="162" height="196" fill="url(#cbwall)"/>
-      <path d="M24 104 h162 M24 136 h162 M24 168 h162 M24 200 h162 M24 232 h162 M24 264 h162" stroke="#b7c5cb" strokeWidth="1"/>
-      <path d="M65 72 v196 M106 72 v196 M147 72 v196" stroke="#b7c5cb" strokeWidth="1"/>
-      <rect x="98" y="80" width="18" height="46" rx="3" fill="#dfe7ea" stroke="#9fb0b6" strokeWidth="1.5"/>
-      <circle cx="107" cy="92" r="3" fill="#9fb0b6"/>
-      <path d="M107 95 v14" stroke="#9fb0b6" strokeWidth="2"/>
-      <path d="M34 240 q0 -22 22 -22 h96 q22 0 22 22 v18 h-140 z" fill="#ffffff" stroke="#9fb0b6" strokeWidth="2"/>
-      <rect x="34" y="258" width="140" height="10" fill="#dfe7ea" stroke="#9fb0b6" strokeWidth="1.5"/>
-      <rect x="30" y="266" width="8" height="10" rx="2" fill="#c3d0d5"/>
-      <rect x="166" y="266" width="8" height="10" rx="2" fill="#c3d0d5"/>
-      <path d="M186 72 L200 96 L189 118 L200 146 L188 172 L200 198 L189 224 L200 250 L188 268 L186 268 Z" fill="#f6f8f9"/>
-      <path d="M186 72 L200 96 L189 118 L200 146 L188 172 L200 198 L189 224 L200 250 L188 268" fill="none" stroke="#b7c5cb" strokeWidth="1.5"/>
-      <rect x="200" y="72" width="176" height="196" fill="url(#cbstud)"/>
-      <rect x="228" y="72" width="10" height="196" fill="#8f7550" opacity=".6"/>
-      <rect x="330" y="72" width="10" height="196" fill="#8f7550" opacity=".6"/>
-      <circle cx="284" cy="180" r="70" fill="url(#cbglow)"/>
-      <path d="M280 78 q10 20 -6 38 q-16 18 4 34 q18 14 -4 36 q-18 18 6 40 q14 16 -8 34 q-14 12 2 30" fill="none" stroke="#6b4a30" strokeWidth="9" strokeLinecap="round"/>
-      <path d="M280 78 q10 20 -6 38 q-16 18 4 34 q18 14 -4 36 q-18 18 6 40 q14 16 -8 34 q-14 12 2 30" fill="none" stroke="#b0703f" strokeWidth="5" strokeLinecap="round"/>
-      <circle cx="270" cy="128" r="5" fill="#5a3a24"/>
-      <circle cx="292" cy="176" r="4" fill="#5a3a24"/>
-      <circle cx="266" cy="230" r="4.5" fill="#5a3a24"/>
-      <path d="M270 240 q-4 10 2 16" fill="none" stroke="#7a97a3" strokeWidth="2" opacity=".7"/>
-      <path d="M296 270 l30 -4 l4 16 l-14 10 l-16 -6 z" fill="#e08a2b"/>
-      <circle cx="308" cy="272" r="2.6" fill="#1f2a30"/>
-      <text x="311" y="285" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#1f2a30" textAnchor="middle">+£</text>
-      <path d="M280 254 q10 8 16 16" fill="none" stroke="#e08a2b" strokeWidth="2"/>
-      <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">The pipe behind the wall, not the suite</text>
-      <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Full refit, materials included: £5,500–£14,000+</text>
-      <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Checkatrade 2026 cost guide, not a fixed quote</text>
-      <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-    </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A complete refit — strip-out, new suite, tiling, plastering, lighting and decoration — **starts from around £9,000** with us.",
+          "The **suite** is usually a small part of the number. **Moving the soil pipe** is a big part of it.",
+          "**Like-for-like** replacement is the cheap version. **Reconfiguring the layout** is a different job with a different price.",
+          "Waterproofing behind the tiles is not optional and is where cheap quotes are cheap — [tiles are not waterproof](/blog/tiles-are-not-waterproof).",
+          "A second bathroom or en-suite is one of the most reliable value-adding things you can do to a house here.",
+        ],
+      },
+      {
+        type: "p",
+        text: "\"How much for a new bathroom?\" is the hardest question we get, because the honest answer ranges over a factor of three and it depends on things the person asking cannot see. So here is what actually drives it.",
+      },
+      { type: "h2", text: "The starting number" },
+      {
+        type: "p",
+        text: "A complete bathroom refit with us **starts from around £9,000**. That is a whole job, not a suite: strip-out and disposal, first and second fix plumbing, electrics, plastering, tiling, the suite and brassware, lighting, extract ventilation and decoration, done by one team from start to finish. It is the figure on our [pricing page](/pricing) and it is a starting point, not an average.",
+      },
+      {
+        type: "p",
+        text: "What takes it up from there is, in rough order of impact:",
+      },
+      {
+        type: "table",
+        head: ["What changes", "Effect on price", "Why"],
+        rows: [
+          ["**Moving the WC**", "Large", "The soil pipe has to move. That often means lifting the floor, cutting joists (with an engineer's say-so), and new external pipework."],
+          ["**Reconfiguring the layout**", "Large", "Everything moves — supply, waste, electrics, and usually a stud wall or two."],
+          ["**Wet room / level-access shower**", "Large", "Floor build-up, falls to a linear drain, and full tanking. A different construction, not a different fitting."],
+          ["**Tile size and material**", "Medium", "Large-format porcelain needs a flatter substrate and more skilled setting-out. Natural stone needs sealing and heavier support."],
+          ["**Underfloor heating**", "Medium", "Adds a floor build-up, a manifold or mat, and a controls circuit."],
+          ["**The suite itself**", "Small to medium", "The spread between a decent mid-range suite and a very good one is smaller than people expect, and it is the bit you can control at the end."],
+          ["**Brassware**", "Surprisingly large if you let it", "This is where budgets quietly vanish. A single shower valve can be £200 or £1,800."],
+        ],
+        caption: "The pattern is consistent: what moves the price is what has to be moved, not what gets installed.",
+      },
+      {
+        type: "quote",
+        text: "If you keep the WC where it is, we are refitting a bathroom. If you move it two metres, we are doing joinery, drainage and structural work with a bathroom on top. Same room, different job, and the price reflects that.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "The three tiers, honestly described" },
+      {
+        type: "table",
+        head: ["Tier", "What it is", "Rough position"],
+        rows: [
+          ["Like-for-like refit", "Everything stays where it is. New suite, new tiling, new lighting, replastered and decorated.", "The £9,000 starting point"],
+          ["Refit with modest changes", "Bath out, larger shower in; basin moves a metre; new extract; underfloor heating.", "Meaningfully above the starting point"],
+          ["Full reconfiguration or wet room", "Layout redesigned, WC moved, walls moved, level-access shower with full tanking.", "Substantially above — a different scope of work"],
+        ],
+        caption: "Every quote you receive should tell you which of these it is. If it does not, that is the first question to ask.",
+      },
+      { type: "h2", text: "What the cheap quote is leaving out" },
+      {
+        type: "p",
+        text: "Bathrooms are the easiest room in the house to quote cheaply, because most of what makes one last is invisible when it is finished. The things that reliably go missing from a low quote:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Waterproofing.** A tanking system behind the tiles in the wet zones. Tiles and grout are not a waterproof layer, and the failure shows up as a stain on a ceiling two years later — the whole argument is in [tiles are not waterproof](/blog/tiles-are-not-waterproof).",
+          "**A proper substrate.** Tile backer board rather than standard plasterboard in the shower, and a floor that is stiff enough not to crack the grout.",
+          "**Extract ventilation** that meets the required rate and actually vents outside rather than into the loft. This is a building regulations matter, not a preference.",
+          "**Electrical zoning.** Bathrooms have specific requirements for what fitting can go where, and the work is notifiable under Part P.",
+          "**Making good.** Plastering, decoration and the strip of floor outside the door where the old tiles finished.",
+          "**Disposal.** A bathroom strip-out fills a skip, and skips cost money.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Ask for the quote **itemised by trade** rather than as one figure. It takes a good builder ten minutes and it makes the comparison honest: you can see immediately whether the cheap quote is cheaper because it is efficient or because it has no tanking, no backer board and no extract fan in it. That single request is worth more than any amount of haggling.",
+      },
+      { type: "h2", text: "Where to spend and where not to" },
+      {
+        type: "p",
+        text: "After a lot of these, the pattern is fairly clear.",
+      },
+      { type: "h3", text: "Worth spending on" },
+      {
+        type: "ul",
+        items: [
+          "**The shower valve and the pipework behind it.** It is the most-used item in the room and the most expensive to replace once tiled in.",
+          "**Waterproofing.** Non-negotiable.",
+          "**The extract fan.** A quiet, effective fan on a humidistat is the difference between a bathroom that stays fresh and one that grows mould in the grout.",
+          "**Tiling labour.** The same tiles look completely different depending on the setting-out, and setting-out is skill, not material cost.",
+          "**Lighting.** A good scheme with the right IP rating transforms a small room more cheaply than anything else on this list.",
+        ],
+      },
+      { type: "h3", text: "Rarely worth it" },
+      {
+        type: "ul",
+        items: [
+          "**Very expensive sanitaryware.** A mid-range ceramic WC and basin from a good manufacturer performs the same as one costing three times as much.",
+          "**Fashionable tile formats** that will date faster than the bathroom wears out.",
+          "**Complex shower enclosures** with lots of moving parts and seals. Simple is more reliable and usually looks better.",
+        ],
+      },
+      { type: "h2", text: "Does it add value?" },
+      {
+        type: "p",
+        text: "A **second** bathroom or an en-suite is one of the most reliable value-adding changes to a house in this area — it consistently ranks near the top of what buyers ask for, and it is cheap relative to its effect. Replacing a perfectly serviceable existing bathroom adds much less; it makes the house easier to sell rather than worth more. The mechanism, and the ceiling-price test that governs all of it, is in [does an extension add value in Cranleigh](/blog/extension-value-cranleigh).",
+      },
+      {
+        type: "p",
+        text: "One point on paperwork: adding a bathroom or WC in a room that never had one is **notifiable to building control**, and the electrical work is notifiable under Part P. Get the certificates and keep them — a missing certificate is a problem at the point of sale, as set out in [what a completion certificate is actually for](/blog/building-control-completion-certificate).",
+      },
+      {
+        type: "p",
+        text: "We quote bathrooms itemised, we tank the wet zones as standard, and we would rather tell you the honest number for moving the WC than quote for not moving it and raise it later. If you want a bathroom priced properly, that is a conversation to have with [builders in Cranleigh](/areas/cranleigh) who will still be here if the shower valve fails.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does a new bathroom cost in Cranleigh?",
+        answer:
+          "A complete refit — strip-out, new suite, tiling, plastering, lighting, ventilation and decoration — starts from around £9,000. What takes it higher is moving the WC, reconfiguring the layout, or building a level-access wet room, rather than the choice of suite.",
+      },
+      {
+        question: "Why does moving the toilet cost so much?",
+        answer:
+          "Because the soil pipe has to move with it. That usually means lifting the floor, notching or cutting joists — which needs structural sign-off — and running new external pipework at the right fall. It turns a bathroom refit into a drainage and joinery job with a bathroom on top.",
+      },
+      {
+        question: "What should be in a bathroom quote that is often missing?",
+        answer:
+          "Tanking to the wet zones, tile backer board rather than plasterboard in the shower, an extract fan meeting the required rate and vented outside, Part P notifiable electrical work, making good and decoration, and skip hire. Ask for the quote itemised by trade and these become visible immediately.",
+      },
+      {
+        question: "Does a new bathroom add value to a house?",
+        answer:
+          "A second bathroom or en-suite reliably does — it is consistently near the top of what buyers ask for and is cheap relative to its effect. Replacing an existing, serviceable bathroom mostly makes the house easier to sell rather than worth more.",
+      },
+      {
+        question: "Do I need building control for a new bathroom?",
+        answer:
+          "If you are adding a bathroom or WC to a room that did not have one, yes. The electrical work is notifiable under Part P in all cases, and the ventilation has to meet the required extract rate. Keep the certificates — they are what a buyer's solicitor asks for.",
+      },
+    ],
+    art: BLOG_ART["bathroom-fitting-cost-cranleigh"],
   },
   {
     slug: "bat-surveys-timing-cranleigh",
     title: "Bat surveys in Cranleigh: why timing can cost you a year",
     category: "Planning & surveys",
     date: "2026-08-13",
-    seoTitle: "Bat Surveys in Cranleigh | Why Timing Can Cost a Year",
+    updated: "2026-09-04",
+    seoTitle: "Bat Survey Timing Cranleigh | Why It Can Cost You A Year",
     metaDescription:
-      "A bat survey can delay a Cranleigh build by a year if you miss the May to August window. What triggers one, the law behind it, and how to plan around it.",
+      "Bat emergence surveys can only be done May to September. Miss the season on a barn or roof conversion and your project waits until the following May.",
+    excerpt:
+      "Of everything that delays a building project, this is the one with no workaround. Emergence surveys can only be done in a specific window, and if you miss it, no amount of money brings it forward.",
     imageAlt:
-      "Twelve-month wheel showing bat activity surveys can only be carried out between May and August, with a preliminary roost assessment possible at any time of year",
-    body: [
-      "If your project touches an older roof, a barn, hanging tiles or timber cladding, Waverley may ask for a bat survey before it will decide your application. Around Cranleigh that catches a lot of projects, because the older cottages, tile-hung elevations and converted farm buildings here are exactly the structures bats roost in.",
-      "Every UK bat species is a European protected species under the Conservation of Habitats and Species Regulations 2017. It is an offence to disturb them or damage a roost, even without meaning to.",
-      "Here is the part that catches people out. A preliminary roost assessment can be done at any time of year — but if it finds evidence, the follow-up activity surveys have to happen while bats are active. That means roughly May to August, with at least two visits between mid-May and August.",
-      "Miss that window and you wait until next spring.",
-      "We look for survey triggers at design stage, so it lands in the programme instead of stopping it.",
+      "Illustration of a twelve-month calendar strip with May to August highlighted in amber as the optimal survey window, September shown as sub-optimal, and a barn roof with a bat silhouette above it",
+    related: [
+      "cranleigh-settlement-boundary",
+      "cranleigh-buildings-of-local-merit",
+      "trees-and-foundation-depth-cranleigh",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <defs>
-        <radialGradient id="bnight" cx="50%" cy="45%" r="65%">
-          <stop offset="0" stopColor="#2b3a44"/><stop offset="1" stopColor="#141d23"/>
-        </radialGradient>
-      </defs>
-      <rect width="400" height="400" fill="url(#bnight)"/>
-      <circle cx="52" cy="52" r="1.6" fill="#e8e4dc" opacity=".7"/>
-      <circle cx="352" cy="70" r="1.4" fill="#e8e4dc" opacity=".6"/>
-      <circle cx="330" cy="330" r="1.5" fill="#e8e4dc" opacity=".5"/>
-      <circle cx="66" cy="342" r="1.3" fill="#e8e4dc" opacity=".55"/>
-      <text x="200" y="40" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e8e4dc" textAnchor="middle">Bat activity surveys</text>
-      <path d="M 202.25 120.03 L 203.66 66.05 A 140 140 0 0 1 266.80 82.97 L 241.04 130.42 A 86 86 0 0 0 202.25 120.03 Z" fill="#31424b"/><text x="229.2" y="96.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(15 229.2 96.9)">Jan</text><path d="M 244.93 132.67 L 273.15 86.63 A 140 140 0 0 1 319.37 132.85 L 273.33 161.07 A 86 86 0 0 0 244.93 132.67 Z" fill="#31424b"/><text x="279.9" y="126.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(45 279.9 126.1)">Feb</text><path d="M 275.58 164.96 L 323.03 139.20 A 140 140 0 0 1 339.95 202.34 L 285.97 203.75 A 86 86 0 0 0 275.58 164.96 Z" fill="#31424b"/><text x="309.1" y="176.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(75 309.1 176.8)">Mar</text><path d="M 285.97 208.25 L 339.95 209.66 A 140 140 0 0 1 323.03 272.80 L 275.58 247.04 A 86 86 0 0 0 285.97 208.25 Z" fill="#31424b"/><text x="309.1" y="235.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(105 309.1 235.2)">Apr</text><path d="M 273.33 250.93 L 319.37 279.15 A 140 140 0 0 1 273.15 325.37 L 244.93 279.33 A 86 86 0 0 0 273.33 250.93 Z" fill="#e08a2b"/><text x="279.9" y="285.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(135 279.9 285.9)">May</text><path d="M 241.04 281.58 L 266.80 329.03 A 140 140 0 0 1 203.66 345.95 L 202.25 291.97 A 86 86 0 0 0 241.04 281.58 Z" fill="#e08a2b"/><text x="229.2" y="315.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(165 229.2 315.1)">Jun</text><path d="M 197.75 291.97 L 196.34 345.95 A 140 140 0 0 1 133.20 329.03 L 158.96 281.58 A 86 86 0 0 0 197.75 291.97 Z" fill="#e08a2b"/><text x="170.8" y="315.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(195 170.8 315.1)">Jul</text><path d="M 155.07 279.33 L 126.85 325.37 A 140 140 0 0 1 80.63 279.15 L 126.67 250.93 A 86 86 0 0 0 155.07 279.33 Z" fill="#e08a2b"/><text x="120.1" y="285.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#3a2a12" textAnchor="middle" dominantBaseline="central" transform="rotate(225 120.1 285.9)">Aug</text><path d="M 124.42 247.04 L 76.97 272.80 A 140 140 0 0 1 60.05 209.66 L 114.03 208.25 A 86 86 0 0 0 124.42 247.04 Z" fill="#31424b"/><text x="90.9" y="235.2" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(255 90.9 235.2)">Sep</text><path d="M 114.03 203.75 L 60.05 202.34 A 140 140 0 0 1 76.97 139.20 L 124.42 164.96 A 86 86 0 0 0 114.03 203.75 Z" fill="#31424b"/><text x="90.9" y="176.8" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(285 90.9 176.8)">Oct</text><path d="M 126.67 161.07 L 80.63 132.85 A 140 140 0 0 1 126.85 86.63 L 155.07 132.67 A 86 86 0 0 0 126.67 161.07 Z" fill="#31424b"/><text x="120.1" y="126.1" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(315 120.1 126.1)">Nov</text><path d="M 158.96 130.42 L 133.20 82.97 A 140 140 0 0 1 196.34 66.05 L 197.75 120.03 A 86 86 0 0 0 158.96 130.42 Z" fill="#31424b"/><text x="170.8" y="96.9" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#8fa0a8" textAnchor="middle" dominantBaseline="central" transform="rotate(345 170.8 96.9)">Dec</text>
-      <circle cx="200" cy="206" r="76" fill="#0f1619"/>
-      <path d="M200 196 l7 -9 l3 11 l16 -10 q18 -10 34 2 q-16 2 -24 12 q-9 12 -25 12 l-11 6 l-11 -6 q-16 0 -25 -12 q-8 -10 -24 -12 q16 -12 34 -2 l16 10 l3 -11 z" fill="#e08a2b"/>
-      <text x="200" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="26" fontWeight="700" fill="#e8e4dc" textAnchor="middle">MAY–AUG</text>
-      <text x="200" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8" textAnchor="middle">the only window</text>
-      <text x="200" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#8fa0a8" textAnchor="middle">Preliminary roost assessment: any time of year</text>
-      <text x="376" y="394" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-    </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A **preliminary roost assessment** can be done at any time of year. It is the daytime inspection that decides whether anything further is needed.",
+          "**Emergence and re-entry surveys** can only be done **May to September**, with **May to August optimal** and September sub-optimal, per the Bat Conservation Trust's Good Practice Guidelines.",
+          "Where more than one visit is required, they must be **at least three weeks apart** — so a two-visit programme is a two-month programme, minimum.",
+          "All UK bat species and their roosts are **protected by law**, whether or not bats are present at the time.",
+          "Miss the window on a barn, an outbuilding or a roof conversion and the honest answer is **next May**. There is no expedited option.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Most delays in a building project can be bought off. You can pay for a faster survey, a bigger team, an expedited service. This one you cannot. Bats emerge when bats emerge, and if the season has closed, the season has closed.",
+      },
+      {
+        type: "p",
+        text: "Around Cranleigh this matters more than it does in most places, because of what people are converting. Barns, stables, outbuildings, old roofs with gaps under the tiles and behind the fascias — the buildings that make this area attractive to live in are the same buildings bats like.",
+      },
+      { type: "h2", text: "When you will be asked for one" },
+      {
+        type: "p",
+        text: "A planning authority will typically require bat survey information where the proposal affects:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**A barn, stable or agricultural building** being converted — the highest-risk category by some distance.",
+          "**A roof**, where it is being stripped, altered, insulated between rafters, or converted into living space.",
+          "**Soffits, fascias, bargeboards and hanging tile**, all of which are common roost features.",
+          "**A building near woodland, water or mature trees** — which in this parish is a great many of them.",
+          "**Mature trees** themselves, where they have cavities, splits or lifting bark and are to be felled or heavily pruned.",
+          "**Older and traditional buildings** generally, especially where the roof void is open and undisturbed.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The trigger is usually the validation checklist on the planning application. You find out you need a survey when the council tells you the application is invalid without one — which is precisely the wrong moment, because by then you have already lost weeks and the season may have moved.",
+      },
+      { type: "h2", text: "The two stages, and the calendar that governs them" },
+      { type: "h3", text: "Stage one: preliminary roost assessment" },
+      {
+        type: "p",
+        text: "A daytime inspection by an ecologist, looking at the building for potential roost features and for evidence — droppings, staining, feeding remains. This can be done **at any time of year**, including December. It produces one of three outcomes: negligible potential (no further work), some potential (further surveys needed), or evidence of a roost (further surveys and probably a licence).",
+      },
+      { type: "h3", text: "Stage two: emergence and re-entry surveys" },
+      {
+        type: "p",
+        text: "Ecologists watch the building at dusk as bats emerge, and at dawn as they return. This is the part that is season-bound.",
+      },
+      {
+        type: "table",
+        head: ["Month", "Preliminary assessment", "Emergence / re-entry survey"],
+        rows: [
+          ["January – April", "Yes", "**No**"],
+          ["May – August", "Yes", "**Yes — optimal**"],
+          ["September", "Yes", "Sub-optimal, but possible"],
+          ["October – December", "Yes", "**No**"],
+        ],
+        caption: "Per the Bat Conservation Trust's Bat Surveys for Professional Ecologists: Good Practice Guidelines. July and August visits are what evidence maternity roosts, so a programme that only samples May may not be accepted.",
+      },
+      {
+        type: "p",
+        text: "Two further constraints turn this from a date into a programme. Where more than one visit is required — and for a building with moderate or high potential, two or three is normal — the visits must be **separated by at least three weeks**, because roost use changes across the season. And surveys are weather-dependent: a cold, wet or windy night does not count and has to be repeated.",
+      },
+      {
+        type: "callout",
+        title: "The arithmetic that ends projects",
+        text: "A building with moderate roost potential needs a preliminary assessment plus two emergence surveys three weeks apart, with weather contingency. Start that in **early May** and you have a report in **July**. Start it in **September** and the second visit cannot happen — you are waiting for **next May**. One month's difference in when you commission the ecologist can be a difference of eight months in when you start on site.",
+      },
+      {
+        type: "quote",
+        text: "I have had to tell a client in October that his barn conversion was starting the following July, and there was nothing anyone could do with money to change it. That conversation is why I now ask about bats at the first meeting, before we talk about anything else.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "If bats are found" },
+      {
+        type: "p",
+        text: "It is not the end of the project. All UK bat species are protected — it is an offence to deliberately kill, injure or disturb them, or to damage or destroy a breeding site or resting place, **whether or not bats are present at the time**. But protection is not prohibition.",
+      },
+      {
+        type: "ol",
+        items: [
+          "The ecologist designs **mitigation** — usually retaining or replacing the roost, with bat access tiles, a bat loft, or purpose-built boxes.",
+          "Where the work will affect a roost, a **European Protected Species licence** is applied for from Natural England, supported by the survey work and the mitigation plan.",
+          "The work is then carried out **under the licence**, often with timing restrictions — no roof work during the maternity season, for instance — and sometimes with an ecologist present at key stages.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The licence process takes weeks and has its own fee, and the timing restrictions are another thing to build into the programme. But schemes get consented and built. What does not work is doing the work first and asking afterwards: this is criminal law rather than planning law, and ignorance of a roost you were told to survey for is not a defence anyone wants to test.",
+      },
+      { type: "h2", text: "How to stay ahead of it" },
+      {
+        type: "ol",
+        items: [
+          "**Ask about bats at the first meeting**, before the design work starts. If the project involves a barn, an outbuilding or a roof, assume a survey will be wanted until an ecologist says otherwise.",
+          "**Book the preliminary roost assessment in winter.** It can be done any time, it is the cheaper of the two stages, and its outcome tells you whether you are on the clock.",
+          "**If further surveys are needed, book them for May.** Not June, not July — May, so you have the rest of the season as contingency for bad weather.",
+          "**Build the ecology programme into the planning programme**, alongside the [party wall notices](/blog/party-wall-notice-timing) and any [tree work notice in the conservation area](/blog/cranleigh-conservation-area-consent), which also runs to six weeks.",
+          "**Budget for it properly.** A preliminary assessment is a few hundred pounds; a full survey programme with a licence application runs into the low thousands. Both are trivial next to a year of delay.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The single most useful thing a builder can do on a barn conversion around here is ask the bat question in October rather than in April. We ask it early, and we would rather lose a fortnight at the start than a season in the middle. That kind of local sequencing knowledge is a large part of what using [builders in Cranleigh](/areas/cranleigh) is actually for.",
+      },
+    ],
+    faqs: [
+      {
+        question: "When can bat surveys be carried out?",
+        answer:
+          "A preliminary roost assessment — the daytime inspection — can be done at any time of year. Emergence and re-entry surveys can only be done between May and September, with May to August considered optimal and September sub-optimal under the Bat Conservation Trust's Good Practice Guidelines. Where several visits are needed they must be at least three weeks apart.",
+      },
+      {
+        question: "Do I need a bat survey for a barn conversion in Cranleigh?",
+        answer:
+          "Almost certainly. Barns, stables and agricultural buildings are the highest-risk category for roosts, and Waverley's validation checklist will normally require survey information before an application is valid. Commission the preliminary assessment in winter so you know where you stand before the season opens.",
+      },
+      {
+        question: "What happens if bats are found in my roof?",
+        answer:
+          "The project continues, with mitigation. The ecologist designs a scheme to retain or replace the roost — bat access tiles, a bat loft, or boxes — and where the work affects a roost you apply to Natural England for a European Protected Species licence. Expect timing restrictions, particularly around the maternity season, and expect the licence to take weeks.",
+      },
+      {
+        question: "Can I pay to have a bat survey done faster?",
+        answer:
+          "No. This is the one delay money does not solve. Emergence surveys depend on bats being active, which happens between May and September, and repeat visits must be three weeks apart. Miss the window and the honest answer is the following May.",
+      },
+      {
+        question: "How much does a bat survey cost?",
+        answer:
+          "A preliminary roost assessment is typically a few hundred pounds. A full programme of emergence surveys, a mitigation design and a licence application runs into the low thousands. Both are small compared with the cost of a project sitting idle for a season.",
+      },
+    ],
+    art: BLOG_ART["bat-surveys-timing-cranleigh"],
   },
   {
     slug: "tiles-are-not-waterproof",
     title: "Tiles are not waterproof, and why that matters",
     category: "Bathrooms",
     date: "2026-08-13",
-    seoTitle: "Bathroom Tanking Explained | Tiles Are Not Waterproof",
+    updated: "2026-09-04",
+    seoTitle: "Are Tiles Waterproof? | Why Bathrooms Need Tanking",
     metaDescription:
-      "Tiles and grout are water-resistant, not waterproof. What BS 5385-1 says about tanking wet areas, and why it matters behind the tile.",
+      "Tiles and grout are water-resistant, not waterproof. The waterproof layer is the tanking behind them — and it is the first thing a cheap bathroom quote leaves out.",
+    excerpt:
+      "The most common bathroom failure we are called to is not a leaking pipe. It is water going straight through the grout, into the wall behind, and appearing on a ceiling downstairs eighteen months later.",
     imageAlt:
-      "Cutaway diagram of a tiled wet area showing substrate, tanking membrane, adhesive and tile, with the 150mm minimum upstand and 1:80 floor fall marked",
-    body: [
-      "An expensive and very common misunderstanding: tiles and grout are water-resistant, not waterproof. Water works through the grout lines over time and soaks whatever is behind them.",
-      "Since its 2018 revision, BS 5385-1 — the British Standard for wall tiling — has said substrates in wet areas should be waterproofed with a proprietary tanking membrane before a single tile goes on. That covers ordinary shower enclosures and bath surrounds, not only wet rooms.",
-      "For a wet room the floor also needs a fall of at least 1:80 towards the drain, and the tanking carried a minimum of 150mm up the walls.",
-      "It is a standard rather than a statutory regulation. But skipping it is exactly how plasterboard rots behind a two-year-old bathroom.",
-      "We tank as standard. It is worth asking anyone who quotes you whether they do.",
+      "Illustration of a shower wall in section: tiles and grout on the surface with water passing through the grout joints, an amber tanking membrane behind them stopping it, and the wall board and timber stud beyond staying dry",
+    related: [
+      "bathroom-fitting-cost-cranleigh",
+      "trickle-vents-approved-document-f",
+      "building-control-completion-certificate",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <defs>
-        <linearGradient id="wtile" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#dfe7ea"/><stop offset="1" stopColor="#c3d0d5"/>
-        </linearGradient>
-      </defs>
-      <rect width="400" height="400" fill="#eef2f4"/>
-      <rect y="286" width="400" height="114" fill="#1f2a30"/>
-      <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Tiles are not waterproof</text>
-      <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">What has to sit behind them — BS 5385-1</text>
-      <rect x="150" y="70" width="34" height="216" fill="#8d99a0"/>
-      <rect x="184" y="70" width="16" height="216" fill="#e08a2b"/>
-      <rect x="200" y="70" width="10" height="216" fill="#a9b6bb"/>
-      <rect x="210" y="70" width="26" height="216" fill="url(#wtile)"/>
-      <path d="M210 104 h26 M210 138 h26 M210 172 h26 M210 206 h26 M210 240 h26" stroke="#9fb0b6" strokeWidth="1.5"/>
-      <path d="M196 92 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/><path d="M232 74 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/><path d="M266 96 q6 9 0 13 q-6 -4 0 -13 z" fill="#8fd4f0" opacity=".9"/>
-      <path d="M300 78 l-52 0" stroke="#5d7078" strokeWidth="1.4"/>
-      <text x="306" y="82" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Tile</text>
-      <path d="M300 108 l-96 0" stroke="#5d7078" strokeWidth="1.4"/>
-      <text x="306" y="112" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Adhesive</text>
-      <path d="M300 138 l-108 0" stroke="#e08a2b" strokeWidth="2"/>
-      <text x="306" y="142" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#c4741f">Tanking</text>
-      <text x="306" y="157" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#c4741f">membrane</text>
-      <path d="M300 186 l-134 0" stroke="#5d7078" strokeWidth="1.4"/>
-      <text x="306" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#1f2a30">Substrate</text>
-      <path d="M132 214 L132 286" stroke="#e08a2b" strokeWidth="2.5"/>
-      <path d="M126 214 h12 M126 286 h12" stroke="#e08a2b" strokeWidth="2.5"/>
-      <text x="120" y="254" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#c4741f" textAnchor="end">150mm</text>
-      <text x="24" y="316" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fill="#e8e4dc">Minimum upstand above finished floor</text>
-      <text x="24" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fill="#e8e4dc">Wet room floor fall</text>
-      <text x="376" y="342" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#e08a2b" textAnchor="end">1:80 min</text>
-      <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">A standard, not a statutory regulation</text>
-      <text x="376" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-    </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Tiles are waterproof. **Grout is not.** Grout is a porous cement-based material and water passes through it steadily.",
+          "The waterproof layer in a shower is the **tanking system behind the tiles**, not the tiles themselves.",
+          "**Standard plasterboard is the wrong substrate** for a shower enclosure. Tile backer board is the right one.",
+          "Failures show up **twelve to twenty-four months later**, as a stain on a ceiling or a soft patch at the base of a wall — long after the tiler has gone.",
+          "Tanking a shower properly is a small part of a bathroom budget. Rebuilding a floor is not.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is the most useful hundred words in any bathroom conversation, so here they are up front. Water gets through grout. It always has. Grout is a cement-based, porous material with a fine capillary structure, and a shower puts water against it under pressure for an hour a day, every day, for fifteen years. Sealing it helps and wears off. The tile is impervious; the joint between the tiles is not.",
+      },
+      {
+        type: "p",
+        text: "Which means: whatever is behind the tiles is what is keeping the water out of your wall. If that is a sheet of standard plasterboard, you have no waterproofing at all — you have a paper-faced gypsum board slowly absorbing water.",
+      },
+      { type: "h2", text: "What failure actually looks like" },
+      {
+        type: "p",
+        text: "The reason this is so common is that it is invisible for a long time. There is no leak, no drip, no obvious event. Water passes through the grout, wets the board behind, and the board wicks it downward and outward.",
+      },
+      {
+        type: "table",
+        head: ["Roughly when", "What you see", "What is happening"],
+        rows: [
+          ["0 – 12 months", "Nothing. The bathroom looks perfect.", "Board behind the tiles is absorbing water and staying damp between showers."],
+          ["12 – 24 months", "A hairline crack in the grout at an internal corner; grout darkening in one spot.", "The board has softened and is moving slightly. Movement cracks the grout, which lets in more water."],
+          ["18 – 36 months", "A stain on the ceiling below, or peeling paint on the far side of the wall.", "Water has reached the floor void and is tracking along a joist."],
+          ["2 – 5 years", "A tile sounds hollow; the shower tray edge is soft; a musty smell.", "The substrate has failed. The tiles are now held on by adhesive to something with no strength."],
+          ["The repair", "Strip the tiles, replace the board, replace anything rotten, re-tile.", "You are paying for the bathroom twice, plus the ceiling below."],
+        ],
+        caption: "By the time it is visible, the fix is not a tube of sealant. This is why it is worth getting right the first time.",
+      },
+      {
+        type: "quote",
+        text: "Nobody has ever called me because the tanking failed. They call because there was no tanking. It is a couple of hundred pounds of material and half a day, in a job costing thousands, and it is the first thing that gets left out when someone is trying to win the work on price.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What a proper shower wall is made of" },
+      {
+        type: "p",
+        text: "Working outward from the stud:",
+      },
+      {
+        type: "ol",
+        items: [
+          "**A stiff, correctly spaced substrate.** Studs at appropriate centres, with noggins where boards meet. Deflection is what cracks grout.",
+          "**Tile backer board** in the wet zone — a cement or foam-cored board that does not degrade when wet — rather than standard or even moisture-resistant plasterboard. Moisture-resistant board is designed for humidity, not for direct wetting.",
+          "**A tanking system**: a liquid-applied membrane or a bonded sheet membrane, taken over the whole wet zone, with reinforcing tape bedded into every internal corner and around every pipe penetration.",
+          "**A suitable adhesive**, appropriate for the board and for the tile weight.",
+          "**Tiles and grout**, with **silicone rather than grout** at every internal corner and change of plane, because those are the joints that move.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Corners and penetrations are where systems fail, not the middle of a wall. Any tanking product will keep water out of a flat expanse of board. What separates a job that lasts is the reinforcing tape in the corner where the wall meets the tray, and the collar around the shower valve pipework.",
+      },
+      { type: "h2", text: "Wet rooms are a different animal again" },
+      {
+        type: "p",
+        text: "In a wet room there is no tray to contain the water, so the **floor** becomes part of the waterproofing and the whole floor build-up changes: falls formed to a linear or centre drain, tanking taken across the floor and up the walls as a continuous membrane, and the junction between floor and wall detailed properly.",
+      },
+      {
+        type: "p",
+        text: "On a suspended timber floor — which is most Cranleigh houses of any age — this needs proper design, because you are forming falls in a floor that also has to stay stiff. It is entirely doable and it is the reason a wet room costs more than a shower enclosure. Anyone quoting a wet room at shower-enclosure prices has not understood the job.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Ask one question of every bathroom quote: **\"What tanking system are you using, and how far does it extend?\"** A good answer names a product and describes the zone. A vague answer — \"it'll be fine, the tiles are waterproof\" — has just told you the quote is cheap because the waterproofing is missing. That question costs nothing and is worth thousands.",
+      },
+      { type: "h2", text: "The other half: ventilation" },
+      {
+        type: "p",
+        text: "Waterproofing stops water going into the wall. It does nothing about the water in the air, and a bathroom generates an enormous amount of it. Without effective extract ventilation, that moisture condenses on the coldest surfaces in the room and you get mould in the grout and on the ceiling — which people then blame on the tiling.",
+      },
+      {
+        type: "p",
+        text: "Extract ventilation in a bathroom is a building regulations requirement with a specified rate, and the fan has to actually vent to outside rather than into a loft void. It is the same principle as the [trickle vent argument on windows](/blog/trickle-vents-approved-document-f): a sealed, well-built room needs a designed route for moisture to leave.",
+      },
+      { type: "h2", text: "If you already suspect a problem" },
+      {
+        type: "ol",
+        items: [
+          "**Tap the tiles** around the shower. A hollow note where others sound solid means the adhesive has lost its grip on a failing substrate.",
+          "**Press the grout at the internal corners** and at the tray junction. Any softness or movement behind is a bad sign.",
+          "**Look at the ceiling below**, and at the wall on the other side, for staining or peeling paint.",
+          "**Check the floor at the shower threshold** for softness or springiness.",
+          "**Do not just re-grout.** Re-grouting a failing wall hides the symptom for a few months and lets the substrate rot further. If the board behind has gone, the only real fix is to strip and rebuild that wall.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We tank the wet zones on every bathroom as standard and we itemise it on the quote so you can see it is there. If you are comparing bathroom prices and one is noticeably cheaper, ask that question about tanking before you decide — it is the sort of thing you should be able to check with [builders in Cranleigh](/areas/cranleigh) who expect to be working in this town in ten years' time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are bathroom tiles waterproof?",
+        answer:
+          "The tiles are. The grout between them is not — it is a porous cement-based material and water passes through it steadily. The waterproof layer in a shower is the tanking membrane behind the tiles, not the tiles themselves.",
+      },
+      {
+        question: "What is tanking and do I need it?",
+        answer:
+          "Tanking is a waterproof membrane — liquid-applied or a bonded sheet — installed over the substrate before tiling, with reinforcing tape in the corners and collars around pipe penetrations. In a shower enclosure or wet room, yes, you need it. It is a small part of a bathroom budget and it is what prevents the wall behind the tiles failing.",
+      },
+      {
+        question: "Can you tile straight onto plasterboard in a shower?",
+        answer:
+          "You should not. Standard plasterboard is paper-faced gypsum and degrades when wet, and even moisture-resistant board is designed for humidity rather than direct wetting. A shower enclosure needs tile backer board — cement or foam-cored — with a tanking system over it.",
+      },
+      {
+        question: "How long before a badly waterproofed shower fails?",
+        answer:
+          "Typically twelve to twenty-four months before anything is visible, and two to five years before the substrate has failed properly. That delay is why the problem is so common — it appears long after the work was signed off and paid for.",
+      },
+      {
+        question: "Can I just re-grout a shower that is leaking into the wall?",
+        answer:
+          "No. Re-grouting hides the symptom for a few months while the board behind continues to rot. If water has got through and the substrate has softened, the wall has to be stripped back, the board replaced, tanked properly and re-tiled.",
+      },
+    ],
+    art: BLOG_ART["tiles-are-not-waterproof"],
   },
   {
     slug: "trees-and-foundation-depth-cranleigh",
     title: "In Cranleigh, the tree in your garden sets your foundation depth",
     category: "Foundations",
     date: "2026-08-13",
-    seoTitle: "Foundation Depth Near Trees | Weald Clay in Cranleigh",
+    updated: "2026-09-04",
+    seoTitle: "Trees And Foundation Depth Cranleigh | Weald Clay Explained",
     metaDescription:
-      "Cranleigh sits on Weald clay, so a mature tree near your extension can push foundations from 0.9m to 3.0m deep. How NHBC chapter 4.2 works, and what it costs.",
+      "Cranleigh sits on Weald Clay, one of the most shrink-swell reactive soils in England. Near a mature oak, foundations can go from 0.9m to 2.5m — and so can the price.",
+    excerpt:
+      "The biggest single variable in an extension quote here is not the kitchen or the glazing. It is how deep the hole has to be, and that is decided by the clay under your garden and the tree standing in it.",
     imageAlt:
-      "Bar chart of typical foundation depths near trees, from 0.9 metres for a low water demand species on low shrinkage soil to 3.0 metres for a high demand species on highly shrinkable clay",
-    body: [
-      "Cranleigh sits on the Weald clay of the Low Weald, which makes this a local problem rather than a general one. Clay shrinks as it dries and swells as it wets, and Weald clay is stiff, fissured and particularly prone to it. Trees drink a great deal of water, so a mature tree near your extension can move the ground beneath it — and moving ground is what cracks buildings.",
-      "NHBC Standards chapter 4.2 handles this with a ratio: the distance from the tree divided by that species' mature height. Broadly, if a tree stands closer than its own mature height, your foundations are inside its zone of influence.",
-      "The practical range is wide. A low water demand species on low shrinkage soil may need only the standard 0.9m minimum. A thirsty species on highly shrinkable clay can push you to 3.0m.",
-      "That gap is thousands of pounds of concrete, so it belongs in the budget early — confirmed by a site investigation, never a guess.",
+      "Illustration of a section through a garden showing a mature oak, its root zone spreading through orange clay, and two foundation trenches side by side — a shallow 0.9 metre one and a deep 2.5 metre one marked in amber",
+    related: [
+      "extending-1930s-semi-cranleigh",
+      "cranleigh-conservation-area-consent",
+      "party-wall-notice-timing",
     ],
-    art: (
-      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
-      <defs>
-        <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#4a9fd4"/><stop offset="1" stopColor="#9fd3ea"/>
-        </linearGradient>
-        <linearGradient id="tsoil" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#5b4530"/><stop offset="1" stopColor="#3a2b1d"/>
-        </linearGradient>
-      </defs>
-      <rect width="400" height="236" fill="url(#tsky)"/>
-      <circle cx="326" cy="58" r="22" fill="#ffe9a8" opacity=".85"/>
-      <ellipse cx="92" cy="70" rx="42" ry="15" fill="#ffffff" opacity=".55"/>
-      <ellipse cx="120" cy="62" rx="28" ry="12" fill="#ffffff" opacity=".45"/>
-      <rect y="228" width="400" height="14" fill="#6ab04a"/>
-      <rect y="242" width="400" height="158" fill="url(#tsoil)"/>
-      <path d="M150 250 Q 90 296 41 301" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 92 326 44 356" stroke="#c9b79a" strokeWidth="6" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 105 353 68 405" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 136 349 124 398" stroke="#c9b79a" strokeWidth="4" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 191 339 225 380" stroke="#c9b79a" strokeWidth="4" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 222 332 280 367" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 225 303 286 313" stroke="#c9b79a" strokeWidth="6" fill="none" strokeLinecap="round" opacity=".9"/><path d="M150 250 Q 215 277 269 267" stroke="#c9b79a" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".9"/>
-      <rect x="144" y="196" width="13" height="58" fill="#7a5b3a"/>
-      <circle cx="150" cy="168" r="46" fill="#3f8f37"/>
-      <circle cx="118" cy="186" r="30" fill="#4aa33f"/>
-      <circle cx="182" cy="186" r="30" fill="#4aa33f"/>
-      <circle cx="150" cy="140" r="30" fill="#57b449"/>
-      <rect x="286" y="150" width="96" height="78" fill="#efe9df"/>
-      <path d="M280 152 L334 118 L388 152 Z" fill="#b4442f"/>
-      <rect x="304" y="180" width="22" height="24" fill="#8fc4dd"/>
-      <rect x="344" y="180" width="22" height="24" fill="#8fc4dd"/>
-      <rect x="286" y="242" width="96" height="86" fill="#9a9a95"/>
-      <path d="M286 242 h96" stroke="#e08a2b" strokeWidth="3"/>
-      <path d="M272 242 L272 328" stroke="#e08a2b" strokeWidth="2.5"/>
-      <path d="M266 242 h12 M266 328 h12" stroke="#e08a2b" strokeWidth="2.5"/>
-      <text x="260" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#ffd79a" textAnchor="end">0.9m</text>
-      <text x="260" y="308" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#ffd79a" textAnchor="end">to 3.0m</text>
-      <rect y="336" width="400" height="64" fill="#1f2a30" opacity=".92"/>
-      <text x="24" y="360" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Roots drink the clay. Clay shrinks.</text>
-      <text x="24" y="380" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Depth set by species and soil — NHBC ch. 4.2</text>
-      <text x="376" y="380" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
-    </svg>
-    ),
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Cranleigh sits largely on the **Weald Clay Formation** — stiff, fissured clay with moderate to high shrink–swell potential, among the most reactive soils in England.",
+          "Clay shrinks when trees draw moisture out of it and swells when it rewets. Foundations that are too shallow move with it.",
+          "The general minimum foundation depth is **0.9m**. Near a mature high-water-demand tree such as an oak, **NHBC Chapter 4.2** can require **2.5m or more**.",
+          "The governing figure is the **D/M ratio** — distance to the tree divided by that species' mature height — combined with soil shrinkability.",
+          "This is the largest single source of variation between two extension quotes for the same drawing. A trial hole resolves it for a few hundred pounds.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Two builders quote for the same extension on the same drawing. One comes back at £68,000, the other at £84,000. The homeowner assumes one is greedy or one is cutting corners. Usually neither is true: one has allowed for a 0.9m foundation and the other has allowed for 2.2m, because there is an oak forty feet from the corner of the proposed footprint.",
+      },
+      {
+        type: "p",
+        text: "Understanding this one thing will tell you more about why building quotes differ around here than anything else you could read.",
+      },
+      { type: "h2", text: "What the ground under Cranleigh is doing" },
+      {
+        type: "p",
+        text: "Cranleigh sits largely on the **Weald Clay Formation**. It is a thick, highly plastic clay, and it is one of the more shrink–swell reactive soils in the country. The behaviour is straightforward: the clay minerals absorb water and swell, and lose water and shrink. The volume change is significant and it is seasonal.",
+      },
+      {
+        type: "p",
+        text: "Left alone, that seasonal movement happens in the top metre or so and everything below stays fairly stable. Put a large tree next to it and the picture changes. A mature tree draws a great deal of water out of the soil over a summer, from a root zone that extends far wider than the canopy and deeper than people expect. The clay in that zone shrinks — not just at the surface, but to depth.",
+      },
+      {
+        type: "p",
+        text: "A foundation sitting above the depth of that seasonal movement moves with it: down in a dry summer, back up over a wet winter. That cycle is what cracks walls. It is also what happens in reverse when a tree is **removed** — the clay rehydrates and heaves, which can be more damaging than the shrinkage was.",
+      },
+      {
+        type: "callout",
+        title: "Do not fell the tree to solve the problem",
+        text: "Removing a mature tree next to a house on shrinkable clay causes **heave** as the ground rehydrates over the following years, and heave is harder to design for than settlement. It may also be illegal — trees in the [Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) need six weeks' written notice to Waverley, and a Tree Preservation Order makes it an offence. Design for the tree; do not try to remove the design problem.",
+      },
+      { type: "h2", text: "How the depth is actually decided" },
+      {
+        type: "p",
+        text: "The standard reference is **NHBC Standards Chapter 4.2, Building Near Trees**, and it works on three inputs.",
+      },
+      {
+        type: "ol",
+        items: [
+          "**The shrinkability of the soil** — low, medium or high, determined from the plasticity of the clay. Weald Clay sits at the reactive end.",
+          "**The water demand of the tree species.** Oak, elm, willow and poplar are high demand. Others are moderate or low. It is the species, not the size today, that matters.",
+          "**The D/M ratio** — the distance from the tree to the foundation (D), divided by that species' **mature** height (M). A young oak is assessed on the height an oak reaches, not the height it is now.",
+        ],
+      },
+      {
+        type: "table",
+        head: ["Situation", "Indicative foundation depth"],
+        rows: [
+          ["No influencing trees, low shrinkability", "**0.9m** — the general minimum"],
+          ["Low water demand species, low shrinkability soil", "**0.9m** may be sufficient"],
+          ["Moderate demand species at moderate distance, medium shrinkability", "Typically **1.2 – 1.8m**"],
+          ["High demand species such as oak, high shrinkability clay, at 0.5–1× mature height away", "**2.5 – 3.0m**"],
+        ],
+        caption: "Indicative only, from NHBC Chapter 4.2 guidance. Your actual depth comes from an engineer working from a site investigation, not from a table on a website.",
+      },
+      {
+        type: "quote",
+        text: "The tree that decides your foundation is often not in your garden. It is the neighbour's oak, or the one on the verge that the council owns, and you cannot touch either of them. Measure the distance to every mature tree within about thirty metres, not just your own.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What the depth does to the price" },
+      {
+        type: "p",
+        text: "Depth does not scale the cost linearly. It changes the method.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Up to about 1.2m**: conventional trench fill. A digger, a day or two, and concrete. Straightforward.",
+          "**1.2m to about 2.5m**: deep trench fill. Considerably more concrete, more spoil to cart away, and trench support for safety. Costs rise steeply with depth because the volume of concrete rises with it.",
+          "**Beyond about 2.5m**, or on a tight site: **piled foundations with ground beams**, and often a suspended floor with a void beneath so the slab is not sitting on the moving clay. A different specialist, a different programme and a different price.",
+          "**Clay heave protection** — compressible material to the sides of the foundation and under ground beams — where the design has to allow for the ground swelling.",
+        ],
+      },
+      {
+        type: "p",
+        text: "So the honest answer to \"how much will the foundations cost\" is that it depends on a number nobody has measured yet. Which is exactly why the next section matters.",
+      },
+      { type: "h2", text: "The trial hole, and why it is the best money in the project" },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A trial hole costs a few hundred pounds and takes an afternoon. It tells you the depth of the existing foundations, the soil profile, the water table, and whether there is anything unexpected down there. It turns the single largest variable in the project into a known number — which means the quote you sign is a **price**, not an estimate that will be revised once the hole is open and the digger is on hire.",
+      },
+      {
+        type: "p",
+        text: "If you take one practical thing from this post, take that. Almost every dispute we hear about between a homeowner and a builder over a variation traces back to something the ground did that nobody investigated. A fixed price is only as fixed as the assumptions underneath it, and this is the assumption that moves.",
+      },
+      { type: "h2", text: "The checklist before you accept a quote" },
+      {
+        type: "ol",
+        items: [
+          "**Identify every mature tree within roughly thirty metres**, including neighbours' trees and street trees, and identify the species.",
+          "**Check for Tree Preservation Orders** and whether the site is in the conservation area, where a six-week notice applies to tree work.",
+          "**Get a trial hole dug** and, where the site warrants it, a soil investigation with plasticity testing.",
+          "**Have a structural engineer specify the foundation** from that evidence — £1,500–£3,000 covers steel and foundation design, and it is not the place to economise.",
+          "**Ask every quote in writing what foundation depth it assumes.** This is the single question that makes two quotes comparable.",
+          "**Ask what happens if the depth turns out to be greater** — how the variation is calculated, and at what rate.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We would rather dig a hole in your garden in week one than have a difficult conversation in week six, and we state the assumed depth on our quotations so you can compare them honestly against anyone else's. Knowing what the ground does here is not general building knowledge — it is local knowledge, and it is a large part of why it is worth using [builders in Cranleigh](/areas/cranleigh) on Weald Clay.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How deep do foundations need to be near a tree?",
+        answer:
+          "It depends on the soil's shrinkability, the tree species' water demand, and the distance to the tree relative to that species' mature height. The general minimum is 0.9m. On high-shrinkage clay near a high-water-demand species such as oak, NHBC Chapter 4.2 guidance can indicate 2.5 to 3.0m. Your actual depth should come from an engineer working from a site investigation.",
+      },
+      {
+        question: "What soil is Cranleigh built on?",
+        answer:
+          "Largely the Weald Clay Formation — a stiff, fissured, highly plastic clay with moderate to high shrink–swell potential, among the most reactive soils in England. It swells when wet and shrinks when dry, and mature trees drawing water out of it are what drives the seasonal movement that damages shallow foundations.",
+      },
+      {
+        question: "Should I cut down the tree so I can have shallower foundations?",
+        answer:
+          "No. Removing a mature tree from shrinkable clay next to a building causes heave as the ground rehydrates over subsequent years, which is harder to design for than settlement. It may also be unlawful — conservation area trees need six weeks' notice to Waverley and a Tree Preservation Order makes felling an offence. Design for the tree instead.",
+      },
+      {
+        question: "Why do two builders quote such different prices for the same extension?",
+        answer:
+          "Most often because they have assumed different foundation depths. The difference between 0.9m of trench fill and 2.2m across a 25m² footprint is several times the concrete, much more spoil to remove and trench support. Ask every quote to state its assumed depth in writing, and ask how a variation would be priced if the ground says otherwise.",
+      },
+      {
+        question: "What is a trial hole and is it worth paying for?",
+        answer:
+          "It is an excavation dug before work starts to reveal the existing foundation depth, the soil profile and the water table. It costs a few hundred pounds and an afternoon, and it converts the largest unknown in the project into a number. On Weald Clay near mature trees it is consistently the best-value spend in the whole job.",
+      },
+    ],
+    art: BLOG_ART["trees-and-foundation-depth-cranleigh"],
   },
 ];

@@ -122,20 +122,64 @@ export interface PriceBand {
   emphasise?: string[];
 }
 
+/**
+ * One block of a post body.
+ *
+ * Posts used to be three flat paragraphs, which is why none of them ranked:
+ * a 200-word page has nothing for a search engine to match a long query
+ * against, and a wall of `<p>` gives it no structure to read either. The
+ * block types below exist so a post can carry real headings, checklists,
+ * cost tables and quoted site advice — the things a homeowner searching
+ * "how much does X cost in Cranleigh" is actually looking for.
+ *
+ * Every `text` field supports inline markup, handled by `renderInline` in
+ * BlogArticle: `**bold**` and `[label](/path)` links. Keep links internal —
+ * they are what pass authority to the service and area pages.
+ */
+export type BlogBlock =
+  | { type: "p"; text: string }
+  /** Renders as `<h2>`, and becomes an entry in the post's contents list. */
+  | { type: "h2"; text: string; id?: string }
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
+  /** Paul's own words. Attributed, boxed, and marked up as a `<blockquote>`. */
+  | { type: "quote"; text: string; attribution: string }
+  /** A boxed aside — a warning, a rule of thumb, a "what this saves you". */
+  | { type: "callout"; title: string; text: string }
+  /** A money or timing table. `head` and every row must be the same length. */
+  | { type: "table"; caption?: string; head: string[]; rows: string[][] }
+  /** The summary box at the top of a post. */
+  | { type: "takeaways"; items: string[] };
+
+export interface BlogFaq {
+  /** Phrased as a homeowner would type it — these become FAQPage schema. */
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
-  /** URL-safe id; used for the anchor so a post can be linked to directly. */
+  /** URL-safe id. Also the post's own route: /blog/{slug}. */
   slug: string;
   title: string;
   category: string;
   /** ISO date, e.g. "2026-08-13". Rendered as a UK long date. */
   date: string;
-  /** ~55–60 chars. Used if the post ever gets its own page. */
+  /** ISO date the post was last substantially revised, if ever. */
+  updated?: string;
+  /** ~55–60 chars. The `<title>` of the post's own page. */
   seoTitle: string;
   /** ~150 chars. */
   metaDescription: string;
+  /** One or two sentences shown on the card in the index grid. */
+  excerpt: string;
   /** Describes the infographic for screen readers and for search. */
   imageAlt: string;
-  body: string[];
+  body: BlogBlock[];
+  /** Answered in the page and emitted as FAQPage schema. */
+  faqs?: BlogFaq[];
+  /** Slugs of two or three posts to link at the foot of this one. */
+  related?: string[];
   /** Original infographic, drawn inline as SVG. */
   art: React.ReactNode;
 }

@@ -125,8 +125,12 @@ const PROJECTS = [
 
 const HIDDEN_COSTS = [
   {
+    /* Was "typically £250–£500" — that was already out of date and the fee is
+       a fixed national figure, not a council-by-council one. £548 has applied
+       to a householder application in England since 1 April 2026, and rises to
+       about £575 on 8 December 2026 under the 2026 fee regulations. */
     heading: "Planning application fees",
-    body: "Typically £250–£500, depending on your council.",
+    body: "A householder application in England costs £548 (from 1 April 2026), rising to around £575 from 8 December 2026. A larger rear extension prior approval is £249.",
   },
   {
     heading: "Structural engineer reports",

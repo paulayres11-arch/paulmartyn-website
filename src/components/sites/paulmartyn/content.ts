@@ -339,6 +339,12 @@ export const SERVICES = {
         { src: `${LISTED}/period-house-terrace.jpg`, alt: "Rear elevation of a period brick house with restored sash windows, french doors and a new sandstone terrace" },
         { src: `${LISTED}/walled-garden-terrace.jpg`, alt: "The same terrace looking down the walled garden — riven sandstone paving laid to the house, a circular water feature set flush into it, and the original brick wall and arch retained" },
         { src: `${LISTED}/heritage-window-lead.jpg`, alt: "New casement window let into black weatherboarding, with hand-dressed lead flashing to the head and cill" },
+        // Video sits last so the rail opens on a still photograph rather than a play button.
+        {
+          src: `${LISTED}/heritage-walkthrough-poster.jpg`,
+          alt: "Walkthrough of a Paul Martyn heritage project — original timber frame, traditional materials and period detail retained alongside new work",
+          youtubeId: "FGeJSQInX8Y",
+        },
       ],
     },
     {
@@ -431,6 +437,7 @@ export const SERVICES = {
         { src: `${STAIRS}/rope-twist.jpg`, alt: "Painted staircase with oak treads, rope-twist metal spindles and a curved bottom step" },
         { src: `${STAIRS}/oak-flight.jpg`, alt: "Painted staircase with oak handrail, stair runner and encaustic tiled hall" },
         { src: `${STAIRS}/oak-landing.jpg`, alt: "Oak balustrade and landing above a turning flight" },
+        { src: `${STAIRS}/winder-oak-newel-carpeted.jpg`, alt: "Carpeted winder staircase turning on tapered treads, with a chunky square oak newel post, oak handrail, slim black metal spindles and recessed LED lights washing each tread" },
         {
           src: `${STAIRS}/video-poster.jpg`,
           alt: "Garage studio conversion with a staircase to the attic",

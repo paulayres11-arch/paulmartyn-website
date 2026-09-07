@@ -320,7 +320,7 @@ Cranleigh topics — work through these:
 - [done 2026-08-17] Cranleigh heritage: the second list your house might be on (Buildings of Local Merit)
 - [done 2026-08-24] Building inside the Cranleigh Conservation Area: what needs consent
 - [done 2026-08-26] Cranleigh's settlement boundary: why which side you are on decides everything
-- [ ] Kitchen extensions in Cranleigh: layout before budget
+- [done 2026-09-07] Kitchen extensions in Cranleigh: layout before budget
 - [ ] Wet rooms in a Cranleigh cottage: what an older building needs
 - [ ] Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves
 - [ ] Garden rooms in Cranleigh: permitted development limits, and where they stop

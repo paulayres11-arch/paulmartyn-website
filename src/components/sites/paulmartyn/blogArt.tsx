@@ -16,6 +16,69 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "kitchen-extensions-cranleigh-layout-budget": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="kesky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="kewall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#efe6d4" /><stop offset="1" stopColor="#d8cba8" />
+          </linearGradient>
+          <linearGradient id="keamber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="keglass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#dcecf5" /><stop offset="1" stopColor="#aed4e8" />
+          </linearGradient>
+          <linearGradient id="kesoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6a5238" /><stop offset="1" stopColor="#42311f" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#kesky)" />
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">The steel decides the room, not the units</text>
+        <text x="24" y="53" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Kitchen extensions: layout before budget</text>
+
+        {/* old kitchen, left */}
+        <rect x="20" y="76" width="132" height="180" fill="url(#kewall)" stroke="#b9a97e" strokeWidth="2" />
+        <rect x="42" y="108" width="40" height="46" fill="url(#keglass)" stroke="#b9a97e" strokeWidth="2" />
+        <rect x="42" y="108" width="40" height="46" fill="none" stroke="#b9a97e" strokeWidth="1.5" />
+        <path d="M62 108 v46 M42 131 h40" stroke="#b9a97e" strokeWidth="1.5" />
+        <rect x="42" y="196" width="86" height="10" fill="#c9b998" />
+        <rect x="46" y="176" width="30" height="20" fill="#dcd2b8" stroke="#b9a97e" />
+        <text x="86" y="238" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#5d7078" textAnchor="middle">EXISTING</text>
+
+        {/* opening: padstones + steel beam */}
+        <rect x="152" y="204" width="18" height="52" fill="#8a8f92" stroke="#6b7275" strokeWidth="1.5" />
+        <rect x="230" y="204" width="18" height="52" fill="#8a8f92" stroke="#6b7275" strokeWidth="1.5" />
+        <rect x="152" y="186" width="96" height="18" fill="url(#keamber)" stroke="#c4741f" strokeWidth="1.5" />
+        <path d="M170 262 v10 M230 262 v10 M170 272 h60 M167 266 h6 M227 266 h6" stroke="#c4741f" strokeWidth="2" fill="none" />
+        <text x="200" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#c4741f" textAnchor="middle">STEEL SPAN</text>
+        <path d="M164 220 v-10 M236 220 v-10" stroke="#dfe6ea" strokeWidth="10" opacity=".5" />
+
+        {/* new extension, right, with lantern roof */}
+        <rect x="248" y="76" width="132" height="180" fill="url(#kewall)" stroke="#b9a97e" strokeWidth="2" />
+        <path d="M248 76 L280 40 L348 40 L380 76 Z" fill="url(#keglass)" stroke="#c4741f" strokeWidth="2" />
+        <path d="M280 40 L280 76 M314 40 L314 76 M348 40 L348 76" stroke="#c4741f" strokeWidth="2" />
+        <rect x="266" y="130" width="96" height="90" fill="url(#keglass)" stroke="#b9a97e" strokeWidth="2" />
+        <path d="M314 130 v90 M266 175 h96" stroke="#b9a97e" strokeWidth="1.5" />
+        <path d="M290 60 q6 14 -2 26" stroke="#ffffff" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".7" />
+        <text x="314" y="248" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#c4741f" textAnchor="middle">NEW KITCHEN</text>
+
+        {/* underground: drainage run to manhole */}
+        <rect y="300" width="400" height="30" fill="url(#kesoil)" />
+        <path d="M300 300 v10 q0 8 20 8 h50 q10 0 10 10 v6" stroke="#8fa0a8" strokeWidth="4" fill="none" strokeLinecap="round" strokeDasharray="2 5" />
+        <circle cx="380" cy="330" r="10" fill="#7d8790" stroke="#5d6568" strokeWidth="2" />
+        <circle cx="380" cy="330" r="4" fill="#5d6568" />
+
+        <rect y="330" width="400" height="70" fill="#1f2a30" />
+        <text x="24" y="354" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">Agree the opening before the worktop</text>
+        <text x="24" y="374" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Structural calculation: £1,500–£3,000, whatever the size of the kitchen</text>
+        <text x="24" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Guide costs: /pricing — planning limits: Planning Portal, Class A GPDO</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "trickle-vents-approved-document-f": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

@@ -46,6 +46,184 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kitchen-extensions-cranleigh-layout-budget",
+    title: "Kitchen extensions in Cranleigh: layout before budget",
+    category: "Kitchens",
+    date: "2026-09-07",
+    seoTitle: "Kitchen Extensions Cranleigh | Cost & Layout Guide 2026",
+    metaDescription:
+      "A kitchen extension in Cranleigh costs £3,500–£4,500 per m² fitted, but layout decides the price, not the units. What to plan first, and what can wait.",
+    excerpt:
+      "A kitchen extension here typically runs £3,500–£4,500 per m² once fitted — but the layout, not the worktop, is what actually sets the price. Here's what to decide before you choose a kitchen range.",
+    imageAlt:
+      "Illustration of a house cutaway showing an existing kitchen on the left and a new glass-roofed kitchen extension on the right, joined by an amber steel beam resting on two grey padstones, with a dashed drainage pipe running underground to a manhole",
+    related: [
+      "extending-1930s-semi-cranleigh",
+      "party-wall-notice-timing",
+      "extension-value-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A kitchen extension in Cranleigh typically costs **£3,500–£4,500 per m²** including fit-out — more than a plain single-storey extension at £2,700–£3,100 per m², because a kitchen adds drainage, gas, ventilation and cabinetry on top of the shell.",
+          "The number that moves most is not the units or the worktop. It is the **structural opening** — where the steel goes and what it lands on.",
+          "Decide the **layout** before you choose a kitchen range. Reversing that order is the most common cause of a mid-project redesign.",
+          "A single-storey rear extension can often be built under **permitted development**, but the larger neighbour consultation scheme (up to 6m attached, 8m detached) does not apply inside the Cranleigh Conservation Area.",
+          "Budget **8–12 weeks for design and approvals** before a spade goes in, and a further **10–14 weeks to build** a typical single-storey kitchen extension.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The conversation almost always starts the same way. Someone shows us a photograph of a kitchen — an island, a run of full-height glazing, a particular tap — and asks what it costs. We have to ask a different question first: where is the wall coming out, and what is going to hold the roof up over the gap.",
+      },
+      {
+        type: "p",
+        text: "That is not us being difficult. The layout of a kitchen extension decides most of the price before a single unit is chosen, and it is the part people think about last.",
+      },
+      { type: "h2", text: "What a kitchen extension actually costs in Cranleigh" },
+      {
+        type: "p",
+        text: "A plain single-storey extension here runs **£2,700–£3,100 per m²** — a shell: foundations, walls, roof, windows and a plastered box, per our [pricing page](/pricing) and the [house extension costs guide](/guides/house-extension-costs-surrey). A kitchen extension costs more for the same footprint, because it is never just a shell.",
+      },
+      {
+        type: "table",
+        head: ["Item", "Typical rate", "Why it costs more than a plain shell"],
+        rows: [
+          ["Plain single-storey extension", "£2,700 – £3,100 per m²", "Structure only — no drainage, no kitchen services, no fit-out"],
+          ["Kitchen extension incl. fit-out", "£3,500 – £4,500 per m²", "New drainage run, gas or induction supply, extract ventilation, cabinetry and worktop labour"],
+          ["Structural engineer's calculations", "£1,500 – £3,000", "One fee whatever the size of the opening — get it early"],
+        ],
+        caption: "Guide prices for Cranleigh, 2026. A difficult drainage run or an awkward party wall moves this more than room size does.",
+      },
+      { type: "h2", text: "Why the layout decides the price, not the worktop" },
+      {
+        type: "p",
+        text: "A kitchen extension almost always means opening up a load-bearing wall between the old kitchen and the new space. That opening is held up by a steel beam sitting on padstones built into the surrounding walls. Its size is set by the span, the load above it — one storey or two — and how wide the opening is. A four-metre run of bifold doors needs a heavier beam than a two-and-a-half-metre doorway, and a heavier beam can mean rebuilding a section of wall to take the padstone.",
+      },
+      {
+        type: "p",
+        text: "None of that shows in a kitchen brochure. A structural engineer decides it from a drawing, and it should happen **before** anyone chooses a kitchen range — the steel's position decides where units can go, where the ceiling can drop for services, and how wide the opening to the old room can be.",
+      },
+      {
+        type: "quote",
+        text: "People ask for the price of the kitchen before they have agreed where the wall is coming out. I understand why — it is the fun part — but the steel goes where the structure needs it, not where the island looks best in a magazine, and if you pick the layout after the steel is calculated you are designing around a beam instead of a room.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Agree the opening, beam position and rooflight with a structural engineer before the kitchen designer finalises anything. Move the beam after the kitchen is designed and you typically face a revised calculation, a second building control submission, **2–3 weeks lost**, and a further **£500–£1,500** in redesign and re-quoting. Getting the order right costs nothing extra — it is the same conversation, earlier.",
+      },
+      { type: "h2", text: "Side-return, rear extension or wrap-around: which suits your house" },
+      {
+        type: "p",
+        text: "Cranleigh's housing stock is mostly 1930s semis and detached houses with generous plots, plus older cottages nearer the centre — see [extending a 1930s semi in Cranleigh](/blog/extending-1930s-semi-cranleigh) for what those houses hide structurally. That mix decides which layout actually fits.",
+      },
+      {
+        type: "table",
+        head: ["Layout", "Suits", "What it does to the job"],
+        rows: [
+          ["Rear extension", "Detached and semi-detached houses with garden depth to spare", "The simplest structurally — one new wall, one roof, one steel opening"],
+          ["Side-return", "Terraces and semis with an unused side passage", "Cheap floor area, but the new roof usually ties into the existing one — a second structural junction"],
+          ["Wrap-around", "Larger plots where both are available", "Widest open-plan kitchen-diner, but two structural openings, not one"],
+        ],
+        caption: "The right layout is decided by the plot and the existing structure, not by which one looks biggest on paper.",
+      },
+      {
+        type: "p",
+        text: "A wrap-around gives the most floor area for the money, but it is also the layout most likely to need agreement with a neighbour where it runs along a shared boundary — see [the party wall notice that sets your start date](/blog/party-wall-notice-timing) if that applies to you.",
+      },
+      { type: "h2", text: "Planning permission or permitted development" },
+      {
+        type: "p",
+        text: "Many single-storey kitchen extensions here can be built under **permitted development**, without a full application, within set limits: broadly up to **3m beyond the rear wall for an attached house** and **4m for a detached house**, with a height limit of around 4m overall. These are the Class A limits in the General Permitted Development Order — the detail is on the [Planning Portal](https://www.planningportal.co.uk).",
+      },
+      {
+        type: "p",
+        text: "A **larger home extension neighbour consultation scheme** lets you go further — up to 6m attached or 8m detached — via a lighter prior approval process. The fee is **£249**, rising to **£310 from 8 December 2026**. It does **not apply on Article 2(3) land, which includes conservation areas**. Inside the **Cranleigh Conservation Area** you are capped at the standard 3m/4m limits, and a side extension needs full planning permission regardless of size.",
+      },
+      {
+        type: "p",
+        text: "Where full planning is needed, Waverley assesses householder applications against its **Residential Extensions SPD (2010)** and, since 15 July 2024, the **Cranleigh Neighbourhood Plan** — see [what it changed for householders](/blog/cranleigh-neighbourhood-plan-householders). The current fee is **£548**, rising to roughly £575 from 8 December 2026.",
+      },
+      { type: "h2", text: "Drainage, gas and where the steel really goes" },
+      {
+        type: "p",
+        text: "Two things most often surprise people once a kitchen extension is under way:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Moving the sink or dishwasher** usually means new drainage falling to an existing manhole, sometimes under the new floor slab — plan it before the slab is poured, not after.",
+          "**Relocating a gas meter** to feed a new hob position needs the gas transporter or a Gas Safe engineer, and can take longer to schedule than the build itself.",
+          "**Cooker hood extraction** has to discharge outside — usually through the roof or an external wall, decided by where the hob sits, which is decided by the layout.",
+          "**A rooflight or lantern over an island** is the biggest single factor in the size of the roof steel, because it interrupts the roof structure rather than sitting within it.",
+        ],
+      },
+      { type: "h2", text: "How long a kitchen extension actually takes" },
+      {
+        type: "p",
+        text: "The build itself is rarely the slow part. Design and approvals are.",
+      },
+      {
+        type: "table",
+        head: ["Stage", "Typical time", "Notes"],
+        rows: [
+          ["Design, structural calculations, quotation", "3 – 5 weeks", "Do this before ordering a kitchen"],
+          ["Prior approval (larger PD scheme)", "Up to 6 weeks", "Neighbour consultation plus the council's decision"],
+          ["Full planning application", "8 weeks statutory target, often longer", "Plus 2–3 weeks validation before the clock starts"],
+          ["Build: single-storey shell", "10 – 14 weeks", "Weather and ground conditions can move this"],
+          ["Kitchen fit-out once watertight", "2 – 3 weeks", "Can overlap the final weeks of the build"],
+        ],
+        caption: "A realistic total is 5–7 months for a permitted development scheme, longer where full planning is needed.",
+      },
+      { type: "h2", text: "Getting the order right" },
+      {
+        type: "ol",
+        items: [
+          "**Establish the layout and structural opening first** — with a structural engineer, not a kitchen designer.",
+          "**Check permitted development against the conservation area boundary** before assuming the larger scheme is available.",
+          "**Plan drainage and gas runs on the drawing**, before the slab or floor is down.",
+          "**Get quotes itemised by trade** — shell, services and fit-out as three visible numbers, not one.",
+          "**Choose the kitchen range last**, once the opening, rooflight and services are fixed — units are the part of this job with the least structural consequence.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Get the layout and the structure agreed first and the kitchen you actually want almost always fits inside it — argue about the tap last, not first. If you are working out whether your plot suits a rear extension, a side-return or something wider, that is the conversation to have with [builders in Cranleigh](/areas/cranleigh) who will still be doing your gas safety checks in ten years' time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does a kitchen extension cost in Cranleigh?",
+        answer:
+          "Including the fit-out, typically £3,500–£4,500 per m², against £2,700–£3,100 per m² for a plain single-storey shell. The difference is drainage, gas or induction supply, extract ventilation and cabinetry.",
+      },
+      {
+        question: "Do I need planning permission for a kitchen extension in Cranleigh?",
+        answer:
+          "Often not, within permitted development limits — broadly 3m beyond the rear wall (attached) or 4m (detached). A larger extension can use the neighbour consultation scheme (up to 6m/8m) for £249, rising to £310 from 8 December 2026 — but that scheme does not apply inside the Cranleigh Conservation Area, where full planning permission is needed instead.",
+      },
+      {
+        question: "Why does the layout cost more than the units?",
+        answer:
+          "Because it decides the structural opening — the steel beam's size, what it sits on, and where services can run. That calculation typically costs £1,500–£3,000 and should be agreed before the kitchen is designed, not after.",
+      },
+      {
+        question: "How long does a kitchen extension take from design to finished?",
+        answer:
+          "Realistically 5–7 months for a permitted development scheme: 3–5 weeks design, up to 6 weeks prior approval where needed, 10–14 weeks to build the shell, with fit-out overlapping the final weeks. Full planning adds several more months.",
+      },
+      {
+        question: "Can I use permitted development for a bigger kitchen extension in Cranleigh?",
+        answer:
+          "Only outside the conservation area. The larger neighbour consultation scheme allows up to 6m (attached) or 8m (detached), but it does not apply on Article 2(3) land, which includes conservation areas. Inside the Cranleigh Conservation Area you are capped at the standard 3m/4m limits.",
+      },
+    ],
+    art: BLOG_ART["kitchen-extensions-cranleigh-layout-budget"],
+  },
+  {
     slug: "trickle-vents-approved-document-f",
     title: "Trickle vents, condensation and Approved Document F",
     category: "Building control",
@@ -1618,6 +1796,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a 1930s semi-detached house in section, showing shallow strip foundations, a suspended timber ground floor, a chimney breast running up the party wall and a drainage run passing under the proposed extension",
     related: [
+      "kitchen-extensions-cranleigh-layout-budget",
       "trees-and-foundation-depth-cranleigh",
       "party-wall-notice-timing",
       "part-l-extension-insulation",

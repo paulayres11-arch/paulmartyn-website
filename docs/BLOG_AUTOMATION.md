@@ -321,12 +321,17 @@ Cranleigh topics — work through these:
 - [done 2026-08-24] Building inside the Cranleigh Conservation Area: what needs consent
 - [done 2026-08-26] Cranleigh's settlement boundary: why which side you are on decides everything
 - [done 2026-09-07] Kitchen extensions in Cranleigh: layout before budget
-- [ ] Wet rooms in a Cranleigh cottage: what an older building needs
+- [done 2026-09-09] Wet rooms in a Cranleigh cottage: what an older building needs
 - [ ] Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves
 - [ ] Garden rooms in Cranleigh: permitted development limits, and where they stop
 - [ ] Building on the Weald clay around Cranleigh: what it means for your footings
 - [ ] Barn conversions around Cranleigh: the planning route
 - [ ] Annexes and multigenerational living in Cranleigh: the planning position
+- [ ] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
+- [ ] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed
+- [ ] Extending a bungalow in Cranleigh: what's different from a two-storey house
+- [ ] Basements and cellars in Cranleigh: what the Weald clay means for digging down
+- [ ] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
 
 
 ### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS

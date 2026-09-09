@@ -16,6 +16,75 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "wet-rooms-cranleigh-cottage": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="wrsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="wrwall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#efe6d4" /><stop offset="1" stopColor="#d8cba8" />
+          </linearGradient>
+          <linearGradient id="wrroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c96a4a" /><stop offset="1" stopColor="#9c4c33" />
+          </linearGradient>
+          <linearGradient id="wrjoist" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a6a45" /><stop offset="1" stopColor="#5f4630" />
+          </linearGradient>
+          <linearGradient id="wramber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="wrfloorcav" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e9e2d2" /><stop offset="1" stopColor="#d3c7ab" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#wrsky)" />
+        <rect y="250" width="400" height="70" fill="#7fae5c" />
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">The floor decides before the tiles do</text>
+        <text x="24" y="53" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Wet rooms in a Cranleigh cottage</text>
+
+        {/* cottage elevation, left */}
+        <path d="M24 150 L24 250 L154 250 L154 150 L89 100 Z" fill="url(#wrwall)" stroke="#b9a97e" strokeWidth="2" />
+        <path d="M14 154 L89 96 L164 154 Z" fill="url(#wrroof)" stroke="#7a3a26" strokeWidth="2" />
+        <rect x="78" y="86" width="16" height="26" fill="#7a3a26" />
+        <rect x="46" y="168" width="34" height="34" fill="#dcecf5" stroke="#7a6a4a" strokeWidth="2" />
+        <path d="M63 168 v34 M46 185 h34" stroke="#7a6a4a" strokeWidth="1.5" />
+        <rect x="112" y="200" width="30" height="50" fill="#6b5138" stroke="#4a3826" strokeWidth="2" />
+        <circle cx="136" cy="226" r="2" fill="#d8cba8" />
+        <text x="89" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#2f3a40" textAnchor="middle">CRANLEIGH COTTAGE</text>
+
+        {/* floor cavity, cutaway, right */}
+        <rect x="190" y="110" width="186" height="160" fill="url(#wrfloorcav)" stroke="#b9a97e" strokeWidth="2" />
+        <text x="283" y="124" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#c4741f" textAnchor="middle">WET ROOM FLOOR</text>
+        <text x="283" y="142" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#c4741f" textAnchor="middle">FALL TO DRAIN</text>
+
+        {/* tiles on top surface */}
+        <rect x="198" y="150" width="168" height="14" fill="#eef2f4" stroke="#c7d2d8" strokeWidth="1" />
+        <path d="M220 150 v14 M242 150 v14 M264 150 v14 M286 150 v14 M308 150 v14 M330 150 v14 M352 150 v14" stroke="#c7d2d8" strokeWidth="1" />
+
+        {/* sloped screed and amber tanking membrane forming the fall */}
+        <path d="M198 178 L366 196 L366 206 L198 188 Z" fill="#c9b998" stroke="#a9967a" strokeWidth="1.5" />
+        <path d="M198 172 L366 190" stroke="url(#wramber)" strokeWidth="5" strokeLinecap="round" />
+        <path d="M210 176 q40 6 80 10 q38 4 66 6" stroke="#6fa8cf" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".8" />
+        <circle cx="366" cy="196" r="9" fill="#7d8790" stroke="#5d6568" strokeWidth="2" />
+        <circle cx="366" cy="196" r="3.5" fill="#5d6568" />
+
+        {/* joists in cross-section, checked before anything is built up */}
+        <rect x="204" y="212" width="16" height="48" fill="url(#wrjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="240" y="212" width="16" height="48" fill="url(#wrjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="276" y="212" width="16" height="48" fill="url(#wrjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="312" y="212" width="16" height="48" fill="url(#wrjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="348" y="212" width="16" height="48" fill="url(#wrjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <text x="283" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#2f3a40" textAnchor="middle">JOISTS CHECKED FIRST</text>
+
+        <rect y="320" width="400" height="80" fill="#1f2a30" />
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">Survey the joists before you choose a tile</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Structural engineer: £1,500–£3,000 — listed building consent: 8-week statutory target</text>
+        <text x="24" y="383" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Floor loading: Planning Portal — waterproofing: BS 5385 — ventilation: Approved Document F</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "kitchen-extensions-cranleigh-layout-budget": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

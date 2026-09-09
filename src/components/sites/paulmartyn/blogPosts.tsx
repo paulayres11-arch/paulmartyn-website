@@ -46,6 +46,157 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "wet-rooms-cranleigh-cottage",
+    title: "Wet rooms in a Cranleigh cottage: what an older building needs",
+    category: "Bathrooms",
+    date: "2026-09-09",
+    seoTitle: "Wet Room In A Cranleigh Cottage | Floor & Consent Guide",
+    metaDescription:
+      "A wet room needs a floor that falls to a drain — in a Cranleigh cottage that's old timber, not concrete. What it costs, what needs consent, and timing.",
+    excerpt:
+      "A wet room needs a floor that falls to a drain, and in a Cranleigh cottage that floor is almost always old timber, not concrete. Here's what has to happen before you choose a single tile.",
+    imageAlt:
+      "Illustration of a Cranleigh cottage elevation beside a cutaway of its old timber floor, showing joists in cross-section, an amber tanking membrane sloping down to a drain, and tiles laid over the fall",
+    related: [
+      "bathroom-fitting-cost-cranleigh",
+      "tiles-are-not-waterproof",
+      "cranleigh-conservation-area-consent",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A wet room is not a shower with the tray taken out. The **floor** has to form a fall to a drain, and in a Cranleigh cottage that floor is almost always suspended timber, not a concrete slab — check it before anything else is drawn up.",
+          "If the cottage is one of Cranleigh's **81 listed buildings**, cutting or notching joists, changing a floor level or moving a wall for the drainage run needs **listed building consent** in its own right, even though the plumbing itself does not.",
+          "Waterproofing follows **BS 5385** — a code of practice, not a building regulation — but skipping it is the single biggest reason a wet room in an old cottage fails within two years.",
+          "Ventilation is a regulation, not a code of practice: **Approved Document F** requires at least **15 litres per second** of intermittent extract where there's a bath or shower, rising to **4 air changes per hour** if the room has no external wall.",
+          "Budget **from £9,000** for the bathroom itself, a **structural engineer's assessment at £1,500–£3,000** for the floor, and — if the house is listed — an **8-week statutory wait** for consent before work can start.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The conversation usually starts with a photograph — a stone-floored wet room, no step, no tray, water just running away to a slot in the floor — and a question about fitting one into a cottage bathroom that has had the same bath in it since the 1970s. We like the idea as much as the client does. The problem is never the plumbing. It is what is under the floor.",
+      },
+      {
+        type: "p",
+        text: "Most bathrooms in and around the Cranleigh conservation area sit on a suspended timber floor — joists spanning between walls, with boards nailed across them — not the solid concrete slab a new-build wet room assumes. Forming a fall to a drain in a floor like that, without weakening it, is a proper piece of design, not a fitting job. And if the cottage is listed, which a good number of the older ones near the High Street are, the floor itself is protected before a single tile is chosen.",
+      },
+      { type: "h2", text: "Why the floor comes first, not the tiles" },
+      {
+        type: "p",
+        text: "A wet room floor has to do two things a normal bathroom floor does not: fall consistently towards a drain, typically at around 1:60 to 1:80, and stay completely rigid while it does it. Any deflection under a footstep or a filling bath cracks the tanking exactly where it needs to hold, and once that happens the water goes into the floor void, not down the drain.",
+      },
+      {
+        type: "p",
+        text: "On a suspended timber floor, that means checking the joists before anything else: their size, their span, their condition, and whether they were ever meant to carry the extra weight of a full bath or a tiled floor build-up in the first place. The Planning Portal's own guidance on kitchen and bathroom floor structures is blunt about this — a timber floor can be overloaded once a bath is filled with water and in use — and strengthening it is a job for a structural engineer or surveyor, not a guess made on site.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Firring pieces or counter-battens** fixed across the existing joists, tapering the floor build-up towards the drain — the most common fix, and the one that leaves the joists themselves untouched.",
+          "**A new, engineered floor structure** where the existing joists are undersized or badly worn — more work, but sometimes the only honest answer.",
+          "**Notching or cutting joists**, only where an engineer has calculated it is safe, and never as the first option — this is the step that most often needs sign-off before building control will accept it.",
+        ],
+      },
+      { type: "h2", text: "Tanking and ventilation: one is trade guidance, one is law" },
+      {
+        type: "p",
+        text: "We've covered proper tanking in detail elsewhere — see [tiles are not waterproof](/blog/tiles-are-not-waterproof) — so here is the short version for a wet room specifically. **BS 5385**, the wall and floor tiling code of practice, sets out that the structure behind and beneath the tiles in a wet room has to be tanked as a continuous membrane, floor and walls together, because there is no shower tray to contain a leak. The whole floor is doing the tray's job.",
+      },
+      {
+        type: "p",
+        text: "Ventilation is different: it is a building regulation, not a code of practice. **Approved Document F, Volume 1** requires at least **15 litres per second** of intermittent mechanical extract in a room with a bath or shower, or **8 litres per second** if it runs continuously. Where the wet room has no external wall or window — common in a cottage where the bathroom has been carved out of a middle room — the requirement rises to **4 air changes per hour**. That is not a style choice; it is why cottage wet rooms tucked into windowless corners are the ones that come back to us with mould in the grout eighteen months later.",
+      },
+      {
+        type: "quote",
+        text: "Every cottage floor is a slightly different job. The joists are never quite the sizes the old drawings say, one end is often resting on something it shouldn't be, and we lift a board before we agree a number with anyone. Fit a wet room to the floor you assume is there and you find out what is actually there halfway through the job — which is the expensive way to find out.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Do you need listed building consent for a wet room in Cranleigh?" },
+      {
+        type: "p",
+        text: "Cranleigh parish has **81 nationally listed buildings** — 80 Grade II and one Grade II*, the Church of St Nicolas — per the Cranleigh Neighbourhood Plan, plus a further **174 Buildings of Local Merit** that Waverley weighs as non-designated heritage assets even though they carry no statutory protection. If your cottage is on the first list, the distinction matters enormously for a wet room.",
+      },
+      {
+        type: "p",
+        text: "Listed building consent covers any work that affects a listed building's character, and that is not limited to the front elevation. Cutting or replacing floor joists, changing a floor level to form a fall, and moving an internal wall for the drainage run can all require consent in their own right — separate from, and in addition to, any building control sign-off for the structural work itself. Carrying it out without consent is a **criminal offence**, and Waverley can require unauthorised work to be reversed.",
+      },
+      {
+        type: "p",
+        text: "There is **no application fee** for listed building consent itself, and the statutory target for a decision is the same **8 weeks** as a full planning application. A **Building of Local Merit** does not need listed building consent for internal work like this — the 174-strong list is a material planning consideration, not a statutory designation, so the structural and building control route is the same as for any older house. Where it does matter is if the cottage also sits inside the **Cranleigh Conservation Area**, where anything visible from outside — a new rooflight for the wet room, for instance — is the trigger, not the bathroom itself. See [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) for what needs consent there.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Submitting a bare listed building consent application and waiting for the case officer to come back with questions is the single most common way this process runs long. Get the structural engineer's floor assessment and method statement done first, and submit it **with** the application rather than after a request for further information — that alone typically avoids a second 8-week determination period stacked on the first, and on a project already booked in with a builder, an unplanned 8 weeks is real money sitting idle, not just a delay.",
+      },
+      { type: "h2", text: "What a wet room costs in an older Cranleigh cottage" },
+      {
+        type: "p",
+        text: "Start from the same baseline as any full bathroom refit here: **from £9,000** for a complete job — strip-out, plumbing, electrics, tiling, suite and decoration (see [what a bathroom fitting costs in Cranleigh](/blog/bathroom-fitting-cost-cranleigh) for what moves that number generally). A wet room in an older cottage adds to it in three specific, checkable places.",
+      },
+      {
+        type: "table",
+        head: ["What's added", "Typical cost", "Why it's needed"],
+        rows: [
+          ["Structural engineer's floor assessment", "£1,500 – £3,000", "One fee whatever the room size — covers the joist survey and the method statement for building control, and for listed building consent if it applies"],
+          ["Floor strengthening or rebuild", "Varies with what's found", "Firring pieces are inexpensive; a full joist rebuild is a different job — get this priced only after the survey, never before it"],
+          ["Listed building consent", "No application fee", "But budget the 8-week statutory decision period into your programme, not your invoice"],
+        ],
+        caption: "Guide figures for Cranleigh, 2026. A full structural quote can only follow the survey, not precede it.",
+      },
+      { type: "h2", text: "How long it actually takes" },
+      {
+        type: "p",
+        text: "The wet room itself is rarely the slow part of the programme. The paperwork and the floor survey are.",
+      },
+      {
+        type: "table",
+        head: ["Stage", "Typical time", "Notes"],
+        rows: [
+          ["Floor survey and structural engineer's report", "1 – 2 weeks", "Do this before any consent application, not after"],
+          ["Listed building consent, if needed", "8 weeks statutory target", "Longer if the application is incomplete or the case officer asks for more information"],
+          ["Building control submission and approval", "Can run alongside consent", "The structural method statement usually does double duty for both"],
+          ["Strip-out and floor build-up", "1 – 2 weeks", "The stage most affected by what the survey actually finds"],
+          ["Tanking, tiling and fit-out", "2 – 3 weeks", "Cannot be rushed — tanking systems need proper curing time between coats"],
+        ],
+        caption: "A realistic total for a listed cottage is 10–14 weeks from survey to finished room; nearer 5–7 weeks where no consent is needed.",
+      },
+      {
+        type: "p",
+        text: "Get the floor looked at before you fall in love with a particular finish, and a wet room in even the oldest Cranleigh cottage is entirely achievable — the joists just decide the order things happen in, not whether they happen at all. If you are weighing a wet room against a simpler refit, or wondering whether your cottage needs consent before a tile is chosen, that is exactly the sort of conversation to have early with [builders in Cranleigh](/areas/cranleigh) who will still be maintaining the tanking in twenty years' time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need listed building consent for a wet room in a Cranleigh cottage?",
+        answer:
+          "Only if the cottage is one of Cranleigh's 81 listed buildings, and then usually yes — cutting or altering floor joists, changing floor levels or moving a wall for drainage all affect the building's character and need consent in their own right, separately from building control. There is no application fee, but budget an 8-week statutory decision period.",
+      },
+      {
+        question: "Can an old suspended timber floor take a wet room?",
+        answer:
+          "Usually, once it has been assessed. Most Cranleigh cottage floors are suspended timber rather than solid concrete, and the Planning Portal's own guidance is clear that a timber floor can be overloaded by a bath in use — a structural engineer needs to check the joists and specify how the fall to the drain is formed before any floor build-up goes down.",
+      },
+      {
+        question: "What ventilation does a wet room need?",
+        answer:
+          "Approved Document F requires at least 15 litres per second of intermittent extract where there's a bath or shower, or 8 l/s continuous. A wet room with no external wall needs 4 air changes per hour instead. This is a building regulation, not a preference.",
+      },
+      {
+        question: "Is tanking a building regulation?",
+        answer:
+          "No — tanking a wet room follows BS 5385, a code of practice, not a statutory building regulation. That does not make it optional: it is the specification the trade and building control both expect, and skipping it is the most common cause of an early wet room failure.",
+      },
+      {
+        question: "How much more does a wet room cost than a standard bathroom refit in Cranleigh?",
+        answer:
+          "Start from the same £9,000 baseline as any full bathroom refit, then add a structural engineer's assessment at £1,500–£3,000 and whatever floor strengthening the survey finds is needed — which can range from a straightforward set of firring pieces to a more involved rebuild. Get the survey done before you price the floor work, not after.",
+      },
+    ],
+    art: BLOG_ART["wet-rooms-cranleigh-cottage"],
+  },
+  {
     slug: "kitchen-extensions-cranleigh-layout-budget",
     title: "Kitchen extensions in Cranleigh: layout before budget",
     category: "Kitchens",
@@ -1963,6 +2114,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "tiles-are-not-waterproof",
       "building-control-completion-certificate",
       "extension-value-cranleigh",
+      "wet-rooms-cranleigh-cottage",
     ],
     body: [
       {

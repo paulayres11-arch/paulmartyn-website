@@ -46,6 +46,191 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "structural-calculations-building-control",
+    title: "Structural calculations: what a building control officer looks for",
+    category: "Building control",
+    date: "2026-09-11",
+    seoTitle: "Structural Calculations | What Building Control Checks",
+    metaDescription:
+      "Removing a wall or adding a steel beam needs structural calculations building control can check. What they cost, who checks them, and what skipping costs.",
+    excerpt:
+      "A structural calculation is the only proof, in writing, that a beam or a floor will actually carry what's built on it — and getting it agreed before the steel is ordered is far cheaper than defending it afterwards.",
+    imageAlt:
+      "Illustration of a structural engineer's calculation sheet showing a beam diagram and load arrows on the left, linked by a dashed arrow to a house wall cutaway on the right showing a steel beam resting on two padstones under a load",
+    related: [
+      "building-control-completion-certificate",
+      "kitchen-extensions-cranleigh-layout-budget",
+      "loft-conversions-cranleigh-roof-types",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Any work that touches a load-bearing wall, a roof structure or the foundations — a knocked-through wall, a loft conversion, a two-storey extension — needs **structural calculations** before building control will sign it off, not after.",
+          "Calculations are normally produced by a structural or civil engineer, working to the **Eurocodes** — the British Standards suite for structural design. Budget **£1,500–£3,000**, whatever the size of the opening.",
+          "You can apply through **Full Plans** (checked and approved before you start), a **Building Notice** (start almost immediately, reviewed as the job proceeds) or a **Registered Building Control Approver** — the private-sector route since **6 April 2024**, replacing the old \"Approved Inspector\" scheme.",
+          "A building control officer does not redesign your beam. They check what's proposed — and later what's built — against the calculation: the span, the load, the bearing, the deflection and the restraint straps.",
+          "Start structural work before the calculation is approved and the risk is real: opening up finished plasterboard for an inspection, a redesigned beam, and weeks added to getting a **completion certificate**.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The phone call we dread is the one after the work is already covered up. Someone has taken out a wall, put a beam in sized by \"what the builder down the road used last time,\" boarded over it, and then rung building control to book the final inspection — only to be told the inspector needs to see the beam and its padstones before anything goes over them, and now has to look at calculations for something that is already hidden behind plasterboard.",
+      },
+      {
+        type: "p",
+        text: "Structural calculations are not a formality building control invents to justify a fee. They are the only evidence, in writing, that a beam, a foundation or a roof will carry what is about to be built on it — and getting that evidence agreed before work starts, rather than defended afterwards, is the difference between a routine inspection and a very expensive afternoon with a crowbar.",
+      },
+      { type: "h2", text: "What actually needs a structural calculation" },
+      {
+        type: "p",
+        text: "**Part A of the Building Regulations 2010 — Structure** — requires a building to be built so the loads it carries are sustained and transmitted safely to the ground, without excessive deflection or ground movement causing damage. **Approved Document A** sets out how a designer shows that. On a typical domestic project, that means anywhere you are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Removing or altering a load-bearing wall** — an opening for a [kitchen extension](/blog/kitchen-extensions-cranleigh-layout-budget), a knocked-through lounge, a doorway wider than a stud partition allows",
+          "**Adding a new floor or roof structure** — a loft conversion, a room over a garage, a new dormer",
+          "**Extending or altering foundations**, especially near a tree or on sloping or made-up ground",
+          "**Fitting a rooflight or lantern** that interrupts the roof structure rather than sitting within it",
+          "**Cutting or notching floor joists** for new drainage, a [wet room](/blog/wet-rooms-cranleigh-cottage) or underfloor heating pipework",
+        ],
+      },
+      {
+        type: "p",
+        text: "What does not usually need a full calculation is like-for-like work — a replacement window in a non-structural opening, a new stud partition carrying no load, or decoration. The test is whether the job changes how load moves through the building. If it does, an engineer has to show, on paper, that it still works once it is finished.",
+      },
+      { type: "h2", text: "Who produces the calculations, and what they cost" },
+      {
+        type: "p",
+        text: "Calculations are normally produced by a chartered structural or civil engineer, working to the **Eurocodes** — BS EN 1990 to BS EN 1999, the British and European standards suite that replaced the older British Standard codes for structural design. For a single beam or opening that is one drawing and one calculation sheet. For a loft conversion, or a project changing several structural elements at once, it is a fuller package covering everything that changes.",
+      },
+      {
+        type: "table",
+        head: ["Job", "Typical structural engineer's fee", "What's covered"],
+        rows: [
+          ["Single opening or beam (kitchen extension, knocked-through wall)", "£1,500 – £3,000", "Beam size, padstones, lintel over the opening"],
+          ["Loft conversion", "£1,500 – £3,000", "New floor joists, roof strengthening, stair opening"],
+          ["Full renovation or two-storey extension", "£1,500 – £3,000, sometimes more than one calculation", "Every structural element that changes, plus foundation design"],
+        ],
+        caption: "One fee for a single opening, whatever the room size — get it agreed before the kitchen or loft is designed around it, not after.",
+      },
+      { type: "h2", text: "Full Plans, Building Notice, or a Registered Building Control Approver" },
+      {
+        type: "p",
+        text: "There are three routes into building control, and the choice decides when you find out whether the calculation is accepted.",
+      },
+      {
+        type: "table",
+        head: ["Route", "When you can start", "What it means for structural work"],
+        rows: [
+          ["Full Plans (local authority)", "After plans and calculations are checked — 5 weeks statutory target, or 2 months by agreement", "Calculations are reviewed on paper before a spade goes in, so disagreements get resolved before you have committed to a design"],
+          ["Building Notice (local authority)", "As little as 2 days after notice is given", "No prior check of plans or calculations — the inspector reviews the structural work as it happens on site, which is late for a beam you have already ordered"],
+          ["Registered Building Control Approver (private, since 6 April 2024)", "Similar to Full Plans, agreed directly with the approver", "Replaced the old \"Approved Inspector\" scheme under the Building Safety Act 2022 reforms; same principle of checking the calculation before work starts"],
+        ],
+        caption: "A Building Notice is the fastest way to start and the slowest way to find out a beam calculation has a problem.",
+      },
+      {
+        type: "p",
+        text: "For anything genuinely structural, Full Plans or a Registered Building Control Approver is the safer route — not because a Building Notice is unlawful, but because the calculation gets checked while it is still a drawing, not after the beam is already built into the wall.",
+      },
+      { type: "h2", text: "What the officer is actually checking the calculation against" },
+      {
+        type: "p",
+        text: "A building control surveyor is not redesigning the structure — re-deriving someone else's calculation from scratch is not the job. What they check is that the calculation is complete, uses a recognised design standard, and that what gets built on site matches what was calculated. For a typical beam or opening that means:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The **span**, and the load it carries — one storey of roof, or a full two-storey load above",
+          "The **size and grade** of the steel or timber, checked against the calculated capacity",
+          "What the beam **bears on** — the padstones, and whether the wall below can take the extra point load",
+          "**Deflection** — how much the beam is allowed to sag under load without cracking the ceiling or the wall above it",
+          "**Lateral restraint** — the straps tying the beam and the surrounding structure together, easy to miss on site and one of the more common reasons for a failed inspection",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is also why the timing of the inspection matters. Building control needs to see the beam and its bearings before they are covered by plasterboard or insulation. An inspection booked after the ceiling is boarded means either exposing it again or a delay while the inspector reviews photographs instead, which not every building control body will accept in place of seeing it directly.",
+      },
+      { type: "h2", text: "What happens if you start before the calculation is approved" },
+      {
+        type: "p",
+        text: "On a Building Notice you can, technically, start almost immediately, calculation or not. In practice, starting the structural work before an engineer has sized the beam is how the phone call at the start of this piece happens. If the officer's inspection finds work that does not match an approved calculation — or no calculation at all — every option left is worse than doing it in the right order: opening up finished work for inspection, commissioning a retrospective calculation for something already built and hoping the as-built condition genuinely satisfies it, or, at worst, taking down and rebuilding a beam that was undersized.",
+      },
+      {
+        type: "quote",
+        text: "The beam is never the expensive part of the job. Taking a beam out again after the plasterboard is up and the kitchen units are booked in — that is the expensive part. We get the structural engineer's drawing agreed before we order the steel, not after it has been delivered, because reordering a beam costs a fraction of what reordering a finished ceiling does.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Agreeing the structural calculation and having it accepted by building control before the steel is ordered, rather than after work is already covered, typically avoids **£1,000–£2,000** in exposing and redoing finished work, and **two to four weeks** lost to a second inspection and, where the design has to change, a revised calculation.",
+      },
+      { type: "h2", text: "How long structural calculations realistically add to a programme" },
+      {
+        type: "table",
+        head: ["Stage", "Typical time", "Notes"],
+        rows: [
+          ["Structural engineer's site visit and calculation", "1 – 2 weeks", "Do this before ordering steel or agreeing a kitchen or loft layout"],
+          ["Full Plans or Registered Building Control Approver check", "Up to 5 weeks statutory target, or agreed directly with an RBCA", "Runs alongside other design work if started early enough"],
+          ["Building Notice, if used", "Can start within days", "Calculation still needed, but reviewed on site rather than in advance — higher risk of a mismatch found late"],
+          ["Site inspections at key stages", "Ongoing through the build", "Foundation, damp-proof course, beam or structure before covering, completion"],
+        ],
+        caption: "Getting the calculation done early is the one step that shortens every route through building control, not just the slow one.",
+      },
+      { type: "h2", text: "Getting the order right" },
+      {
+        type: "ol",
+        items: [
+          "**Get a structural engineer involved** as soon as you know a wall, a floor or a roof is changing — before the kitchen or loft is designed around it.",
+          "**Choose Full Plans or a Registered Building Control Approver** for anything genuinely structural, rather than a Building Notice, so the calculation is checked before you start.",
+          "**Order the steel or timber** only once the calculation is accepted, not once it is merely written.",
+          "**Book the inspection** before anything covers the beam or its bearings — plasterboard, insulation or a ceiling.",
+          "**Keep the calculation and the [completion certificate](/blog/building-control-completion-certificate) together** — a buyer's solicitor will ask for both when the house is sold.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you are planning any work that touches a wall, a floor or a roof structure, get the structural engineer involved at the same time as the kitchen or loft designer, not after — it is the one conversation that decides whether the rest of the project runs to the programme you were quoted. It is exactly the kind of thing worth raising early with [builders in Cranleigh](/areas/cranleigh) who deal with building control on every job, not only the awkward ones.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need structural calculations to remove a wall in my house?",
+        answer:
+          "Yes, if the wall is load-bearing. Part A of the Building Regulations 2010 requires any change that alters how loads are carried to be shown, in writing, to be safe — usually a beam and padstone calculation from a structural engineer, checked by building control before the work is signed off.",
+      },
+      {
+        question: "How much do structural calculations cost?",
+        answer:
+          "Typically £1,500–£3,000 for a single opening or beam, whatever the size of the room, covering the engineer's site visit, the calculation and the drawing building control needs. A loft conversion or a project with several structural changes may need more than one calculation within the same range, or a fee toward the top of it.",
+      },
+      {
+        question: "What's the difference between a Building Notice and Full Plans?",
+        answer:
+          "A Building Notice lets you start work within a couple of days, but building control does not check your plans or calculations in advance — they review the structural work as it happens on site. Full Plans, or a Registered Building Control Approver, checks the calculation before you start, which is the safer route for anything genuinely structural.",
+      },
+      {
+        question: "What is a Registered Building Control Approver?",
+        answer:
+          "The private-sector alternative to a local authority's building control department, called an \"Approved Inspector\" until the role was replaced under the Building Safety Act 2022. Since 6 April 2024, private building control work in England has been carried out by Registered Building Control Approvers registered with the Building Safety Regulator instead.",
+      },
+      {
+        question: "What happens if I start structural work before building control has approved the calculation?",
+        answer:
+          "You risk the inspector finding, at a later visit, that what's built does not match an approved design — which can mean opening up finished work such as plasterboard or insulation for inspection, or commissioning a retrospective calculation for something already built. It is far cheaper to get the calculation agreed before the steel is ordered.",
+      },
+      {
+        question: "Does a small steel beam still need a calculation?",
+        answer:
+          "Yes. Building control does not have a size threshold below which structural work is exempt — any beam replacing a load-bearing wall or carrying a genuine structural load needs a calculation, however short the span.",
+      },
+    ],
+    art: BLOG_ART["structural-calculations-building-control"],
+  },
+  {
     slug: "wet-rooms-cranleigh-cottage",
     title: "Wet rooms in a Cranleigh cottage: what an older building needs",
     category: "Bathrooms",
@@ -209,6 +394,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a house cutaway showing an existing kitchen on the left and a new glass-roofed kitchen extension on the right, joined by an amber steel beam resting on two grey padstones, with a dashed drainage pipe running underground to a manhole",
     related: [
+      "structural-calculations-building-control",
       "extending-1930s-semi-cranleigh",
       "party-wall-notice-timing",
       "extension-value-cranleigh",

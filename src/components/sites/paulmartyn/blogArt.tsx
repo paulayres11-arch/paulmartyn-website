@@ -16,6 +16,83 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "structural-calculations-building-control": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="scsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="scbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="scbeam" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="scpaper" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
+          </linearGradient>
+          <linearGradient id="scseal" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#scsky)" />
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">The drawing behind the beam</text>
+        <text x="24" y="53" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Structural calculations and building control</text>
+
+        {/* calculation sheet, left: graph paper, a beam-and-load diagram, engineer's stamp */}
+        <g transform="translate(26,86)">
+          <rect x="0" y="0" width="150" height="170" rx="4" fill="url(#scpaper)" stroke="#d8c9a8" strokeWidth="2" />
+          <path d="M22 0 v170 M52 0 v170 M82 0 v170 M112 0 v170 M142 0 v170 M0 28 h150 M0 56 h150 M0 84 h150 M0 112 h150 M0 140 h150" stroke="#e5d9bd" strokeWidth="1" />
+
+          {/* beam diagram: supports, beam line, UDL load arrows */}
+          <path d="M20 92 h108" stroke="#1f2a30" strokeWidth="3" />
+          <path d="M20 92 l-8 14 h16 z" fill="#8a8f92" stroke="#5d6568" strokeWidth="1" />
+          <path d="M128 92 l-8 14 h16 z" fill="#8a8f92" stroke="#5d6568" strokeWidth="1" />
+          <path d="M40 62 v26 M60 62 v26 M80 62 v26 M100 62 v26 M120 62 v26" stroke="#c4741f" strokeWidth="2" />
+          <path d="M40 88 l-4 -8 l8 0 z M60 88 l-4 -8 l8 0 z M80 88 l-4 -8 l8 0 z M100 88 l-4 -8 l8 0 z M120 88 l-4 -8 l8 0 z" fill="#c4741f" />
+          <text x="74" y="54" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#c4741f" textAnchor="middle" fontWeight="700">LOAD</text>
+
+          {/* handwritten calculation lines */}
+          <path d="M14 122 h122 M14 136 h90 M14 150 h108 M14 160 h70" stroke="#b7a67e" strokeWidth="2" opacity=".6" strokeLinecap="round" />
+
+          {/* engineer's stamp */}
+          <circle cx="126" cy="24" r="17" fill="url(#scseal)" stroke="#c4741f" strokeWidth="2" />
+          <path d="M118 24 l5 5 l10 -12" stroke="#1f2a30" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        </g>
+        <text x="101" y="272" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#5d7078" textAnchor="middle">CALCULATION</text>
+
+        {/* dashed arrow: the drawing becomes the beam */}
+        <path d="M180 190 q22 0 26 0" stroke="#e08a2b" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
+        <path d="M200 184 l10 6 l-10 6 z" fill="#e08a2b" />
+
+        {/* wall cutaway, right: steel beam on padstones under a load */}
+        <g transform="translate(214,86)">
+          <rect x="0" y="0" width="160" height="170" fill="url(#scbrick)" stroke="#7a4a34" strokeWidth="2" />
+          <path d="M0 20 h160 M0 40 h160 M0 60 h160 M0 80 h160 M0 100 h160 M0 120 h160 M0 140 h160" stroke="#8a5138" strokeWidth="1" opacity=".4" />
+          <rect x="12" y="66" width="136" height="60" fill="#eef2f4" stroke="#c7d2d8" strokeWidth="2" />
+
+          {/* padstones */}
+          <rect x="18" y="86" width="20" height="40" fill="#8a8f92" stroke="#5d6568" strokeWidth="1.5" />
+          <rect x="122" y="86" width="20" height="40" fill="#8a8f92" stroke="#5d6568" strokeWidth="1.5" />
+          {/* steel beam */}
+          <rect x="18" y="72" width="124" height="16" fill="url(#scbeam)" stroke="#c4741f" strokeWidth="1.5" />
+          {/* restraint straps tying beam into the wall */}
+          <path d="M24 72 l-8 -10 M136 72 l8 -10" stroke="#c4741f" strokeWidth="3" strokeLinecap="round" />
+
+          {/* load pressing down from the floor above */}
+          <path d="M40 20 v40 M80 20 v40 M120 20 v40" stroke="#1f2a30" strokeWidth="2.5" opacity=".55" />
+          <path d="M40 60 l-5 -9 h10 z M80 60 l-5 -9 h10 z M120 60 l-5 -9 h10 z" fill="#1f2a30" opacity=".55" />
+        </g>
+        <text x="294" y="272" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#c4741f" textAnchor="middle">BEAM &amp; PADSTONES</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Building control checks the beam against the drawing</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Structural engineer: £1,500–£3,000 — Building Regulations Part A</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: Approved Document A — Registered Building Control Approvers, from 6 April 2024</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "wet-rooms-cranleigh-cottage": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

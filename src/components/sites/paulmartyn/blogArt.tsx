@@ -16,6 +16,88 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "cranleigh-victorian-cottage-rewire-replumb": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="vcsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="vcbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a8543c" /><stop offset="1" stopColor="#7a3a28" />
+          </linearGradient>
+          <linearGradient id="vcroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7680" /><stop offset="1" stopColor="#414a52" />
+          </linearGradient>
+          <linearGradient id="vcamber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="vcvoid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e9e2d2" /><stop offset="1" stopColor="#d3c7ab" />
+          </linearGradient>
+          <linearGradient id="vcjoist" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a6a45" /><stop offset="1" stopColor="#5f4630" />
+          </linearGradient>
+          <linearGradient id="vclead" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a3a9ad" /><stop offset="1" stopColor="#6f767a" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#vcsky)" />
+        <rect y="250" width="400" height="70" fill="#7fae5c" />
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">Route it through the void, not the wall</text>
+        <text x="24" y="53" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Victorian cottage rewiring and replumbing</text>
+
+        {/* cottage elevation, left: solid brick, slate roof, sash windows */}
+        <path d="M28 150 L28 250 L158 250 L158 150 L93 96 Z" fill="url(#vcbrick)" stroke="#5a2c1e" strokeWidth="2" />
+        <path d="M18 154 L93 90 L168 154 Z" fill="url(#vcroof)" stroke="#333b42" strokeWidth="2" />
+        <rect x="116" y="74" width="14" height="32" fill="#4a545c" stroke="#333b42" strokeWidth="1.5" />
+        <rect x="40" y="172" width="30" height="36" fill="#dcecf5" stroke="#efe6d4" strokeWidth="2" />
+        <path d="M55 172 v36 M40 190 h30" stroke="#b9a97e" strokeWidth="1.5" />
+        <rect x="116" y="172" width="30" height="36" fill="#dcecf5" stroke="#efe6d4" strokeWidth="2" />
+        <path d="M131 172 v36 M116 190 h30" stroke="#b9a97e" strokeWidth="1.5" />
+        <rect x="80" y="206" width="26" height="44" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.5" />
+        <path d="M80 206 q13 -15 26 0" fill="none" stroke="#dcecf5" strokeWidth="2" />
+        <text x="93" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#2f3a40" textAnchor="middle">VICTORIAN COTTAGE</text>
+
+        {/* wall + floor void cutaway, right */}
+        <rect x="190" y="100" width="186" height="170" fill="url(#vcvoid)" stroke="#b9a97e" strokeWidth="2" />
+        <text x="283" y="120" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#c4741f" textAnchor="middle">FLOOR VOID ROUTE</text>
+
+        {/* solid brick wall in section, with a thin lath-and-plaster face */}
+        <rect x="198" y="108" width="30" height="154" fill="url(#vcbrick)" stroke="#5a2c1e" strokeWidth="1.5" />
+        <rect x="228" y="108" width="6" height="154" fill="#efe6d4" stroke="#c9b998" strokeWidth="1" />
+
+        {/* socket on the inner face */}
+        <rect x="228" y="172" width="12" height="16" fill="#f7f3ea" stroke="#8a8f92" strokeWidth="1.5" />
+        <rect x="231" y="176" width="2" height="4" fill="#5d6568" /><rect x="236" y="176" width="2" height="4" fill="#5d6568" />
+
+        {/* joists in the floor void */}
+        <rect x="248" y="216" width="14" height="46" fill="url(#vcjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="278" y="216" width="14" height="46" fill="url(#vcjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="308" y="216" width="14" height="46" fill="url(#vcjoist)" stroke="#4a3826" strokeWidth="1.5" />
+        <rect x="338" y="216" width="14" height="46" fill="url(#vcjoist)" stroke="#4a3826" strokeWidth="1.5" />
+
+        {/* old lead pipe stub, replaced by new pipe alongside it */}
+        <rect x="252" y="238" width="22" height="8" rx="3" fill="url(#vclead)" stroke="#5d6568" strokeWidth="1" />
+        <rect x="282" y="238" width="22" height="8" rx="3" fill="url(#vcamber)" stroke="#c4741f" strokeWidth="1" />
+        <text x="263" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#5d6568" textAnchor="middle">LEAD</text>
+        <text x="293" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#c4741f" textAnchor="middle">NEW</text>
+
+        {/* amber cable: through the void, then a short rise to the socket — not a chase up the wall */}
+        <path d="M362 234 L262 234 L234 234 L234 180" fill="none" stroke="url(#vcamber)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M234 186 l-5 -9 h10 z" fill="#e08a2b" />
+
+        {/* the chase avoided: a crossed-out red line straight up the brick */}
+        <path d="M213 258 L213 116" stroke="#b23a2e" strokeWidth="2.5" strokeDasharray="2 5" strokeLinecap="round" opacity=".85" />
+        <path d="M205 190 L221 174 M205 174 L221 190" stroke="#b23a2e" strokeWidth="2.5" strokeLinecap="round" />
+
+        <rect y="320" width="400" height="80" fill="#1f2a30" />
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">Survey first, chase last</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">EICR: typically £120–£300 — rewire notifiable under Part P, tested to BS 7671</text>
+        <text x="24" y="383" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: Historic England — Installing New Services; Water Supply (Water Fittings) Regs 1999</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "structural-calculations-building-control": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

@@ -46,6 +46,164 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-victorian-cottage-rewire-replumb",
+    title: "Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves",
+    category: "Electrics & plumbing",
+    date: "2026-09-14",
+    seoTitle: "Rewiring & Replumbing A Victorian Cottage In Cranleigh",
+    metaDescription:
+      "Old wiring and lead or galvanised pipework are common in Cranleigh's Victorian cottages. What's notifiable, what a sympathetic route costs, and what to avoid.",
+    excerpt:
+      "Round-pin sockets, a fuse box instead of a consumer unit, and pipework older than the phone line — a Victorian cottage rewire and replumb is rarely optional. Here's what to expect, and how to do it without chasing out the lath and plaster.",
+    imageAlt:
+      "Illustration of a Victorian brick cottage elevation beside a wall cutaway showing an amber cable routed through a floor void to a socket, and a red crossed-out line marking a chase avoided straight through the solid brick wall, with an old lead pipe stub beside new pipework",
+    related: [
+      "wet-rooms-cranleigh-cottage",
+      "cranleigh-buildings-of-local-merit",
+      "bathroom-fitting-cost-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Round-pin sockets, a fuse box instead of a consumer unit, and rubber- or fabric-insulated cable are the three signs a Victorian cottage's wiring predates modern safety standards — get an **EICR** before agreeing any scope of work.",
+          "A full or partial rewire, a new consumer unit and any electrical work in a kitchen or bathroom are all **notifiable** under **Part P** of the Building Regulations, certified either through a registered electrician's **competent person scheme** or via building control directly.",
+          "Lead pipe wasn't banned in new plumbing until **1969**, so a cottage of this age can still have original lead supply pipe; galvanised steel pipe is nearly as old and corrodes from the inside, showing up as discoloured water and falling pressure long before it fails outright.",
+          "\"Sympathetic\" means routing cable and pipework through floor and ceiling voids wherever you can, not chasing straight through solid Victorian brick and lath-and-plaster — Historic England's own guidance treats chasing as a last resort, not a starting point.",
+          "Most Victorian cottages in Cranleigh are not nationally listed, so the rewire and replumb themselves rarely need consent — the requirement is compliance with **Part P** and the **Water Regulations**, not planning permission.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The first sign is never the wiring itself. It's the smell of warm plastic behind a socket, or a shower that runs fine until someone flushes a toilet upstairs and the pressure drops to nothing. By the time a cottage owner calls us about rewiring or replumbing, the house has usually been quietly telling them something for a while.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh has plenty of Victorian cottages and terraces — solid brick, built in the second half of the 19th century, without the cavity wall a house built even fifty years later would have as standard. Most have been touched since: a socket added here, a section rewired in the 1990s and left to meet the rest of the house somewhere in the middle. That patchwork is normal, and it's exactly what an EICR and a plumbing survey are for — finding out what's actually behind the plaster before anyone prices the job.",
+      },
+      { type: "h2", text: "The signs a Victorian cottage's wiring or plumbing needs attention" },
+      {
+        type: "p",
+        text: "None of these mean the house is dangerous today. They mean it was wired or plumbed to a standard that has since moved on, and that a professional survey — not a guess — should decide what to do about it.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Round-pin sockets**, or a mix of round-pin and modern flat-pin, which usually means a rewire was started at some point and never finished",
+          "A **fuse box** with rewireable fuse wire rather than a consumer unit with RCD or RCBO protection, which won't trip fast enough to prevent a shock in the way a modern circuit breaker will",
+          "**Rubber- or fabric-insulated cable**, which perishes and cracks with age — often visible in the loft or under a lifted floorboard, long before it causes a fault anyone notices day to day",
+          "**Low pressure or discoloured water** at particular taps, a common sign of galvanised steel pipe corroding and narrowing from the inside",
+          "**No stopcock or isolation valves** near individual fittings, so a single dripping tap means shutting off the whole house to fix it",
+        ],
+      },
+      {
+        type: "p",
+        text: "An **Electrical Installation Condition Report (EICR)** is the starting point for the wiring side — a qualified electrician tests the existing circuits and rates any faults found by how urgently they need attention. Electrical Safety First, the industry safety body, recommends an EICR at least every 10 years for an owner-occupied home, sooner for anything older or where the history is unclear. It typically costs in the region of **£120–£300** for a house this size, against a rewire that, done blind, can mean redoing work that didn't need touching.",
+      },
+      { type: "h2", text: "Is rewiring or replumbing a Victorian cottage notifiable work?" },
+      {
+        type: "p",
+        text: "Yes, for most of what a Victorian cottage typically needs. **Part P of the Building Regulations** covers electrical safety in dwellings in England, and it splits work into notifiable and non-notifiable. A full or partial rewire is notifiable. So is a **new consumer unit** — added to the notifiable list in 2016 — and so is any electrical work in a kitchen, bathroom or other \"special location\", regardless of how minor it looks.",
+      },
+      {
+        type: "p",
+        text: "Notifiable work is signed off one of two ways: a registered electrician working under a **competent person scheme** — NICEIC and NAPIT are the two most widely used — self-certifies the job and notifies building control on your behalf, or you notify building control directly and pay for their own inspection. Either route should end with an **Electrical Installation Certificate**, not just an invoice. The technical standard the work is judged against is **BS 7671**, the IET Wiring Regulations, currently the 18th Edition — Part P sets the legal requirement to be safe, BS 7671 is how an electrician shows that it is.",
+      },
+      {
+        type: "p",
+        text: "Plumbing has its own version of the same split. Any significant change to the pipework in a house has to comply with the **Water Supply (Water Fittings) Regulations 1999**, which can require notifying your water supplier before certain work goes ahead — and fitting an **unvented hot water cylinder** is separately notifiable under **Building Regulations Approved Document G3**, either by an installer holding a G3 qualification or through building control directly. A full replumb touching both usually needs both boxes ticked, not just one.",
+      },
+      { type: "h2", text: "Working with the cottage's fabric, not against it" },
+      {
+        type: "p",
+        text: "This is where a Victorian cottage differs from a modern house, and where \"sympathetic\" earns its place in the brief rather than being a nice word for expensive. A cavity wall gives a modern electrician somewhere to hide a cable without weakening anything. Solid Victorian brick has no cavity — a chase cut into it removes structural material from the only leaf of wall there is, and it does the same to lime or lath-and-plaster on the inner face, which is far easier to crack than modern plasterboard and far harder to match once it's gone.",
+      },
+      {
+        type: "p",
+        text: "Historic England's own guidance on installing new services is blunt about the order of preference: avoid chasing where you can, route cable and pipe through the voids under floors and above ceilings instead, share a single route between several services rather than cutting several separate chases, and use wireless controls for lighting or heating where a hard-wired connection isn't essential. Chasing is the last resort in that list, not the first move.",
+      },
+      {
+        type: "quote",
+        text: "You never fully know what's in a Victorian wall until you're in it. We've found candle wax on old cable, and a length of copper pipe soldered straight onto a lead stub that was only ever meant to be temporary forty years ago. The plan has to survive contact with what's actually behind the plaster, not just what the drawing assumed was there — which is exactly why we route through the floor void first and only chase where there genuinely isn't another way.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Routing new cable and pipe runs through the floor and ceiling voids that already exist, rather than chasing straight through solid Victorian brick, is what keeps a rewire from turning into a full replaster. Making good a wall after chasing it typically adds **£800–£2,500** in replastering on top of the electrical work itself — a cost a sympathetic route avoids almost entirely, while leaving the original lath-and-plaster intact instead of losing it.",
+      },
+      { type: "h2", text: "What it costs" },
+      {
+        type: "table",
+        head: ["Item", "Typical guide cost", "Notes"],
+        rows: [
+          ["EICR (electrical survey)", "£120 – £300", "Do this before agreeing any scope — you're pricing what's actually there"],
+          ["Full rewire, 3-bed cottage", "£4,500 – £8,500", "A Victorian cottage with solid walls and awkward access often sits toward the top of this range"],
+          ["Full replumb, 3-bed cottage", "£4,500 – £9,500", "Wide range because it depends how much of the run is lead or galvanised versus already updated"],
+          ["Internal lead pipe replacement", "£200 – £600 per run", "External supply pipe under a driveway or path costs more, and separately, to reinstate"],
+        ],
+        caption: "National guide figures, 2026. Get a fixed quote once a survey has actually seen the house — these are a starting point for budgeting, not a substitute for one.",
+      },
+      { type: "h2", text: "Do you need permission for any of this in Cranleigh?" },
+      {
+        type: "p",
+        text: "Usually not, and that's a genuine difference from a job like a [wet room in a listed Cranleigh cottage](/blog/wet-rooms-cranleigh-cottage), where cutting into the floor structure itself can trigger listed building consent. The Cranleigh Neighbourhood Plan records **81 nationally listed buildings** in the parish, predominantly the older 15th–17th century timber-framed stock — most of Cranleigh's Victorian cottages and terraces are not on that list, so rewiring and replumbing them is a Part P and Water Regulations matter, not a planning one.",
+      },
+      {
+        type: "p",
+        text: "Being on the parish's other list — the **174 [Buildings of Local Merit](/blog/cranleigh-buildings-of-local-merit)** Waverley also tracks — doesn't change that either. It's a material consideration the council weighs when it assesses a planning application, not a statutory designation, so it has no bearing on internal work like a rewire. Where permission can come into it is if something changes on the outside of a house that also sits inside the **Cranleigh Conservation Area** — a new boiler flue, an extractor vent, a satellite dish — because that's an external, visible change, not because of the cable or the pipe behind it. See [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) for what does and doesn't need consent there.",
+      },
+      { type: "h2", text: "Getting the sequence right" },
+      {
+        type: "ol",
+        items: [
+          "**Book an EICR and a plumbing survey** before agreeing any scope of work — you're pricing what's actually behind the plaster, not a guess from the outside.",
+          "**Agree cable and pipe routes through the floor and ceiling voids first**, and treat chasing into brick or lath-and-plaster as the fallback, not the default.",
+          "**Use a registered electrician on a competent person scheme** so the rewire self-certifies under Part P, rather than needing a separate building control notification and inspection.",
+          "**Get first fix — cable, pipe and containment — inspected and signed off before any replastering or redecoration**, so nothing has to be opened up again once the walls are finished.",
+          "**Keep the Electrical Installation Certificate, the EICR and any Water Regulations notification together** — a mortgage lender or a buyer's solicitor will ask for them when the house is eventually sold.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your cottage still has round-pin sockets, a fuse box, or a stopcock nobody can find, that's worth a proper survey before you plan anything else around it — getting the sequence right is exactly the kind of detail that separates a sympathetic rewire from a re-plastered mess afterwards, and it's the sort of thing worth raising early with [builders in Cranleigh](/areas/cranleigh) who work on this housing stock every month, not once a year.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need permission to rewire a Victorian cottage in Cranleigh?",
+        answer:
+          "In most cases, no. Nationally listed buildings need listed building consent for work affecting historic fabric, but most of Cranleigh's Victorian cottages are unlisted, so rewiring and replumbing only need to comply with Part P and the Water Regulations, not planning consent. An externally visible change inside the Cranleigh Conservation Area, such as a new boiler flue, can need consent even though the wiring or pipework itself does not.",
+      },
+      {
+        question: "How much does it cost to rewire a Victorian cottage?",
+        answer:
+          "National guide figures put a full rewire of a typical three-bedroom house at roughly £4,500–£8,500, with a Victorian cottage often toward the top of that range because of solid walls and more awkward access than a modern house. Get a fixed quote once an electrician has actually surveyed the property.",
+      },
+      {
+        question: "Is a full replumb notifiable work?",
+        answer:
+          "Not automatically as a whole, but specific parts of it are. An unvented hot water cylinder needs Building Regulations Part G3 sign-off, and significant changes to pipework must comply with the Water Supply (Water Fittings) Regulations 1999, which can mean notifying your water supplier before work starts.",
+      },
+      {
+        question: "How do I know if my cottage still has lead pipes?",
+        answer:
+          "Lead wasn't banned in new plumbing until 1969, so any house built or last replumbed before then can still have some. It's dull grey, scratches easily to reveal a shiny surface underneath, and gives a dull sound rather than copper's ring when tapped — but the only reliable way to know for certain is to have it checked during a plumbing survey.",
+      },
+      {
+        question: "What is BS 7671, and how is it different from Part P?",
+        answer:
+          "Part P is the Building Regulation requiring electrical work in a home to be safe. BS 7671, the IET Wiring Regulations, currently the 18th Edition, is the technical standard a registered electrician works to in order to show that it is. Compliance with BS 7671 is what satisfies Part P, not a separate requirement on top of it.",
+      },
+      {
+        question: "Does being on Waverley's Buildings of Local Merit list mean I need consent to rewire?",
+        answer:
+          "No. The Buildings of Local Merit list is a material planning consideration Waverley weighs when assessing proposals, not a statutory designation like listing. Internal work such as rewiring or replumbing doesn't need consent because a building appears on it.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-victorian-cottage-rewire-replumb"],
+  },
+  {
     slug: "structural-calculations-building-control",
     title: "Structural calculations: what a building control officer looks for",
     category: "Building control",
@@ -246,6 +404,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "bathroom-fitting-cost-cranleigh",
       "tiles-are-not-waterproof",
       "cranleigh-conservation-area-consent",
+      "cranleigh-victorian-cottage-rewire-replumb",
     ],
     body: [
       {

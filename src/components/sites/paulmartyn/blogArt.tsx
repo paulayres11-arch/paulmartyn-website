@@ -16,6 +16,95 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "garden-rooms-cranleigh-permitted-development": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="gdsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5fa8dd" /><stop offset="1" stopColor="#bfe0f0" />
+          </linearGradient>
+          <linearGradient id="gdgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7fc25c" /><stop offset="1" stopColor="#5a9e3f" />
+          </linearGradient>
+          <linearGradient id="gdbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#b06a4c" /><stop offset="1" stopColor="#8a4a34" />
+          </linearGradient>
+          <linearGradient id="gdroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5c6670" /><stop offset="1" stopColor="#3a424a" />
+          </linearGradient>
+          <linearGradient id="gdcabin" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d8b48a" /><stop offset="1" stopColor="#b48a5c" />
+          </linearGradient>
+          <linearGradient id="gdcabroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#4a545c" /><stop offset="1" stopColor="#2f363c" />
+          </linearGradient>
+          <linearGradient id="gdamber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="320" fill="url(#gdsky)" />
+        <circle cx="352" cy="40" r="20" fill="#ffe9a8" opacity=".85" />
+        <ellipse cx="70" cy="50" rx="38" ry="13" fill="#ffffff" opacity=".55" />
+        <ellipse cx="96" cy="42" rx="26" ry="11" fill="#ffffff" opacity=".45" />
+        <rect y="150" width="400" height="170" fill="url(#gdgrass)" />
+
+        {/* rear elevation of the house, left */}
+        <rect x="18" y="170" width="118" height="150" fill="url(#gdbrick)" stroke="#5a2c1e" strokeWidth="2" />
+        <path d="M10 172 L77 118 L144 172 Z" fill="url(#gdroof)" stroke="#232a30" strokeWidth="2" />
+        <rect x="40" y="220" width="26" height="30" fill="#dcecf5" stroke="#efe6d4" strokeWidth="2" />
+        <path d="M53 220 v30 M40 235 h26" stroke="#b9a97e" strokeWidth="1.2" />
+        <rect x="88" y="250" width="24" height="70" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.5" />
+        <path d="M88 250 q12 -12 24 0" fill="none" stroke="#dcecf5" strokeWidth="2" />
+
+        {/* rear boundary fence, right */}
+        <g stroke="#8a6a45" strokeWidth="4" strokeLinecap="round">
+          <path d="M350 150 L350 320" />
+          <path d="M350 165 L392 165 M350 195 L392 195 M350 225 L392 225 M350 255 L392 255 M350 285 L392 285" />
+        </g>
+        <text x="371" y="146" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#3a424a" textAnchor="middle">BOUNDARY</text>
+
+        {/* 2m-from-boundary line */}
+        <path d="M310 150 L310 320" stroke="#b23a2e" strokeWidth="2" strokeDasharray="4 5" opacity=".8" />
+        <text x="310" y="140" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#b23a2e" textAnchor="middle">2m FROM BOUNDARY</text>
+
+        {/* small shed inside the 2m zone, capped at 2.5m whatever the roof */}
+        <rect x="316" y="276" width="30" height="44" fill="url(#gdcabin)" stroke="#7a5b3a" strokeWidth="1.5" />
+        <path d="M313 276 L331 268 L349 276 Z" fill="url(#gdcabroof)" stroke="#232a30" strokeWidth="1.5" />
+        <path d="M300 320 L300 270" stroke="url(#gdamber)" strokeWidth="2.5" />
+        <path d="M294 270 h12 M294 320 h12" stroke="url(#gdamber)" strokeWidth="2.5" />
+        <text x="288" y="298" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#c4741f" textAnchor="end">2.5m</text>
+
+        {/* garden room beyond the 2m line, dual-pitch roof up to 4m */}
+        <rect x="170" y="270" width="110" height="50" fill="url(#gdcabin)" stroke="#7a5b3a" strokeWidth="2" />
+        <path d="M162 270 L225 236 L288 270 Z" fill="url(#gdcabroof)" stroke="#232a30" strokeWidth="2" />
+        <rect x="190" y="284" width="30" height="36" fill="#dcecf5" stroke="#efe6d4" strokeWidth="2" />
+        <path d="M205 284 v36" stroke="#b9a97e" strokeWidth="1.2" />
+        <rect x="236" y="292" width="24" height="28" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.5" />
+        <path d="M236 292 q12 -10 24 0" fill="none" stroke="#dcecf5" strokeWidth="1.5" />
+        <path d="M155 320 L155 240" stroke="url(#gdamber)" strokeWidth="2.5" />
+        <path d="M149 240 h12 M149 320 h12" stroke="url(#gdamber)" strokeWidth="2.5" />
+        <text x="143" y="284" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#c4741f" textAnchor="end">4m max</text>
+
+        {/* raised deck, crossed out: over 0.3m removes permitted development entirely */}
+        <rect x="178" y="314" width="94" height="10" fill="#c9b998" stroke="#8a6a45" strokeWidth="1.5" />
+        <path d="M178 314 L272 324 M272 314 L178 324" stroke="#b23a2e" strokeWidth="3" strokeLinecap="round" />
+
+        {/* inset: the conservation-area rule that removes side-garden PD */}
+        <rect x="14" y="14" width="132" height="92" rx="6" fill="#f7f3ea" stroke="#c9b998" strokeWidth="2" opacity=".96" />
+        <text x="80" y="29" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">IN A CONSERVATION AREA</text>
+        <rect x="28" y="38" width="42" height="44" fill="url(#gdbrick)" stroke="#5a2c1e" strokeWidth="1" />
+        <rect x="70" y="38" width="20" height="44" fill="none" stroke="#b23a2e" strokeWidth="1" />
+        <path d="M72 42 L88 42 M72 50 L88 50 M72 58 L88 58 M72 66 L88 66 M72 74 L88 74 M72 82 L88 82" stroke="#b23a2e" strokeWidth="1" opacity=".7" />
+        <path d="M90 38 L90 82" stroke="#3a424a" strokeWidth="2" />
+        <text x="80" y="99" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fontWeight="700" fill="#b23a2e" textAnchor="middle">NO PD DOWN THE SIDE</text>
+
+        <rect y="320" width="400" height="80" fill="#1f2a30" />
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">Behind the house, not down the side</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Height by boundary distance, 50% plot coverage, no side-garden PD in the conservation area</text>
+        <text x="24" y="383" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: GPDO 2015, Part 1 Class E; Cranleigh Conservation Area designation</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "cranleigh-victorian-cottage-rewire-replumb": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

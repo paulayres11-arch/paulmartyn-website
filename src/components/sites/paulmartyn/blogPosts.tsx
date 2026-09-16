@@ -46,6 +46,183 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "garden-rooms-cranleigh-permitted-development",
+    title: "Garden rooms in Cranleigh: permitted development limits, and where they stop",
+    category: "Planning & surveys",
+    date: "2026-09-16",
+    seoTitle: "Garden Rooms In Cranleigh: Permitted Development Limits",
+    metaDescription:
+      "Most Cranleigh garden rooms don't need planning permission — but height, coverage and conservation area rules can remove that right. Here's where it stops.",
+    excerpt:
+      "A garden room in Cranleigh is usually permitted development — until it isn't. Here's exactly where the height, coverage and conservation area limits sit, and what pushes a straightforward build into a full planning application.",
+    imageAlt:
+      "Illustration of a Cranleigh back garden with a garden room reaching a 4-metre height limit beyond a dashed line marking 2 metres from the boundary, a smaller shed capped at 2.5 metres inside that zone, a red crossed-out raised deck in front of the garden room, and an inset diagram showing a hatched no-permitted-development strip down the side of a house in a conservation area",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "cranleigh-buildings-of-local-merit",
+      "trees-and-foundation-depth-cranleigh",
+      "party-wall-notice-timing",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A single-storey garden room in Cranleigh usually falls under **permitted development** and needs no planning application, provided it stays within the height, position and coverage limits set out in **Part 1, Class E** of the Town and Country Planning (General Permitted Development) Order 2015.",
+          "Height is capped at **2.5m** for anything within 2m of a boundary, rising to **4m** with a dual-pitched roof (**3m** for any other roof shape) further back — eaves height is capped at 2.5m wherever it sits.",
+          "Together with every other outbuilding and extension already in the garden, a new garden room can cover **no more than half** the plot around the original house — and that limit is cumulative, not per building.",
+          "Inside the **Cranleigh Conservation Area**, permitted development is withdrawn for any outbuilding placed between the side wall of the house and the boundary — a rule a Cranleigh-wide guide would miss, and a nationally listed house loses these rights altogether.",
+          "A raised deck, veranda or balcony over **0.3m** high removes permitted development from the whole structure, not just the platform, and sleeping accommodation triggers full **Building Regulations** regardless of the room's size.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes after the garden room is already up. Someone has ordered a smart insulated cabin for the end of the garden, had it built over a long weekend, and only then discovered — from a neighbour, or a letter from the council's enforcement team — that it sits too close to the boundary, or that the raised deck out front took the whole structure outside permitted development. Taking it down, or applying for retrospective permission with a council now primed to look closely, costs far more than checking the rules would have.",
+      },
+      {
+        type: "p",
+        text: "Most garden rooms in Cranleigh genuinely don't need planning permission — the rights that cover them are generous, and for a garden office, gym or studio behind an ordinary house they usually do the job alone. But \"usually\" is doing a lot of work in that sentence, and the exceptions are specific enough that working from a garden-room company's brochure rather than the actual rules can produce something that isn't permitted at all.",
+      },
+      {
+        type: "p",
+        text: "That matters more here than in most towns, because Cranleigh has a genuinely local trap built into it: a conservation area rule that removes permitted development for an outbuilding at the side of the house, which a guide written for the whole country will not mention, because most gardens aren't in one.",
+      },
+      { type: "h2", text: "How tall can a garden room be without planning permission?" },
+      {
+        type: "p",
+        text: "The rules sit in **Part 1, Class E** of the Town and Country Planning (General Permitted Development) Order 2015 — the schedule covering buildings and enclosures within a house's curtilage. For height, the position relative to the boundary decides it:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Within 2m of any boundary** of the garden: maximum overall height **2.5m**, whatever the roof shape.",
+          "**More than 2m from a boundary, dual-pitched roof**: maximum overall height **4m**.",
+          "**More than 2m from a boundary, any other roof** — flat or mono-pitch, which is what most modern garden rooms actually have: maximum overall height **3m**.",
+          "**Eaves height**: capped at **2.5m** wherever the building sits, regardless of the overall height allowed there.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Single storey is a condition in its own right, too. A garden room with a mezzanine sleeping platform or usable roof space isn't single storey, whatever the eaves height, and loses permitted development on that basis alone.",
+      },
+      { type: "h2", text: "The rule that catches Cranleigh's Conservation Area" },
+      {
+        type: "p",
+        text: "This is the one a generic garden room guide won't tell you, and it's squarely a Cranleigh issue. On what the Order calls **\"Article 2(3) land\"** — a conservation area, among other designations — permitted development for a garden room is withdrawn if any part of it would sit between a side wall of the house and the boundary of the garden. It has to go behind the house, not down the side, once the house is inside one.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh's designated conservation area centres on the **High Street**, first designated in **October 1973** and extended in **July 1985** and **July 2016**. A house here with a return frontage or a side garden that would otherwise be the obvious spot for a garden office needs to check this before ordering anything — see [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) for what else the designation covers. Outside the conservation area boundary, this particular restriction doesn't apply, and the standard Class E limits above are what govern the build.",
+      },
+      {
+        type: "p",
+        text: "Listed buildings lose these rights altogether: permitted development for outbuildings doesn't apply within the curtilage of a listed building at all, so a garden room next to one of the parish's roughly **81 listed buildings** needs a full planning application whatever its size or position. Being on the parish's other list — the **174 [Buildings of Local Merit](/blog/cranleigh-buildings-of-local-merit)** — doesn't remove permitted development the same way; it's a material consideration Waverley weighs on an application, not a statutory trigger for needing one.",
+      },
+      { type: "h2", text: "How much of the garden can you build on?" },
+      {
+        type: "p",
+        text: "Class E also limits total coverage, not just the one new building. Every outbuilding and extension added since the house was originally built — sheds, garages, conservatories, an earlier garden room — is added together, and the total can't exceed **50% of the land around the \"original house\"**, meaning the house as it stood when first built, or as it stood on 1 July 1948, whichever is later. A garden room that would tip a plot over that limit needs a planning application even if it meets every height and position rule on its own.",
+      },
+      {
+        type: "p",
+        text: "It's worth measuring this properly rather than guessing. We've had a garden room design shrunk by a third at the quote stage once an existing shed, an old lean-to and a previous side extension were all added into the same 50% figure — a five-minute calculation that avoided a wasted planning application.",
+      },
+      { type: "h2", text: "Decking, verandas, and where permitted development stops completely" },
+      {
+        type: "p",
+        text: "A few features remove permitted development from a garden room outright, rather than just reducing what's allowed:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**A veranda, balcony, or raised platform over 0.3m high.** A garden room that looks identical from the outside but sits on a deck 400mm off the ground needs full planning permission — the platform, not the building, is what triggers it.",
+          "**Position forward of the principal elevation.** Nothing under Class E can go in front of the wall that faces the road, whatever the size.",
+          "**Sleeping accommodation.** A garden room used, even occasionally, for someone to sleep in changes both the Building Regulations position (below) and potentially the planning use — a different question from the permitted development limits in this post, and worth raising with a planning consultant before you build to that brief.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of these is really a grey area once you know to look for it — the specific list of things that turn \"we built a garden room\" into \"we built an unauthorised structure\", and each one is avoidable by asking before the concrete is poured, not after.",
+      },
+      { type: "h2", text: "Building Regulations: the approval permitted development doesn't cover" },
+      {
+        type: "p",
+        text: "Permitted development is a planning question. Building Regulations are a separate, safety-focused approval, and a garden room can be permitted development and still need Building Regulations sign-off, or the other way round.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Under 15m² floor area, no sleeping accommodation:** generally exempt from Building Regulations, provided it's a detached, single-storey structure.",
+          "**15m²–30m², no sleeping accommodation:** also generally exempt, unless it sits **less than 1m from a boundary** and isn't built substantially from non-combustible materials.",
+          "**Over 30m², or containing sleeping accommodation at any size:** Building Regulations approval applies.",
+          "**Electrics are a separate question regardless of floor area.** Any new circuit run out to a garden building is covered by **Part P**, and — as with wiring inside the house — is notifiable work, either through a registered electrician's competent person scheme or a direct building control notification.",
+        ],
+      },
+      {
+        type: "p",
+        text: "A base close to a boundary is also where the **Party Wall etc. Act 1996** can quietly become relevant: excavating a new foundation within 3m of a neighbour's building can require notice before you dig, or within 6m if the dig cuts below a line taken at 45 degrees down from their foundations — see [the party wall notice that sets your start date](/blog/party-wall-notice-timing) for the timing. On Cranleigh's Weald Clay, a garden room base near a mature tree is exactly the kind of shallow-foundation decision that deserves the same thinking as a house extension — see [the tree in your garden sets your foundation depth](/blog/trees-and-foundation-depth-cranleigh).",
+      },
+      { type: "h2", text: "What a garden room costs in Cranleigh" },
+      {
+        type: "table",
+        head: ["Item", "Typical guide cost", "Notes"],
+        rows: [
+          ["Insulated garden room, 12–15m², basic fit-out", "£18,000 – £28,000", "Foundations, insulation, double glazing and a single electrical circuit"],
+          ["Fully finished garden office, powered and heated", "£25,000 – £38,000", "Includes plastering, full electrics, heating and VAT"],
+          ["Foundation upgrade near a mature tree or on soft ground", "add roughly £1,500 – £4,000", "Screw piles or a deeper pad on Cranleigh's Weald Clay, confirmed on site"],
+          ["Certificate of Lawful Development (Proposed), if needed", "£274", "Half the £548 householder planning fee from 1 April 2026 — see \"the saving\" below"],
+        ],
+        caption: "National guide figures, 2026. Get a fixed quote once the design, services and foundation type are confirmed — these are a starting point for budgeting, not a substitute for a site visit.",
+      },
+      {
+        type: "quote",
+        text: "Nine times out of ten a garden room in Cranleigh is a straightforward job — check the boundary distances, check what else is already in the garden, and get on with it. The one we get called back for is always the same shape: someone added a deck afterwards to level up sloping ground, and it's the deck that needed planning permission all along, not the room sitting on it.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "If there's any doubt — a side-garden position, a sloping plot needing a plinth, a size close to the 50% coverage limit — a **Certificate of Lawful Development (Proposed)** settles it in writing from Waverley Borough Council before you build, for half the standard householder fee: about **£274** from 1 April 2026 against the full **£548**. That's a fixed, modest cost against a retrospective planning application submitted after the room is finished, when refusal means altering or removing a structure you've already paid to build.",
+      },
+      {
+        type: "p",
+        text: "If you're planning a garden room on a Cranleigh plot with a slope, a mature tree nearby, or a house inside the conservation area, get the boundary and coverage measurements checked before you commit to a design — a five-minute calculation is considerably cheaper than a retrospective application. It's exactly the sort of detail that's second nature to [builders in Cranleigh](/areas/cranleigh) working Waverley's planning rules on this ground every week, rather than a generic national guide.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a garden room in Cranleigh?",
+        answer:
+          "Usually not, provided it stays single storey, within the height limits for its distance from the boundary, doesn't cover more than half the garden together with other outbuildings, and isn't fitted with a raised deck, veranda or balcony. If the house is inside the Cranleigh Conservation Area, an extra rule also rules out putting it down the side of the house rather than behind it.",
+      },
+      {
+        question: "How tall can a garden room be without planning permission?",
+        answer:
+          "Up to 2.5m if any part is within 2m of a boundary. Further back, up to 4m with a dual-pitched roof or 3m with any other roof shape, including the shallow mono-pitch roof most modern garden rooms use. Eaves height is capped at 2.5m wherever the building sits.",
+      },
+      {
+        question: "Can I put a garden room at the side of my house in Cranleigh?",
+        answer:
+          "Only if the house is outside the Cranleigh Conservation Area. Inside it, the General Permitted Development Order withdraws permitted development for any outbuilding placed between a side wall of the house and the boundary, so it has to go behind the house instead.",
+      },
+      {
+        question: "Does a garden room need Building Regulations approval?",
+        answer:
+          "Not usually if it's under 15m² with no sleeping accommodation. Between 15m² and 30m² it's still generally exempt unless it's within 1m of a boundary and not built from substantially non-combustible materials. Above 30m², or with any sleeping accommodation, Building Regulations apply regardless of size, and the electrics are notifiable under Part P either way.",
+      },
+      {
+        question: "What happens if my garden room turns out not to be permitted development?",
+        answer:
+          "You need a retrospective planning application, decided against the same policies as if you'd applied first, with the difference that the structure is already built and visible — and if it's refused, you may have to alter or remove it. Checking first, or applying for a Certificate of Lawful Development before you build, avoids that risk for a modest fixed fee.",
+      },
+      {
+        question: "Does a raised deck under my garden room affect the planning rules?",
+        answer:
+          "Yes, significantly. A veranda, balcony or platform raised more than 0.3m above ground level removes permitted development from the whole structure, not just the deck, even if the garden room itself would otherwise comply with every other limit.",
+      },
+    ],
+    art: BLOG_ART["garden-rooms-cranleigh-permitted-development"],
+  },
+  {
     slug: "cranleigh-victorian-cottage-rewire-replumb",
     title: "Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves",
     category: "Electrics & plumbing",
@@ -1039,6 +1216,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-buildings-of-local-merit",
       "trickle-vents-approved-document-f",
       "cranleigh-neighbourhood-plan-householders",
+      "garden-rooms-cranleigh-permitted-development",
     ],
     body: [
       {

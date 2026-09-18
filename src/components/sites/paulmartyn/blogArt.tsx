@@ -16,6 +16,71 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "retention-snagging-practical-completion": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="rpsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="rpbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="rproof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="rpgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="rpbox" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#c4741f" />
+          </linearGradient>
+          <linearGradient id="rppaper" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#fbf6ec" /><stop offset="1" stopColor="#f0e6d2" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="400" fill="url(#rpsky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="36" fontFamily="Helvetica,Arial,sans-serif" fontSize="17" fontWeight="700" fill="#1f2a30">Finished, or finished enough?</text>
+        <text x="24" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#5d7078">Practical completion — what it releases, and when</text>
+
+        {/* house nearing completion, one scaffold pole already down */}
+        <path d="M40 190 L104 132 L168 190 Z" fill="url(#rproof)" />
+        <rect x="52" y="190" width="104" height="78" fill="url(#rpbrick)" />
+        <path d="M52 204 h104 M52 218 h104 M52 232 h104 M52 246 h104 M52 260 h104" stroke="#8a5138" strokeWidth="1" opacity=".45" />
+        <rect x="64" y="200" width="26" height="24" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="118" y="200" width="26" height="24" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="92" y="240" width="22" height="28" fill="#40525a" />
+        <line x1="30" y1="268" x2="46" y2="196" stroke="#9aa3a8" strokeWidth="4" strokeLinecap="round" />
+        <circle cx="46" cy="196" r="3.5" fill="#7c868b" />
+        <rect x="24" y="268" width="352" height="32" fill="url(#rpgrass)" />
+
+        {/* dashed line: a share of what's owed goes into the strongbox, not the builder's pocket, until it's proven */}
+        <path d="M172 220 q26 -8 46 -14" stroke="#e08a2b" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeDasharray="1 7" />
+
+        {/* retention held back, padlocked */}
+        <g transform="translate(224,148)">
+          <text x="44" y="-6" textAnchor="middle" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30">5%</text>
+          <rect x="0" y="0" width="88" height="60" rx="5" fill="url(#rpbox)" stroke="#a85f1c" strokeWidth="2" />
+          <rect x="6" y="6" width="76" height="10" fill="#7a3f12" opacity=".35" />
+          <circle cx="44" cy="32" r="14" fill="#3a424a" />
+          <path d="M38 26 v-6 a6 6 0 0 1 12 0 v6" stroke="#1f2a30" strokeWidth="3" fill="none" />
+          <rect x="38" y="26" width="12" height="14" rx="2" fill="#1f2a30" />
+        </g>
+
+        {/* snagging list, waiting to be ticked off before the strongbox opens */}
+        <g transform="translate(230,224)">
+          <rect x="0" y="0" width="76" height="58" rx="4" fill="#e7edf1" stroke="#c3ccd1" strokeWidth="2" />
+          <rect x="24" y="-7" width="28" height="14" rx="3" fill="#8b98a0" />
+          <path d="M10 16 h56 M10 28 h56 M10 40 h38" stroke="#5d7078" strokeWidth="2" opacity=".6" />
+          <path d="M8 16 l5 5 l9 -10" stroke="#4c9a5b" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="translate(1,26)" />
+        </g>
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Half back at completion, half later</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Released once the snagging list is signed off, not before</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: JCT Building Contract for a Homeowner/Occupier</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "garden-rooms-cranleigh-permitted-development": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

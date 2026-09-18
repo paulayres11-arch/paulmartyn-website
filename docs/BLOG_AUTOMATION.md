@@ -348,7 +348,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-08-21] Part L and why your extension needs more insulation than the house
 - [done 2026-08-28] Trickle vents, condensation and Approved Document F
 - [done 2026-09-11] Structural calculations: what a building control officer looks for
-- [ ] Retention, snagging and what "practical completion" means
+- [done 2026-09-18] Retention, snagging and what "practical completion" means
 - [ ] Damp: rising, penetrating and condensation are three different problems
 - [ ] Why a steel beam needs a padstone
 - [ ] Underfloor heating: screed depth, response time and floor build-up

@@ -46,6 +46,178 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "retention-snagging-practical-completion",
+    title: "Retention, snagging and practical completion: what they actually mean for your build",
+    category: "Contracts & payment",
+    date: "2026-09-18",
+    seoTitle: "Retention, Snagging & Practical Completion Explained",
+    metaDescription:
+      "Retention, snagging and practical completion decide when your builder gets paid in full and when you can chase them back. How they work, and what's changing.",
+    excerpt:
+      "Retention, snagging and practical completion aren't legal jargon — they decide whether a sticking door gets fixed for free or turns into an argument over an invoice you've already paid in full.",
+    imageAlt:
+      "Illustration of a nearly finished house with one scaffold pole already down, connected by a dashed line to an amber strongbox labelled 5% representing retention held back, and a snagging checklist with a tick mark waiting to be signed off before the strongbox opens",
+    related: [
+      "building-control-completion-certificate",
+      "structural-calculations-building-control",
+      "kitchen-extensions-cranleigh-layout-budget",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "**Practical completion** isn't defined in law — it's whatever your contract says it is, usually meaning the work is finished enough to use safely, bar minor snags. It starts several clocks at once: half your retention, the defects period, and your right to move back in.",
+          "**Retention** is money withheld from what you pay your builder — typically **5%**, often reduced to **2.5%** at practical completion, with the rest released once the defects period ends, usually **6–12 months** later.",
+          "A **building control completion certificate** and **practical completion** are two different things — see [what a completion certificate is actually for](/blog/building-control-completion-certificate) — and mixing them up is how people pay the final invoice before the snags are even listed.",
+          "Extending your own home makes you a **'residential occupier'** under the **Housing Grants, Construction and Regeneration Act 1996** — so the statutory protections that cover commercial contracts don't automatically cover yours, unless your written contract puts them there itself.",
+          "The government has proposed **banning retention outright**, following its Late Payment consultation response published **24 March 2026**. It isn't law yet, but it's worth knowing before you sign a contract that assumes retention always works the way it does today.",
+        ],
+      },
+      {
+        type: "p",
+        text: "It's rarely the big things that end in an argument. It's a dripping tap discovered on a Friday evening, a door that catches on the frame, a patch of paint the wrong side of matt and gloss — small, and entirely normal on a finishing building job. What turns normal into an argument is a builder who's already been paid in full, a homeowner who assumed the final invoice meant the job was finished, and neither side having agreed in writing what 'finished' was supposed to mean.",
+      },
+      {
+        type: "p",
+        text: "That gap is what retention, snagging and practical completion exist to close. None of them are exotic — they're three ordinary pieces of a building contract that, used properly, keep a small percentage of your money as leverage until the small stuff is done, instead of trusting a verbal promise made on the day the skip leaves the drive.",
+      },
+      {
+        type: "p",
+        text: "Almost nobody explains any of this to a homeowner before they sign, because most domestic work — a kitchen, a loft, a rear extension — happens on a short quote letter, not a full contract with a surveyor running the payment schedule. That doesn't mean these ideas don't apply to you. It means you have to put them in writing yourself.",
+      },
+      { type: "h2", text: "What does 'practical completion' actually mean?" },
+      {
+        type: "p",
+        text: "For a phrase used on almost every building contract in the country, practical completion has no statutory definition. It comes from case law and standard forms like those published by the Joint Contracts Tribunal (JCT), and the closest the courts have come to a working test is that the works are complete for practical purposes, with no defect serious enough to stop you using the building for its intended purpose. A genuinely trivial defect — a scuff, a missing screw cap — doesn't hold it up, even though it still needs fixing.",
+      },
+      {
+        type: "p",
+        text: "What matters for you is what it triggers: it usually starts the defects (rectification) period running, it's the point half your retention becomes due, it shifts responsibility for insuring the building to you, and it's normally when beneficial use of the space becomes yours. None of that should happen informally, on the day it 'feels' finished — it should happen against a written list, on an agreed date, confirmed in an email both sides can point back to.",
+      },
+      {
+        type: "p",
+        text: "Practical completion also isn't the same thing as a building control completion certificate, even though people conflate the two constantly. Practical completion is a milestone in your contract with your builder; a completion certificate is issued separately once building control confirms the work meets the Building Regulations — see [what a completion certificate is actually for](/blog/building-control-completion-certificate). You can reach one weeks before the other, in either order.",
+      },
+      { type: "h2", text: "What is retention, and how much should be held back?" },
+      {
+        type: "p",
+        text: "Retention is an agreed percentage of what you owe your builder that you don't pay over as the job goes — held back, in writing, until specific conditions are met. On the JCT forms used across the industry, including the **JCT Building Contract for a Homeowner/Occupier**, written specifically for domestic clients, **5%** is standard, sometimes reduced to **3%** on larger or lower-risk jobs. It isn't usually paid out in one go: the common pattern halves it, with 2.5% back at practical completion and the rest held until the defects period ends.",
+      },
+      {
+        type: "table",
+        head: ["Stage", "Typical retention", "What releases it"],
+        rows: [
+          ["During the works", "5% of each stage payment", "Held back from every interim payment as the job proceeds"],
+          ["At practical completion", "Reduced to 2.5%", "The other half released once practical completion is agreed in writing"],
+          ["End of the defects period", "Remaining 2.5% released in full", "Usually 6–12 months after practical completion, once any snags are confirmed fixed"],
+        ],
+        caption: "The standard JCT pattern. Put the actual percentages and dates in your own contract — 'reasonable' isn't a figure either side can plan around.",
+      },
+      { type: "h2", text: "When do you actually get your retention back?" },
+      {
+        type: "p",
+        text: "The trigger for the final release isn't simply a date passing. Most contracts release it on written confirmation that outstanding defects have been made good — the JCT calls this a **Notice of Completion of Making Good Defects** — not automatically once twelve months have ticked over. Without that in writing, 'the end of the defects period' can quietly become 'whenever somebody remembers to chase it'.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Agree the length of the defects period before you sign** — commonly 6 to 12 months; put a number in the contract rather than leaving it as 'a reasonable period'.",
+          "**Confirm defects are fixed in writing**, ideally with photos, before releasing the final sum — a text saying 'looks fine' isn't the same as a signed list.",
+          "**Don't assume a new-build warranty covers this.** NHBC Buildmark runs the builder's own cover for the first two years, then structural insurance to year ten — but it doesn't apply to a standard extension or renovation, so retention is usually your only real leverage here.",
+        ],
+      },
+      { type: "h2", text: "What is a snagging list, and what actually belongs on it?" },
+      {
+        type: "p",
+        text: "A snagging list is the inspection you and your builder do together at practical completion, walking the finished job and noting everything that isn't quite right — things that don't stop you using the space, but that a careful buyer wouldn't accept as finished. A job with no snags at all is rarer than a job with a short, tidy list that gets ticked off within a couple of weeks.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Genuinely a snag:** a sticking door, a paint touch-up, a socket faceplate off level, a kitchen drawer that needs adjusting.",
+          "**Not a snag — a defect:** a leak, a moving crack, a floor that isn't level — anything affecting how the building performs, not just how it looks, and possibly whether practical completion should be certified at all.",
+          "**Get it in writing, dated, and agreed by both sides.** A verbal list is a list that gets shorter every time it's remembered.",
+        ],
+      },
+      { type: "h2", text: "Does the law protect you the way it protects a commercial client?" },
+      {
+        type: "p",
+        text: "Less than most homeowners assume. Part II of the **Housing Grants, Construction and Regeneration Act 1996** — the Construction Act — gives commercial construction contracts a statutory right to staged payments and to refer a dispute to adjudication, a fast, relatively cheap route to a binding decision. Section 106 excludes a contract with a **'residential occupier'**: broadly, someone having work done on the home they live in, or intend to live in.",
+      },
+      {
+        type: "p",
+        text: "That exclusion protects homeowners from a commercial-style adjudication process over a modest domestic job — but it also means those statutory protections don't apply to you automatically. The fix is straightforward: write retention, a defects period and a dispute route into your own contract. A recognised domestic form such as the JCT Homeowner Contract already has these built in.",
+      },
+      { type: "h2", text: "What's changing: the government's plan to end retention" },
+      {
+        type: "p",
+        text: "On **24 March 2026** the government published its response to the 2025 Late Payment consultation, in which the large majority of respondents backed reforming how retention works. Rather than a lighter-touch fix, the government's stated preference is to **ban the deduction and withholding of retention payments** altogether, alongside wider reforms including maximum 60-day payment terms and statutory interest on late payment. The **Small Business Protections (Late Payments) Bill**, announced in the King's Speech on **13 May 2026**, is the vehicle intended to carry this through.",
+      },
+      {
+        type: "p",
+        text: "None of this is law yet. For now, retention remains a normal, useful tool on a domestic job — but it's worth asking your builder how they'd structure payment if retention were removed, because a straightforward answer tells you a lot about how comfortable they are with the current system.",
+      },
+      { type: "h2", text: "How to handle retention and snagging without it turning into a dispute" },
+      {
+        type: "ol",
+        items: [
+          "**Put a number and a written trigger in the contract before you sign** — the percentage retained, when it drops to half, and what releases the rest.",
+          "**Agree what 'practical completion' means for your specific job**, in writing, rather than relying on the general legal test.",
+          "**Do the snagging walk-round together**, room by room, with a written list and photos, on the day you'd otherwise hand over the balance.",
+          "**Set a real date for the final release**, tied to defects being fixed and confirmed, not to a vague sense that 'enough time has passed'.",
+          "**Keep retention as a genuine holdback**, not cash paid over informally — if the money has already left your account, it isn't retention any more.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "The clients who never have a retention argument are the ones who ask about it before the contract's signed, not after the last coat of paint's gone on. Agree the number, agree the date, walk the snag list together — it's the difference between a builder popping back to fix a sticking door and a stand-off over an invoice neither of us remembers agreeing to.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "On a typical **£48,000** single-storey extension, a 5% retention is **£2,400** — roughly what a modest snagging list costs to put right if it's ever left to the homeowner. Get that figure and a release date written into the contract before you sign, and it stays real leverage until the job is finished, not a promise that quietly evaporates once the builder's van is gone for good.",
+      },
+      {
+        type: "p",
+        text: "If your contract doesn't currently say anything about retention, a defects period or what happens at practical completion, that's worth fixing before you sign, whatever size the job. It's a standing part of how [builders in Cranleigh](/areas/cranleigh) structure a contract before a spade goes in the ground — see our [pricing guide](/pricing) for what a typical job costs before that conversation.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What percentage retention should I withhold from my builder?",
+        answer:
+          "5% is the industry standard, reflected in JCT contracts including the JCT Homeowner Contract, often reducing to 2.5% once practical completion is reached and the remaining 2.5% held until the defects period ends. There's no legal minimum or maximum for a domestic job — the figure has to be agreed and written into your contract.",
+      },
+      {
+        question: "When should I release the final retention payment?",
+        answer:
+          "Once any defects found during the snagging walk-round have actually been fixed and confirmed in writing — not simply once a set number of months has passed. Agree the length of the defects period (commonly 6–12 months) in the contract, but link the final payment to the work being done, not the calendar alone.",
+      },
+      {
+        question: "What's the difference between practical completion and a building control completion certificate?",
+        answer:
+          "Practical completion is a milestone in your contract with your builder, triggering retention release and the defects period. A completion certificate is issued separately by building control once inspections confirm the work meets the Building Regulations. They can happen weeks apart, and having one doesn't mean you automatically have the other.",
+      },
+      {
+        question: "Does the Construction Act protect me if I'm extending my own home?",
+        answer:
+          "Not automatically. Section 106 of the Housing Grants, Construction and Regeneration Act 1996 excludes contracts with a 'residential occupier' from the Act's statutory payment and adjudication protections. You can still get equivalent protection — it just has to be written into your own contract rather than assumed from the law.",
+      },
+      {
+        question: "Is retention going to be banned in the UK?",
+        answer:
+          "The government has proposed banning retention in construction contracts, set out in its response to the Late Payment consultation published on 24 March 2026, with the Small Business Protections (Late Payments) Bill announced to carry the reform forward. It isn't law yet, so retention remains a normal part of a domestic building contract for now — but it's worth asking how your builder would structure payment without it.",
+      },
+      {
+        question: "What should go on a snagging list, and what shouldn't?",
+        answer:
+          "Minor finishing issues belong on a snagging list — a sticking door, a paint touch-up, a wonky socket faceplate. Anything affecting how the building actually performs, such as a leak, a moving crack or an unlevel floor, is a defect rather than a snag, and needs addressing properly rather than just noted for later.",
+      },
+    ],
+    art: BLOG_ART["retention-snagging-practical-completion"],
+  },
+  {
     slug: "garden-rooms-cranleigh-permitted-development",
     title: "Garden rooms in Cranleigh: permitted development limits, and where they stop",
     category: "Planning & surveys",
@@ -1836,6 +2008,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "part-l-extension-insulation",
       "trickle-vents-approved-document-f",
       "extension-value-cranleigh",
+      "retention-snagging-practical-completion",
     ],
     body: [
       {

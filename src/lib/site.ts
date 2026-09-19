@@ -55,6 +55,10 @@ export const ROUTES = [
   "/about-us",
   "/services",
   "/services/renovations-extensions",
+  /* Service + location page. Sits in ROUTES like any other static page — a
+     page missing from here never reaches the sitemap. */
+  "/services/house-extensions-cranleigh",
+  "/services/loft-conversions",
   "/services/new-builds",
   "/services/listed-buildings",
   "/services/commercial",

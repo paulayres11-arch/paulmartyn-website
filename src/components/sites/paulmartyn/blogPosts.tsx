@@ -2597,7 +2597,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "We will come and do that survey and tell you honestly if the answer is no, because a loft that cannot take a compliant staircase is not a job we want to have started. If you want someone to put their head through the hatch before you spend money on a designer, that is a normal call for [builders in Cranleigh](/areas/cranleigh) to take.",
+        text: "We will come and do that survey and tell you honestly if the answer is no, because a loft that cannot take a compliant staircase is not a job we want to have started. If you want someone to put their head through the hatch before you spend money on a designer, that is a normal call for [builders in Cranleigh](/areas/cranleigh) to take — and what the job involves is set out on our [loft conversions](/services/loft-conversions) page.",
       },
     ],
     faqs: [

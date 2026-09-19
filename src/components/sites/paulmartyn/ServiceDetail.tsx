@@ -1,9 +1,22 @@
+import type { ReactNode } from "react";
 import type { ServiceTab } from "@/types/paulmartyn";
 import { SERVICES } from "./content";
 import { GalleryRail } from "./GalleryRail";
 
 interface ServiceDetailProps {
   service: ServiceTab;
+  /**
+   * Bespoke content for one service, rendered after the long-form copy and
+   * before the related-services band.
+   *
+   * The `detail` strings in content.ts are plain text with `**bold**` and
+   * nothing else — deliberately, so copy stays copy. That leaves no way to put
+   * an internal link on a service page, which is a problem when the whole
+   * local SEO strategy runs on service pages passing authority to
+   * /areas/cranleigh. This slot is where a page adds links, a table or a
+   * Cranleigh-specific block without turning content.ts into markup.
+   */
+  children?: ReactNode;
 }
 
 /**
@@ -35,7 +48,7 @@ function RichText({ text }: { text: string }) {
  * Body of a single service page: copy + photograph, then the other services
  * as onward links (the reference site's `.sectionpad.related` block).
  */
-export function ServiceDetail({ service }: ServiceDetailProps) {
+export function ServiceDetail({ service, children }: ServiceDetailProps) {
   const others = SERVICES.tabs.filter((s) => s.id !== service.id);
 
   return (
@@ -102,6 +115,8 @@ export function ServiceDetail({ service }: ServiceDetailProps) {
           </div>
         </section>
       ) : null}
+
+      {children}
 
       {/* Related services */}
       <section className="bg-pm-cream py-[10vh]">

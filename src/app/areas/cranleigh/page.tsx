@@ -32,9 +32,9 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
 const CONSERVATION_AREA_DESIGNATED = "October 1973";
 
 const TITLE =
-  "Builders in Cranleigh, Surrey | Extensions & Renovations | Paul Martyn";
+  "Builders in Cranleigh, Surrey | Extensions, Renovations & Heritage Work";
 const DESCRIPTION =
-  "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations and heritage work across Cranleigh, Ewhurst and Shamley Green. Fixed price. Call 01483 612156.";
+  "Family-run builders on Bridge Road, Cranleigh. Extensions, loft conversions, renovations and listed building work across the Waverley villages. Fixed price.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -65,6 +65,32 @@ const AREA_SCHEMA = {
   legalName: COMPANY.legalName,
   url: `${SITE_URL}/areas/cranleigh`,
   telephone: CONTACT.phone,
+  /**
+   * Both numbers the business answers.
+   *
+   * `telephone` above stays the landline on its own, because that is the
+   * number on the Google Business Profile and NAP has to match it character
+   * for character. The mobile is real and published in the site footer, so
+   * leaving it out of the schema meant Google saw one of the two numbers a
+   * customer might dial. Added as contactPoints rather than as a second
+   * `telephone` value, which is the shape schema.org actually defines.
+   */
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: CONTACT.phone,
+      contactType: "customer service",
+      areaServed: "GB",
+      availableLanguage: "English",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: CONTACT.mobile,
+      contactType: "customer service",
+      areaServed: "GB",
+      availableLanguage: "English",
+    },
+  ],
   email: CONTACT.email,
   address: {
     "@type": "PostalAddress",
@@ -159,6 +185,61 @@ export default function CranleighPage() {
                 our prices are published
               </Link>{" "}
               — which, locally, almost nobody else does.
+            </Body>
+
+            <SectionHeading>Where to start</SectionHeading>
+
+            <Body>
+              Most enquiries here begin with one of these:{" "}
+              <Link
+                href="/services/house-extensions-cranleigh"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                house extensions in Cranleigh
+              </Link>
+              ,{" "}
+              <Link
+                href="/services/loft-conversions"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                loft conversions
+              </Link>
+              ,{" "}
+              <Link
+                href="/services/renovations-extensions"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                whole-house renovations
+              </Link>
+              ,{" "}
+              <Link
+                href="/services/kitchens"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                kitchens
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/services/listed-buildings"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                listed building and heritage work
+              </Link>
+              . If you are still at the budget stage, the{" "}
+              <Link
+                href="/guides/house-extension-costs-surrey"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                extension cost guide
+              </Link>{" "}
+              gives real rates per square metre, and{" "}
+              <Link
+                href="/blog/trees-and-foundation-depth-cranleigh"
+                className="text-pm-ink underline underline-offset-4"
+              >
+                the tree in your garden sets your foundation depth
+              </Link>{" "}
+              explains the single biggest reason two Cranleigh quotes differ.
             </Body>
 
             <SectionHeading>Recent work in Cranleigh</SectionHeading>

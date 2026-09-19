@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     /* The page meant to win "builders Cranleigh" — the business's own town,
        which the site did not have a page for until 2026-08-17. */
     if (route === "/areas/cranleigh") return 0.9;
+    /* The two Cranleigh-intent service pages added 2026-09-19. The extensions
+       one carries the same weight as the area page — it is the other half of
+       the local strategy, targeting the service+town query rather than the
+       town alone. */
+    if (route === "/services/house-extensions-cranleigh") return 0.9;
+    if (route === "/services/loft-conversions") return 0.8;
     if (route === "/services" || route === "/contact") return 0.8;
     return 0.7;
   };

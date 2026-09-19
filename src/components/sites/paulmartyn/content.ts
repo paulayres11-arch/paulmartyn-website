@@ -100,6 +100,7 @@ export const NAV: NavItem[] = [
     path: "/services",
     children: [
       { label: "Residential renovations & extensions", path: "/services/renovations-extensions" },
+      { label: "Loft conversions", path: "/services/loft-conversions" },
       { label: "New builds", path: "/services/new-builds" },
       { label: "Listed buildings & heritage work", path: "/services/listed-buildings" },
       { label: "Commercial, bars & hotels", path: "/services/commercial" },
@@ -244,7 +245,7 @@ export const SERVICES = {
     {
       id: "service-renovations",
       label: "Renovations",
-      seoTitle: "House Extensions in Surrey | Renovations | Paul Martyn",
+      seoTitle: "House Extensions Cranleigh | Renovations | Paul Martyn",
       heading: "Residential renovations & extensions",
       body: "Whole-house renovations, extensions and remodelling — opening up period properties or bringing tired homes back to life, with the structural work, finishes and detail handled under one roof.",
       detail: [
@@ -291,10 +292,54 @@ export const SERVICES = {
         { src: `${RENO}/lazell-gardens-ensuite.jpg`, alt: "Loft ensuite at Lazell Gardens — twin basins in a solid surface top, fluted vanity units, black brassware and a rooflight over the shower" },
       ],
     },
+    /**
+     * Loft conversions.
+     *
+     * Added 2026-09-19. The site talked about loft conversions on the
+     * Cranleigh page and had a long-form blog post about them, but
+     * /services/loft-conversions was a 404 — so the one service with an
+     * obvious local search term had no page to rank.
+     *
+     * Every figure below is already published elsewhere on the site: the
+     * £2,000–£2,800 per m² band is from /guides/house-extension-costs-surrey,
+     * and the head heights, roof types, permitted development volumes and
+     * fire-door costs are from the loft blog post. Nothing here is new — if
+     * you change a number, change it in all three places.
+     */
+    {
+      id: "service-loft-conversions",
+      label: "Loft Conversions",
+      seoTitle: "Loft Conversion Cranleigh | Dormers & Roof Rooms | Surrey",
+      heading: "Loft conversions",
+      body: "Dormers, roof rooms and loft en-suites — the best-value floor area most houses here can add, with the structural work, staircase and fire strategy handled as one job.",
+      detail: [
+        "A loft conversion is usually the best value floor area a Cranleigh house can add. The roof is already there, the foundations are already there, and you lose nothing from the garden — which matters more here than it does in a town where the plots are smaller. It is also the project most often abandoned three weeks in, once somebody finally gets into the hatch with a tape measure.",
+        "So we start with the tape measure. Measured from the top of the existing ceiling joists to the underside of the ridge, **under 2.2m** will not give usable height once you allow for insulation above and a new structural floor below. **2.4m to 2.8m** is the comfortable range where most successful conversions sit. The number you measure is never the number you end up with, and we would rather tell you that on the first visit than after you have paid for drawings.",
+        "The second question is what is holding the roof up. A **traditional cut roof** — rafters, purlins and open space in the middle — converts readily, and that is what most Cranleigh houses built before roughly the 1960s have, including the Victorian and Edwardian stock near the centre and the interwar semis. A **trussed rafter roof**, standard from the 1960s and 70s onward, is filled with structural webs that cannot simply be cut out. It is not a lost cause, but it needs an engineered solution — steel beams and a new floor installed to carry the loads before the webs come out, sequenced so the roof is never unsupported. It costs more, and anyone quoting the same rate per square metre for both has not been up there.",
+        "The test people forget is the staircase. Building regulations require **2m of headroom over the stairs**, reducing to 1.9m at the edge, and on a typical semi the new flight has to rise into the roof exactly where it is lowest. We have seen more conversions fail on the stair than on the room, so we check where it lands before anyone gets attached to a layout.",
+        "Adding a third storey also changes the fire strategy for the whole house, and this is the part that catches people financially. The staircase becomes the protected escape route, which means 30 minutes' fire resistance to the stair enclosure, **FD30 fire doors to every habitable room off it on every floor** — including rooms you were not otherwise touching — mains-linked interlinked alarms throughout, and an escape window in the new room. On an ordinary three-bed that is routinely **£3,000–£6,000** of work that is not in anybody's headline square-metre rate. Ours is quoted separately so you can see it.",
+        "On planning: outside the conservation area, permitted development allows **40m³** of added roof space on a terrace and **50m³** on a semi or detached house, subject to the usual conditions. Inside the Cranleigh Conservation Area, roof extensions are **not permitted development at all** — which does not mean no dormer, it means a planning application and a design the conservation officer will accept. We handle that conversation as part of the job.",
+        "Costs run around **£2,000 to £2,800 per m²**, meaningfully less than a ground-floor extension because there are no new foundations and no new roof, plus the fire safety works, any structural solution a trussed roof needs, and the bathroom fit-out if you are adding one. Those figures are published on our cost guide rather than quoted on request.",
+      ],
+      pullQuote:
+        "We will come and put our head through the hatch and tell you honestly if the answer is no — because a loft that cannot take a compliant staircase is not a job we want to have started.",
+      linkLabel: "Read more >>",
+      path: "/services/loft-conversions",
+      image: `${RENO}/weatherboard-house.jpg`,
+      imageAlt: "Black weatherboarded elevation with a new dormer rooflight and oak front door",
+      gallery: [
+        { src: `${RENO}/weatherboard-house.jpg`, alt: "Black weatherboarded elevation with a new dormer rooflight and oak front door" },
+        { src: `${BATH}/loft-ensuite.jpg`, alt: "Loft en-suite with a freestanding bath under the eaves and fitted vanity units" },
+        { src: `${BATH}/loft-bath-rooflight.jpg`, alt: "Freestanding bath beneath a rooflight with cove lighting and stone tiling" },
+        { src: `${BATH}/eaves-oak-vanity.jpg`, alt: "Loft bathroom with an oak vanity and countertop basin, patterned tile splashback and fitted oak storage built into the eaves" },
+        { src: `${BATH}/loft-cloakroom-subway.jpg`, alt: "Loft cloakroom in white metro tile with a chrome heated towel rail" },
+        { src: `${RENO}/lazell-gardens-ensuite.jpg`, alt: "Loft ensuite at Lazell Gardens — twin basins in a solid surface top, fluted vanity units, black brassware and a rooflight over the shower" },
+      ],
+    },
     {
       id: "service-new-builds",
       label: "New Builds",
-      seoTitle: "New Build Homes in Surrey | Paul Martyn Construction",
+      seoTitle: "New Build Homes | Cranleigh & Surrey | Paul Martyn",
       heading: "New builds",
       body: "Architect-designed new homes delivered from groundworks to handover, with tight cost control and a build programme you can actually rely on.",
       detail: [
@@ -314,7 +359,7 @@ export const SERVICES = {
     {
       id: "service-listed",
       label: "Listed Buildings",
-      seoTitle: "Listed Building Builders Surrey | Heritage Restoration",
+      seoTitle: "Listed Building Builders Cranleigh | Heritage Restoration",
       heading: "Listed buildings & heritage work",
       body: "Sensitive restoration and alteration of listed and period properties, working with conservation officers and specialist trades to protect what matters while making these buildings work for modern life.",
       detail: [
@@ -448,7 +493,7 @@ export const SERVICES = {
     {
       id: "service-kitchens",
       label: "Kitchens",
-      seoTitle: "Kitchen Fitting & Extensions in Surrey | Paul Martyn",
+      seoTitle: "Kitchen Fitting & Extensions | Cranleigh, Surrey",
       heading: "Kitchens",
       body: "Kitchen installations and full refits — including knocking rooms together to open up the space. Structural work, units, worktops, plumbing, electrics and finishes handled by one team, so the detail lines up.",
       linkLabel: "Read more >>",
@@ -514,6 +559,28 @@ export const SERVICES = {
  * publishing" — they are rendered verbatim as placeholders and carry no star
  * rating, so nothing here reads as a real endorsement.
  */
+/**
+ * Look up a service by its `id`.
+ *
+ * The service pages used to index into `SERVICES.tabs` positionally —
+ * `SERVICES.tabs[4]` was bathrooms. Inserting loft conversions after
+ * renovations on 2026-09-19 shifted seven of them by one, which TypeScript
+ * cannot catch: every tab has the same shape, so the wrong service is still a
+ * valid `ServiceTab` and every page would have rendered the wrong content
+ * under the right URL. Looking a service up by id makes the order of this
+ * array a presentation decision again, which is what it should be.
+ *
+ * Throws rather than returning undefined: a missing id is a build-time
+ * mistake, and failing the build is how it should surface.
+ */
+export function serviceById(id: string): ServiceTab {
+  const service = SERVICES.tabs.find((tab) => tab.id === id);
+  if (!service) {
+    throw new Error(`Unknown service id: ${id}`);
+  }
+  return service;
+}
+
 export const TESTIMONIALS = {
   heading: "Testimonials",
   items: [
@@ -613,6 +680,8 @@ export const CONTACT_CTA = {
 
 export const FOOTER_SERVICES: NavChild[] = [
   { label: "Residential renovations & extensions", path: "/services/renovations-extensions" },
+  { label: "House extensions in Cranleigh", path: "/services/house-extensions-cranleigh" },
+  { label: "Loft conversions", path: "/services/loft-conversions" },
   { label: "New builds", path: "/services/new-builds" },
   { label: "Listed buildings & heritage work", path: "/services/listed-buildings" },
   { label: "Commercial, bars & hotels", path: "/services/commercial" },

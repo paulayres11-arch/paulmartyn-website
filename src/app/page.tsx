@@ -53,6 +53,32 @@ const BUSINESS_SCHEMA = {
   legalName: COMPANY.legalName,
   url: SITE_URL,
   telephone: CONTACT.phone,
+  /**
+   * Both numbers the business answers.
+   *
+   * `telephone` above stays the landline on its own, because that is the
+   * number on the Google Business Profile and NAP has to match it character
+   * for character. The mobile is real and published in the site footer, so
+   * leaving it out of the schema meant Google saw one of the two numbers a
+   * customer might dial. Added as contactPoints rather than as a second
+   * `telephone` value, which is the shape schema.org actually defines.
+   */
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: CONTACT.phone,
+      contactType: "customer service",
+      areaServed: "GB",
+      availableLanguage: "English",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: CONTACT.mobile,
+      contactType: "customer service",
+      areaServed: "GB",
+      availableLanguage: "English",
+    },
+  ],
   email: CONTACT.email,
   address: {
     "@type": "PostalAddress",

@@ -30,11 +30,17 @@ export const metadata: Metadata = {
    * what people here actually type. The home page is the strongest page on the
    * site, so it should carry the term the business can win.
    *
+   * Brand-first since 2026-09-19. It read "Cranleigh Builders | ..." before
+   * that, which is the exact brand string of cranleighbuilders.co.uk — a
+   * competitor whose domain matches it. Leading with the business's own name
+   * keeps the Cranleigh term without opening the title with someone else's
+   * brand, and gives Google an unambiguous entity name for the home page.
+   *
    * /areas/cranleigh is deliberately titled differently ("Builders in
-   * Cranleigh, Surrey") so the two pages support the same entity without
-   * competing for an identical string.
+   * Cranleigh, Surrey | Extensions, Renovations & Heritage Work") so the two
+   * pages support the same entity without competing for an identical string.
    */
-  title: "Cranleigh Builders | Extensions, Renovations & New Builds | Paul Martyn",
+  title: "Paul Martyn | Builders in Cranleigh — Extensions & Renovations",
   description:
     "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, new builds, listed buildings and commercial work across Cranleigh, Surrey and the surrounding villages. Fixed price. Call 01483 612156.",
   alternates: { canonical: "/" },

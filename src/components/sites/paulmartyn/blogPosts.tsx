@@ -46,6 +46,186 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "building-on-weald-clay-cranleigh-footings",
+    title: "Building on the Weald Clay around Cranleigh: what it means for your footings",
+    category: "Foundations",
+    date: "2026-09-21",
+    seoTitle: "Building on Weald Clay in Cranleigh: Footings Explained",
+    metaDescription:
+      "Cranleigh sits on shrinkable Weald Clay. What that means for foundation depth, drainage and the joint between old and new footings — and what changes the price.",
+    excerpt:
+      "The clay under Cranleigh decides more than your foundation depth — it decides whether a soakaway will work, how your new footings meet the old ones, and how many wet days the digger loses.",
+    imageAlt:
+      "Illustration of a garden cutaway on Weald Clay showing cracked dry clay under a sunny sky on one side and swollen, wet clay under a rain cloud on the other, meeting beneath a house drawn with a stepped foundation joining a shallow old footing to a deeper new one",
+    related: [
+      "trees-and-foundation-depth-cranleigh",
+      "structural-calculations-building-control",
+      "extending-1930s-semi-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Cranleigh sits on the **Weald Clay Formation**, classed by the British Geological Survey among the more reactive shrink–swell soils in England — the same shrinkability band as London Clay and Gault Clay.",
+          "That matters even with no tree in sight. Dry summers and wet winters move shrinkable clay on their own, which is why **Approved Document A** requires a foundation designed to resist ground movement, not just carry the building's weight.",
+          "Extending an older house means joining new, deeper footings to old, shallower ones. Done badly, that joint is where the cracks appear — NHBC guidance calls for a **stepped foundation** or an engineered movement joint, not a straight abutment.",
+          "Clay is also why a standard soakaway often fails here. **BRE Digest 365**'s percolation test routinely rules them out on heavy clay, so surface water drainage needs deciding at design stage, not after the first flood.",
+          "None of this is expensive to get right when it's investigated before the contract is signed. It gets expensive once it's discovered with the digger already on site.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ask ten homeowners in Cranleigh what worried them most about their extension, and foundations rarely make the list — until the digger hits something the drawing didn't allow for, and a two-week groundworks job becomes a six-week one. Weald Clay is usually the reason.",
+      },
+      {
+        type: "p",
+        text: "It isn't only about trees, either. Our piece on [the tree in your garden setting your foundation depth](/blog/trees-and-foundation-depth-cranleigh) covers what a mature oak does to a design. This one is about everything else the same clay does — to a garden with no trees near it at all, to the joint where a new extension meets an old cottage, and to the rainwater that has to go somewhere once the roof is on.",
+      },
+      {
+        type: "p",
+        text: "None of it is exotic. It is well documented, and if you ask the right questions before you sign, it is entirely priceable rather than something that turns up as a surprise on an invoice.",
+      },
+      { type: "h2", text: "What Weald Clay does to a garden, with or without a tree in it" },
+      {
+        type: "p",
+        text: "Cranleigh sits largely on the **Weald Clay Formation**, part of the Low Weald. It is a stiff, fissured clay, and the British Geological Survey's shrink–swell mapping places it among the more reactive clays in England — the same broad band as London Clay, Gault Clay and Lias Clay, the formations most associated with subsidence claims nationally.",
+      },
+      {
+        type: "p",
+        text: "Shrinkable clay moves on a seasonal cycle whether or not a tree is involved. It loses moisture and shrinks in a dry summer, and takes moisture back up and swells over a wet winter. **NHBC Standards Chapter 4.1** classifies clay by its volume change potential — low, medium or high, judged from its plasticity — and **Chapter 4.2** builds the tree-specific depth guidance on top of that baseline. Weald Clay's baseline is already toward the high end before a single root is added to the picture.",
+      },
+      {
+        type: "p",
+        text: "The general-purpose reference for building on shrinkable clay away from trees is **BRE Digest 240 (Low-rise buildings on shrinkable clay soils)**. Read alongside Building Regulations **Approved Document A**, which simply requires a foundation to remain stable and not be impaired by ground movement, the practical answer for most sites here is a minimum foundation depth of around **0.9m** — deeper if a site investigation shows the clay is more reactive than average, and deeper again if a tree adds to it.",
+      },
+      { type: "h2", text: "Choosing the foundation type: trench fill, raft, or piled and beam" },
+      {
+        type: "p",
+        text: "Depth is one variable. The type of foundation is the other, and on Weald Clay it is not always trench fill dug a bit deeper.",
+      },
+      {
+        type: "table",
+        caption: "Indicative only — NHBC Chapters 4.3 and 4.4. Your engineer chooses the type from a site investigation, not from a table.",
+        head: ["Foundation type", "Typically used when", "Relative cost"],
+        rows: [
+          ["Trench fill", "Depth up to roughly 1.2–1.5m, reasonable access for a digger and concrete wagon", "Baseline"],
+          ["Deep trench fill", "Depth up to roughly 2.5m — more concrete and spoil, trench support needed for safety", "Meaningfully more than baseline"],
+          ["Raft foundation", "Variable or soft ground where a single stiff slab spreads the load evenly", "Similar to deep trench fill, but less excavation"],
+          ["Piled and beam", "Beyond about 2.5m, restricted access, or where the ground varies across the footprint", "The most expensive option, plus a specialist piling rig"],
+        ],
+      },
+      {
+        type: "p",
+        text: "NHBC's own foundation guidance — Chapters 4.3 and 4.4, and its more recent **NF93** paper on foundation solutions — treats raft and piled options as ordinary tools for difficult ground, not last resorts. The point of a proper site investigation is choosing the right one before pricing the job, not partway through it.",
+      },
+      { type: "h2", text: "The joint nobody thinks about: where new footings meet old" },
+      {
+        type: "p",
+        text: "Most Cranleigh extensions are not built on a clear site. They are built onto a Victorian cottage or a 1930s semi that already has its own foundations, often shallower than anything a modern engineer would specify today.",
+      },
+      {
+        type: "p",
+        text: "Left to itself, a new, deeper foundation and an old, shallower one move at different rates on shrinkable clay — more in a dry summer, less in a wet winter — and the mismatch shows up as a crack exactly where the new brickwork meets the old. The standard answer is a **stepped foundation**, typically in 300–500mm steps down to the new depth, or a structural movement joint specified by an engineer where a straight step is not practical.",
+      },
+      {
+        type: "quote",
+        text: "The join between old and new footings is where I look first on any extension survey here. Two good foundations, badly joined, still crack. It costs almost nothing to detail that step properly at design stage, and a great deal to underpin a crack that opens two winters after everyone's moved back in.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "p",
+        text: "This is also a building control matter, not just good practice — the inspector checking your foundations before they're covered will want to see how the junction has been detailed, and a structural engineer's input here is the same £1,500–£3,000 already covered on our [pricing page](/pricing) for steelwork and foundation design generally, not a separate fee.",
+      },
+      { type: "h2", text: "Why a soakaway probably won't work on Weald Clay, and what does" },
+      {
+        type: "p",
+        text: "Foundations get the attention; drainage gets forgotten, and clay affects both. A soakaway — a buried chamber that lets rainwater percolate away into the surrounding ground — is the cheapest way to deal with roof and surface water, and it is the first thing a lot of homeowners assume will handle the new extension's guttering.",
+      },
+      {
+        type: "p",
+        text: "On heavy clay it usually will not. **BRE Digest 365**, the standard reference for soakaway design, requires a percolation test on site before one is specified, and clay routinely fails it — the guidance treats a soil infiltration rate below roughly 1 × 10⁻⁶ metres per second, typical of heavy clay, as unworkable regardless of how large the soakaway is dug.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Test before you design**, not after — a percolation test costs a fraction of a redesigned drainage run and tells you immediately whether a soakaway is viable at all.",
+          "**Attenuation, not disposal**, is the usual fallback on clay: a tank that stores water and releases it slowly into the surface water sewer, a ditch, or a watercourse at a controlled rate, rather than trying to lose it into the ground.",
+          "**Permeable paving with a storage layer** can do the same job for a driveway or patio, where the ground itself will not accept the water directly.",
+          "**Waverley's planning conditions** commonly ask for a drainage strategy on anything beyond a small extension, so this needs deciding at design stage, before an application is submitted — not treated as a groundworks afterthought.",
+        ],
+      },
+      { type: "h2", text: "What clay does to programme and price" },
+      {
+        type: "p",
+        text: "Cost overruns on a Weald Clay job rarely come from one dramatic mistake. They come from several ordinary things stacking up, none of which show on a drawing.",
+      },
+      {
+        type: "table",
+        caption: "Typical extras on a Weald Clay groundworks package — actual figures depend on depth, access and the site investigation.",
+        head: ["What clay adds", "Why"],
+        rows: [
+          ["More spoil to cart away", "A deeper or wider trench on clay produces significantly more muck-away than the same footprint on firm sand or chalk"],
+          ["Trench support", "Clay trenches below about 1.2m need shoring or battering for safe working, which firmer ground may not"],
+          ["Lost working days in wet weather", "Wet clay becomes unworkable and unsafe to stand plant on; a dry-ground job simply does not lose these days"],
+          ["A structural engineer's foundation design", "£1,500–£3,000 — not optional on variable clay, and cheaper booked before the quote than added as a variation"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "The single biggest cost jump on a Weald Clay job is switching foundation type mid-groundworks — trench fill to piled, say, because the trial hole findings did not match the assumption in the quote. Confirming the foundation type and assumed depth in writing before the contract is signed, from a proper site investigation rather than a guess, typically avoids **one to two weeks** remobilising different plant and a specialist contractor once the digger is already on site.",
+      },
+      { type: "h2", text: "What to ask your builder before you sign" },
+      {
+        type: "ol",
+        items: [
+          "**Ask what foundation depth and type the quote assumes**, in writing. This is the one question that makes two quotes for the same drawing genuinely comparable.",
+          "**Ask whether a trial hole or site investigation is included**, and if not, get one done before you sign — a few hundred pounds against a project running into tens of thousands.",
+          "**Ask how a variation would be priced** if the ground turns out to need a deeper or different foundation than assumed.",
+          "**Ask how the junction with the existing house will be detailed** — a stepped foundation or a movement joint should be shown on the drawings, not left for site to sort out.",
+          "**Ask what the drainage strategy is**, and whether it depends on a soakaway that has actually been tested rather than assumed.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Weald Clay is not bad ground. It is ordinary, well-understood ground that happens to move more than most, and it has been built on successfully in Cranleigh for centuries — the timber-framed cottages on the High Street are proof of that. What it is not forgiving of is a foundation, a joint or a drainage run designed on the assumption that it behaves like anywhere else. Getting the site investigation and the engineer's input right at the start is the difference between a quote that holds and one that grows once the trench is open, and it is exactly the kind of local knowledge that is worth using [builders in Cranleigh](/areas/cranleigh) for rather than a firm working from a generic national spec.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need a soil survey to build an extension in Cranleigh?",
+        answer:
+          "It is strongly recommended rather than legally required for most domestic extensions, but on Weald Clay it is the best-value investigation you can commission. A trial hole and, where warranted, a soil investigation with plasticity testing gives your structural engineer the evidence to specify the right foundation depth and type, instead of a quote based on assumption.",
+      },
+      {
+        question: "Can I use a soakaway for my extension on Weald Clay?",
+        answer:
+          "Sometimes, but it needs testing first, not assuming. BRE Digest 365 requires an on-site percolation test before a soakaway is specified, and heavy clay commonly fails it. If your site fails the test, the usual alternative is an attenuation tank that stores rainwater and releases it slowly into a sewer, ditch or watercourse.",
+      },
+      {
+        question: "Why does my new extension need a different foundation depth to my existing house?",
+        answer:
+          "Older foundations, especially on a Victorian or 1930s house, are often shallower than current guidance requires on shrinkable clay. A new foundation built to today's depth will move at a different rate to the old one, so the junction between them needs a stepped foundation or an engineered movement joint to stop that difference showing as a crack.",
+      },
+      {
+        question: "What is the cheapest foundation type on clay?",
+        answer:
+          "Trench fill, where the depth and ground conditions allow it — typically up to around 1.2–1.5m with reasonable access. Beyond that, or where the ground is inconsistent across the footprint, a raft or piled-and-beam foundation is often more cost-effective than continuing to deepen a trench, even though the unit cost looks higher on paper.",
+      },
+      {
+        question: "Does clay ground slow down an extension?",
+        answer:
+          "It can, mainly through trench support requirements below about 1.2m, more spoil to remove than on firmer ground, and lost working days in wet weather when clay becomes unsafe to work or stand plant on. None of this is dramatic on its own, but it is why a groundworks programme on clay needs more contingency than the same job on chalk or sand.",
+      },
+      {
+        question: "Is Weald Clay bad for building on?",
+        answer:
+          "No — it is ordinary, well-understood ground that Cranleigh's older buildings have stood on for centuries. It simply needs designing for: the right foundation depth and type from a proper site investigation, a detailed junction where new footings meet old ones, and a drainage strategy that does not assume a soakaway will work without testing it first.",
+      },
+    ],
+    art: BLOG_ART["building-on-weald-clay-cranleigh-footings"],
+  },
+  {
     slug: "retention-snagging-practical-completion",
     title: "Retention, snagging and practical completion: what they actually mean for your build",
     category: "Contracts & payment",
@@ -3273,6 +3453,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "extending-1930s-semi-cranleigh",
       "cranleigh-conservation-area-consent",
       "party-wall-notice-timing",
+      "building-on-weald-clay-cranleigh-footings",
     ],
     body: [
       {

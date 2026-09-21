@@ -1292,6 +1292,85 @@ export const BLOG_ART: Record<string, ReactNode> = {
       <text x="376" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
     </svg>
   ),
+  "building-on-weald-clay-cranleigh-footings": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="wcskyL" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bfe0f0" /><stop offset="1" stopColor="#eef7fb" />
+          </linearGradient>
+          <linearGradient id="wcskyR" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7f95a3" /><stop offset="1" stopColor="#c3d2da" />
+          </linearGradient>
+          <linearGradient id="wcgrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="wcclayDry" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c99a5e" /><stop offset="1" stopColor="#8a5f38" />
+          </linearGradient>
+          <linearGradient id="wcclayWet" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7a6a5a" /><stop offset="1" stopColor="#453b33" />
+          </linearGradient>
+          <linearGradient id="wcroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="wcbrickOld" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="wcbrickNew" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e0d3bd" /><stop offset="1" stopColor="#bfae90" />
+          </linearGradient>
+          <linearGradient id="wcamber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="200" height="150" fill="url(#wcskyL)" />
+        <rect x="200" width="200" height="150" fill="url(#wcskyR)" />
+        <circle cx="58" cy="46" r="21" fill="#ffe9a8" opacity=".9" />
+        <path d="M58 13 v-10 M58 89 v10 M25 46 h-10 M101 46 h10 M35 23 l-8 -8 M81 23 l8 -8 M35 69 l-8 8 M81 69 l8 8" stroke="#ffd97a" strokeWidth="3" strokeLinecap="round" opacity=".85" />
+
+        <ellipse cx="330" cy="44" rx="46" ry="20" fill="#9aa8ae" />
+        <ellipse cx="300" cy="52" rx="30" ry="15" fill="#8996a0" />
+        <path d="M300 72 l-8 18 M318 72 l-8 22 M336 72 l-8 18 M354 72 l-8 22" stroke="#bcd6e6" strokeWidth="3" strokeLinecap="round" opacity=".8" />
+
+        <rect y="150" width="400" height="10" fill="url(#wcgrass)" />
+
+        <rect y="160" width="200" height="140" fill="url(#wcclayDry)" />
+        <rect x="200" y="160" width="200" height="140" fill="url(#wcclayWet)" />
+
+        <path d="M20 188 l16 14 l-6 20 l18 10" stroke="#5f3f22" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".55" />
+        <path d="M56 208 l14 10 l-4 18" stroke="#5f3f22" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".5" />
+        <path d="M22 250 l20 8 l10 18" stroke="#5f3f22" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".5" />
+        <path d="M64 268 l16 -6 l8 16" stroke="#5f3f22" strokeWidth="2" fill="none" strokeLinecap="round" opacity=".45" />
+
+        <path d="M318 170 q14 6 4 16 q-12 8 2 18 q14 8 0 18" stroke="#c9d8de" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".5" />
+        <path d="M356 188 q12 6 2 16 q-10 8 2 18" stroke="#c9d8de" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".45" />
+        <path d="M340 238 q12 6 2 16" stroke="#c9d8de" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity=".4" />
+
+        <path d="M140 160 L210 95 L280 160 Z" fill="url(#wcroof)" />
+        <rect x="150" y="160" width="60" height="58" fill="url(#wcbrickOld)" />
+        <rect x="210" y="160" width="70" height="66" fill="url(#wcbrickNew)" stroke="#a89a7c" strokeWidth="1.5" />
+        <rect x="163" y="172" width="16" height="16" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="228" y="176" width="34" height="34" fill="#bcd8e6" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="186" y="196" width="18" height="22" fill="#40525a" />
+
+        <rect x="150" y="218" width="60" height="36" fill="#5b4530" />
+        <text x="180" y="240" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#f0dcc0" textAnchor="middle">OLD</text>
+
+        <rect x="210" y="226" width="70" height="64" fill="#453728" />
+        <text x="245" y="260" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#f0dcc0" textAnchor="middle">NEW</text>
+
+        <path d="M210 254 H230 V290" fill="none" stroke="url(#wcamber)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 7" />
+        <text x="296" y="248" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#ffd79a">STEPPED</text>
+        <text x="296" y="267" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#ffd79a">JOINT</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="332" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Old footings, new footings, one moving clay</text>
+        <text x="24" y="356" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Weald Clay shrinks and swells with the seasons — the join is where cracks start</text>
+        <text x="24" y="378" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#6f8088">Source: NHBC Standards Ch. 4.1–4.4; BRE Digest 240; BGS shrink–swell mapping</text>
+        <text x="376" y="390" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "trees-and-foundation-depth-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
       <defs>

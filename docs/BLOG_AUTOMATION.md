@@ -325,7 +325,7 @@ Cranleigh topics — work through these:
 - [done 2026-09-14] Cranleigh's Victorian cottages: what a sympathetic rewire and replumb involves
 - [done 2026-09-16] Garden rooms in Cranleigh: permitted development limits, and where they stop
 - [done 2026-09-21] Building on the Weald clay around Cranleigh: what it means for your footings
-- [ ] Barn conversions around Cranleigh: the planning route
+- [done 2026-09-23] Barn conversions around Cranleigh: the planning route
 - [ ] Annexes and multigenerational living in Cranleigh: the planning position
 - [ ] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
 - [ ] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed

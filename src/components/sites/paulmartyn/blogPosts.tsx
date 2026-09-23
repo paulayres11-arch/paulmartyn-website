@@ -46,6 +46,176 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "barn-conversions-cranleigh-planning-route",
+    title: "Barn conversions around Cranleigh: the planning route",
+    category: "Planning & surveys",
+    date: "2026-09-23",
+    seoTitle: "Barn Conversions in Cranleigh: The Class Q Planning Route",
+    metaDescription:
+      "Converting a barn near Cranleigh? What Class Q permitted development allows since the 2024 rule change, when you need full planning, and what it costs.",
+    excerpt:
+      "Four walls and a roof don't make a barn most of the way to being a house. Whether it can become one without full planning permission comes down to Class Q rules that changed substantially in 2024 — and most Cranleigh farmland qualifies, if you check the right things first.",
+    imageAlt:
+      "Illustration of a traditional weatherboarded barn in a Cranleigh field at golden hour, with an open hay-loft hatch showing a roosting bat, and a signpost forking toward a tick-marked Class Q route leading to the barn and a crossed-out Full Planning route leading to a distant village skyline representing the conservation area",
+    related: [
+      "cranleigh-settlement-boundary",
+      "bat-surveys-timing-cranleigh",
+      "structural-calculations-building-control",
+      "cranleigh-conservation-area-consent",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Most working barns around Cranleigh can become a home without full planning permission, using **Class Q** permitted development — but the rules changed substantially on **21 May 2024**, and the old \"465 square metres\" figure quoted in a lot of guides is now out of date.",
+          "Current Class Q limits, per agricultural unit: **up to 10 dwellings**, **1,000m² of total floorspace**, **150m² per dwelling** — plus, new since 2024, a single-storey rear extension of up to 4m.",
+          "Class Q permits a **conversion**, not a rebuild. A barn needing its walls or roof substantially reconstructed falls outside the right — a 2016 High Court case, Hibbitt v Secretary of State, is what planning officers cite when refusing one.",
+          "Class Q does not apply on **Article 2(3) land** — conservation areas, National Parks and the Surrey Hills National Landscape among them — or to **listed buildings**. Most Cranleigh farmland sits outside the village's conservation area, but check, don't assume.",
+          "Get the structural survey and the designation check done before you commission drawings. A prior approval refused because the barn doesn't qualify costs the fee, the 56-day wait, and starts the clock again under full planning.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Somebody rings us most months about a barn — already theirs, standing behind a farmhouse bought years ago and never used, or a field and a barn coming up for sale near Cranleigh with the sums being done before an offer's even accepted. Both calls start the same way: the barn already has four walls and a roof, so surely it's most of the way to being a house.",
+      },
+      {
+        type: "p",
+        text: "It's an understandable assumption, and usually a wrong one, in the way that costs people money. Whether a barn can become a home without a full planning application depends on a permitted development right called **Class Q**, on whether the land sits where that right doesn't apply, and on whether the building is sound enough to convert rather than rebuild. None of that shows up on the estate agent's particulars, and it decides your budget and timeline before a single brick moves.",
+      },
+      { type: "h2", text: "Class Q or full planning permission: which route applies?" },
+      {
+        type: "p",
+        text: "There are two ways an agricultural building becomes a home. **Class Q**, part of the General Permitted Development Order, lets you convert a qualifying agricultural building to residential use without a full planning application, subject to **prior approval** on a defined list of issues rather than a wide-open assessment. Failing that, a standard **full planning application** applies whenever the building, the site or the scale of what you want falls outside what Class Q allows. Class Q is the quicker, cheaper route where it applies, and most working farmland around Cranleigh qualifies in principle — the rest of this post is about the conditions that decide it either way.",
+      },
+      { type: "h2", text: "What the 2024 rule change actually allows now" },
+      {
+        type: "p",
+        text: "Class Q was substantially rewritten by **SI 2024/579**, in force from **21 May 2024**. Anything written about barn conversions before that date — plenty of guides still sitting online included — quotes figures now wrong for an application submitted today.",
+      },
+      {
+        type: "table",
+        caption: "Class Q limits, per agricultural unit — GPDO 2015, as amended by SI 2024/579.",
+        head: ["Limit", "Before 21 May 2024", "From 21 May 2024"],
+        rows: [
+          ["Maximum new dwellings", "5", "10"],
+          ["Maximum total floorspace converted", "465m²", "1,000m²"],
+          ["Maximum floorspace per dwelling", "Up to 465m² (fewer, larger units)", "150m²"],
+          ["Rear extension as part of conversion", "Not permitted", "Single-storey, up to 4m"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Two other changes matter as much as the numbers. The old test — that the building must itself have been used **solely for agriculture** — has gone, replaced by whether it formed part of an **established agricultural unit** on **24 July 2023** (or for 10 years since, if it joined later). And a **former** agricultural building, sold off separately from the working farm years ago, can now qualify too, provided it hasn't had any non-agricultural use since — a genuine gap the old rules left plenty of Cranleigh barns falling through.",
+      },
+      { type: "h2", text: "The catch: conversion, not rebuild" },
+      {
+        type: "p",
+        text: "Class Q lets you convert a building. It does not let you demolish one and build a new house that looks like it — a distinction that sounds obvious until you're standing in a barn with a sagging ridge line and an engineer telling you the roof needs to come off.",
+      },
+      {
+        type: "p",
+        text: "The case planning officers point to is **Hibbitt v Secretary of State for Communities and Local Government [2016] EWHC 2853 (Admin)**, which found that works amounting to a rebuild — rather than genuine conversion of a structurally capable building — fall outside Class Q entirely, whatever the drawings call it. Class Q does allow the building operations reasonably necessary to convert a barn — new windows and doors, new services, some partial works — but the shell has to already be capable of doing the job.",
+      },
+      {
+        type: "quote",
+        text: "The first thing I look at with a barn isn't the layout, it's the roof structure and the walls. If the trusses are sound and the walls are standing plumb, Class Q usually has room to work with. If I'm looking at temporary props holding the roof up, that's not a conversion anymore, whatever the estate agent called it — and that changes the whole planning route, not just the build cost.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "p",
+        text: "This is also what the Class Q **prior approval** conditions are really testing. The council has 56 days to assess transport and highway impacts, noise, contamination, flood risk, siting and practicality, design and external appearance, and natural light to habitable rooms. That siting-and-practicality test is where a barn needing rebuilding, rather than converting, gets refused.",
+      },
+      { type: "h2", text: "Where Class Q doesn't apply near Cranleigh" },
+      {
+        type: "p",
+        text: "Class Q does not apply to **listed buildings**, or on what the legislation calls **Article 2(3) land** — conservation areas, National Parks, National Landscapes (the redesignated Areas of Outstanding Natural Beauty) and a handful of similar designations. Convert a barn in any of those without a full application and you haven't used a permitted development right — you've built without permission.",
+      },
+      {
+        type: "p",
+        text: "Locally, that mostly means the **Cranleigh Conservation Area** — designated 1973, extended 1985 and 2016 — which covers the High Street and village centre, not the farmland around it. Most parish barns sit outside it, so Class Q applies in principle to most of them. The **Surrey Hills National Landscape** is the other one to check: its boundary currently runs east of the Cranleigh–Shamley Green–Wonersh road, short of the village, but Natural England has had it under review, so confirm with Waverley before you assume rather than after.",
+      },
+      { type: "h2", text: "What it costs and how long it takes" },
+      {
+        type: "table",
+        caption: "Fees current for applications made before 8 December 2026, when most planning fees rise again.",
+        head: ["Route", "Application fee", "Typical determination"],
+        rows: [
+          ["Class Q — no building operations", "£249 (£310 from 8 Dec 2026)", "56 days"],
+          ["Class Q — with building operations", "£536 (£667 from 8 Dec 2026)", "56 days"],
+          ["Full planning application", "£610 per dwelling (from 1 Apr 2026)", "8 weeks (typical minor application)"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The build cost is the bigger number, and it isn't on our standard rate card because a barn conversion isn't quite like anything else we price — a complete, insulated, serviced dwelling built inside a shell never meant to keep anyone warm, with new drainage, electrics and water run from scratch. Our **new-build rate of around £2,700 per m²**, the same figure on our [pricing page](/pricing), is the closer comparison than an extension rate; where the barn is of traditional or listed construction, our **heritage rate of £3,400–£4,200 per m²** is the more realistic guide once repair and matching materials are priced in. Get a site-specific quote once the survey is done — structure condition moves this more than anything else.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A Class Q application refused because the barn sits in the conservation area, is listed, or needs rebuilding rather than converting doesn't just cost the fee back — it costs the 56 days the council held it, plus whatever you'd already spent on drawings and a survey aimed at the wrong route. Checking the barn's designation status and getting a structural opinion first typically avoids **two to three months** of restarting from scratch under full planning.",
+      },
+      { type: "h2", text: "If Class Q doesn't fit: the full planning route" },
+      {
+        type: "p",
+        text: "If your barn is listed, sits on Article 2(3) land, needs rebuilding, or you want more than the 150m²-per-dwelling cap allows, the route is a full application rather than prior approval — not a dead end, just a different test.",
+      },
+      {
+        type: "p",
+        text: "Following the NPPF's restructure into named, numbered policies in August 2026, the relevant provision is **Policy HO11** — what earlier versions numbered paragraph 84, before that 79 and 55 — supporting reuse of a redundant or disused building in the countryside where it enhances its immediate setting, including long-term reuse of an underused listed building. Locally, **Waverley's Local Plan Part 2, Policy DM15** sets the general test for rural development — avoiding isolation from services, respecting the countryside's character, protecting the best agricultural land — assessed alongside HO11.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A **heritage or design and access statement**, especially for a traditional or listed barn — where the case for reuse under Policy HO11 is actually made.",
+          "A **structural survey** showing what's kept and repaired, not replaced — the evidence a rebuild objection would otherwise succeed on.",
+          "A **bat survey**, timed to the season. Barns are prime roosting sites, and getting the timing wrong is a common way a conversion loses months, not weeks — see [bat surveys: why timing can cost you a year](/blog/bat-surveys-timing-cranleigh).",
+          "A **drainage strategy**. Cranleigh sits on Weald Clay, a barn's remote setting rarely guarantees a mains connection, and foul and surface water need deciding at design stage — see [building on the Weald Clay around Cranleigh](/blog/building-on-weald-clay-cranleigh-footings).",
+        ],
+      },
+      {
+        type: "p",
+        text: "Whichever route ends up applying, the questions worth answering before you buy the barn — or pay an architect to draw it — come down to the same handful: whether it was part of an established agricultural unit on 24 July 2023 (or for 10 years since); whether it's listed or sits on Article 2(3) land; whether the structure is sound enough to convert in an engineer's opinion; and which route your engineer and architect expect to run with, in writing, before either is paid for anything beyond that first survey.",
+      },
+      {
+        type: "p",
+        text: "A barn is one of the more rewarding conversions we take on — the scale and timber structure give a kind of room a new-build extension can't, and Cranleigh's farmland has no shortage of candidates. Whether that becomes a straightforward Class Q conversion or a drawn-out full application is almost entirely settled before the first survey is booked, which is why it's worth a structural and planning opinion from **builders in Cranleigh** who do this route regularly, rather than treating a barn like any other renovation.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to convert a barn near Cranleigh?",
+        answer:
+          "Not necessarily a full planning application — most working barns can be converted using Class Q permitted development rights, subject to a prior approval application rather than a full one. You will need full planning permission instead if the barn is listed, sits in the Cranleigh Conservation Area or on other protected land, needs substantial rebuilding rather than conversion, or exceeds the Class Q size caps.",
+      },
+      {
+        question: "What is Class Q permitted development?",
+        answer:
+          "Class Q is a national permitted development right that lets a qualifying agricultural building change to residential use without a full planning application. Since it was amended on 21 May 2024, it allows up to 10 dwellings and 1,000m² of converted floorspace per agricultural unit, capped at 150m² per dwelling, subject to prior approval from the council on issues including highways, noise, flood risk, siting, design and natural light.",
+      },
+      {
+        question: "Can I convert a barn under Class Q if it's in a conservation area?",
+        answer:
+          "No. Class Q does not apply on what the legislation calls Article 2(3) land, which includes conservation areas, National Parks and National Landscapes (the former Areas of Outstanding Natural Beauty). In Cranleigh that mainly means the conservation area around the High Street and village centre; most farmland further out sits outside it, but the boundary should be checked against the specific site.",
+      },
+      {
+        question: "How long does a Class Q prior approval application take?",
+        answer:
+          "The council has 56 days to determine a valid Class Q prior approval application, compared with around 8 weeks for a typical full planning application for a minor development. If the council misses the 56-day deadline on a proposal that genuinely qualifies as permitted development, consent is deemed to have been granted.",
+      },
+      {
+        question: "What happens if my barn isn't structurally sound enough to convert?",
+        answer:
+          "Class Q only permits conversion of an existing, structurally capable building, not a rebuild. Following the High Court's decision in Hibbitt v Secretary of State [2016], works amounting to substantial reconstruction fall outside the right entirely, and the application would need to proceed as a full planning application instead, assessed on its own merits rather than as permitted development.",
+      },
+      {
+        question: "Does a barn conversion need a bat survey?",
+        answer:
+          "Very often, yes. Barns are one of the most common bat roosting sites, and an ecologist normally needs to assess the building before works can proceed, with some surveys only possible in the warmer months. Getting this timed into the programme early is one of the most effective ways to avoid losing a season, as covered in our post on bat survey timing.",
+      },
+    ],
+    art: BLOG_ART["barn-conversions-cranleigh-planning-route"],
+  },
+  {
     slug: "building-on-weald-clay-cranleigh-footings",
     title: "Building on the Weald Clay around Cranleigh: what it means for your footings",
     category: "Foundations",
@@ -1414,6 +1584,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-neighbourhood-plan-householders",
       "trees-and-foundation-depth-cranleigh",
       "extension-value-cranleigh",
+      "barn-conversions-cranleigh-planning-route",
     ],
     body: [
       {

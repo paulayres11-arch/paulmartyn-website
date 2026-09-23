@@ -16,6 +16,91 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "barn-conversions-cranleigh-planning-route": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="bcsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f3b563" /><stop offset=".55" stopColor="#f4cf8e" /><stop offset="1" stopColor="#cfe3ee" />
+          </linearGradient>
+          <linearGradient id="bcfield" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c9a542" /><stop offset="1" stopColor="#8a7418" />
+          </linearGradient>
+          <linearGradient id="bcwall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#4a3626" /><stop offset="1" stopColor="#2c2018" />
+          </linearGradient>
+          <linearGradient id="bcroof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9a4f36" /><stop offset="1" stopColor="#6e3524" />
+          </linearGradient>
+          <linearGradient id="bcamber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="300" fill="url(#bcsky)" />
+        <circle cx="332" cy="66" r="26" fill="#fff2cf" opacity=".8" />
+        {/* distant hills */}
+        <path d="M0 200 Q100 176 210 196 T400 188 V300 H0 Z" fill="#c7d9c0" opacity=".7" />
+        {/* village skyline behind, standing for the conservation area / listed-building route */}
+        <g opacity=".85">
+          <rect x="286" y="176" width="16" height="30" fill="#8a97a0" />
+          <rect x="306" y="184" width="14" height="22" fill="#8a97a0" />
+          <path d="M262 206 L262 168 L270 158 L278 168 L278 206 Z" fill="#7c8890" />
+          <rect x="268" y="150" width="4" height="12" fill="#7c8890" />
+        </g>
+        <rect y="252" width="400" height="48" fill="url(#bcfield)" />
+        <rect y="290" width="400" height="10" fill="#7a6414" />
+
+        {/* hedgerow separating farmland from the lane */}
+        <path d="M0 254 q20 -14 40 0 q20 -14 40 0 q20 -14 40 0 q20 -14 40 0" fill="none" stroke="#5c7a3a" strokeWidth="10" strokeLinecap="round" opacity=".55" />
+
+        {/* the barn */}
+        <g transform="translate(28,150)">
+          <path d="M0 66 L74 8 L148 66 Z" fill="url(#bcroof)" stroke="#4a2417" strokeWidth="2" />
+          <path d="M0 66 h148 M8 58 h132" stroke="#4a2417" strokeWidth="1" opacity=".4" />
+          <rect x="10" y="66" width="128" height="94" fill="url(#bcwall)" stroke="#1f150e" strokeWidth="2" />
+          <path d="M10 82 h128 M10 98 h128 M10 114 h128 M10 130 h128 M10 146 h128" stroke="#1f150e" strokeWidth="1" opacity=".5" />
+          {/* big barn doors, closed */}
+          <rect x="50" y="100" width="48" height="60" fill="#5c4530" stroke="#2c2018" strokeWidth="2" />
+          <path d="M74 100 v60 M50 130 h48" stroke="#2c2018" strokeWidth="1.5" />
+          {/* open hay-loft hatch revealing a truss and a roosting bat */}
+          <rect x="60" y="72" width="28" height="22" fill="#1f150e" />
+          <path d="M60 72 h28 M60 94 L52 100 M88 94 L96 100" stroke="#4a3626" strokeWidth="2" fill="none" />
+          <path d="M64 90 L74 78 L84 90" stroke="#8a97a0" strokeWidth="1.6" fill="none" />
+          <path d="M70 84 q4 -5 4 0 q0 -5 4 0" fill="none" stroke="#c9d3d8" strokeWidth="1.1" opacity=".85" />
+        </g>
+
+        {/* dashed boundary between working farmland and the village behind */}
+        <path d="M232 150 V260" stroke="#e08a2b" strokeWidth="2.5" strokeDasharray="1 7" strokeLinecap="round" />
+
+        {/* signpost forking toward the barn (Class Q) and the village (full planning) */}
+        <g transform="translate(214,206)">
+          <rect x="-3" y="0" width="6" height="54" fill="#6e5638" />
+          <g transform="rotate(-6)">
+            <rect x="-58" y="-30" width="60" height="18" rx="2" fill="url(#bcamber)" stroke="#a85f1c" strokeWidth="1.5" />
+            <text x="-28" y="-17" textAnchor="middle" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#1f2a30">CLASS Q</text>
+          </g>
+          <path d="M6 -22 l9 4 l-3 9 l-9 -4 Z" fill="#4c9a5b" />
+          <path d="M9 -19 l2.4 2.6 l4.6 -5" stroke="#eaf5ea" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          <g transform="rotate(7)">
+            <rect x="4" y="-12" width="70" height="18" rx="2" fill="#dfe6ea" stroke="#8b98a0" strokeWidth="1.5" />
+            <text x="39" y="1" textAnchor="middle" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#3a424a">FULL PLANNING</text>
+          </g>
+          <path d="M76 -18 l8 8 M84 -18 l-8 8" stroke="#b23a2e" strokeWidth="2.4" strokeLinecap="round" />
+        </g>
+
+        {/* hay bales */}
+        <g fill="#c9a542" stroke="#8a7418" strokeWidth="1.5">
+          <circle cx="336" cy="272" r="14" />
+          <circle cx="360" cy="274" r="12" />
+        </g>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#e8e4dc">Four walls and a roof aren&apos;t enough</text>
+        <text x="24" y="348" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Bigger limits since 2024 — but not every barn qualifies</text>
+        <text x="24" y="372" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Source: GPDO 2015 Class Q, as amended by SI 2024/579</text>
+        <text x="376" y="390" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "retention-snagging-practical-completion": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

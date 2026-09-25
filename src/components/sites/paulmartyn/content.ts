@@ -171,7 +171,7 @@ export const INTRO = {
   /** About Us page. */
   image: `${IMG}/about-intro.jpg`,
   /** Homepage intro band — a completed Paul Martyn new build at Stocton Road. */
-  homeImage: `${NEWBUILD}/stocton-road.jpg`,
+  homeImage: `${NEWBUILD}/stocton-road-sunny.jpg`,
   /** Project credit shown under the photo. Keep captions this short. */
   homeImageCaption: "Stocton Road, Guildford",
 };

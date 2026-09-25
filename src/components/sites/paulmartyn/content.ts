@@ -383,6 +383,8 @@ export const SERVICES = {
         { src: `${LISTED}/barn-restaurant.jpg`, alt: "Barn restaurant with the original timber frame retained beneath a whitewashed vaulted roof and chandeliers" },
         { src: `${LISTED}/period-house-terrace.jpg`, alt: "Rear elevation of a period brick house with restored sash windows, french doors and a new sandstone terrace" },
         { src: `${LISTED}/walled-garden-terrace.jpg`, alt: "The same terrace looking down the walled garden — riven sandstone paving laid to the house, a circular water feature set flush into it, and the original brick wall and arch retained" },
+        { src: `${LISTED}/barn-hallway-panelled-wardrobes.jpg`, alt: "Barn dressing corridor with full-height fluted wardrobes either side, the original stone plinth kept at floor level and the oak frame open above beneath woven pendants" },
+        { src: `${LISTED}/barn-landing-oak-trusses.jpg`, alt: "Oak-floored barn landing under the original exposed trusses, with a black spindle balustrade to the stair and fluted panelling along the wall" },
         { src: `${LISTED}/heritage-window-lead.jpg`, alt: "New casement window let into black weatherboarding, with hand-dressed lead flashing to the head and cill" },
         // Video sits last so the rail opens on a still photograph rather than a play button.
         {

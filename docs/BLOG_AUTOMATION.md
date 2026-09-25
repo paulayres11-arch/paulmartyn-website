@@ -349,7 +349,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-08-28] Trickle vents, condensation and Approved Document F
 - [done 2026-09-11] Structural calculations: what a building control officer looks for
 - [done 2026-09-18] Retention, snagging and what "practical completion" means
-- [ ] Damp: rising, penetrating and condensation are three different problems
+- [done 2026-09-25] Damp: rising, penetrating and condensation are three different problems
 - [ ] Why a steel beam needs a padstone
 - [ ] Underfloor heating: screed depth, response time and floor build-up
 - [ ] Overheating and Approved Document O in a glazed extension

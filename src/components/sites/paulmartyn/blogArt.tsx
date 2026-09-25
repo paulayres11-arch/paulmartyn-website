@@ -16,6 +16,75 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "damp-rising-penetrating-condensation": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="dpsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="dpsoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a5138" /><stop offset="1" stopColor="#5c3420" />
+          </linearGradient>
+          <linearGradient id="dpbrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="dpwet" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stopColor="#4a7fa0" stopOpacity=".85" /><stop offset="1" stopColor="#4a7fa0" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="260" fill="url(#dpsky)" />
+        <rect y="255" width="400" height="45" fill="url(#dpsoil)" />
+        <path d="M10 256 q3 -8 6 0 M20 256 q3 -8 6 0 M380 256 q3 -8 6 0 M390 256 q3 -8 6 0" stroke="#5a8a52" strokeWidth="1.6" fill="none" />
+
+        <text x="200" y="26" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30" textAnchor="middle">Three kinds of damp, one wall</text>
+
+        {/* wall spanning full width, ground to eaves */}
+        <rect x="0" y="110" width="400" height="150" fill="url(#dpbrick)" stroke="#7a4a34" strokeWidth="2" />
+        <path d="M0 130 h400 M0 150 h400 M0 170 h400 M0 190 h400 M0 210 h400 M0 230 h400" stroke="#8a5138" strokeWidth="1" opacity=".35" />
+
+        {/* zone dividers */}
+        <path d="M133 58 v202" stroke="#e08a2b" strokeWidth="2" strokeDasharray="1 6" />
+        <path d="M266 58 v202" stroke="#e08a2b" strokeWidth="2" strokeDasharray="1 6" />
+
+        {/* zone labels */}
+        <text x="66" y="74" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fontWeight="700" fill="#c4741f" textAnchor="middle">RISING</text>
+        <text x="199" y="74" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fontWeight="700" fill="#c4741f" textAnchor="middle">PENETRATING</text>
+        <text x="332" y="74" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fontWeight="700" fill="#c4741f" textAnchor="middle">CONDENSATION</text>
+        <text x="66" y="94" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">tide mark + salts</text>
+        <text x="199" y="94" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">follows a defect</text>
+        <text x="332" y="94" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fill="#5d7078" textAnchor="middle">cold surface, no air</text>
+
+        {/* zone 1: rising damp — capillary lines from soil up to a tide mark */}
+        <rect x="0" y="200" width="133" height="60" fill="url(#dpwet)" />
+        <path d="M20 258 q4 -30 -2 -58 M40 258 q4 -34 -2 -60 M60 258 q4 -28 -2 -56 M80 258 q4 -32 -2 -58 M100 258 q4 -30 -2 -56" stroke="#2e6b8f" strokeWidth="1.6" fill="none" opacity=".75" />
+        <path d="M0 200 h133" stroke="#7a5230" strokeWidth="3" strokeDasharray="4 3" />
+        <circle cx="30" cy="215" r="1.6" fill="#f4ede0" /><circle cx="55" cy="222" r="1.4" fill="#f4ede0" /><circle cx="90" cy="210" r="1.5" fill="#f4ede0" />
+
+        {/* zone 2: penetrating damp — overflowing gutter and a crack tracking down */}
+        <rect x="150" y="56" width="50" height="12" fill="#8a8f92" stroke="#5d6568" strokeWidth="1.5" />
+        <path d="M175 68 v12" stroke="#8a8f92" strokeWidth="4" />
+        <path d="M172 80 q4 20 -3 34 q6 10 0 26 q6 8 -2 22" stroke="#2e6b8f" strokeWidth="2.2" fill="none" opacity=".8" />
+        <ellipse cx="167" cy="200" rx="20" ry="14" fill="#3a4a52" opacity=".45" />
+
+        {/* zone 3: condensation — window with droplets and mould */}
+        <rect x="300" y="140" width="66" height="80" fill="#eef2f4" stroke="#c7d2d8" strokeWidth="2" />
+        <path d="M333 140 v80" stroke="#c7d2d8" strokeWidth="2" />
+        <path d="M308 158 q5 8 0 12 q-5 -4 0 -12 z M320 175 q5 8 0 12 q-5 -4 0 -12 z M350 165 q5 8 0 12 q-5 -4 0 -12 z M358 190 q5 8 0 12 q-5 -4 0 -12 z" fill="#8fd4f0" opacity=".9" />
+        <circle cx="306" cy="212" r="3" fill="#3a4a2e" opacity=".7" /><circle cx="312" cy="216" r="2.2" fill="#3a4a2e" opacity=".6" /><circle cx="303" cy="217" r="1.8" fill="#3a4a2e" opacity=".55" />
+
+        {/* DPC line */}
+        <path d="M0 233 h400" stroke="#e08a2b" strokeWidth="2" strokeDasharray="1 5" opacity=".9" />
+        <rect x="4" y="219" width="168" height="14" fill="#1f2a30" opacity=".85" />
+        <text x="10" y="229" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#e08a2b">DPC ≈150mm above ground</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Three causes, three different fixes</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Diagnosis: BRE Digest 245 — a meter reading alone is not one</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">BS 6576 (code of practice) · Approved Document C · Approved Document F</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "barn-conversions-cranleigh-planning-route": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

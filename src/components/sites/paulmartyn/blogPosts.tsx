@@ -46,6 +46,192 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "damp-rising-penetrating-condensation",
+    title: "Damp: rising, penetrating and condensation are three different problems",
+    category: "Damp & moisture",
+    date: "2026-09-25",
+    seoTitle: "Rising Damp Or Condensation? How To Tell Them Apart",
+    metaDescription:
+      "Rising damp, penetrating damp and condensation are three different problems. How to tell them apart, what building regs require, and what treatment costs.",
+    excerpt:
+      "Most \"rising damp\" diagnosed off a single meter reading isn't rising damp at all. Here's how the three real causes of a damp wall differ — and why treating the wrong one costs money twice.",
+    imageAlt:
+      "Illustration of a house wall in cross-section divided into three zones: ground moisture rising by capillary action to a tide mark on the left, water tracking down from an overflowing gutter through a crack in the middle, and condensation droplets and mould forming on a cold window on the right",
+    related: [
+      "tiles-are-not-waterproof",
+      "trickle-vents-approved-document-f",
+      "cranleigh-victorian-cottage-rewire-replumb",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "**Rising damp**, **penetrating damp** and **condensation** are three different problems with three different fixes — a moisture-meter reading alone does not tell you which one you have.",
+          "**BRE Digest 245** and a joint **2022 statement from RICS, Historic England and the Property Care Association** both warn that rising damp is routinely over-diagnosed — often when the real cause is condensation or salt-contaminated plaster.",
+          "**Approved Document C** sets what a new damp-proof course has to do. **BS 6576**, used to diagnose and treat rising damp in an existing wall, is a **code of practice, not a regulation**.",
+          "Condensation is a **ventilation problem**, not a waterproofing one. **Approved Document F**'s bathroom extract rates — 15 litres per second intermittent, or 8 litres per second continuous — are a legal requirement.",
+          "Treating the wrong problem is the expensive mistake, and in an older, solid-walled house, cement render and gypsum plaster often trap the very moisture they were meant to cure.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The phone call usually starts with a survey, not a symptom. A mortgage valuation or a lender's condition report comes back flagging \"rising damp\" on the ground floor, a figure gets pencilled in for a chemical damp-proof course, and by the time it reaches us that number is already fixed in someone's head as fact.",
+      },
+      {
+        type: "p",
+        text: "More often than we'd like, it isn't rising damp at all. It's a blocked gutter that's overflowed down the same patch of wall for two winters, or a bathroom with no working extract fan showing on the wallpaper next door. Both get \"cured\" the same way surprisingly often — inject the wall, replaster, invoice — and both come straight back within a season, because nobody treated the actual cause.",
+      },
+      {
+        type: "p",
+        text: "Rising damp, penetrating damp and condensation are three separate mechanisms with three different fixes, and mixing them up is the single most expensive mistake in a damp job. Here's how they're told apart, and what it costs to get the diagnosis right first.",
+      },
+      { type: "h2", text: "What's actually different between rising damp, penetrating damp and condensation?" },
+      {
+        type: "p",
+        text: "Each has a distinct mechanism, and each leaves different clues if you know where to look.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Rising damp** — ground moisture drawn up a wall by capillary action, past a damp-proof course that has failed, been bridged, or was never fitted. It stays low, within about a metre of the floor, and often leaves a ragged \"tide mark\" from dissolved ground salts.",
+          "**Penetrating damp** — water getting through the fabric from outside: cracked render, a slipped tile, a blocked gutter, failed flashing, or mortar bridging a cavity. It can appear at any height, tracks with the weather, and usually leads back to one findable defect.",
+          "**Condensation** — water vapour from cooking, showering and drying laundry meeting a surface cold enough to turn it back to liquid. It shows up on cold walls, in poorly ventilated corners and behind furniture, and gets worse in winter, not better.",
+        ],
+      },
+      {
+        type: "table",
+        caption: "Three different problems — the fix follows the cause, not the other way round.",
+        head: ["Type", "Where it shows", "Real cause", "What fixes it"],
+        rows: [
+          ["Rising damp", "Lower ~1m of a wall, tide-mark staining", "Failed, bridged or missing damp-proof course", "New DPC — after the cause is confirmed, not assumed"],
+          ["Penetrating damp", "Any height; tracks a specific defect", "Cracked render, blocked gutter, failed flashing, bridged cavity", "Fix the fabric defect — the wall dries out on its own"],
+          ["Condensation", "Cold walls, corners, behind furniture; worse in winter", "Moist indoor air meeting a cold surface with nowhere to go", "Ventilation and heating, not a waterproofing product"],
+        ],
+      },
+      { type: "h2", text: "Why 'rising damp' gets diagnosed more often than it actually occurs" },
+      {
+        type: "p",
+        text: "Most high-street damp surveys are done with a hand-held electrical moisture meter — a \"protimeter\" — pressed against the plaster, and it's often the whole basis for a five-figure quote. The trouble is these meters measure electrical conductance, not moisture content, and conductance is skewed by exactly what an older wall is full of: hygroscopic salts, metal fixings, and surface condensation. A wall that's damp for a completely different reason can still read like textbook rising damp.",
+      },
+      {
+        type: "p",
+        text: "The Building Research Establishment's own reference, **BRE Digest 245** (Rising damp in walls: diagnosis and treatment), sets out a proper diagnosis: drilled masonry samples, taken at different heights, analysed for both moisture content and hygroscopicity — not one reading through wallpaper. In September 2022, **RICS, Historic England and the Property Care Association**, with the SPAB and the other UK heritage bodies, published a joint statement on moisture in traditional buildings warning specifically against reflexive rising-damp diagnoses in older, solid-walled houses, where the real cause is very often condensation or salt-contaminated plaster instead.",
+      },
+      {
+        type: "quote",
+        text: "I've lost count of \"rising damp\" reports where the meter reading was taken two feet from a shower that's vented into the room for ten years. If a surveyor can't tell me what a salts test showed, I don't trust the diagnosis — and I don't sign off a chemical DPC before gutters, cavities and the bathroom fan are ruled out.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What building regulations actually require" },
+      {
+        type: "p",
+        text: "A **new** damp-proof course is a Building Regulations matter: **Approved Document C** requires it to sit at least 150mm above finished ground level, continuous with any floor damp-proof membrane, so moisture has no path around it. In a cavity wall, the cavity itself has to carry on below the DPC — or a cavity tray with weep holes has to catch anything that gets in — because a bridged cavity is one of the commonest ways an otherwise correct wall lets damp through anyway.",
+      },
+      {
+        type: "p",
+        text: "Treating an **existing** wall is different, and covered by **BS 6576** — worth being precise about, because it is a **code of practice**, not a statutory regulation. It sets out how a chemical damp-proof course should be diagnosed and installed, but nobody is legally required to follow it, and a contractor who skips the diagnosis step it describes hasn't broken a law, just good practice.",
+      },
+      { type: "h2", text: "Penetrating damp: the fabric problems that let water in" },
+      {
+        type: "p",
+        text: "Because penetrating damp comes from a specific defect, the fix is finding that defect, not treating the wall. The usual suspects, in roughly the order we find them:",
+      },
+      {
+        type: "ul",
+        items: [
+          "A blocked or damaged gutter or downpipe, overflowing down the same patch of wall every time it rains.",
+          "Cracked, missing or badly pointed render or brickwork letting water track inward.",
+          "Slipped roof tiles, or flashing that's failed around a chimney or a roof-to-wall junction.",
+          "A bridged cavity — mortar debris (\"snots\") left on wall ties, giving water a bridge across a cavity meant to stop it.",
+          "Ground levels built up over time — a raised flower bed or a new patio laid above the damp-proof course, bridging it from outside.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of these need a chemical injection — just a roofer, bricklayer or groundworker to fix the actual defect, after which the wall dries out on its own. Treating the symptom while the gutter still overflows is money spent twice.",
+      },
+      { type: "h2", text: "Condensation, ventilation and mould" },
+      {
+        type: "p",
+        text: "Condensation isn't a fabric problem — it's a ventilation and heating one. Warm, moist air holds more water vapour than cold air, and when it meets a surface cold enough, some of it turns back into liquid on the spot: a poorly insulated wall, a north-facing corner, behind a wardrobe, inside a room with no working extract fan.",
+      },
+      {
+        type: "p",
+        text: "This is the gap **Approved Document F** exists to close. A bathroom needs mechanical extract ventilation at **15 litres per second** intermittently, or **8 litres per second** continuously — a legal requirement, not a recommendation. Fit a fan that vents into the loft instead of outside, and condensation is close to guaranteed.",
+      },
+      {
+        type: "p",
+        text: "Left unchecked, condensation shows up as black or dark green mould — **Cladosporium** is the species most often identified in UK homes, followed by **Penicillium** and **Aspergillus**. Damp and mould is one of the hazards assessed under the **Housing Health and Safety Rating System** (Housing Act 2004) and can be scored serious enough to require action — the basis for **Awaab's Law**, in force for social landlords since **27 October 2025**, requiring significant hazards to be investigated within 10 working days and made safe within 5. That duty covers social housing, not owner-occupiers — but it shows how seriously mould is now taken, not a redecorating problem to paper over.",
+      },
+      { type: "h2", text: "What diagnosis and treatment actually cost" },
+      {
+        type: "p",
+        text: "None of this is on our own price list — a damp job is priced against what's actually wrong — but these national trade-guide ranges are a reasonable starting point before you get a fixed quote.",
+      },
+      {
+        type: "table",
+        caption: "National trade-guide ranges — get a fixed quote once the actual cause is confirmed.",
+        head: ["Item", "Typical UK range"],
+        rows: [
+          ["Damp and timber survey", "£200 – £800, depending on the size of the property"],
+          ["Chemical DPC injection (whole house)", "£1,000 – £3,000+VAT, or roughly £40–£120 per linear metre"],
+          ["Breathable lime re-plastering", "£45 – £140 per m² (higher for specialist heritage work)"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A wrongly diagnosed rising damp problem costs the **£1,000–£3,000 of the chemical DPC itself**, on top of whatever the real cause — a blocked gutter, a bathroom fan never fitted — still needs spending on afterwards. Get the £200–£800 survey right first and insist on seeing what it tested; that avoids paying for a treatment that never had a problem to solve.",
+      },
+      { type: "h2", text: "Older and traditional buildings: a different set of rules" },
+      {
+        type: "p",
+        text: "A lot of the housing stock we work on — timber-framed, brick or stone cottages built before cavity walls existed — was designed to let moisture move through the wall and evaporate, not to keep it out entirely. Modern cement render and gypsum plaster are both far less permeable than the lime they usually replace, and on a solid wall they trap moisture inside rather than letting it breathe out — precisely the problem people then call us to treat.",
+      },
+      {
+        type: "p",
+        text: "The 2022 joint statement from RICS, Historic England and the Property Care Association makes the same point directly: judge a traditional solid-walled building by a modern cavity wall's standards, and you'll reach for the wrong fix nearly every time. On a cottage like the one in our piece on [rewiring and replumbing a Victorian cottage](/blog/cranleigh-victorian-cottage-rewire-replumb), lime plaster and a breathable paint are usually the right call over a chemical DPC and a cement skim — worth raising before work starts, not after.",
+      },
+      {
+        type: "p",
+        text: "Whichever of the three you're dealing with, the sequence that saves money is the same: find the cause before reaching for a treatment. It's the same principle behind [why tiles alone don't waterproof a shower](/blog/tiles-are-not-waterproof) and [why a sealed, insulated extension still needs trickle vents](/blog/trickle-vents-approved-document-f) — skipping the diagnosis to get straight to a fix is how a damp problem gets treated twice. If you'd rather have someone look at the wall first, that's the kind of call [builders in Cranleigh](/areas/cranleigh) who've seen the ground, the gutters and the bathrooms here for years are for.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the difference between rising damp and penetrating damp?",
+        answer:
+          "Rising damp is ground moisture drawn up through a wall by capillary action, past a damp-proof course that's failed or missing — it stays low, generally within a metre of the floor. Penetrating damp is water getting in from outside through a specific fabric defect, such as a blocked gutter or cracked render, and can appear at any height, following the path of that defect.",
+      },
+      {
+        question: "How can I tell if my damp problem is condensation rather than rising or penetrating damp?",
+        answer:
+          "Condensation is seasonal — worse in winter, when warm indoor air is more likely to meet a cold surface — and shows up on cold external walls, in poorly ventilated corners, and behind furniture pushed against an outside wall, rather than low down or following a specific defect. If it clears up in a warm, well-ventilated summer and comes back every winter in the same spots, that's condensation, not rising or penetrating damp.",
+      },
+      {
+        question: "Is rising damp over-diagnosed?",
+        answer:
+          "The evidence suggests it often is. The Building Research Establishment's Digest 245 and a 2022 joint statement from RICS, Historic England and the Property Care Association both warn that hand-held electrical moisture meters — the standard tool for a quick damp survey — measure electrical conductance, not moisture content, and can give a false rising-damp reading where the real cause is condensation or salt-contaminated plaster.",
+      },
+      {
+        question: "Am I legally required to have a damp-proof course?",
+        answer:
+          "A new damp-proof course in new work is a Building Regulations requirement under Approved Document C. Treating an existing wall's rising damp is different — the relevant standard, BS 6576, is a code of practice rather than a legal regulation, so there's no statutory obligation to follow a particular method, though it's a sensible one to insist on.",
+      },
+      {
+        question: "How much does damp treatment cost?",
+        answer:
+          "As a national guide: a damp and timber survey typically runs £200–£800 depending on the property's size, a whole-house chemical DPC injection is roughly £1,000–£3,000 plus VAT, and breathable lime re-plastering runs about £45–£140 per m². Get a fixed quote once the actual cause has been confirmed, since these ranges vary a great deal by property and cause.",
+      },
+      {
+        question: "Can I use lime plaster instead of cement to fix damp in an old house?",
+        answer:
+          "In many older, solid-walled buildings, yes — and it's often the better choice. Cement render and gypsum plaster are much less permeable than lime-based materials, and on a solid wall that was designed to let moisture evaporate through it, they can trap moisture rather than curing it. This is one of the points the 2022 RICS, Historic England and Property Care Association joint statement makes directly.",
+      },
+    ],
+    art: BLOG_ART["damp-rising-penetrating-condensation"],
+  },
+  {
     slug: "barn-conversions-cranleigh-planning-route",
     title: "Barn conversions around Cranleigh: the planning route",
     category: "Planning & surveys",
@@ -1435,6 +1621,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "part-l-extension-insulation",
       "building-control-completion-certificate",
       "cranleigh-conservation-area-consent",
+      "damp-rising-penetrating-condensation",
     ],
     body: [
       {

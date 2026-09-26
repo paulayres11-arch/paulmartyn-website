@@ -1,4 +1,8 @@
 import { HERO } from "./content";
+import { Logo } from "./shared/Logo";
+
+/** 1.8x the header lockup (34px mark), at Paul's request. */
+const BANNER_LOGO_HEIGHT = 34 * 1.8;
 
 /**
  * Section 3 — hero. Photograph first, copy underneath.
@@ -31,7 +35,7 @@ export function Hero() {
       </div>
 
       <div className="bg-pm-teal-dark">
-        <div className="mx-auto max-w-[2000px] px-[3%] py-[56px] sm:py-[89px]">
+        <div className="relative mx-auto max-w-[2000px] px-[3%] py-[56px] sm:py-[89px]">
           {/* The page h1. */}
           <h1 className="t-hero mb-[0.3em] max-w-[900px] pb-[0.12em] font-medium text-white">
             {HERO.heading}
@@ -57,6 +61,15 @@ export function Hero() {
               {HERO.secondaryCta.label}
             </a>
           </div>
+
+          {/* Gold-house lockup, bottom right, level with the buttons. Desktop
+              only: at ~390px wide it can't share a phone-width row with them. */}
+          <Logo
+            height={BANNER_LOGO_HEIGHT}
+            tone="white"
+            markTone="gold"
+            className="absolute bottom-[89px] right-[3%] hidden lg:inline-flex"
+          />
         </div>
       </div>
     </section>

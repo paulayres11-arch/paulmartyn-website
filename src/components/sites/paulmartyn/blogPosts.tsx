@@ -364,7 +364,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A barn is one of the more rewarding conversions we take on — the scale and timber structure give a kind of room a new-build extension can't, and Cranleigh's farmland has no shortage of candidates. Whether that becomes a straightforward Class Q conversion or a drawn-out full application is almost entirely settled before the first survey is booked, which is why it's worth a structural and planning opinion from **builders in Cranleigh** who do this route regularly, rather than treating a barn like any other renovation.",
+        text: "A barn is one of the more rewarding conversions we take on — the scale and timber structure give a kind of room a new-build extension can't, and Cranleigh's farmland has no shortage of candidates. Whether that becomes a straightforward Class Q conversion or a drawn-out full application is almost entirely settled before the first survey is booked, which is why it's worth a structural and planning opinion from [builders in Cranleigh](/areas/cranleigh) who do this route regularly, rather than treating a barn like any other renovation.",
       },
     ],
     faqs: [

@@ -40,14 +40,12 @@ export function LogoMark({ className, ...props }: SVGProps<SVGSVGElement>) {
       className={className}
       {...props}
     >
-      {/* Left house */}
-      <path d="M10 200 V100 L118 12 L224 100 V200" />
-      {/* Right house */}
-      <path d="M136 200 V100 L246 12 L352 100 V200" />
-      {/* Broken base */}
-      <path d="M10 200 H60" />
-      <path d="M136 200 H224" />
-      <path d="M304 200 H352" />
+      {/* One continuous path, left base stub → left house → centre base →
+          right house → right base stub. It must stay a single path: drawn as
+          separate wall and base strokes, the butt caps leave a square notch
+          missing at each of the four bottom corners at this stroke weight.
+          As one path every corner is a mitred join. */}
+      <path d="M60 200 H10 V100 L118 12 L224 100 V200 H136 V100 L246 12 L352 100 V200 H304" />
     </svg>
   );
 }

@@ -1,7 +1,7 @@
 import { BoxLinks } from "@/components/sites/paulmartyn/BoxLinks";
 import { CommitmentSection } from "@/components/sites/paulmartyn/CommitmentSection";
 import { HashScroll } from "@/components/sites/paulmartyn/HashScroll";
-import { HeroSlider } from "@/components/sites/paulmartyn/HeroSlider";
+import { Hero } from "@/components/sites/paulmartyn/Hero";
 import { IntroSection } from "@/components/sites/paulmartyn/IntroSection";
 import { ReviewsSlider } from "@/components/sites/paulmartyn/ReviewsSlider";
 import { QuoteCta } from "@/components/sites/paulmartyn/QuoteCta";
@@ -119,7 +119,7 @@ export default function Home() {
       <SiteHeader />
 
       <main>
-        <HeroSlider />
+        <Hero />
         <IntroSection />
 
         {/* Platform reviews sit high on the page, straight after the intro —

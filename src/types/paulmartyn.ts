@@ -13,11 +13,6 @@ export interface NavItem {
   children?: NavChild[];
 }
 
-export interface HeroSlide {
-  image: string;
-  alt: string;
-}
-
 export type BoxLinkIcon = "map-pin" | "badge" | "receipt" | "user";
 
 export interface BoxLink {

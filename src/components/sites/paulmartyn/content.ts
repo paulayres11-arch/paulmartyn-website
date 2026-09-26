@@ -12,7 +12,6 @@ import type {
   PriceBand,
   Review,
   SiteVideo,
-  HeroSlide,
   NavChild,
   NavItem,
   ProcessStep,
@@ -127,29 +126,23 @@ export const HERO = {
   primaryCta: { label: "View our services", path: "/services" },
   secondaryCta: { label: "Get in touch", path: "/contact" },
   /**
-   * Paul Martyn's own projects. The three images previously here were
-   * stand-in reference photography carried over from the design reference and
-   * were never Paul Martyn work — they should not have been on the live site.
+   * One photograph, shown full-bleed ABOVE the copy — not behind it.
    *
-   * The band is 600px tall and full-bleed, so `bg-cover` crops hard to the
-   * vertical middle. Wider source images survive that better, which is why
-   * these are the widest genuine photographs in the library. Anything chosen
-   * here needs its subject in the middle third or it gets cut off.
+   * Until 2026-09-26 the hero was a three-image slider under an 84% teal
+   * scrim, so on landing it read as a block of text with no building in it.
+   * Paul asked for the Rake Barn overhead shot, full width, with the green
+   * banner moved down beneath it. The old slide images are still in
+   * /images if they're wanted elsewhere.
+   *
+   * `srcSet` widths must match the files on disk (hero-rake-barn-milford-*.jpg).
    */
-  slides: [
-    {
-      image: `${IMG}/hero-new-build-frontage.jpg`,
-      alt: "Front elevation of a completed new build — brick with tile hanging, gabled roof and an arched oak entrance",
-    },
-    {
-      image: `${IMG}/hero-pool-garden-room.jpg`,
-      alt: "Landscaped rear garden with a new outdoor pool, patterned terrace and a cedar-clad garden room",
-    },
-    {
-      image: `${IMG}/hero-reroof-solar.jpg`,
-      alt: "Aerial view of a re-roofed house with new clay tiles, a dormer and integrated solar panels",
-    },
-  ] satisfies HeroSlide[],
+  image: {
+    src: `${IMG}/hero-rake-barn-milford-1600.jpg`,
+    srcSet: [1000, 1600, 2200]
+      .map((w) => `${IMG}/hero-rake-barn-milford-${w}.jpg ${w}w`)
+      .join(", "),
+    alt: "Overhead view of Rake Barn, Milford — a black-weatherboarded barn conversion with a clay-tiled roof, walled garden and oak-framed garden room",
+  },
 };
 
 /**

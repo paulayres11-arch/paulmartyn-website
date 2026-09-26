@@ -50,7 +50,7 @@ src/components/sites/paulmartyn/
   root-8a5edab2/
     TopBar.tsx              Section 1
     SiteHeader.tsx          Section 2 (client — sticky scroll state)
-    HeroSlider.tsx          Section 3 (client — autoplay)
+    Hero.tsx                Section 3 (photo band + teal copy band)
     IntroSection.tsx        Section 4
     StraplineBand.tsx       Section 5
     BoxLinks.tsx            Section 6

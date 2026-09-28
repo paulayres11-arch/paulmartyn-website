@@ -326,12 +326,17 @@ Cranleigh topics — work through these:
 - [done 2026-09-16] Garden rooms in Cranleigh: permitted development limits, and where they stop
 - [done 2026-09-21] Building on the Weald clay around Cranleigh: what it means for your footings
 - [done 2026-09-23] Barn conversions around Cranleigh: the planning route
-- [ ] Annexes and multigenerational living in Cranleigh: the planning position
+- [done 2026-09-28] Annexes and multigenerational living in Cranleigh: the planning position
 - [ ] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
 - [ ] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed
 - [ ] Extending a bungalow in Cranleigh: what's different from a two-storey house
 - [ ] Basements and cellars in Cranleigh: what the Weald clay means for digging down
 - [ ] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
+- [ ] Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay
+- [ ] Porches in Cranleigh: the one extension that almost never needs planning permission
+- [ ] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
+- [ ] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
+- [ ] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
 
 
 ### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS

@@ -16,6 +16,86 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "annexes-multigenerational-living-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="anSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#3b3f6b" /><stop offset=".55" stopColor="#a6577a" /><stop offset="1" stopColor="#e8a463" />
+          </linearGradient>
+          <linearGradient id="anGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5c8a4e" /><stop offset="1" stopColor="#3f6438" />
+          </linearGradient>
+          <linearGradient id="anWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#b97d5a" /><stop offset="1" stopColor="#8a5a3e" />
+          </linearGradient>
+          <linearGradient id="anAnnexeWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cf9a6a" /><stop offset="1" stopColor="#a06f47" />
+          </linearGradient>
+          <radialGradient id="anGlow" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stopColor="#ffdf9a" stopOpacity=".9" /><stop offset="1" stopColor="#ffdf9a" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        <rect width="400" height="230" fill="url(#anSky)" />
+        <circle cx="330" cy="56" r="24" fill="#f6d9a0" opacity=".85" />
+        <circle cx="40" cy="30" r="1.4" fill="#fff" opacity=".7" /><circle cx="70" cy="46" r="1" fill="#fff" opacity=".6" /><circle cx="110" cy="24" r="1.2" fill="#fff" opacity=".65" />
+        <rect y="225" width="400" height="75" fill="url(#anGrass)" />
+
+        <text x="200" y="26" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#fff8ef" textAnchor="middle">One roof, or two homes?</text>
+
+        {/* main house, left */}
+        <path d="M12 150 L73 105 L134 150 Z" fill="#5c3a28" />
+        <rect x="18" y="150" width="110" height="100" fill="url(#anWall)" stroke="#6a4530" strokeWidth="2" />
+        <rect x="70" y="120" width="9" height="22" fill="#3d281c" />
+        <path d="M75 120 q-4 -13 4 -19 q6 8 -2 19" fill="#cbd3d6" opacity=".6" />
+        <rect x="34" y="190" width="22" height="60" fill="#3d281c" />
+        <rect x="90" y="178" width="26" height="26" fill="#ffdf9a" opacity=".92" stroke="#5c3a28" strokeWidth="2" />
+        <circle cx="90" cy="196" r="16" fill="url(#anGlow)" />
+
+        {/* annexe, right, smaller */}
+        <path d="M262 196 L313 168 L364 196 Z" fill="#5c3a28" />
+        <rect x="268" y="196" width="90" height="54" fill="url(#anAnnexeWall)" stroke="#6a4530" strokeWidth="2" />
+        <rect x="278" y="214" width="16" height="36" fill="#3d281c" />
+        <rect x="326" y="208" width="22" height="22" fill="#ffdf9a" opacity=".95" stroke="#5c3a28" strokeWidth="2" />
+        <circle cx="337" cy="219" r="14" fill="url(#anGlow)" />
+
+        {/* lit path connecting the two */}
+        <path d="M100 250 Q210 270 280 250" fill="none" stroke="#e0c9a6" strokeWidth="10" strokeLinecap="round" opacity=".75" />
+        <circle cx="150" cy="258" r="3" fill="#ffdf9a" /><circle cx="200" cy="264" r="3" fill="#ffdf9a" /><circle cx="245" cy="258" r="3" fill="#ffdf9a" />
+
+        {/* signpost forking the two planning routes */}
+        <rect x="196" y="150" width="6" height="78" fill="#5c4530" />
+        <rect x="150" y="150" width="52" height="17" rx="2" fill="#5c8a4e" />
+        <text x="176" y="162.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fontWeight="700" fill="#f5f8f2" textAnchor="middle">INCIDENTAL</text>
+        <rect x="200" y="132" width="76" height="17" rx="2" fill="#e08a2b" />
+        <text x="238" y="144.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">FULL PLANNING</text>
+
+        {/* small tool shed — the incidental route */}
+        <path d="M26 222 L45 208 L64 222 Z" fill="#5d6a5f" />
+        <rect x="30" y="222" width="30" height="26" fill="#9aa79c" stroke="#5d6a5f" strokeWidth="1.5" />
+        <path d="M45 228 v9 M40 232.5 h10" stroke="#5d6a5f" strokeWidth="1.6" strokeLinecap="round" />
+
+        {/* cutaway over the annexe: bed, tap and bath, stamped */}
+        <rect x="253" y="56" width="122" height="72" rx="6" fill="#fdf6ec" stroke="#c9a06a" strokeWidth="2" />
+        <rect x="264" y="98" width="26" height="14" rx="2" fill="none" stroke="#8a5a3e" strokeWidth="2" />
+        <circle cx="271" cy="96" r="4" fill="none" stroke="#8a5a3e" strokeWidth="2" />
+        <path d="M308 100 v10 M302 100 h12" stroke="#4a7fa0" strokeWidth="2.4" strokeLinecap="round" />
+        <circle cx="308" cy="96" r="3" fill="none" stroke="#4a7fa0" strokeWidth="2" />
+        <path d="M340 108 q0 -10 10 -10 q10 0 10 10 v4 h-20 z" fill="none" stroke="#4a7fa0" strokeWidth="2" />
+        <path d="M338 112 h24" stroke="#4a7fa0" strokeWidth="2" />
+        <g transform="rotate(-12 318 80)">
+          <circle cx="318" cy="80" r="21" fill="none" stroke="#c0392b" strokeWidth="2.4" strokeDasharray="3 2" />
+          <text x="318" y="77" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#c0392b" textAnchor="middle">FULL</text>
+          <text x="318" y="87" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#c0392b" textAnchor="middle">PLANNING</text>
+        </g>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Kitchen + bath + bed = a separate home</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Class E (GPDO) covers a store or a gym, not a home</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Council tax discount · CIL annexe exemption · Waverley SPD</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "damp-rising-penetrating-condensation": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

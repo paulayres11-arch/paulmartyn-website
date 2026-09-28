@@ -46,6 +46,159 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "annexes-multigenerational-living-cranleigh",
+    title: "Annexes and multigenerational living in Cranleigh: the planning position",
+    category: "Planning & surveys",
+    date: "2026-09-28",
+    seoTitle: "Granny Annexe Planning Permission: The Cranleigh Rules",
+    metaDescription:
+      "Planning a granny annexe or garage conversion in Cranleigh? What needs full planning permission, the council tax and CIL rules, and what it costs to build.",
+    excerpt:
+      "A granny annexe with its own kitchen, bathroom and bed is legally a separate home, not a shed with plumbing — and that one distinction decides whether you need full planning permission, a council tax bill, and thousands in CIL.",
+    imageAlt:
+      "Illustration of a Cranleigh garden at dusk with the main house linked by a lit path to a smaller annexe, a signpost forking toward a green 'incidental' tool shed and an amber 'full planning' sign, and a cutaway over the annexe showing bed, tap and bath icons stamped 'full planning'",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "extending-1930s-semi-cranleigh",
+      "building-control-completion-certificate",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A granny annexe with its own kitchen, bathroom and bedroom is legally a separate home, not an outbuilding — and that means it **always needs full planning permission**, whatever its size and whether it's attached or detached.",
+          "Permitted development under **Class E** of the GPDO only covers space genuinely **incidental** to the main house — a garden store, a home gym, a garage. The moment a building can function as somewhere to actually live, that right stops applying.",
+          "Build the annexe as an **attached extension** instead and the size limits change, under Class A and Waverley's Residential Extensions SPD — but the same \"no separate dwelling\" condition still applies underneath.",
+          "An annexe occupied by a relative can qualify for a **50% council tax discount**, or a full exemption if that relative is a **dependant** — over 65, disabled, or severely mentally impaired.",
+          "A new annexe can be **exempt from the Community Infrastructure Levy** — tens of thousands of pounds on a typical Cranleigh plot — but only if the right forms go in **before** work starts, not after.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually starts the same way. A parent's needs have changed, or a grown-up child needs somewhere of their own while they save, and the family has settled on an annexe over the garage or a garden building at the end of the plot rather than moving house. Nobody on that call is thinking about planning law yet — they're thinking about who does the school run and whether there's room for a kettle.",
+      },
+      {
+        type: "p",
+        text: "Then somebody remembers a friend whose annexe got flagged by the council two years after it was finished, or reads online that a garden building under a certain size never needs permission, and the whole thing stalls. Both reactions come from the same confusion: an annexe someone actually lives in is treated completely differently, in planning law, from a shed with a sofa in it — and the difference isn't size. It's whether it functions as a separate home.",
+      },
+      {
+        type: "p",
+        text: "Get that distinction wrong and it costs more than a redrawn plan. An annexe built without the permission it needed can end up the subject of enforcement action; one built without a Community Infrastructure Levy exemption claimed at the right moment can add thousands of pounds to the bill after the fact, with no way to claim it back. Here's how the planning position actually works for a Cranleigh annexe, and what to check before anyone is booked to start.",
+      },
+      { type: "h2", text: "Is a granny annexe permitted development, or do I need planning permission?" },
+      {
+        type: "p",
+        text: "Part 1, Class E of the General Permitted Development Order lets you put up a detached outbuilding — a garage, a garden store, a home gym, a summer house — without planning permission, subject to size and position limits (single storey, up to 4m high under a dual-pitched roof or 3m otherwise, and not covering more than half the garden). We've covered those limits in detail for a garden office or studio in our post on [garden rooms in Cranleigh](/blog/garden-rooms-cranleigh-permitted-development).",
+      },
+      {
+        type: "p",
+        text: "The word doing the work in Class E is \"incidental\". National planning guidance is explicit that primary living accommodation — a kitchen, a bathroom and a bedroom in combination — is not an incidental use of a garden building, however small it is or how far it sits from the house. A structure capable of functioning as somewhere to actually live, independent of the main house, falls outside Class E entirely and needs full planning permission, whatever its size and whether it's attached or detached.",
+      },
+      { type: "h2", text: "Building the annexe as an extension instead" },
+      {
+        type: "p",
+        text: "Plenty of Cranleigh families solve this by building over or beside the garage, physically joined to the house, rather than putting up a separate garden building — common on the borough's 1930s semis and post-war bungalows, the kind of house we've covered in our post on [extending a 1930s semi in Cranleigh](/blog/extending-1930s-semi-cranleigh). An attached annexe is assessed as a house extension, under Class A of the GPDO and against Waverley's Residential Extensions SPD, rather than as an outbuilding — different size limits again, generally more generous than Class E's.",
+      },
+      {
+        type: "p",
+        text: "The same restriction still applies underneath, though. The GPDO explicitly withdraws permitted development rights where the result would be a separate, self-contained dwelling, whatever class of the Order the work is done under. An annexe with its own external door but no internal connection to the house, that could be locked off and lived in without ever setting foot in the main dwelling, reads to a planning officer as a second house wearing an extension's paperwork.",
+      },
+      { type: "h2", text: "What a planning officer actually checks" },
+      {
+        type: "p",
+        text: "In practice, three things decide it: whether there's an internal door connecting the annexe to the main house that isn't locked or built over; whether the kitchen is a full kitchen or just a kettle and a sink; and whether the annexe has its own address-worthy access, separate from the main house's drive and front door. None of these has a single statutory test attached to it — they're the questions an officer, and later an enforcement team if a complaint's made, actually asks when deciding whether what's been built matches what was approved.",
+      },
+      {
+        type: "quote",
+        text: "The question I ask before we draw anything isn't how big the annexe needs to be, it's whether anyone will ever hold a key to it without going through the main house first. Answer that honestly at the start and the planning route usually answers itself.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Council tax on a family annexe" },
+      {
+        type: "p",
+        text: "An annexe used by a relative doesn't automatically double your council tax bill. Since **1 April 2014**, an annexe occupied by a relative of the person living in the main house — a definition covering parents, grandparents, children, siblings and in-laws — qualifies for a **50% discount** on its own council tax band. If that relative is a **dependant** — over 65, substantially or permanently disabled, or severely mentally impaired — the annexe can be **exempt** from council tax altogether while they live there as their main home.",
+      },
+      {
+        type: "p",
+        text: "Neither is automatic. Both have to be applied for through Waverley's council tax team once the annexe is occupied, with the relationship and, where relevant, the dependant's circumstances confirmed. An annexe left empty because a planning condition stops it being let or sold separately from the house can also qualify for its own exemption on those grounds.",
+      },
+      { type: "h2", text: "The one form that can save thousands: the CIL annexe exemption" },
+      {
+        type: "p",
+        text: "A new annexe counts as new floorspace, which normally makes it liable for the **Community Infrastructure Levy** — a charge Waverley applies at **£452 per square metre** on small residential schemes, its rate since 1 March 2019, index-linked annually, so the current figure runs higher. On a modest 50m² annexe, that's upwards of **£22,600** before this year's indexation is even applied.",
+      },
+      {
+        type: "p",
+        text: "There's a specific exemption for exactly this case — a self-build annexe within the curtilage of the home you already own and occupy as your main residence — under the Community Infrastructure Levy Regulations 2010, as amended. The catch is timing: the exemption has to be claimed on the correct national forms (Form 2, assuming liability, and the Self-Build Annex Exemption claim) and approved **before** work starts on site, not after. Break ground before the paperwork clears and the exemption is gone, permanently, whatever the reason for the annexe.",
+      },
+      {
+        type: "p",
+        text: "It also carries a **three-year clawback**. Sell the annexe separately, let it out, or otherwise breach the exemption's conditions within three years of the compliance certificate, and the full CIL bill becomes payable, with 14 days to notify the council once it happens.",
+      },
+      { type: "h2", text: "What it costs to build, and what building regulations expect" },
+      {
+        type: "p",
+        text: "An attached annexe built as an extension prices like any other single-storey addition — our extension rate of **£2,700–£3,100 per m²** is the right comparison. A genuinely detached annexe, built as its own small dwelling with its own services, is closer to our **new-build rate of around £2,700 per m²**, and closer still to our **heritage rate of £3,400–£4,200 per m²** if it sits within the curtilage of a listed building or Cranleigh's conservation area.",
+      },
+      {
+        type: "table",
+        caption: "Route decides the planning fee as well as the build cost — figures current from 1 April 2026.",
+        head: ["Route", "Typical build cost", "Planning fee"],
+        rows: [
+          ["Attached annexe (extension)", "£2,700 – £3,100 per m²", "£548 householder fee, or none if permitted development applies"],
+          ["Detached annexe, self-contained", "≈£2,700 per m² (new-build rate)", "£610 per dwelling, full application"],
+          ["Incidental outbuilding, no living facilities", "Priced as a garden building", "None — permitted development"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Because a self-contained annexe is legally its own dwelling, it's built to the same Building Regulations as a new house, not the lighter standard for an outbuilding: independent means of escape under **Part B**, sound insulation where it shares a wall or floor with the main house under **Part E**, and the national accessible-and-adaptable baseline for a new dwelling under **Part M**, Category 1. It also needs its own building control sign-off at the end — see our post on [what a building control completion certificate is actually for](/blog/building-control-completion-certificate) — because building control signs a new dwelling off separately from the house it sits beside.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Claiming the CIL annexe exemption before work starts — Form 2 plus the Self-Build Annex Exemption claim, approved before the first digger arrives — avoids a bill that on a 50m² annexe at Waverley's small-sites rate runs to roughly **£22,600 before indexation**. Miss that window and there is no appeal that gets it back.",
+      },
+      {
+        type: "p",
+        text: "Whichever route your family's annexe takes — a garden building, a wing over the garage, or a full new dwelling at the end of the garden — the planning position comes down to one honest answer about who holds the key and whether anyone could live there without the main house. Get that answer right before the drawings are paid for, and check the council tax and CIL paperwork the same afternoon you check the planning route, not months later. If you'd rather have that conversation with someone who's filed the annexe exemption forms before, that's exactly the kind of job [builders in Cranleigh](/areas/cranleigh) who work across the borough's gardens and driveways do most weeks of the year.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a granny annexe in Cranleigh?",
+        answer:
+          "If it will have its own kitchen, bathroom and bedroom and could function as separate living accommodation, yes — regardless of size, and whether it's attached to the house or freestanding in the garden. Permitted development under Class E of the GPDO only covers outbuildings used for purposes genuinely incidental to the main house, such as storage or a home gym, not somewhere someone actually lives.",
+      },
+      {
+        question: "Can I convert my garage into a self-contained annexe without planning permission?",
+        answer:
+          "Not if it will be self-contained — a garage conversion that adds a kitchen and bathroom to create independent living space needs full planning permission, the same as a new-build annexe would. A garage converted into a playroom, gym or home office with no cooking or sleeping facilities can often be done under permitted development, subject to the usual limits.",
+      },
+      {
+        question: "Will I have to pay council tax on a granny annexe?",
+        answer:
+          "Usually, yes, but often at a reduced rate. An annexe occupied by a relative of the household in the main house qualifies for a 50% council tax discount from Waverley, and can be fully exempt if that relative is a dependant — over 65, substantially or permanently disabled, or severely mentally impaired. Neither discount is automatic; both have to be applied for.",
+      },
+      {
+        question: "Do I have to pay the Community Infrastructure Levy on a new annexe?",
+        answer:
+          "Not if you claim the self-build annexe exemption before work starts. A new annexe is otherwise liable for CIL as new residential floorspace — at Waverley's small-sites rate of £452 per square metre, that adds up quickly — but an exemption is available for an annexe within the curtilage of the home you own and occupy, provided the correct forms are approved before the first day on site.",
+      },
+      {
+        question: "Can I sell or let my annexe separately from the main house later?",
+        answer:
+          "Not usually, without a fresh planning application. Most annexe permissions carry a condition tying its occupation to the main house, and separately letting or selling it can also trigger repayment of a Community Infrastructure Levy exemption claimed when it was built, if that's within the three-year clawback period.",
+      },
+      {
+        question: "What building regulations apply to a granny annexe?",
+        answer:
+          "The same as any new dwelling, because that's legally what a self-contained annexe is: independent means of escape under Part B, sound insulation where it adjoins the main house under Part E, and the national accessible-and-adaptable baseline under Part M. It needs its own building control sign-off and completion certificate, separate from the house it sits beside.",
+      },
+    ],
+    art: BLOG_ART["annexes-multigenerational-living-cranleigh"],
+  },
+  {
     slug: "damp-rising-penetrating-condensation",
     title: "Damp: rising, penetrating and condensation are three different problems",
     category: "Damp & moisture",
@@ -770,6 +923,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-buildings-of-local-merit",
       "trees-and-foundation-depth-cranleigh",
       "party-wall-notice-timing",
+      "annexes-multigenerational-living-cranleigh",
     ],
     body: [
       {

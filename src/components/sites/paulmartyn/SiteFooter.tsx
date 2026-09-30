@@ -1,7 +1,9 @@
+import Link from "next/link";
 import {
   AREA_PAGES,
   AREAS,
   BROCHURE,
+  COMPANY,
   CONTACT,
   FOOTER,
   FOOTER_PAGES,
@@ -32,7 +34,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[2000px] px-[3%]">
         <div className="flex flex-col gap-14 lg:flex-row lg:justify-between">
           <div className="lg:max-w-[620px]">
-<Logo tone="ink" height={28} />
+            <Link href="/" aria-label="Paul Martyn Construction home" className="inline-flex">
+              <Logo tone="ink" height={28} />
+            </Link>
 
             {/* Contact details as a stacked list.
                 20.4px is 20% down from the previous 25.5px, and the leading
@@ -78,7 +82,11 @@ export function SiteFooter() {
             {/* div, not p: <address> is block-level and cannot legally sit
                 inside a paragraph. */}
             <div className="mt-7 max-w-[520px] text-[15px] font-light leading-[22.5px] text-pm-ink">
-              <address className="not-italic">{CONTACT.address.full}</address>
+              {/* Full NAP, matching the Google Business Profile exactly. */}
+              <address className="not-italic">
+                {COMPANY.name}, {CONTACT.address.street}, {CONTACT.address.locality},{" "}
+                {CONTACT.address.region} {CONTACT.address.postcode}
+              </address>
               <span className="mt-2 block">{CONTACT.location}</span>
 
               {/* Directions, not an embedded map. A Google Maps iframe would
@@ -186,6 +194,7 @@ export function SiteFooter() {
         <div className="mt-[54px] flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <p className="text-[15px] font-light leading-[21px] text-pm-ink">
             {FOOTER.copyright}
+            {/* TODO(paul): add "Registered in England and Wales, company no. XXXXXXXX" */}
           </p>
 
           <div className="flex items-center gap-6">

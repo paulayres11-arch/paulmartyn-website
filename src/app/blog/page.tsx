@@ -6,14 +6,14 @@ import { BLOG_POSTS } from "@/components/sites/paulmartyn/blogPosts";
 import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Building Advice for Cranleigh Homeowners | Paul Martyn",
+  title: "Building Advice for Cranleigh Homeowners",
   description:
     "Plain-English answers to the questions Cranleigh homeowners actually ask — Waverley planning, conservation areas, surveys, foundations, building control and costs.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
     url: "/blog",
-    title: "Building advice & news | Paul Martyn",
+    title: "Building advice & news | Paul Martyn Construction",
     description:
       "Plain-English answers to the questions Cranleigh homeowners actually ask, from a family-run builder on Bridge Road.",
     images: [OG_IMAGE],
@@ -32,10 +32,10 @@ export const metadata: Metadata = {
 const BLOG_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "Paul Martyn — building advice & news",
+  name: "Paul Martyn Construction — building advice & news",
   url: `${SITE_URL}/blog`,
   inLanguage: "en-GB",
-  publisher: { "@type": "Organization", name: "Paul Martyn" },
+  publisher: { "@type": "Organization", name: "Paul Martyn Construction" },
   blogPost: BLOG_POSTS.map((post) => ({
     "@type": "BlogPosting",
     headline: post.title,
@@ -43,7 +43,7 @@ const BLOG_SCHEMA = {
     datePublished: post.date,
     articleSection: post.category,
     url: `${SITE_URL}/blog/${post.slug}`,
-    author: { "@type": "Organization", name: "Paul Martyn" },
+    author: { "@type": "Organization", name: "Paul Martyn Construction" },
   })),
 };
 

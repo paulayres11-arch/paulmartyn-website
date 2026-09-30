@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
-import { COMPANY, CONTACT } from "@/components/sites/paulmartyn/content";
+import { COMPANY, CONTACT, SAME_AS } from "@/components/sites/paulmartyn/content";
 import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 /**
@@ -106,6 +106,7 @@ const AREA_SCHEMA = {
     longitude: CONTACT.geo.longitude,
   },
   hasMap: CONTACT.mapsHref,
+  sameAs: SAME_AS,
   areaServed: [
     "Cranleigh",
     "Ewhurst",

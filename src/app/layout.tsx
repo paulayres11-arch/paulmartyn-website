@@ -26,7 +26,7 @@ export const metadata: Metadata = {
    * It read "Surrey Builders" until 2026-09-04. "Surrey builders" is a term
    * this firm will never rank for — it competes with every contractor from
    * Staines to Haslemere — while "builders Cranleigh" and "Cranleigh builders"
-   * describe a business that is physically at 1 Bridge Rd, Cranleigh, and are
+   * describe a business that is physically at 1 Bridge Road, Cranleigh, and are
    * what people here actually type. The home page is the strongest page on the
    * site, so it should carry the term the business can win.
    *
@@ -39,24 +39,32 @@ export const metadata: Metadata = {
    * /areas/cranleigh is deliberately titled differently ("Builders in
    * Cranleigh, Surrey | Extensions, Renovations & Heritage Work") so the two
    * pages support the same entity without competing for an identical string.
+   *
+   * Name unified to "Paul Martyn Construction" on 2026-09-30 to match the
+   * renamed Google Business Profile character for character. The template
+   * puts the same name on every inner page, so page titles must NOT include
+   * the brand themselves — it would appear twice.
    */
-  title: "Paul Martyn | Builders in Cranleigh — Extensions & Renovations",
+  title: {
+    default: "Paul Martyn Construction | Builders in Cranleigh, Surrey",
+    template: "%s | Paul Martyn Construction",
+  },
   description:
     "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, new builds, listed buildings and commercial work across Cranleigh, Surrey and the surrounding villages. Fixed price. Call 01483 612156.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    siteName: "Paul Martyn",
+    siteName: "Paul Martyn Construction",
     locale: "en_GB",
     url: "/",
-    title: "Paul Martyn | Builders in Cranleigh, Surrey",
+    title: "Paul Martyn Construction | Builders in Cranleigh, Surrey",
     description:
       "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, new builds, listed buildings and commercial work across Cranleigh and the surrounding villages.",
     images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paul Martyn | Builders in Cranleigh, Surrey",
+    title: "Paul Martyn Construction | Builders in Cranleigh, Surrey",
     description:
       "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, new builds, listed buildings and commercial work across Cranleigh and the surrounding villages.",
     images: [OG_IMAGE.url],

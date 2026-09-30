@@ -13,7 +13,12 @@ go in here.** You will not be given a shared login for anything — see
 ## 1. The 60-second version
 
 Paul Martyn Construction / P Martyn Co Ltd — a family building firm at
-1 Bridge Rd, Cranleigh, Surrey GU6 7HH.
+1 Bridge Road, Cranleigh, Surrey GU6 7HH.
+
+**Name and address are fixed to the Google Business Profile, character for
+character:** "Paul Martyn Construction", "1 Bridge Road" (not "Paul Martyn",
+not "Bridge Rd"). They live once, in `COMPANY` and `CONTACT.address` in
+`content.ts` — change them there, never inline.
 
 - **Live at** <https://www.paulmartynconstruction.com>
 - **Stack:** Next.js 16 (App Router) + Tailwind 4, TypeScript, statically
@@ -84,11 +89,15 @@ with an `export const metadata` block:
 
 ```ts
 export const metadata: Metadata = {
-  title: "Kitchen Fitters in Cranleigh | Paul Martyn",
+  title: "Kitchen Fitters in Cranleigh",
   description: "…",
   alternates: { canonical: "/services/kitchens" },
 };
 ```
+
+The root layout's title template appends " | Paul Martyn Construction" to
+every page title, so never write the brand into a page's `title` — it would
+appear twice. (The home page uses the layout's default title.)
 
 The routes:
 
@@ -111,8 +120,8 @@ Some service-page titles read from `SERVICES` in `content.ts` via
 `metadata` block and you'll land in the right place.
 
 **The home page `<title>` was deliberately retargeted** from "Surrey Builders"
-(unwinnable) to "Cranleigh Builders | Extensions, Renovations & New Builds |
-Paul Martyn". Don't broaden it back out without reading §8 first.
+(unwinnable) to a Cranleigh title; since 2026-09-30 it reads "Paul Martyn
+Construction | Builders in Cranleigh, Surrey" (set in `src/app/layout.tsx`). Don't broaden it back out without reading §8 first.
 
 ### Body copy, services, pricing, reviews, areas
 

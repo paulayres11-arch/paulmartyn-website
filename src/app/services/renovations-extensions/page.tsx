@@ -19,7 +19,7 @@ const DESCRIPTION =
   "Whole-house renovations, extensions and remodelling in Cranleigh and across Surrey — structural work, finishes and detail handled under one roof, at a fixed price.";
 
 export const metadata: Metadata = {
-  title: service.seoTitle ?? `${service.heading} | Paul Martyn`,
+  title: service.seoTitle ?? service.heading,
   description: DESCRIPTION,
   alternates: { canonical: "/services/renovations-extensions" },
 };

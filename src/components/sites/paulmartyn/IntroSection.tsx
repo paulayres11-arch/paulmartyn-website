@@ -47,7 +47,7 @@ export function IntroSection() {
             className="h-[330px] bg-cover bg-center sm:h-[418px] md:h-[495px]"
             style={{ backgroundImage: `url(${INTRO.homeImage})` }}
             role="img"
-            aria-label="Rear elevation of a completed Paul Martyn new build, rendered upper floors over brickwork, with the garden laid out below"
+            aria-label="Rear elevation of a completed Paul Martyn Construction new build, rendered upper floors over brickwork, with the garden laid out below"
           />
 
           {/* Project credit.

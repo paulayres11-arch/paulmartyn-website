@@ -14,8 +14,8 @@ import { TrackRecord } from "@/components/sites/paulmartyn/TrackRecord";
 import {
   AREAS,
   COMPANY,
+  SAME_AS,
   CONTACT,
-  SOCIALS,
 } from "@/components/sites/paulmartyn/content";
 import { SITE_URL } from "@/lib/site";
 
@@ -101,10 +101,11 @@ const BUSINESS_SCHEMA = {
    * Add the Google Business Profile URL here when it is to hand — that is the
    * one that matters most for the map pack.
    */
-  sameAs: SOCIALS.map((social) => social.href),
+  sameAs: SAME_AS,
   areaServed: AREAS.items.map((town) => ({ "@type": "Place", name: town })),
   description:
     "Family-run builders based in Cranleigh, Surrey. Residential renovations and extensions, new builds, listed buildings and commercial fit-outs across Surrey, Hampshire and West Sussex.",
+  // TODO(paul): logo, image, openingHoursSpecification, foundingDate
 };
 
 export default function Home() {

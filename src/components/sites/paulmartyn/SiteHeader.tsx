@@ -110,7 +110,7 @@ export function SiteHeader({ variant = "overlay" }: SiteHeaderProps) {
         <Link
           href="/"
           className="flex shrink-0 items-center"
-          aria-label="Paul Martyn"
+          aria-label="Paul Martyn Construction home"
         >
           {/* Gold mark only on the homepage hero, where it sits over the dark
               photograph. On any white bar the mark is ink. */}

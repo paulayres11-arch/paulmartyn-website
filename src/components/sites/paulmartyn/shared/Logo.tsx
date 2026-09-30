@@ -113,6 +113,7 @@ export function Logo({
 
       {markOnly ? null : (
         <span
+          aria-hidden="true"
           className="whitespace-nowrap font-medium leading-none tracking-[0.28em]"
           style={{ fontSize: `${height / WORDMARK_RATIO}px` }}
         >

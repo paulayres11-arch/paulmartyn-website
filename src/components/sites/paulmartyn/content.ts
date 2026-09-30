@@ -35,7 +35,7 @@ const PROPOSED = "Proposed — site photos coming soon";
 export const SHARED = "/sites/paulmartyn/shared";
 
 export const COMPANY = {
-  name: "Paul Martyn",
+  name: "Paul Martyn Construction",
   legalName: "P Martyn Co Ltd",
 } as const;
 
@@ -57,17 +57,18 @@ export const CONTACT = {
   location: "Based in Cranleigh, Surrey — working across Surrey, Hampshire and West Sussex.",
   /**
    * NAP — name, address, phone. Must match the Google Business Profile
-   * EXACTLY, character for character: "1 Bridge Rd, Cranleigh GU6 7HH". Local
-   * search cross-references the two, and a mismatch (even "Road" for "Rd")
-   * weakens the match rather than helping it. If the profile changes, change
-   * this with it.
+   * EXACTLY, character for character: "Paul Martyn Construction, 1 Bridge
+   * Road, Cranleigh, Surrey GU6 7HH" (profile renamed and re-checked
+   * 2026-09-30). Local search cross-references the two, and a mismatch (even
+   * "Rd" for "Road") weakens the match rather than helping it. If the profile
+   * changes, change this — and COMPANY.name — with it.
    */
   address: {
-    street: "1 Bridge Rd",
+    street: "1 Bridge Road",
     locality: "Cranleigh",
     region: "Surrey",
     postcode: "GU6 7HH",
-    full: "1 Bridge Rd, Cranleigh GU6 7HH",
+    full: "1 Bridge Road, Cranleigh GU6 7HH",
   },
   /**
    * Coordinates for GU6 7HH, from postcodes.io (ONS-derived) on 2026-08-17.
@@ -90,7 +91,7 @@ export const CONTACT = {
    * Google tie the profile and the website to one business.
    */
   mapsHref:
-    "https://www.google.com/maps/search/?api=1&query=1+Bridge+Rd%2C+Cranleigh+GU6+7HH",
+    "https://www.google.com/maps/search/?api=1&query=1+Bridge+Road%2C+Cranleigh+GU6+7HH",
 } as const;
 
 export const NAV: NavItem[] = [
@@ -238,7 +239,7 @@ export const SERVICES = {
     {
       id: "service-renovations",
       label: "Renovations",
-      seoTitle: "House Extensions Cranleigh | Renovations | Paul Martyn",
+      seoTitle: "House Extensions Cranleigh | Renovations",
       heading: "Residential renovations & extensions",
       body: "Whole-house renovations, extensions and remodelling — opening up period properties or bringing tired homes back to life, with the structural work, finishes and detail handled under one roof.",
       detail: [
@@ -332,7 +333,7 @@ export const SERVICES = {
     {
       id: "service-new-builds",
       label: "New Builds",
-      seoTitle: "New Build Homes | Cranleigh & Surrey | Paul Martyn",
+      seoTitle: "New Build Homes | Cranleigh & Surrey",
       heading: "New builds",
       body: "Architect-designed new homes delivered from groundworks to handover, with tight cost control and a build programme you can actually rely on.",
       detail: [
@@ -382,7 +383,7 @@ export const SERVICES = {
         // Video sits last so the rail opens on a still photograph rather than a play button.
         {
           src: `${LISTED}/heritage-walkthrough-poster.jpg`,
-          alt: "Walkthrough of a Paul Martyn heritage project — original timber frame, traditional materials and period detail retained alongside new work",
+          alt: "Walkthrough of a Paul Martyn Construction heritage project — original timber frame, traditional materials and period detail retained alongside new work",
           youtubeId: "FGeJSQInX8Y",
         },
       ],
@@ -714,6 +715,17 @@ export const SOCIALS = [
 ];
 
 /**
+ * Profiles that describe this same business, for the `sameAs` of the
+ * LocalBusiness schema. Must match what the Google Business Profile links to.
+ * Add the GBP URL itself here when it is to hand.
+ */
+export const SAME_AS = [
+  "https://www.checkatrade.com/trades/paulmartynconstruction",
+  "https://www.facebook.com/Paulmartynconstruction/",
+  "https://www.instagram.com/paulmartyn.build/",
+];
+
+/**
  * Areas covered — local SEO. Plain text rather than links: there are no
  * per-area pages, and linking to nothing would be worse than useless.
  *
@@ -773,8 +785,8 @@ export const AREA_PAGES: Record<string, string> = {
 
 export const FOOTER = {
   blurb:
-    "Paul Martyn — Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
-  copyright: "© 2026 P Martyn Co Ltd. All rights reserved",
+    "Paul Martyn Construction — Family-run builders in the Surrey Hills. Residential renovations, new builds, listed buildings and commercial projects across Surrey and the South East.",
+  copyright: `© ${new Date().getFullYear()} Paul Martyn Construction is a trading name of P Martyn Co Ltd.`,
 };
 
 /**

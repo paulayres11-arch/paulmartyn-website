@@ -46,7 +46,7 @@ export const OG_IMAGE = {
   url: "/seo/og-default.jpg",
   width: 1200,
   height: 630,
-  alt: "A completed Paul Martyn re-roofing project in Surrey, with new clay tiles, a dormer and solar panels",
+  alt: "A completed Paul Martyn Construction re-roofing project in Surrey, with new clay tiles, a dormer and solar panels",
 } as const;
 
 /** Every indexable route, used to build the sitemap. */

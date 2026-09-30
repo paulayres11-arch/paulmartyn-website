@@ -8,7 +8,7 @@ import {
 } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
-  title: "About Paul Martyn | Family-Run Builders, Surrey Hills",
+  title: "About Us | Family-Run Builders, Surrey Hills",
   description: INTRO.body[0],
   alternates: { canonical: "/about-us" },
 };
@@ -60,7 +60,7 @@ export default function AboutPage() {
             className="h-[300px] shrink-0 bg-cover bg-center sm:h-[380px] md:h-[450px] md:w-[38%]"
             style={{ backgroundImage: `url(${INTRO.image})` }}
             role="img"
-            aria-label="Paul Martyn project"
+            aria-label="Paul Martyn Construction project"
           />
         </div>
       </section>

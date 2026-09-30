@@ -86,7 +86,9 @@ the agent starts each run with no memory of the last one.
 - **4–6 `faqs`**, phrased exactly as a homeowner would type them. These emit
   FAQPage schema and are a large share of what wins featured snippets.
 - Fill every field of `BlogPost`: `slug`, `title`, `category`, `date` (ISO, the
-  run date), `seoTitle` (~55–60 chars), `metaDescription` (~150), `excerpt`
+  run date), `seoTitle` (~55–60 chars, and never
+  include the brand — the site appends " | Paul Martyn Construction" to every
+  title automatically), `metaDescription` (~150), `excerpt`
   (1–2 sentences, shown on the index card), `imageAlt`, `body`, `faqs`,
   `related`, `art`.
 

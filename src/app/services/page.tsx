@@ -4,7 +4,7 @@ import { ReadMore } from "@/components/sites/paulmartyn/ReadMore";
 import { SERVICES } from "@/components/sites/paulmartyn/content";
 
 export const metadata: Metadata = {
-  title: "Building Services in Surrey | Paul Martyn Construction",
+  title: "Building Services in Surrey",
   description: SERVICES.lead,
   alternates: { canonical: "/services" },
 };

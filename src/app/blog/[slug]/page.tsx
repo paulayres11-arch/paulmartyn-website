@@ -109,8 +109,8 @@ export default async function BlogPostPage({
         articleSection: post.category,
         inLanguage: "en-GB",
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${post.slug}` },
-        author: { "@type": "Organization", name: "Paul Martyn", "@id": `${SITE_URL}/#business` },
-        publisher: { "@type": "Organization", name: "Paul Martyn", "@id": `${SITE_URL}/#business` },
+        author: { "@type": "Organization", name: "Paul Martyn Construction", "@id": `${SITE_URL}/#business` },
+        publisher: { "@type": "Organization", name: "Paul Martyn Construction", "@id": `${SITE_URL}/#business` },
         image: `${SITE_URL}${OG_IMAGE.url}`,
       },
       {

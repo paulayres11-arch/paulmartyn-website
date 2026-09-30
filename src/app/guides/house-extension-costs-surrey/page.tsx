@@ -183,8 +183,8 @@ const ARTICLE_SCHEMA = {
   dateModified: UPDATED,
   inLanguage: "en-GB",
   mainEntityOfPage: `${SITE_URL}/guides/house-extension-costs-surrey`,
-  author: { "@type": "Organization", name: "Paul Martyn" },
-  publisher: { "@type": "Organization", name: "Paul Martyn" },
+  author: { "@type": "Organization", name: "Paul Martyn Construction" },
+  publisher: { "@type": "Organization", name: "Paul Martyn Construction" },
 };
 
 function SectionHeading({ children }: { children: React.ReactNode }) {

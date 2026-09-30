@@ -13,7 +13,7 @@ export function CommitmentSection() {
             className="h-[300px] bg-cover bg-center sm:h-[400px] md:h-[507px]"
             style={{ backgroundImage: `url(${PROCESS.image})` }}
             role="img"
-            aria-label="Paul Martyn project"
+            aria-label="Paul Martyn Construction project"
           />
 
           {/* Project credit — same 13.5px small-label size as IntroSection's

@@ -5,7 +5,7 @@ import { PROCESS } from "@/components/sites/paulmartyn/content";
 export const metadata: Metadata = {
   title: "Our Build Process | Estimate to Fixed Price | Surrey",
   description:
-    "How a Paul Martyn project runs, from first conversation through to handover.",
+    "How a Paul Martyn Construction project runs, from first conversation through to handover.",
   alternates: { canonical: "/process" },
 };
 
@@ -46,7 +46,7 @@ export default function ProcessPage() {
               className="h-[260px] bg-cover bg-center sm:h-[420px]"
               style={{ backgroundImage: `url(${PROCESS.image})` }}
               role="img"
-              aria-label="Paul Martyn project"
+              aria-label="Paul Martyn Construction project"
             />
 
             {/* Same photo as the homepage process band, so it carries the same

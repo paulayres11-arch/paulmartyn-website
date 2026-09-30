@@ -25,7 +25,7 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
  */
 
 const TITLE =
-  "House Extensions Cranleigh | Single & Two-Storey | Paul Martyn";
+  "House Extensions Cranleigh | Single & Two-Storey";
 const DESCRIPTION =
   "House extensions in Cranleigh — single-storey, side, wrap-around and two-storey. Waverley planning, Weald Clay foundations and published fixed prices. Call 01483 612156.";
 

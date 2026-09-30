@@ -46,6 +46,174 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "solar-panels-cranleigh-planning-permission",
+    title: "Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't",
+    category: "Planning & surveys",
+    date: "2026-09-30",
+    seoTitle: "Solar Panels Planning Permission: The Cranleigh Rules",
+    metaDescription:
+      "Do you need planning permission for solar panels in Cranleigh? The roof, garden and conservation-area rules, what changed in August 2026, and what it costs.",
+    excerpt:
+      "Most roof-mounted solar in Cranleigh is permitted development and needs no application — but a wall facing the High Street, a listed building, or a ground-mounted array in the garden each follow a different rule, and a change in August 2026 moved several of them.",
+    imageAlt:
+      "Illustration of a Cranleigh house with solar panels fitted on the roof slope below the ridge line, and a garden divided by a dashed line marking 5 metres from the boundary — a crossed-out solar panel inside that zone, and a ground-mounted array on a frame just outside it reaching the 4-metre height limit",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "garden-rooms-cranleigh-permitted-development",
+      "cranleigh-buildings-of-local-merit",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Roof-mounted solar on most Cranleigh houses is **permitted development** — no planning application needed — as long as panels don't protrude more than 200mm from the roof slope and stay below the ridge.",
+          "A **GPDO amendment in force from 27 August 2026** rewrote the rules for stand-alone and plug-in solar: the old one-ground-array-per-garden cap is gone, and plug-in \"balcony\" solar is legal for the first time, both subject to conditions.",
+          "Inside Cranleigh's conservation area, one rule catches people out: panels **can't go on a wall or roof slope that fronts a highway** — a real issue on some of the High Street's older frontages.",
+          "On any of the parish's **81 listed buildings**, or within their curtilage, permitted development for solar **doesn't apply at all** — full planning and listed building consent are both needed, whatever the panel size.",
+          "**0% VAT** on a qualifying solar and battery installation ends on **31 March 2027**, reverting to 5% after — real money on a typical system, and a date worth planning around rather than discovering after the quote.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The question usually arrives with a printout of a neighbour's energy bill and a half-formed worry underneath it: is this even allowed, without a planning application first? Nobody wants the scaffold going straight back up because the array faces the wrong street.",
+      },
+      {
+        type: "p",
+        text: "Most of the time, no application is needed — solar has its own permitted development rights, separate from an extension or a garden room. But \"most of the time\" isn't \"always\", and the exceptions cluster exactly where Cranleigh has more of them than most villages: a conservation area through the centre of the village, and more listed buildings than most towns twice its size.",
+      },
+      {
+        type: "p",
+        text: "On top of that, the government rewrote a chunk of the rules on 27 August 2026 — a month before this was written. Here's where the line sits now, for a roof, a garden, and the new plug-in kits turning up in DIY sheds.",
+      },
+      { type: "h2", text: "Do I need planning permission for solar panels on my Cranleigh roof?" },
+      {
+        type: "p",
+        text: "Solar photovoltaic and solar thermal panels on a house are covered by their own permitted development right, under **Part 14, Class A** of the General Permitted Development Order — separate from the rules for an extension or an outbuilding. On a pitched roof, permission isn't needed provided panels don't project more than **200mm** beyond the roof slope, and nothing sits higher than the roof's highest point, excluding the chimney. On a flat roof, the equipment can rise up to **600mm** above it.",
+      },
+      {
+        type: "p",
+        text: "Two general conditions sit underneath those numbers: the panels have to be sited to minimise their effect on the building and the area, and be removed once no longer needed. Neither is usually a problem for a straightforward, rear-facing array.",
+      },
+      {
+        type: "table",
+        caption: "Two different permitted development classes, two different limits — current rules, from 27 August 2026.",
+        head: ["", "Roof-mounted (Class A)", "Stand-alone / ground-mounted (Class B)"],
+        rows: [
+          ["Height / protrusion", "200mm off a pitched roof slope; 400mm off a wall, balcony or roof enclosure away from a highway; 600mm above a flat roof", "Up to 4m high — 2m if in a conservation area and nearer the highway than the house"],
+          ["Footprint", "No set area limit; governed by the roof itself", "9m², or 3m × 3m"],
+          ["Position", "Not above the ridge; not on a wall fronting a highway in a conservation area", "At least 5m from every boundary"],
+          ["Number allowed", "No set limit", "More than one, since the old one-only cap was removed in August 2026"],
+          ["Listed buildings", "Never permitted development", "Never permitted development"],
+        ],
+      },
+      { type: "h2", text: "What changed under the rules from 27 August 2026" },
+      {
+        type: "p",
+        text: "The Town and Country Planning (General Permitted Development) (England) (Amendment) Order 2026 came into force on **27 August 2026**, rewriting Part 14 in three ways that matter here. First, \"plug-in\" solar — a small panel connecting through a normal socket rather than wired into the consumer unit — is now legal permitted development for the first time, capped at roughly 2,000 watts and one unit per property. Second, the maximum projection for equipment on a wall, balcony or roof enclosure rose from 200mm to **400mm**, though 200mm still applies next to a highway and on a pitched roof. Third, the old limit of one stand-alone ground-mounted installation per garden was removed.",
+      },
+      {
+        type: "p",
+        text: "A **12-month transitional period**, to 27 August 2027, lets an installation be judged against either the old rules or the new ones — useful if a job was already planned under the old limits, but also exactly the kind of overlap that produces confused advice online. Worth checking the date on anything you read about this, including this post.",
+      },
+      {
+        type: "p",
+        text: "One plug-in restriction is worth flagging on its own: it cannot be fixed to a wooden fence, gate, wall, timber-clad surface, or wooden balcony — a fire-safety condition, not an aesthetic one. A metal balcony rail is fine; the fence most Cranleigh gardens actually have is specifically excluded.",
+      },
+      { type: "h2", text: "Solar panels in the Cranleigh conservation area, and on a listed building" },
+      {
+        type: "p",
+        text: "Cranleigh's conservation area, covering the High Street, was designated in **October 1973** and extended in **July 1985** and **July 2016**, so plenty of its frontages are older buildings with a genuine street-facing elevation. Inside any conservation area, Class A carries one extra condition: panels **must not be installed on a wall or roof slope that fronts a highway**. It doesn't ban solar on that house outright — a rear slope not facing the road is usually still permitted development — but the visible front elevation needs a full planning application, as we covered more generally in our post on [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent).",
+      },
+      {
+        type: "p",
+        text: "On any of the parish's **81 nationally listed buildings** — predominantly Grade II, with the Church of St Nicolas the single Grade II* — the position is stricter again: permitted development for solar doesn't apply at all, whatever the size, position or roof slope. Full planning permission and listed building consent are both needed, though an invisible rear slope is usually a realistic option where a street-facing one isn't. The parish's separate list of **174 Buildings of Local Merit** — non-designated assets Waverley still weighs, covered [in more detail elsewhere](/blog/cranleigh-buildings-of-local-merit) — carries no such trigger; those keep their normal Class A rights.",
+      },
+      {
+        type: "quote",
+        text: "Nine times out of ten the planning question on a solar job isn't complicated — it's roof orientation. If the array sits on a slope nobody can see from the road, most of these restrictions simply don't come into it. The trap is finding that out after the scaffold's up, not before.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Ground-mounted and plug-in solar in the garden" },
+      {
+        type: "p",
+        text: "A stand-alone array in the garden — not fixed to any building — falls under **Class B**, with its own limits: a footprint of no more than **9m²**, or 3m by 3m; a maximum height of **4m**, dropping to 2m in a conservation area if the array sits nearer the highway than the house does (which also needs prior approval before work starts); and a minimum **5m from every boundary**. Since August 2026 removed the old one-installation cap, more than one small array is now possible in the same garden, provided each separately meets those limits.",
+      },
+      {
+        type: "p",
+        text: "It's worth being realistic about what one delivers: 9m² is closer to a supplement for a shed than a replacement for a full roof system, which needs several times that area to make a real dent in a house's own consumption. Most Cranleigh gardens end up treating a ground array as a top-up, not a substitute — similar in spirit to the size limits we've covered for [garden rooms in Cranleigh](/blog/garden-rooms-cranleigh-permitted-development).",
+      },
+      {
+        type: "p",
+        text: "Plug-in solar sits in its own small category: a kit connecting through a standard plug and socket rather than hard-wired, capped at roughly 2,000 watts, one per property, excluded from wooden fences, gates, cladding and balconies. Like every route here, it's still excluded entirely on a listed building or within its curtilage.",
+      },
+      { type: "h2", text: "What building control, the DNO and MCS still need to see" },
+      {
+        type: "p",
+        text: "Permitted development is a planning answer, not a building regulations one, and isn't a substitute for the electrical or structural side of the job. A grid-connected system needs notifying to the local network operator — under **G98** for a small installation up to about 3.68kW per phase, or **G99** above that — and **MCS certification** is what makes a household eligible for Smart Export Guarantee payments; a competent installer handles all three as a matter of course.",
+      },
+      {
+        type: "p",
+        text: "On an older Cranleigh property — a Victorian cottage or a 1930s semi — it's worth having the rafters checked for the extra load first, the same structural question behind our post on [what a building control officer looks for](/blog/structural-calculations-building-control). Where a project sits close to any limit above, a **Certificate of Lawful Development (Proposed)** from Waverley — roughly **£274**, half the standard householder fee — confirms it's lawful before work starts, rather than relying on a judgement call after the event.",
+      },
+      { type: "h2", text: "What it costs, and the VAT deadline already ticking" },
+      {
+        type: "p",
+        text: "A typical fully-fitted roof system for a house this size runs to a few thousand pounds either side of a system with battery storage added, and every figure below assumes a site-specific quote confirms the exact number for a particular roof.",
+      },
+      {
+        type: "table",
+        caption: "Typical fully-fitted cost for a house roof system — a site-specific quote is the only way to know yours, but this is the range to budget against.",
+        head: ["System", "Typical installed cost", "Note"],
+        rows: [
+          ["3.5–4kW roof array, no battery", "£6,500 – £8,500", "Panels, inverter, mounting and labour, fully fitted"],
+          ["4kW roof array with battery storage", "£10,000 – £14,000", "Battery storage on its own typically adds £2,500 – £6,000"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A qualifying solar and battery installation currently carries **0% VAT**, a relief that runs until **31 March 2027** before reverting to the standard reduced rate of 5%. On an £8,000 system, that's roughly **£400** — the difference between having the work completed before the deadline and after it, on exactly the same job.",
+      },
+      {
+        type: "p",
+        text: "Whichever route a Cranleigh solar project takes — a roof array, a small ground-mounted top-up, or one of the new plug-in kits — the planning question comes down to two things worth checking before a single panel is ordered: which way the relevant roof slope or wall faces, and whether the property is listed or sits inside the conservation area. Get those two answers first and the rest of the rules above tend to fall into place on their own. If it would help to have that conversation with someone who's filed a lawful development certificate for a Cranleigh roof before, that's the kind of question [builders in Cranleigh](/areas/cranleigh) who work across the village's older housing stock field on a regular basis.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for solar panels on my house in Cranleigh?",
+        answer:
+          "Usually not. Roof-mounted solar has its own permitted development right under Part 14, Class A of the GPDO, provided panels project no more than 200mm from the roof slope and don't sit higher than the ridge. The main exceptions are a wall facing the High Street inside Cranleigh's conservation area, and any listed building, where full planning permission is needed regardless of size.",
+      },
+      {
+        question: "Can I fit solar panels on a listed building in Cranleigh?",
+        answer:
+          "Not under permitted development — it doesn't apply to a listed building or to a building within its curtilage at all, whatever the panel size or roof slope chosen. Full planning permission and listed building consent are both needed, though a rear roof slope invisible from any public viewpoint is usually a realistic option where a street-facing one isn't.",
+      },
+      {
+        question: "What changed for solar panels under planning rules in August 2026?",
+        answer:
+          "A GPDO amendment in force from 27 August 2026 legalised plug-in \"socket\" solar for the first time, raised the maximum projection for wall, balcony or roof-enclosure-mounted equipment from 200mm to 400mm away from a highway, and removed the old limit of one stand-alone ground-mounted installation per garden. A 12-month transitional period, to 27 August 2027, lets an installation be judged against either the old rules or the new ones.",
+      },
+      {
+        question: "Can I install a plug-in solar panel on my balcony or garden fence?",
+        answer:
+          "On a balcony rail or another non-timber surface, generally yes, as one of the new permitted development rights from August 2026, capped at around 2,000 watts and one unit per property. Not on a wooden fence, gate, timber-clad wall or wooden balcony — that's specifically excluded on fire-safety grounds, whatever the property.",
+      },
+      {
+        question: "How many ground-mounted solar panels can I have in my garden now?",
+        answer:
+          "More than one, since the August 2026 amendment removed the previous one-installation limit. Each stand-alone array still has to separately meet the Class B limits — no more than 9m² or 3m by 3m, a maximum height of 4m (2m in a conservation area if it's nearer the highway than the house), and at least 5m from every boundary.",
+      },
+      {
+        question: "How much does a solar panel installation cost, and is there still 0% VAT?",
+        answer:
+          "A typical 3.5–4kW roof system without a battery runs to roughly £6,500–£8,500 fully fitted; adding battery storage generally brings a 4kW system to £10,000–£14,000. Qualifying installations currently carry 0% VAT, but that relief ends on 31 March 2027 and reverts to the standard reduced rate of 5% after that date.",
+      },
+    ],
+    art: BLOG_ART["solar-panels-cranleigh-planning-permission"],
+  },
+  {
     slug: "annexes-multigenerational-living-cranleigh",
     title: "Annexes and multigenerational living in Cranleigh: the planning position",
     category: "Planning & surveys",
@@ -2081,6 +2249,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trickle-vents-approved-document-f",
       "cranleigh-neighbourhood-plan-householders",
       "garden-rooms-cranleigh-permitted-development",
+      "solar-panels-cranleigh-planning-permission",
     ],
     body: [
       {

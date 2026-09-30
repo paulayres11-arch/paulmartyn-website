@@ -16,6 +16,77 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "solar-panels-cranleigh-planning-permission": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="spSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5fa8dd" /><stop offset="1" stopColor="#bfe0f0" />
+          </linearGradient>
+          <linearGradient id="spGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7fc25c" /><stop offset="1" stopColor="#5a9e3f" />
+          </linearGradient>
+          <linearGradient id="spRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5c6670" /><stop offset="1" stopColor="#3a424a" />
+          </linearGradient>
+          <linearGradient id="spWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e3d3ad" /><stop offset="1" stopColor="#c2ab7c" />
+          </linearGradient>
+          <linearGradient id="spPanel" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#28406e" /><stop offset="1" stopColor="#0d1a30" />
+          </linearGradient>
+          <linearGradient id="spAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="190" fill="url(#spSky)" />
+        <circle cx="345" cy="42" r="22" fill="#ffe6a0" opacity=".9" />
+        <ellipse cx="66" cy="46" rx="36" ry="12" fill="#ffffff" opacity=".55" />
+        <ellipse cx="92" cy="38" rx="24" ry="10" fill="#ffffff" opacity=".45" />
+        <rect y="185" width="400" height="115" fill="url(#spGrass)" />
+
+        {/* house, left — roof-mounted array on the right-hand slope */}
+        <path d="M40 140 L130 78 L220 140 Z" fill="url(#spRoof)" stroke="#232a30" strokeWidth="2" />
+        <rect x="75" y="140" width="110" height="75" fill="url(#spWall)" stroke="#7a6a48" strokeWidth="2" />
+        <rect x="90" y="155" width="22" height="22" fill="#dcecf5" stroke="#efe6d4" strokeWidth="2" />
+        <path d="M101 155 v22 M90 166 h22" stroke="#b9a97e" strokeWidth="1.2" />
+        <rect x="118" y="175" width="24" height="40" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.5" />
+        <path d="M118 175 q12 -10 24 0" fill="none" stroke="#dcecf5" strokeWidth="1.5" />
+
+        <g transform="translate(179.5 111) rotate(35)">
+          <rect x="-38" y="-9" width="76" height="18" rx="1.5" fill="url(#spPanel)" stroke="#0a1526" strokeWidth="1.5" />
+          <path d="M-25 -9 v18 M-12 -9 v18 M0 -9 v18 M12 -9 v18 M25 -9 v18 M-38 0 h76" stroke="#3a5a8a" strokeWidth="1" opacity=".8" />
+        </g>
+        <path d="M130 78 L252 78" stroke="url(#spAmber)" strokeWidth="1.6" strokeDasharray="4 4" opacity=".85" />
+        <text x="255" y="82" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#c4741f">NOT ABOVE THE RIDGE</text>
+        <text x="205" y="132" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fontWeight="700" fill="#c4741f" textAnchor="middle">≤200mm off the slope</text>
+
+        {/* garden, right — 5m boundary line and a ground-mounted array */}
+        <path d="M300 190 L300 300" stroke="#b23a2e" strokeWidth="2" strokeDasharray="4 5" opacity=".8" />
+        <text x="300" y="182" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#b23a2e" textAnchor="middle">5m FROM BOUNDARY</text>
+
+        <g transform="translate(275 265) rotate(-18)" opacity=".55">
+          <rect x="-28" y="-7" width="56" height="14" rx="1.5" fill="url(#spPanel)" stroke="#0a1526" strokeWidth="1.3" />
+        </g>
+        <path d="M250 250 L300 282 M300 250 L250 282" stroke="#b23a2e" strokeWidth="3" strokeLinecap="round" />
+
+        <path d="M320 278 L318 300 M370 272 L372 300" stroke="#8a6a45" strokeWidth="3.5" strokeLinecap="round" />
+        <g transform="translate(345 264) rotate(-18)">
+          <rect x="-34" y="-8" width="68" height="16" rx="1.5" fill="url(#spPanel)" stroke="#0a1526" strokeWidth="1.5" />
+          <path d="M-22 -8 v16 M-9 -8 v16 M4 -8 v16 M17 -8 v16 M-34 0 h68" stroke="#3a5a8a" strokeWidth="1" opacity=".8" />
+        </g>
+        <path d="M395 300 L395 252" stroke="url(#spAmber)" strokeWidth="2.5" />
+        <path d="M389 300 h12 M389 252 h12" stroke="url(#spAmber)" strokeWidth="2.5" />
+        <text x="383" y="280" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#c4741f" textAnchor="end">4m max</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">Roof, ground or plug-in — three rules</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">200mm on the roof slope · 5m from the boundary in the garden</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Plug-in solar, from 27 Aug 2026: fine on metal, never on a wooden fence</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: GPDO 2015 Part 14, as amended 2026</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "annexes-multigenerational-living-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

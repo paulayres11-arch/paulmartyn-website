@@ -327,7 +327,7 @@ Cranleigh topics — work through these:
 - [done 2026-09-21] Building on the Weald clay around Cranleigh: what it means for your footings
 - [done 2026-09-23] Barn conversions around Cranleigh: the planning route
 - [done 2026-09-28] Annexes and multigenerational living in Cranleigh: the planning position
-- [ ] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
+- [done 2026-09-30] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
 - [ ] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed
 - [ ] Extending a bungalow in Cranleigh: what's different from a two-storey house
 - [ ] Basements and cellars in Cranleigh: what the Weald clay means for digging down

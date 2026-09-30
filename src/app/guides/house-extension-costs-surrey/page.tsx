@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { BROCHURE, CONTACT } from "@/components/sites/paulmartyn/content";
-import { OG_IMAGE, SITE_URL } from "@/lib/site";
+import { Faq } from "@/components/sites/paulmartyn/Faq";
+import { JsonLd } from "@/components/sites/paulmartyn/JsonLd";
+import { AreaLink } from "@/components/sites/paulmartyn/AreaLink";
+import { A, Breadcrumbs } from "@/components/sites/paulmartyn/Prose";
+import { article, breadcrumbList } from "@/lib/jsonld";
+import { pageMetadata } from "@/lib/seo";
 
 /**
  * "How Much Does a House Extension Cost in 2026?"
@@ -30,7 +35,10 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
  */
 
 const PUBLISHED = "2025-04-27";
-const UPDATED = "2026-08-13";
+/* Re-localised to Cranleigh 2026-09-30 (worked examples, local cost drivers,
+   FAQ). The rates themselves are unchanged since 2026-08-13. */
+const UPDATED = "2026-09-30";
+const PATH = "/guides/house-extension-costs-surrey";
 
 /**
  * Rates realigned 2026-08-13 to match the build cost estimator, which is the
@@ -99,7 +107,53 @@ const COST_FACTORS = [
   },
 ];
 
-const PROJECTS = [
+/**
+ * PRIMARY worked examples: three Cranleigh-area extensions.
+ *
+ * Until 2026-09-30 the only examples were Cobham, Weybridge and Epsom, which
+ * told every reader (and Google) that this is a north Surrey business — the
+ * opposite of every other page on the site. These slots are for Paul's own
+ * recent Cranleigh-area jobs.
+ *
+ * TODO(paul): three recent Cranleigh-area extensions — village, extension
+ *   type, approx floor area (m²), final cost or cost band, duration, and
+ *   anything unusual (clay, trees, conservation area). Village may be named;
+ *   client and street may not.
+ *
+ * Until they are supplied this page's changes must NOT be deployed: the
+ * placeholders below render visibly on purpose, so they cannot slip out
+ * unnoticed. See the summary in the 2026-09-30 commit.
+ */
+const LOCAL_PROJECTS = [
+  {
+    place: "TODO(paul): village",
+    title: "TODO(paul): extension type",
+    price: "TODO(paul): cost",
+    body: "TODO(paul): floor area, duration, what was built.",
+    included: "TODO(paul): anything unusual — clay, trees, conservation area.",
+  },
+  {
+    place: "TODO(paul): village",
+    title: "TODO(paul): extension type",
+    price: "TODO(paul): cost",
+    body: "TODO(paul): floor area, duration, what was built.",
+    included: "TODO(paul): anything unusual — clay, trees, conservation area.",
+  },
+  {
+    place: "TODO(paul): village",
+    title: "TODO(paul): extension type",
+    price: "TODO(paul): cost",
+    body: "TODO(paul): floor area, duration, what was built.",
+    included: "TODO(paul): anything unusual — clay, trees, conservation area.",
+  },
+];
+
+/**
+ * SECONDARY: the three north Surrey projects from the original 2025 article,
+ * kept as a clearly labelled "further afield" section because they are real,
+ * fully costed Paul Martyn jobs. Remove if Paul prefers.
+ */
+const FURTHER_AFIELD = [
   {
     place: "Cobham",
     title: "Rear kitchen extension",
@@ -122,6 +176,35 @@ const PROJECTS = [
     included: "Reconfiguring internal walls, a new kitchen and external works.",
   },
 ];
+
+type Project = (typeof FURTHER_AFIELD)[number];
+
+function ProjectCards({ projects }: { projects: Project[] }) {
+  return (
+    <div className="mt-10 grid gap-[25px] sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map((project, i) => (
+        <article key={project.place + i} className="flex flex-col bg-pm-cream p-8">
+          <p className="text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
+            {project.place}
+          </p>
+          <h3 className="mt-3 text-[21px] font-medium leading-[26px] text-pm-ink">
+            {project.title}
+          </h3>
+          <p className="mt-4 text-[28px] font-medium leading-[34px] text-pm-gold">
+            {project.price}
+          </p>
+          <p className="mt-4 flex-1 text-[15px] font-normal leading-[22.5px] text-pm-slate">
+            {project.body}
+          </p>
+          <p className="mt-5 border-t border-white pt-5 text-[15px] font-normal leading-[22.5px] text-pm-slate">
+            <span className="font-medium text-pm-ink">Included: </span>
+            {project.included}
+          </p>
+        </article>
+      ))}
+    </div>
+  );
+}
 
 const HIDDEN_COSTS = [
   {
@@ -150,42 +233,52 @@ const HIDDEN_COSTS = [
   },
 ];
 
-const TITLE = "House Extension Costs in 2026 | Real Surrey Project Examples";
+const TITLE = "Extension Costs in Cranleigh";
+const HEADLINE = "House extension costs in Cranleigh & Surrey (2026)";
 const DESCRIPTION =
-  "What a house extension really costs in Surrey — per-square-metre ranges, the five factors that move the price, three fully costed Cobham, Weybridge and Epsom projects, and the fees most quotes leave out.";
+  "What a house extension costs in Cranleigh and Surrey in 2026: rates per m², Weald Clay, consents, Waverley fees and real projects. Call 01483 612156.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/guides/house-extension-costs-surrey" },
-  openGraph: {
-    type: "article",
-    url: "/guides/house-extension-costs-surrey",
-    title: TITLE,
-    description: DESCRIPTION,
-    publishedTime: PUBLISHED,
-    modifiedTime: UPDATED,
-    images: [OG_IMAGE],
-  },
-};
+  path: PATH,
+  type: "article",
+  publishedTime: PUBLISHED,
+  modifiedTime: UPDATED,
+});
 
-/**
- * Article schema. The old Squarespace page emitted og:type=article and was
- * indexed as one; declaring it properly here keeps it eligible for the same
- * treatment rather than reading as a plain marketing page.
- */
-const ARTICLE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "How Much Does a House Extension Cost in 2026?",
-  description: DESCRIPTION,
-  datePublished: PUBLISHED,
-  dateModified: UPDATED,
-  inLanguage: "en-GB",
-  mainEntityOfPage: `${SITE_URL}/guides/house-extension-costs-surrey`,
-  author: { "@type": "Organization", name: "Paul Martyn Construction" },
-  publisher: { "@type": "Organization", name: "Paul Martyn Construction" },
-};
+const TRAIL = [
+  { name: "Guides", path: PATH },
+  { name: "Extension costs", path: PATH },
+];
+
+const FAQS = [
+  {
+    question: "How much does a house extension cost in Cranleigh in 2026?",
+    answer:
+      "Our rates are £2,700 to £3,100 per square metre for a single-storey extension, £2,600 to £3,000 for two storeys, £3,000 to £3,800 for a rear extension with a lot of glazing and £3,500 to £4,500 for a kitchen extension including the fit-out. A loft conversion is around £2,000 to £2,800. Fees, surveys and landscaping sit on top of those figures.",
+  },
+  {
+    question: "Why do extensions cost more on clay?",
+    answer:
+      "Cranleigh and most of the villages around it sit on the Weald Clay, which shrinks and swells as it dries and wets. NHBC guidance sets a minimum foundation depth of 1.0m on high volume-change clay, and near a large tree it can require up to 2.5m, beyond which an engineer has to design the foundation. Deeper foundations mean more digging, more concrete and more spoil to remove.",
+  },
+  {
+    question: "What planning fees will I pay to Waverley?",
+    answer:
+      "A householder planning application in England costs £548 from 1 April 2026, rising to around £575 from 8 December 2026. A Certificate of Lawful Development for a proposed extension is half the householder fee. Listed building consent has no application fee, although the drawings and heritage statement it needs do cost money.",
+  },
+  {
+    question: "Does a conservation area or listed building make an extension more expensive?",
+    answer:
+      "Usually, yes. In a conservation area some work that would otherwise be permitted development needs a planning application, and the council will expect materials that suit the area. On a listed building you need listed building consent as well, and our heritage rate is £3,400 to £4,200 per square metre because of the traditional materials, specialist trades and slower pace the building needs.",
+  },
+  {
+    question: "Is it harder to extend in Wonersh or Shamley Green?",
+    answer:
+      "It can be. Both villages are washed over by the Green Belt, where an extension must not be disproportionate to the original house, and earlier extensions count towards that. That limits size rather than cost per square metre, but it can mean a smaller extension than you hoped for, or a more careful design to get approval.",
+  },
+];
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -195,31 +288,47 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
+function Body({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
+      {children}
+    </p>
+  );
+}
+
 export default function HouseExtensionCostsPage() {
   return (
-    <PageShell
-      eyebrow="Guide"
-      title="How Much Does a House Extension Cost in 2026?"
-    >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }}
+    <PageShell eyebrow="Guide" title={HEADLINE}>
+      <JsonLd
+        data={[
+          article({
+            headline: HEADLINE,
+            description: DESCRIPTION,
+            path: PATH,
+            datePublished: PUBLISHED,
+            dateModified: UPDATED,
+          }),
+          breadcrumbList(TRAIL),
+        ]}
       />
 
       <section className="bg-white pb-[10vh]">
         <div className="mx-auto max-w-[2000px] px-[3%]">
           <div className="max-w-[760px]">
+            <Breadcrumbs trail={[{ name: "Extension cost guide", path: PATH }]} />
+
             <p className="text-[21px] font-normal leading-[32px] text-pm-ink">
               Understanding real costs is crucial if you are planning a house
               extension in 2026. Prices vary depending on the size, design and
-              finish you choose, and recent shifts in material and labour costs
-              make early planning more important than ever.
+              finish you choose, and in Cranleigh and the villages around it,
+              the ground and the planning position move the figure as much as
+              the specification does.
             </p>
 
             <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
-              This guide shares real project examples from homes across Surrey —
-              including Cobham, Weybridge and Epsom — to give you a clearer idea
-              of what to expect.
+              We are builders based on Bridge Road in Cranleigh, and this guide
+              uses our own published rates and our own projects, most of them
+              within a few miles of the High Street.
             </p>
 
             <SectionHeading>
@@ -297,39 +406,107 @@ export default function HouseExtensionCostsPage() {
           </div>
 
           <SectionHeading>
-            Real cost examples from recent Surrey projects
+            Real cost examples from Cranleigh and the villages
           </SectionHeading>
 
           <p className="mt-6 max-w-[760px] text-[17px] font-normal leading-[27px] text-pm-slate">
-            Each of these was tailored carefully to the family&rsquo;s needs and
-            designed to blend naturally with the existing home.
+            Three recent extensions of ours in and around Cranleigh, with what
+            they cost and what drove the figure.
           </p>
 
-          <div className="mt-10 grid gap-[25px] sm:grid-cols-2 lg:grid-cols-3">
-            {PROJECTS.map((project) => (
-              <article
-                key={project.place}
-                className="flex flex-col bg-pm-cream p-8"
-              >
-                <p className="text-[13.5px] font-light uppercase tracking-[1px] text-pm-slate">
-                  {project.place}
-                </p>
-                <h3 className="mt-3 text-[21px] font-medium leading-[26px] text-pm-ink">
-                  {project.title}
-                </h3>
-                <p className="mt-4 text-[28px] font-medium leading-[34px] text-pm-gold">
-                  {project.price}
-                </p>
-                <p className="mt-4 flex-1 text-[15px] font-normal leading-[22.5px] text-pm-slate">
-                  {project.body}
-                </p>
-                <p className="mt-5 border-t border-white pt-5 text-[15px] font-normal leading-[22.5px] text-pm-slate">
-                  <span className="font-medium text-pm-ink">Included: </span>
-                  {project.included}
-                </p>
-              </article>
-            ))}
+          {/* TODO(paul): the three Cranleigh-area projects — see LOCAL_PROJECTS. */}
+          <ProjectCards projects={LOCAL_PROJECTS} />
+
+          <div className="max-w-[760px]">
+            <SectionHeading>What moves the price around Cranleigh</SectionHeading>
+
+            <h3 className="mt-10 text-[19px] font-medium leading-[26px] text-pm-ink">
+              Weald Clay and trees
+            </h3>
+            <Body>
+              Cranleigh and most of the villages around it sit on the Weald
+              Clay, which shrinks as it dries and swells as it wets. NHBC
+              guidance sets a minimum foundation depth of 1.0m on high
+              volume-change clay. Near a large, thirsty tree such as an oak it
+              can require up to 2.5m, and beyond that an engineer has to design
+              the foundation. On a 25m² extension, that is the difference
+              between a routine trench and several times the digging, concrete
+              and spoil. A trial hole before you accept a fixed price settles it
+              for a few hundred pounds. See{" "}
+              <A href="/blog/trees-and-foundation-depth-cranleigh">
+                how the tree in your garden sets your foundation depth
+              </A>{" "}
+              and{" "}
+              <A href="/blog/building-on-weald-clay-cranleigh-footings">
+                building on the Weald Clay
+              </A>
+              .
+            </Body>
+
+            <h3 className="mt-10 text-[19px] font-medium leading-[26px] text-pm-ink">
+              Conservation areas and listed buildings
+            </h3>
+            <Body>
+              Cranleigh High Street is a conservation area, as are the centres
+              of <AreaLink place="Ewhurst" />, <AreaLink place="Shamley Green" />{" "}
+              and <AreaLink place="Wonersh" />. Inside one, some work that would
+              be permitted development elsewhere needs a planning application,
+              and the materials have to suit the area. On a listed building you
+              also need listed building consent, and the work itself costs more:
+              our heritage rate is £3,400 to £4,200 per m², against £2,700 to
+              £3,100 for a standard extension. The{" "}
+              <A href="/services/listed-buildings">
+                listed buildings and heritage page
+              </A>{" "}
+              explains why, and{" "}
+              <A href="/blog/cranleigh-conservation-area-consent">
+                what needs consent in the Cranleigh Conservation Area
+              </A>{" "}
+              sets out the local rules.
+            </Body>
+
+            <h3 className="mt-10 text-[19px] font-medium leading-[26px] text-pm-ink">
+              Green Belt limits in Wonersh and Shamley Green
+            </h3>
+            <Body>
+              Cranleigh&apos;s built-up area is outside the Green Belt, but{" "}
+              <AreaLink place="Wonersh" /> and <AreaLink place="Shamley Green" />{" "}
+              are washed over by it. There, an extension must not be
+              disproportionate to the original house, and extensions added by
+              earlier owners count towards the limit. That caps the size of what
+              you can build rather than the rate per square metre, but it is the
+              reason some extensions there end up smaller than first planned. In
+              Cranleigh itself, the{" "}
+              <A href="/blog/cranleigh-settlement-boundary">
+                settlement boundary
+              </A>{" "}
+              decides which rules apply.
+            </Body>
+
+            <h3 className="mt-10 text-[19px] font-medium leading-[26px] text-pm-ink">
+              Waverley fees
+            </h3>
+            <Body>
+              Cranleigh and the villages around it are in Waverley Borough
+              Council. Planning fees are set nationally: a householder
+              application is £548 from 1 April 2026, rising to around £575 from
+              8 December 2026. A Certificate of Lawful Development, which
+              confirms in writing that an extension is permitted development, is
+              half the householder fee. Listed building consent has no
+              application fee, but the drawings and heritage statement do cost
+              money. Building control is charged separately.
+            </Body>
           </div>
+
+          <SectionHeading>Further afield: north Surrey</SectionHeading>
+
+          <p className="mt-6 max-w-[760px] text-[17px] font-normal leading-[27px] text-pm-slate">
+            Before we concentrated on Cranleigh and its villages, we built these
+            three extensions in north Surrey. They are fully costed, and useful
+            for comparison.
+          </p>
+
+          <ProjectCards projects={FURTHER_AFIELD} />
 
           <div className="max-w-[760px]">
             <SectionHeading>Hidden costs homeowners often miss</SectionHeading>
@@ -398,6 +575,8 @@ export default function HouseExtensionCostsPage() {
                 ({BROCHURE.size})
               </span>
             </a>
+
+            <Faq items={FAQS} />
 
             <SectionHeading>Ready to plan your project properly?</SectionHeading>
 

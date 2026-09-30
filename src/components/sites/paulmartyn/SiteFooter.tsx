@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { COMPANY_NUMBER, REGISTERED_OFFICE } from "@/lib/site";
 import {
   AREA_PAGES,
   AREAS,
@@ -194,7 +195,10 @@ export function SiteFooter() {
         <div className="mt-[54px] flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <p className="text-[15px] font-light leading-[21px] text-pm-ink">
             {FOOTER.copyright}
-            {/* TODO(paul): add "Registered in England and Wales, company no. XXXXXXXX" */}
+            {/* Renders only once COMPANY_NUMBER is set in src/lib/site.ts. */}
+            {COMPANY_NUMBER
+              ? ` Registered in England and Wales, company no. ${COMPANY_NUMBER}. Registered office: ${REGISTERED_OFFICE ?? CONTACT.address.full}.`
+              : null}
           </p>
 
           <div className="flex items-center gap-6">

@@ -73,3 +73,33 @@ export const ROUTES = [
   "/blog",
   "/contact",
 ] as const;
+
+/**
+ * Company facts that appear in more than one place — footer legal line,
+ * LocalBusiness schema, "since …" copy. Set each ONCE here.
+ *
+ * Both are null until Paul confirms them, and nothing renders from a null:
+ * no "since XXXX", no "company no. TODO". The pages keep their current wording
+ * until a value is set.
+ *
+ * TODO(paul): FOUNDING_YEAR — the year Paul started trading as a builder (not
+ *   the incorporation date of the current Ltd). Then replace the "16 years" /
+ *   "16+ years" copy in content.ts (HERO.heading, INTRO.body[0],
+ *   WHY_US.items[1], SERVICES.body[1]) with "since {FOUNDING_YEAR}" or
+ *   `yearsTrading()`. NB the brochure says "over four decades of professional
+ *   experience", which does not match "16 years" — Paul to say which is right.
+ * TODO(paul): COMPANY_NUMBER — Companies House lists PMARTYN CO LTD, company
+ *   no. 16270627, incorporated 24 Feb 2025, SIC 41202, registered office
+ *   Berkeley House, Amery Street, Alton GU34 1HN. Proposed, not confirmed:
+ *   Paul must confirm it is P Martyn Co Ltd before this is set. (11619927 is
+ *   the old company, sold March 2025 — never use it.)
+ */
+export const FOUNDING_YEAR: number | null = null;
+export const COMPANY_NUMBER: string | null = null;
+/** Companies House registered office, if it differs from the trading address. */
+export const REGISTERED_OFFICE: string | null = null;
+
+/** Years trading, computed at build time so it never goes stale. */
+export function yearsTrading(now = new Date()): number | null {
+  return FOUNDING_YEAR ? now.getFullYear() - FOUNDING_YEAR : null;
+}

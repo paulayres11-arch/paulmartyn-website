@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { COMPANY, CONTACT, SAME_AS } from "@/components/sites/paulmartyn/content";
-import { OG_IMAGE, SITE_URL } from "@/lib/site";
+import { FOUNDING_YEAR, OG_IMAGE, SITE_URL } from "@/lib/site";
 
 /**
  * The Cranleigh page.
@@ -122,6 +122,7 @@ const AREA_SCHEMA = {
   ].map((place) => ({ "@type": "Place", name: place })),
   description:
     "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, listed building and heritage work across Cranleigh and the surrounding Waverley villages.",
+  ...(FOUNDING_YEAR ? { foundingDate: String(FOUNDING_YEAR) } : {}),
 };
 
 function SectionHeading({ children }: { children: React.ReactNode }) {

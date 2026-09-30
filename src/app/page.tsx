@@ -17,7 +17,7 @@ import {
   SAME_AS,
   CONTACT,
 } from "@/components/sites/paulmartyn/content";
-import { SITE_URL } from "@/lib/site";
+import { FOUNDING_YEAR, SITE_URL } from "@/lib/site";
 
 /**
  * Paul Martyn Construction — homepage.
@@ -105,7 +105,9 @@ const BUSINESS_SCHEMA = {
   areaServed: AREAS.items.map((town) => ({ "@type": "Place", name: town })),
   description:
     "Family-run builders based in Cranleigh, Surrey. Residential renovations and extensions, new builds, listed buildings and commercial fit-outs across Surrey, Hampshire and West Sussex.",
-  // TODO(paul): logo, image, openingHoursSpecification, foundingDate
+  /* Omitted, not guessed, until FOUNDING_YEAR is set in src/lib/site.ts. */
+  ...(FOUNDING_YEAR ? { foundingDate: String(FOUNDING_YEAR) } : {}),
+  // TODO(paul): logo, image, openingHoursSpecification
 };
 
 export default function Home() {

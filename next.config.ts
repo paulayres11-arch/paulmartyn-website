@@ -90,8 +90,16 @@ const OLD_SITE_REDIRECTS = [
   },
 
   /**
+   * /contact-artesia — added 2026-09-30. It was in the "left to 404" list
+   * below; the 2026-09-30 content brief asked for it back, and it is the one
+   * template page with an obvious live equivalent: whoever lands on a
+   * "contact" URL wants the contact page. The rest stay 404.
+   */
+  { source: "/contact-artesia", destination: "/contact", permanent: true },
+
+  /**
    * Deliberately NOT redirected, and left to 404:
-   *   /amenities, /amenities-1, /contact-artesia, /event-calendar-artesia,
+   *   /amenities, /amenities-1, /event-calendar-artesia,
    *   /event-calendar-artesia/2016/5/13/lorem-ipsum-1-e268y,
    *   /policies-artesia, /terms-conditions-artesia
    * These are unedited pages from Squarespace's "Artesia" demo template —

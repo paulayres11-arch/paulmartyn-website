@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { CONTACT, PROCESS } from "@/components/sites/paulmartyn/content";
-import { OG_IMAGE, SITE_URL } from "@/lib/site";
+import { Faq } from "@/components/sites/paulmartyn/Faq";
+import { JsonLd } from "@/components/sites/paulmartyn/JsonLd";
+import { Breadcrumbs } from "@/components/sites/paulmartyn/Prose";
+import { AreaLink } from "@/components/sites/paulmartyn/AreaLink";
+import { breadcrumbList, service as serviceSchema } from "@/lib/jsonld";
+import { pageMetadata } from "@/lib/seo";
 
 /**
  * House extensions in Cranleigh.
@@ -15,7 +20,9 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
  *
  * Everything local here is checked and already published on this site — the
  * conservation area dates and count, the SPD and Neighbourhood Plan dates, the
- * settlement boundary position, the Weald Clay foundation depths, and every
+ * settlement boundary position, the Weald Clay foundation depths (NHBC 4.2:
+ * 1.0/0.9/0.75m minimums for high/medium/low volume change, 2.5m before an
+ * engineered design is required — re-checked 2026-09-30), and every
  * cost band. There are no invented case studies: the only project quoted is
  * the Leone Coles review, which is a real named Google review of a real
  * two-storey side extension in Cranleigh, and it is quoted as she wrote it.
@@ -24,23 +31,21 @@ import { OG_IMAGE, SITE_URL } from "@/lib/site";
  * local expertise does more damage than no page at all.
  */
 
-const TITLE =
-  "House Extensions Cranleigh | Single & Two-Storey";
+const PATH = "/services/house-extensions-cranleigh";
+const TITLE = "House Extensions in Cranleigh";
 const DESCRIPTION =
-  "House extensions in Cranleigh — single-storey, side, wrap-around and two-storey. Waverley planning, Weald Clay foundations and published fixed prices. Call 01483 612156.";
+  "House extensions in Cranleigh: single-storey, side, wrap-around and two-storey. Waverley planning, Weald Clay and published rates. Call 01483 612156.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/services/house-extensions-cranleigh" },
-  openGraph: {
-    type: "website",
-    url: "/services/house-extensions-cranleigh",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: [OG_IMAGE],
-  },
-};
+  path: PATH,
+});
+
+const TRAIL = [
+  { name: "Services", path: "/services" },
+  { name: "House extensions in Cranleigh", path: PATH },
+];
 
 const EXTENSION_TYPES = [
   {
@@ -84,7 +89,7 @@ const FAQS = [
   {
     question: "Why do two builders quote such different prices for the same drawing?",
     answer:
-      "Usually foundations. Cranleigh sits largely on the Weald Clay Formation, which is highly shrink–swell reactive. The general minimum foundation depth is 0.9m, but near a mature high-water-demand tree such as an oak, NHBC Chapter 4.2 guidance can require 2.5m or more. Across the footprint of a 25m² extension that is several times the excavation and concrete. A trial hole before you accept a fixed price resolves it for a few hundred pounds.",
+      "Usually foundations. Cranleigh sits largely on the Weald Clay Formation, which is highly shrink–swell reactive. NHBC guidance sets a minimum foundation depth of 1.0m on high volume-change clay, but near a mature high-water-demand tree such as an oak it can require up to 2.5m, and beyond that the foundation has to be designed by an engineer. Across the footprint of a 25m² extension that is several times the excavation and concrete. A trial hole before you accept a fixed price resolves it for a few hundred pounds.",
   },
   {
     question: "How long does an extension take to build?",
@@ -96,43 +101,26 @@ const FAQS = [
     answer:
       "Yes — the parish has more than eighty listed buildings and a good number are 15th to 17th century timber frames refronted in brick or stone later, so the building and the drawings rarely agree. That work is covered on our listed buildings and heritage page, and it is the part of the job we are most experienced in.",
   },
+  {
+    question: "Is a Cranleigh extension different from one in Wonersh or Shamley Green?",
+    answer:
+      "The building work is much the same, but the planning isn't. Cranleigh's built-up area is outside the Green Belt, so ordinary householder rules apply. Wonersh and Shamley Green are washed over by the Green Belt, where an extension must not be disproportionate to the original house, and both have conservation areas at their centres. Alfold and most of Ewhurst are in the countryside beyond the Green Belt.",
+  },
 ];
 
 /**
- * FAQPage schema, matching the questions rendered below.
- *
- * Must stay in step with FAQS: schema that does not appear on the page is a
- * structured-data violation, not a shortcut.
+ * The service, tied to the one business entity by `provider` rather than a
+ * third LocalBusiness block. The FAQPage schema is rendered by <Faq> from
+ * FAQS itself, so the two cannot drift.
  */
-const FAQ_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQS.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: { "@type": "Answer", text: faq.answer },
-  })),
-};
-
-/**
- * The service, tied to the one business entity by `provider`.
- *
- * Deliberately NOT another LocalBusiness block: the business is already
- * described on the home page and /areas/cranleigh under
- * `${SITE_URL}/#business`, and a third copy would add nothing. Referencing the
- * id points this service at that entity instead of restating it.
- */
-const SERVICE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "Service",
+const SERVICE_SCHEMA = serviceSchema({
   name: "House extensions in Cranleigh",
   serviceType: "House extension construction",
-  provider: { "@id": `${SITE_URL}/#business` },
-  areaServed: { "@type": "Place", name: "Cranleigh, Surrey" },
-  url: `${SITE_URL}/services/house-extensions-cranleigh`,
+  path: PATH,
   description:
     "Single-storey, side, wrap-around, two-storey and kitchen extensions in Cranleigh and the surrounding Waverley villages, priced fixed before work starts.",
-};
+  areaServed: ["Cranleigh", "Ewhurst", "Shamley Green", "Wonersh", "Bramley", "Alfold"],
+});
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -161,18 +149,13 @@ function InlineLink({ href, children }: { href: string; children: React.ReactNod
 export default function HouseExtensionsCranleighPage() {
   return (
     <PageShell eyebrow="Extensions" title="House extensions in Cranleigh">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
-      />
+      <JsonLd data={[SERVICE_SCHEMA, breadcrumbList(TRAIL)]} />
 
       <section className="bg-white pb-[10vh]">
         <div className="mx-auto max-w-[2000px] px-[3%]">
           <div className="max-w-[760px]">
+            <Breadcrumbs trail={TRAIL} />
+
             <p className="text-[21px] font-normal leading-[32px] text-pm-ink">
               We are based at {CONTACT.address.full}, and most of the extensions
               we build are within a few miles of the High Street. That is worth
@@ -285,10 +268,13 @@ export default function HouseExtensionsCranleighPage() {
             </Body>
 
             <Body>
-              The general minimum depth is <strong className="font-medium text-pm-ink">0.9m</strong>.
-              Near a mature high-water-demand tree such as an oak, NHBC Chapter 4.2
-              guidance can push that to{" "}
-              <strong className="font-medium text-pm-ink">2.5m or more</strong>.
+              NHBC Chapter 4.2 sets a minimum depth of{" "}
+              <strong className="font-medium text-pm-ink">1.0m</strong> on high
+              volume-change clay. Near a mature high-water-demand tree such as an
+              oak, the same guidance can push that to{" "}
+              <strong className="font-medium text-pm-ink">2.5m</strong>, and
+              anything deeper has to be designed by an engineer. Your structural
+              engineer confirms the design for the actual site.
               Across the footprint of a 25m² extension, that difference is several
               times the excavation, several times the concrete, spoil to remove,
               and often a change from trench fill to a piled or beam-and-block
@@ -305,6 +291,37 @@ export default function HouseExtensionsCranleighPage() {
               hundred pounds, takes an afternoon, and turns the largest unknown in
               the project into a known number — which is the difference between a
               price and a guess.
+            </Body>
+
+            <SectionHeading>Extending in the villages around Cranleigh</SectionHeading>
+
+            {/* Green Belt positions from Waverley's Settlement Boundaries Topic
+                Paper (2020) and LPP2, checked 2026-09-30: Wonersh and Shamley
+                Green washed over; Alfold and most of Ewhurst in Countryside
+                beyond the Green Belt; Ewhurst's northern tip washed over. */}
+            <Body>
+              Step outside Cranleigh and the planning position changes from
+              village to village, even though all of them are in Waverley.{" "}
+              <AreaLink place="Wonersh" /> and{" "}
+              <AreaLink place="Shamley Green" /> are washed over by the Green
+              Belt, so an extension is judged on whether it is disproportionate
+              to the original house, and earlier extensions count towards that.{" "}
+              <AreaLink place="Alfold" /> and most of{" "}
+              <AreaLink place="Ewhurst" /> sit in the countryside beyond the
+              Green Belt instead, where the tests are different but the
+              character of the village still carries weight. Ewhurst, Shamley
+              Green and Wonersh each have a conservation area of their own too.
+            </Body>
+
+            <Body>
+              The ground doesn&apos;t change much. The Weald Clay runs under
+              most of these villages as it does under Cranleigh, so the
+              foundation questions above apply just the same. We explain the
+              detail in{" "}
+              <InlineLink href="/blog/building-on-weald-clay-cranleigh-footings">
+                building on the Weald Clay around Cranleigh
+              </InlineLink>
+              .
             </Body>
 
             <SectionHeading>A two-storey extension in Cranleigh</SectionHeading>
@@ -371,20 +388,7 @@ export default function HouseExtensionsCranleighPage() {
               <InlineLink href="/pricing">pricing</InlineLink>.
             </Body>
 
-            <SectionHeading>Common questions</SectionHeading>
-
-            <dl className="mt-6">
-              {FAQS.map((faq) => (
-                <div key={faq.question} className="mt-8 first:mt-0">
-                  <dt className="text-[17px] font-medium leading-[24px] text-pm-ink">
-                    {faq.question}
-                  </dt>
-                  <dd className="mt-3 text-[17px] font-normal leading-[27px] text-pm-slate">
-                    {faq.answer}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+            <Faq items={FAQS} />
 
             <SectionHeading>Talk to us about your extension</SectionHeading>
 

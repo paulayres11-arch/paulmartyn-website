@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "@/components/sites/paulmartyn/PageShell";
 import { ServiceDetail } from "@/components/sites/paulmartyn/ServiceDetail";
-import { serviceById } from "@/components/sites/paulmartyn/content";
-import { OG_IMAGE } from "@/lib/site";
+import { serviceById, CONTACT } from "@/components/sites/paulmartyn/content";
+import { Faq } from "@/components/sites/paulmartyn/Faq";
+import { JsonLd } from "@/components/sites/paulmartyn/JsonLd";
+import { AreaLink } from "@/components/sites/paulmartyn/AreaLink";
+import { Breadcrumbs, PriceLadder, TalkToUs } from "@/components/sites/paulmartyn/Prose";
+import { breadcrumbList, service as serviceSchema } from "@/lib/jsonld";
+import { pageMetadata } from "@/lib/seo";
 
 /**
  * Loft conversions.
@@ -22,22 +27,58 @@ import { OG_IMAGE } from "@/lib/site";
 
 const service = serviceById("service-loft-conversions");
 
-const TITLE = "Loft Conversion Cranleigh | Dormers & Roof Rooms | Surrey";
+const PATH = "/services/loft-conversions";
+const TITLE = "Loft Conversions in Cranleigh";
 const DESCRIPTION =
-  "Loft conversions in Cranleigh and the Surrey villages. Head height, cut and trussed roofs, dormers, the staircase and the fire doors — priced properly. Call 01483 612156.";
+  "Loft conversions in Cranleigh and the Surrey villages: head height, roof type, dormers, stairs and fire safety, with published rates. Call 01483 612156.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: "/services/loft-conversions" },
-  openGraph: {
-    type: "website",
-    url: "/services/loft-conversions",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: [OG_IMAGE],
+  path: PATH,
+});
+
+const TRAIL = [
+  { name: "Services", path: "/services" },
+  { name: "Loft conversions", path: PATH },
+];
+
+/**
+ * Every answer restates a figure already in `service.detail` or the loft
+ * blog post — no new numbers.
+ */
+const FAQS = [
+  {
+    question: "Do I need planning permission for a loft conversion in Cranleigh?",
+    answer:
+      "Often not. Outside a conservation area, permitted development allows 40 cubic metres of added roof space on a terraced house and 50 cubic metres on a semi or detached house, subject to conditions. Inside the Cranleigh Conservation Area, roof extensions are not permitted development at all, so a dormer needs a planning application and a design the conservation officer will accept. Building Regulations approval is needed either way.",
   },
-};
+  {
+    question: "How much head height do I need for a loft conversion?",
+    answer:
+      "Measure from the top of the existing ceiling joists to the underside of the ridge. Under 2.2m will not give usable height once insulation and a new floor are added. Between 2.4m and 2.8m is the comfortable range where most successful conversions sit.",
+  },
+  {
+    question: "Can a loft with trussed rafters be converted?",
+    answer:
+      "Usually, yes, but it needs an engineered solution. Steel beams and a new floor are put in to carry the loads before the truss webs are cut out, in a sequence that keeps the roof supported throughout. It costs more than converting a traditional cut roof, which is why the two should never be priced at the same rate.",
+  },
+  {
+    question: "What fire safety work does a loft conversion need?",
+    answer:
+      "Adding a third storey makes the staircase the protected escape route. That means 30 minutes' fire resistance to the stair enclosure, FD30 fire doors to every habitable room off it on every floor, mains-linked interlinked smoke alarms and an escape window in the new room. On an ordinary three-bedroom house that is routinely £3,000 to £6,000 of work, and we price it separately so you can see it.",
+  },
+  {
+    question: "How much does a loft conversion cost?",
+    answer:
+      "Around £2,000 to £2,800 per square metre, which is less than a ground-floor extension because there are no new foundations and no new roof. On top of that come the fire safety works, any structural solution a trussed roof needs, and the bathroom fit-out if you are adding one.",
+  },
+  {
+    question: "Where will the new staircase go?",
+    answer:
+      "That is the first thing we check. Building Regulations require 2m of headroom over the stairs. In a loft conversion that can reduce to 1.9m at the centre of the stair and 1.8m at the side, but no lower, and on a typical semi the new flight has to rise into the roof where it is lowest. More conversions fail on the staircase than on the room, so we find where it lands before anyone settles on a layout.",
+  },
+];
 
 /** Measured from the top of the existing ceiling joists to the ridge. */
 const HEAD_HEIGHT = [
@@ -81,11 +122,26 @@ function InlineLink({ href, children }: { href: string; children: React.ReactNod
 
 export default function LoftConversionsPage() {
   return (
-    <PageShell title="Loft conversions in Cranleigh">
+    <PageShell eyebrow="Loft conversions" title="Loft conversions in Cranleigh">
+      <JsonLd
+        data={[
+          serviceSchema({
+            name: "Loft conversions in Cranleigh",
+            serviceType: "Loft conversion",
+            path: PATH,
+            description:
+              "Loft conversions, dormers and roof rooms in Cranleigh and the surrounding Waverley villages, including the structural work, staircase and fire strategy.",
+            areaServed: ["Cranleigh", "Ewhurst", "Shamley Green", "Wonersh", "Bramley", "Alfold", "Surrey"],
+          }),
+          breadcrumbList(TRAIL),
+        ]}
+      />
       <ServiceDetail service={service}>
         <section className="bg-white pb-[10vh]">
           <div className="mx-auto max-w-[2000px] px-[3%]">
             <div className="max-w-[760px]">
+              <Breadcrumbs trail={TRAIL} />
+
               <SectionHeading>Will your loft actually convert?</SectionHeading>
 
               <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
@@ -136,6 +192,40 @@ export default function LoftConversionsPage() {
                 </table>
               </div>
 
+              <SectionHeading>Lofts in period houses and the villages</SectionHeading>
+
+              <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
+                Listed and period houses are a different job. On a listed
+                building, a loft conversion needs listed building consent, and
+                the roof structure is usually part of what the listing
+                protects. Old rafters, purlins and collars often can&apos;t
+                simply be cut out, and rooflights and dormers on the main slopes
+                get particular scrutiny. We cover that side of the work on our{" "}
+                <InlineLink href="/services/listed-buildings">
+                  listed buildings and heritage page
+                </InlineLink>
+                .
+              </p>
+
+              <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
+                The same caution applies in the village conservation areas
+                around Cranleigh, including <AreaLink place="Ewhurst" />,{" "}
+                <AreaLink place="Shamley Green" /> and{" "}
+                <AreaLink place="Wonersh" />, where roof extensions lose their
+                permitted development rights just as they do on Cranleigh High
+                Street, so a dormer there means a planning application.
+              </p>
+
+              <SectionHeading>How we price a loft conversion</SectionHeading>
+
+              <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
+                A loft goes through the same four stages as any of our
+                projects. The first two are free, so you know whether the
+                conversion is worth drawing before you pay for drawings:
+              </p>
+
+              <PriceLadder />
+
               <SectionHeading>Where to read more</SectionHeading>
 
               <p className="mt-6 text-[17px] font-normal leading-[27px] text-pm-slate">
@@ -177,6 +267,18 @@ export default function LoftConversionsPage() {
                 to take, and we would rather tell you the answer is no early than
                 let you find out late.
               </p>
+
+              <Faq items={FAQS} />
+
+              <TalkToUs heading="Talk to us about your loft">
+                <p>
+                  Tell us the house type and roughly when it was built, and
+                  whether it is listed or in a conservation area. If you have
+                  measured the height from the joists to the ridge, send that
+                  too. We are on Bridge Road in Cranleigh, and you can call{" "}
+                  {CONTACT.phone}.
+                </p>
+              </TalkToUs>
             </div>
           </div>
         </section>

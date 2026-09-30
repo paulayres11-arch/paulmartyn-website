@@ -17,6 +17,12 @@ interface ServiceDetailProps {
    * Cranleigh-specific block without turning content.ts into markup.
    */
   children?: ReactNode;
+  /**
+   * False on the pages that were rewritten long-form (2026-09-30): their copy
+   * is structured under H2s in the page itself, and the short `detail`
+   * paragraphs would repeat it. `detail` stays in content.ts either way.
+   */
+  showDetail?: boolean;
 }
 
 /**
@@ -48,7 +54,11 @@ function RichText({ text }: { text: string }) {
  * Body of a single service page: copy + photograph, then the other services
  * as onward links (the reference site's `.sectionpad.related` block).
  */
-export function ServiceDetail({ service, children }: ServiceDetailProps) {
+export function ServiceDetail({
+  service,
+  children,
+  showDetail = true,
+}: ServiceDetailProps) {
   const others = SERVICES.tabs.filter((s) => s.id !== service.id);
 
   return (
@@ -91,7 +101,7 @@ export function ServiceDetail({ service, children }: ServiceDetailProps) {
 
       {/* Long-form copy, in a measure narrow enough to read comfortably.
           Only renders for services that have it. */}
-      {service.detail?.length || service.pullQuote ? (
+      {showDetail && (service.detail?.length || service.pullQuote) ? (
         <section className="bg-white pb-[10vh]">
           <div className="mx-auto max-w-[2000px] px-[3%]">
             <div className="max-w-[760px]">

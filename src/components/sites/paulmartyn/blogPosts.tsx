@@ -1274,7 +1274,7 @@ export const BLOG_POSTS: BlogPost[] = [
         type: "takeaways",
         items: [
           "Round-pin sockets, a fuse box instead of a consumer unit, and rubber- or fabric-insulated cable are the three signs a Victorian cottage's wiring predates modern safety standards — get an **EICR** before agreeing any scope of work.",
-          "A full or partial rewire, a new consumer unit and any electrical work in a kitchen or bathroom are all **notifiable** under **Part P** of the Building Regulations, certified either through a registered electrician's **competent person scheme** or via building control directly.",
+          "A full or partial rewire, a new circuit, a new consumer unit and new work in a bathroom or shower room are all **notifiable** under **Part P** of the Building Regulations, certified either through a registered electrician's **competent person scheme** or via building control directly.",
           "Lead pipe wasn't banned in new plumbing until **1969**, so a cottage of this age can still have original lead supply pipe; galvanised steel pipe is nearly as old and corrodes from the inside, showing up as discoloured water and falling pressure long before it fails outright.",
           "\"Sympathetic\" means routing cable and pipework through floor and ceiling voids wherever you can, not chasing straight through solid Victorian brick and lath-and-plaster — Historic England's own guidance treats chasing as a last resort, not a starting point.",
           "Most Victorian cottages in Cranleigh are not nationally listed, so the rewire and replumb themselves rarely need consent — the requirement is compliance with **Part P** and the **Water Regulations**, not planning permission.",
@@ -1310,7 +1310,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "Is rewiring or replumbing a Victorian cottage notifiable work?" },
       {
         type: "p",
-        text: "Yes, for most of what a Victorian cottage typically needs. **Part P of the Building Regulations** covers electrical safety in dwellings in England, and it splits work into notifiable and non-notifiable. A full or partial rewire is notifiable. So is a **new consumer unit** — added to the notifiable list in 2016 — and so is any electrical work in a kitchen, bathroom or other \"special location\", regardless of how minor it looks.",
+        text: "Yes, for most of what a Victorian cottage typically needs. **Part P of the Building Regulations** covers electrical safety in dwellings in England, and it splits work into notifiable and non-notifiable. A full or partial rewire is notifiable. So is a **new consumer unit**, any **new circuit**, and new electrical work in a bathroom or shower room — the \"special locations\" where the rules are tighter. Kitchens stopped being a special location in 2013, but a new circuit to a kitchen is still notifiable.",
       },
       {
         type: "p",
@@ -3376,7 +3376,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         type: "callout",
         title: "The test people forget",
-        text: "Building regulations require **2m of headroom over the staircase**, reducing to 1.9m at the edge of the stair. On a typical semi the new stair has to rise into the roof space right where the roof is lowest. We have seen more conversions fail on the stair than on the room. Check where the stair will land before you get attached to a layout.",
+        text: "Building regulations require **2m of headroom over the staircase** — in a loft conversion Approved Document K allows that to drop to 1.9m at the centre of the stair and 1.8m at the side, but no lower. On a typical semi the new stair has to rise into the roof space right where the roof is lowest. We have seen more conversions fail on the stair than on the room. Check where the stair will land before you get attached to a layout.",
       },
       { type: "h2", text: "Cut roof or trussed roof" },
       {
@@ -3465,7 +3465,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "What head height do I need for a loft conversion?",
         answer:
-          "Measure from the top of the existing ceiling joists to the underside of the ridge. Below about 2.2m a conventional conversion will not leave usable height once you allow for insulation above and a new floor below. Between 2.4m and 2.8m is comfortable. Remember you also need 2m of headroom over the new staircase, reducing to 1.9m at its edge.",
+          "Measure from the top of the existing ceiling joists to the underside of the ridge. Below about 2.2m a conventional conversion will not leave usable height once you allow for insulation above and a new floor below. Between 2.4m and 2.8m is comfortable. Remember you also need 2m of headroom over the new staircase, or at least 1.9m at the centre and 1.8m at the side where a loft conversion can't achieve 2m.",
       },
       {
         question: "Can you convert a loft with modern roof trusses?",

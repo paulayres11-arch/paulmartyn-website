@@ -9,6 +9,7 @@ import {
 } from "@/components/sites/paulmartyn/BlogArticle";
 import { BLOG_POSTS } from "@/components/sites/paulmartyn/blogPosts";
 import { CONTACT } from "@/components/sites/paulmartyn/content";
+import { Faq } from "@/components/sites/paulmartyn/Faq";
 import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 /**
@@ -90,7 +91,9 @@ export default async function BlogPostPage({
     .filter((candidate): candidate is (typeof BLOG_POSTS)[number] => Boolean(candidate));
 
   /**
-   * Article, FAQPage and BreadcrumbList in one graph.
+   * Article and BreadcrumbList in one graph. The FAQPage is rendered by <Faq>
+   * below, from the same `post.faqs` array the visitor reads, so the two
+   * cannot drift apart.
    *
    * `mainEntityOfPage` is the post's own URL now that it has one, and the
    * publisher carries the same `@id` as the LocalBusiness on the home and
@@ -121,18 +124,6 @@ export default async function BlogPostPage({
           { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug}` },
         ],
       },
-      ...(post.faqs?.length
-        ? [
-            {
-              "@type": "FAQPage",
-              mainEntity: post.faqs.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: { "@type": "Answer", text: faq.answer },
-              })),
-            },
-          ]
-        : []),
     ],
   };
 
@@ -176,29 +167,7 @@ export default async function BlogPostPage({
             <div className="order-2 max-w-[72ch] lg:order-1">
               <BlogArticleBody post={post} />
 
-              {post.faqs?.length ? (
-                <section className="mt-16">
-                  <h2
-                    id="questions-we-get-asked"
-                    className="scroll-mt-[110px] text-[26px] font-medium leading-[34px] text-pm-ink sm:text-[30px] sm:leading-[38px]"
-                  >
-                    Questions we get asked
-                  </h2>
-
-                  <dl className="mt-6 divide-y divide-pm-rule border-y border-pm-rule">
-                    {post.faqs.map((faq) => (
-                      <div key={faq.question} className="py-6">
-                        <dt className="text-[18px] font-medium leading-[27px] text-pm-ink">
-                          {faq.question}
-                        </dt>
-                        <dd className="mt-3 text-[17px] font-normal leading-[29px] text-pm-slate">
-                          {faq.answer}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
-              ) : null}
+              {post.faqs?.length ? <Faq items={post.faqs} /> : null}
 
               {/* The commercial payload of the whole page. A homeowner who has
                   read 1,500 words on their own problem is the warmest lead

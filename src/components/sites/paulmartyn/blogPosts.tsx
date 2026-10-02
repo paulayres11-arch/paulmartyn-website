@@ -46,6 +46,159 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "steel-beam-padstones",
+    title: "Why a steel beam needs a padstone",
+    category: "Building control",
+    date: "2026-10-02",
+    seoTitle: "What Is a Padstone? Why a Steel Beam Needs One",
+    metaDescription:
+      "A padstone spreads a steel beam's load across the wall below so the blockwork doesn't crush. What NHBC requires, what it costs, and what skipping it costs.",
+    excerpt:
+      "A padstone is the small concrete pad an engineer specifies under almost every steel beam — skip it, or guess the size, and it's one of the quickest ways to crack a wall you've only just finished plastering.",
+    imageAlt:
+      "Illustration contrasting a steel beam bearing directly on blockwork, cracking and crushing the wall beneath it, with the same beam bearing safely on a padstone that spreads its load across a wider area of the wall",
+    related: [
+      "structural-calculations-building-control",
+      "building-control-completion-certificate",
+      "kitchen-extensions-cranleigh-layout-budget",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A **padstone** is a small concrete pad built into a wall under the end of a steel beam, there purely to spread the beam's point load over enough masonry that the wall doesn't crush.",
+          "Ordinary medium-dense blockwork is rated around **7N/mm²**, and the lightweight block often used for an inner leaf as little as **3.6N/mm²** — nowhere near enough to take a beam's full reaction load concentrated into one small bearing without something to spread it first.",
+          "**NHBC Standards Chapter 6.5.5** sets the practical minimum bearing lengths: **100mm** of beam onto a padstone in general use, rising to **200mm** where the steel is acting as a lintel in line with the wall.",
+          "A padstone itself typically costs **£20–£45** from a builders' merchant, and sizing it is already part of the structural engineer's calculation you're paying for on any beam job — it should never be a guess.",
+          "Skip it, or use a stock size that \"looks about right\", and the usual result is a crack appearing under the beam weeks after the plaster's dry — one of the more expensive ways to find out it was missing.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call tends to come six or eight weeks after the steel went in, once the decorating's finished and everyone's stopped thinking about the building work. A hairline crack has opened up in the plaster directly under a new beam, running in a dog-leg down from one corner. It wasn't there at practical completion. It wasn't there a fortnight later, either — it took its time.",
+      },
+      {
+        type: "p",
+        text: "Nine times out of ten, the beam itself hasn't moved and hasn't failed. What's given way is the few inches of blockwork directly underneath it — the bit nobody sees once the plaster's gone on, and the bit that's easiest to skip when a job gets priced on what the beam costs rather than on what it's actually sitting on.",
+      },
+      {
+        type: "p",
+        text: "That few inches of wall needs its own piece of kit under the beam end: a padstone. It's cheap, it's small, and it's sized by calculation, not by eye — which is exactly the detail that goes missing when a steel beam goes in without a structural engineer involved from the start.",
+      },
+      { type: "h2", text: "What is a padstone, and what does it actually do?" },
+      {
+        type: "p",
+        text: "A padstone is a solid pad — usually a precast concrete block, though dense masonry or an in-situ concrete pad does the same job — built into the wall exactly under the point where a steel beam bears down. A beam doesn't spread its load evenly along a wall the way a floor does; it concentrates its entire reaction at each end, onto whatever few hundred millimetres of wall happens to be sitting underneath it. A padstone's whole purpose is to take that concentrated load and spread it, by roughly a 45-degree angle down through the pad, across enough masonry that the stress reaching the wall per square millimetre stays within what the wall can actually carry.",
+      },
+      {
+        type: "p",
+        text: "The design method sits in **BS EN 1996** — Eurocode 6, the current UK standard for masonry design, which replaced the older **BS 5628** (a code of practice, not a piece of statute law) when BS 5628 was formally withdrawn on **31 March 2010**. An engineer works out the beam's reaction load, checks it against the wall's permissible bearing stress, and sizes the padstone's area so the figures work — which is also why \"a padstone the same size as last time\" isn't actually an answer to how big one needs to be on this job.",
+      },
+      { type: "h2", text: "What happens if the beam doesn't get one" },
+      {
+        type: "p",
+        text: "Ordinary medium-dense concrete block is commonly rated around **7N/mm²**; the lightweight aerated block often used for an inner leaf, because it's cheaper and better insulated, can be rated as low as **3.6N/mm²**. Spread evenly across a whole wall carrying a floor's load, that's plenty. Concentrated into the footprint of a 150mm steel flange at the end of a beam, it generally isn't — the load per square millimetre directly under the beam end can comfortably exceed what that blockwork is rated to take.",
+      },
+      {
+        type: "p",
+        text: "The usual result is exactly what it sounds like: the blockwork crushes, very slightly, directly under the bearing. On the surface it shows up as a stepped or diagonal crack radiating from the corner of the bearing, sometimes with a barely visible dip in the beam itself as it settles into the masonry below. It's rarely dramatic and rarely dangerous in the short term — but it's a genuine defect, it tends to get worse rather than better, and it's expensive to put right properly once the wall's finished and decorated.",
+      },
+      { type: "h2", text: "How big does a padstone actually need to be?" },
+      {
+        type: "p",
+        text: "There's no single stock size that's correct everywhere, because the answer depends on the beam's reaction load, the strength of the blockwork underneath it, and how far in from the wall's end the bearing sits. **NHBC Standards Chapter 6.5.5** sets out the practical minimums that sit alongside the engineer's own calculation:",
+      },
+      {
+        type: "ul",
+        items: [
+          "A minimum of **100mm** of beam bearing onto the padstone, in general use",
+          "Rising to a minimum padstone length of **200mm** where the steel is acting as a lintel in line with the wall it supports",
+          "The web of the beam centred over the wall, where it's acting as a lintel",
+          "A slip membrane, or a double layer of DPC, between a lintel beam and the top of its padstone",
+          "Padstone depth matched to the coursing of the surrounding masonry, so it sits flush rather than proud or recessed",
+        ],
+      },
+      { type: "h2", text: "Does every steel beam need one?" },
+      {
+        type: "p",
+        text: "Not always. A beam can sometimes bear directly onto an existing concrete lintel, a steel column, or a section of wall an engineer has checked and found strong enough without extra help. But that's a calculation made for the specific wall in question, not an assumption carried over from a different job on a wall that happened to look the same. Where the wall is solid brick rather than a modern cavity-block inner leaf — as in many older cottages — the same principle applies: brick is often able to take more load than a lightweight block, but soft, underfired brick laid in a lime mortar can also be weaker than it looks, and the only way to know which applies is to have the wall assessed rather than guessed at.",
+      },
+      { type: "h2", text: "What it actually costs to get right — and to put right" },
+      {
+        type: "p",
+        text: "The padstone itself is one of the cheapest items on a steel beam job. Getting it wrong, or leaving it out, is not.",
+      },
+      {
+        type: "table",
+        caption: "Getting it right the first time, against putting it right afterwards.",
+        head: ["", "Typical cost", "Note"],
+        rows: [
+          ["Precast concrete padstone (pair)", "£40 – £90", "Sized by the structural engineer as part of the beam calculation"],
+          ["Structural engineer's calculation", "£1,500 – £3,000", "Covers the beam and its padstones — the figure already quoted on /pricing for this work"],
+          ["Crack-stitching repair after the event", "£350 – £3,000+", "Depends on the number and size of cracks; usually needs a separate assessment first"],
+          ["Structural engineer's assessment report (if missed)", "£300 – £700", "To confirm the cause and specify the repair before any stitching starts"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A pair of padstones costs under £100 and is already covered by the structural engineer's fee on any job involving a steel beam. Skip it, or guess the size, and a cracked wall typically needs a **£300–£700** engineer's report, followed by **£350–£3,000+** of crack-stitching repair — plus a week or two with the wall opened back up while it's done properly, on top of the cost of the beam itself.",
+      },
+      { type: "h2", text: "What a building control inspector actually checks on site" },
+      {
+        type: "p",
+        text: "A building control inspector isn't there to redesign the beam — that's the engineer's job, done before the steel is ordered. What they check on site, against the structural calculation already submitted, is that what's been built matches what was approved: the beam's size and position, the padstone's size and bearing length, and that it's sitting level and properly bedded before anything gets built up or boarded over. It's exactly the inspection we cover in more detail in [structural calculations and what a building control officer looks for](/blog/structural-calculations-building-control). Cover the beam before that inspection happens, and the usual outcome is the same: the plasterboard comes back off.",
+      },
+      {
+        type: "quote",
+        text: "I've been called out to more cracked kitchen walls than failed beams over the years. The beam's almost never done anything wrong — it's the few inches of blockwork underneath it that never got given a fair chance.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Is it ever worth making the padstone bigger \"to be safe\"?" },
+      {
+        type: "p",
+        text: "Not really, and for a reason that isn't obvious until someone explains it: where the inner leaf of a cavity wall contributes to the house's insulation, swapping in an oversized block of dense concrete can create a cold bridge — a path for heat to escape and condensation to form, right where the wall's just been finished. NHBC's own guidance on padstones flags exactly this: a padstone's thermal properties should match the surrounding masonry as closely as possible, or the detail should avoid creating a cold spot altogether. The right answer is the size the calculation gives, not a bigger one \"just in case\" — oversizing creates its own problem rather than removing one.",
+      },
+      {
+        type: "p",
+        text: "Whether it's a single beam over a kitchen opening or the steel holding up a full rear extension, the padstone underneath it is one of the cheapest and most easily checked details on the whole job — which is exactly why [builders in Cranleigh](/areas/cranleigh) who work with a structural engineer as standard have it confirmed on the drawing before the first block goes back up, rather than discovered as a crack six weeks later.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a padstone and why does a steel beam need one?",
+        answer:
+          "A padstone is a small concrete, or dense masonry, pad built into a wall directly under the end of a steel beam. It spreads the beam's concentrated load across enough of the wall that the blockwork underneath doesn't crush — something ordinary blockwork, rated as low as 3.6N/mm² for a lightweight inner leaf, generally can't do on its own under a beam's full reaction load.",
+      },
+      {
+        question: "What size should a padstone be?",
+        answer:
+          "There's no single correct stock size — it's calculated from the beam's reaction load and the strength of the wall beneath it. NHBC Standards Chapter 6.5.5 sets the practical minimums alongside that calculation: at least 100mm of beam bearing onto the padstone generally, rising to 200mm where the steel is acting as a lintel in line with the wall.",
+      },
+      {
+        question: "Can a steel beam bear directly onto blockwork without a padstone?",
+        answer:
+          "Sometimes, where an engineer has checked the specific wall and found it strong enough on its own — an existing concrete lintel or a solid pier, for example. It should always be a calculation for that particular wall, not an assumption carried over from a different job, because two walls that look the same can be built from very different strength blockwork.",
+      },
+      {
+        question: "What does it cost to fix a wall that's cracked because the beam has no padstone?",
+        answer:
+          "Expect a structural engineer's assessment report first, typically £300–£700, followed by crack-stitching repair from around £350 for a single crack up to £3,000 or more for a larger or multi-crack job — against a pair of padstones that would have cost under £100 if specified before the beam went in.",
+      },
+      {
+        question: "Will building control reject a steel beam that doesn't have a padstone?",
+        answer:
+          "If the structural calculation specifies one and it isn't there, yes — the site inspection checks what's been built against what was approved, and a missing or wrongly sized padstone is one of the things it's specifically looking for before the beam gets covered over.",
+      },
+      {
+        question: "Do older houses with solid brick walls need padstones too?",
+        answer:
+          "Often yes, though the calculation looks slightly different to a blockwork wall. Brick can sometimes take more load than a modern lightweight block, but older brick laid in a lime mortar can also be weaker than it looks, so the only reliable answer is to have the specific wall assessed rather than assume either way.",
+      },
+    ],
+    art: BLOG_ART["steel-beam-padstones"],
+  },
+  {
     slug: "solar-panels-cranleigh-planning-permission",
     title: "Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't",
     category: "Planning & surveys",
@@ -1426,6 +1579,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "building-control-completion-certificate",
       "kitchen-extensions-cranleigh-layout-budget",
       "loft-conversions-cranleigh-roof-types",
+      "steel-beam-padstones",
     ],
     body: [
       {

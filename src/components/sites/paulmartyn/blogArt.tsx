@@ -16,6 +16,61 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "steel-beam-padstones": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="pbSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="pbBrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="pbBeam" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="pbPad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c7ced3" /><stop offset="1" stopColor="#9aa4ab" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#pbSky)" />
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">Load needs somewhere to go</text>
+        <text x="24" y="53" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#5d7078">Why a steel beam needs a padstone</text>
+
+        {/* left panel: no padstone — beam bearing straight on blockwork, crushing it */}
+        <g transform="translate(24,78)">
+          <rect x="0" y="0" width="166" height="178" fill="url(#pbBrick)" stroke="#7a4a34" strokeWidth="2" />
+          <path d="M0 24 h166 M0 48 h166 M0 72 h166 M0 96 h166 M0 120 h166 M0 144 h166 M0 168 h166" stroke="#8a5138" strokeWidth="1" opacity=".4" />
+          <rect x="18" y="68" width="130" height="16" fill="url(#pbBeam)" stroke="#c4741f" strokeWidth="1.5" />
+          <path d="M18 84 q4 6 0 10 M148 84 q-4 6 0 10" stroke="#5d2a1f" strokeWidth="2" fill="none" />
+          <path d="M24 86 l-10 30 M24 86 l6 34 M142 86 l10 30 M142 86 l-6 34" stroke="#b23a2e" strokeWidth="2" strokeLinecap="round" />
+          <path d="M14 116 l-8 16 M30 120 l-4 18 M134 116 l8 16 M148 120 l4 18" stroke="#b23a2e" strokeWidth="1.5" strokeLinecap="round" opacity=".8" />
+          <path d="M60 10 v50 M83 10 v50 M106 10 v50" stroke="#1f2a30" strokeWidth="2.5" opacity=".5" />
+          <path d="M60 56 l-5 -9 h10 z M83 56 l-5 -9 h10 z M106 56 l-5 -9 h10 z" fill="#1f2a30" opacity=".5" />
+        </g>
+        <text x="107" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#b23a2e" textAnchor="middle">NO PADSTONE — CRUSHED BEARING</text>
+
+        {/* right panel: with padstone — beam bears on a spreader, load fans out safely */}
+        <g transform="translate(210,78)">
+          <rect x="0" y="0" width="166" height="178" fill="url(#pbBrick)" stroke="#7a4a34" strokeWidth="2" />
+          <path d="M0 24 h166 M0 48 h166 M0 72 h166 M0 96 h166 M0 120 h166 M0 144 h166 M0 168 h166" stroke="#8a5138" strokeWidth="1" opacity=".4" />
+          <rect x="14" y="76" width="30" height="20" fill="url(#pbPad)" stroke="#5d6568" strokeWidth="1.5" />
+          <rect x="122" y="76" width="30" height="20" fill="url(#pbPad)" stroke="#5d6568" strokeWidth="1.5" />
+          <rect x="18" y="62" width="130" height="16" fill="url(#pbBeam)" stroke="#c4741f" strokeWidth="1.5" />
+          <path d="M20 96 L4 150 M44 96 L44 150 M14 96 L14 150 M122 96 L122 150 M152 96 L162 150 M146 96 L146 150" stroke="#e08a2b" strokeWidth="1.3" strokeDasharray="3 4" opacity=".75" />
+          <path d="M60 4 v44 M83 4 v44 M106 4 v44" stroke="#1f2a30" strokeWidth="2.5" opacity=".5" />
+          <path d="M60 44 l-5 -9 h10 z M83 44 l-5 -9 h10 z M106 44 l-5 -9 h10 z" fill="#1f2a30" opacity=".5" />
+        </g>
+        <text x="293" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#2f7a4a" textAnchor="middle">WITH PADSTONE — LOAD SPREAD</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">A £40 pad, under a beam worth thousands</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Padstone pair: £40–£90 · engineer&apos;s calculation: £1,500–£3,000</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Missed: £300–£700 report, then £350–£3,000+ of crack-stitching repair</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: NHBC Standards 6.5.5 — BS EN 1996 (Eurocode 6)</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "solar-panels-cranleigh-planning-permission": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

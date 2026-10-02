@@ -357,12 +357,17 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-09-11] Structural calculations: what a building control officer looks for
 - [done 2026-09-18] Retention, snagging and what "practical completion" means
 - [done 2026-09-25] Damp: rising, penetrating and condensation are three different problems
-- [ ] Why a steel beam needs a padstone
+- [done 2026-10-02] Why a steel beam needs a padstone
 - [ ] Underfloor heating: screed depth, response time and floor build-up
 - [ ] Overheating and Approved Document O in a glazed extension
 - [ ] What an SAP assessment is and when you need one
 - [ ] Scaffolding, pavement licences and the neighbour conversation
 - [ ] Fire doors and escape routes in a loft conversion
+- [ ] Asbestos in a pre-2000 house: what a survey finds and when you need one
+- [ ] Japanese knotweed and your mortgage: what a RICS survey actually checks
+- [ ] What an EPC rating actually measures, and why it matters before a renovation
+- [ ] Flood risk and new extensions: what a Flood Risk Assessment covers
+- [ ] Cavity wall insulation: when it helps, and when it causes damp
 
 ### If a stream is empty
 

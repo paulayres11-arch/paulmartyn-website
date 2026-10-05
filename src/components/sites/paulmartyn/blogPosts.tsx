@@ -46,6 +46,168 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cranleigh-driveways-permeable-paving-dropped-kerbs",
+    title: "Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed",
+    category: "Planning & surveys",
+    date: "2026-10-05",
+    seoTitle: "Driveway Planning Permission in Cranleigh: What You Need",
+    metaDescription:
+      "Paving a Cranleigh front garden or fitting a dropped kerb? When Waverley planning permission applies, when Surrey County Council is involved, and what it costs.",
+    excerpt:
+      "Most driveways in Cranleigh need no planning application at all — but that depends on the surface being porous, and a dropped kerb is a separate permission from a different council entirely.",
+    imageAlt:
+      "Illustration contrasting a solid tarmac driveway sheeting rainwater across a dropped kerb into the road, with a permeable block-paved driveway on the same house letting water soak down through a gravel sub-base into the clay ground beneath",
+    related: [
+      "building-on-weald-clay-cranleigh-footings",
+      "cranleigh-conservation-area-consent",
+      "garden-rooms-cranleigh-permitted-development",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Paving a Cranleigh front garden is usually **permitted development** and needs no planning application — but only if the surface is **porous**, or the run-off is directed to a permeable area, once the paved area between the house and the road **exceeds 5m²**.",
+          "A new dropped kerb is a **separate permission from a different council**: Waverley Borough Council handles planning, but **Surrey County Council**, as the highway authority, approves and builds the actual crossing — driving over an uncut kerb without that consent is an offence under **section 184 of the Highways Act 1980**.",
+          "Surrey County Council's current Stage 1 application fee is **£383** (non-refundable), before any construction cost — the crossing works themselves typically run from around **£1,800**, more on a wider verge or a sloped frontage.",
+          "Cranleigh sits on the **Weald clay of the Low Weald** — ground that barely drains on its own — so a solid, impermeable driveway here causes visible problems faster than the same surface on free-draining soil.",
+          "Choosing a permeable material from the outset avoids the planning application on most plots altogether: no **£548** fee, no up-to-8-week wait, and no risk of an enforcement letter arriving after the tarmac's already down.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes after the digger's already booked. A homeowner has decided the gravel at the front needs to become a proper driveway — tarmac, block paving, somewhere two cars can sit without churning up mud in November — and only then does the question of permission come up, usually because a neighbour mentioned it, or the contractor's asked for a decision on materials before they'll quote.",
+      },
+      {
+        type: "p",
+        text: "Most of the time, no planning application is needed at all. But that \"most of the time\" has a condition attached that catches people out precisely because it's easy to miss: it depends on what the surface is made of, not just how big it is. And it sits alongside a completely separate rule, run by a completely separate council, for anything that actually crosses the kerb.",
+      },
+      {
+        type: "p",
+        text: "Both of those matter more in Cranleigh than in most villages — partly because of what's written in the rules, and partly because of what's underneath the ground here.",
+      },
+      { type: "h2", text: "Do I need planning permission to pave my front garden in Cranleigh?" },
+      {
+        type: "p",
+        text: "Hard surfacing within the curtilage of a house — a driveway, a patio, a path — is covered by its own permitted development right, under **Schedule 2, Part 1, Class F** of the Town and Country Planning (General Permitted Development) (England) Order 2015. For most of a plot, that's the end of the question: no application needed.",
+      },
+      {
+        type: "p",
+        text: "One condition sits underneath it, and it only bites on the bit of garden between the house's **principal elevation and the highway** — the front garden, in other words, not the side or back. Where the hard surface in that area exceeds **5m²**, Class F is only permitted development if either the surface itself is made of **porous materials**, or **provision is made to direct run-off water** from it to a permeable or porous area elsewhere in the garden. Miss both, and what would otherwise be permitted development needs a full householder planning application instead.",
+      },
+      { type: "h2", text: "What counts as permeable, and is gravel enough on its own?" },
+      {
+        type: "p",
+        text: "Permeable block paving, resin-bound surfacing laid on a free-draining sub-base, and grasscrete all satisfy the porous-material route in their own right, as does loose gravel — though gravel needs proper edging and a sound sub-base to stay porous in practice rather than compacting into something closer to a solid slab after a few winters of car tyres.",
+      },
+      {
+        type: "p",
+        text: "The second route is just as valid and often overlooked: a standard, non-porous surface is still permitted development if its run-off is piped or graded into a border, a soakaway or another permeable area of the garden, rather than being left to find its own way to the road. The Planning Portal's own guidance on permeable surfacing of front gardens sets out both routes side by side — useful reading before, not after, a quote's accepted.",
+      },
+      { type: "h2", text: "Dropped kerbs: a different permission, from a different council" },
+      {
+        type: "p",
+        text: "Surrey operates as a two-tier authority area: Waverley Borough Council is the local planning authority, but the kerb and the footway in front of a Cranleigh house belong to **Surrey County Council**, as the highway authority. The paving rule above is a Waverley planning question. Cutting the kerb to drive over it is an entirely separate Surrey highways question, and getting the first one right changes nothing about needing the second.",
+      },
+      {
+        type: "p",
+        text: "Driving a vehicle across an uncut kerb or verge without the highway authority's consent is an offence under **section 184 of the Highways Act 1980**, whatever the planning position on the driveway behind it. It's the single most common gap in this process — a homeowner checks the Class F rule, gets the paving right, and only discovers the kerb itself needed its own separate sign-off once a car's already been driving over the edge of it for a month.",
+      },
+      {
+        type: "quote",
+        text: "The wall's the bit people forget, not the kerb. They've checked the paving rules, they've booked Surrey for the dropped kerb, and then halfway through widening the opening somebody points out the front wall they're taking down is over a metre high and fronts a conservation area road. That one needs its own consent, and it's quicker to ask before the bricks come down than after.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What a dropped kerb costs, and how long it takes" },
+      {
+        type: "p",
+        text: "Surrey County Council runs the process in two stages: a Stage 1 application, assessing whether the crossing is feasible and safe at that specific spot, followed by a Stage 2 application once a design and a contractor are agreed. The Stage 1 fee is non-refundable and doesn't guarantee approval — only an assessment of the site.",
+      },
+      {
+        type: "table",
+        caption: "Typical cost and timing for a Surrey County Council dropped kerb — site-specific factors move both.",
+        head: ["Stage", "Typical cost", "Typical timing"],
+        rows: [
+          ["Stage 1 application (feasibility)", "£383, non-refundable", "A few weeks for a decision"],
+          ["Stage 2 construction, standard verge", "From around £1,800", "Booked once Stage 1 is approved"],
+          ["Lane rental, on a busier road", "Up to £1,500 per day", "Added where works affect traffic flow"],
+          ["Re-mark fee, if the layout changes", "£116, non-refundable", "Only if requested after payment"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Only an approved contractor can carry out the actual crossing works on the public highway — not the builder doing the driveway itself, even where the same firm manages the whole job for the client. Allow for both stages before committing to a start date for the wider project, since a driveway finished early with no legal way to drive onto it yet is a common, avoidable delay.",
+      },
+      { type: "h2", text: "Driveways inside the Cranleigh conservation area" },
+      {
+        type: "p",
+        text: "The Class F paving rule and the Surrey dropped-kerb process both apply inside Cranleigh's conservation area in exactly the same way as outside it — there's no blanket restriction on driveway materials simply for sitting on the High Street. What does change, as we've covered in more detail in [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent), is anything involving the **boundary wall**: demolishing or altering a wall over **1m high fronting a highway** inside the conservation area needs consent in its own right, and widening a driveway opening is one of the most common ways that gets triggered without anyone intending it to.",
+      },
+      {
+        type: "p",
+        text: "On the Weald clay that sits under most of the parish, there's a practical reason to prefer a permeable surface quite separate from the planning rule. Clay drains slowly and unevenly at the best of times — it's the same ground behind the **shrink-swell** risk we've covered when [building on the Weald clay around Cranleigh](/blog/building-on-weald-clay-cranleigh-footings) — so a sheet of impermeable paving tends to shed its water fastest exactly where nobody wants it: across the pavement, into a neighbour's garden, or pooling against the house's own damp-proof course rather than soaking away where it falls.",
+      },
+      { type: "h2", text: "What a new driveway costs, by material" },
+      {
+        type: "p",
+        text: "Material cost varies more than most homeowners expect, and the cheapest option on paper isn't always the one that avoids a planning application. A site-specific quote is the only way to know the figure for a particular driveway, but the ranges below are a reasonable guide to budget against.",
+      },
+      {
+        type: "table",
+        caption: "Typical fully-laid driveway cost by material — figures are a guide; get a site-specific quote.",
+        head: ["Material", "Typical cost per m²", "Inherently permeable?"],
+        rows: [
+          ["Standard block paving", "£70 – £120", "No — needs the run-off route instead"],
+          ["Permeable block paving", "£80 – £130", "Yes, laid on the correct sub-base"],
+          ["Resin-bound, on a free-draining base", "£70 – £120", "Yes, laid on the correct sub-base"],
+          ["Tarmac", "£40 – £70", "No — needs the run-off route instead"],
+          ["Gravel, properly edged", "£35 – £60", "Yes, if the sub-base stays free-draining"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Staying inside the Class F exemption by choosing a permeable material, instead of applying for planning permission for a non-porous one, avoids the **£548** householder planning fee outright and sidesteps the up-to-8-week decision period that comes with it — the difference between a driveway finished before half-term and one still waiting on a decision notice.",
+      },
+      {
+        type: "p",
+        text: "Whichever material ends up on the ground, the two questions worth answering before a digger arrives are the same ones throughout this post: is the surface porous, or is its run-off genuinely directed somewhere permeable, and has the dropped kerb itself been agreed with Surrey separately from anything Waverley has to say about the paving. Get those two right from the outset and the rest of the job is just a driveway. If it would help to talk it through with [builders in Cranleigh](/areas/cranleigh) who deal with Surrey's crossing process and Waverley's conservation area rules on the same road on a regular basis, that's a conversation worth having before the quote, not after it.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to pave over my front garden in Cranleigh?",
+        answer:
+          "Usually not. Hard surfacing within the curtilage of a house is permitted development under Schedule 2, Part 1, Class F of the GPDO 2015. The only condition applies to the front garden, between the house's principal elevation and the highway: once the paved area there exceeds 5m², the surface has to be porous, or its run-off has to be directed to a permeable area, or a full planning application is needed instead.",
+      },
+      {
+        question: "Do I need planning permission for a dropped kerb?",
+        answer:
+          "A dropped kerb isn't a planning permission matter at all — it's a highway consent from Surrey County Council, separate from anything Waverley Borough Council deals with on the driveway itself. Driving over an uncut kerb without that consent is an offence under section 184 of the Highways Act 1980, whatever the planning position on the paving behind it.",
+      },
+      {
+        question: "How much does a dropped kerb cost from Surrey County Council?",
+        answer:
+          "Surrey County Council's Stage 1 application fee is currently £383, non-refundable, covering the feasibility assessment only. Stage 2 construction typically starts from around £1,800 on a standard verge, rising on a wider or sloped frontage, or where lane rental applies on a busier road.",
+      },
+      {
+        question: "Can I use gravel for my driveway instead of block paving to avoid planning permission?",
+        answer:
+          "Yes, provided it's genuinely porous in practice — properly edged, on a free-draining sub-base that won't compact into a solid surface over time. Loose gravel without edging, or laid straight onto compacted ground, is the kind of detail that can tip a driveway back into needing a planning application after the fact.",
+      },
+      {
+        question: "Does a driveway in the Cranleigh conservation area need extra permission?",
+        answer:
+          "Not for the surface itself — the same Class F rule and Surrey dropped-kerb process apply inside the conservation area as outside it. The trap is the boundary wall: demolishing or altering a wall over 1m high fronting a highway inside the conservation area needs its own consent, and widening a driveway opening is a common way that requirement gets triggered.",
+      },
+      {
+        question: "How long does it take to get a dropped kerb approved and built?",
+        answer:
+          "Allow a few weeks for Surrey County Council's Stage 1 feasibility decision, then further time to agree a Stage 2 design and book an approved contractor for the construction itself. It's worth starting the dropped-kerb process early in a project, since the driveway surface can be finished well before there's a legal way to drive onto it.",
+      },
+    ],
+    art: BLOG_ART["cranleigh-driveways-permeable-paving-dropped-kerbs"],
+  },
+  {
     slug: "steel-beam-padstones",
     title: "Why a steel beam needs a padstone",
     category: "Building control",
@@ -888,6 +1050,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a garden cutaway on Weald Clay showing cracked dry clay under a sunny sky on one side and swollen, wet clay under a rain cloud on the other, meeting beneath a house drawn with a stepped foundation joining a shallow old footing to a deeper new one",
     related: [
+      "cranleigh-driveways-permeable-paving-dropped-kerbs",
       "trees-and-foundation-depth-cranleigh",
       "structural-calculations-building-control",
       "extending-1930s-semi-cranleigh",

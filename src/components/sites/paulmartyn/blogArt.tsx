@@ -16,6 +16,80 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "cranleigh-driveways-permeable-paving-dropped-kerbs": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="dkSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6fb0de" /><stop offset="1" stopColor="#c7e2ee" />
+          </linearGradient>
+          <linearGradient id="dkRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5c6670" /><stop offset="1" stopColor="#3a424a" />
+          </linearGradient>
+          <linearGradient id="dkWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e3d3ad" /><stop offset="1" stopColor="#c2ab7c" />
+          </linearGradient>
+          <linearGradient id="dkTarmac" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#53595e" /><stop offset="1" stopColor="#363b3f" />
+          </linearGradient>
+          <linearGradient id="dkClay" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a87450" /><stop offset="1" stopColor="#7a4f33" />
+          </linearGradient>
+          <linearGradient id="dkRoad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#4a4f53" /><stop offset="1" stopColor="#34383b" />
+          </linearGradient>
+          <linearGradient id="dkAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="300" fill="url(#dkSky)" />
+        <text x="24" y="30" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30">Where does the water go?</text>
+        <text x="24" y="48" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#44535a">Driveways and dropped kerbs on Cranleigh&apos;s clay</text>
+
+        {/* left scene: solid tarmac, water sheeting across kerb into the road */}
+        <g transform="translate(18,66)">
+          <path d="M14 70 L74 36 L134 70 Z" fill="url(#dkRoof)" stroke="#232a30" strokeWidth="1.8" />
+          <rect x="34" y="70" width="80" height="48" fill="url(#dkWall)" stroke="#7a6a48" strokeWidth="1.6" />
+          <rect x="46" y="82" width="16" height="16" fill="#dcecf5" stroke="#efe6d4" strokeWidth="1.4" />
+          <rect x="88" y="94" width="16" height="24" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.2" />
+          <path d="M0 150 L170 150 L170 170 L0 170 Z" fill="url(#dkTarmac)" stroke="#24282b" strokeWidth="1.6" />
+          <rect x="0" y="170" width="170" height="22" fill="url(#dkRoad)" />
+          <rect x="0" y="166" width="170" height="6" fill="#cfd3d5" opacity=".85" />
+          <path d="M8 152 q4 10 -2 18 M30 150 q6 12 -3 20 M56 151 q5 9 -4 19 M84 150 q6 11 -2 20 M112 151 q5 10 -3 19 M140 150 q6 10 -3 20 M160 151 q4 9 -2 19" stroke="#aebec4" strokeWidth="1.4" fill="none" opacity=".7" />
+          <path d="M-6 172 q20 -4 40 0 q20 4 40 0 q20 -4 40 0 q20 4 36 0" stroke="#6fa8d8" strokeWidth="3" fill="none" opacity=".85" />
+          <path d="M-10 182 q25 -3 50 0 q25 3 50 0 q25 -3 46 0" stroke="#6fa8d8" strokeWidth="2.2" fill="none" opacity=".6" />
+          <text x="85" y="210" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#b23a2e" textAnchor="middle">SOLID SURFACE — RUNS TO THE ROAD</text>
+        </g>
+
+        {/* right scene: permeable block paving, cross-section into Weald clay below */}
+        <g transform="translate(206,66)">
+          <path d="M14 70 L74 36 L134 70 Z" fill="url(#dkRoof)" stroke="#232a30" strokeWidth="1.8" />
+          <rect x="34" y="70" width="80" height="48" fill="url(#dkWall)" stroke="#7a6a48" strokeWidth="1.6" />
+          <rect x="46" y="82" width="16" height="16" fill="#dcecf5" stroke="#efe6d4" strokeWidth="1.4" />
+          <rect x="88" y="94" width="16" height="24" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.2" />
+          <rect x="0" y="150" width="170" height="20" fill="#8a7a63" stroke="#5f5340" strokeWidth="1.4" />
+          <path d="M0 154 h170 M0 158 h170 M0 162 h170 M0 166 h170" stroke="#5f5340" strokeWidth="1" opacity=".4" />
+          <path d="M14 150 v20 M28 150 v20 M42 150 v20 M56 150 v20 M70 150 v20 M84 150 v20 M98 150 v20 M112 150 v20 M126 150 v20 M140 150 v20 M154 150 v20" stroke="#5f5340" strokeWidth="1" opacity=".35" />
+          <rect x="0" y="170" width="170" height="40" fill="url(#dkClay)" />
+          <path d="M6 184 q8 6 0 12 M28 180 q8 8 -2 16 M54 186 q6 6 0 12 M80 182 q8 7 -1 15 M106 186 q6 6 0 12 M132 180 q8 8 -2 16 M156 186 q6 6 0 12" stroke="#5c3a24" strokeWidth="1.2" fill="none" opacity=".6" />
+          <path d="M20 170 L16 204 M50 170 L54 206 M85 170 L85 208 M120 170 L116 205 M150 170 L154 206" stroke="#6fa8d8" strokeWidth="1.6" strokeDasharray="2 3" opacity=".8" />
+          <text x="85" y="226" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#2f7a4a" textAnchor="middle">PERMEABLE — SOAKS IN</text>
+        </g>
+
+        {/* dropped kerb detail, bottom centre */}
+        <g transform="translate(150,252)">
+          <path d="M0 24 L100 24 L100 18 L18 18 L0 24 Z" fill="#cfd3d5" stroke="#8a9094" strokeWidth="1.3" />
+          <text x="50" y="14" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#44535a" textAnchor="middle">DROPPED KERB — SURREY CC CONSENT</text>
+        </g>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">Two permissions, two councils</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Paving over 5m²: porous, or direct the runoff — Waverley, under GPDO Class F</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Dropped kerb: Surrey CC, from £383 Stage 1 — Highways Act 1980, s.184</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: legislation.gov.uk — Surrey County Council</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "steel-beam-padstones": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

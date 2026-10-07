@@ -16,6 +16,77 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "bungalow-extensions-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="bgSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#edf4f7" />
+          </linearGradient>
+          <linearGradient id="bgWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e3d3ad" /><stop offset="1" stopColor="#c2ab7c" />
+          </linearGradient>
+          <linearGradient id="bgRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="bgSoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a87450" /><stop offset="1" stopColor="#6e4a2e" />
+          </linearGradient>
+          <linearGradient id="bgAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="250" fill="url(#bgSky)" />
+        <rect y="250" width="400" height="50" fill="url(#bgSoil)" />
+        <text x="24" y="30" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30">A bungalow has nowhere spare to put a floor</text>
+        <text x="24" y="48" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#44535a">Three ways to add space, and what each one runs into</text>
+
+        {/* ridge height limit line, spans the image */}
+        <path d="M0 140 H400" stroke="#e08a2b" strokeWidth="1.6" strokeDasharray="5 4" opacity=".85" />
+        <text x="398" y="134" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#a8652a" textAnchor="end">RIDGE HEIGHT LIMIT — CLASS A</text>
+
+        {/* ghost new storey, Class AA, dashed amber, stacked on the roof */}
+        <g opacity=".92">
+          <path d="M145 70 L200 35 L255 70 Z" fill="none" stroke="url(#bgAmber)" strokeWidth="2" strokeDasharray="5 4" />
+          <rect x="150" y="70" width="100" height="70" fill="#f0a94a" opacity=".12" stroke="url(#bgAmber)" strokeWidth="2" strokeDasharray="5 4" />
+          <path d="M200 60 v-22 M200 38 l-7 9 h14 z" fill="#e08a2b" stroke="#e08a2b" />
+          <text x="200" y="98" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#a8652a" textAnchor="middle">+1 STOREY</text>
+          <text x="200" y="110" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#a8652a" textAnchor="middle">CLASS AA — PRIOR APPROVAL</text>
+        </g>
+
+        {/* main bungalow */}
+        <path d="M120 190 L200 140 L280 190 Z" fill="url(#bgRoof)" stroke="#4a2c22" strokeWidth="1.8" />
+        <rect x="130" y="190" width="140" height="60" fill="url(#bgWall)" stroke="#7a6a48" strokeWidth="1.6" />
+        <rect x="145" y="205" width="20" height="20" fill="#dcecf5" stroke="#efe6d4" strokeWidth="1.3" />
+        <rect x="235" y="205" width="20" height="20" fill="#dcecf5" stroke="#efe6d4" strokeWidth="1.3" />
+        <rect x="190" y="218" width="20" height="32" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.2" />
+
+        {/* single-storey side extension, capped at the ridge-height line */}
+        <g>
+          <path d="M35 190 L40 140 L115 140 L115 190 Z" fill="url(#bgWall)" opacity=".9" stroke="#7a6a48" strokeWidth="1.6" />
+          <rect x="35" y="190" width="80" height="60" fill="url(#bgWall)" stroke="#7a6a48" strokeWidth="1.6" />
+          <rect x="52" y="208" width="16" height="16" fill="#dcecf5" stroke="#efe6d4" strokeWidth="1.2" />
+          <rect x="88" y="210" width="16" height="28" fill="#2f3a40" stroke="#1f2a30" strokeWidth="1.1" />
+          <text x="75" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#44535a" textAnchor="middle">SINGLE STOREY —</text>
+          <text x="75" y="281" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#44535a" textAnchor="middle">CAPPED AT RIDGE HEIGHT</text>
+        </g>
+
+        {/* foundation cutaway below ground, under the main house */}
+        <rect x="145" y="254" width="110" height="16" fill="#9aa4ab" stroke="#5d6568" strokeWidth="1.4" />
+        <path d="M150 254 h100 M150 258 h100 M150 262 h100 M150 266 h100" stroke="#5d6568" strokeWidth="1" opacity=".4" />
+        <path d="M175 256 l-5 12 M195 254 l4 14 M225 256 l-4 12" stroke="#b23a2e" strokeWidth="1.6" strokeLinecap="round" opacity=".85" />
+        <path d="M200 140 L200 252" stroke="#b23a2e" strokeWidth="1.8" strokeDasharray="3 4" opacity=".75" />
+        <path d="M200 252 l-6 -10 h12 z" fill="#b23a2e" opacity=".85" />
+        <text x="200" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.5" fontWeight="700" fill="#b23a2e" textAnchor="middle">ORIGINAL FOOTING — SIZED FOR ONE STOREY</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">Three ways up, one set of footings</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Class AA additional storey: prior approval, £249 (→£310 from 8 Dec 2026)</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Class A single storey: capped at the height of the existing roof</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: GPDO 2015, Schedule 2 Part 1 — Planning Portal</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "cranleigh-driveways-permeable-paving-dropped-kerbs": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

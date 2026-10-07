@@ -46,6 +46,196 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "bungalow-extensions-cranleigh",
+    title: "Extending a bungalow in Cranleigh: what's different from a two-storey house",
+    category: "Extensions",
+    date: "2026-10-07",
+    seoTitle: "Extending a Bungalow in Cranleigh: What's Different",
+    metaDescription:
+      "Bungalow extensions in Cranleigh work differently from a house extension — what permitted development allows, what it costs, and when you need an engineer first.",
+    excerpt:
+      "A bungalow has no spare storey to extend into, so the planning routes and the structural risks are different from a two-storey house — from a genuine right to add a whole extra floor, to foundations that were never built to carry one.",
+    imageAlt:
+      "Illustration of a Cranleigh bungalow showing three ways to add space: a dashed amber ghost storey built on top of the existing roof labelled Class AA, a single-storey side extension capped by a dashed ridge-height line, and a foundation cutaway below ground showing the shallow original footing under a downward load arrow",
+    related: [
+      "loft-conversions-cranleigh-roof-types",
+      "building-on-weald-clay-cranleigh-footings",
+      "extension-value-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A bungalow has no first floor to extend into — every extra room comes from the ground floor footprint, the roof void, or, for one storey only, a genuine right to build a new floor on top under **Class AA** of the GPDO 2015.",
+          "A single-storey rear or side extension under **Class A** permitted development is capped at the height of the existing roof — on a bungalow that ceiling is far lower than it would be against a two-storey house next door.",
+          "Adding a whole new storey under Class AA needs **prior approval**, not just a quick check: it costs **£249** (rising to **£310** from 8 December 2026), only applies to houses built between **1 July 1948 and 28 October 2018**, and is switched off entirely inside Cranleigh's conservation area.",
+          "Most bungalow footings were only ever sized to carry one storey's weight. Before any design goes further than a sketch, get a structural engineer to check whether the existing foundations will take an extra floor, or whether underpinning is needed.",
+          "A single-storey extension runs **£2,700–£3,100 per m²** and a loft conversion **£2,000–£2,800 per m²** — the cheapest option on paper is not always the one your particular roof or foundations can actually deliver.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually starts the same way. A growing family, parents moving closer, or wanting one more decent-sized room — in a bungalow that was never built with the idea of going up. Almost always, the homeowner has already seen what the two-storey house down the road did: knocked through, built over the garage, added a whole floor — and wants to know why their bungalow can't do the same.",
+      },
+      {
+        type: "p",
+        text: "The honest answer is that a bungalow isn't a house with the top floor missing. It was designed, and its foundations were built, on the understanding that the roof was the top of the building. Every route to more space — sideways, into the roof, or upwards — runs into a different limit here than it would on a conventional two-storey house, and getting the order of those decisions wrong is the most common way a bungalow project ends up costing more, or taking longer, than the same-sized job next door.",
+      },
+      {
+        type: "p",
+        text: "None of that makes a bungalow the harder starting point — a full, unused roof void is usually sitting there from day one. It just means the questions need asking in a different order.",
+      },
+      { type: "h2", text: "Can I add a whole extra storey to a bungalow?" },
+      {
+        type: "p",
+        text: "Since 2020, **Class AA** of the GPDO 2015 has allowed a genuinely new right: building extra storeys straight on top of an existing house without a full planning application. A house that already has two or more storeys can gain up to two more. A bungalow — a single-storey dwellinghouse — can gain **one**.",
+      },
+      {
+        type: "p",
+        text: "It comes with real conditions, not a blank cheque. The dwellinghouse has to have been built between **1 July 1948 and 28 October 2018**. The new storey's floor-to-ceiling height is capped at whichever is lower: **3 metres**, or the floor-to-ceiling height of the storey below. And it still needs **prior approval** from Waverley — assessing external appearance and the impact on neighbours' light and privacy — rather than being free of council involvement altogether.",
+      },
+      {
+        type: "p",
+        text: "One condition rules it out completely: Class AA does not apply on **Article 2(3) land**, which includes conservation areas. A bungalow inside the Cranleigh Conservation Area loses this right outright; one just outside it keeps it, subject to everything above.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Checking whether Class AA applies — and applying for prior approval instead of a full householder planning application for the same new storey — saves the difference between the **£548** householder planning fee and the **£249** Class AA fee: a straight **£299**, without the wider planning-policy tests a full application has to pass.",
+      },
+      { type: "h2", text: "What if I only want a single-storey rear or side extension?" },
+      {
+        type: "p",
+        text: "This is the more familiar route — building outward rather than up. **Class A** permitted development covers it, with limits that apply to any house: up to **3 metres** deep on an attached property or **4 metres** detached without neighbour consultation, rising to **6 metres** and **8 metres** under the larger home extension scheme, with a neighbour consultation step and its own prior approval fee.",
+      },
+      {
+        type: "p",
+        text: "The condition that catches bungalow owners out is the height limit. Class A caps the enlarged part at the height of the **highest part of the existing roof** — and a bungalow's roof sits a great deal lower than a two-storey house's. A vaulted ceiling, a row of roof lights, a flat-roofed garden room with a sitting-out space on top: all of it has less height to work with here than the same idea would have against a taller host building. Sketch the extension's roofline against the bungalow's actual ridge height before falling in love with a design, not after.",
+      },
+      { type: "h2", text: "Can I extend out and up at the same time — build a proper two-storey wing?" },
+      {
+        type: "p",
+        text: "Class A also permits extensions of more than one storey, but with a condition that bites hard on many bungalow plots: the extension must not reach beyond the original rear wall by more than **3 metres**, and no part of it can come within **7 metres** of any boundary opposite that rear wall. A generous plot can manage that easily; a tighter one rules the route out and pushes the project into a full planning application instead — a different timescale and fee, not a disaster.",
+      },
+      {
+        type: "p",
+        text: "Roof pitch has to match the existing house as far as practicable, and eaves and ridge height can't exceed what's already there — the same ceiling, in effect, as the single-storey route above, just applied to two floors of new wall rather than one.",
+      },
+      {
+        type: "table",
+        caption: "Ways to add space to a Cranleigh bungalow, compared — figures are a guide; always confirm with Waverley.",
+        head: ["Route", "What it allows", "Key limit", "Permission needed"],
+        rows: [
+          [
+            "Class A — single storey",
+            "Ground-floor rear or side extension",
+            "Height capped at the existing roof's highest point; 3m/4m depth (6m/8m with neighbour consultation)",
+            "None, if within limits",
+          ],
+          [
+            "Class A — more than one storey",
+            "A new two-storey wing",
+            "Max 3m beyond the original rear wall; must not come within 7m of the boundary opposite it",
+            "None, if within limits",
+          ],
+          [
+            "Class AA — additional storey",
+            "One whole new storey on top (bungalows)",
+            "Built 1948–2018; new storey capped at 3m floor-to-ceiling; not on Article 2(3) land",
+            "Prior approval, £249 (→£310 from 8 Dec 2026)",
+          ],
+          [
+            "Full planning permission",
+            "Anything beyond the limits above",
+            "Assessed case by case against Waverley's policies",
+            "£548 (→~£575 from 8 Dec 2026)",
+          ],
+        ],
+      },
+      { type: "h2", text: "Will the existing foundations actually take the extra weight?" },
+      {
+        type: "p",
+        text: "A two-storey house extension rarely has to ask this question. Adding a ground-floor extension usually means pouring new foundations next to the existing ones, sized for the new structure's own weight — the original house's foundations keep doing exactly the job they always did. Adding a storey to a bungalow is different: the **original** walls and the **original** footings are being asked to carry a floor and a roof they were never designed for.",
+      },
+      {
+        type: "p",
+        text: "The Planning Portal's own guidance on extending upwards is explicit: the adequacy of existing foundations to carry the extra load has to be checked, and it may be necessary to increase their capacity by underpinning. Any load-bearing wall carrying new floor joists needs a continuous path down to a foundation — including an internal wall with an opening knocked through it, where a beam now needs checking against a load it was never calculated for.",
+      },
+      {
+        type: "quote",
+        text: "People see the two-storey house down the road and assume their bungalow can do the same job for the same money. The first thing I ask for is a trial hole dug at the original footing — half the time a 1960s or 70s strip foundation is barely a foot deep, built for a roof, not a roof plus a whole extra floor on top of it. Find that out before the architect's drawn anything, not after the roof's already off.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Go up, go sideways, or go into the roof?" },
+      {
+        type: "p",
+        text: "Three genuinely different projects, and the right one depends on what's under the roof tiles and in the ground, not on which looks cheapest on a spreadsheet. A **loft conversion** — covered in more detail in [loft conversions in Cranleigh](/blog/loft-conversions-cranleigh-roof-types) — keeps the garden and the walls below untouched, but depends on head height and whether the roof is traditional cut timbers or a later trussed structure full of webs. A **side or rear extension** eats into the garden but leaves the existing structure's loading as it was. A **new storey** keeps the footprint intact but commits to the heaviest structural intervention of the three, and the narrowest set of conditions.",
+      },
+      {
+        type: "p",
+        text: "Bungalow plots around Cranleigh often have more garden to spare than a Victorian terrace in the village centre, which is one reason the \"expensive-looking\" sideways option is sometimes the path of least resistance in practice — no foundation uncertainty, no Article 2(3) exclusion to worry about, just a straightforward ground-floor build.",
+      },
+      { type: "h2", text: "Does Cranleigh's conservation area change any of this?" },
+      {
+        type: "p",
+        text: "Most of Cranleigh's bungalow streets sit well outside the High Street conservation area — designated in 1973 and extended in 1985 and 2016 — so the routes above generally apply in full. The exception is absolute, not a matter of degree: Class AA is switched off entirely on Article 2(3) land, conservation areas included. We've covered the practical side of that boundary in [Cranleigh's settlement boundary](/blog/cranleigh-settlement-boundary) and [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) — worth checking which side of the line a bungalow sits on before a new-storey design reaches a prior approval application.",
+      },
+      { type: "h2", text: "What does a bungalow extension cost, and how long does it take?" },
+      {
+        type: "p",
+        text: "Material and labour rates are the same whatever shape the house is; what changes is which figure below actually applies, and whether a structural survey needs adding to the programme before a design is finalised.",
+      },
+      {
+        type: "table",
+        caption: "Typical cost by route for a Cranleigh bungalow — figures are a guide; get a site-specific quote.",
+        head: ["Project", "Typical cost", "Note"],
+        rows: [
+          ["Single-storey rear/side extension", "£2,700 – £3,100 per m²", "Ground floor only, on new foundations alongside the existing ones"],
+          ["Loft conversion", "£2,000 – £2,800 per m²", "Subject to head height and roof type"],
+          ["Structural engineer's assessment", "£1,500 – £3,000", "Needed before any Class AA or two-storey design is finalised"],
+          ["Additional storey (Class AA)", "Site-specific — ask for a fixed quote", "Priced on the scope found once the foundations and walls are surveyed"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Whichever route makes sense, settle two things before committing to a design: what the roof and the boundary allow, and what the foundations can carry. Both are quick to check and expensive to discover halfway through a build. If it would help to talk a particular bungalow through with [builders in Cranleigh](/areas/cranleigh) who deal with Waverley's permitted development routes and the borough's older housing stock regularly, that's worth doing at the sketch stage, not after the drawings are finished.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I add an extra storey to a bungalow without planning permission?",
+        answer:
+          "Not without any council involvement, but Class AA of the GPDO 2015 lets many bungalows add one new storey through a faster prior approval process rather than a full planning application. It only applies to houses built between 1 July 1948 and 28 October 2018, caps the new storey's floor-to-ceiling height at 3 metres, and doesn't apply at all inside a conservation area.",
+      },
+      {
+        question: "Why is my bungalow extension capped at a lower height than my neighbour's two-storey extension?",
+        answer:
+          "Class A permitted development caps a single-storey extension at the height of the highest part of the existing roof. A bungalow's roof sits much lower than a two-storey house's ridge, so there's less height available for a vaulted ceiling or a flat roof with rooflights than the same design would have against a taller host building.",
+      },
+      {
+        question: "Do I need a structural engineer to extend a bungalow?",
+        answer:
+          "For anything that adds load to the existing walls and foundations — a new storey, or a two-storey wing — yes. A straightforward single-storey ground-floor extension usually gets its own new foundations and doesn't touch the bungalow's existing loading, but check that assumption with an engineer before committing to a design; it typically costs £1,500–£3,000.",
+      },
+      {
+        question: "Is it cheaper to convert the loft or build a single-storey extension on a bungalow?",
+        answer:
+          "Loft conversions typically run £2,000–£2,800 per m² against £2,700–£3,100 per m² for a ground-floor extension, but the comparison only holds if the roof is actually convertible — a traditional cut roof with enough head height, not a later trussed structure full of structural webs.",
+      },
+      {
+        question: "Can I build a two-storey extension on my bungalow instead of adding a storey on top?",
+        answer:
+          "Yes, under Class A permitted development, provided it doesn't extend more than 3 metres beyond the original rear wall and stays at least 7 metres from any boundary opposite that wall. Many bungalow plots in Cranleigh have the garden depth for this; on a tighter plot it needs a full planning application instead.",
+      },
+      {
+        question: "Does being inside the Cranleigh conservation area stop me adding a storey to my bungalow?",
+        answer:
+          "Yes, completely. Class AA does not apply on Article 2(3) land, which includes conservation areas, with no case-by-case exception. Most bungalow streets in Cranleigh sit outside the High Street conservation area, but it's worth confirming which side of the boundary a particular property is on before relying on this route.",
+      },
+    ],
+    art: BLOG_ART["bungalow-extensions-cranleigh"],
+  },
+  {
     slug: "cranleigh-driveways-permeable-paving-dropped-kerbs",
     title: "Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed",
     category: "Planning & surveys",
@@ -3654,6 +3844,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "extension-value-cranleigh",
       "cranleigh-conservation-area-consent",
       "part-l-extension-insulation",
+      "bungalow-extensions-cranleigh",
     ],
     body: [
       {

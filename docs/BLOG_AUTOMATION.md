@@ -358,7 +358,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-09-18] Retention, snagging and what "practical completion" means
 - [done 2026-09-25] Damp: rising, penetrating and condensation are three different problems
 - [done 2026-10-02] Why a steel beam needs a padstone
-- [ ] Underfloor heating: screed depth, response time and floor build-up
+- [done 2026-10-09] Underfloor heating: screed depth, response time and floor build-up
 - [ ] Overheating and Approved Document O in a glazed extension
 - [ ] What an SAP assessment is and when you need one
 - [ ] Scaffolding, pavement licences and the neighbour conversation

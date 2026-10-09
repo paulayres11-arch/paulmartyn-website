@@ -16,6 +16,98 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "underfloor-heating-screed-depth-response-time": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="ufhRoom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f6ecd9" /><stop offset="1" stopColor="#ead9b8" />
+          </linearGradient>
+          <linearGradient id="ufhSoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a87450" /><stop offset="1" stopColor="#6e4a2e" />
+          </linearGradient>
+          <linearGradient id="ufhInsul" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ecd48a" /><stop offset="1" stopColor="#c9a23f" />
+          </linearGradient>
+          <linearGradient id="ufhScreedA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c7cbcd" /><stop offset="1" stopColor="#9aa4ab" />
+          </linearGradient>
+          <linearGradient id="ufhScreedB" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcd6de" /><stop offset="1" stopColor="#8fb6c2" />
+          </linearGradient>
+          <linearGradient id="ufhAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="ufhGlowSlow" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stopColor="#f7c177" stopOpacity=".4" /><stop offset="1" stopColor="#f7c177" stopOpacity="0" />
+          </linearGradient>
+          <linearGradient id="ufhGlowFast" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stopColor="#f7c177" stopOpacity=".65" /><stop offset="1" stopColor="#f7c177" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="300" fill="url(#ufhRoom)" />
+        <text x="24" y="30" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30">Same heating, two very different floors</text>
+        <text x="24" y="48" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#44535a">Screed type decides depth, drying time — and whether the levels line up</text>
+
+        <path d="M200 60 V290" stroke="#c9c2ac" strokeWidth="1.2" strokeDasharray="4 4" opacity=".7" />
+        <text x="105" y="70" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#44535a" textAnchor="middle">SAND &amp; CEMENT</text>
+        <text x="295" y="70" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#44535a" textAnchor="middle">LIQUID SCREED</text>
+
+        {/* slow-drying icon, left */}
+        <circle cx="55" cy="95" r="13" fill="#eef1f2" stroke="#44535a" strokeWidth="1.5" />
+        <path d="M55 95 V86 M55 95 H64" stroke="#44535a" strokeWidth="1.7" strokeLinecap="round" />
+        <text x="73" y="92" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#44535a">≈100 DAYS TO DRY</text>
+        <text x="73" y="103" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fill="#44535a">UNDER BS 8204-1&apos;S RULE</text>
+
+        {/* fast-drying icon, right */}
+        <circle cx="245" cy="95" r="13" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.5" />
+        <path d="M245 95 V88 M245 95 H251" stroke="#e08a2b" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M230 90 h-6 M230 95 h-8 M230 100 h-6" stroke="#e08a2b" strokeWidth="1.3" strokeLinecap="round" opacity=".7" />
+        <text x="263" y="92" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#a8652a">≈1 WEEK TO DRY</text>
+        <text x="263" y="103" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fill="#a8652a">WITH A FAST-DRY ADDITIVE</text>
+
+        {/* ground, shared */}
+        <rect x="0" y="230" width="400" height="60" fill="url(#ufhSoil)" />
+
+        {/* insulation boards, same thickness both sides — Part L sets the floor's U-value regardless of screed type */}
+        <rect x="40" y="205" width="130" height="25" fill="url(#ufhInsul)" stroke="#8a6b22" strokeWidth="1.2" />
+        <rect x="230" y="205" width="130" height="25" fill="url(#ufhInsul)" stroke="#8a6b22" strokeWidth="1.2" />
+        <text x="105" y="220" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#5c4812" textAnchor="middle">INSULATION — PART L</text>
+        <text x="295" y="220" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#5c4812" textAnchor="middle">INSULATION — PART L</text>
+
+        {/* damp-proof membrane, both sides */}
+        <path d="M40 205 H170" stroke="#3a6ea5" strokeWidth="1.4" strokeDasharray="4 3" opacity=".85" />
+        <path d="M230 205 H360" stroke="#3a6ea5" strokeWidth="1.4" strokeDasharray="4 3" opacity=".85" />
+        <text x="44" y="201" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#3a6ea5">DPM</text>
+
+        {/* left: sand and cement screed, deep */}
+        <rect x="40" y="125" width="130" height="80" fill="url(#ufhScreedA)" stroke="#5d6568" strokeWidth="1.4" />
+        <rect x="40" y="125" width="130" height="60" fill="url(#ufhGlowSlow)" />
+        <path d="M55 188 q15 -13 30 0 q15 -13 30 0 q15 -13 30 0 q15 -13 15 0" fill="none" stroke="url(#ufhAmber)" strokeWidth="4" strokeLinecap="round" />
+        <text x="105" y="145" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">≈85mm COVER</text>
+        <rect x="40" y="120" width="130" height="5" fill="#e8e4dc" stroke="#c9c2ac" strokeWidth="1" />
+
+        {/* right: liquid screed, thin */}
+        <rect x="230" y="160" width="130" height="45" fill="url(#ufhScreedB)" stroke="#5d6568" strokeWidth="1.4" />
+        <rect x="230" y="160" width="130" height="45" fill="url(#ufhGlowFast)" />
+        <path d="M245 193 q15 -11 30 0 q15 -11 30 0 q15 -11 30 0 q15 -11 15 0" fill="none" stroke="url(#ufhAmber)" strokeWidth="4" strokeLinecap="round" />
+        <text x="295" y="178" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">≈50mm COVER</text>
+        <rect x="230" y="155" width="130" height="5" fill="#e8e4dc" stroke="#c9c2ac" strokeWidth="1" />
+
+        {/* the finished floor levels don't match — the step a thinner screed leaves behind */}
+        <path d="M170 120 H230" stroke="#b23a2e" strokeWidth="1.4" strokeDasharray="4 3" opacity=".85" />
+        <path d="M200 120 V155" stroke="#b23a2e" strokeWidth="1.6" opacity=".85" />
+        <path d="M200 120 l-4 7 h8 z M200 155 l-4 -7 h8 z" fill="#b23a2e" opacity=".85" />
+        <text x="206" y="140" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#b23a2e">≈35mm STEP</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14.5" fontWeight="700" fill="#e8e4dc">The floor decides how fast the room warms up</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fill="#8fa0a8">Sand &amp; cement: ≈85mm cover, ≈100 days to dry under BS 8204-1&apos;s own rule</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.5" fill="#8fa0a8">Liquid screed: ≈50mm cover, ready in about a week with a fast-drying additive</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fill="#8fa0a8">Source: BS 8204-1 (code of practice) and screed manufacturers&apos; data sheets</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "bungalow-extensions-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

@@ -46,6 +46,168 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "underfloor-heating-screed-depth-response-time",
+    title: "Underfloor heating: screed depth, response time and floor build-up",
+    category: "Heating & services",
+    date: "2026-10-09",
+    seoTitle: "Underfloor Heating: Screed Depth, Drying and Cost",
+    metaDescription:
+      "How deep underfloor heating screed needs to be, why liquid screed dries faster than sand and cement, what sits beneath it, and what it costs.",
+    excerpt:
+      "Underfloor heating lives or dies on decisions made before the screed goes down: how deep it needs to be, which type dries fast enough to keep the programme moving, and what's built in underneath it. Get the floor wrong and no thermostat fixes it.",
+    imageAlt:
+      "Illustration comparing two underfloor heating floor cutaways side by side: a deep sand and cement screed on the left labelled approximately 85 millimetres cover with a slow-drying clock icon reading around 100 days, and a shallower liquid screed on the right labelled approximately 50 millimetres cover with a fast-drying clock icon reading around 1 week, both sitting on matching insulation boards and a damp-proof membrane above soil, with a red bracket marking the step where the two finished floor levels don't line up",
+    related: [
+      "part-l-extension-insulation",
+      "kitchen-extensions-cranleigh-layout-budget",
+      "wet-rooms-cranleigh-cottage",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A traditional sand-and-cement screed over underfloor heating pipework typically needs **65-75mm minimum cover**, for a finished depth around **80-100mm**; a modern liquid (flowing) screed does the same job at roughly **40-55mm** total.",
+          "That difference in depth is also a difference in time: BS 8204-1's own drying rule works out at around **100 days** to dry a 75mm sand-and-cement screed, against about **a week** for a liquid screed laid with a fast-drying additive at a similar depth.",
+          "None of it works without the floor build-up underneath: insulation sized to meet Approved Document L's **0.18 W/(m²K)** limit for a new extension floor, a damp-proof membrane, and compressible edge strips so the screed can expand without cracking.",
+          "Underfloor heating responds slowly by design — a thick screed keeps giving out heat for hours after the thermostat is satisfied — so it needs weather-compensating controls, not a radiator-style on/off thermostat.",
+          "Budget roughly **£90-£150 per m²** for a wet system laid into a new extension slab, rising to **£120-£190 per m²** to retrofit into an existing floor, mostly because of the work in lifting floors and re-levelling thresholds.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call is almost always the same shape. Wet underfloor heating has gone into a new kitchen extension, the floor's down, the heating's on — and three days later the room still feels lukewarm, or the old dining room next door now has a step up into the new one, or a hairline crack has opened along the island where the screed meets the doorway. None of that is the heating failing. It's nearly always the floor underneath it being the wrong depth, the wrong screed, or missing a layer that should have gone in before the pipes did.",
+      },
+      {
+        type: "p",
+        text: "Underfloor heating gets sold as a single product — a box of pipe, a manifold, a thermostat — and in one sense it is. But it only performs as well as the screed it's buried in, and that screed is a design decision made before the pipes go down, not a finishing trade turning up afterwards. Get the depth, the type and the insulation beneath it right, and the room heats evenly. Get it wrong, and no thermostat fixes a floor that's either too thick to heat quickly or too thin to spread the heat at all.",
+      },
+      {
+        type: "p",
+        text: "It's also where a build programme quietly loses weeks, because drying time isn't optional and it isn't something a site team can plan around by starting the next trade early.",
+      },
+      { type: "h2", text: "How deep does the screed need to be over underfloor heating pipes?" },
+      {
+        type: "p",
+        text: "There's no single number, because it depends which screed is going down, but the trade works to a fairly consistent range. For a traditional sand-and-cement screed, floated over the insulation and pipework as it is for underfloor heating, most specifications call for a minimum of **65mm** measured from the top of the pipe, with **75-100mm** the more comfortable design depth once the usual tolerance for an uneven subfloor is allowed for.",
+      },
+      {
+        type: "p",
+        text: "Modern liquid (flowing) screeds change that arithmetic. Because they self-level and pack tightly around the pipe with far fewer air voids than a hand-trowelled mix, manufacturers' data sheets often allow a cover of only **20-35mm**, for a total screed depth of **40-55mm** — roughly half what a sand-and-cement floor needs. On a tight extension where every centimetre of height matters, or where a new floor has to meet an existing one without a step, that difference decides whether the job is straightforward or means lifting the existing floor too.",
+      },
+      {
+        type: "table",
+        caption: "Screed depth over underfloor heating pipework, by type — a guide; always confirm against your screed supplier's data sheet for the pipe size and loading on your job.",
+        head: ["Screed type", "Typical cover over pipe", "Typical total depth", "Best suited to"],
+        rows: [
+          ["Sand-and-cement (traditional)", "25-35mm", "75-100mm", "Larger areas, lower material cost, forgiving of an uneven base"],
+          ["Liquid / flowing (calcium sulphate or polymer-modified)", "20-35mm", "40-55mm", "Tight floor-to-ceiling heights, matching an existing floor level, faster response"],
+          ["Fibre-reinforced or pre-packed proprietary mix", "20-30mm", "40-50mm", "Smaller domestic rooms and retrofit work"],
+        ],
+      },
+      { type: "h2", text: "Liquid screed or sand-and-cement — what's the real difference?" },
+      {
+        type: "p",
+        text: "Beyond depth, the two behave differently once they're down. A sand-and-cement screed is mixed and barrowed in by hand, which makes it forgiving of an imperfect base but means how evenly it conducts heat depends on how well it was compacted around the pipe. A liquid screed is pumped in as a self-levelling slurry that flows around every loop of pipe without anyone needing to tamp it down, which is why manufacturers can specify a thinner cover with confidence — there's simply less trapped air for the heat to push through.",
+      },
+      {
+        type: "p",
+        text: "That evenness is also why a liquid screed responds faster, which matters more than it sounds. A less dense, air-filled sand-and-cement screed holds the heat inside itself longer before it reaches the floor surface; a liquid screed transfers it more consistently and, being thinner for the same job, has less mass to heat up in the first place.",
+      },
+      {
+        type: "quote",
+        text: "Most of the underfloor heating problems I get called out to aren't the pipework at all — they're a screed that was never designed for it. Someone's levelled the floor with whatever was cheapest on the day and wondered why the kitchen takes three hours to warm up and the hallway next to it never does properly. **You design the screed around the heating, not the other way round.**",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Why does underfloor heating take so long to warm up — or cool down?" },
+      {
+        type: "p",
+        text: "This catches almost everyone out the first winter. A radiator heats the air around it directly and you feel the difference in minutes. Underfloor heating has to warm a slab of screed first, right through its thickness, before the surface feels it. A sand-and-cement screed at 90mm or so can take two to four hours to come up to temperature from cold, and just as long to cool back down, which is why a room on a short, radiator-style on/off cycle either never quite warms up or badly overshoots.",
+      },
+      {
+        type: "p",
+        text: "The fix isn't a hotter flow temperature — it's controlling the system for what it actually is: a slow-reacting heat store, not an instant one. Weather-compensating controls, which adjust the flow temperature gradually as the outside temperature changes rather than switching the loop on and off, suit a screed floor far better than a room thermostat copied across from a radiator system. A thinner liquid screed narrows the lag, but there's always more thermal mass between the pipe and your foot than there is with a radiator on the wall.",
+      },
+      { type: "h2", text: "What goes underneath the screed — and why Part L makes it non-negotiable?" },
+      {
+        type: "p",
+        text: "The screed is only the top of a four-layer build-up, and skipping a layer to save floor height is the shortcut that goes wrong most often. Below the pipe sits a rigid insulation board, sized to meet the floor's target U-value — [Part L sets a limiting value of](/blog/part-l-extension-insulation) **0.18 W/(m²K)** for a new or replacement ground floor in an extension, which on a typical rigid board works out at around 100-120mm. Thin that layer out and the heating spends as much energy warming the ground beneath the house as it does the room above it.",
+      },
+      {
+        type: "p",
+        text: "Below the insulation, a damp-proof membrane keeps ground moisture out of the build-up — lapped up the walls and taped at every joint, because a torn membrane under a wet screed is a problem nobody finds until the floor finish starts lifting years later. And around every edge, a strip of compressible insulation separates the screed from the walls, so the floor can expand as it heats without cracking against something rigid. That expansion gap is exactly what's missing when a crack appears along a threshold between an old floor and a new underfloor-heated one.",
+      },
+      { type: "h2", text: "How long before I can walk on it, lay the floor, or switch the heating on?" },
+      {
+        type: "p",
+        text: "This is where a programme slips, because drying time is governed by physics, not by how much the next trade wants to get started. **BS 8204-1** — a code of practice, not a regulation, but the one the trade designs against — sets out roughly one day of drying per millimetre of screed up to 50mm, and a slower rate above that. In practice, a 75mm sand-and-cement screed with no additive can take around 100 days — roughly 14 weeks — to dry enough, under good conditions, to accept a floor covering and have the heating commissioned.",
+      },
+      {
+        type: "p",
+        text: "Most screed suppliers now offer a fast-drying additive for exactly this reason. Added at the mixing stage, it can bring a 75-100mm screed to the point of accepting flooring and a first, carefully ramped-up heating cycle in as little as six to seven days, provided the site stays within the manufacturer's temperature and humidity range. Liquid screeds follow similar logic: thinner to start with and drying at roughly a millimetre a day, a 50mm liquid screed is often ready in five to eight weeks rather than the fourteen a sand-and-cement floor would need. Either way, the only way to confirm it's actually dry enough — rather than guess from the calendar — is a hygrometer reading.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Specifying a fast-drying screed additive, or a liquid screed, in place of a standard sand-and-cement mix can cut roughly **12-13 weeks** off the time between the screed going down and the floor covering and heating being signed off — twelve weeks your flooring contractor, your kitchen fitter and your family aren't waiting on a drying slab.",
+      },
+      { type: "h2", text: "What does underfloor heating actually cost to add to an extension?" },
+      {
+        type: "p",
+        text: "Underfloor heating isn't priced separately in most builders' headline rates, because how much it adds depends on whether it's going into a new slab or retrofitted over an existing floor. As a national guide, budget **£90-£150 per m²** for a wet system into a new extension slab, labour included, rising to **£120-£190 per m²** where it's fitted into an existing room, because the floor usually has to come up and levels re-checked against every doorway.",
+      },
+      {
+        type: "table",
+        caption: "Typical UK installed cost for a wet underfloor heating system, including the screed — a national guide; get a fixed quote for your own floor and finish.",
+        head: ["Scenario", "Typical cost per m²", "What usually drives it"],
+        rows: [
+          ["New extension slab", "£90 - £150", "Pipework, manifold, a basic screed and standard thermostats"],
+          ["Retrofit into an existing room", "£120 - £190", "Lifting the existing floor, re-levelling thresholds, keeping levels consistent into adjoining rooms"],
+        ],
+      },
+      {
+        type: "p",
+        text: "A single-storey extension itself runs **£2,700-£3,100 per m²** before any of this — see [what a Cranleigh extension costs](/guides/house-extension-costs-surrey), and [kitchen extensions in Cranleigh](/blog/kitchen-extensions-cranleigh-layout-budget) for how a kitchen floor's layout affects it — so underfloor heating is a small line against the whole job. It's still one to decide at design stage, because the floor build-up it needs changes door-threshold heights, not just the finish on top.",
+      },
+      {
+        type: "p",
+        text: "Whichever screed ends up in the specification, it's the kind of detail that's far cheaper to get right on the drawing board than to dig up once the floor's down — exactly why that conversation is worth having with [builders in Cranleigh](/areas/cranleigh) at design stage, before the extension is already under way rather than after.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I put underfloor heating under any floor covering?",
+        answer:
+          "Most coverings work, but each has its own resistance to heat flow and maximum surface temperature: tile and stone perform best, engineered wood needs a product rated for underfloor heating and a lower flow temperature, and a thick carpet with a dense underlay can insulate the heat before it reaches the room. Check the covering's own tog rating against your system's output before specifying it.",
+      },
+      {
+        question: "Does a liquid screed cost more than a traditional sand-and-cement screed?",
+        answer:
+          "Per square metre, usually yes — a liquid screed typically costs more to supply and pump than a hand-laid sand-and-cement mix. The saving is in time rather than material: a thinner, faster-drying floor can let other trades start weeks earlier, which is often worth more than the extra screed cost on a programme with a fixed completion date.",
+      },
+      {
+        question: "How soon can I turn the heating on after the screed goes down?",
+        answer:
+          "Only once the screed's own guidance or a hygrometer reading confirms it's dry enough. Turning the heating on early to speed things up is one of the most common causes of cracking, because it dries the top surface faster than the body of the screed beneath it.",
+      },
+      {
+        question: "Why does my underfloor heating feel warm in one room and cold in the next?",
+        answer:
+          "Almost always a difference in screed depth, insulation, or how evenly the pipe loops are spaced between the two rooms — a room with a deeper or less insulated floor beneath it will lag behind one with a thinner, better-insulated build-up on the same manifold.",
+      },
+      {
+        question: "Can I retrofit underfloor heating into an existing room without lifting the whole floor?",
+        answer:
+          "Low-profile retrofit systems exist that sit in a thin levelling compound rather than a full screed, avoiding most of the build-up described above, but they still need enough depth for decent cover over the pipe and usually mean taking the existing floor finish up first. Ask your installer to confirm the finished floor height against every adjoining doorway before you commit.",
+      },
+      {
+        question: "Does underfloor heating need more insulation than a normal floor?",
+        answer:
+          "Yes — because the heat source sits inside the floor itself, any heat lost downward into the ground is energy you're paying for and never feel. That's why Approved Document L's insulation standard for a new floor matters more, not less, once underfloor heating is part of the design.",
+      },
+    ],
+    art: BLOG_ART["underfloor-heating-screed-depth-response-time"],
+  },
+  {
     slug: "bungalow-extensions-cranleigh",
     title: "Extending a bungalow in Cranleigh: what's different from a two-storey house",
     category: "Extensions",
@@ -2914,6 +3076,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trickle-vents-approved-document-f",
       "building-control-completion-certificate",
       "extending-1930s-semi-cranleigh",
+      "underfloor-heating-screed-depth-response-time",
     ],
     body: [
       {

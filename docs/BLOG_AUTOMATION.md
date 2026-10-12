@@ -332,7 +332,7 @@ Cranleigh topics — work through these:
 - [done 2026-09-30] Solar panels on a Cranleigh roof: when planning permission applies and when it doesn't
 - [done 2026-10-05] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed
 - [done 2026-10-07] Extending a bungalow in Cranleigh: what's different from a two-storey house
-- [ ] Basements and cellars in Cranleigh: what the Weald clay means for digging down
+- [done 2026-10-12] Basements and cellars in Cranleigh: what the Weald clay means for digging down
 - [ ] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
 - [ ] Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay
 - [ ] Porches in Cranleigh: the one extension that almost never needs planning permission

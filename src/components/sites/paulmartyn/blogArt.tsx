@@ -16,6 +16,86 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "basements-cellars-cranleigh-weald-clay": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="bscSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="bscClay" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ab7a52" /><stop offset="1" stopColor="#6f4c30" />
+          </linearGradient>
+          <linearGradient id="bscClayDeep" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7a5436" /><stop offset="1" stopColor="#4f3620" />
+          </linearGradient>
+          <linearGradient id="bscConcrete" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d7dadc" /><stop offset="1" stopColor="#a9afb3" />
+          </linearGradient>
+          <linearGradient id="bscTanking" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#4a8fc2" /><stop offset="1" stopColor="#2f6a99" />
+          </linearGradient>
+          <linearGradient id="bscAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="bscWater" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#6fb3d6" stopOpacity=".55" /><stop offset="1" stopColor="#6fb3d6" stopOpacity=".2" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#bscSky)" />
+        <path d="M0 40 Q20 32 40 40 T80 40 T120 40 T160 40 T200 40 T240 40 T280 40 T320 40 T360 40 T400 40" fill="#8fc77c" opacity=".5" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">Digging down means designing for three things at once</text>
+
+        <rect y="40" width="400" height="260" fill="url(#bscClay)" />
+        <rect y="190" width="400" height="110" fill="url(#bscClayDeep)" opacity=".55" />
+        {/* fissures in the clay, both sides of the dig */}
+        <path d="M20 70 q8 20 -2 38 q10 16 0 34" fill="none" stroke="#4f3620" strokeWidth="1.3" opacity=".55" />
+        <path d="M58 55 q10 24 -4 44 q12 18 -2 40 q10 20 -4 36" fill="none" stroke="#4f3620" strokeWidth="1.3" opacity=".5" />
+        <path d="M380 60 q-9 22 2 40 q-11 18 0 36" fill="none" stroke="#4f3620" strokeWidth="1.3" opacity=".5" />
+        <text x="14" y="285" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#e8dcc8" opacity=".8">WEALD CLAY —</text>
+        <text x="14" y="295" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#e8dcc8" opacity=".8">FISSURED, SHRINK-SWELL</text>
+
+        {/* groundwater table, running through the clay */}
+        <path d="M0 210 q25 -8 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" fill="none" stroke="#6fb3d6" strokeWidth="2" opacity=".85" />
+        <rect x="0" y="212" width="400" height="88" fill="url(#bscWater)" />
+        <text x="372" y="207" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.5" fontWeight="700" fill="#2f6a99" textAnchor="end">GROUNDWATER</text>
+
+        {/* basement box, left of centre */}
+        <rect x="55" y="120" width="110" height="160" fill="url(#bscConcrete)" stroke="#5d6568" strokeWidth="1.6" />
+        <rect x="55" y="120" width="8" height="160" fill="url(#bscTanking)" />
+        <rect x="157" y="120" width="8" height="160" fill="url(#bscTanking)" />
+        <rect x="55" y="272" width="110" height="8" fill="url(#bscTanking)" />
+        <rect x="68" y="135" width="84" height="130" fill="#f3efe4" opacity=".9" />
+        <text x="110" y="160" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">HABITABLE</text>
+        <text x="110" y="172" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">ROOM</text>
+        <text x="110" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#a8652a" textAnchor="middle">BS 8102</text>
+        <text x="110" y="200" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#a8652a" textAnchor="middle">GRADE 3</text>
+        <path d="M68 250 h84 M68 258 h84" stroke="#2f6a99" strokeWidth="1.2" strokeDasharray="3 3" opacity=".6" />
+        <text x="110" y="246" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fill="#2f6a99" textAnchor="middle">DRAINED CAVITY + TANKING</text>
+
+        {/* house above the basement */}
+        <rect x="63" y="90" width="94" height="32" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.2" />
+        <path d="M58 90 L110 65 L162 90 Z" fill="#9c5a3c" stroke="#6f3f28" strokeWidth="1.2" />
+
+        {/* neighbour's shallower footing, right side, with the 3m / 1 month marker */}
+        <rect x="300" y="95" width="70" height="25" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.1" />
+        <rect x="312" y="120" width="46" height="22" fill="url(#bscConcrete)" stroke="#5d6568" strokeWidth="1.3" />
+        <path d="M165 150 H312" stroke="#e08a2b" strokeWidth="1.3" strokeDasharray="4 3" />
+        <path d="M165 150 l6 -4 v8 z M312 150 l-6 -4 v8 z" fill="#e08a2b" />
+        <text x="238" y="143" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#a8652a" textAnchor="middle">WITHIN 3-6m</text>
+        <circle cx="238" cy="178" r="15" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.5" />
+        <path d="M230 173 h16 v11 h-16 z M230 173 l8 7 l8 -7" fill="none" stroke="#a8652a" strokeWidth="1.4" strokeLinejoin="round" />
+        <text x="238" y="200" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#44535a" textAnchor="middle">PARTY WALL</text>
+        <text x="238" y="210" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#44535a" textAnchor="middle">NOTICE — 1 MONTH</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">The ground, the water and the neighbours decide the job</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Weald clay is fissured and shrink-swell — temporary works are engineered, not assumed</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">A habitable basement needs BS 8102 Grade 3: no water penetration tolerated</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: BS 8102:2022 (code of practice) and the Party Wall etc. Act 1996</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "underfloor-heating-screed-depth-response-time": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

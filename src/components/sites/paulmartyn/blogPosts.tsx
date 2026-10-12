@@ -46,6 +46,184 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "basements-cellars-cranleigh-weald-clay",
+    title: "Basements and cellars in Cranleigh: what the Weald clay means for digging down",
+    category: "Foundations",
+    date: "2026-10-12",
+    seoTitle: "Digging a Basement in Cranleigh: Planning and Cost Guide",
+    metaDescription:
+      "Thinking about a basement in Cranleigh? What planning permission, Weald clay, BS 8102 waterproofing and your neighbours' party wall rights mean for the job.",
+    excerpt:
+      "A basement looks like free space under a house that's already there, but Cranleigh's clay, the neighbours next door and the waterproofing grade you choose decide whether that's true, and what it costs to find out.",
+    imageAlt:
+      "Illustration of a cross-section under a Cranleigh house showing a concrete basement box tanked in blue waterproofing within fissured brown Weald clay, a wavy groundwater line running through the soil, and a dashed amber line marking the distance to a neighbouring house's shallower footing with a party wall notice icon",
+    related: [
+      "building-on-weald-clay-cranleigh-footings",
+      "party-wall-notice-timing",
+      "cranleigh-conservation-area-consent",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Converting an existing cellar into living space usually needs no planning permission; excavating a brand new basement that enlarges the floor area or adds a light well usually does — check with **Waverley** before you dig, per Planning Portal guidance.",
+          "Cranleigh sits on **Weald clay** — stiff, fissured and shrink-swell — so temporary works, dewatering and the sequence of excavation have to be engineered for the ground, not just the finished room.",
+          "**BS 8102** (a code of practice, not a regulation) sets three grades of waterproofing. Any basement you intend to live, work or sleep in needs **Grade 3**, which tolerates no water penetration at all.",
+          "Excavating within **3 metres** of a neighbour's foundations — or **6 metres** on a 45° angle — triggers a **Party Wall etc. Act 1996** notice with a statutory **one-month** period, which catches almost every basement dig on a village plot.",
+          "A structural engineer runs **£1,500–£3,000** and a party wall surveyor **from £1,000** if a neighbour dissents. Both are close to a certainty on a basement job, not optional extras to be found later.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every few months someone rings asking whether digging down under the kitchen is cheaper than building out. It usually isn't — not because a basement is a bad idea, but because almost nobody starts that conversation with the three things that actually set the price: the clay underneath, the neighbours next door, and how dry the finished room needs to be.",
+      },
+      {
+        type: "p",
+        text: "A basement is also the one kind of extension where getting the sequence wrong is genuinely expensive. Dig before the waterproofing is specified, serve the party wall notice after the contract is signed instead of before, or discover the water table sits higher than the trial hole suggested once the digger is already in the hole, and the budget everyone agreed to stops meaning anything.",
+      },
+      {
+        type: "p",
+        text: "None of that makes a basement a bad idea. In a village of cottages and bungalows with no spare storey to extend into, going down is sometimes the only way to add a room without touching the garden or the roofline. It just needs the right questions asked in the right order, before the contract rather than during it.",
+      },
+      { type: "h2", text: "Do I need planning permission to dig a basement in Cranleigh?" },
+      {
+        type: "p",
+        text: "Planning Portal's own guidance draws a clear line between the two things people lump together as \"doing the basement\". Converting an existing cellar into a bedroom, playroom or gym — where the floor area doesn't grow and nothing about the house's external appearance changes — is, in most cases, unlikely to need planning permission at all.",
+      },
+      {
+        type: "p",
+        text: "Excavating a genuinely new basement is a different test. Where the works create a new unit of accommodation, enlarge the floor area, or alter the external appearance of the house — a light well, a sunken terrace, a raised surround at ground level to get daylight in — permission is likely to be needed. Waverley's own supplementary guidance can add site-specific limits on top, so the honest first step on every basement enquiry here is a call to the council before a single drawing is paid for, not an assumption either way.",
+      },
+      { type: "h2", text: "What does Cranleigh's Weald clay mean for digging this deep?" },
+      {
+        type: "p",
+        text: "We've written before about [what Weald clay does to a standard extension's footings](/blog/building-on-weald-clay-cranleigh-footings) — the same stiff, fissured, shrink-swell ground that sits under most of the parish. A basement asks more of that clay than any footing does, because instead of a trench a metre deep you're opening a hole several metres across and often two to three metres deep, and leaving it open for weeks while the structure goes in.",
+      },
+      {
+        type: "p",
+        text: "That matters in two ways a straightforward extension doesn't usually hit. First, the sides of the excavation need temporary support — sheet piling, trench boxes or a battered slope — sized for clay that can swell and push back once it's relieved of the weight above it, not just ground that will politely stay where it's put. Second, de-watering the hole while you work can dry the clay around it faster than the rest of the garden, and clay that dries and then rewets later can heave. Both are routine for an engineer who knows the ground; both are expensive surprises for someone who assumed a basement dig behaves like a deep trench.",
+      },
+      { type: "h2", text: "What is BS 8102, and why does the waterproofing grade matter?" },
+      {
+        type: "p",
+        text: "**BS 8102:2022** is the industry code of practice for keeping water out of structures below ground — a code of practice, not a regulation, in the same way BS 5385 governs tiling rather than being statute. It sets three grades of dryness, matched to how the space is used.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Grade 1** tolerates some seepage and damp patches, fine for a plant room, store or unheated garage nobody minds being slightly damp.",
+          "**Grade 2** allows damp from air moisture but no actual water ingress — workshops and some utility spaces.",
+          "**Grade 3** tolerates no water penetration and no persistent damp at all. This is the grade for anywhere you intend to live, work, sleep or store anything that moisture would ruin.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Building control checks the basement's moisture resistance against **Approved Document C**, and specifying to BS 8102 Grade 3 from the design stage — usually a combination of a tanked (Type A) membrane, a waterproof concrete structure (Type B) and a drained cavity (Type C) rather than relying on any one on its own — is the standard way of demonstrating that, not an optional upgrade. Retrofitting a sump and pump into a damp basement after the fact almost always costs more than specifying the right grade before the concrete is poured.",
+      },
+      { type: "h2", text: "Do I need to tell my neighbours before I start digging?" },
+      {
+        type: "p",
+        text: "Almost certainly, and this is the step a basement enquiry catches out more than any other kind of extension. We've set out [the full party wall notice timetable here](/blog/party-wall-notice-timing), but the rule that bites hardest on a basement dig is the **adjacent excavation notice** under section 6 of the Party Wall etc. Act 1996: excavating within **3 metres** of a neighbour's building to a depth below their foundations, or within **6 metres** where a 45° line from the bottom of their foundations would meet your excavation, requires **one month's** notice before you can start.",
+      },
+      {
+        type: "p",
+        text: "On most Cranleigh plots, a basement dig of any real size will fall inside one of those two distances on at least one boundary. Silence from a neighbour for 14 days counts as dissent, which means surveyors on both sides before you can start — so this is not a letter to leave until the structural drawings are finished.",
+      },
+      {
+        type: "quote",
+        text: "On every basement I've priced in Cranleigh, the clay and the neighbour's foundations are the first two things I look at — before the drawings, before the budget. Get those two right on paper and the rest of the job behaves itself. Get them wrong and you find out in the hole, which is the most expensive place to find anything out.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What if the house is listed, or inside the Cranleigh Conservation Area?" },
+      {
+        type: "p",
+        text: "Cranleigh parish has around **81 nationally listed buildings** and a further **174 Buildings of Local Merit** that Waverley weighs even though they carry no national designation. If the house is listed, excavating beneath it — even entirely below current ground level, invisible from the street — generally needs **Listed Building Consent** under the Planning (Listed Buildings and Conservation Areas) Act 1990, because the test is whether the work affects the building's character as a structure of special interest, not whether anyone can see it afterwards.",
+      },
+      {
+        type: "p",
+        text: "Sitting inside the **Cranleigh Conservation Area** on its own doesn't trigger a separate consent for digging down — conservation area consent is mainly about demolishing a building over 115 cubic metres, or removing a boundary wall. It does mean Waverley will look harder at anything visible above ground that comes with the basement: a light well, a sunken courtyard, changed ground levels against the street. [We've covered what else needs consent inside the conservation area here](/blog/cranleigh-conservation-area-consent).",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Serving the section 6 excavation notice the day you appoint your structural engineer — rather than waiting until the waterproofing design and any planning application are finished — lets the statutory one-month notice period run alongside design work instead of after it. On a typical basement job that is roughly **four weeks** back in the programme, and it costs nothing but a First-Class stamp.",
+      },
+      { type: "h2", text: "What does a basement cost compared with building outwards or up?" },
+      {
+        type: "p",
+        text: "There's no honest per-square-metre rate for a basement the way there is for an extension above ground, because the cost depends on depth, groundwater, access for plant, and how much underpinning the existing house needs — all things a site-specific survey decides, not a table. What a table can do is show why it costs more than the alternatives, square metre for square metre.",
+      },
+      {
+        type: "table",
+        caption: "Indicative only — a basement needs a site-specific survey before any figure means anything; the other rows match our pricing page.",
+        head: ["Option", "Typical cost", "What drives it"],
+        rows: [
+          ["Single-storey extension", "**£2,700 – £3,100 per m²**", "Groundworks, brick and block, roof, standard fit-out"],
+          ["Loft conversion", "**£2,000 – £2,800 per m²**", "Existing roof structure, dormers if needed, stair access"],
+          ["Basement or cellar conversion", "Priced from survey, routinely above extension rates", "Excavation volume, underpinning, BS 8102 waterproofing, dewatering, temporary works"],
+        ],
+      },
+      {
+        type: "p",
+        text: "What that extra cost buys is space that doesn't touch the garden, the roofline, or — inside the conservation area — the street-facing appearance Waverley cares about most. For a tight village plot where there's nowhere left to build outwards, that trade-off is often the point, not a drawback.",
+      },
+      { type: "h2", text: "How long does a basement project actually take?" },
+      {
+        type: "p",
+        text: "The programme has more moving parts than an extension, and most of them can run alongside each other if they're started early rather than queued up one after another.",
+      },
+      {
+        type: "table",
+        caption: "A guide only — actual durations depend on depth, ground conditions and whether planning permission or listed building consent is needed.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Structural engineer's design", "2 – 4 weeks", "Party wall notice, planning application"],
+          ["Waterproofing (BS 8102) design", "2 – 3 weeks", "Structural design"],
+          ["Party wall notice period", "**1 month** (statutory minimum)", "Design and planning"],
+          ["Householder planning decision, if needed", "8 – 10 weeks", "Party wall notice period"],
+          ["Excavation and structure", "4 – 10 weeks, depending on size", "—"],
+        ],
+      },
+      {
+        type: "p",
+        text: "A basement is one of the few projects where the question worth asking before the drawings even start is \"what's under the ground\", not \"what do I want on top of it\" — exactly the kind of survey-first conversation worth having with [builders in Cranleigh](/areas/cranleigh) before anything is excavated or priced.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a basement in Cranleigh?",
+        answer:
+          "Converting an existing cellar usually doesn't, provided the floor area doesn't grow and the house's external appearance doesn't change. Excavating a new basement that enlarges the floor area, adds a light well, or creates a separate unit of accommodation is more likely to need permission. Check with Waverley before committing to drawings either way.",
+      },
+      {
+        question: "What is BS 8102 and does my basement need to meet it?",
+        answer:
+          "BS 8102:2022 is the UK code of practice for waterproofing structures below ground. It's not a legal requirement in itself, but any basement you intend to live, work or sleep in needs to be built to its highest standard, Grade 3, which tolerates no water penetration at all — and building control will expect to see that demonstrated against Approved Document C.",
+      },
+      {
+        question: "Will digging a basement affect my neighbour's house?",
+        answer:
+          "It can, which is why the Party Wall etc. Act 1996 exists. Excavating within 3 metres of a neighbour's foundations to a depth below theirs, or within 6 metres at a 45° angle, requires a month's written notice before you start — almost unavoidable on a typical Cranleigh plot.",
+      },
+      {
+        question: "How much does a basement cost compared to an extension?",
+        answer:
+          "There's no standard per-square-metre rate the way there is for an above-ground extension, because excavation volume, groundwater, underpinning and waterproofing all vary by site. As a rule of thumb it costs noticeably more than a single-storey extension at £2,700–£3,100 per m², and needs a site-specific survey before any figure is reliable.",
+      },
+      {
+        question: "Can I dig a basement under a listed building in Cranleigh?",
+        answer:
+          "Often yes, but you'll need Listed Building Consent as well as any planning permission, because the test is whether the work affects the building's character as a structure of special interest — not whether it will be visible once it's finished. With around 81 listed buildings in the parish, this comes up more often here than in most places.",
+      },
+      {
+        question: "Does being in the Cranleigh Conservation Area stop me digging a basement?",
+        answer:
+          "Not on its own — conservation area consent mainly covers demolishing a building over 115 cubic metres or removing a boundary wall, not excavating downwards. Waverley will, however, look closely at anything visible at ground level that comes with it, such as a light well or changed ground levels facing the street.",
+      },
+    ],
+    art: BLOG_ART["basements-cellars-cranleigh-weald-clay"],
+  },
+  {
     slug: "underfloor-heating-screed-depth-response-time",
     title: "Underfloor heating: screed depth, response time and floor build-up",
     category: "Heating & services",
@@ -3854,6 +4032,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "extending-1930s-semi-cranleigh",
       "trees-and-foundation-depth-cranleigh",
       "extension-value-cranleigh",
+      "basements-cellars-cranleigh-weald-clay",
     ],
     body: [
       {

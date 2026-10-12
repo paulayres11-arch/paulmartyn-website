@@ -5,6 +5,7 @@ import { serviceById, CONTACT } from "@/components/sites/paulmartyn/content";
 import { Faq } from "@/components/sites/paulmartyn/Faq";
 import { JsonLd } from "@/components/sites/paulmartyn/JsonLd";
 import { AreaLink } from "@/components/sites/paulmartyn/AreaLink";
+import { FeatureFilm } from "@/components/sites/paulmartyn/FeatureFilm";
 import {
   A,
   B,
@@ -141,6 +142,8 @@ export default function ListedBuildingsPage() {
           breadcrumbList(TRAIL),
         ]}
       />
+
+      <FeatureFilm />
 
       <ServiceDetail service={service} showDetail={false}>
         <Measure>

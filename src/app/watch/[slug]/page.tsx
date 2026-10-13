@@ -40,7 +40,10 @@ export default async function WatchPage({ params }: Props) {
   const hasLocal = fs.existsSync(path.join(process.cwd(), "public", local));
 
   return (
-    <div className="pm-site flex min-h-svh flex-col bg-pm-teal-dark text-white">
+    // .pm-site sets a white background in unlayered CSS, which beats Tailwind
+    // utilities on the same element — so the dark panel sits one level inside.
+    <div className="pm-site">
+    <div className="flex min-h-svh flex-col bg-pm-teal-dark text-white">
       <header className="flex items-center justify-between px-[5%] py-5">
         <Link href="/" className="text-[18px] font-semibold tracking-[6px] text-white">
           PAULMARTYN
@@ -87,6 +90,7 @@ export default async function WatchPage({ params }: Props) {
           </p>
         </div>
       </main>
+    </div>
     </div>
   );
 }

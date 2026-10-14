@@ -46,6 +46,177 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "re-roofing-cranleigh-cottage-conservation-area",
+    title: "Re-roofing a Cranleigh cottage: matching materials inside the conservation area",
+    category: "Heritage",
+    date: "2026-10-14",
+    seoTitle: "Re-Roofing a Cranleigh Cottage: Matching Materials Guide",
+    metaDescription:
+      "Re-roofing a cottage in Cranleigh? When you need planning permission or listed building consent, which material actually matches, and what it costs.",
+    excerpt:
+      "A re-roof looks like the simplest job on the list until someone mentions the conservation area, or that the house is listed, and the question changes from how much to am I even allowed to use that tile.",
+    imageAlt:
+      "Illustration of a Cranleigh cottage roof split in two: weathered original clay tiles on the left labelled ORIGINAL, freshly matched replacement tiles on the right labelled MATCHED REPLACEMENT with scaffolding against them and a question-mark badge reading LISTED? ASK WAVERLEY FIRST, plus an inset cross-section of the roof build-up showing tile, batten, BS 5534 underlay, Part L insulation and rafter layers",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "cranleigh-buildings-of-local-merit",
+      "loft-conversions-cranleigh-roof-types",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Re-covering a roof with the same material, in the same way, usually isn't \"development\" at all under **section 55** of the Town and Country Planning Act 1990 — so no planning permission is needed, inside the conservation area or outside it, provided the finished roof doesn't look materially different.",
+          "Change the material — concrete tile where there was clay, say — and that usually does count as development, assessed under the **GPDO's Class C** rules for roof alterations.",
+          "If the house is one of Cranleigh's **81 listed buildings**, the test is different: **Listed Building Consent** can be needed even for a like-for-like repair, because the question is whether the work affects the building's special interest, not whether it changes how it looks. Applications carry **no fee** and sit within an **8-week** statutory decision period.",
+          "Clay plain tile matches most Cranleigh cottages. Genuine **Horsham stone** — the Wealden sandstone slab found on some older local roofs — is now effectively unobtainable new, so a matching repair usually means salvage or reclaimed stone.",
+          "Replacing a significant part of a roof covering can trigger a **Part L** insulation upgrade as well as a material decision — worth settling both before the scaffold goes up, not after.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually starts the same way: a storm's taken a run of tiles off, or thirty years of moss and frost have finally caught up with a roof that was due attention anyway, and the homeowner wants to know how fast we can get scaffolding up. Then they mention the house is in the conservation area, or that it's listed, and the question changes from \"how much\" to \"am I even allowed to use the tile I was planning on.\"",
+      },
+      {
+        type: "p",
+        text: "It's a fair question, and the honest answer is that most re-roofing jobs in Cranleigh don't need permission of any kind — provided the new roof matches the old one closely enough that nobody passing on the pavement would notice. The problems start when a quote comes back cheaper for a material that doesn't match, or when nobody checks whether the house is listed before the scaffold is booked.",
+      },
+      {
+        type: "p",
+        text: "Get the material and the paperwork settled before the first tile comes off, and a re-roof is one of the more straightforward jobs a Cranleigh cottage goes through. Get it the other way round, and you're paying for scaffolding twice.",
+      },
+      { type: "h2", text: "Do I need planning permission to re-roof my house in Cranleigh?" },
+      {
+        type: "p",
+        text: "Most of the time, no — not because of a special exemption for roofing, but because a genuine like-for-like repair doesn't meet the legal definition of \"development\" in the first place. **Section 55(2)(a)** of the Town and Country Planning Act 1990 excludes maintenance, improvement or alteration works that don't materially affect a building's external appearance. The leading case, *Burroughs Day v Bristol City Council*, confirms the test looks only at the building itself, and whether an ordinary observer would notice a change.",
+      },
+      {
+        type: "p",
+        text: "Swap concrete interlocking tile for clay plain tile, or change the colour, and that's a different conversation: a material change like that probably does materially affect appearance, which makes it development. The question then becomes whether permitted development rights under the General Permitted Development Order cover it. **Class C** of Schedule 2, Part 1 allows \"other alterations to the roof of a dwellinghouse,\" including re-roofing in a different material, provided the work doesn't project more than **0.15m** beyond the original roof plane and doesn't rise above the highest point of the existing roof. Chimneys, flues and solar equipment are excluded entirely and need their own route regardless.",
+      },
+      {
+        type: "p",
+        text: "None of that is automatically switched off simply by being inside the **Cranleigh Conservation Area** — the general permitted development rights for roof alterations on an ordinary house aren't removed across the whole area the way they are for some other kinds of work. What changes is that if a planning application is needed for any reason, the council's Cranleigh Conservation Area Appraisal becomes a material consideration in deciding it. The one thing worth checking directly with **Waverley** before committing to a material is whether an Article 4 direction has been made covering your specific property or street, since that can remove permitted development rights locally.",
+      },
+      { type: "h2", text: "My cottage is listed — does a like-for-like repair still need consent?" },
+      {
+        type: "p",
+        text: "This is where the test flips. Listed Building Consent isn't judged against the \"does it look different\" test used for ordinary planning permission — it's whether the work affects the character of the building as a structure of special architectural or historic interest, inside or out, visible or not. That can catch work that wouldn't register as development anywhere else: reusing historic tiles isn't automatically fine just because the finished roof looks the same, and introducing a modern breather membrane under traditional tiling is itself a change to historic fabric a conservation officer may want to see controlled.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh parish has around **81 nationally listed buildings** — 80 Grade II and one Grade II*, the Church of St Nicolas — predominantly 15th- to 17th-century timber-framed cottages, many refronted in brick or stone during the 18th and 19th centuries. Carrying out unauthorised works to any of them is a criminal offence under the Planning (Listed Buildings and Conservation Areas) Act 1990, whatever the intention behind the work. A Listed Building Consent application carries **no fee** and sits within the same **8-week** statutory decision period as a standard planning application, so the only real cost of checking first is the time it takes to ask.",
+      },
+      {
+        type: "p",
+        text: "There's also the separate list that catches people out: Cranleigh's **174 Buildings of Local Merit**, a non-designated heritage list Waverley still weighs in its decisions even though it carries no national protection. A roof on one of those doesn't need Listed Building Consent, but if any part of the works needs planning permission for another reason, expect the council to look more closely at how well the replacement matches — [the full picture of what sits on that second list is here](/blog/cranleigh-buildings-of-local-merit).",
+      },
+      { type: "h2", text: "What roofing material actually matches a Cranleigh roof?" },
+      {
+        type: "p",
+        text: "Clay plain tile is the material that matches the largest share of Cranleigh's older housing stock — small, flat, overlapping tiles, usually in a weathered red-brown that a modern concrete interlocking tile rarely reproduces convincingly, however close the colour chart looks in the showroom.",
+      },
+      {
+        type: "p",
+        text: "A smaller number of older roofs in this part of Surrey carry **Horsham stone** — a flaggy Wealden sandstone quarried historically just over the Sussex border and laid in graduated courses, large at the eaves and shrinking towards the ridge. It's a beautiful, genuinely local material, and it's also the one where \"like-for-like\" runs into a real supply problem: the Society for the Protection of Ancient Buildings reports the traditional quarries are exhausted, with no geologically identical replacement available, which is why most Horsham stone repairs now rely on salvaging existing stone, or sourcing reclaimed slabs, rather than buying new.",
+      },
+      {
+        type: "p",
+        text: "Concrete tile is cheaper and far easier to source, and on a house with no designation and no conservation sensitivity it's a reasonable like-for-like choice if that's already what's on the roof. Introduce it onto a roof that was previously clay or stone, though, and you're almost certainly making a change that needs sign-off — and on a listed building, or inside the conservation area where it needs permission for another reason, it's the kind of change a conservation officer is unlikely to welcome.",
+      },
+      {
+        type: "quote",
+        text: "The thing that actually slows a re-roof down in this village is never the tiling itself — it's finding out halfway through that the house is listed, or that the material someone's priced doesn't match, and having to stop and go back to the council. Settle the material and the paperwork in the same conversation as the quote, and the job on the roof is usually the easy part.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What does BS 5534 mean for a Cranleigh re-roof?" },
+      {
+        type: "p",
+        text: "**BS 5534:2014+A2:2018** is the UK code of practice for slating and tiling pitched roofs — a code of practice, not a regulation, in the same way BS 5385 governs tiling rather than being statute. The 2018 amendment extended its scope to cover normal re-roofing and repair work, not just new build, and tightened requirements around mechanical fixing, underlay, and ridge and verge detailing.",
+      },
+      {
+        type: "p",
+        text: "It's worth knowing what the standard itself says about older buildings, because it's more candid than most trade literature: it states plainly that its recommendations may not suit roofs built with traditional or reclaimed materials, and advises consulting the local planning authority or a conservation body before applying it to a historic roof without modification. That's exactly the situation on a timber-framed Cranleigh cottage with irregular rafters and hand-made tiles — a competent roofer treats BS 5534 as the starting point for a modern roof, and the reference point to depart from carefully on an old one, not a rulebook to apply unmodified.",
+      },
+      { type: "h2", text: "Do I have to upgrade the insulation while the roof is off?" },
+      {
+        type: "p",
+        text: "Often, yes, and it's worth settling before the first tile comes off rather than discovering it once the roof is half-stripped. Planning Portal guidance is clear that where more than **25%** of a ceiling below a cold loft space, or a roof, is being replaced, building regulations would normally apply and the insulation would normally need upgrading as part of the works — this sits alongside, not instead of, any planning or listed building question.",
+      },
+      {
+        type: "p",
+        text: "We've written before about [the U-values a new extension roof has to hit under Part L](/blog/part-l-extension-insulation) — **0.15 W/(m²K)**, the tightest figure on that table. A re-roof on the existing house isn't held to quite the same new-build standard, but building control will still expect the insulation improved as far as is technically, functionally and economically feasible, and the honest way to find out what that means on your house is to ask before the scaffolding goes up, not after the old insulation is already in a skip. Doing it with the tiles off is almost always cheaper than coming back to do it later.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A free pre-application conversation with Waverley's conservation officer, before committing to a material or submitting a Listed Building Consent application, routinely avoids running the **8-week** statutory decision period twice — once on an application refused for the wrong material, and again on the resubmission. On a job booked against a weather window, that's often the difference between finishing before the clocks go back and carrying a tarpaulin through a wet winter.",
+      },
+      { type: "h2", text: "What does a re-roof cost in Cranleigh?" },
+      {
+        type: "table",
+        caption: "National trade-guide ranges, supply and fit — roofing isn't in our own pricing table, so get a site-specific quote. Scaffolding is priced separately.",
+        head: ["Material", "Typical cost", "Notes"],
+        rows: [
+          ["Concrete interlocking tile", "£75 – £170 per m²", "Cheapest and most available; rarely matches a period roof"],
+          ["Clay plain tile", "£110 – £185 per m²", "The closest match for most Cranleigh cottages"],
+          ["Natural slate", "£140 – £320 per m²", "Welsh slate at the top end; a close match for some roofs"],
+          ["Horsham stone (salvaged/reclaimed)", "Priced from survey", "New stone is not generally available; see the BS 5534 note on traditional materials"],
+          ["Scaffolding", "£800 – £2,000", "Priced separately; depends on property size and hire duration"],
+        ],
+      },
+      { type: "h2", text: "How long does a re-roof take, and when should I book it?" },
+      {
+        type: "table",
+        caption: "A guide only — actual timescales depend on whether listed building consent or planning permission is needed.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Pre-application chat with Waverley's conservation officer", "1 – 2 weeks", "Getting quotes, ordering scaffolding"],
+          ["Listed Building Consent or planning decision, if needed", "8 weeks (statutory)", "Nothing — work can't start until it's granted"],
+          ["Scaffolding erected", "1 – 2 days", "—"],
+          ["Re-roofing a typical cottage", "1 – 3 weeks", "Depends on roof size, access and material"],
+        ],
+      },
+      {
+        type: "p",
+        text: "A re-roof is one of the few jobs where the material decision matters as much as the labour, and it's exactly the kind of survey-first conversation worth having with [builders in Cranleigh](/areas/cranleigh) before a single tile comes off.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to replace my roof tiles in Cranleigh?",
+        answer:
+          "Not if the replacement genuinely matches the existing roof in material and appearance, because that doesn't meet the legal definition of development. Changing the material, such as fitting concrete tile where there was clay, usually does count as development and needs checking against permitted development rules or a planning application.",
+      },
+      {
+        question: "Does being in the Cranleigh Conservation Area mean I need permission to re-roof?",
+        answer:
+          "Not automatically. The general permitted development rights for roof alterations on an ordinary house aren't switched off across the whole conservation area the way they are for some other works. Check with Waverley whether an Article 4 direction applies to your specific property, since that can remove those rights locally.",
+      },
+      {
+        question: "My house is listed — do I need consent for a like-for-like roof repair?",
+        answer:
+          "Often yes. Listed Building Consent is judged on whether the work affects the building's special interest, not whether it changes how the roof looks, so even a like-for-like repair can need consent. Applications are free and carry an 8-week statutory decision period, so check with Waverley's conservation team before work starts.",
+      },
+      {
+        question: "What roofing material matches a traditional Cranleigh cottage?",
+        answer:
+          "Clay plain tile matches the largest share of the village's older housing stock. A smaller number of roofs carry Horsham stone, a traditional Wealden sandstone slab that's now effectively unobtainable new, so matching repairs usually rely on salvaged or reclaimed stone.",
+      },
+      {
+        question: "Do I have to upgrade my insulation when I replace my roof?",
+        answer:
+          "Often, yes. Where more than 25% of a roof or the ceiling below a cold loft is being replaced, building regulations normally expect the insulation to be upgraded as far as is technically and economically feasible. Settle this with building control before the roof comes off.",
+      },
+      {
+        question: "How long does a re-roof take in Cranleigh?",
+        answer:
+          "A straightforward re-roof with no consent needed typically takes one to three weeks once scaffolding is up. Add roughly eight weeks if Listed Building Consent or planning permission is required first, since work can't start before it's granted.",
+      },
+    ],
+    art: BLOG_ART["re-roofing-cranleigh-cottage-conservation-area"],
+  },
+  {
     slug: "basements-cellars-cranleigh-weald-clay",
     title: "Basements and cellars in Cranleigh: what the Weald clay means for digging down",
     category: "Foundations",
@@ -3097,6 +3268,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-neighbourhood-plan-householders",
       "garden-rooms-cranleigh-permitted-development",
       "solar-panels-cranleigh-planning-permission",
+      "re-roofing-cranleigh-cottage-conservation-area",
     ],
     body: [
       {

@@ -333,12 +333,17 @@ Cranleigh topics — work through these:
 - [done 2026-10-05] Cranleigh driveways: permeable paving, dropped kerbs and when permission is needed
 - [done 2026-10-07] Extending a bungalow in Cranleigh: what's different from a two-storey house
 - [done 2026-10-12] Basements and cellars in Cranleigh: what the Weald clay means for digging down
-- [ ] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
+- [done 2026-10-14] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
 - [ ] Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay
 - [ ] Porches in Cranleigh: the one extension that almost never needs planning permission
 - [ ] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
 - [ ] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
 - [ ] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
+- [ ] Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't
+- [ ] Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't
+- [ ] Orangeries and glazed garden extensions in Cranleigh: Part O overheating rules explained
+- [ ] EV charger installation at a Cranleigh home: permitted development, and the listed building exception
+- [ ] Septic tanks and private drainage for Cranleigh homes off the mains network: what replacing one costs
 
 
 ### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS

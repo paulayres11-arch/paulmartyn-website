@@ -16,6 +16,96 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "re-roofing-cranleigh-cottage-conservation-area": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="rrSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="rrOldTile" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a6450" /><stop offset="1" stopColor="#5f4435" />
+          </linearGradient>
+          <linearGradient id="rrNewTile" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c9603f" /><stop offset="1" stopColor="#9c3f26" />
+          </linearGradient>
+          <linearGradient id="rrAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#rrSky)" />
+        <path d="M0 40 Q20 32 40 40 T80 40 T120 40 T160 40 T200 40 T240 40 T280 40 T320 40 T360 40 T400 40" fill="#8fc77c" opacity=".5" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same roofline, different material, different rules</text>
+
+        <rect x="0" y="260" width="400" height="40" fill="#8fc77c" opacity=".45" />
+
+        <defs>
+          <clipPath id="rrOldClip"><polygon points="130,205 250,90 250,205" /></clipPath>
+          <clipPath id="rrNewClip"><polygon points="250,90 370,205 250,205" /></clipPath>
+        </defs>
+
+        {/* left slope — original, weathered */}
+        <g clipPath="url(#rrOldClip)">
+          <polygon points="130,205 250,90 250,205" fill="url(#rrOldTile)" />
+          <path d="M60 196 H260 M55 182 H260 M50 168 H260 M46 154 H260 M42 140 H260 M38 126 H260 M34 112 H260" stroke="#4a3326" strokeWidth="1.1" opacity=".45" />
+          <ellipse cx="165" cy="175" rx="13" ry="7" fill="#5f7a3f" opacity=".3" />
+          <ellipse cx="200" cy="148" rx="9" ry="5" fill="#5f7a3f" opacity=".28" />
+        </g>
+        <text x="190" y="162" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#f3e9df" textAnchor="middle">ORIGINAL</text>
+
+        {/* right slope — new, matched replacement, with scaffold */}
+        <g clipPath="url(#rrNewClip)">
+          <polygon points="250,90 370,205 250,205" fill="url(#rrNewTile)" />
+          <path d="M240 196 H380 M240 182 H380 M240 168 H380 M240 154 H380 M240 140 H380 M240 126 H380" stroke="#6e2a18" strokeWidth="1.1" opacity=".4" />
+        </g>
+        <text x="300" y="160" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#fbe9de" textAnchor="middle">MATCHED</text>
+        <text x="300" y="170" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#fbe9de" textAnchor="middle">REPLACEMENT</text>
+
+        {/* ridge line */}
+        <path d="M130 205 L250 90 L370 205" fill="none" stroke="#e08a2b" strokeWidth="2" strokeDasharray="5 3" opacity=".85" />
+
+        {/* chimney on the new side */}
+        <rect x="265" y="75" width="16" height="40" fill="#9c5a3c" stroke="#6f3f28" strokeWidth="1.1" />
+        <rect x="263" y="73" width="20" height="5" fill="#6f3f28" />
+
+        {/* house below */}
+        <rect x="155" y="205" width="190" height="60" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.4" />
+        <rect x="180" y="222" width="18" height="18" fill="#8fc4dd" stroke="#5a4a2a" strokeWidth="1" />
+        <rect x="300" y="222" width="18" height="18" fill="#8fc4dd" stroke="#5a4a2a" strokeWidth="1" />
+        <rect x="237" y="228" width="26" height="37" fill="#8a6b22" opacity=".8" />
+
+        {/* scaffold against the new side */}
+        <g stroke="#9aa1a6" strokeWidth="2" fill="none">
+          <path d="M350 205 V95 M378 205 V95" />
+          <path d="M350 170 H378 M350 135 H378 M350 100 H378" />
+          <path d="M350 205 L378 170 M378 205 L350 170 M350 170 L378 135 M378 170 L350 135 M350 135 L378 100 M378 135 L350 100" strokeWidth="1" opacity=".6" />
+        </g>
+        <rect x="348" y="165" width="32" height="5" fill="url(#rrAmber)" opacity=".85" />
+        <rect x="348" y="130" width="32" height="5" fill="url(#rrAmber)" opacity=".85" />
+
+        {/* listed-building check badge */}
+        <circle cx="300" cy="128" r="15" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.5" />
+        <text x="300" y="133" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#a8652a" textAnchor="middle">?</text>
+        <text x="300" y="112" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#44535a" textAnchor="middle">LISTED? ASK</text>
+        <text x="300" y="121" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#44535a" textAnchor="middle">WAVERLEY FIRST</text>
+
+        {/* roof build-up inset */}
+        <rect x="14" y="214" width="112" height="82" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <text x="70" y="227" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">ROOF BUILD-UP</text>
+        <rect x="24" y="233" width="13" height="7" fill="#c9603f" /><text x="41" y="239" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Tile — matched to existing</text>
+        <rect x="24" y="244" width="13" height="7" fill="#c9a23f" /><text x="41" y="250" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Batten &amp; counter-batten</text>
+        <rect x="24" y="255" width="13" height="7" fill="#8fa0a8" /><text x="41" y="261" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Underlay — BS 5534</text>
+        <rect x="24" y="266" width="13" height="7" fill="#e08a2b" /><text x="41" y="272" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Insulation — Part L check</text>
+        <rect x="24" y="277" width="13" height="7" fill="#9a9a95" /><text x="41" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Rafter / structure</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">Like-for-like is rarely the question. The material is.</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">A genuine like-for-like repair usually isn&apos;t &quot;development&quot; at all — changing material is</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Listed? Even a matching repair can need consent — ask before the scaffold goes up</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: s.55 Town and Country Planning Act 1990; BS 5534:2014+A2:2018</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "basements-cellars-cranleigh-weald-clay": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

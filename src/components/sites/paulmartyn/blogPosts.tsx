@@ -46,6 +46,156 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "overheating-glazed-extension-part-o",
+    title: "Overheating in a glazed extension: why Part O doesn't apply, and what to do instead",
+    category: "Building control",
+    date: "2026-10-16",
+    seoTitle: "Overheating in a Glazed Extension: Does Part O Apply?",
+    metaDescription:
+      "Part O building regulations only cover new homes, not an existing house's glazed extension or orangery. Here's what actually stops the room overheating.",
+    excerpt:
+      "Homeowners often assume building control checks a new glazed extension for overheating the same way it checks a new-build home. It doesn't — which means the shading, ventilation and glass that keep the room usable in July are entirely down to what you ask for.",
+    imageAlt:
+      "Illustration comparing two lean-to glazed extension roofs side by side under the same sun: on the left, unshaded fixed glass with a thermometer reading around 32 degrees Celsius; on the right, the same roof with an external louvre blocking the sun, an open vent, solar-control glass and a thermometer reading around 24 degrees Celsius, with a stamped badge reading PART O, NEW HOMES ONLY and a struck-through line over it",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "part-l-extension-insulation",
+      "trickle-vents-approved-document-f",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "**Approved Document O (overheating)**, in force since **15 June 2022**, applies only to **new residential buildings** — an extension, orangery or conservatory added to an existing house falls outside it entirely, whatever the glazing.",
+          "That's not a loophole, it's a genuine gap: nobody in the building control process is checking whether your new garden room will be usable in July. The design decisions that stop it overheating are yours to ask for, not the council's to enforce.",
+          "**Part L still applies** to the glazing itself — if new windows and doors in an extension exceed **25%** of its floor area, a SAP or area-weighted U-value calculation is needed, which is where glass specification gets decided anyway.",
+          "The practical fix borrows Part O's own new-build rules as a voluntary benchmark: limit roof glazing, fit at least one openable vent for cross-ventilation, and specify solar-control glass with a low g-value rather than standard clear double glazing.",
+          "Specifying that at design stage adds a modest amount to the glazing package. Retrofitting external shading once a room proves unusable in summer costs several times more, and you lose the use of the room while it's arranged.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes in around the second July after the extension's finished. The kitchen-diner looked beautiful on the drawings — big lean-to glass roof, bi-fold doors onto the garden, exactly what was asked for — and by half past two on a sunny afternoon it's unusable. Blinds down, doors open, a fan going, and someone asking why the building inspector didn't pick this up when the roof went on.",
+      },
+      {
+        type: "p",
+        text: "The honest answer is that there was nothing for the inspector to pick up. Overheating only became a building regulation in England in June 2022, as **Approved Document O**, and it was written to catch new houses — not a glass box bolted onto one that already exists. Most homeowners reasonably assume that if building control signs off the structure, someone has also checked it won't roast them in summer. For a new-build, that's true. For an extension, it isn't — and that gap is where the expensive mistakes happen.",
+      },
+      {
+        type: "p",
+        text: "None of that means a glazed extension has to overheat. It means the things that stop it — shading, ventilation, the glass itself — are a decision nobody will make for you unless you ask at the drawing stage, while it still costs a sensible amount.",
+      },
+      { type: "h2", text: "Does Part O (overheating) apply to my extension or conservatory?" },
+      {
+        type: "p",
+        text: "No, not under the current English regulations. Approved Document O was introduced by the Building Regulations etc. (Amendment) (England) Regulations 2021 and took effect on **15 June 2022**. Gov.uk's own published guidance is explicit: the overheating requirement applies to **new residential buildings** — new dwellings and other new buildings used for residential purposes. An extension, orangery or conservatory added to a house that already exists isn't a new residential building, and the guidance states plainly that it falls outside Part O's scope. A conservatory built as part of a brand new house is covered, because the whole dwelling is new; the same room added onto a house that's stood for sixty years isn't.",
+      },
+      {
+        type: "p",
+        text: "Worth being precise here, because it's the kind of thing a competitor gets wrong: Part O is a building regulation, properly made under statute, not a British Standard. It genuinely does not reach an extension in England as things stand — a live industry debate about extending it is a proposal, not the current rule.",
+      },
+      { type: "h2", text: "So what actually controls the glazing on an extension?" },
+      {
+        type: "p",
+        text: "Part L — conservation of fuel and power — does apply, and it's where the glazing decision genuinely gets made, even though its target is energy efficiency rather than comfort. The long-standing rule most local authority building control teams apply is that where new glazing in an extension (windows, doors, rooflights) exceeds **25%** of the extension's floor area, a SAP calculation or an area-weighted U-value calculation is needed to demonstrate the whole extension still meets the energy standard, rather than simply ticking off a table of standard U-values room by room.",
+      },
+      {
+        type: "p",
+        text: "A large lean-to glass roof on a kitchen extension will usually push well past that 25% figure on its own, before the bi-fold doors are even counted — which means the SAP assessment that's already required for the energy sign-off is the natural point to also settle the glass's g-value and the shading strategy, rather than treating them as a separate conversation that happens, or doesn't, after the quote's been accepted.",
+      },
+      { type: "h2", text: "Why does a glazed extension overheat when the rest of the house doesn't?" },
+      {
+        type: "p",
+        text: "Roof glazing is the part that catches people out, because a UK summer sun hits a sloped or flat rooflight far more directly than a vertical window. A south-facing wall of glass sheds a lot of the sun's energy at a shallow angle; a roof lantern above a kitchen island sits almost perpendicular to the midsummer sun for hours, which is why the room that was pleasant in April is the one nobody wants to sit in by June.",
+      },
+      {
+        type: "p",
+        text: "This is exactly the risk Approved Document O was written to manage in new homes, and its own method is a useful voluntary benchmark even where it isn't compulsory. Part O's simplified method splits England into **moderate-risk** and **high-risk** overheating areas (broadly, parts of inner London are high-risk; everywhere else, including Cranleigh and the rest of Surrey, is moderate), then sets a maximum glazing area per elevation, a minimum openable area for ventilation, and shading for anything facing roughly north-east through south to north-west. None of it is law for an extension. All of it is a sound checklist to hand your designer anyway.",
+      },
+      {
+        type: "quote",
+        text: "People assume that if the council signs off the roof, someone's checked it won't be an oven in summer. On an extension, nobody's checking that box at all — not the planners, not building control. If you don't ask for shading, a vent you can actually open, and decent glass at the drawing stage, nobody downstream is going to put it in for you, and by the time it's obvious, the roof's already on.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What actually stops a glazed extension overheating?" },
+      {
+        type: "p",
+        text: "Four things, roughly in order of what makes the biggest difference for the least disruption to the design:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Limit roof glazing, and shade what's left** — a smaller rooflight with an external brise soleil, overhang, or motorised external blind does more than a larger one with no shading at all. Fixed internal blinds help less than people expect, because the heat is already inside the glass by the time it reaches them.",
+          "**Specify solar-control glass, not standard clear double glazing** — look for a g-value (the proportion of solar energy that passes through) around **0.4** or lower on the most exposed panes, paired with a light transmittance high enough that the room doesn't feel dim. A good glazing supplier will quote this without being asked twice.",
+          "**Fit at least one genuinely openable rooflight or high-level vent** — for cross-ventilation to work, the opening needs a second route for air to escape, ideally on the opposite side of the room from the bi-fold doors, not just the doors themselves.",
+          "**Think about the floor and finishes, not just the glass** — a dense floor (stone, tile, poured resin) absorbs heat through the day and releases it slowly overnight, which softens the peak far more than people expect from a floor finish decision.",
+        ],
+      },
+      {
+        type: "p",
+        text: "CIBSE TM59 — the Chartered Institution of Building Services Engineers' dynamic thermal modelling method — is the more rigorous route some architects and Part O assessors use to check all of this properly rather than relying on rules of thumb. It's not a requirement on an extension, but asking your designer whether they've run anything equivalent to it is a fair question, and a useful one if the room is large, heavily glazed, or faces south-west.",
+      },
+      { type: "h2", text: "What does getting this right cost, against getting it wrong?" },
+      {
+        type: "table",
+        caption: "Indicative figures only — get a fixed quote against your own glazing specification and room size.",
+        head: ["Approach", "Typical extra cost", "What you get"],
+        rows: [
+          ["Standard clear double glazing, no shading, fixed rooflight", "£0 (the baseline most quotes default to)", "The room that overheats by the second summer"],
+          ["Solar-control glass (low g-value) specified at design stage", "Roughly £40 - £90 per m² of glazing, over standard glass", "A meaningfully cooler room, decided before the frames are ordered"],
+          ["One openable rooflight or vent added at design stage", "Roughly £250 - £600 per unit, over a fixed equivalent", "Cross-ventilation, and a way to purge heat in the evening"],
+          ["External shading (brise soleil, motorised blind) retrofitted after the fact", "Roughly £1,500 - £3,500, plus scaffolding or access", "The fix you needed from the start, bought back at a premium, with the room out of use while it's fitted"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Specifying solar-control glass and one openable vent before the glazing order goes in typically adds a few hundred pounds to the glazing package on a typical kitchen or garden room extension. Retrofitting external shading once the room's proved unusable in summer routinely runs to **£1,500-£3,500**, on top of losing the room for the best part of a summer while it's arranged. The saving isn't the regulation — there isn't one here — it's asking the question before the roof goes on rather than after the first heatwave.",
+      },
+      { type: "h2", text: "When should I raise this, and with whom?" },
+      {
+        type: "p",
+        text: "At the same point the glazing gets specified, which for most extensions is well before building control is involved. If a SAP calculation is already needed because the glazing exceeds the 25% threshold, that assessor's report is the natural place to settle the g-value and the shading strategy alongside the energy figures, rather than treating comfort as an afterthought. If the job's too small to need a SAP calculation, raise it directly with whoever's speccing the windows — a solar-control unit is a line on the same order, not a separate job.",
+      },
+      {
+        type: "p",
+        text: "Raise it, too, before [Part L's insulation standard](/blog/part-l-extension-insulation) is settled for the rest of the extension — glazing percentage, U-values and overheating risk are one design conversation, not three. The same goes for the [trickle vents and background ventilation](/blog/trickle-vents-approved-document-f) the room needs regardless of how good the glazing is. A heavily-glazed [garden room](/blog/garden-rooms-cranleigh-permitted-development) at the end of the garden runs into the same roof-glazing risk, attached to the house or not.",
+      },
+      {
+        type: "p",
+        text: "None of this is complicated once it's on the table at the right time — it just has to be on the table, because nobody with a clipboard is going to put it there for you. It's exactly the kind of design-stage conversation worth having with [builders in Cranleigh](/areas/cranleigh) before the glazing order goes in, not after the first warm week finds the problem for you.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Approved Document Part O apply to my extension?",
+        answer:
+          "No. Part O (overheating) applies only to new residential buildings under the current English building regulations, which came into force on 15 June 2022. An extension, orangery or conservatory added to an existing house falls outside it, whatever the amount of glazing.",
+      },
+      {
+        question: "What building regulations do apply to a glazed extension's windows and roof glazing?",
+        answer:
+          "Part L, covering energy efficiency. If new glazing in an extension exceeds 25% of its floor area, a SAP calculation or area-weighted U-value calculation is needed to show the whole extension still meets the energy standard, and that's the point at which glass specification and shading are usually decided.",
+      },
+      {
+        question: "How do I stop my new garden room or orangery overheating in summer?",
+        answer:
+          "Limit the area of roof glazing, add external shading rather than relying on internal blinds, specify solar-control glass with a low g-value (around 0.4 or lower on exposed panes), and fit at least one genuinely openable vent for cross-ventilation. A dense floor finish helps further by absorbing and releasing heat slowly.",
+      },
+      {
+        question: "What is CIBSE TM59 and do I need it for my extension?",
+        answer:
+          "TM59 is the Chartered Institution of Building Services Engineers' dynamic thermal modelling method for assessing overheating risk in homes. It isn't a requirement for an extension, but some architects and Part O assessors use it voluntarily as a more rigorous check than rules of thumb, which is worth asking about on a large or heavily glazed room.",
+      },
+      {
+        question: "Will building control check my extension for overheating at all?",
+        answer:
+          "No, not under the current regulations. Building control checks structure, fire safety, energy performance under Part L and other standard matters, but overheating risk isn't one of the checks it carries out on an extension to an existing house, which is exactly why it has to be raised with your designer directly.",
+      },
+    ],
+    art: BLOG_ART["overheating-glazed-extension-part-o"],
+  },
+  {
     slug: "re-roofing-cranleigh-cottage-conservation-area",
     title: "Re-roofing a Cranleigh cottage: matching materials inside the conservation area",
     category: "Heritage",
@@ -2109,6 +2259,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trees-and-foundation-depth-cranleigh",
       "party-wall-notice-timing",
       "annexes-multigenerational-living-cranleigh",
+      "overheating-glazed-extension-part-o",
     ],
     body: [
       {

@@ -2176,4 +2176,95 @@ export const BLOG_ART: Record<string, ReactNode> = {
       <text x="376" y="380" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
     </svg>
   ),
+  "overheating-glazed-extension-part-o": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="povoSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="povoGlassHot" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#dcebf0" stopOpacity=".92" /><stop offset="1" stopColor="#aac4cc" stopOpacity=".92" />
+          </linearGradient>
+          <linearGradient id="povoGlassCool" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#bcd8de" stopOpacity=".92" /><stop offset="1" stopColor="#7fa6b0" stopOpacity=".92" />
+          </linearGradient>
+          <linearGradient id="povoHotGlow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f2572a" stopOpacity=".5" /><stop offset="1" stopColor="#f2572a" stopOpacity=".05" />
+          </linearGradient>
+          <linearGradient id="povoCoolGlow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6fb3d6" stopOpacity=".35" /><stop offset="1" stopColor="#6fb3d6" stopOpacity=".05" />
+          </linearGradient>
+          <linearGradient id="povoAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <radialGradient id="povoSun" cx=".4" cy=".35" r=".65">
+            <stop offset="0" stopColor="#fff3cf" /><stop offset="1" stopColor="#f7c177" />
+          </radialGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#povoSky)" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">No building check stops a glazed room overheating</text>
+
+        <rect y="40" width="400" height="260" fill="url(#povoSky)" />
+        <rect y="270" width="400" height="30" fill="#8fc77c" opacity=".55" />
+        <path d="M30 288 q4 -10 0 -18 M70 290 q4 -11 0 -19 M330 289 q4 -10 0 -18 M368 290 q4 -11 0 -19" stroke="#4f8a3f" strokeWidth="2" fill="none" opacity=".5" strokeLinecap="round" />
+
+        <path d="M200 52 V300" stroke="#8a97a0" strokeWidth="1.2" strokeDasharray="4 4" opacity=".6" />
+        <text x="99" y="66" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.6" fontWeight="700" fill="#44535a" textAnchor="middle">UNSHADED, FIXED GLASS</text>
+        <text x="281" y="66" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.6" fontWeight="700" fill="#44535a" textAnchor="middle">SHADED &amp; VENTILATED</text>
+
+        {/* sun, shared */}
+        <circle cx="200" cy="58" r="15" fill="url(#povoSun)" />
+
+        {/* left: unshaded lean-to glass roof, direct sun */}
+        <rect x="36" y="120" width="10" height="180" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.3" />
+        <rect x="167" y="205" width="10" height="95" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.3" />
+        <polygon points="41,120 172,205 172,211 41,126" fill="url(#povoGlassHot)" stroke="#5d6568" strokeWidth="1.2" />
+        <polygon points="41,126 172,211 172,300 41,300" fill="url(#povoHotGlow)" />
+        <path d="M190 66 L67,137 M190 66 L106.5,162.5 M190 66 L145.8,188" stroke="#f7c177" strokeWidth="1.6" opacity=".8" />
+
+        {/* left thermometer, inside the taller back-wall end of the room */}
+        <rect x="86" y="175" width="8" height="105" rx="4" fill="#eef1f2" stroke="#44535a" strokeWidth="1.3" />
+        <circle cx="90" cy="288" r="9" fill="#eef1f2" stroke="#44535a" strokeWidth="1.3" />
+        <rect x="87" y="205" width="6" height="73" fill="#c23b2e" />
+        <circle cx="90" cy="288" r="7" fill="#c23b2e" />
+        <text x="90" y="168" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#c23b2e" textAnchor="middle">≈32°C</text>
+
+        {/* right: shaded, ventilated, solar-control glass */}
+        <rect x="217" y="120" width="10" height="180" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.3" />
+        <rect x="348" y="205" width="10" height="95" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.3" />
+        <polygon points="222,120 353,205 353,211 222,126" fill="url(#povoGlassCool)" stroke="#5d6568" strokeWidth="1.2" />
+        <polygon points="222,126 353,211 353,300 222,300" fill="url(#povoCoolGlow)" />
+
+        {/* external louvre blocking the sun before it reaches the glass */}
+        <path d="M235 108 L258 100 M263 111 L286 103 M291 114 L314 106 M319 117 L342 109" stroke="url(#povoAmber)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M210 66 L246,104 M210 66 L274,107 M210 66 L302,110 M210 66 L330,113" stroke="#f7c177" strokeWidth="1.6" opacity=".8" />
+        <path d="M258 100 L270,88 M314 106 L326,94" stroke="#fff3cf" strokeWidth="1.5" opacity=".75" />
+
+        {/* opening rooflight vent */}
+        <rect x="299" y="168" width="16" height="10" rx="1.5" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.2" />
+        <path d="M303 175 l4 -4 l4 4" stroke="#a8652a" strokeWidth="1.3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="307" y="186" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fontWeight="700" fill="#a8652a" textAnchor="middle">VENT OPEN</text>
+
+        {/* right thermometer, same position as left, cooler reading */}
+        <rect x="271" y="175" width="8" height="105" rx="4" fill="#eef1f2" stroke="#44535a" strokeWidth="1.3" />
+        <circle cx="275" cy="288" r="9" fill="#eef1f2" stroke="#44535a" strokeWidth="1.3" />
+        <rect x="272" y="238" width="6" height="40" fill="url(#povoAmber)" />
+        <circle cx="275" cy="288" r="7" fill="url(#povoAmber)" />
+        <text x="275" y="168" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">≈24°C</text>
+
+        {/* the regulatory stamp — neither side is actually checked by building control */}
+        <circle cx="200" cy="93" r="24" fill="#fdf1de" opacity=".95" stroke="#e08a2b" strokeWidth="2" strokeDasharray="3 2" />
+        <text x="200" y="91" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#a8652a" textAnchor="middle">PART O</text>
+        <text x="200" y="101" fontFamily="Helvetica,Arial,sans-serif" fontSize="5.6" fontWeight="700" fill="#44535a" textAnchor="middle">NEW HOMES ONLY</text>
+        <path d="M180 86 L220,94" stroke="#b23a2e" strokeWidth="2" opacity=".85" />
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">Nobody checks this room for heat — you design it out, or you don&apos;t</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Part O (overheating) covers new homes only — not an extension or conservatory on an existing house</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Part L&apos;s 25% glazing rule still applies — solar-control glass and a vent keep the room usable</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: gov.uk Approved Document O overheating FAQ; Approved Document L (extensions)</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
 };

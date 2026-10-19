@@ -256,7 +256,7 @@ export const SERVICES = {
       gallery: [
         { src: `${RENO}/appletrees-gable-extension.jpg`, alt: "Vaulted gable extension with full-height apex glazing and a clay tiled roof, joined to the original brick house" },
         { src: `${RENO}/balcony-extension-brick.jpg`, alt: "Brick extension with a glass-balustraded balcony over a covered terrace, downlit soffit and full-height sliding doors" },
-        { src: `${RENO}/pool-garden-room.jpg`, alt: "Landscaped rear garden with a cedar-clad garden room, patterned terrace and outdoor pool" },
+        { src: `${RENO}/garden-pool-raised-beds.jpg`, alt: "Landscaped rear garden with a cedar-clad garden room, patterned terrace and outdoor pool" },
         { src: `${RENO}/rooflight-extension.jpg`, alt: "Extension interior with a full-length slot rooflight and a tall picture window onto the garden" },
         { src: `${RENO}/rear-elevation-pool.jpg`, alt: "Rear elevation of a large tile-hung house renovation, with the pool and terrace nearing completion" },
         { src: `${RENO}/aerial-roof-solar.jpg`, alt: "Aerial view of a re-roofed house with new clay tiles, dormer and solar panels" },

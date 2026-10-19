@@ -16,6 +16,92 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "swimming-pools-hot-tubs-cranleigh-garden": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="sphSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="sphClay" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ab7a52" /><stop offset="1" stopColor="#6f4c30" />
+          </linearGradient>
+          <linearGradient id="sphWater" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7cc3e6" /><stop offset="1" stopColor="#2f85b3" />
+          </linearGradient>
+          <linearGradient id="sphConcrete" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d7dadc" /><stop offset="1" stopColor="#a9afb3" />
+          </linearGradient>
+          <linearGradient id="sphTub" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c48a52" /><stop offset="1" stopColor="#8a5a30" />
+          </linearGradient>
+          <linearGradient id="sphAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#sphSky)" />
+        <path d="M0 40 Q20 32 40 40 T80 40 T120 40 T160 40 T200 40 T240 40 T280 40 T320 40 T360 40 T400 40" fill="#8fc77c" opacity=".5" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">Three questions before the digger arrives</text>
+
+        <rect y="40" width="400" height="260" fill="url(#sphClay)" />
+        {/* fissures in the clay */}
+        <path d="M18 60 q8 20 -2 38 q10 16 0 34 q8 18 -2 34" fill="none" stroke="#4f3620" strokeWidth="1.3" opacity=".5" />
+        <path d="M210 230 q8 16 -2 30 q9 14 0 26" fill="none" stroke="#4f3620" strokeWidth="1.2" opacity=".45" />
+        <path d="M388 70 q-9 22 2 40 q-10 18 0 34" fill="none" stroke="#4f3620" strokeWidth="1.3" opacity=".45" />
+        <text x="14" y="283" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#e8dcc8" opacity=".85">WEALD CLAY — SHRINK-SWELL</text>
+
+        {/* pool shell, cut into the ground */}
+        <rect x="46" y="78" width="150" height="150" fill="url(#sphConcrete)" stroke="#5d6568" strokeWidth="1.6" />
+        <rect x="56" y="88" width="130" height="130" fill="url(#sphWater)" />
+        <path d="M56 96 q16 -5 32 0 t32 0 t32 0 t32 0" fill="none" stroke="#e3f3fb" strokeWidth="1.6" opacity=".7" />
+        <path d="M56 112 q16 -4 32 0 t32 0 t32 0 t32 0" fill="none" stroke="#e3f3fb" strokeWidth="1.2" opacity=".5" />
+        <text x="121" y="155" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#fdf8ef" textAnchor="middle" opacity=".9">POOL SHELL</text>
+        <text x="121" y="167" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#e3f3fb" textAnchor="middle" opacity=".85">RIGID — CRACKS IF GROUND MOVES</text>
+
+        {/* drainage pipe to foul sewer */}
+        <path d="M196 215 q40 20 70 35 t34 20" fill="none" stroke="#5d6568" strokeWidth="5" strokeLinecap="round" />
+        <path d="M196 215 q40 20 70 35 t34 20" fill="none" stroke="#8fa0a8" strokeWidth="2" strokeLinecap="round" opacity=".7" />
+        <ellipse cx="312" cy="277" rx="20" ry="9" fill="#5d6568" stroke="#2f3a40" strokeWidth="1.3" />
+        <path d="M296 277 h32 M300 273 l4 8 M308 273 l4 8 M316 273 l4 8 M324 273 l-4 8" stroke="#2f3a40" strokeWidth="1" opacity=".6" />
+        <text x="312" y="296" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">FOUL SEWER</text>
+        <text x="312" y="305" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44535a" textAnchor="middle">ASK YOUR WATER CO. FIRST</text>
+
+        {/* hot tub beside the pool, with steam */}
+        <ellipse cx="256" cy="94" rx="30" ry="22" fill="url(#sphTub)" stroke="#5f3c1e" strokeWidth="1.6" />
+        <ellipse cx="256" cy="88" rx="23" ry="15" fill="#bfe3f0" opacity=".9" />
+        <path d="M242 84 q4 -8 0 -16 M256 82 q4 -9 0 -18 M270 84 q4 -8 0 -16" fill="none" stroke="#eef7fb" strokeWidth="1.6" opacity=".75" strokeLinecap="round" />
+        <text x="256" y="123" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#2f3a40" textAnchor="middle">HOT TUB</text>
+
+        {/* neighbour's house, boundary marker and party wall badge */}
+        <rect x="318" y="96" width="58" height="26" fill="#e3d3ad" stroke="#8a6b22" strokeWidth="1.1" />
+        <path d="M312 96 L347 76 L382 96 Z" fill="#9c5a3c" stroke="#6f3f28" strokeWidth="1.1" />
+        <rect x="326" y="122" width="42" height="16" fill="url(#sphConcrete)" stroke="#5d6568" strokeWidth="1.2" />
+        <path d="M198 150 H326" stroke="#e08a2b" strokeWidth="1.3" strokeDasharray="4 3" />
+        <path d="M198 150 l6 -4 v8 z M326 150 l-6 -4 v8 z" fill="#e08a2b" />
+        <text x="262" y="143" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#a8652a" textAnchor="middle">WITHIN 3-6m</text>
+        <circle cx="262" cy="178" r="14" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <path d="M255 173 h14 v10 h-14 z M255 173 l7 6 l7 -6" fill="none" stroke="#a8652a" strokeWidth="1.3" strokeLinejoin="round" />
+        <text x="262" y="199" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.8" fontWeight="700" fill="#44535a" textAnchor="middle">PARTY WALL</text>
+        <text x="262" y="208" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.8" fontWeight="700" fill="#44535a" textAnchor="middle">NOTICE — 1 MONTH</text>
+
+        {/* pool house permitted development limits, inset */}
+        <rect x="14" y="214" width="112" height="82" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <text x="70" y="227" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#2f3a40" textAnchor="middle">POOL HOUSE LIMITS</text>
+        <path d="M34 282 h40 v-20 l20 -14 l20 14 v20 h-40" fill="none" stroke="#44535a" strokeWidth="1.4" strokeLinejoin="round" />
+        <path d="M34 262 H94" stroke="#e08a2b" strokeWidth="1.1" strokeDasharray="3 2" />
+        <text x="100" y="265" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.3" fontWeight="700" fill="#a8652a">EAVES 2.5m</text>
+        <path d="M24 248 H114" stroke="#e08a2b" strokeWidth="1.1" strokeDasharray="3 2" />
+        <text x="24" y="241" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.3" fontWeight="700" fill="#a8652a">RIDGE 4m</text>
+        <text x="70" y="291" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a" textAnchor="middle">Single storey — 50% garden cap</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">The water, the clay and the boundary decide the job</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">A pool house or hot tub deck is an outbuilding — Class E limits apply, not a pool exemption</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Backwash needs an approved sewer or soakaway route — never a septic tank</text>
+        <text x="24" y="386" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: GPDO 2015 Sch.2 Pt.1 Class E; Water Supply (Water Fittings) Regs 1999</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "re-roofing-cranleigh-cottage-conservation-area": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

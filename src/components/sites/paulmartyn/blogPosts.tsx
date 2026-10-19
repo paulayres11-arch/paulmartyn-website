@@ -46,6 +46,193 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "swimming-pools-hot-tubs-cranleigh-garden",
+    title: "Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay",
+    category: "Planning & surveys",
+    date: "2026-10-19",
+    seoTitle: "Pools & Hot Tubs In Cranleigh: Planning And Drainage Rules",
+    metaDescription:
+      "Planning a pool or hot tub in a Cranleigh garden? What permitted development actually covers, where the water has to go, and what Weald clay means for the dig.",
+    excerpt:
+      "A pool or hot tub in a Cranleigh garden usually isn't planning permission at all — but what's built around it, where the water goes, and what's under the lawn can all change that answer fast.",
+    imageAlt:
+      "Illustration of a cross-section through a Cranleigh back garden showing a concrete swimming pool shell sunk into fissured brown Weald clay with a drainage pipe running off to a foul sewer manhole, a wood-panelled hot tub with steam rising beside it, an inset diagram of a pool house capped at 2.5 metres to the eaves and 4 metres to the ridge, and a dashed amber line marking the distance to a neighbouring house's foundations",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "building-on-weald-clay-cranleigh-footings",
+      "party-wall-notice-timing",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A straightforward outdoor pool in a Cranleigh back garden usually doesn't need planning permission at all — Planning Portal treats it as incidental to enjoying the house, in the same bracket as a patio or a pond.",
+          "A pool house, an enclosure, or decking built around a hot tub can still need permission, because they're judged as an **outbuilding** under the same **Class E** permitted development rules as a garden room: single storey, eaves to **2.5m**, overall height to **4m**, and counted into the **50%** garden-coverage cap alongside every shed and garage already there.",
+          "The **Cranleigh Conservation Area** and the parish's listed buildings change the position further — designated land narrows permitted development, and a listed building's curtilage has no Class E rights at all.",
+          "The water has to go somewhere lawful: your water undertaker needs **10 working days'** notice before a pool is connected to the mains, and backwash or a full drain-down needs an approved disposal route — a septic tank isn't one.",
+          "Cranleigh's **Weald clay** moves under a pool shell the same way it does under a basement, so the excavation — not the tiling — is what actually decides the budget and the programme.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every summer we get the same phone call, usually the week after the first proper heatwave: can we put a pool in before next year. Nobody asks about planning permission first — they ask about the liner colour, heating it into October, or whether a hot tub would do the job for less digging. The planning question tends to arrive after the digger's already booked.",
+      },
+      {
+        type: "p",
+        text: "That's the wrong order, not because the rules are complicated, but because most of a pool project's real risk sits in three questions nobody asks at the kitchen table: where does the water go when the filter backwashes, what does the clay under the lawn do to a hole that size, and does the pump house or hot tub decking quietly tip the garden over a limit a shed alone would never touch.",
+      },
+      {
+        type: "p",
+        text: "None of that makes a pool a bad idea here. Most aren't development in the planning sense at all, and the rest usually get a straightforward answer from Waverley — provided the three questions are asked before the hole is dug, not while it's open.",
+      },
+      { type: "h2", text: "Do I need planning permission for a swimming pool in Cranleigh?" },
+      {
+        type: "p",
+        text: "In most cases, no. Planning Portal treats an outdoor swimming pool as incidental to enjoying the house, in the same category as a pond or a patio — something that sits in the garden rather than a building added to it. Building regulations don't normally apply either, provided it's outdoors and unenclosed.",
+      },
+      {
+        type: "p",
+        text: "That general rule has real exceptions worth checking first: a listed house, designated land, a National Park or Green Belt. For most plots inside Cranleigh's settlement boundary, though, the pool itself is rarely what needs an application.",
+      },
+      { type: "h2", text: "What if I build a pool house, or put in a hot tub?" },
+      {
+        type: "p",
+        text: "This is where the position changes, because a pool house or enclosure is judged as an outbuilding, not as a pool. The right that covers it is **Class E — buildings etc incidental to the enjoyment of a dwellinghouse**, Schedule 2, Part 1 of the Town and Country Planning (General Permitted Development) Order 2015 (as amended) — the same right that covers garden rooms, garages and sheds, with the same limits whichever you're building.",
+      },
+      {
+        type: "p",
+        text: "We've set out the full detail in [our guide to garden room permitted development](/blog/garden-rooms-cranleigh-permitted-development); the headline numbers for a pool house or enclosure are:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Single storey**, eaves no higher than **2.5 metres**.",
+          "Overall height capped at **4 metres** (dual-pitched roof) or **3 metres** (any other shape) — just **2.5 metres** within 2 metres of a boundary.",
+          "Can't sit forward of the house's principal elevation, usually the wall facing the road.",
+          "Counts into a **50% cap** on total outbuilding coverage of the garden, alongside any shed or garage already there.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Stay inside all four and the pool house is permitted development, the same as a garden room. Push past any one — most often the height, or the 50% cap once an existing shed is counted in — and it needs a full application.",
+      },
+      {
+        type: "p",
+        text: "A hot tub is treated differently again. A free-standing, portable one normally doesn't need planning permission — Planning Portal treats it as movable equipment, closer to garden furniture than an outbuilding. That changes once it stops being portable: sinking it in, a permanent base, or a raised deck or cabin around it pushes it toward the same Class E tests a pool house faces, because then it's the structure around the tub being assessed, not the tub.",
+      },
+      {
+        type: "p",
+        text: "The electrics aren't optional either way. A hot tub's pump and heater draw enough current that the installation needs to meet **Part P** of the Building Regulations — a registered competent person, not an extension lead through a window.",
+      },
+      { type: "h2", text: "Does the Cranleigh Conservation Area, or a listed building, change the position?" },
+      {
+        type: "p",
+        text: "Being inside the **Cranleigh Conservation Area** doesn't stop a pool going into an ordinary back garden; conservation area consent is mainly about demolishing a building over 115 cubic metres, [covered in full here](/blog/cranleigh-conservation-area-consent). It does narrow permitted development for anything built around the pool: on designated land, which covers every conservation area, an outbuilding beside the house loses its Class E rights, so a pool house anywhere but behind the house is worth a call to Waverley first.",
+      },
+      {
+        type: "p",
+        text: "Listed buildings are a harder line. Cranleigh parish has around **81 nationally listed buildings**, and inside any one's curtilage, Class E doesn't apply at all — a pool house or enclosure needs **Listed Building Consent** regardless of size, since the test is the effect on the setting, not the outbuilding limits. The open pool itself is an easier conversation, but still worth having first.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Where there's genuine doubt whether a pool house or hot tub deck fits the Class E limits, a Lawful Development Certificate settles it in writing for roughly half a householder planning fee — about **£274** from 1 April 2026. Cheap insurance against an enforcement notice landing after the structure's built and paid for.",
+      },
+      { type: "h2", text: "Where does the water actually go, and why does that catch people out?" },
+      {
+        type: "p",
+        text: "This is the part almost nobody asks before the pool is full, and it has a genuine legal dimension. Water Regs UK classes a pool as a fluid category 5 contamination risk, and requires the water undertaker to be notified at least **10 working days** before a pool is installed or altered, under the Water Supply (Water Fittings) Regulations 1999.",
+      },
+      {
+        type: "p",
+        text: "Getting the water out again is the bigger issue. NetRegs guidance says disposing of pool water into a sewer, watercourse or the ground needs proper authorisation: backwash should go to a public foul sewer with the water company's agreement, or a soakaway only where there's no sewer and no run-off risk. A full drain-down needs holding in a vented tank for several days, to let the chlorine disperse — a septic tank is never the answer, since the volume and chemicals damage its treatment process. Agree all of it before the pool is built, not once the backwash has nowhere to go.",
+      },
+      {
+        type: "quote",
+        text: "The question I ask first on a pool enquiry isn't the size or the finish, it's where the water's going and what's under the lawn where the digger's going to sit. Get those two answered on paper and the rest of the job is straightforward. Find out about either one with the hole half dug, and it stops being straightforward.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What does Cranleigh's Weald clay mean for a pool excavation?" },
+      {
+        type: "p",
+        text: "We've written before about [what Weald clay does to a standard extension's footings](/blog/building-on-weald-clay-cranleigh-footings), and a pool asks the same ground the same questions a basement does: a hole several metres across and often two metres or more deep, left open for weeks. The clay is stiff, fissured and shrink-swell, so the sides need engineered support rather than an assumption the hole will stay put, and dewatering it can dry the surrounding ground faster than the rest of the garden — ground that dries and later rewets can heave.",
+      },
+      {
+        type: "p",
+        text: "A pool shell is also rigid, sitting in ground that moves seasonally — exactly the combination that cracks a liner or concrete shell if the movement is uneven. The British Geological Survey's GeoSure dataset is the standard way to check how exposed a plot is before the design is committed, worth a structural engineer's input at that stage, not once cracking has appeared.",
+      },
+      { type: "h2", text: "Do I need to tell the neighbours before I dig?" },
+      {
+        type: "p",
+        text: "Often, yes, for the same reason it matters on a basement dig. We've set out [the full party wall notice timetable here](/blog/party-wall-notice-timing); the rule that bites on a pool is the adjacent excavation notice under section 6 of the **Party Wall etc. Act 1996** — within **3 metres** of a neighbour's building below their foundations, or **6 metres** on a 45-degree line from theirs, needs **one month's** written notice before work starts. A pool of any size near a side boundary will usually fall inside one of those distances.",
+      },
+      { type: "h2", text: "What does a pool or hot tub cost, and how long does the project take?" },
+      {
+        type: "p",
+        text: "There's no honest per-square-metre rate for a pool the way there is for a single-storey extension at **£2,700 – £3,100 per m²** — see our [full cost guide](/guides/house-extension-costs-surrey) — because excavation volume, plant access and the ground itself vary by site far more than a build above ground does. What a table can do is show the rough order of each option.",
+      },
+      {
+        type: "table",
+        caption: "Indicative only, based on current UK retailer and installer figures — a pool especially needs a site survey before any number means anything.",
+        head: ["Option", "Typical cost", "What drives it"],
+        rows: [
+          ["Portable hot tub, delivered and plumbed in", "From about **£3,000 – £13,000**", "Tub size, outdoor power point, a base"],
+          ["In-ground pool, installed", "Typically **£30,000 – £60,000+**", "Size, digger access, finish, heating, ground"],
+          ["Pool house or enclosure, as an outbuilding", "Priced from survey", "Structure, services, the tightest Class E limit"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "A guide only — durations depend on size, ground conditions and whether a Lawful Development Certificate is needed.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Design, quotes and a ground check", "2 – 4 weeks", "Water undertaker notification"],
+          ["Water undertaker notification", "**10 working days** minimum", "Design and planning check"],
+          ["Lawful Development Certificate, if there's doubt", "Up to **8 weeks**", "Excavation shouldn't start without it"],
+          ["Party wall notice, if digging within 3–6m of a boundary", "**1 month** minimum", "Design and planning check"],
+          ["Excavation, structure and services", "4 – 8 weeks, depending on size and ground", "—"],
+        ],
+      },
+      {
+        type: "p",
+        text: "A pool or a hot tub is one of the few garden projects where the paperwork can be finished before the concrete arrives — the planning question, the water company, and the clay underneath all have definite answers if asked in the right order. That's exactly the kind of survey-first conversation worth having with [builders in Cranleigh](/areas/cranleigh) before a single turf is lifted.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a swimming pool in Cranleigh?",
+        answer:
+          "Usually not for a straightforward outdoor pool sitting in the garden, which Planning Portal treats as incidental to enjoying the house. A pool house, enclosure, or anything that pushes the total outbuilding footprint over half the garden can need permission, and the position changes inside the Cranleigh Conservation Area or a listed building's garden.",
+      },
+      {
+        question: "Does a hot tub need planning permission in Cranleigh?",
+        answer:
+          "A portable, freestanding hot tub normally doesn't. Sinking it into the ground, building a permanent deck around it, or enclosing it in a cabin can bring it back under the same Class E outbuilding rules that apply to a pool house or garden room.",
+      },
+      {
+        question: "Can I build a pool or pool house if my Cranleigh house is listed?",
+        answer:
+          "An open pool in the garden is the less contentious part. Any pool house, cabin or enclosure within the curtilage of a listed building needs Listed Building Consent regardless of size, because Class E permitted development doesn't apply there at all — worth checking with Waverley's conservation officer before committing to a design.",
+      },
+      {
+        question: "Where does swimming pool water go, and do I need permission to get rid of it?",
+        answer:
+          "Backwash and full drain-downs need an approved disposal route — usually the foul sewer with your water company's agreement, or in limited cases a soakaway — and never a septic tank. You also need to notify your water undertaker at least 10 working days before a pool is connected to or altered on the mains supply, under the Water Supply (Water Fittings) Regulations 1999.",
+      },
+      {
+        question: "Does Cranleigh's clay affect digging a pool?",
+        answer:
+          "Yes. The Weald clay under most of the parish is fissured and shrink-swell — the same ground that affects basements and standard foundations — so the sides of a pool excavation need engineering rather than an assumption the hole will stay put, and a rigid pool shell can crack if the ground around it moves unevenly.",
+      },
+      {
+        question: "How much does a pool or hot tub cost in Cranleigh?",
+        answer:
+          "There's no fixed per-square-metre rate the way there is for an extension. A portable hot tub typically runs from about £3,000 to £13,000 installed, while an in-ground liner pool is typically £30,000–£60,000 or more, driven mainly by size, plant access and the ground conditions on site.",
+      },
+    ],
+    art: BLOG_ART["swimming-pools-hot-tubs-cranleigh-garden"],
+  },
+  {
     slug: "overheating-glazed-extension-part-o",
     title: "Overheating in a glazed extension: why Part O doesn't apply, and what to do instead",
     category: "Building control",
@@ -2260,6 +2447,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "party-wall-notice-timing",
       "annexes-multigenerational-living-cranleigh",
       "overheating-glazed-extension-part-o",
+      "swimming-pools-hot-tubs-cranleigh-garden",
     ],
     body: [
       {

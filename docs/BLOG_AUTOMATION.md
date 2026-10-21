@@ -335,7 +335,7 @@ Cranleigh topics — work through these:
 - [done 2026-10-12] Basements and cellars in Cranleigh: what the Weald clay means for digging down
 - [done 2026-10-14] Re-roofing a Cranleigh cottage: matching materials inside the conservation area
 - [done 2026-10-19] Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay
-- [ ] Porches in Cranleigh: the one extension that almost never needs planning permission
+- [done 2026-10-21] Porches in Cranleigh: the one extension that almost never needs planning permission
 - [ ] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
 - [ ] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
 - [ ] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing

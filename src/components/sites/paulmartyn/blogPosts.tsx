@@ -46,6 +46,177 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "porches-cranleigh-permitted-development",
+    title: "Porches in Cranleigh: the one extension that almost never needs planning permission",
+    category: "Planning & surveys",
+    date: "2026-10-21",
+    seoTitle: "Porches In Cranleigh: Do You Need Planning Permission?",
+    metaDescription:
+      "Planning a porch in Cranleigh? Most stay under permitted development limits — even inside the conservation area. Here's exactly where that right stops.",
+    excerpt:
+      "A porch is the one addition in Cranleigh that usually sidesteps the conservation area restrictions that catch almost everything else — provided it stays inside three tight limits on size, height and position.",
+    imageAlt:
+      "Illustration of a Cranleigh brick cottage with a small gabled porch over the front door, a dashed amber outline marking its footprint under 3 square metres, a dashed height line to 3 metres, a dashed marker showing the 2-metre distance to the highway boundary, a dark badge reading 'conservation area — porch unaffected', and a larger bay-style porch crossed out in red and labelled 'over 3 square metres equals a full application'",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "cranleigh-conservation-area-consent",
+      "re-roofing-cranleigh-cottage-conservation-area",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A porch on a Cranleigh house is usually **permitted development** under **Class D** of the General Permitted Development Order — no application, no fee, no waiting — provided the ground floor area stays under **3m²**, the structure doesn't rise above **3m**, and no part sits within **2m** of a boundary fronting the highway.",
+          "Unlike almost everything else covered on this blog, Class D isn't cut back on **designated land**. A compliant porch on a house inside the **Cranleigh Conservation Area** needs no extra permission for that reason alone — which isn't true of a side extension, a roof alteration or a garden outbuilding.",
+          "A **listed building** is the real exception. Class D carries no explicit listed-building bar, but altering the main elevation of one of the parish's roughly **81 listed buildings** is still development affecting its character, and **Listed Building Consent** is a separate regime a planning exemption can't override.",
+          "Most porches also skip full **Building Regulations** approval, under a separate exemption with a more generous **30m²** ceiling — but only if the original front door stays in place, the glazing meets **Approved Document K**'s safety rules, and any new electrics are signed off under **Part P**.",
+          "Go even slightly over any one of the three planning limits and there's no partial exemption for a porch — it's a full application, the **£548** fee, and a decision window of up to **eight weeks**.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every hallway conversation about a porch starts the same way: someone wants somewhere to leave muddy boots and wet coats before they hit the good carpet, not a planning case study. Then they look up the rules, see \"permitted development\", relax, and never check the three numbers that actually decide whether that's true for their design.",
+      },
+      {
+        type: "p",
+        text: "It usually doesn't go wrong. A porch is one of the few jobs where the generous answer is also the correct one — most front-door porches in Cranleigh really are permitted development, with no application, no fee and no wait. But \"usually\" still means a design that's 10% too deep, or a bay-fronted porch that creeps past the highway line on a corner plot, drops straight out of that exemption and into the full application it was meant to avoid.",
+      },
+      {
+        type: "p",
+        text: "The part that genuinely surprises people is that the Cranleigh Conservation Area doesn't touch this particular right. We've written before about how the designation narrows what you can do with a roof, a side extension or a garden outbuilding — a porch is the rare case where it doesn't, and that's worth knowing before a design gets scaled back for a restriction that was never actually there.",
+      },
+      { type: "h2", text: "Do I need planning permission for a porch in Cranleigh?" },
+      {
+        type: "p",
+        text: "In most cases, no. Planning Portal's own guidance sets out **Class D — Porches**, Part 1 of Schedule 2 to the Town and Country Planning (General Permitted Development) (England) Order 2015 (as amended), which covers adding a porch to any external door of a house, not just the front door. Stay inside the limits below and it's permitted development: no application, no decision to wait for, no fee.",
+      },
+      {
+        type: "p",
+        text: "Three conditions have to be met together, not any one of them:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The ground floor area, measured externally, must not exceed **3 square metres**.",
+          "No part of the structure can be more than **3 metres** above ground level.",
+          "No part can sit within **2 metres** of any boundary that fronts a highway — relevant on a corner plot, or anywhere the front garden is shallow.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Class D doesn't apply to flats or maisonettes, to a house created through a change-of-use permitted development right, or to a new dwelling built under the newer Part 20 rights — in those cases a porch needs an application regardless of size.",
+      },
+      { type: "h2", text: "How big is 3 square metres, really?" },
+      {
+        type: "p",
+        text: "Measured externally, 3m² is a genuinely tight footprint — roughly a 1.5m by 2m box, barely more than a single-leaf door with a canopy over it. It's easy to design past it without meaning to: a gabled roof pulled forward for weather protection, a bay-fronted porch glazed on three sides, or simply a wider doorway on an older cottage can each add the extra few hundred millimetres that push a design over the line.",
+      },
+      {
+        type: "p",
+        text: "The height limit is measured the same way as for a house extension — from the highest part of the finished ground level next to the structure. On a sloping Cranleigh plot, where the ground in front of a cottage often falls away from the door, that can bite earlier than a flat-plot design would suggest.",
+      },
+      {
+        type: "quote",
+        text: "The one that catches people out is the bay-fronted porch — it photographs beautifully and it's almost always over 3 square metres once you measure it properly. We'll tell a client that at the first site visit, not after the brick order's gone in. A straight-sided porch in the same spot, same materials, comes in under the limit and goes up in a fraction of the time.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Does the Cranleigh Conservation Area change the answer?" },
+      {
+        type: "p",
+        text: "This is the detail that makes a porch unusual among the jobs on this blog. Most permitted development rights are cut back on what the Order calls \"Article 2(3) land\" — conservation areas among them. A side extension under Class A loses permitted development status for cladding and some dimensions on designated land; roof alterations under Class C face tighter limits there too; a garden outbuilding under Class E can't go down the side of the house at all — see [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) for the fuller picture. Class D carries no such restriction. A porch that meets the 3m² / 3m / 2m test is permitted development whether or not the house sits inside the **Cranleigh Conservation Area**, which has run along the High Street since its original October 1973 designation and was extended in July 1985 and July 2016.",
+      },
+      {
+        type: "p",
+        text: "We checked this specifically against the national register of current Article 4 directions — the mechanism a council uses to withdraw a permitted development right locally — and found none covering porches anywhere in the parish. The two Article 4 directions that do exist here are older and site-specific, covering a single property on Barhatch Lane and a since-expired direction at Norley Farm; neither touches porches, and neither applies to an ordinary village house. That doesn't mean \"anything goes\" at the front of a conservation-area cottage — a poorly matched render colour or an unsympathetic door will still draw comment from Waverley's conservation officer on anything that does need an application — but the porch exemption itself stands.",
+      },
+      { type: "h2", text: "What about a listed building?" },
+      {
+        type: "p",
+        text: "Here the position is genuinely different, and it's worth getting right because Cranleigh parish has around **81 nationally listed buildings**. Class D's own wording doesn't carry the explicit listed-building exclusion that applies to outbuildings under Class E — but that's close to beside the point. Listed Building Consent is a separate legal regime from planning permission, required for any works, inside or out, that affect a listed building's special architectural or historic character. A permitted development right under the planning rules has never been a defence against that requirement. Fixing a porch to the front elevation of a listed cottage, however small, is squarely that kind of work, and it needs a conversation with Waverley's conservation team before anything is ordered, not an assumption that Class D covers it.",
+      },
+      {
+        type: "p",
+        text: "The **174 [Buildings of Local Merit](/blog/cranleigh-buildings-of-local-merit)** — the parish's second, non-designated heritage list — don't carry that statutory requirement, but Waverley will still weigh a porch's design as a material consideration if an application does end up needed for another reason.",
+      },
+      { type: "h2", text: "Does a porch need Building Regulations approval?" },
+      {
+        type: "p",
+        text: "Planning permission and Building Regulations are two separate questions, and a porch commonly avoids both — but not through the same exemption, and not automatically. A porch built at ground level is normally exempt from Building Regulations approval under a separate exemption with a much more generous **30m²** ceiling, provided three things hold: the existing front door between the house and the new porch stays in place, any glazing in the porch meets the safety-glazing requirements in **Approved Document K**, and any new fixed electrical work is notified and signed off under **Part P**.",
+      },
+      {
+        type: "p",
+        text: "That gap between the two thresholds — 3m² to stay planning-exempt, 30m² to stay Building Regulations-exempt — is why a bigger porch can still make sense as a straightforward build: it needs a planning application, but it won't necessarily need full Building Regulations sign-off on top, provided the door, glazing and electrics conditions are met.",
+      },
+      { type: "h2", text: "What does a Cranleigh porch cost, and when does the size change that?" },
+      {
+        type: "table",
+        caption: "How the Cranleigh Conservation Area treats different front-of-house projects.",
+        head: ["Project", "Needs an application inside the conservation area?", "Why"],
+        rows: [
+          ["Porch within 3m² / 3m / 2m (Class D)", "Usually not", "No Article 2(3) restriction on this class"],
+          ["Side extension (Class A)", "Often, for cladding or render changes", "Materials condition applies on designated land"],
+          ["Roof alteration (Class C)", "Often", "Tighter limits apply on designated land"],
+          ["Garden outbuilding beside the house (Class E)", "Yes", "Permitted development withdrawn for a side position on designated land"],
+          ["Porch on a listed building", "Treat as yes — Listed Building Consent", "A separate regime from planning permitted development"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "National guide figures, 2026. Get a fixed quote once the design and materials are set — these are a starting point for budgeting, not a substitute for a site visit.",
+        head: ["Porch type", "Typical guide cost", "Notes"],
+        rows: [
+          ["uPVC or lean-to canopy porch", "£2,000 – £4,500", "Simplest route to staying under the 3m² limit"],
+          ["Brick-built porch with a pitched roof", "£4,500 – £9,000", "Most straightforward match to a Cranleigh cottage frontage"],
+          ["Oak-framed porch", "£8,000 – £20,000+", "Popular on period frontages — check it still clears the 3m²/3m limits before committing to a bespoke frame"],
+          ["Full householder planning application (porch over any limit)", "£548", "From 1 April 2026; rising to roughly £575 from 8 December 2026"],
+          ["Certificate of Lawful Development (Proposed), if there's genuine doubt", "£274", "Half the householder fee — settles compliance in writing before you build"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A porch that stays inside the 3m² / 3m / 2m limits skips the **£548** householder planning fee entirely, and the statutory decision period of up to **eight weeks** that comes with it — there's no partial exemption to fall back on if a design runs over. The usual saving isn't a discount on the fee; it's not needing one at all, and getting the boots-and-coats space built before the next wet season rather than after it.",
+      },
+      {
+        type: "p",
+        text: "A porch is a small job on paper, which is exactly why it's worth getting the measuring right before any bricks are ordered — the difference between a weekend job and an eight-week planning process can be a few hundred millimetres on a bay window. It's the kind of detail that's second nature to [builders in Cranleigh](/areas/cranleigh) working Waverley's conservation rules street by street, rather than a generic national guide written for nowhere in particular.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a porch in Cranleigh?",
+        answer:
+          "Usually not, if the ground floor area measured externally is under 3 square metres, no part is more than 3 metres above ground level, and no part is within 2 metres of a boundary fronting the highway. Go over any one limit and a full application is needed, whatever the other two measurements come to.",
+      },
+      {
+        question: "Does being inside the Cranleigh Conservation Area stop me building a porch without permission?",
+        answer:
+          "No. Unlike side extensions, roof alterations and garden outbuildings, Class D porches aren't restricted on designated land, and no Article 4 direction currently covers porches anywhere in the parish.",
+      },
+      {
+        question: "Can I add a porch to a listed building in Cranleigh without permission?",
+        answer:
+          "Treat it as needing Listed Building Consent. The planning exemption doesn't override the separate requirement for consent to alter a listed building's character, and that applies even to a small porch on the main elevation.",
+      },
+      {
+        question: "Does a porch need Building Regulations approval?",
+        answer:
+          "Usually not, up to a much larger 30 square metres, provided the original front door stays in place, any glazing meets Approved Document K's safety-glazing rules, and new electrics are signed off under Part P. That's a separate, more generous limit than the 3 square metre planning threshold.",
+      },
+      {
+        question: "What does a porch cost in Cranleigh?",
+        answer:
+          "A simple uPVC or lean-to porch typically runs £2,000–£4,500; a brick-built porch with a pitched roof £4,500–£9,000; an oak-framed porch from around £8,000 upward. Get a fixed quote once the design and materials are confirmed.",
+      },
+      {
+        question: "What happens if my porch design is slightly over the limits?",
+        answer:
+          "There's no partial exemption — it needs a full householder planning application, currently £548, with a statutory decision period of up to eight weeks. Checking the measurements at design stage avoids that entirely.",
+      },
+    ],
+    art: BLOG_ART["porches-cranleigh-permitted-development"],
+  },
+  {
     slug: "swimming-pools-hot-tubs-cranleigh-garden",
     title: "Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay",
     category: "Planning & surveys",
@@ -2448,6 +2619,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "annexes-multigenerational-living-cranleigh",
       "overheating-glazed-extension-part-o",
       "swimming-pools-hot-tubs-cranleigh-garden",
+      "porches-cranleigh-permitted-development",
     ],
     body: [
       {

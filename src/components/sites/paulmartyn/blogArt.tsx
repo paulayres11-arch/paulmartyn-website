@@ -16,6 +16,78 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "porches-cranleigh-permitted-development": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="poSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="poGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="poBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#b6604a" /><stop offset="1" stopColor="#8f4836" />
+          </linearGradient>
+          <linearGradient id="poRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7378" /><stop offset="1" stopColor="#4a5257" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="64" fill="url(#poSky)" />
+        <circle cx="358" cy="26" r="14" fill="#f6d98a" opacity=".85" />
+        <text x="200" y="24" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">The three numbers that decide the job</text>
+
+        <rect y="64" width="400" height="206" fill="url(#poGrass)" />
+        <rect y="258" width="400" height="12" fill="#cbd0d2" />
+        <rect y="268" width="400" height="18" fill="#9aa0a3" />
+        <path d="M0 277 h18 M38 277 h18 M78 277 h18 M118 277 h18 M158 277 h18" stroke="#e8ebec" strokeWidth="2" opacity=".6" />
+        <text x="8" y="296" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#2f3a40">HIGHWAY</text>
+
+        {/* cottage */}
+        <rect x="42" y="118" width="150" height="110" fill="url(#poBrick)" stroke="#5f3024" strokeWidth="1.4" />
+        <path d="M34 118 L117 70 L200 118 Z" fill="url(#poRoof)" stroke="#333b40" strokeWidth="1.3" />
+        <rect x="56" y="134" width="26" height="30" fill="#dff0f7" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="150" y="134" width="26" height="30" fill="#dff0f7" stroke="#3f4a50" strokeWidth="1.2" />
+
+        {/* compliant porch over the door */}
+        <rect x="94" y="186" width="42" height="42" fill="#cdbfa0" stroke="#5f3024" strokeWidth="1.4" />
+        <path d="M89 186 L115 160 L141 186 Z" fill="#8f4836" stroke="#5f3024" strokeWidth="1.3" />
+        <rect x="107" y="200" width="16" height="28" fill="#4a3324" stroke="#2f2015" strokeWidth="1" />
+
+        {/* footprint dashed box: <=3m2 */}
+        <rect x="90" y="222" width="50" height="8" fill="none" stroke="#e08a2b" strokeWidth="1.3" strokeDasharray="3 2" />
+        <text x="115" y="241" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#a8652a" textAnchor="middle">FOOTPRINT ≤ 3m²</text>
+
+        {/* height dashed line: <=3m */}
+        <path d="M150 230 V160" stroke="#e08a2b" strokeWidth="1.2" strokeDasharray="3 2" />
+        <path d="M146 160 l4 -6 l4 6 z" fill="#e08a2b" />
+        <text x="183" y="193" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#a8652a" textAnchor="middle">HEIGHT{" "}≤{" "}3m</text>
+
+        {/* 2m-from-highway dashed marker */}
+        <path d="M136 258 V286" stroke="#e08a2b" strokeWidth="1.2" strokeDasharray="3 2" />
+        <path d="M94 272 H136" stroke="#e08a2b" strokeWidth="1.1" strokeDasharray="3 2" />
+        <text x="60" y="266" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#a8652a" textAnchor="middle">2m TO</text>
+        <text x="60" y="275" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#a8652a" textAnchor="middle">HIGHWAY</text>
+
+        {/* conservation-area badge, unaffected */}
+        <rect x="20" y="88" width="118" height="22" rx="4" fill="#1f2a30" opacity=".88" />
+        <text x="79" y="103" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#f6d98a" textAnchor="middle">CONSERVATION AREA — PORCH UNAFFECTED</text>
+
+        {/* oversized porch, crossed out */}
+        <rect x="248" y="150" width="96" height="92" fill="none" stroke="#c0392b" strokeWidth="1.6" strokeDasharray="4 3" />
+        <path d="M248 150 h58 v-18 l20 18 M306 150 v92" fill="none" stroke="#c0392b" strokeWidth="1.6" strokeDasharray="4 3" />
+        <path d="M252 154 L340 238 M340 154 L252 238" stroke="#c0392b" strokeWidth="2.2" opacity=".85" />
+        <text x="296" y="258" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#8c2a1f" textAnchor="middle">&gt; 3m² = FULL</text>
+        <text x="296" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#8c2a1f" textAnchor="middle">APPLICATION</text>
+
+        <rect y="286" width="400" height="114" fill="#1f2a30" />
+        <text x="24" y="312" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">One addition the conservation area doesn&apos;t touch</text>
+        <text x="24" y="335" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Stay under 3m² footprint, 3m height and 2m from a highway boundary — no application needed</text>
+        <text x="24" y="354" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Unlike side extensions, roofs and outbuildings, Class D isn&apos;t restricted on designated land</text>
+        <text x="24" y="373" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: GPDO 2015 Sch.2 Pt.1 Class D; Planning Portal</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "swimming-pools-hot-tubs-cranleigh-garden": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

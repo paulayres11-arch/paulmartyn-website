@@ -16,6 +16,92 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "sap-calculations-when-you-need-one": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="sapSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="sapRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="sapBrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="sapGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8bbf68" /><stop offset="1" stopColor="#6a9a4c" />
+          </linearGradient>
+          <linearGradient id="sapGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="sapAmber" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#sapSky)" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">Same glazing, two routes to Part L</text>
+        <text x="24" y="54" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#5d7078">Stay under the cap, or prove the sums with a SAP calculation</text>
+
+        {/* house, pitched roof */}
+        <path d="M38 150 L108 90 L178 150 Z" fill="url(#sapRoof)" />
+        <rect x="48" y="150" width="130" height="126" fill="url(#sapBrick)" />
+        <rect x="64" y="172" width="24" height="28" fill="#dfe9ee" stroke="#f4f7f8" strokeWidth="2" />
+        <rect x="108" y="238" width="26" height="38" fill="#4a3324" stroke="#2f2015" strokeWidth="1" />
+
+        {/* extension, lean-to roof, fully glazed rear wall */}
+        <path d="M178 142 L332 186 L332 197 L178 153 Z" fill="url(#sapRoof)" />
+        <rect x="178" y="197" width="154" height="79" fill="#7c4a34" />
+
+        {/* five glazed panels across the extension wall */}
+        <rect x="183" y="202" width="27" height="69" fill="url(#sapGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="213" y="202" width="27" height="69" fill="url(#sapGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="243" y="202" width="27" height="69" fill="url(#sapGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="273" y="202" width="27" height="69" fill="url(#sapGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="303" y="202" width="27" height="69" fill="url(#sapGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+
+        {/* within-cap: first two panels, dashed amber */}
+        <rect x="181" y="200" width="61" height="73" fill="none" stroke="#e08a2b" strokeWidth="1.5" strokeDasharray="4 3" />
+        <text x="211" y="194" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#a8652a" textAnchor="middle">WITHIN 25% CAP</text>
+
+        {/* over-cap: last three panels, crossed red */}
+        <rect x="242" y="200" width="91" height="73" fill="none" stroke="#c0392b" strokeWidth="1.6" strokeDasharray="4 3" />
+        <path d="M246 204 L329 267 M329 204 L246 267" stroke="#c0392b" strokeWidth="2" opacity=".8" />
+        <text x="287" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#8c2a1f" textAnchor="middle">OVER THE CAP</text>
+
+        {/* dashed arrow from the crossed glazing down to the SAP clipboard */}
+        <path d="M300 273 q6 14 4 26" stroke="#8c2a1f" strokeWidth="1.4" strokeDasharray="3 2" fill="none" />
+        <path d="M300 303 l-5 -7 l9 0 z" fill="#8c2a1f" />
+
+        {/* clipboard: the SAP calculation */}
+        <rect x="278" y="226" width="40" height="50" rx="3" fill="#f4f0e6" stroke="#5d7078" strokeWidth="1.3" />
+        <rect x="290" y="222" width="16" height="7" rx="2" fill="#aeb8bd" stroke="#5d7078" strokeWidth="1" />
+        <path d="M284 237 h28 M284 246 h28 M284 255 h18" stroke="#8fa0a8" strokeWidth="1.6" />
+        <circle cx="308" cy="263" r="9" fill="#3f8f52" />
+        <path d="M304 263 l3 4 l6 -8" stroke="#eff4f7" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="298" y="289" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#2f3a40" textAnchor="middle">SAP CALC</text>
+
+        {/* EPC-style rating bar, the certificate it produces */}
+        <rect x="346" y="210" width="20" height="63" fill="#3f8f52" />
+        <rect x="346" y="219" width="20" height="9" fill="#6aab52" />
+        <rect x="346" y="228" width="20" height="9" fill="#9cbf52" />
+        <rect x="346" y="237" width="20" height="9" fill="#e3c23c" />
+        <rect x="346" y="246" width="20" height="9" fill="#e08a2b" />
+        <rect x="346" y="255" width="20" height="9" fill="#c2622b" />
+        <rect x="346" y="264" width="20" height="9" fill="#8c2a1f" />
+        <path d="M366 232 l9 -4 l0 8 z" fill="#1f2a30" />
+        <text x="380" y="231" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#1f2a30">C</text>
+
+        <rect y="276" width="400" height="24" fill="url(#sapGrass)" />
+
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">Go over the cap and the sums have to prove it</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">A SAP calculation trades extra insulation for the extra glass</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.6" fill="#8fa0a8">Source: Approved Document L, Vol.1 (2021 ed.); SAP 10.3 / Future Homes Standard, gov.uk Notice of Approval, 24 Mar 2026</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "porches-cranleigh-permitted-development": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

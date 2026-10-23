@@ -46,6 +46,178 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "sap-calculations-when-you-need-one",
+    title: "What an SAP assessment is, and when your project actually needs one",
+    category: "Insulation & energy",
+    date: "2026-10-23",
+    seoTitle: "What Is an SAP Assessment, and When Do You Need One?",
+    metaDescription:
+      "SAP calculations prove Part L compliance for new dwellings, annexes and some extensions. What one covers, who does it, what it costs, and what changed in 2026.",
+    excerpt:
+      "A SAP calculation isn't the EPC you got when you bought the house — it's the mandatory energy model behind every new dwelling, and the thing that lets an over-glazed extension still pass Part L. Here's how to tell which category your project falls into before you order a window.",
+    imageAlt:
+      "Illustration of a brick extension with a glazed rear wall: the first two panels outlined with a dashed amber box labelled 'within 25% cap', the last three panels marked with a red cross and 'over the cap', a dashed arrow pointing down to a clipboard labelled 'SAP CALC' with a green checkmark, and beside it a vertical EPC rating bar in colour bands from green at the top to red at the bottom with a pointer marking band C",
+    related: [
+      "part-l-extension-insulation",
+      "building-control-completion-certificate",
+      "annexes-multigenerational-living-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A SAP calculation — the **Standard Assessment Procedure** — is the government's method for proving a dwelling meets **Part L** of the Building Regulations. For a **new dwelling** it's mandatory with no size exemption; for most **extensions** it isn't needed at all.",
+          "The ordinary route through Part L for an extension just means meeting fixed U-values and keeping glazing to roughly **25% of the new floor area**. SAP only becomes necessary when you want more glass than that, or when the project adds a genuinely new dwelling.",
+          "A garden room, converted barn or annexe with its own kitchen, bathroom and bedroom is usually treated by building control as a **new dwelling in its own right** — full SAP and its own Energy Performance Certificate, not just the extension rules.",
+          "SAP is not the EPC you were handed when you bought the house. That used **RdSAP**, a simplified, survey-based calculation built for existing homes, and it can't substitute for the full assessment a new dwelling or an over-glazed extension needs.",
+          "Since **24 March 2026**, SAP 10.3 under the Future Homes Standard is the current methodology for new dwellings in England — though a transition period lets some projects already in the system build to the previous standard a while longer.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually isn't about regulations at all — it's about glazing. Someone has fallen for a wall of bifold doors across the back of a new kitchen, the order's gone in, and a few weeks later building control sends back a query the joiner can't answer: where's the SAP calculation?",
+      },
+      {
+        type: "p",
+        text: "A SAP calculation isn't a form or a tick-box. It's a proper piece of software modelling — run by an accredited assessor, using government-approved software — that predicts a whole dwelling's energy use and carbon emissions, fabric element by fabric element. Most extensions never need one. Every new dwelling needs one from the first drawing. The trouble is almost nobody works out which side of that line their own project sits on until it's already inconvenient to find out.",
+      },
+      {
+        type: "p",
+        text: "This is about settling that question before any windows, doors or kitchen units get ordered against a floor plan that might still have to change — and about what altered on 24 March 2026, which makes it worth checking again even for a project that was planned a year ago.",
+      },
+      { type: "h2", text: "What is a SAP calculation, and who carries one out?" },
+      {
+        type: "p",
+        text: "SAP stands for the Standard Assessment Procedure. It's the UK government's methodology — developed by the Building Research Establishment and approved by the department responsible for building regulations — for calculating and comparing the energy and environmental performance of a dwelling. For a new dwelling, it's the vehicle that demonstrates compliance with Part L; building control won't sign off the completion certificate without it.",
+      },
+      {
+        type: "p",
+        text: "The calculation itself is carried out by an accredited SAP assessor, working from the final drawings and specification in software approved for the current SAP version. For a finished new dwelling, an **On Construction Domestic Energy Assessor (OCDEA)** produces the matching Energy Performance Certificate from that same model and lodges it on the national register — and under the Building Regulations, that certificate has to be in place before the completion certificate is issued, not applied for afterwards as an afterthought.",
+      },
+      { type: "h2", text: "Do I need a SAP calculation for my extension?" },
+      {
+        type: "p",
+        text: "Usually not. The standard route through Part L for a domestic extension is the elemental one: fixed maximum U-values for the new walls, roof and floor, and glazing — windows, doors and rooflights together — capped at roughly **25% of the extension's new floor area**, plus whatever existing openings are being closed up. Meet those figures and there's no calculation to do; [we've covered those U-values and the glazing cap in full elsewhere](/blog/part-l-extension-insulation).",
+      },
+      {
+        type: "ul",
+        items: [
+          "You want more glazing than the 25% cap allows — a big bifold set or a roof lantern, say — and plan to compensate with better insulation and glazing elsewhere.",
+          "The project creates a genuinely new, self-contained dwelling rather than extending the existing one.",
+          "A material change of use brings a building into residential use for the first time — a shop, barn or outbuilding becoming living accommodation.",
+          "Your local authority has attached a specific planning condition requiring one, which happens occasionally on larger or more sensitive schemes.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The first of those is the one that catches people out, because it's entirely their own choice that triggers it. Ask for more glass than the elemental route allows, and the whole extension has to be modelled against a notional, compliant equivalent — improve the fabric enough elsewhere and the glazing goes back in.",
+      },
+      { type: "h2", text: "What about a conversion, an annexe or a change of use?" },
+      {
+        type: "p",
+        text: "The test that matters here isn't how the building reads on the ground, or whether the council treats it as ancillary to the main house for planning purposes — see [annexes and multigenerational living](/blog/annexes-multigenerational-living-cranleigh) for that side of it. It's whether the finished space has its own kitchen, bathroom and sleeping accommodation independent of the main house. Tick those boxes and building control is very likely to treat it as a new dwelling for energy purposes, whatever the planning permission calls it — which means full SAP and its own EPC, not the extension rules.",
+      },
+      {
+        type: "p",
+        text: "The same logic applies to converting a barn, outbuilding or commercial unit into a house: a material change of use into residential accommodation is assessed under the same new-dwelling standard, via SAP, rather than the lighter elemental route that applies to extending a house that's already a dwelling.",
+      },
+      { type: "h2", text: "Why can't I just use the EPC I already have?" },
+      {
+        type: "p",
+        text: "Because it's a different calculation, built for a different job. The Energy Performance Certificate that came with the house when you bought it was produced using **RdSAP** — Reduced Data SAP — a simplified, survey-based version designed for assessing existing homes quickly from what an assessor can see and measure on a single visit, filling the gaps with standard assumptions about age and construction type. It's a perfectly good tool for comparing one existing home against another. It was never designed to model a new dwelling or a bespoke glazing trade-off from architect's drawings, and building control won't accept it as one.",
+      },
+      { type: "h2", text: "What changed on 24 March 2026 — the Future Homes Standard and SAP 10.3" },
+      {
+        type: "p",
+        text: "The government published the Future Homes Standard and approved **SAP 10.3** as the current methodology for new dwellings in England in a Notice of Approval dated 24 March 2026, tightening the fabric and low-carbon heating standards a SAP calculation now has to demonstrate. There's a transition period: a scheme with a building notice, initial notice or full plans already lodged can still be built to the previous standard, provided the application was made in time and work starts before the relevant deadline — worth confirming directly with your building control body or SAP assessor rather than assuming either way.",
+      },
+      {
+        type: "p",
+        text: "A further successor, the **Home Energy Model**, is intended to eventually replace SAP altogether, but its introduction has been delayed and a dual-running period is expected before it becomes mandatory. For now, SAP — not the Home Energy Model — is what a new dwelling in England is assessed against.",
+      },
+      { type: "h2", text: "What does a SAP calculation cost, and when should I book one?" },
+      {
+        type: "table",
+        caption: "When a SAP calculation is actually needed.",
+        head: ["Project", "SAP calculation needed?", "Why"],
+        rows: [
+          ["Extension within the 25% glazing cap and standard U-values", "No", "Elemental route under Approved Document L covers it"],
+          ["Extension over the glazing cap, or using a fabric trade-off", "Yes", "Whole-extension calculation against a notional equivalent"],
+          ["New dwelling — self-build, infill plot, new-build development", "Yes, always", "Mandatory for Part L and the on-construction EPC"],
+          ["Annexe or conversion with its own kitchen, bathroom and bedroom", "Usually, yes", "Treated as a new dwelling for energy purposes"],
+          ["Existing home being sold or let, no building work", "No — RdSAP instead", "A different, simplified calculation for existing stock"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "Typical UK assessor fees, 2026 — a guide; always get a fixed quote, since pricing varies by assessor and project size.",
+        head: ["Project", "Typical guide cost", "When to book"],
+        rows: [
+          ["Over-glazed extension / fabric trade-off calculation", "£150 - £300 + VAT", "At design stage, before windows and doors are ordered"],
+          ["Single new dwelling (design-stage + as-built SAP)", "£200 - £400 + VAT", "Design-stage SAP before building control submission; as-built SAP before completion"],
+          ["On Construction EPC and lodgement, per dwelling", "£35 - £50 + VAT", "Once the as-built SAP is finalised, before the completion certificate is issued"],
+          ["Multi-unit scheme, per additional identical plot", "From £30 - £80 + VAT each", "Same stage as the lead plot"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Book the assessor once the floor plan and glazing are fixed on paper, not once the frames are on order. A trade-off calculation can tell you, on the drawing, exactly how much extra to spend on insulation or better glass to keep the bifolds you wanted — which is a design conversation, not a site problem.",
+      },
+      {
+        type: "quote",
+        text: "Nine times out of ten the SAP conversation should happen before the window quote, not after it. I've had clients order a full glazed rear wall, get their building control query, and then have to find thousands of pounds of extra insulation and better glass to make the numbers work after the frames were already being made. **Ask the question at the drawing stage and it costs a few hundred pounds. Ask it after the order's placed and it costs a redesign.**",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What happens if you leave it too late?" },
+      {
+        type: "p",
+        text: "Leaving the SAP question until building control raises it rarely just costs the assessor's fee. By then the glazing may already be ordered to a size and specification that no longer matches the recalculated floor plan, and building control won't issue a completion certificate until the figures balance — which can mean reopening finished plasterwork to add insulation, swapping specified glass for a better-performing unit, or losing weeks waiting on a revised calculation and a second inspection.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A trade-off calculation done at design stage, before glazing is ordered, is usually a few hundred pounds. Leaving it until building control queries the as-built drawings typically means re-ordering glazing or adding insulation after first fix — often several thousand pounds of rework and **four to six weeks** of delay waiting on a revised calculation and a second building control visit.",
+      },
+      {
+        type: "p",
+        text: "None of this is complicated once somebody tells you which box your project falls into — it just has to happen before the order goes in, not after. It's exactly the kind of question worth putting to [builders in Cranleigh](/areas/cranleigh) at the drawing stage, alongside the rest of the Part L sums, rather than finding out from a building control query once the glass is already being cut.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a SAP calculation?",
+        answer:
+          "SAP stands for the Standard Assessment Procedure — the UK government's methodology for calculating a dwelling's energy use and carbon emissions, carried out by an accredited assessor using approved software. It's mandatory for every new dwelling and is also used to show that an extension with more glazing than the standard route allows still meets Part L overall.",
+      },
+      {
+        question: "Do I need a SAP calculation for a single-storey extension?",
+        answer:
+          "Only if you want more glazing than roughly 25% of the new floor area, or you're using the whole-extension trade-off route for another reason. Stay within the standard U-values and the glazing cap and no SAP calculation is needed.",
+      },
+      {
+        question: "Is a SAP calculation the same as an EPC?",
+        answer:
+          "Related, but not the same thing. A SAP calculation is the underlying energy model; the Energy Performance Certificate is one of its outputs. For a new dwelling, an On Construction Domestic Energy Assessor produces the EPC from the final as-built SAP model. The EPC you get when buying an existing home instead uses RdSAP, a simplified survey-based calculation that can't substitute for full SAP.",
+      },
+      {
+        question: "Do I need a SAP calculation for a granny annexe or garden room?",
+        answer:
+          "If it has its own kitchen, bathroom and sleeping space independent of the main house, building control is likely to treat it as a new dwelling for energy purposes, which brings in full SAP and its own EPC — regardless of how the planning permission describes its use.",
+      },
+      {
+        question: "What does a SAP calculation cost?",
+        answer:
+          "As a guide for 2026, an over-glazed extension or trade-off calculation typically runs £150-£300 plus VAT; a single new dwelling £200-£400 plus VAT for design-stage and as-built SAP combined, plus £35-£50 for the EPC and its lodgement. Get a fixed quote from an accredited assessor for your own project.",
+      },
+      {
+        question: "What's changing with the Future Homes Standard?",
+        answer:
+          "SAP 10.3, approved alongside the Future Homes Standard from 24 March 2026, is now the current methodology for new dwellings in England, with tighter fabric and low-carbon heating requirements. A transition period lets some schemes already in the system build to the previous standard; check your own position with your building control body or SAP assessor.",
+      },
+    ],
+    art: BLOG_ART["sap-calculations-when-you-need-one"],
+  },
+  {
     slug: "porches-cranleigh-permitted-development",
     title: "Porches in Cranleigh: the one extension that almost never needs planning permission",
     category: "Planning & surveys",
@@ -3938,6 +4110,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "building-control-completion-certificate",
       "extending-1930s-semi-cranleigh",
       "underfloor-heating-screed-depth-response-time",
+      "sap-calculations-when-you-need-one",
     ],
     body: [
       {

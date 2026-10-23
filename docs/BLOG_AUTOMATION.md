@@ -365,7 +365,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-10-02] Why a steel beam needs a padstone
 - [done 2026-10-09] Underfloor heating: screed depth, response time and floor build-up
 - [done 2026-10-16] Overheating and Approved Document O in a glazed extension
-- [ ] What an SAP assessment is and when you need one
+- [done 2026-10-23] What an SAP assessment is and when you need one
 - [ ] Scaffolding, pavement licences and the neighbour conversation
 - [ ] Fire doors and escape routes in a loft conversion
 - [ ] Asbestos in a pre-2000 house: what a survey finds and when you need one

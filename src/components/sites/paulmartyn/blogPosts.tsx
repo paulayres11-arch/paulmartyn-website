@@ -46,6 +46,168 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "home-office-outbuilding-business-use-cranleigh",
+    title: "Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use",
+    category: "Planning & surveys",
+    date: "2026-10-26",
+    seoTitle: "Garden Office For Business Use: Do You Need Permission?",
+    metaDescription:
+      "A garden office or outbuilding is usually permitted development — but running a client-facing business from one can need its own planning permission. Here's the test.",
+    excerpt:
+      "A garden room built as permitted development is only lawful for a use that stays ancillary to the house — and a real business, with clients, staff or vans calling, can be a separate planning question entirely, whatever the building's own paperwork says.",
+    imageAlt:
+      "Illustration of two identical garden cabins side by side in a back garden: the left one showing a desk and laptop through the window with a green tick and the caption 'working from home — ancillary, no application', the right one showing a reception counter, a waiting client and a delivery van beside it with an amber question-mark badge and the caption 'clients, staff or vans — check first', separated by a dashed vertical divider",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "annexes-multigenerational-living-cranleigh",
+      "cranleigh-conservation-area-consent",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A garden office, workshop or converted garage built as permitted development under **Class E** is only lawful for a use that stays **incidental to the house as a home**. Running a genuine business from one can tip it into a **material change of use** that needs its own planning permission, whatever the building's size.",
+          "There's no fixed headcount or client number that decides it. Planning Portal's own test asks whether the home stops being used mainly as a private residence, whether the business brings a marked rise in traffic or callers, whether the activity is unusual for a residential street, and whether it disturbs neighbours — any one \"yes\" and permission is probably needed.",
+          "A business using only a small part of the home, taking no visiting clients, employing nobody else on site and needing no unusual alterations usually stays under council tax alone. Cross those lines and the **Valuation Office Agency** can rate part of the property separately for **business rates**, on top of the council tax on the rest.",
+          "A lawful garden office doesn't pre-approve whatever happens inside it. The building can be entirely lawful under Class E while the use carried on inside it becomes unlawful later, purely because of how it's actually run.",
+          "A **Certificate of Lawfulness of Proposed Use**, at roughly **£305**, settles the question in writing before the first paying client walks up the garden path — a fraction of the full application fee, and far cheaper than finding out from an enforcement visit after the bookings have started.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call comes from someone who's already fitted out the garden room beautifully. Insulated, powered, a proper floor — a driving instructor's paperwork desk, a dog groomer's table and bath, a hairdresser's second chair. The building itself went up as permitted development months ago, no application needed, no problem. What nobody checked is whether turning it into somewhere clients actually come is a different question from the one the garden room answered.",
+      },
+      {
+        type: "p",
+        text: "It is, and it catches people because the two questions look identical from the garden. One is \"can I put this building here\" — governed by Class E of the General Permitted Development Order, which most garden offices clear comfortably on size and position alone; [we've covered those limits in full elsewhere](/blog/garden-rooms-cranleigh-permitted-development). The other is \"can I run this business from it\" — a question about use, not structure, and the planning system draws a real line between a freelancer quietly answering email from a garden shed and a business that brings clients, vans or extra traffic to an otherwise ordinary Cranleigh street.",
+      },
+      {
+        type: "p",
+        text: "Both questions matter, and they're answered by completely different parts of the rules. This is about the second one — when working from a garden room, home office or converted garage crosses from \"nobody needs to know\" into \"the council needs to know\", what that then costs in planning fees, and the separate, easily missed point that it can also change what you pay to the council every year.",
+      },
+      { type: "h2", text: "Is it a planning problem to work from my own garden office in Cranleigh?" },
+      {
+        type: "p",
+        text: "Not on its own, and this is worth saying plainly because people often assume the opposite. Working from home — sitting at a laptop, taking calls, doing the books — has never needed planning permission, in a spare bedroom or a garden office alike. Government guidance on home-based business is explicit that the planning system doesn't treat ordinary homeworking as development at all.",
+      },
+      {
+        type: "p",
+        text: "Where it gets more specific is **Class E** of the Town and Country Planning (General Permitted Development) Order 2015, the right that lets most garden rooms, sheds and converted garages go up without an application in the first place. That right is conditional: it covers a building \"required for a purpose **incidental to the enjoyment of the dwellinghouse** as such\" — home office work that stays ancillary to living in the house, in the same bracket as a home gym or a hobby room. It was never meant to authorise a separate commercial premises in a garden.",
+      },
+      { type: "h2", text: "What actually turns a home business into a material change of use?" },
+      {
+        type: "p",
+        text: "There's no single number — no fixed count of clients, vans or hours — that the planning system uses to decide this. Planning Portal's own guidance on working from home sets out the test as four questions, and a \"yes\" to any one of them means permission is probably needed:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Will the home stop being used **mainly as a private residence**?",
+          "Will the business cause a **marked rise in traffic**, or people calling at the house?",
+          "Will it involve activities that are **unusual for an ordinary residential street**?",
+          "Will it disturb neighbours through **noise, smells or unreasonable hours**?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Deciding whether any of those apply is, in Planning Portal's own words, \"a question of fact and degree\" for the local planning authority — which is why a garden office doing bookkeeping for one client is obviously fine, a salon booking clients every twenty minutes obviously is not, and most real Cranleigh businesses sit somewhere less obvious in between.",
+      },
+      { type: "h2", text: "Does a lawful garden room cover whatever business I run from it?" },
+      {
+        type: "p",
+        text: "No, and this is the detail that trips people up. Permission for the building and lawfulness of the use inside it are two separate things. Planning Portal is direct about it: even where a garden office is entirely lawful, the activity carried on inside it can still become a material change of use later, if what's actually happening there changes the residential character of the property. A building that went up quietly under Class E two years ago for general home-office use doesn't carry a blanket permission for a driving school, a therapy practice with a waiting room, or a trade business with a van calling three times a day — the use is judged on its own facts, not inherited from the building's history.",
+      },
+      {
+        type: "p",
+        text: "That's why a conversation at the point the business starts, not after it's grown, is worth having. We've built garden offices for consultants and bookkeepers with no planning question at all — and separately fitted out a workshop where the client numbers being planned meant checking with Waverley first, because the use, not the building, was the issue.",
+      },
+      {
+        type: "table",
+        caption: "Roughly where the line tends to sit, based on Planning Portal's four-question test — always check your own case with Waverley Borough Council.",
+        head: ["Use of the garden room", "Likely a planning issue?", "Why"],
+        rows: [
+          ["Occasional desk work, calls, admin for a single remote job", "Unlikely", "No visitors, no traffic change, residential character unchanged"],
+          ["Online or phone-based consultancy, no visiting clients", "Unlikely", "Stays ancillary to the home under Class E"],
+          ["Hairdresser, beautician or driving instructor seeing clients by appointment", "Possible, depends on volume", "Marked rise in callers is the test, not the trade itself"],
+          ["Dog grooming, personal training or a trade workshop with daily client visits or deliveries", "Likely", "Traffic, noise and unusual activity for a residential street"],
+          ["Any business employing staff who work from the garden room", "Likely", "Home is no longer used mainly as a private residence"],
+        ],
+      },
+      { type: "h2", text: "What does this mean for council tax and business rates?" },
+      {
+        type: "p",
+        text: "This is the part almost nobody checks until a rates bill arrives, and it's a separate system from planning — run by the **Valuation Office Agency**, not the planning department. The VOA applies much the same \"small and ancillary\" idea to money rather than use: the government doesn't normally expect a home-based business to pay business rates at all if it uses only a **small part of the home**, doesn't sell to **visiting members of the public**, doesn't **employ anyone else at the property**, and hasn't needed **alterations unusual for an ordinary home**.",
+      },
+      {
+        type: "p",
+        text: "Cross those lines — a garden room re-plumbed as a hair salon, say, with its own client entrance — and the VOA can split the property into a \"composite hereditament\": business rates on the part used for the business, council tax on the rest, in addition to each other rather than instead of one another. **Small Business Rate Relief** can reduce or remove the rates bill once registered, but that's a separate application made once a rateable part has been identified — it doesn't avoid the assessment itself. The overlap with the planning test is useful: the same things that push a use over the material-change-of-use line — visiting clients, staff on site, purpose-built alterations — are almost exactly what pushes it into a rateable business use too.",
+      },
+      { type: "h2", text: "What does sorting this out cost, and when should you do it?" },
+      {
+        type: "table",
+        caption: "Guide figures for England from 1 April 2026 — confirm the current fee with Waverley Borough Council before applying, since fees are reviewed annually.",
+        head: ["Route", "Typical cost", "What it settles"],
+        rows: [
+          ["Certificate of Lawfulness (proposed use)", "£305", "Half the standard change-of-use fee — confirms a planned business use is lawful before you start"],
+          ["Certificate of Lawfulness (existing use)", "£610", "Confirms a use already underway is lawful, if it's been continuous and unchallenged for the relevant period"],
+          ["Full planning permission, change of use (no building works)", "£610", "Needed where the use is a genuine material change and isn't already lawful"],
+          ["Full householder planning permission (if building work is also needed)", "£548, rising to roughly £575 from 8 December 2026", "Covers alterations to the building itself, separate from the use question"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Book the certificate before the business does, not after. A Certificate of Lawfulness of Proposed Use is a fixed, modest cost that settles the question in writing from Waverley Borough Council, and it's the only route that gives a definitive answer rather than a best guess from a website.",
+      },
+      {
+        type: "quote",
+        text: "The garden offices we build for someone working alone — a consultant, an architect, a bookkeeper — are never a planning conversation beyond the building itself. The ones where I'll stop and say \"check this with the council before you book your first client\" are the trade businesses: grooming, driving instruction, treatments, anything with people or vans turning up on a schedule. **It's not about the trade being a problem. It's that nobody wants to find out the answer from a neighbour's complaint rather than a £305 certificate.**",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A Certificate of Lawfulness of Proposed Use, at roughly **£305**, settles the planning question in writing before a single client books in. Left unchecked and challenged later — a neighbour's complaint, a council enforcement visit — the same answer can cost a retrospective application at the full **£610** fee, an unannounced business rates assessment, and **months** of uncertainty over whether trading can continue while it's decided. The certificate is the cheaper problem by a wide margin, and the only one you get to choose the timing of.",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to avoid working from a garden room in Cranleigh — most home businesses never come close to the lines above, and the ones that do can usually be squared with a conversation before the fit-out rather than an argument after it. It's worth raising with [builders in Cranleigh](/areas/cranleigh) alongside the build itself, so the planning answer and the finished room arrive together, not six months apart.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to work from my garden office in Cranleigh?",
+        answer:
+          "Not for ordinary homeworking — answering email, taking calls, doing admin — which has never needed permission regardless of where in the house or garden it happens. It becomes a planning question only if the business changes the character of the house as a private residence: a marked rise in visitors or traffic, activities unusual for a residential street, or disturbance to neighbours. If none of those apply, no application is needed.",
+      },
+      {
+        question: "Can I run a business from a garden room I built as permitted development?",
+        answer:
+          "The building being permitted development under Class E doesn't automatically cover whatever use you put it to. Class E only authorises a use incidental to enjoying the house as a home, and a genuine business — especially one with visiting clients, staff or deliveries — can be a separate material change of use that needs its own planning permission, whatever the garden room's planning history.",
+      },
+      {
+        question: "Will working from my garden office affect my council tax or business rates?",
+        answer:
+          "Only if the business goes beyond a small, ancillary use. The Valuation Office Agency doesn't normally expect business rates where the business uses a small part of the home, takes no visiting clients, employs nobody on site, and needed no unusual alterations. Cross those lines and the VOA can assess part of the property for business rates separately from the council tax on the rest.",
+      },
+      {
+        question: "What is a Certificate of Lawfulness and when should I get one?",
+        answer:
+          "It's a formal, written decision from the council confirming whether a use is, or would be, lawful without planning permission. A Certificate of Lawfulness of Proposed Use, for around half the standard change-of-use fee, settles the question before you start trading from the property — far cheaper and faster than resolving it after a complaint or an enforcement visit.",
+      },
+      {
+        question: "How many clients can I see from home before I need planning permission?",
+        answer:
+          "There's no fixed number. The test is whether the use causes a marked rise in traffic or callers, changes the residential character of the home, or disturbs neighbours — assessed as a question of fact and degree by the local planning authority, not against a headcount. A single weekly client is unlikely to matter; appointments scheduled every twenty minutes, every day, usually will.",
+      },
+      {
+        question: "Does converting a garage into a workshop for my trade change anything?",
+        answer:
+          "It can, on two fronts. Removing the garage's residential function and fitting it out specifically for trade use can itself need permission if it's a significant alteration, and running a visiting-client or van-based business from it brings in the same material-change-of-use test as a garden room. Check both before ordering the fit-out.",
+      },
+    ],
+    art: BLOG_ART["home-office-outbuilding-business-use-cranleigh"],
+  },
+  {
     slug: "sap-calculations-when-you-need-one",
     title: "What an SAP assessment is, and when your project actually needs one",
     category: "Insulation & energy",
@@ -2792,6 +2954,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "overheating-glazed-extension-part-o",
       "swimming-pools-hot-tubs-cranleigh-garden",
       "porches-cranleigh-permitted-development",
+      "home-office-outbuilding-business-use-cranleigh",
     ],
     body: [
       {

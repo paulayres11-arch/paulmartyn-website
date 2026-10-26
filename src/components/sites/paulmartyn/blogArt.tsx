@@ -16,6 +16,86 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "home-office-outbuilding-business-use-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="hobSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="hobGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="hobCabin" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d9c9a6" /><stop offset="1" stopColor="#b79e73" />
+          </linearGradient>
+          <linearGradient id="hobRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7378" /><stop offset="1" stopColor="#4a5257" />
+          </linearGradient>
+          <linearGradient id="hobGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="hobAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="60" fill="url(#hobSky)" />
+        <circle cx="358" cy="24" r="13" fill="#f6d98a" opacity=".85" />
+        <text x="200" y="24" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same garden room, two different questions</text>
+        <text x="200" y="42" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fill="#44535a" textAnchor="middle">The building is permitted development — the use inside it is judged separately</text>
+
+        <rect y="60" width="400" height="230" fill="url(#hobGrass)" />
+
+        {/* left cabin: ancillary home-office use */}
+        <rect x="26" y="152" width="138" height="100" fill="url(#hobCabin)" stroke="#5f4f36" strokeWidth="1.4" />
+        <path d="M18 152 L95 118 L172 152 Z" fill="url(#hobRoof)" stroke="#333b40" strokeWidth="1.2" />
+        <rect x="42" y="176" width="46" height="50" fill="url(#hobGlass)" stroke="#3f4a50" strokeWidth="1.3" />
+        {/* desk and laptop silhouette through the window */}
+        <rect x="50" y="206" width="30" height="4" fill="#5f4f36" />
+        <rect x="52" y="194" width="10" height="2.4" fill="#2f3a40" transform="rotate(-18 57 195)" />
+        <rect x="62" y="193" width="12" height="9" rx="1" fill="#2f3a40" transform="rotate(4 68 198)" />
+        <rect x="108" y="190" width="34" height="36" fill="#8f7a52" stroke="#5f4f36" strokeWidth="1.2" />
+        <circle cx="137" cy="208" r="2.2" fill="#3a2f1f" />
+        <rect x="42" y="226" width="100" height="26" fill="#8f7a52" opacity=".3" />
+
+        <rect x="14" y="258" width="176" height="24" rx="4" fill="#1f2a30" opacity=".88" />
+        <text x="102" y="273" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#9cd99c" textAnchor="middle">WORKING FROM HOME — ANCILLARY, NO APPLICATION</text>
+
+        <circle cx="178" cy="156" r="15" fill="#3f8f52" stroke="#eff4f7" strokeWidth="2" />
+        <path d="M171 156 l5 6 l10 -13" stroke="#eff4f7" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+
+        {/* right cabin: client-facing business use */}
+        <rect x="236" y="152" width="138" height="100" fill="url(#hobCabin)" stroke="#5f4f36" strokeWidth="1.4" />
+        <path d="M228 152 L305 118 L382 152 Z" fill="url(#hobRoof)" stroke="#333b40" strokeWidth="1.2" />
+        <rect x="252" y="176" width="46" height="50" fill="url(#hobGlass)" stroke="#3f4a50" strokeWidth="1.3" />
+        {/* reception counter and waiting client, through the window */}
+        <rect x="258" y="212" width="34" height="10" fill="#5f4f36" />
+        <circle cx="268" cy="196" r="6" fill="#c58462" />
+        <rect x="262" y="202" width="12" height="10" fill="#8c2a1f" opacity=".75" />
+        <circle cx="286" cy="200" r="5.2" fill="#c58462" />
+        <rect x="281" y="205" width="10" height="9" fill="#2f6f8c" opacity=".75" />
+        {/* van arriving beside the cabin */}
+        <rect x="312" y="206" width="46" height="24" rx="3" fill="#cdd3d5" stroke="#5d6568" strokeWidth="1.3" />
+        <rect x="312" y="198" width="22" height="12" rx="2" fill="#cdd3d5" stroke="#5d6568" strokeWidth="1.3" />
+        <circle cx="322" cy="232" r="5.5" fill="#2f3a40" /><circle cx="350" cy="232" r="5.5" fill="#2f3a40" />
+
+        <rect x="224" y="258" width="152" height="24" rx="4" fill="#1f2a30" opacity=".88" />
+        <text x="300" y="273" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.3" fontWeight="700" fill="#f6d98a" textAnchor="middle">CLIENTS, STAFF OR VANS — CHECK FIRST</text>
+
+        <circle cx="390" cy="156" r="15" fill="url(#hobAmber)" stroke="#eff4f7" strokeWidth="2" />
+        <text x="390" y="161" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30" textAnchor="middle">?</text>
+
+        {/* dashed divider between the two scenes */}
+        <path d="M200 100 V256" stroke="#5d6568" strokeWidth="1.3" strokeDasharray="4 3" opacity=".6" />
+
+        <rect y="290" width="400" height="110" fill="#1f2a30" />
+        <text x="24" y="316" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">The building is lawful — the question is how it&apos;s used</text>
+        <text x="24" y="339" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Class E covers a use incidental to the home; visiting clients, staff or vans can be a material change of use</text>
+        <text x="24" y="358" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">It can also tip part of the property from council tax onto business rates — the VOA judges that separately</text>
+        <text x="24" y="377" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Source: GPDO 2015 Sch.2 Pt.1 Class E; Planning Portal, working from home guidance; VOA home-based businesses guide</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "sap-calculations-when-you-need-one": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

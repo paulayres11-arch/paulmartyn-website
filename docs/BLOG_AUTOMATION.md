@@ -337,7 +337,7 @@ Cranleigh topics — work through these:
 - [done 2026-10-19] Swimming pools and hot tubs in a Cranleigh garden: planning, drainage and Weald clay
 - [done 2026-10-21] Porches in Cranleigh: the one extension that almost never needs planning permission
 - [done 2026-10-26] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
-- [ ] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
+- [done 2026-10-28] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
 - [ ] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
 - [ ] Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't
 - [ ] Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't

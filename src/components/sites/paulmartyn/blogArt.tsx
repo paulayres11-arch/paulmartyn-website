@@ -16,6 +16,75 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "balconies-roof-terraces-cranleigh-permitted-development": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="balSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="balRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7378" /><stop offset="1" stopColor="#4a5257" />
+          </linearGradient>
+          <linearGradient id="balBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="balGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="balAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#balSky)" />
+        <circle cx="358" cy="26" r="14" fill="#f6d98a" opacity=".85" />
+        <text x="200" y="26" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same wall, two different rules</text>
+        <text x="200" y="45" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fill="#44535a" textAnchor="middle">A Juliet balcony has no platform to stand on — a deck over the roof does</text>
+
+        {/* roof and rear elevation */}
+        <path d="M40 64 L200 24 L360 64 Z" fill="url(#balRoof)" stroke="#333b40" strokeWidth="1.2" />
+        <rect x="50" y="64" width="300" height="236" fill="url(#balBrick)" />
+
+        {/* left: tall glazed door reaching down to roof level, Juliet balcony */}
+        <rect x="82" y="100" width="64" height="122" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.4" />
+        <path d="M114 100 v122 M82 150 h64" stroke="#3f4a50" strokeWidth="1" opacity=".5" />
+        <rect x="82" y="208" width="64" height="6" fill="#5f4f36" stroke="#3a2f1f" strokeWidth="1" />
+        <path d="M90 196 v12 M100 196 v12 M110 196 v12 M120 196 v12 M130 196 v12 M138 196 v12" stroke="#2f3a40" strokeWidth="2" />
+        <circle cx="150" cy="118" r="13" fill="#3f8f52" stroke="#eff4f7" strokeWidth="2" />
+        <path d="M144 118 l4 5 l9 -11" stroke="#eff4f7" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="44" y="230" width="156" height="20" rx="3" fill="#1f2a30" opacity=".88" />
+        <text x="122" y="244" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#9cd99c" textAnchor="middle">JULIET — NO PLATFORM, NO PERMISSION</text>
+
+        {/* right: same door, but a real deck projects out over the flat roof */}
+        <rect x="252" y="100" width="64" height="122" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.4" />
+        <path d="M284 100 v122 M252 150 h64" stroke="#3f4a50" strokeWidth="1" opacity=".5" />
+        <rect x="236" y="182" width="96" height="26" fill="url(#balGlass)" opacity=".75" stroke="#3f4a50" strokeWidth="1.3" />
+        <path d="M236 182 v26 M256 182 v26 M276 182 v26 M296 182 v26 M316 182 v26" stroke="#3f4a50" strokeWidth="1" opacity=".6" />
+        <rect x="236" y="208" width="96" height="10" fill="#8f7a52" stroke="#5f4f36" strokeWidth="1.2" />
+        <path d="M244 218 L244 224 M324 218 L324 224" stroke="#5f4f36" strokeWidth="3" />
+        <path d="M332 222 h22" stroke="#8c2a1f" strokeWidth="1.3" strokeDasharray="3 2" />
+        <text x="356" y="225" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fill="#8c2a1f" textAnchor="middle">0.3m</text>
+        <circle cx="340" cy="118" r="13" fill="url(#balAmber)" stroke="#eff4f7" strokeWidth="2" />
+        <text x="340" y="123" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30" textAnchor="middle">!</text>
+        <rect x="206" y="230" width="188" height="20" rx="3" fill="#1f2a30" opacity=".88" />
+        <text x="300" y="244" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#f6d98a" textAnchor="middle">BALCONY OR TERRACE — PLANNING PERMISSION NEEDED</text>
+
+        {/* extension roof and glazed ground floor beneath both doors */}
+        <rect x="42" y="222" width="316" height="8" fill="url(#balRoof)" />
+        <rect x="50" y="230" width="300" height="70" fill="#8a5a42" />
+        <rect x="66" y="238" width="48" height="54" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="128" y="238" width="48" height="54" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="224" y="238" width="48" height="54" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+        <rect x="286" y="238" width="48" height="54" fill="url(#balGlass)" stroke="#3f4a50" strokeWidth="1.2" />
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">The balcony needs its own permission — the extension doesn&apos;t cover it</text>
+        <text x="24" y="349" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">A Juliet balcony has no platform, so it sits outside the rule entirely</text>
+        <text x="24" y="368" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Any platform over 0.3m always needs full planning permission, whatever its size</text>
+        <text x="24" y="387" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fill="#8fa0a8">Source: GPDO 2015 Sch.2 Pt.1 Class A; Planning Portal balconies guidance; gov.uk Planning Inspectorate appeal statistics</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "home-office-outbuilding-business-use-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

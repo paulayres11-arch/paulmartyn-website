@@ -46,6 +46,152 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "balconies-roof-terraces-cranleigh-permitted-development",
+    title: "Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap",
+    category: "Planning & surveys",
+    date: "2026-10-28",
+    seoTitle: "Balcony Or Roof Terrace In Cranleigh: The Planning Rules",
+    metaDescription:
+      "A balcony or roof terrace on a Cranleigh extension almost always needs full planning permission — even when the extension below it didn't.",
+    excerpt:
+      "An extension can go up as permitted development with no application at all — but add a balcony, Juliet balcony or roof terrace to it, and a completely separate rule applies, with no size exemption and an expensive way to find that out too late.",
+    imageAlt:
+      "Illustration of a Cranleigh house's rear elevation with two first-floor glazed doors above a single-storey flat-roofed extension: the left door has a Juliet balcony — a railing flush to the wall with a green tick labelled 'Juliet — no platform, no permission' — and the right door has a glass-balustraded deck projecting out over the flat roof, a dashed line marking the 0.3 metre raised-platform threshold and an amber warning badge labelled 'balcony or terrace — planning permission needed'.",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "cranleigh-conservation-area-consent",
+      "porches-cranleigh-permitted-development",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Under **Class A** of the Town and Country Planning (General Permitted Development) (England) Order 2015, **\"the construction or provision of a veranda, balcony or raised platform\"** is specifically excluded from permitted development — there's no size threshold that brings it back in, so a single balcony the width of one window needs the same full application as an eight-metre terrace.",
+          "A **raised platform** is anything over **0.3 metres** (roughly a foot) above the ground immediately below it. A true **Juliet balcony** — a rail or glazed balustrade across a door opening with no floor to step out onto — has no platform at all, so it generally sits outside the rule entirely.",
+          "The classic trap: a single-storey rear extension with a **flat roof** can go up as permitted development, but deciding afterwards to use that roof as a **terrace** is separate development in its own right, and needs its own full planning permission whatever the extension below it needed.",
+          "**Overlooking** a neighbour's garden or windows is the most common reason a balcony or terrace runs into trouble with Waverley Borough Council — a design with privacy screening built in from the start goes through with far less back-and-forth than one that arrives as an afterthought.",
+          "Submitting a screened design from the outset costs one **£548** planning fee and an **eight-week** wait. Building first and being asked to regularise it risks a second fee, a possible refusal, and a written representations appeal running to a median of around **12 weeks** on top.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes after the glass has been measured. A single-storey rear extension has gone up in Cranleigh exactly as planned — permitted development, no application, no drama — and now there's a flat roof outside the bedroom above it, just asking to become a terrace. A frameless glass balustrade gets quoted, a door gets ordered to open onto it, and then someone mentions the word \"planning\" and the whole thing stops.",
+      },
+      {
+        type: "p",
+        text: "It catches people because the extension below and the balcony above look like one project, and under the rules they are not. One sits inside Class A of the General Permitted Development Order and usually needs no application at all. The other is specifically carved out of that same right, whatever size it is, and needs full planning permission from Waverley Borough Council before a single baluster goes up.",
+      },
+      {
+        type: "p",
+        text: "This is about where that line actually falls — a true Juliet balcony on one side of it, a roof terrace or a stepped-out balcony on the other — and what getting it right costs in money and weeks, rather than finding out from an enforcement letter after the glass is already fitted.",
+      },
+      { type: "h2", text: "Why does a balcony always need planning permission, whatever the size?" },
+      {
+        type: "p",
+        text: "Permitted development for a house extension comes from Class A of the Town and Country Planning (General Permitted Development) (England) Order 2015. It's what lets most single-storey rear extensions, and many two-storey ones, go up without an application — but the Order itself specifically excludes \"the construction or provision of a veranda, balcony or raised platform\" from that right. There's no size threshold that brings a balcony back inside permitted development, the way there is for a porch or a garden room: a small wrought-iron balcony the width of one window needs exactly the same full application as a wide roof terrace.",
+      },
+      {
+        type: "p",
+        text: "The Order also defines what counts as a **raised platform**: anything over **0.3 metres** — roughly a foot — above the ground immediately below it, measured from the highest point of that ground. Decking, a step-out platform, a terrace built up on the flat roof of an extension — all of it is caught the moment it rises above that height, whether or not it has a rail around it.",
+      },
+      { type: "h2", text: "So what's actually different about a Juliet balcony?" },
+      {
+        type: "p",
+        text: "A Juliet balcony is a safety rail or glazed balustrade fixed across a door opening, with no floor projecting beyond the wall to step out onto — you open the doors, you get the view and the air, you don't go anywhere. Because there's no platform, it falls outside the Class A exclusion and is generally treated, in Planning Portal's own guidance, as part of the window or door opening rather than a balcony in its own right — usually no planning permission needed for the rail itself.",
+      },
+      {
+        type: "p",
+        text: "The trap is how easily that tips over. A Juliet balcony with even a shallow run of decking in front of it — enough to stand on, rather than just lean over — stops being a Juliet balcony and becomes a raised platform, caught by exactly the same rule as a full-width terrace. There's no halfway category: the test is whether there's a floor to stand on outside the building line, not how wide it is.",
+      },
+      { type: "h2", text: "The flat-roof trap: when the extension below is permitted development and the terrace above isn't" },
+      {
+        type: "p",
+        text: "This is the one that catches most Cranleigh extensions, because it's two different pieces of development stacked on the same structure. A single-storey rear extension with a flat roof can tick every box in Class A — height, depth, materials — and go up with no application at all. Deciding afterwards to use that flat roof as a terrace for the room above is a second, separate piece of development, assessed entirely on its own merits, and it needs planning permission regardless of how uncontroversial the extension below it was.",
+      },
+      {
+        type: "p",
+        text: "It isn't just a paperwork formality, either. Once there's an application on the table, Waverley will look at the terrace as a new, elevated outdoor space in its own right — what it overlooks, how it's screened, and whether a boundary wall or trellis needs adding as a condition of approval. None of that gets asked, or answered, by the extension's own permitted development rights.",
+      },
+      { type: "h2", text: "Will a balcony or terrace be refused because of overlooking?" },
+      {
+        type: "p",
+        text: "Overlooking a neighbour's garden or windows is the single most common reason a balcony or roof terrace application runs into trouble, in Cranleigh or anywhere else. An elevated platform sees over fences and hedges that would otherwise block a ground-floor view entirely, so it's judged on the loss of privacy it causes, not just its size or position. A design that builds in privacy screening from the start — an angled or obscure-glazed side panel, or a raised balustrade that limits the sightline rather than a full glass balustrade — goes through with far less back-and-forth than one that arrives as an afterthought and gets a screening condition bolted on at decision stage.",
+      },
+      { type: "h2", text: "What about a balcony in the Cranleigh Conservation Area, or on a listed cottage?" },
+      {
+        type: "p",
+        text: "Cranleigh's conservation area covers the High Street, designated in October 1973 and extended twice since, and a balcony or terrace visible from the street or a public viewpoint gets an extra layer of design scrutiny there on top of the ordinary overlooking test — a contemporary glass balustrade bolted to a timber-framed or brick cottage front is a much harder design conversation than the same thing at the back of a 1930s semi well away from the conservation area boundary.",
+      },
+      {
+        type: "p",
+        text: "On one of the parish's roughly 81 listed buildings, it's a different regime again. Listed Building Consent is required for anything affecting a listed building's character, inside or outside the conservation area, and a balcony fixed to a listed elevation needs that consent in addition to, not instead of, planning permission for the structure itself — altering a listed building without it is a criminal offence, not just a planning breach.",
+      },
+      { type: "h2", text: "What does doing it properly cost, and how long does it take?" },
+      {
+        type: "table",
+        caption: "Guide figures for England from 1 April 2026 — confirm the current fee and timescale with Waverley Borough Council before applying.",
+        head: ["Route", "Typical cost", "What it settles"],
+        rows: [
+          ["Full householder planning permission (balcony, terrace or raised platform)", "£548, rising to roughly £575 from 8 December 2026", "The only route for any balcony, veranda or raised platform over 0.3m — no size exemption applies"],
+          ["Listed Building Consent (listed property only)", "No fee", "Required alongside planning permission for any balcony fixed to a listed building's elevation"],
+          ["Standard decision timescale", "Up to 8 weeks from a valid application", "Waverley's statutory target for a householder decision"],
+          ["Appeal against refusal (written representations)", "No fee, but a median of around 12 weeks to a decision (Dec 2025 Planning Inspectorate figures)", "Only worth pursuing where the scheme can genuinely address the original reason for refusal"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Those figures make the order of operations fairly obvious: a privacy-screened design submitted as a full application from the outset costs the same £548 fee as a bare glass balustrade that gets refused and has to be redesigned and resubmitted — the difference is doing it once.",
+      },
+      {
+        type: "quote",
+        text: "I've fitted plenty of glass balustrades onto flat roofs in Cranleigh that went through planning without a murmur, because the screening was on the drawing from day one. The ones that cause grief are always the same shape: the extension's finished, the client's fallen in love with the idea of standing out there with a coffee, and nobody's asked Waverley yet. **A balcony is the cheapest thing on the job to design properly, and the most expensive thing to argue about after it's built.**",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Submitting a balcony or terrace as part of the original extension application, with privacy screening designed in, costs one **£548** planning fee and roughly an **eight-week** wait. Building it first and being asked by Waverley to regularise it afterwards risks a second decision cycle, a possible refusal, and — if it comes to that — a written representations appeal running to a median of around **12 weeks** on top, with no guarantee of a different answer at the end of it.",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to leave a flat roof unused — most Cranleigh roof terraces go through without objection once the overlooking question is answered on the drawing rather than at the enforcement stage. It's worth raising at the same time as the extension design with [builders in Cranleigh](/areas/cranleigh), so the terrace is costed, screened and applied for alongside the room below it, not added as an afterthought once the scaffolding's already down.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a Juliet balcony in Cranleigh?",
+        answer:
+          "Not usually. A Juliet balcony is a safety rail or glazed balustrade across a door opening with no floor to step out onto, and because there's no platform it falls outside the General Permitted Development Order's balcony exclusion. The moment any decking or platform is added in front of it — enough to stand on rather than just lean against — it becomes a raised platform and needs full planning permission like any other balcony.",
+      },
+      {
+        question: "Can I turn the flat roof of my extension into a terrace without planning permission?",
+        answer:
+          "No. Even where the extension itself was built entirely as permitted development, using its flat roof as a terrace is separate development and is specifically excluded from permitted development rights under Class A of the GPDO. It needs its own full planning application to Waverley Borough Council, whatever the extension below it needed.",
+      },
+      {
+        question: "What counts as a raised platform under permitted development rules?",
+        answer:
+          "Any platform, deck or terrace higher than 0.3 metres — roughly a foot — above the ground immediately below it, measured from the highest point of that ground. Anything at or under that height generally isn't caught by the exclusion; anything above it needs planning permission regardless of size, position, or whether it has a balustrade around it.",
+      },
+      {
+        question: "Will a balcony be refused because it overlooks my neighbour's garden?",
+        answer:
+          "It can be. Loss of privacy from an elevated viewpoint is the most common reason a balcony or terrace application runs into objections, because it sees over boundaries that would otherwise block a ground-floor view. Designing in privacy screening — an angled or obscure-glazed side panel, or a balustrade that limits the sightline — from the start of the application usually avoids a refusal or a screening condition added later.",
+      },
+      {
+        question: "Does a balcony on a listed Cranleigh cottage need separate consent?",
+        answer:
+          "Yes. Listed Building Consent is required for any work affecting the character of one of the parish's roughly 81 listed buildings, inside or outside the conservation area, and it's needed in addition to planning permission for the balcony itself. Carrying out the work without it is a criminal offence, not simply a planning breach.",
+      },
+      {
+        question: "How much does planning permission for a balcony or terrace cost, and how long does it take?",
+        answer:
+          "The standard householder planning fee applies — £548, rising to roughly £575 from 8 December 2026 — with a statutory target of up to eight weeks for a decision. There's no separate, cheaper route for a balcony specifically, because the GPDO gives it no size-based exemption at all.",
+      },
+    ],
+    art: BLOG_ART["balconies-roof-terraces-cranleigh-permitted-development"],
+  },
+  {
     slug: "home-office-outbuilding-business-use-cranleigh",
     title: "Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use",
     category: "Planning & surveys",
@@ -395,6 +541,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "garden-rooms-cranleigh-permitted-development",
       "cranleigh-conservation-area-consent",
       "re-roofing-cranleigh-cottage-conservation-area",
+      "balconies-roof-terraces-cranleigh-permitted-development",
     ],
     body: [
       {

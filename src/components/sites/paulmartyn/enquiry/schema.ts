@@ -380,6 +380,18 @@ export function validate(keys: FieldKey[], a: EnquiryAnswers): Errors {
 
 /* --------------------------------------------------------------------- rules */
 
+/**
+ * The kitchen exception (spec change, 29 Oct 2026): an "Under £50k" budget is
+ * declined unless Kitchen is ticked in `rooms`, in which case the budget is
+ * ignored and the remaining rules apply as normal.
+ */
+export function kitchenException(a: EnquiryAnswers): boolean {
+  return a.budget === "Under £50k" && a.rooms.includes("Kitchen");
+}
+
+export const KITCHEN_EXCEPTION_NOTE =
+  "Note: Budget under £50k – kitchen project, accepted under the kitchen exception.";
+
 export type EnquiryStatus =
   | "DECLINED – NO PARKING"
   | "DECLINED – UNDER £50K"
@@ -397,7 +409,8 @@ export function statusFor(
 ): EnquiryStatus | null {
   if (a.offroad_parking === "No") return "DECLINED – NO PARKING";
   if (afterStep === 1) return null;
-  if (a.budget === "Under £50k") return "DECLINED – UNDER £50K";
+  if (a.budget === "Under £50k" && !kitchenException(a))
+    return "DECLINED – UNDER £50K";
   if (a.start_ideal === "12 months +") return "HOLD – 12 MONTHS+";
   if (a.drawings === "No") return "NO PLANS";
   return "BOOKING";
@@ -537,8 +550,16 @@ function emailSections(a: EnquiryAnswers, meta: EnquiryMeta) {
   return sections;
 }
 
+/** Shown above the answers, so Sarah and Paul spot it before anything else. */
+function emailNote(a: EnquiryAnswers, meta: EnquiryMeta): string | null {
+  return meta.status !== "DECLINED – NO PARKING" && kitchenException(a)
+    ? KITCHEN_EXCEPTION_NOTE
+    : null;
+}
+
 export function emailText(a: EnquiryAnswers, meta: EnquiryMeta): string {
-  return emailSections(a, meta)
+  const note = emailNote(a, meta);
+  return (note ? `${note}\n\n` : "") + emailSections(a, meta)
     .map(
       ({ title, lines }) =>
         `${title.toUpperCase()}\n${lines.map(([l, v]) => `${l}: ${v}`).join("\n")}`,
@@ -555,7 +576,11 @@ const escapeHtml = (s: string) =>
     .replace(/\n/g, "<br>");
 
 export function emailHtml(a: EnquiryAnswers, meta: EnquiryMeta): string {
-  const body = emailSections(a, meta)
+  const note = emailNote(a, meta);
+  const head = note
+    ? `<p style="margin:0 0 12px;padding:8px 10px;background:#D8E7E7;"><strong>${escapeHtml(note)}</strong></p>`
+    : "";
+  const body = head + emailSections(a, meta)
     .map(
       ({ title, lines }) =>
         `<h3 style="margin:20px 0 6px;font-size:15px;color:#5E9790;">${escapeHtml(title)}</h3>` +

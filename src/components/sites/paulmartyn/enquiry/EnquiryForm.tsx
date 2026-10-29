@@ -9,7 +9,8 @@ import {
   BUDGETS,
   DRAWINGS,
   EMPTY_ANSWERS,
-  ENQUIRY_RECIPIENTS,
+  ENQUIRY_CC,
+  ENQUIRY_TO,
   FOUND_US,
   HOUSE_TYPES,
   LABELS,
@@ -521,8 +522,7 @@ function SendFailed({
     source_page: window.location.origin + window.location.pathname,
     utm: {},
   });
-  const [to, ...cc] = ENQUIRY_RECIPIENTS;
-  const href = `mailto:${to}?cc=${cc.join(",")}&subject=${encodeURIComponent(
+  const href = `mailto:${ENQUIRY_TO}?cc=${ENQUIRY_CC}&subject=${encodeURIComponent(
     emailSubject(answers, status),
   )}&body=${encodeURIComponent(body)}`;
 

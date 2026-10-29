@@ -13,11 +13,12 @@
 
 export const PLANS_EMAIL = "sarah@paulmartynconstruction.com";
 
-/** Who gets the hand-off email. Overridable with ENQUIRY_TO on the server. */
-export const ENQUIRY_RECIPIENTS = [
-  "paul@paulmartynconstruction.com",
-  PLANS_EMAIL,
-];
+/**
+ * Who gets the hand-off email: Sarah, with Paul in copy (Paul, 29 Oct 2026).
+ * Overridable on the server with ENQUIRY_TO / ENQUIRY_CC.
+ */
+export const ENQUIRY_TO = PLANS_EMAIL;
+export const ENQUIRY_CC = "paul@paulmartynconstruction.com";
 
 export const YES_NO = ["Yes", "No"] as const;
 

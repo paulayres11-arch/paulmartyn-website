@@ -1,7 +1,8 @@
 import nodemailer from "nodemailer";
 import {
   EMPTY_ANSWERS,
-  ENQUIRY_RECIPIENTS,
+  ENQUIRY_CC,
+  ENQUIRY_TO,
   STEP_1_FIELDS,
   STEP_2_FIELDS,
   emailHtml,
@@ -22,7 +23,8 @@ import {
  *
  *   GMAIL_USER          the Workspace address it sends as (paul@...)
  *   GMAIL_APP_PASSWORD  a Google app password for that account
- *   ENQUIRY_TO          optional, comma-separated; defaults to Paul + Sarah
+ *   ENQUIRY_TO          optional, comma-separated; defaults to Sarah
+ *   ENQUIRY_CC          optional, comma-separated; defaults to Paul
  *   ENQUIRY_DRY_RUN=1   local testing: log the email instead of sending it
  *
  * Without the credentials this answers 503, and the form offers the client
@@ -143,13 +145,17 @@ export async function POST(req: Request) {
     utm: sanitiseUtm(body.utm),
   };
 
-  const to = (process.env.ENQUIRY_TO ?? ENQUIRY_RECIPIENTS.join(","))
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean);
+  const list = (v: string) =>
+    v
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+  const to = list(process.env.ENQUIRY_TO ?? ENQUIRY_TO);
+  const cc = list(process.env.ENQUIRY_CC ?? ENQUIRY_CC);
   const message = {
     from: `"Paul Martyn Construction website" <${process.env.GMAIL_USER ?? "website@localhost"}>`,
     to,
+    cc,
     replyTo: answers.email.trim(),
     subject: emailSubject(answers, status),
     text: emailText(answers, meta),

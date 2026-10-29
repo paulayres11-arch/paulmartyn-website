@@ -111,7 +111,8 @@ export function yearsTrading(now = new Date()): number | null {
  *
  * TODO(paul): set this once the schedule exists in Google Calendar —
  *   Tuesdays and Thursdays only (hours TO CONFIRM), 30 min calls (TO
- *   CONFIRM), minimum notice 5 working days, location "WhatsApp call: Paul
+ *   CONFIRM), minimum notice 24 hours (spec v1 as re-issued 29 Oct 2026;
+ *   was 5 working days), location "WhatsApp call: Paul
  *   will call you on the mobile number you gave us." Paste the schedule's
  *   public booking link, e.g.
  *   "https://calendar.google.com/calendar/appointments/schedules/AcZssZ...".

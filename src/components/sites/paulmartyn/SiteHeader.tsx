@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { CONTACT, NAV } from "./content";
-import { QuoteDialog } from "./QuoteDialog";
+import { QuoteLink } from "./QuoteLink";
 import { Logo } from "./shared/Logo";
 
 /**
@@ -157,7 +157,7 @@ export function SiteHeader({ variant = "overlay" }: SiteHeaderProps) {
           ))}
         </nav>
 
-        <QuoteDialog
+        <QuoteLink
           className={cn(
             "ml-auto hidden items-center justify-center bg-pm-gold text-center text-[21.5px] font-bold text-white transition-[box-shadow] duration-[400ms] ease-out lg:flex",
             "hover:shadow-[inset_0_0_0_100px_#265457]",
@@ -266,7 +266,7 @@ export function SiteHeader({ variant = "overlay" }: SiteHeaderProps) {
             );
           })}
 
-          <QuoteDialog
+          <QuoteLink
             className="mt-8 flex h-[58px] w-full items-center justify-center bg-pm-gold text-center text-[17px] font-bold text-white"
             onOpen={() => setMobileOpen(false)}
           />

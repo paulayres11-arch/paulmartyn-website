@@ -347,7 +347,7 @@ export default function CranleighPage() {
             <Body>
               Call {CONTACT.phone}, or{" "}
               <Link
-                href="/contact"
+                href="/get-in-touch"
                 className="text-pm-ink underline underline-offset-4"
               >
                 send us the details of your project

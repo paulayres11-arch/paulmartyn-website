@@ -117,7 +117,7 @@ export const NAV: NavItem[] = [
      Paul's request. It stays in FOOTER_PAGES, so the blog is still linked from
      every page on the site and loses no crawlability — only its place in the
      header. Do not remove it there as well. */
-  { label: "Contact", path: "/contact" },
+  { label: "Contact", path: "/get-in-touch" },
 ];
 
 export const HERO = {
@@ -125,7 +125,7 @@ export const HERO = {
   subheading:
     "A family-run construction company delivering residential renovations, new builds and listed building work — managed properly, priced transparently, finished to last.",
   primaryCta: { label: "View our services", path: "/services" },
-  secondaryCta: { label: "Get in touch", path: "/contact" },
+  secondaryCta: { label: "Get in touch", path: "/get-in-touch" },
   /**
    * One photograph, shown full-bleed ABOVE the copy — not behind it.
    *
@@ -662,7 +662,7 @@ export const BEFORE_WE_MEET = {
 export const CONTACT_CTA = {
   heading: "Ready to talk about your project?",
   body: "Whether it's a first conversation about an idea or a full set of drawings ready to price, we'd like to hear from you.",
-  button: { label: "Get a quote", path: "/contact" },
+  button: { label: "Get a quote", path: "/get-in-touch" },
   /**
    * Paul Martyn's own staircase — replaced a stock hallway photograph.
    *
@@ -693,7 +693,7 @@ export const FOOTER_PAGES: NavChild[] = [
   { label: "Our Process", path: "/process" },
   { label: "Testimonials", path: "/#reviews" },
   { label: "Advice & news", path: "/blog" },
-  { label: "Contact", path: "/contact" },
+  { label: "Contact", path: "/get-in-touch" },
 ];
 
 /**

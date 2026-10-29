@@ -90,7 +90,7 @@ export function ServiceDetail({
             </p>
 
             <a
-              href="/contact"
+              href="/get-in-touch"
               className="mt-[42px] inline-flex h-[58px] w-[196px] items-center justify-center bg-pm-teal text-[15px] font-light text-white transition-colors hover:bg-pm-gold"
             >
               Discuss your project

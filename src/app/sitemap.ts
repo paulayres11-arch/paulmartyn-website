@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        town alone. */
     if (route === "/services/house-extensions-cranleigh") return 0.9;
     if (route === "/services/loft-conversions") return 0.8;
-    if (route === "/services" || route === "/contact") return 0.8;
+    if (route === "/services" || route === "/get-in-touch") return 0.8;
     return 0.7;
   };
 

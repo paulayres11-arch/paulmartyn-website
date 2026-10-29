@@ -312,3 +312,173 @@
     opacity: 1;
   }
 }
+/* --- Get in touch enquiry form (/get-in-touch) --------------------------
+   Soft sage-teal palette, Paul's choice for this form (spec §6, 29 Oct 2026).
+   Every colour is a variable here, so switching palette is a one-place edit.
+   Deliberately NOT the site's --color-pm-* tokens: those are the deep teal
+   and gold of the rest of the site.
+
+   Radii are set in this block rather than with Tailwind `rounded-*`: the
+   `.pm-site *` rule above zeroes every radius and, being unlayered, beats
+   any utility. These selectors out-specify it. */
+.pm-enquiry {
+  --pm-teal: #72b0a8; /* primary: buttons, top band, active step, selected radios/checkboxes */
+  --pm-teal-dark: #5e9790; /* button hover/focus, links */
+  --pm-teal-text: #699b95; /* main heading, section titles, field labels */
+  --pm-teal-light: #d8e7e7; /* progress line, completed-step fill, light highlights */
+  --pm-text: #616b5d; /* body and intro text */
+  --pm-panel: #fafafa; /* section panel background */
+  --pm-border: #cfd6c8; /* panel and input borders */
+  --pm-page: #ffffff; /* page background */
+  --pm-error: #b54a3c; /* error text and error borders */
+  background: var(--pm-page);
+  color: var(--pm-text);
+}
+
+.pm-enquiry-band {
+  position: relative;
+  height: 12px;
+  background: var(--pm-teal);
+}
+.pm-enquiry-band::after {
+  content: "";
+  position: absolute;
+  inset: 5px 0 auto;
+  height: 1px;
+  background: #fff;
+}
+
+.pm-site .pm-enquiry .pm-enquiry-heading {
+  font-family: var(--font-pm-serif), Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--pm-teal-text);
+}
+
+.pm-site .pm-enquiry .pm-eq-panel {
+  background: var(--pm-panel);
+  border: 1px solid var(--pm-border);
+  border-radius: 6px;
+}
+
+.pm-site .pm-enquiry .pm-eq-input {
+  width: 100%;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid var(--pm-border);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 16px; /* 16px stops iOS Safari zooming on focus */
+  color: #2b2f2a;
+}
+.pm-site .pm-enquiry textarea.pm-eq-input {
+  min-height: 110px;
+  line-height: 1.45;
+}
+.pm-site .pm-enquiry .pm-eq-input:focus-visible,
+.pm-site .pm-enquiry .pm-eq-choice:has(input:focus-visible),
+.pm-site .pm-enquiry .pm-eq-btn:focus-visible,
+.pm-site .pm-enquiry .pm-eq-btn-outline:focus-visible {
+  outline: 2px solid var(--pm-teal);
+  outline-offset: 1px;
+}
+.pm-site .pm-enquiry .pm-eq-input[aria-invalid="true"] {
+  border-color: var(--pm-error);
+}
+
+/* Radio and checkbox answers as bordered, thumb-sized boxes. */
+.pm-site .pm-enquiry .pm-eq-choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid var(--pm-border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #2b2f2a;
+}
+.pm-site .pm-enquiry .pm-eq-choice:has(input:checked) {
+  border-color: var(--pm-teal);
+  background: #f3f8f7;
+}
+.pm-site .pm-enquiry .pm-eq-choice:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.pm-site .pm-enquiry .pm-eq-choice input {
+  accent-color: var(--pm-teal);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.pm-site .pm-enquiry .pm-eq-group[aria-invalid="true"] .pm-eq-choice {
+  border-color: var(--pm-error);
+}
+
+.pm-site .pm-enquiry .pm-eq-btn {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  background: var(--pm-teal);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.pm-site .pm-enquiry .pm-eq-btn:hover,
+.pm-site .pm-enquiry .pm-eq-btn:focus-visible {
+  background: var(--pm-teal-dark);
+}
+.pm-site .pm-enquiry .pm-eq-btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+.pm-site .pm-enquiry .pm-eq-btn-outline {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--pm-teal);
+  color: var(--pm-teal-dark);
+  background: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Progress: three numbered circles on a line. */
+.pm-site .pm-enquiry .pm-eq-step {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--pm-teal);
+  background: #fff;
+  color: var(--pm-teal-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+.pm-site .pm-enquiry .pm-eq-step[data-state="active"] {
+  background: var(--pm-teal);
+  color: #fff;
+}
+.pm-site .pm-enquiry .pm-eq-step[data-state="done"] {
+  background: var(--pm-teal-light);
+  border-color: var(--pm-teal-light);
+}
+
+.pm-site .pm-enquiry .pm-eq-photo {
+  border-radius: 4px;
+}
+.pm-site .pm-enquiry .pm-eq-frame {
+  border: 1px solid var(--pm-border);
+  border-radius: 6px;
+}

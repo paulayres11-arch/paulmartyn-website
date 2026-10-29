@@ -14,7 +14,7 @@ import type { NextConfig } from "next";
 const OLD_SITE_REDIRECTS = [
   // Real pages with a direct equivalent.
   { source: "/about", destination: "/about-us", permanent: true },
-  { source: "/contact-us", destination: "/contact", permanent: true },
+  { source: "/contact-us", destination: "/get-in-touch", permanent: true },
 
   // Squarespace served the homepage at /home as well as /, and
   // /paumartynconstruction (sic — the typo is theirs) was a duplicate of it.
@@ -51,8 +51,16 @@ const OLD_SITE_REDIRECTS = [
     permanent: true,
   },
 
+  /**
+   * /contact was this site's own contact page until 29 Oct 2026, when the
+   * three-step enquiry form replaced it at /get-in-touch (the address Sarah's
+   * email button links to). Every redirect that used to land on /contact
+   * points straight at /get-in-touch, so none of them chains.
+   */
+  { source: "/contact", destination: "/get-in-touch", permanent: true },
+
   // Contact details lived here on the old site.
-  { source: "/location", destination: "/contact", permanent: true },
+  { source: "/location", destination: "/get-in-touch", permanent: true },
 
   /**
    * Added 2026-08-17, after a live Google search showed the old Squarespace
@@ -95,7 +103,7 @@ const OLD_SITE_REDIRECTS = [
    * template page with an obvious live equivalent: whoever lands on a
    * "contact" URL wants the contact page. The rest stay 404.
    */
-  { source: "/contact-artesia", destination: "/contact", permanent: true },
+  { source: "/contact-artesia", destination: "/get-in-touch", permanent: true },
 
   /**
    * Deliberately NOT redirected, and left to 404:

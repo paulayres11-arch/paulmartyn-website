@@ -412,7 +412,7 @@ export default function HouseExtensionCostsPage() {
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
-                href="/contact"
+                href="/get-in-touch"
                 className="inline-flex items-center bg-pm-gold px-8 py-4 text-[15px] font-medium text-pm-ink transition-colors hover:bg-pm-gold-alt"
               >
                 Book a planning call

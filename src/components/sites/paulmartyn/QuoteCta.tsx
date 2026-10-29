@@ -1,5 +1,5 @@
 import { CONTACT_CTA } from "./content";
-import { QuoteDialog } from "./QuoteDialog";
+import { QuoteLink } from "./QuoteLink";
 
 /**
  * Contact CTA — occupies the target's .cta band (445px).
@@ -22,7 +22,7 @@ export function QuoteCta() {
           {CONTACT_CTA.body}
         </p>
 
-        <QuoteDialog
+        <QuoteLink
           label={CONTACT_CTA.button.label}
           className="mt-[36px] flex h-[68px] w-[294px] items-center justify-center bg-[rgba(38,84,87,0.85)] text-[17px] font-normal text-white transition-colors hover:bg-[rgba(52,104,107,0.92)]"
         />

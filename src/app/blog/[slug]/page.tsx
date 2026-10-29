@@ -185,7 +185,7 @@ export default async function BlogPostPage({
                 </p>
                 <div className="mt-7 flex flex-wrap gap-4">
                   <Link
-                    href="/contact"
+                    href="/get-in-touch"
                     className="inline-flex h-[52px] items-center bg-pm-teal px-6 text-[15px] font-normal text-white transition-colors hover:bg-pm-gold"
                   >
                     Get a quote

@@ -71,7 +71,7 @@ export const ROUTES = [
   "/guides/house-extension-costs-surrey",
   "/areas/cranleigh",
   "/blog",
-  "/contact",
+  "/get-in-touch",
 ] as const;
 
 /**
@@ -103,3 +103,18 @@ export const REGISTERED_OFFICE: string | null = null;
 export function yearsTrading(now = new Date()): number | null {
   return FOUNDING_YEAR ? now.getFullYear() - FOUNDING_YEAR : null;
 }
+
+/**
+ * Paul's Google Calendar appointment-schedule booking page, embedded on
+ * step 3 of /get-in-touch and linked from Sarah's "Book your call" email
+ * button.
+ *
+ * TODO(paul): set this once the schedule exists in Google Calendar —
+ *   Tuesdays and Thursdays only (hours TO CONFIRM), 30 min calls (TO
+ *   CONFIRM), minimum notice 5 working days, location "WhatsApp call: Paul
+ *   will call you on the mobile number you gave us." Paste the schedule's
+ *   public booking link, e.g.
+ *   "https://calendar.google.com/calendar/appointments/schedules/AcZssZ...".
+ * While null, step 3 tells the client we will email them to arrange a time.
+ */
+export const BOOKING_URL: string | null = null;

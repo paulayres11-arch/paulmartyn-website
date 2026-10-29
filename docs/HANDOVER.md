@@ -112,7 +112,7 @@ src/app/guides/house-extension-costs-surrey/      /guides/…      ← strongest
 src/app/areas/cranleigh/page.tsx                  /areas/cranleigh  ← the money page
 src/app/blog/page.tsx                             /blog          (index)
 src/app/blog/[slug]/page.tsx                      /blog/…        (every post)
-src/app/contact/page.tsx                          /contact
+src/app/get-in-touch/page.tsx                     /get-in-touch  (enquiry form; /contact 308s here)
 ```
 
 Some service-page titles read from `SERVICES` in `content.ts` via

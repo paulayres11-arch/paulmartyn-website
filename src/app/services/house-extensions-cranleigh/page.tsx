@@ -408,7 +408,7 @@ export default function HouseExtensionsCranleighPage() {
                 {CONTACT.mobile}
               </a>
               , or{" "}
-              <InlineLink href="/contact">
+              <InlineLink href="/get-in-touch">
                 send us the details of your project
               </InlineLink>
               . If the house is listed or sits in the conservation area, say so —

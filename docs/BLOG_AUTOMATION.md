@@ -422,7 +422,7 @@ For every LOCAL post:
 Towns to work through: **there is only one — Cranleigh.** See §5. Vary the
 service and the angle, never the town.
 
-Every post links to `/contact` (the card renders this automatically).
+Every post links to `/get-in-touch`, the enquiry form (the post page renders this automatically). Link to `/get-in-touch` in body copy too — `/contact` now only redirects there.
 
 ## 7. Guardrails
 

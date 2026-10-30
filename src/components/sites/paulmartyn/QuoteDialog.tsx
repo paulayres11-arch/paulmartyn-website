@@ -155,11 +155,12 @@ export function QuoteDialog({
               Send enquiry
             </button>
 
-            <p className="mt-3 text-center text-[14px] font-medium leading-[19px]">
-              <a href="/get-in-touch" className="text-pm-teal underline underline-offset-2 hover:text-pm-gold">
-                Got plans? Start your full enquiry &rarr;
-              </a>
-            </p>
+            <a
+              href="/get-in-touch"
+              className="mt-3 flex min-h-[50px] w-full items-center justify-center border-2 border-pm-teal bg-white px-1.5 text-center text-[16.5px] font-bold text-pm-teal transition-colors hover:bg-pm-teal hover:text-white"
+            >
+              Got plans? Start your full enquiry&nbsp;&rarr;
+            </a>
 
             <p className="mt-3 text-center text-[13.5px] font-normal leading-[19px] text-pm-slate">
               Or call{" "}

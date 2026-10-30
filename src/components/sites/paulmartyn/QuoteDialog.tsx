@@ -12,10 +12,12 @@ import { CONTACT } from "./content";
  * trapping, Escape-to-close, inertness of the page behind, and focus return
  * for free — all of which would otherwise need hand-rolling.
  *
- * Submission uses the same structured mailto: as the contact page form, so no
- * enquiry is silently lost while there's no mail service configured. See
- * ContactForm.tsx for the upgrade path to a server route.
+ * Submission is a structured mailto: To Sarah, CC Paul (brief, 30 Oct 2026),
+ * so no enquiry is silently lost while there's no mail service configured.
+ * Clients with plans are pointed at the full enquiry form at /get-in-touch.
  */
+const QUOTE_TO = "sarah@paulmartynconstruction.com";
+const QUOTE_CC = "paul@paulmartynconstruction.com";
 interface QuoteDialogProps {
   /** Classes for the trigger button, so the header keeps its own sizing. */
   className?: string;
@@ -74,7 +76,7 @@ export function QuoteDialog({
       .join("\n");
 
     openMail(
-      `${CONTACT.emailHref}?subject=${encodeURIComponent(
+      `mailto:${QUOTE_TO}?cc=${QUOTE_CC}&subject=${encodeURIComponent(
         `Quote request — ${fields.name || "website"}`,
       )}&body=${encodeURIComponent(body)}`,
     );
@@ -153,6 +155,12 @@ export function QuoteDialog({
               Send enquiry
             </button>
 
+            <p className="mt-3 text-center text-[14px] font-medium leading-[19px]">
+              <a href="/get-in-touch" className="text-pm-teal underline underline-offset-2 hover:text-pm-gold">
+                Got plans? Start your full enquiry &rarr;
+              </a>
+            </p>
+
             <p className="mt-3 text-center text-[13.5px] font-normal leading-[19px] text-pm-slate">
               Or call{" "}
               <a href={CONTACT.phoneHref} className="text-pm-ink hover:text-pm-gold">
@@ -168,8 +176,8 @@ export function QuoteDialog({
               <p role="status" className="mt-4 border-l-4 border-pm-gold bg-pm-cream px-4 py-3 text-[14px]">
                 Your email app should have opened with the details filled in. If
                 not, email{" "}
-                <a href={CONTACT.emailHref} className="font-medium underline">
-                  {CONTACT.email}
+                <a href={`mailto:${QUOTE_TO}`} className="font-medium underline">
+                  {QUOTE_TO}
                 </a>
                 .
               </p>

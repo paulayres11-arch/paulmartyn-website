@@ -110,6 +110,9 @@ const OLD_SITE_REDIRECTS = [
    */
 ];
 
+/** The standalone enquiry form app (Railway project "paulmartyn-enquiry"). */
+const ENQUIRY_APP_URL = "https://paulmartyn-enquiry-production.up.railway.app";
+
 const nextConfig: NextConfig = {
   output: "standalone",
 
@@ -130,6 +133,20 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       ...OLD_SITE_REDIRECTS,
+
+      /**
+       * The enquiry form is its own Railway app, "paulmartyn-enquiry"
+       * (brief, 30 Oct 2026). Sarah's email button and the "Got plans?"
+       * link point at /get-in-touch here, so this address must keep working.
+       * Temporary (307), so the form can move without browsers caching the
+       * old target. Next keeps the query string, so Sarah's prefilled links
+       * (?name=&email=&mobile=&ref=) arrive intact.
+       */
+      {
+        source: "/get-in-touch",
+        destination: `${ENQUIRY_APP_URL}/get-in-touch`,
+        permanent: false,
+      },
     ];
   },
 };

@@ -16,6 +16,89 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "scaffolding-licence-pavement-neighbour-access": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="scfSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="scfRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7378" /><stop offset="1" stopColor="#4a5257" />
+          </linearGradient>
+          <linearGradient id="scfBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="scfGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="scfGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="scfPave" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c9d0d3" /><stop offset="1" stopColor="#aab3b7" />
+          </linearGradient>
+          <linearGradient id="scfAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#scfSky)" />
+        <circle cx="358" cy="24" r="13" fill="#f6d98a" opacity=".85" />
+        <text x="200" y="24" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.3" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same scaffold, two different permissions</text>
+        <text x="200" y="42" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#44535a" textAnchor="middle">One covers the pavement. Crossing the fence needs the neighbour, not the council.</text>
+
+        {/* street side, left: house, scaffold, licensed pavement tunnel */}
+        <rect x="14" y="58" width="186" height="232" fill="url(#scfPave)" opacity=".55" />
+        <path d="M44 128 L112 92 L180 128 Z" fill="url(#scfRoof)" stroke="#333b40" strokeWidth="1.1" />
+        <rect x="52" y="128" width="120" height="100" fill="url(#scfBrick)" />
+        <rect x="66" y="146" width="28" height="34" fill="url(#scfGlass)" stroke="#3f4a50" strokeWidth="1.1" />
+        <rect x="130" y="166" width="24" height="56" fill="#5f4f36" stroke="#3a2f1f" strokeWidth="1" />
+
+        {/* scaffold grid in front of the house */}
+        <path d="M38 112 V268 M74 112 V268 M110 112 V268 M146 112 V268 M182 112 V268" stroke="#8a9196" strokeWidth="3" />
+        <path d="M34 130 H186 M34 160 H186 M34 190 H186 M34 220 H186 M34 250 H186" stroke="#8a9196" strokeWidth="3" />
+        <path d="M34 130 L186 250 M186 130 L34 250" stroke="#aab3b7" strokeWidth="1.3" opacity=".5" />
+
+        {/* covered pedestrian tunnel over the pavement, hazard-striped fascia */}
+        <path d="M24 260 L196 260 L196 272 L24 272 Z" fill="#f0a94a" />
+        <path d="M28 260 l10 12 M48 260 l10 12 M68 260 l10 12 M88 260 l10 12 M108 260 l10 12 M128 260 l10 12 M148 260 l10 12 M168 260 l10 12 M188 260 l10 12" stroke="#1f2a30" strokeWidth="3" opacity=".75" />
+        <rect x="24" y="272" width="172" height="12" fill="url(#scfPave)" />
+        {/* pedestrian walking through the tunnel */}
+        <circle cx="90" cy="266" r="5" fill="#2f3a40" />
+        <path d="M90 271 v10 M90 277 l-6 7 M90 277 l7 6" stroke="#2f3a40" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+
+        <circle cx="178" cy="112" r="13" fill="#3f8f52" stroke="#eff4f7" strokeWidth="2" />
+        <path d="M172 112 l4 5 l9 -11" stroke="#eff4f7" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="18" y="238" width="178" height="18" rx="3" fill="#1f2a30" opacity=".88" />
+        <text x="107" y="251" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#9cd99c" textAnchor="middle">LICENSED BY SURREY COUNTY COUNCIL</text>
+
+        {/* dashed boundary / fence line between the two scenes */}
+        <path d="M200 60 V290" stroke="#5d6568" strokeWidth="1.3" strokeDasharray="4 3" opacity=".7" />
+        <path d="M196 96 l8 -8 M196 120 l8 -8 M196 144 l8 -8 M196 168 l8 -8 M196 192 l8 -8 M196 216 l8 -8" stroke="#8f7a52" strokeWidth="3" />
+
+        {/* garden side, right: neighbour's land, oversailing scaffold tube */}
+        <rect x="200" y="58" width="186" height="232" fill="url(#scfGrass)" opacity=".8" />
+        <circle cx="330" cy="236" r="16" fill="#6a9a4c" /><circle cx="312" cy="248" r="11" fill="#7cab6b" />
+        <rect x="320" y="246" width="7" height="18" fill="#5f4f36" />
+
+        {/* scaffold pole oversailing the boundary into the neighbour's airspace */}
+        <path d="M182 150 L326 192" stroke="#8a9196" strokeWidth="6" strokeLinecap="round" />
+        <path d="M182 150 L326 192" stroke="#c9d0d3" strokeWidth="2" strokeLinecap="round" opacity=".7" />
+        <rect x="308" y="178" width="30" height="22" fill="url(#scfGlass)" opacity=".6" stroke="#3f4a50" strokeWidth="1.1" />
+
+        <circle cx="344" cy="184" r="15" fill="url(#scfAmber)" stroke="#eff4f7" strokeWidth="2" />
+        <text x="344" y="189" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#1f2a30" textAnchor="middle">!</text>
+        <rect x="206" y="238" width="178" height="18" rx="3" fill="#1f2a30" opacity=".88" />
+        <text x="295" y="251" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#f6d98a" textAnchor="middle">OVERSAILING NEXT DOOR — ASK FIRST</text>
+
+        <rect y="290" width="400" height="110" fill="#1f2a30" />
+        <text x="24" y="316" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#e8e4dc">The highway licence stops at the fence</text>
+        <text x="24" y="339" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.6" fill="#8fa0a8">Surrey County Council licenses the pavement &mdash; a tube over next door&apos;s garden needs their agreement, not a form</text>
+        <text x="24" y="358" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">The &ldquo;pavement licence&rdquo; most searches find is for caf&eacute; tables, not scaffolding &mdash; a different Act, a different council</text>
+        <text x="24" y="377" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fill="#8fa0a8">Source: Highways Act 1980 s.169; Surrey CC highway fees schedule; Business and Planning Act 2020; NASC CG27:25 (Sep 2025)</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "balconies-roof-terraces-cranleigh-permitted-development": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

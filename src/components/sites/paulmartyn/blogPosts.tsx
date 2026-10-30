@@ -46,6 +46,172 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "scaffolding-licence-pavement-neighbour-access",
+    title: "Scaffolding on the pavement: the licence, the cost and the neighbour conversation",
+    category: "Planning & surveys",
+    date: "2026-10-30",
+    seoTitle: "Scaffolding On The Pavement In Surrey: The Licence You Need",
+    metaDescription:
+      "Scaffolding on the pavement needs a licence from Surrey County Council, not a pavement licence — plus what it costs, and what to agree with the neighbour first.",
+    excerpt:
+      "A scaffold on the pavement needs its own licence from Surrey County Council, not the \"pavement licence\" most searches turn up — and a scaffold that crosses onto next door's land needs the neighbour's say, not a form at all.",
+    imageAlt:
+      "Illustration of a house with scaffolding erected over a pavement on the left, covered by a hazard-striped pedestrian tunnel and labelled 'licensed by Surrey County Council' beside a green tick, and a scaffold pole oversailing a dashed boundary fence into a neighbour's garden on the right, marked with an amber warning badge reading 'oversailing next door — ask first'.",
+    related: [
+      "party-wall-notice-timing",
+      "extending-1930s-semi-cranleigh",
+      "building-control-completion-certificate",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Scaffolding standing on a public footway or road is governed by **Section 169 of the Highways Act 1980**, which makes it an offence to put scaffolding, hoarding or building materials on the highway without the highway authority's written licence — and for a Cranleigh project that authority is **Surrey County Council**, not Waverley Borough Council, who only handle planning and building control.",
+          "What most people search for as a \"pavement licence\" is something else entirely. The real **Pavement Licence**, under the Business and Planning Act 2020, only covers removable café and restaurant furniture on the pavement — searching that term when you mean scaffolding sends the question to the wrong council department.",
+          "Surrey's current fee for a scaffolding or hoarding licence is **£194 for a 28-day period**; a builder's skip on the highway needs its own, separate **£134** licence, on top of a one-off company registration.",
+          "A scaffold that stands on, or overhangs, a neighbour's garden or drive needs their agreement first. Oversailing someone's airspace without asking can be trespass, under the scaffolding industry's own guidance, whatever the Party Wall Act does or doesn't cover.",
+          "A short conversation and a written access agreement, settled before the scaffold is booked, costs nothing. Finding out it needs moving once it's up can mean a week of delay and the licence fee paid twice.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes two or three days before the scaffold is due up, when someone finally reads the quote properly and spots a line that says \"pavement licence not included.\" Nine times out of ten they've looked it up, landed on a council page about outdoor café seating, and concluded the builder is trying to charge for nothing. The scaffold still needs a licence. It just isn't that one.",
+      },
+      {
+        type: "p",
+        text: "It's an easy mix-up, because \"pavement licence\" is a real term — it was all over the news during the pandemic, when it let pubs and cafés put tables outside — and it has nothing to do with scaffolding whatsoever. The permission a Cranleigh extension actually needs for scaffolding on the highway comes from a different Act, is issued by a different council, and has its own fee, and almost nobody mentions it until the scaffolding lorry is already booked.",
+      },
+      {
+        type: "p",
+        text: "The other conversation that gets left too late is the one with next door, because a scaffold rarely sits neatly inside your own boundary. If it has to stand on, or lean over, the neighbour's drive or garden to reach the back of the house, no council licence covers that at all — it's a conversation you have to have yourself, and getting it wrong can cost more time than the planning application did.",
+      },
+      { type: "h2", text: "Do I need a licence to put scaffolding on the pavement outside my house?" },
+      {
+        type: "p",
+        text: "Yes, and the rule is wider than most people expect. Section 169 of the Highways Act 1980 makes it an offence to deposit building materials or equipment, or to erect scaffolding, hoarding or any other structure, on a public highway without the written permission of the highway authority — and in law, \"highway\" includes the pavement and the verge, not just the carriageway cars drive on.",
+      },
+      {
+        type: "p",
+        text: "The detail that trips people up locally is which council that actually is. Waverley Borough Council handles planning permission and building control for a Cranleigh project, but it has no say over what happens on the public highway. That's **Surrey County Council**, as the county highway authority, and it's Surrey — not Waverley — who issues the scaffolding licence, sets the fee, and can require unlicensed scaffolding to come down.",
+      },
+      { type: "h2", text: "Isn't that the same thing as a \"pavement licence\"?" },
+      {
+        type: "p",
+        text: "No, and it's worth being precise about this, because the wrong search term sends an application to the wrong department. The Pavement Licence most people find online comes from the **Business and Planning Act 2020**, made a permanent fixture by the Levelling Up and Regeneration Act 2023. It exists for one purpose: letting a food or drink business put removable furniture — tables, chairs, planters — on the pavement outside its own premises, with fees capped at £500 for a first application and £350 for a renewal. It has nothing to do with scaffolding, hoarding, skips or building materials of any kind.",
+      },
+      {
+        type: "p",
+        text: "What a homeowner actually needs for scaffolding on the highway is usually called a scaffolding licence, a hoarding licence, or a highway licence, depending on the council — all three names describe the same Section 169 permission. If a search turns up anything about outdoor seating or hospitality, it's the wrong licence; the right one sits on a council's roads and highways pages, not its licensing pages for businesses.",
+      },
+      {
+        type: "table",
+        caption: "Two genuinely different schemes that happen to share a nickname — check you're applying for the right one.",
+        head: ["Scheme", "What it covers", "Who grants it in Cranleigh", "Typical fee"],
+        rows: [
+          ["Scaffolding / hoarding licence (Highways Act 1980, s.169)", "Scaffolding, hoarding, skips and building materials on the highway", "Surrey County Council, the highway authority", "£194 per 28 days (scaffolding); £134 per 28 days (skip)"],
+          ["Pavement Licence (Business and Planning Act 2020)", "Removable tables, chairs and planters outside a food or drink business", "Waverley Borough Council, the licensing authority", "Capped at £500 (new) / £350 (renewal)"],
+        ],
+      },
+      { type: "h2", text: "What does a scaffolding licence cost in Surrey, and how long does it take?" },
+      {
+        type: "p",
+        text: "The figures below come from Surrey County Council's own published highway fees and charges schedule, which covers scaffolding, hoarding and skips on any road it is the highway authority for — including every street in Cranleigh.",
+      },
+      {
+        type: "table",
+        caption: "Surrey County Council's published highway fees — confirm the current figure before applying, since fees are reviewed annually.",
+        head: ["Licence", "Fee", "Period covered", "What it's for"],
+        rows: [
+          ["Scaffolding or hoarding licence", "£194", "28 days, renewable", "Any scaffold, hoarding or structure placed on the public highway"],
+          ["Skip licence", "£134", "Up to 28 days", "A builder's skip placed on the highway rather than entirely on your own drive"],
+          ["Skip company registration", "Roughly £100, one-off", "N/A", "Required once, before a registered skip firm can apply for individual skip licences"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Surrey doesn't publish a fixed guaranteed turnaround, so the safest working rule — the one most scaffolding contractors build into their own programme — is to apply at least two weeks before the scaffold is due up, and treat anything shorter as a risk to the start date rather than a formality.",
+      },
+      { type: "h2", text: "What if the scaffolding has to stand on, or lean over, next door's garden?" },
+      {
+        type: "p",
+        text: "The Surrey licence only covers the public highway. It says nothing at all about private land, so if the scaffold needs a foot plate on the neighbour's drive, or a tube reaching over their fence to get at a gable end, that is a private matter between neighbours, not something any council permission settles for you.",
+      },
+      {
+        type: "p",
+        text: "The scaffolding industry's own guidance is direct about this. NASC's CG27:25 guidance on third-party walls, issued September 2025, confirms that ownership of a property generally includes the airspace above it, and that putting up scaffolding which oversails a neighbour's airspace without asking — even where nothing physically touches their ground — can amount to trespass. Its advice is to agree a written licence or access agreement with the neighbour before the scaffold goes up, covering where it stands, how long it stays, and what happens if the job overruns.",
+      },
+      {
+        type: "p",
+        text: "The Access to Neighbouring Land Act 1992 sometimes gets raised as a fallback, but it is narrower than people assume. It only lets an owner apply to the county court for an order to carry out **\"basic preservation works\"** — repair and maintenance, broadly — and the court can still refuse if access would unreasonably disturb the neighbour's own use of their land. A new extension is an improvement, not a preservation job, so for most of the scaffolding that actually needs crossing a boundary in Cranleigh, this Act is not the answer.",
+      },
+      {
+        type: "p",
+        text: "Where the building work itself is notifiable under the Party Wall etc. Act 1996 — cutting into a shared wall, or excavating close to a neighbour's foundations — that Act does give a right to enter the neighbouring land to carry out the notified work, on its own notice period; [we've covered that timetable in full elsewhere](/blog/party-wall-notice-timing). But that right runs with the notifiable work itself, not with wherever a scaffold happens to be most convenient to stand, so a separate, direct conversation about where the scaffold sits is still worth having even on a job that is also serving party wall notices.",
+      },
+      { type: "h2", text: "Can a neighbour simply refuse?" },
+      {
+        type: "p",
+        text: "In most cases, yes, and there is often no legal lever to make them say yes instead. Once it's established that the Access to Neighbouring Land Act 1992 doesn't apply to an extension or renovation, there is no separate statutory right forcing a neighbour to allow scaffolding onto their land or into their airspace — it comes down to agreement, or to redesigning the scaffold so it doesn't need one.",
+      },
+      {
+        type: "p",
+        text: "The practical fallback is a cantilever, or \"beam\", scaffold — a rig that is built up and anchored entirely within your own boundary, then projects out over the gap to reach the upper storey without any leg, foot plate or tie standing on the neighbour's land. It costs more to hire than a standard independent scaffold tied back in the ordinary way, but it avoids the whole question, and it is almost always cheaper than a stop-work argument halfway through the job.",
+      },
+      {
+        type: "quote",
+        text: "Most neighbours say yes to a scaffold standing on their drive for six weeks without a second thought, if you ask before the lorry turns up and put it in writing. The ones who say no have almost always had scaffolding dumped on them before with no warning, no agreement and no end date. **A cantilever scaffold costs more to hire than a standard one, but it's a lot cheaper than a redesign halfway through the job because somebody never had that conversation.**",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Settling where the scaffold will actually stand — on your own land, on the highway with Surrey's **£194** licence, or on the neighbour's with their written consent — before it's booked avoids the two most common ways this costs real money. Unlicensed scaffolding found on the highway can mean paying the **£194** fee a second time while the job stands idle for the best part of a **week** sorting it out. A neighbour's late refusal can mean re-hiring as a cantilever rig partway through a job, which typically adds several hundred pounds to the scaffolding bill alone, money a five-minute conversation beforehand avoids entirely.",
+      },
+      { type: "h2", text: "What actually happens if scaffolding goes up on the highway without a licence?" },
+      {
+        type: "p",
+        text: "It's a criminal offence under Section 169, not just a paperwork gap. Surrey County Council, as the highway authority, can require unlicensed scaffolding, hoarding or materials to be removed, and the person responsible for putting them there can be prosecuted. In practice, the more common consequence on a residential job is simpler and still expensive: a site visit, a stop notice, and a scaffold that has to be taken down and re-erected once the licence is actually in place — a week lost for the sake of a form that costs less than a day's scaffolding hire.",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to put off a build that needs scaffolding — most Cranleigh projects get a Surrey licence and a straightforward yes from the neighbour inside a fortnight, once someone actually asks at the right moment, rather than after the lorry has already turned up. It's worth raising with [builders in Cranleigh](/areas/cranleigh) at the same time as the scaffolding quote, so the highway licence, the neighbour's consent and the start date all land in the same week.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need a licence to put scaffolding on the pavement outside my house?",
+        answer:
+          "Yes. Section 169 of the Highways Act 1980 makes it an offence to erect scaffolding, hoarding or building materials on a public highway, which includes the pavement, without the highway authority's written licence. In Cranleigh that authority is Surrey County Council, and the current fee is £194 for a 28-day period.",
+      },
+      {
+        question: "Is a scaffolding licence the same as a pavement licence?",
+        answer:
+          "No. The Pavement Licence most searches turn up comes from the Business and Planning Act 2020 and only covers removable furniture outside a food or drink business, with fees capped at £500 for a new application. Scaffolding on the highway is a different permission entirely — a scaffolding, hoarding or highway licence under Section 169 of the Highways Act 1980, granted by Surrey County Council rather than Waverley Borough Council.",
+      },
+      {
+        question: "How much does a scaffolding licence cost in Surrey?",
+        answer:
+          "Surrey County Council's published fee is £194 for a 28-day scaffolding or hoarding licence. A builder's skip placed on the highway needs its own separate £134 licence, and a skip company must also pay a one-off registration of roughly £100 before it can apply.",
+      },
+      {
+        question: "Can my neighbour refuse to let scaffolding stand on or overhang their garden?",
+        answer:
+          "Generally yes. The Access to Neighbouring Land Act 1992 only covers basic preservation and repair works, not an extension or renovation, so it rarely gives a legal right to insist on access. Oversailing a neighbour's airspace without their agreement can itself amount to trespass, so a written access agreement, or a cantilever scaffold that avoids their land entirely, is the usual route if they say no.",
+      },
+      {
+        question: "Does the Party Wall Act cover access for scaffolding?",
+        answer:
+          "Only indirectly. The Party Wall etc. Act 1996 gives a right to enter neighbouring land to carry out work that is itself notifiable under the Act — cutting into a shared wall, or excavating close to a neighbour's foundations — on its own notice period. It doesn't automatically cover a scaffold standing on next door's land for the whole job, so that still needs its own agreement even where party wall notices have been served.",
+      },
+      {
+        question: "What happens if scaffolding goes up on the highway without a licence?",
+        answer:
+          "It's an offence under Section 169 of the Highways Act 1980. Surrey County Council can require it to be removed, and in practice a residential job is more likely to get a stop notice and have to take the scaffold down and re-erect it once a licence is granted — usually costing around a week, for a fee that is less than a day's scaffolding hire.",
+      },
+    ],
+    art: BLOG_ART["scaffolding-licence-pavement-neighbour-access"],
+  },
+  {
     slug: "balconies-roof-terraces-cranleigh-permitted-development",
     title: "Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap",
     category: "Planning & surveys",
@@ -5199,6 +5365,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trees-and-foundation-depth-cranleigh",
       "extension-value-cranleigh",
       "basements-cellars-cranleigh-weald-clay",
+      "scaffolding-licence-pavement-neighbour-access",
     ],
     body: [
       {

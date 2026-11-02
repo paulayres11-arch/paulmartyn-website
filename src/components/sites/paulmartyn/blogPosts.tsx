@@ -46,6 +46,164 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "replacing-windows-cranleigh-conservation-area",
+    title: "Replacing windows in a Cranleigh conservation area: what FENSA does and doesn't cover",
+    category: "Heritage",
+    date: "2026-11-02",
+    seoTitle: "Replacing Windows In A Cranleigh Conservation Area",
+    metaDescription:
+      "Replacing windows in a Cranleigh conservation area? When you need planning permission or listed building consent, what a FENSA certificate actually covers, and what it costs.",
+    excerpt:
+      "A FENSA certificate proves the glazing meets Building Regulations — it says nothing about planning permission or listed building consent, and that gap is where a straightforward window job in Cranleigh goes wrong.",
+    imageAlt:
+      "Illustration of a Cranleigh cottage sash window split in two: the left pane labelled ORIGINAL with faint ripple lines, the right pane labelled SLIM DOUBLE GLAZING with the same glazing bars, a question-mark badge reading LISTED? ASK WAVERLEY FIRST above it, an amber tag reading FENSA = BUILDING REGS ONLY beside it, and a comparison box below listing secondary glazing, slim double glazing and standard double glazing.",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "re-roofing-cranleigh-cottage-conservation-area",
+      "cranleigh-buildings-of-local-merit",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Replacing windows on an ordinary Cranleigh house is normally **permitted development**, even inside the conservation area — a conservation area designation alone doesn't remove that right. Only a specific **Article 4 direction** does, so ask **Waverley** whether one covers your street before ordering anything.",
+          "If the house is one of Cranleigh's **81 listed buildings**, the test changes completely: **Listed Building Consent** can be needed even for double glazing designed to look identical to the original, because the question is whether the work affects the building's special interest, not whether it changes how it looks. Applications carry **no fee** and sit within an **8-week** statutory decision period.",
+          "A **FENSA** certificate (or one from Certass, Assure, NAPIT or Certsure/NICEIC) only self-certifies that the glazing meets **Building Regulations Part L** — it has nothing to do with planning permission or listed building consent, and assuming it does is the single most expensive mix-up on this list.",
+          "Standard double glazing runs roughly **£350–£900** per window fitted; slim-profile units that fit inside an existing historic frame are closer to **£600–£1,500**; secondary glazing — often the simplest route on a listed building — is typically **£300–£500**.",
+          "The real saving: a FENSA (or other competent-person scheme) registered installer avoids the council building control application fee a non-registered install attracts, typically **£150–£250** for a handful of windows.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually starts with a draught, or a pane that's gone cloudy, or a sash that won't stay up without a book wedged under it. The homeowner gets a few quotes, picks the one that sounds most straightforward, and is told the installer is FENSA registered, so that side of things is sorted. Then somebody — a neighbour, a solicitor doing a search, the installer themselves halfway through measuring up — mentions the house is listed, or sits inside the conservation area, and the straightforward job stops being straightforward.",
+      },
+      {
+        type: "p",
+        text: "That's not a surprise to us, but it's clearly a surprise to a lot of people, because it's one of the more common calls we get in Cranleigh: windows ordered, deposit paid, and then a question about listed building consent that should have been asked three months earlier. A FENSA certificate is real and it does something useful — it just isn't the something the homeowner assumed it was.",
+      },
+      {
+        type: "p",
+        text: "Settle the planning question before the windows are measured, not after they're made, and replacing windows in Cranleigh is one of the more predictable jobs on the list. Get it the other way round, and you're paying for a set of bespoke units you may not be allowed to fit.",
+      },
+      { type: "h2", text: "Do I need planning permission to replace windows in a Cranleigh conservation area?" },
+      {
+        type: "p",
+        text: "Most of the time, no — not because conservation areas carry a special exemption for windows, but because the general permitted development rights for replacing windows on an ordinary house aren't automatically switched off by conservation area designation. **Schedule 2, Part 1, Class A** of the General Permitted Development Order covers alterations to a dwellinghouse, and routine window replacement — broadly the same style, material and opening pattern — usually falls within it, inside the conservation area or outside it.",
+      },
+      {
+        type: "p",
+        text: "What does remove that right is an **Article 4 direction** made specifically to withdraw it, typically covering a named street or area where the council has decided window replacement needs individual control. Waverley has made Article 4 directions in Cranleigh parish before, for other kinds of work, so the mechanism is established locally even where a current direction doesn't cover windows on a particular street. The only way to be certain for your own address is to ask Waverley's planning team directly before ordering — exactly the same caveat that applies to [re-roofing inside the conservation area](/blog/re-roofing-cranleigh-cottage-conservation-area).",
+      },
+      { type: "h2", text: "My house is listed — does that change things?" },
+      {
+        type: "p",
+        text: "This is where the test flips entirely. Listed Building Consent isn't judged on whether the finished window looks the same from the pavement — it's whether the work affects the character of the building as a structure of special architectural or historic interest, which can catch changes nobody would notice from outside. Historic England's guidance, *Traditional Windows: Their Care, Repair and Upgrading* (2017), is blunt about the starting point: repair is almost always preferable to replacement, even on a later window, because it keeps original glass and joinery a modern unit can't reproduce.",
+      },
+      {
+        type: "p",
+        text: "Cranleigh parish has around **81 nationally listed buildings** — 80 Grade II and one Grade II*, the Church of St Nicolas — mostly 15th- to 17th-century timber-framed cottages, many refronted in brick or stone later on. Carrying out unauthorised works to any of them, including to the windows, is a criminal offence under the Planning (Listed Buildings and Conservation Areas) Act 1990. A Listed Building Consent application carries **no fee** and sits within the same **8-week** statutory decision period as a standard planning application, so the only real cost of asking first is the time it takes.",
+      },
+      {
+        type: "p",
+        text: "There's also the list that catches people out who've checked the national register and found nothing: Cranleigh's **174 Buildings of Local Merit**, a non-designated heritage list Waverley still weighs in its decisions even though it carries no national protection. A window on one of those doesn't need Listed Building Consent, but [the rest of what sits on that second list](/blog/cranleigh-buildings-of-local-merit) is worth fifteen minutes of reading before assuming an older, unlisted building is free of scrutiny.",
+      },
+      { type: "h2", text: "What does a FENSA certificate actually cover?" },
+      {
+        type: "p",
+        text: "FENSA — the Fenestration Self-Assessment Scheme — is one of several competent person schemes authorised by the government to let registered installers self-certify that replacement windows and doors meet **Building Regulations**, instead of the homeowner applying separately to building control. Certass, Assure, NAPIT and Certsure (trading as NICEIC) do the same job under different names; what any of them issues is formally a Building Regulations Compliance Certificate, whichever scheme's name happens to be on it.",
+      },
+      {
+        type: "p",
+        text: "That certificate is about **Part L** — thermal performance, safety glazing, means of escape and ventilation — and nothing else. It says nothing about planning permission, Article 4 directions or Listed Building Consent, and a competent-person scheme has no power to grant any of those. Fit a Part L-compliant window on a listed building without consent, and the Building Regulations side of the job can be perfectly in order while the planning side is a criminal offence.",
+      },
+      {
+        type: "quote",
+        text: "The FENSA conversation and the listed building conversation are two completely different conversations, and the trouble starts when a homeowner's only had one of them. We'll always ask about the conservation area and the listing before we talk about the glass — it's a five-minute question that saves months, not a formality.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Standard double glazing, slim double glazing or secondary glazing — which one?" },
+      {
+        type: "p",
+        text: "Three different products answer three different problems, and knowing which is being quoted matters as much as the price. **Standard double glazing** is a sealed unit roughly 24–28mm thick, built to meet the current **Approved Document L** standard of a maximum **1.4 W/(m²K)** whole-window U-value — fine for most houses, but thick enough to change the look of a historic frame, and the kind of change a conservation officer notices first.",
+      },
+      {
+        type: "p",
+        text: "**Slim double glazing** uses a sealed unit around 10–16mm thick, built to sit inside an existing historic frame without altering the glazing bars or sightlines. It's a genuinely useful middle ground, but Historic England's own guidance is careful not to oversell it: even a slim unit is still physically different from true historic glazing, and fitting one without altering frames or bars can still cause harm if it isn't handled well — it strengthens the case for consent, it doesn't remove the need to ask for it.",
+      },
+      {
+        type: "p",
+        text: "**Secondary glazing** — a separate, usually removable pane fitted inside the existing window rather than replacing it — is often the option conservation officers prefer, because the original window and its glass stay completely untouched. Whether it still needs Listed Building Consent varies by council and by how reversible the installation is, so it's worth confirming rather than assuming it's automatically exempt.",
+      },
+      { type: "h2", text: "What does it cost to replace or upgrade windows in Cranleigh?" },
+      {
+        type: "table",
+        caption: "National trade-guide ranges, supply and fitted — windows aren't in our own pricing table, so get a site-specific quote.",
+        head: ["Option", "Typical cost per window", "Notes"],
+        rows: [
+          ["Standard uPVC double glazing", "£350 – £900", "New frame; Part L-compliant; the biggest visual change on a period house"],
+          ["Slim double glazing (into existing frame)", "£600 – £1,500", "Keeps the original sightlines; still a material change Historic England flags"],
+          ["Secondary glazing", "£300 – £500", "Often preferred where listed; confirm the consent position with Waverley"],
+          ["New timber sash, double-glazed", "£1,200 – £2,500", "Full replacement sash; typical where frames have failed beyond repair"],
+          ["Building control fee (non-FENSA install)", "£150 – £250", "Avoided by using a FENSA or other competent-person registered installer"],
+        ],
+      },
+      { type: "h2", text: "How long does it take, and when should I book it?" },
+      {
+        type: "table",
+        caption: "A guide only — actual timescales depend on whether Listed Building Consent is needed.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Checking listed status and any Article 4 direction with Waverley", "A few days – 2 weeks", "Getting quotes"],
+          ["Listed Building Consent, if needed", "8 weeks (statutory)", "Nothing — ordering bespoke units before consent risks a wasted deposit"],
+          ["Measuring and manufacturing standard or slim units", "4 – 8 weeks", "The consent process, if one is running"],
+          ["Installation", "1 – 3 days for a typical house", "—"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Using a FENSA (or other competent-person scheme) registered installer sidesteps the council's building control application fee — typically **£150–£250** for a handful of windows. Checking the listed and conservation position before ordering avoids a far larger cost: a bespoke slim-glazing order placed before anyone applied for the **8-week** consent it turns out to need, which on a weather-sensitive job is often the difference between finishing before winter and living with a boarded-up opening.",
+      },
+      {
+        type: "p",
+        text: "Windows are one of the few jobs on a Cranleigh house where the glass is rarely the hard part — it's knowing which permission, if any, sits behind it, and that's exactly the kind of survey-first conversation worth having with [builders in Cranleigh](/areas/cranleigh) before a single unit is measured.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to replace windows in a Cranleigh conservation area?",
+        answer:
+          "Usually not. Routine window replacement on an ordinary house is normally permitted development, and conservation area designation alone doesn't remove that right. An Article 4 direction covering your specific street is what would change that, so check with Waverley before ordering.",
+      },
+      {
+        question: "My house is listed — can I still fit double glazing?",
+        answer:
+          "Often, yes, but it usually needs Listed Building Consent first, even if the glazing is designed to look identical to the original. The test is whether the work affects the building's special interest, not whether it changes the view from the street. Applications are free and carry an 8-week statutory decision period.",
+      },
+      {
+        question: "What does a FENSA certificate actually prove?",
+        answer:
+          "That the replacement windows meet Building Regulations, mainly Part L for thermal performance and safety glazing. It says nothing about planning permission, Article 4 directions or Listed Building Consent — those are separate regimes a FENSA certificate has no bearing on.",
+      },
+      {
+        question: "What's the difference between slim double glazing and secondary glazing?",
+        answer:
+          "Slim double glazing replaces the glass within the existing frame using a thinner sealed unit, around 10–16mm, to preserve the original sightlines. Secondary glazing adds a separate inner pane without touching the existing window at all, which is why it's often the option conservation officers prefer on a listed building.",
+      },
+      {
+        question: "How much does it cost to replace windows in Cranleigh?",
+        answer:
+          "Standard double glazing typically runs £350–£900 per window fitted. Slim units that fit into an existing historic frame cost roughly £600–£1,500, and secondary glazing is usually £300–£500. Get a site-specific quote, since condition and access affect the price.",
+      },
+      {
+        question: "How long does Listed Building Consent take for windows?",
+        answer:
+          "Applications sit within an 8-week statutory decision period and carry no fee. Ordering bespoke glazing before consent is granted risks a wasted deposit if the design has to change, so it's worth checking with Waverley before windows are measured, not after.",
+      },
+    ],
+    art: BLOG_ART["replacing-windows-cranleigh-conservation-area"],
+  },
+  {
     slug: "scaffolding-licence-pavement-neighbour-access",
     title: "Scaffolding on the pavement: the licence, the cost and the neighbour conversation",
     category: "Planning & surveys",
@@ -4428,6 +4586,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "garden-rooms-cranleigh-permitted-development",
       "solar-panels-cranleigh-planning-permission",
       "re-roofing-cranleigh-cottage-conservation-area",
+      "replacing-windows-cranleigh-conservation-area",
     ],
     body: [
       {

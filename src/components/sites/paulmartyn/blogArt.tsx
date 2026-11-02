@@ -16,6 +16,97 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "replacing-windows-cranleigh-conservation-area": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="winSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="winBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="winGlassOld" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#d7e3d2" /><stop offset="1" stopColor="#b9c9b2" />
+          </linearGradient>
+          <linearGradient id="winGlassNew" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="winGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="winAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <clipPath id="winOldClip"><rect x="120" y="55" width="80" height="150" /></clipPath>
+          <clipPath id="winNewClip"><rect x="200" y="55" width="80" height="150" /></clipPath>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#winSky)" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same window, two different permissions</text>
+
+        {/* cottage wall */}
+        <rect x="20" y="40" width="360" height="175" fill="url(#winBrick)" />
+        <path d="M20 70 H380 M20 100 H380 M20 130 H380 M20 160 H380 M20 190 H380" stroke="#6f3f28" strokeWidth="1.1" opacity=".35" />
+
+        {/* window frame */}
+        <rect x="116" y="51" width="168" height="158" fill="#5d6568" />
+        <rect x="120" y="55" width="160" height="150" fill="#f3efe4" stroke="#5d6568" strokeWidth="2" />
+
+        {/* left sash — original single glazing */}
+        <g clipPath="url(#winOldClip)">
+          <rect x="120" y="55" width="80" height="150" fill="url(#winGlassOld)" />
+          <path d="M122 80 q20 6 40 0 t40 0 M122 130 q20 -6 40 0 t40 0" stroke="#8aa082" strokeWidth="1" opacity=".5" fill="none" />
+        </g>
+        <text x="160" y="176" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#44534a" textAnchor="middle">ORIGINAL</text>
+
+        {/* right sash — slim double glazing, same bars */}
+        <g clipPath="url(#winNewClip)">
+          <rect x="200" y="55" width="80" height="150" fill="url(#winGlassNew)" />
+          <rect x="206" y="61" width="68" height="138" fill="none" stroke="#9fc3d6" strokeWidth="1.4" opacity=".6" />
+        </g>
+        <text x="240" y="170" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#2f5468" textAnchor="middle">SLIM DOUBLE</text>
+        <text x="240" y="180" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#2f5468" textAnchor="middle">GLAZING</text>
+
+        {/* glazing bars — 6-over-6 look */}
+        <rect x="197" y="55" width="6" height="150" fill="#f3efe4" stroke="#5d6568" strokeWidth="1" />
+        <rect x="157" y="55" width="4" height="150" fill="#f3efe4" opacity=".92" />
+        <rect x="239" y="55" width="4" height="150" fill="#f3efe4" opacity=".92" />
+        <rect x="120" y="102" width="160" height="5" fill="#f3efe4" opacity=".92" />
+        <rect x="120" y="152" width="160" height="5" fill="#f3efe4" opacity=".92" />
+
+        {/* sill */}
+        <rect x="110" y="205" width="180" height="10" fill="#d8bd92" stroke="#8f7550" strokeWidth="1.2" />
+
+        {/* listed-building check badge */}
+        <circle cx="345" cy="68" r="15" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.5" />
+        <text x="345" y="73" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#a8652a" textAnchor="middle">?</text>
+        <text x="345" y="92" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#f3efe4" textAnchor="middle">LISTED? ASK</text>
+        <text x="345" y="100" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#f3efe4" textAnchor="middle">WAVERLEY FIRST</text>
+
+        {/* FENSA tag */}
+        <rect x="26" y="172" width="86" height="22" rx="11" fill="url(#winAmber)" stroke="#c4741f" strokeWidth="1.3" />
+        <text x="69" y="184" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">FENSA =</text>
+        <text x="69" y="191" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">REGS ONLY</text>
+
+        {/* grass strip */}
+        <rect x="20" y="215" width="360" height="14" fill="url(#winGrass)" opacity=".7" />
+
+        {/* three-options comparison inset */}
+        <rect x="20" y="233" width="360" height="62" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <text x="200" y="245" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#2f3a40" textAnchor="middle">THREE WAYS TO GLAZE AN OLD SASH</text>
+        <rect x="28" y="252" width="13" height="7" fill="#8fa0a8" /><text x="45" y="258" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Secondary glazing — separate pane, original window untouched</text>
+        <rect x="28" y="264" width="13" height="7" fill="#a9d4e8" /><text x="45" y="270" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Slim double glazing — fits the existing frame, same bars</text>
+        <rect x="28" y="276" width="13" height="7" fill="#5ba0c9" /><text x="45" y="282" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Standard double glazing — new unit, often a new frame too</text>
+        <text x="200" y="291" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#6b7378" textAnchor="middle">All three can still need Listed Building Consent — ask before ordering</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13.3" fontWeight="700" fill="#e8e4dc">A FENSA certificate proves Building Regs — not planning</text>
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Conservation area alone rarely removes permitted development rights for windows</text>
+        <text x="24" y="364" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Listed? Even matching double glazing can need consent — ask Waverley first</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fill="#8fa0a8">Source: GPDO Sch.2 Pt.1 Class A; Historic England, Traditional Windows (2017)</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "scaffolding-licence-pavement-neighbour-access": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

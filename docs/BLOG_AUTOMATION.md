@@ -338,12 +338,17 @@ Cranleigh topics — work through these:
 - [done 2026-10-21] Porches in Cranleigh: the one extension that almost never needs planning permission
 - [done 2026-10-26] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
 - [done 2026-10-28] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
-- [ ] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
+- [done 2026-11-02] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
 - [ ] Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't
 - [ ] Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't
 - [ ] Orangeries and glazed garden extensions in Cranleigh: Part O overheating rules explained
 - [ ] EV charger installation at a Cranleigh home: permitted development, and the listed building exception
 - [ ] Septic tanks and private drainage for Cranleigh homes off the mains network: what replacing one costs
+- [ ] Removing a chimney or capping a flue in a Cranleigh house: what building control and conservation ask for
+- [ ] Removing an internal wall in a Cranleigh cottage: when you need a structural engineer and building control sign-off
+- [ ] Self-build and infill plots in Cranleigh: what the settlement boundary and neighbourhood plan mean for a new house
+- [ ] Drainage and soakaways for a Cranleigh extension: SuDS rules and why the Weald clay makes them harder to design
+- [ ] Render and external wall finishes on a Cranleigh house: lime render, cement render and what the conservation area expects
 
 
 ### Stream B — knowledge (no place name) — ONE OUT OF EVERY THREE POSTS

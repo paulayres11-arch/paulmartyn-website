@@ -46,6 +46,161 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "garage-conversions-cranleigh-permitted-development",
+    title: "Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't",
+    category: "Planning & surveys",
+    date: "2026-11-04",
+    seoTitle: "Garage Conversions In Cranleigh: Planning And Building Regs",
+    metaDescription:
+      "Converting a Cranleigh garage into a room? What permitted development actually covers, the parking condition that catches people out, and what building control requires.",
+    excerpt:
+      "Converting a garage looks like the cheapest room you'll ever add — no foundations, no roof. The two things that actually decide whether it's simple are an old parking condition on the planning permission and a Building Regulations application most people forget to make.",
+    imageAlt:
+      "Illustration of a Cranleigh house split in two: the left half BEFORE showing a closed roller garage door with a question-mark badge reading PARKING CONDITION? CHECK THE PERMISSION, the right half AFTER showing the same opening bricked in with a window, and a floor cutaway inset below showing the existing concrete slab, a new damp-proof membrane, insulation and a raised floor finish.",
+    related: [
+      "garden-rooms-cranleigh-permitted-development",
+      "porches-cranleigh-permitted-development",
+      "extending-1930s-semi-cranleigh",
+      "party-wall-notice-timing",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Converting an integral or attached garage into a habitable room is usually **permitted development** in planning terms, provided the work stays internal — plus bricking up the door — and doesn't enlarge the building, per **Planning Portal**'s own guidance.",
+          "The check almost everyone skips: look at the **original planning permission** for the house. Plenty of Cranleigh houses, including the [1930s semis](/blog/extending-1930s-semi-cranleigh) that make up so much of the town's housing stock, were granted permission on condition the garage is **permanently retained for parking** — and that condition outlives the decades, whatever the general permitted development rules say.",
+          "Removing or varying that condition needs a formal application under **Section 73** of the Town and Country Planning Act 1990 — a **£86** fee for a householder application (from 1 April 2025, indexed from 1 April 2026) and an **8-week** statutory decision period, run before the conversion, not after.",
+          "**Building Regulations approval is needed almost every time**, even where planning permission isn't, because turning a garage into a habitable room is treated as a material change of use. Expect a **Building Notice** fee of roughly **£450–£720** depending on the council, covering the floor, insulation and damp-proofing.",
+          "The saving: apply for Building Control approval before work starts. Begin without it and most councils charge a **regularisation fee** — commonly around **1.4×** the normal Building Notice charge — on top of having to expose finished floors and walls again for inspection.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Converting the garage is one of the cheapest ways to add a room in Cranleigh — no foundations to dig, no roof to build, and usually no planning application either. That's exactly why it's also one of the easiest jobs to get wrong: because it looks so simple, people skip the two checks that actually decide whether it is, and only find out afterwards.",
+      },
+      {
+        type: "p",
+        text: "We get calls from two different points in that story. One is straightforward: someone wants a playroom, a home gym or an extra bedroom where the car used to go, and the quote gets agreed before anyone has measured the floor levels. The other call comes after the roller door is already bricked up and plastered over, when a mortgage valuer, a buyer's solicitor, or a letter from the council's enforcement team asks for the Building Regulations completion certificate nobody applied for — or points out that the planning permission for the house, granted decades ago, says the garage has to stay a garage.",
+      },
+      {
+        type: "p",
+        text: "Neither problem has anything to do with how good the finished room looks, and both are entirely avoidable. Settle the paperwork first and a garage conversion in Cranleigh is a few weeks' straightforward work. Settle it afterwards, and you're arguing with the council about something that's already built.",
+      },
+      { type: "h2", text: "Do I need planning permission to convert a garage in Cranleigh?" },
+      {
+        type: "p",
+        text: "Mostly, no. Planning Portal's own guidance on garage conversions is clear that planning permission is not usually required, provided the work is internal and doesn't involve enlarging the building. Converting the inside of an integral or attached garage into a habitable room doesn't change its use in planning terms — it's still part of the same dwelling, not a new building or a change from one use class to another — so there's no planning application to make purely because a car has been replaced by a sofa.",
+      },
+      {
+        type: "p",
+        text: "Bricking up the garage door opening and fitting a window in its place is normally treated the same way, as long as it doesn't enlarge the building or materially alter its appearance beyond that one opening. That's different from a **conservatory, side extension or dormer**, which does enlarge the building and does need its own check against the usual permitted development limits.",
+      },
+      { type: "h2", text: "The condition nobody reads: garages 'retained for parking'" },
+      {
+        type: "p",
+        text: "This is the trap a generic garage-conversion guide won't mention, because it has nothing to do with the General Permitted Development Order at all. Plenty of planning permissions — including ones granted decades ago for ordinary Cranleigh semis and estate houses — came with a condition that the garage be permanently retained and used for the parking of vehicles. Councils up and down the country deal with this constantly: committee reports routinely describe householders applying to remove or vary exactly this condition before a garage can be converted, because the condition keeps its legal force long after the house has changed hands several times over.",
+      },
+      {
+        type: "p",
+        text: "That condition overrides the general permitted development position. Where one exists, the fix is a formal application under **Section 73** of the Town and Country Planning Act 1990 to vary or remove it — officers typically weigh the parking lost against current parking standards and whatever else the drive or street can accommodate. The current fee for a householder Section 73 application is **£86** (from 1 April 2025, indexed from 1 April 2026), and it carries the same **8-week** statutory decision period as a standard householder application. The only way to know whether your garage carries this condition is to check the original decision notice, which Waverley's online planning register can usually produce even for a permission granted long before the house was bought.",
+      },
+      { type: "h2", text: "Does the Cranleigh Conservation Area, or a listed building, change anything?" },
+      {
+        type: "p",
+        text: "For an ordinary internal conversion, generally not. We looked for a Waverley **Article 4 direction** removing permitted development rights for garage conversions anywhere in Cranleigh and found none — only two older, unrelated directions covering specific sites (land at Barhatch Lane, made in 1988, and Norley Farm, made in 2005 and since expired), neither touching garages. That's consistent with what [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) covers more broadly: the designation controls demolition, certain boundary walls and tree work, not routine internal conversions. Still worth a quick check with Waverley before you start, since directions can be added.",
+      },
+      {
+        type: "p",
+        text: "Listed buildings are a different matter entirely. Permitted development for garage conversions doesn't apply to a listed building at all — any alteration, however modest, can need **Listed Building Consent**, because the test is whether the work affects the building's special interest, not whether a casual look from the street would notice. A garage attached to one of the parish's roughly **81 listed buildings** needs that consent checked before anything is touched, whatever the GPDO says for everyone else.",
+      },
+      { type: "h2", text: "What does Building Control actually require for a garage conversion?" },
+      {
+        type: "p",
+        text: "This is the step a surprising number of people skip entirely, assuming that because planning permission isn't needed, nothing is. It isn't true: converting a garage into a habitable room is treated as a **material change of use** under the Building Regulations, and that triggers its own approval — a **Building Notice** or Full Plans application to the council's building control team (or an approved inspector) — regardless of the planning position.",
+      },
+      {
+        type: "p",
+        text: "The floor is usually where the real work is. A garage slab is rarely insulated or damp-proofed to habitable-room standard, and it typically sits a step below the house's internal floor level at the kerb where the door used to be. Planning Portal's own building control guidance notes that the existing slab can often stay as a base, with a new damp-proof membrane introduced over it — a liquid membrane is the practical option on an existing slab — then insulation to meet **Approved Document L**, then a timber floor on battens or a screed finish on top. The upshot is almost always a higher finished floor level than the old garage floor, not a lower one, so headroom is something to check rather than assume.",
+      },
+      {
+        type: "p",
+        text: "Alongside the floor, Building Control will look at wall insulation and damp resistance, ventilation under **Approved Document F**, and any new electrics under **Part P** — particularly relevant if the garage currently houses the consumer unit, the boiler, or an outside tap that needs relocating before the room can be finished. None of this is unusual or expensive on its own; it's the kind of thing worth pricing into the quote from the start rather than discovering mid-build.",
+      },
+      {
+        type: "quote",
+        text: "The build itself is usually the easy part — a garage conversion is one of the quickest jobs we do. What costs people time is starting on the floor before checking two things: whether the original planning permission ties the garage to parking, and whether anyone's told Building Control it's happening at all. Both are a phone call, not a delay, if you make it first.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What does a garage conversion cost in Cranleigh?" },
+      {
+        type: "table",
+        caption: "National trade-guide ranges — garage conversion isn't in our own pricing table, so get a site-specific quote.",
+        head: ["Option", "Typical cost", "Notes"],
+        rows: [
+          ["Basic single garage, standard spec", "£6,000 – £10,000", "A typical 15–20m² garage; insulation, new floor, basic finish"],
+          ["Integral or attached garage, full habitable spec", "£700 – £1,000 per m²", "Insulation, floor build-up, electrics, plastering and decoration"],
+          ["Detached garage conversion", "£1,000 – £1,600 per m²", "More weatherproofing and new services run out from the house"],
+          ["Building Control Building Notice fee", "£450 – £720", "Varies by council; pay before work starts, not after"],
+          ["Regularisation fee, if work started without approval", "≈ 1.4× the Building Notice fee", "Avoided entirely by applying first"],
+        ],
+      },
+      { type: "h2", text: "How long does it take, and when should I book it?" },
+      {
+        type: "table",
+        caption: "A guide only — a parking condition, if one applies, is the step that adds real time.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Checking the original planning permission and any parking condition with Waverley", "A few days – 2 weeks", "Getting quotes"],
+          ["Section 73 application to vary or remove a parking condition, if needed", "8 weeks (statutory)", "Nothing structural — starting work before it's lifted risks an enforcement notice"],
+          ["Submitting a Building Notice", "Agreed before work starts; inspections through the build", "Design and material ordering"],
+          ["Build — floor, insulation, new wall and window, first fix, finish", "3 – 6 weeks", "—"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Applying for Building Control approval before work starts avoids a **regularisation fee** — commonly around **1.4×** the usual Building Notice charge, so roughly £150–£250 on a typical conversion, on top of the inconvenience of opening up a finished floor for inspection. The bigger saving is checking for a parking condition first: a **£86** Section 73 application run before the build means an **8-week** wait happens on a drawing, not on a room you've already built and been asked to make good.",
+      },
+      {
+        type: "p",
+        text: "A garage conversion only stays the quick, cheap job it looks like on paper if the planning permission and the Building Regulations application both get checked before the first brick comes out — and that's exactly the kind of five-minute question worth putting to [builders in Cranleigh](/areas/cranleigh) alongside the quote, not after it.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to convert my garage in Cranleigh?",
+        answer:
+          "Usually not, provided the work is internal plus bricking up the door, and doesn't enlarge the building. Converting an integral or attached garage into a habitable room is normally permitted development under Planning Portal's own guidance — but check the two exceptions below first.",
+      },
+      {
+        question: "What if the planning permission for my house says the garage must be kept for parking?",
+        answer:
+          "That condition overrides the general permitted development position. You'll need a Section 73 application to the council to vary or remove it before converting — currently £86 for a householder application, with an 8-week statutory decision period. Check the original decision notice on Waverley's planning register to see if your garage has one.",
+      },
+      {
+        question: "Does a garage conversion need Building Regulations approval?",
+        answer:
+          "Almost always, yes, even when planning permission isn't needed. Converting a garage into a habitable room is a material change of use under the Building Regulations, requiring a Building Notice or Full Plans application covering the floor, insulation, damp-proofing, ventilation and electrics.",
+      },
+      {
+        question: "What happens to the garage floor when it's converted?",
+        answer:
+          "The existing concrete slab usually stays as a base, with a new damp-proof membrane added over it, insulation to meet Approved Document L, and a timber or screed floor finish on top. The finished floor level typically ends up higher than the old garage floor, so headroom is worth checking rather than assuming.",
+      },
+      {
+        question: "How much does a garage conversion cost in Cranleigh?",
+        answer:
+          "A basic single garage conversion typically runs £6,000–£10,000. A full habitable-spec conversion of an integral or attached garage is roughly £700–£1,000 per m², rising to £1,000–£1,600 per m² for a detached garage. Add a Building Control Building Notice fee of around £450–£720, and get a site-specific quote for the exact figure.",
+      },
+      {
+        question: "Does the Cranleigh Conservation Area affect garage conversions?",
+        answer:
+          "Generally not for an ordinary internal conversion — we found no Waverley Article 4 direction removing permitted development rights for garages anywhere in Cranleigh. It's still worth a quick check with Waverley, and if the house is listed, Listed Building Consent can be needed regardless of the conservation area position.",
+      },
+    ],
+    art: BLOG_ART["garage-conversions-cranleigh-permitted-development"],
+  },
+  {
     slug: "replacing-windows-cranleigh-conservation-area",
     title: "Replacing windows in a Cranleigh conservation area: what FENSA does and doesn't cover",
     category: "Heritage",
@@ -5850,6 +6005,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trees-and-foundation-depth-cranleigh",
       "party-wall-notice-timing",
       "part-l-extension-insulation",
+      "garage-conversions-cranleigh-permitted-development",
     ],
     body: [
       {

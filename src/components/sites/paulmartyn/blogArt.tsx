@@ -16,6 +16,83 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "garage-conversions-cranleigh-permitted-development": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="gcSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="gcBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="gcDoor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a9499" /><stop offset="1" stopColor="#5d6568" />
+          </linearGradient>
+          <linearGradient id="gcGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="gcGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="gcAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+          <linearGradient id="gcSlab" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcbab2" /><stop offset="1" stopColor="#9a978d" />
+          </linearGradient>
+          <linearGradient id="gcInsul" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f6d9a0" /><stop offset="1" stopColor="#e9bd68" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#gcSky)" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same garage, two different checklists</text>
+
+        {/* house wall */}
+        <rect x="20" y="40" width="360" height="170" fill="url(#gcBrick)" />
+        <path d="M20 68 H380 M20 96 H380 M20 124 H380 M20 152 H380 M20 180 H380" stroke="#6f3f28" strokeWidth="1.1" opacity=".35" />
+
+        {/* left — BEFORE: roller garage door */}
+        <rect x="36" y="56" width="140" height="138" fill="url(#gcDoor)" stroke="#44504f" strokeWidth="2" />
+        <path d="M36 72 H176 M36 88 H176 M36 104 H176 M36 120 H176 M36 136 H176 M36 152 H176 M36 168 H176 M36 184 H176" stroke="#44504f" strokeWidth="1.3" opacity=".6" />
+        <circle cx="106" cy="146" r="3.2" fill="#2f3a3d" />
+        <text x="106" y="203" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#44342a" textAnchor="middle">BEFORE</text>
+
+        {/* right — AFTER: wall built in, window, same brick */}
+        <rect x="224" y="56" width="140" height="138" fill="url(#gcBrick)" stroke="#6f3f28" strokeWidth="1" />
+        <rect x="256" y="76" width="76" height="72" fill="#5d6568" />
+        <rect x="260" y="80" width="68" height="64" fill="url(#gcGlass)" stroke="#5d6568" strokeWidth="1.6" />
+        <rect x="292" y="80" width="4" height="64" fill="#5d6568" opacity=".8" />
+        <rect x="260" y="110" width="68" height="4" fill="#5d6568" opacity=".8" />
+        <rect x="246" y="150" width="96" height="9" fill="#d8bd92" stroke="#8f7550" strokeWidth="1" />
+        <text x="294" y="203" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#44342a" textAnchor="middle">AFTER</text>
+
+        {/* parking-condition badge over the before side */}
+        <circle cx="176" cy="68" r="15" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.5" />
+        <text x="176" y="73" fontFamily="Helvetica,Arial,sans-serif" fontSize="14" fontWeight="700" fill="#a8652a" textAnchor="middle">?</text>
+        <text x="176" y="92" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#f3efe4" textAnchor="middle">PARKING CONDITION?</text>
+        <text x="176" y="100" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#f3efe4" textAnchor="middle">CHECK THE PERMISSION</text>
+
+        {/* grass strip */}
+        <rect x="20" y="210" width="360" height="12" fill="url(#gcGrass)" opacity=".7" />
+
+        {/* floor build-up cutaway inset */}
+        <rect x="20" y="228" width="360" height="68" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <text x="200" y="240" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#2f3a40" textAnchor="middle">THE FLOOR IS THE SURPRISE, NOT THE WALL</text>
+        <rect x="30" y="248" width="150" height="10" fill="url(#gcSlab)" /><text x="186" y="256" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Existing concrete slab — kept as the base</text>
+        <path d="M30 262 q10 -3 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t10 0" stroke="#2f5468" strokeWidth="1.6" fill="none" /><text x="186" y="266" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">New damp-proof membrane</text>
+        <rect x="30" y="270" width="150" height="9" fill="url(#gcInsul)" /><text x="186" y="278" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Insulation to meet Part L</text>
+        <rect x="30" y="281" width="150" height="7" fill="#d8bd92" stroke="#8f7550" strokeWidth=".8" /><text x="186" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#44535a">Floor finish — new level is higher, not lower</text>
+        <text x="200" y="291" fontFamily="Helvetica,Arial,sans-serif" fontSize="6" fill="#6b7378" textAnchor="middle">Expect to lose headroom at the door threshold, not gain it</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13.3" fontWeight="700" fill="#e8e4dc">Permitted development ≠ building regs ≠ the old condition</text>
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.8" fill="#8fa0a8">Internal conversion is usually permitted — check for a parking condition first</text>
+        <text x="24" y="364" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.3" fill="#8fa0a8">Building Control approval is needed almost every time, even when planning isn&apos;t</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fill="#8fa0a8">Source: Planning Portal, GPDO Sch.2 Pt.1; Town and Country Planning Act 1990 s.73</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "replacing-windows-cranleigh-conservation-area": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

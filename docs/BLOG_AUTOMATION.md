@@ -339,7 +339,7 @@ Cranleigh topics — work through these:
 - [done 2026-10-26] Home offices and outbuildings for business use: when a Cranleigh garden room needs a change of use
 - [done 2026-10-28] Balconies, Juliet balconies and roof terraces on a Cranleigh extension: the permitted development trap
 - [done 2026-11-02] Replacing windows in a Cranleigh conservation area: FENSA, listed building consent and slim double glazing
-- [ ] Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't
+- [done 2026-11-04] Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't
 - [ ] Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't
 - [ ] Orangeries and glazed garden extensions in Cranleigh: Part O overheating rules explained
 - [ ] EV charger installation at a Cranleigh home: permitted development, and the listed building exception

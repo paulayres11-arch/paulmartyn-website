@@ -46,6 +46,159 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "fire-doors-escape-routes-loft-conversion",
+    title: "Fire doors and escape routes in a loft conversion: what Building Regulations actually require",
+    category: "Building control",
+    date: "2026-11-06",
+    seoTitle: "Fire Doors And Escape Routes In A Loft Conversion Explained",
+    metaDescription:
+      "A loft conversion can make your house a legal three-storey building overnight — what that means for fire doors, escape routes, smoke alarms and cost.",
+    excerpt:
+      "Add a habitable room in the loft and Building Regulations can treat your house as if it's grown a third storey overnight, with a protected staircase and fire doors to match. Here's what changes, and what it costs to get right first time.",
+    imageAlt:
+      "Illustration of a house cross-section with three stacked floors — ground, first and a new loft room under the roof — joined by an amber-highlighted protected staircase, FD30 fire door badges at the loft and first-floor landings, a dashed line marking the 4.5 metre height above which escape windows alone aren't enough, and interlinked smoke alarm icons on the ceiling of each floor.",
+    related: [
+      "loft-conversions-cranleigh-roof-types",
+      "building-control-completion-certificate",
+      "structural-calculations-building-control",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Add a habitable room in the loft and, in fire-safety terms, Building Regulations generally treat the house as gaining a **third storey** — triggering a stricter escape strategy than the two ordinary bedroom floors below it ever needed, under **Approved Document B, Volume 1: Dwellings**.",
+          "Once a floor sits more than **4.5 metres** above ground level, an escape window on its own stops being treated as an adequate means of escape — jumping from that height isn't considered survivable self-rescue, so the staircase itself has to become the escape route instead.",
+          "That means turning the stairs into a **protected stairway**: fire-resisting, self-closing doors — commonly specified as **FD30**, though some building control bodies accept **FD20** — on every room that opens onto it, on every floor it passes, not just the new loft room.",
+          "You'll also need **mains-wired, interlinked smoke alarms** on every storey including the loft, to the **Grade D1, System LD2** arrangement described in the code of practice **BS 5839-6** — a code of practice, not a statutory requirement in its own right, but the standard building control will expect to see met.",
+          "The saving: specify the fire doors and alarm layout on the loft conversion drawings before the staircase position and door openings are fixed on site. Get it signed off at design stage and it costs little more than the doors would anyway; raise it after building control's first inspection and you're commonly paying for a delay as well as the doors.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The loft conversion quote nearly always talks about head height, roof type and where the new stair will land — and almost never mentions the words \"fire door\". That's usually fine, right up until building control's first site visit, when the conversation changes completely: the two ordinary bedrooms underneath the new loft room turn out to be part of a fire safety strategy nobody priced in, and the doors on them need replacing before the job can be signed off.",
+      },
+      {
+        type: "p",
+        text: "It isn't a loophole and it isn't optional. The moment a habitable room goes into the loft, most two-storey houses stop being treated, for fire-safety purposes, as the two-storey house they were built as. That single change pulls in a stricter part of **Approved Document B** than an ordinary bedroom extension ever needs — and it's the part of a loft conversion quote homeowners most often find out about too late, because the staircase and the bedroom doors downstairs look like they have nothing to do with the room going in upstairs.",
+      },
+      { type: "h2", text: "Why does adding a loft room create a 'third storey'?" },
+      {
+        type: "p",
+        text: "Approved Document B measures a house by the height of its topmost floor above ground level, not by how many floors a homeowner would count walking round it. An ordinary two-storey house with bedrooms on the first floor usually has its highest floor comfortably under **4.5 metres**. Put a habitable room into the loft above that, and the new floor is very often above 4.5 metres — which, in fire-safety terms, makes the house a three-storey building, whatever the estate agent's listing would call it.",
+      },
+      {
+        type: "p",
+        text: "That 4.5 metre line isn't a rule of thumb we're applying loosely — it's the actual trigger Approved Document B uses to decide which escape strategy applies, and it's the reason two loft conversions on what look like near-identical houses can need completely different fire doors. A loft conversion above a bungalow, where the new room often sits below 4.5 metres, can sometimes rely on escape windows alone. One above an already [two-storey house](/blog/loft-conversions-cranleigh-roof-types) almost never can, because the new floor is simply too high for anyone to self-rescue through a window.",
+      },
+      { type: "h2", text: "What is a 'protected stairway', and why does it reach doors I'm not touching?" },
+      {
+        type: "p",
+        text: "A **protected stairway** is a staircase enclosed in fire-resisting construction for its whole height, so it stays usable as an escape route for long enough to get everyone out while a fire elsewhere in the house is still developing. Every door opening onto it — bedroom, bathroom, study, the lot — has to be upgraded to a fire-resisting, self-closing door, because an ordinary door left open, or without a self-closer, breaks the protection the whole strategy depends on.",
+      },
+      {
+        type: "p",
+        text: "This is the detail that catches people out, because it isn't limited to the new loft room. The protected stairway runs the full height of the house, so a first-floor bedroom door that nobody's touched, in a room that isn't part of the loft conversion at all, is just as much part of the fire strategy as the door into the new loft bedroom. We've had **building control** flag doors on jobs where the only work upstairs was the loft — the stair below it still had to be brought up to the same standard.",
+      },
+      { type: "h2", text: "Can I keep my escape windows instead of fitting fire doors?" },
+      {
+        type: "p",
+        text: "Only where the floor stays below that 4.5 metre line. Approved Document B's figures for an escape window are specific — a clear openable area of at least **0.33m²**, at least **450mm** wide and 450mm high, with the bottom of the opening no higher than about **1100mm** above the floor — and they're there so that someone really could get out and be caught safely by a ladder or a person below. Above 4.5 metres, none of that applies any more, because the escape isn't considered survivable.",
+      },
+      {
+        type: "p",
+        text: "A roof window above that height can still have a role — some strategies use a rescue window as a way for the fire service to reach someone, or for extra ventilation — but it's a supplement to the protected stairway, not a replacement for it. If a loft conversion quote relies on an escape window as the main fire strategy for a room above 4.5 metres, that's worth raising with building control before anything is ordered, not after.",
+      },
+      {
+        type: "quote",
+        text: "Nobody rings us up excited about a fire door. But the loft conversions that run smoothly are the ones where we've priced the doors and the smoke alarms into the drawings from day one, not the ones where building control raises it on the first inspection. By then you're not just buying a door — you're buying a door and a delay.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "What do fire doors and alarms for a loft conversion actually cost?" },
+      {
+        type: "p",
+        text: "None of this is specialist pricing — it's an ordinary joinery and electrical job, provided it's priced in from the start. The figures below are trade guides, not our own fixed prices, because the exact cost depends on how many existing doors and frames can be reused and how the house is wired already. It's worth checking them alongside our own [pricing guide](/pricing) and the [extension cost guide](/guides/house-extension-costs-surrey), which cover the rest of a typical conversion.",
+      },
+      {
+        type: "table",
+        caption: "Trade-guide ranges — get a site-specific quote alongside the rest of the loft conversion.",
+        head: ["Item", "Typical cost", "Notes"],
+        rows: [
+          ["FD30 fire door, existing frame reused, supplied and fitted", "£300 – £650", "Per door; decoration to match existing joinery is extra"],
+          ["FD30 fire doorset — door, frame and ironmongery — supplied and fitted", "£600 – £1,300", "Needed where the existing frame isn't fire-rated or won't take a certified door"],
+          ["Interlinked, mains-wired smoke alarm, supplied and fitted", "£40 – £90", "Per unit, plus wiring back to the existing circuit"],
+          ["Typical total — 2 to 3 upgraded doors plus the alarm layout", "£1,200 – £2,500", "Most loft conversions above a two-storey house fall in this range"],
+        ],
+      },
+      { type: "h2", text: "How does this fit into the build programme?" },
+      {
+        type: "p",
+        text: "The cost barely changes depending on when the fire doors are specified. The timing does. Get it onto the drawings before the staircase and door openings are built, and the doors are ordered with the rest of the joinery and fitted in the same first-fix visit as everything else. Leave it until building control's first inspection flags it, and the same doors now have to be measured, ordered and fitted around work that's already finished.",
+      },
+      {
+        type: "table",
+        caption: "A guide only — the gap is mostly about when the fire strategy is decided, not what it costs.",
+        head: ["Stage", "Decided at drawing stage", "Raised at first inspection"],
+        rows: [
+          ["Door specification", "Ordered with the rest of the joinery, 1–2 weeks' lead time inside the main programme", "Reordered mid-build once site-measured — same lead time, now on the critical path"],
+          ["Smoke alarm wiring", "Run once, with the rest of the first-fix electrics", "A second visit from the electrician to retrofit cabling"],
+          ["Decoration", "Doors and surrounding walls finished once", "Finished walls and ceilings opened up and made good a second time"],
+          ["Net effect on programme", "None", "Commonly 1–2 weeks"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Specify the fire doors and the alarm layout on the loft conversion drawings and they cost what any other internal door and smoke alarm would — typically **£1,200–£2,500** fitted across a whole conversion, built into the main programme. Leave it to be picked up at building control's first inspection and you're commonly looking at the same bill plus a **1–2 week** delay while a matching doorset is made and fitted around finished work, plus the cost of reopening decorated walls and ceilings to run the alarm cabling.",
+      },
+      { type: "h2", text: "What about smoke alarms, and does BS 5839-6 actually require them?" },
+      {
+        type: "p",
+        text: "**BS 5839-6** is a code of practice, not a regulation in its own right — it's the industry's agreed description of what a competent smoke alarm installation looks like, and it's what building control measures a loft conversion against when deciding whether the Building Regulations' functional requirement for fire detection has actually been met. In practice that means mains-wired, interlinked smoke alarms to **Grade D1, System LD2**: a detector on every storey including the loft, in the circulation space outside each bedroom, wired so that one alarm sounding sets off every alarm in the house.",
+      },
+      {
+        type: "p",
+        text: "Interlinking matters as much as the alarms themselves. A smoke alarm in the loft that nobody downstairs can hear defeats the point of the upgrade, and it's one of the more common things an electrician has to add after the event if it wasn't planned into the first-fix wiring run with the rest of the loft conversion's electrics — the same first-fix stage covered in [structural calculations and what building control looks for](/blog/structural-calculations-building-control).",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to put off a loft conversion — fire doors and interlinked alarms are a normal, modestly priced part of the job once they're planned for, and most Cranleigh conversions above a two-storey house need exactly the package above. It's worth putting the fire strategy on the table at the same time as the roof type and the staircase design when you're talking to [builders in Cranleigh](/areas/cranleigh) about a loft conversion, so it's priced and programmed in from the start rather than discovered at the first inspection.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does every loft conversion need fire doors?",
+        answer:
+          "Not every one — only where the new room makes the house's highest floor more than 4.5 metres above ground, which most loft conversions above an existing two-storey house do. A loft conversion above a bungalow, where the new floor is often below that height, can sometimes rely on escape windows alone. Ask building control to confirm before ordering anything.",
+      },
+      {
+        question: "What is an FD30 fire door, and do I definitely need FD30 rather than FD20?",
+        answer:
+          "FD30 means the door is rated to resist fire for 30 minutes; FD20 for 20. Most loft conversions above a two-storey house are specified with FD30 doors on the protected stairway, but some building control bodies accept FD20 on an ordinary house. Check which your council or approved inspector expects before you order doors.",
+      },
+      {
+        question: "Do my existing bedroom doors need replacing for a loft conversion?",
+        answer:
+          "Only the ones that open onto the protected stairway — but that can include first-floor bedroom and bathroom doors you had no plans to touch, because the stairway has to be protected for its full height, not just at the new loft level.",
+      },
+      {
+        question: "Do I need new smoke alarms for a loft conversion?",
+        answer:
+          "Yes. Mains-wired, interlinked smoke alarms are expected on every storey including the loft, meeting the Grade D1, System LD2 arrangement described in BS 5839-6, so that an alarm triggered anywhere in the house is heard everywhere.",
+      },
+      {
+        question: "How much do fire doors and smoke alarms for a loft conversion cost?",
+        answer:
+          "Budget roughly £300–£650 per door where the existing frame can be reused, rising to £600–£1,300 for a full fire-rated doorset, plus £40–£90 per smoke alarm. A typical conversion needing two or three upgraded doors and an alarm upgrade runs about £1,200–£2,500 — get it priced alongside the rest of the conversion rather than separately.",
+      },
+      {
+        question: "Can I avoid fire doors by keeping the loft as storage rather than a bedroom?",
+        answer:
+          "Often, yes — a loft used purely for storage, with no habitable room, generally doesn't trigger the same escape-route requirements as converting it into a bedroom, office or playroom. But as soon as a habitable room goes in, the fire strategy applies whatever the room is called. Check with building control if you're not sure where the line falls on your project.",
+      },
+    ],
+    art: BLOG_ART["fire-doors-escape-routes-loft-conversion"],
+  },
+  {
     slug: "garage-conversions-cranleigh-permitted-development",
     title: "Garage conversions in Cranleigh: when permitted development covers it, and when it doesn't",
     category: "Planning & surveys",
@@ -5834,6 +5987,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-conservation-area-consent",
       "part-l-extension-insulation",
       "bungalow-extensions-cranleigh",
+      "fire-doors-escape-routes-loft-conversion",
     ],
     body: [
       {

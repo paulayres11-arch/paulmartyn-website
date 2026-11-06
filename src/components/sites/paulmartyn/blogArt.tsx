@@ -16,6 +16,92 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "fire-doors-escape-routes-loft-conversion": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="flSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="flRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#6b7478" /><stop offset="1" stopColor="#434e56" />
+          </linearGradient>
+          <linearGradient id="flBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="flGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eaf6fb" /><stop offset="1" stopColor="#bcdcee" />
+          </linearGradient>
+          <linearGradient id="flGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="flDoor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a9499" /><stop offset="1" stopColor="#5d6568" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="40" fill="url(#flSky)" />
+        <text x="200" y="22" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fontWeight="700" fill="#1f2a30" textAnchor="middle">Three storeys, one protected escape route</text>
+
+        {/* pitched roof over the loft */}
+        <polygon points="40,42 200,10 360,42" fill="url(#flRoof)" stroke="#2f3a3d" strokeWidth="1.3" />
+        {/* dormer rescue window in the roof slope */}
+        <rect x="222" y="26" width="38" height="20" fill="url(#flGlass)" stroke="#3a4448" strokeWidth="1.3" />
+        <path d="M241 26 V46 M222 36 H260" stroke="#3a4448" strokeWidth="1" />
+        <circle cx="277" cy="30" r="12" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="277" y="34.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#a8652a" textAnchor="middle">✕</text>
+        <text x="277" y="49" fontFamily="Helvetica,Arial,sans-serif" fontSize="5.6" fontWeight="700" fill="#2f3a3d" textAnchor="middle">RESCUE WINDOW ONLY</text>
+        <text x="277" y="56" fontFamily="Helvetica,Arial,sans-serif" fontSize="5.6" fontWeight="700" fill="#2f3a3d" textAnchor="middle">NOT THE MAIN ESCAPE</text>
+
+        {/* house body: three storeys */}
+        <rect x="40" y="42" width="320" height="238" fill="url(#flBrick)" stroke="#6f3f28" strokeWidth="1" />
+        <path d="M40 122 H360 M40 202 H360" stroke="#6f3f28" strokeWidth="1.6" opacity=".55" />
+
+        <text x="58" y="68" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#f3efe4">LOFT — NEW 3RD STOREY</text>
+        <text x="58" y="148" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#f3efe4">1ST FLOOR</text>
+        <text x="58" y="228" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#f3efe4">GROUND FLOOR</text>
+
+        {/* protected stairway shaft, full height */}
+        <rect x="168" y="42" width="64" height="238" fill="#f0a94a" fillOpacity=".28" stroke="#e08a2b" strokeWidth="1.4" strokeDasharray="4 3" />
+        <text x="200" y="100" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#7a4414" textAnchor="middle">PROTECTED</text>
+        <text x="200" y="108" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#7a4414" textAnchor="middle">STAIRWAY</text>
+        {/* stair treads, zig-zag through all three floors */}
+        <path d="M174 272 L226 252 M174 252 L226 232 M174 232 L226 212 M174 212 L226 192 M174 192 L226 172 M174 172 L226 152 M174 152 L226 132 M174 132 L226 112 M174 112 L226 92 M174 92 L226 72 M174 72 L226 52" stroke="#c9873a" strokeWidth="1.1" opacity=".55" />
+
+        {/* FD30 door onto loft landing */}
+        <rect x="140" y="76" width="16" height="34" fill="url(#flDoor)" stroke="#3a4448" strokeWidth="1" />
+        <circle cx="152" cy="68" r="12.5" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.3" />
+        <text x="152" y="71.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#a8652a" textAnchor="middle">FD30</text>
+
+        {/* FD30 door onto first-floor landing */}
+        <rect x="140" y="156" width="16" height="34" fill="url(#flDoor)" stroke="#3a4448" strokeWidth="1" />
+        <circle cx="152" cy="148" r="12.5" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.3" />
+        <text x="152" y="151.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#a8652a" textAnchor="middle">FD30</text>
+
+        {/* final exit at ground floor */}
+        <rect x="252" y="236" width="20" height="38" fill="url(#flDoor)" stroke="#3a4448" strokeWidth="1" />
+        <path d="M278 255 H306 M298 248 L306 255 L298 262" stroke="#f3efe4" strokeWidth="1.6" fill="none" />
+        <text x="312" y="258" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#f3efe4">FINAL EXIT</text>
+
+        {/* interlinked smoke alarms */}
+        <path d="M200 50 V276" stroke="#dce7ea" strokeWidth="1" strokeDasharray="2 3" opacity=".8" />
+        <circle cx="200" cy="50" r="5.5" fill="#eef3f4" stroke="#44535a" strokeWidth="1" />
+        <circle cx="200" cy="130" r="5.5" fill="#eef3f4" stroke="#44535a" strokeWidth="1" />
+        <circle cx="200" cy="210" r="5.5" fill="#eef3f4" stroke="#44535a" strokeWidth="1" />
+
+        {/* 4.5m height marker */}
+        <path d="M348 280 V130 M343 280 H353 M343 130 H353" stroke="#1f2a30" strokeWidth="1.3" />
+        <text x="358" y="208" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#1f2a30" transform="rotate(-90 358 208)" textAnchor="middle">≈4.5m</text>
+
+        <rect x="40" y="280" width="320" height="10" fill="url(#flGrass)" opacity=".75" />
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">A loft room can make your house a 3rd storey</text>
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.6" fill="#8fa0a8">Protected stair + FD30 doors replace escape windows above 4.5m</text>
+        <text x="24" y="364" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">Mains-wired, interlinked smoke alarms needed on every storey</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.3" fill="#8fa0a8">Source: Approved Document B, Vol.1 (Dwellings); BS 5839-6</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "garage-conversions-cranleigh-permitted-development": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

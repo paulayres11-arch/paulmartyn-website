@@ -372,12 +372,17 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-10-16] Overheating and Approved Document O in a glazed extension
 - [done 2026-10-23] What an SAP assessment is and when you need one
 - [done 2026-10-30] Scaffolding, pavement licences and the neighbour conversation
-- [ ] Fire doors and escape routes in a loft conversion
+- [done 2026-11-06] Fire doors and escape routes in a loft conversion
 - [ ] Asbestos in a pre-2000 house: what a survey finds and when you need one
 - [ ] Japanese knotweed and your mortgage: what a RICS survey actually checks
 - [ ] What an EPC rating actually measures, and why it matters before a renovation
 - [ ] Flood risk and new extensions: what a Flood Risk Assessment covers
 - [ ] Cavity wall insulation: when it helps, and when it causes damp
+- [ ] Minimum ceiling heights and head height: what Building Regulations actually say for a loft or basement room
+- [ ] Ventilation in a new bathroom or kitchen: Approved Document F and why extractor fans fail inspection
+- [ ] What NHBC's six-year defects cover actually insures, and what it doesn't
+- [ ] Soundproofing between flats and converted houses: Part E of the Building Regulations explained
+- [ ] Working at height and the CDM Regulations: what a homeowner is legally responsible for on their own project
 
 ### If a stream is empty
 

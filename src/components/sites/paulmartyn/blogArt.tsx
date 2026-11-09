@@ -16,6 +16,85 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "fences-gates-boundary-walls-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="fwSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="fwBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="fwGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="fwRoad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a8d8f" /><stop offset="1" stopColor="#676b6e" />
+          </linearGradient>
+          <linearGradient id="fwFence" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e9bd68" /><stop offset="1" stopColor="#c99a4d" />
+          </linearGradient>
+          <linearGradient id="fwAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="38" fill="url(#fwSky)" />
+        <text x="200" y="21" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.3" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same rule, two different height limits</text>
+
+        {/* left scene: roadside fence, 1m limit */}
+        <rect x="14" y="38" width="178" height="80" fill="url(#fwBrick)" opacity=".9" />
+        <rect x="30" y="52" width="26" height="24" fill="#eaf6fb" opacity=".85" />
+        <rect x="140" y="52" width="26" height="24" fill="#eaf6fb" opacity=".85" />
+        <rect x="14" y="150" width="178" height="26" fill="url(#fwRoad)" />
+        <path d="M14 163 H60 M80 163 H126 M146 163 H192" stroke="#f3efe4" strokeWidth="2.4" opacity=".7" />
+        {/* low fence, ~1m scale */}
+        <rect x="26" y="130" width="150" height="6" fill="url(#fwFence)" />
+        {Array.from({ length: 10 }).map((_, i) => (
+          <rect key={`fwa${i}`} x={30 + i * 15} y="118" width="7" height="30" fill="url(#fwFence)" stroke="#8f7042" strokeWidth=".6" />
+        ))}
+        <path d="M200 146 V120 M195 146 H205 M195 120 H205" stroke="#1f2a30" strokeWidth="1.2" />
+        <text x="207" y="136" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30">1m</text>
+        <text x="101" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#1f2a30" textAnchor="middle">NEXT TO A ROAD</text>
+
+        {/* right scene: garden wall, 2m limit */}
+        <rect x="208" y="86" width="178" height="32" fill="url(#fwGrass)" opacity="0" />
+        <rect x="208" y="150" width="178" height="26" fill="url(#fwGrass)" />
+        <rect x="222" y="86" width="150" height="64" fill="url(#fwBrick)" stroke="#6f3f28" strokeWidth="1" />
+        <path d="M222 106 H372 M222 126 H372" stroke="#6f3f28" strokeWidth="1" opacity=".4" />
+        <rect x="218" y="80" width="158" height="8" fill="#d8bd92" stroke="#8f7550" strokeWidth=".8" />
+        <path d="M200 150 V82 M195 150 H205 M195 82 H205" stroke="#1f2a30" strokeWidth="1.2" />
+        <text x="207" y="118" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#1f2a30">2m</text>
+        <text x="297" y="190" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.3" fontWeight="700" fill="#1f2a30" textAnchor="middle">ANYWHERE ELSE</text>
+
+        <path d="M200 44 V180" stroke="#5d6568" strokeWidth="1.2" strokeDasharray="4 3" />
+        <circle cx="200" cy="44" r="13" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="200" y="48" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">VS</text>
+
+        {/* lower strip: wall astride the boundary, line of junction notice */}
+        <rect x="14" y="196" width="372" height="90" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <text x="200" y="210" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.6" fontWeight="700" fill="#2f3a40" textAnchor="middle">A WALL BUILT ON THE BOUNDARY IS A &quot;PARTY FENCE WALL&quot;</text>
+        <polygon points="26,270 26,228 90,220 90,270" fill="url(#fwBrick)" opacity=".5" />
+        <polygon points="374,270 374,228 310,220 310,270" fill="url(#fwBrick)" opacity=".5" />
+        <rect x="90" y="222" width="220" height="48" fill="url(#fwGrass)" opacity=".35" />
+        <path d="M200 218 V272" stroke="#8a4a1f" strokeWidth="1.6" strokeDasharray="5 3" />
+        <rect x="178" y="230" width="44" height="42" fill="url(#fwBrick)" stroke="#6f3f28" strokeWidth="1" />
+        <path d="M178 244 H222 M178 258 H222" stroke="#6f3f28" strokeWidth=".8" opacity=".5" />
+        <rect x="174" y="226" width="52" height="6" fill="#d8bd92" stroke="#8f7550" strokeWidth=".7" />
+        <path d="M222 236 h14 l-4 -5 M236 236 l-4 5" stroke="#e08a2b" strokeWidth="1.6" fill="none" />
+        <text x="265" y="235" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#7a4414">LINE OF JUNCTION</text>
+        <text x="265" y="243" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#7a4414">NOTICE — 1 MONTH</text>
+        <text x="60" y="280" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fill="#44535a" textAnchor="middle">Your garden</text>
+        <text x="340" y="280" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fill="#44535a" textAnchor="middle">Next door</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="12.8" fontWeight="700" fill="#e8e4dc">Fences, gates and walls: 2m, or 1m near a road</text>
+        <text x="24" y="345" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.4" fill="#8fa0a8">Build one astride the boundary and it becomes a party fence wall</text>
+        <text x="24" y="364" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">A Line of Junction notice needs a month — serving it late costs nothing to avoid</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.3" fill="#8fa0a8">Source: GPDO 2015, Sch.2 Pt.2 Class A; Party Wall etc. Act 1996, s.1</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "fire-doors-escape-routes-loft-conversion": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

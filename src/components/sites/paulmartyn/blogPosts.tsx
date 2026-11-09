@@ -46,6 +46,158 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "fences-gates-boundary-walls-cranleigh",
+    title: "Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't",
+    category: "Planning & surveys",
+    date: "2026-11-09",
+    seoTitle: "Fences And Garden Walls In Cranleigh: The Height Rules",
+    metaDescription:
+      "How high a fence, gate or garden wall can be in Cranleigh without planning permission, what the conservation area and listed buildings add, and who pays for a boundary wall.",
+    excerpt:
+      "A fence or garden wall looks like the one job that never needs paperwork — until it's a few inches over the height limit, or built on the boundary without a word to the neighbour.",
+    imageAlt:
+      "Illustration comparing a low roadside fence capped at 1 metre with a taller garden wall capped at 2 metres, and below them a wall straddling a dashed boundary line labelled Line of Junction Notice, one month, between two gardens.",
+    related: [
+      "party-wall-notice-timing",
+      "cranleigh-conservation-area-consent",
+      "garage-conversions-cranleigh-permitted-development",
+      "cranleigh-driveways-permeable-paving-dropped-kerbs",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Most fences, gates and garden walls in Cranleigh are **permitted development** — no planning application needed — up to **2 metres** high, or **1 metre** next to a road used by vehicles, under **Class A, Part 2 of the GPDO 2015**.",
+          "That height limit applies just as much to **rebuilding or raising an existing wall** as to putting up a new one, and it's measured from **ground level** — a raised bed or a change in levels either side of the boundary can tip you over the limit without the wall getting any taller.",
+          "Inside the **Cranleigh Conservation Area**, or within the curtilage of one of the parish's **81 listed buildings**, the normal rule doesn't help: pulling down a wall, fence or gate over those same 1m/2m thresholds needs its own consent, and a listed curtilage wall can need **Listed Building Consent** regardless of height.",
+          "A wall built **astride the boundary line** — not a timber fence, which the law treats differently — is a **party fence wall** under the **Party Wall etc. Act 1996**, and needs a **Line of Junction notice** served at least **one month** before work starts.",
+          "The saving: serve that notice yourself, in writing, a month ahead, and it costs nothing. Skip it, and a neighbour who disputes the wall can force a **party wall surveyor** onto the job — from **£1,000** — to settle something a stamp would have avoided.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ask most people in Cranleigh which jobs need planning permission and a fence is the last thing on the list — it's the weekend job, the one nobody thinks to check. Most of the time that instinct is right. But three versions of the same phone call come in every year: the new wall a few inches over the height the council will let through without an application, the smart iron railings that needed listed building consent because the cottage behind them is listed, and the fence that's gone up exactly on the line between two gardens, with the neighbour now refusing to let anyone finish 'their' side of it.",
+      },
+      {
+        type: "p",
+        text: "None of those three problems are really about the fence. They're about which of three different sets of rules applies — ordinary planning permission, the conservation area, and the law between neighbours — and nobody checking before the first post goes in. Get the right one looked at first and a fence, gate or garden wall in Cranleigh is a weekend's work and a modest bill. Get it wrong and you're either applying for retrospective permission, taking a wall back down, or explaining across the kitchen table why you didn't mention it.",
+      },
+      { type: "h2", text: "Do I need planning permission for a fence, gate or wall in Cranleigh?" },
+      {
+        type: "p",
+        text: "Mostly, no. Fences, gates, walls and other means of enclosure are covered by **Class A, Part 2 of the GPDO 2015**, and Planning Portal's own guidance sets out the result plainly: up to **2 metres** high anywhere on the plot, or **1 metre** where the boundary fronts a highway used by vehicles, no application is needed. Height is measured from **ground level immediately next to the structure**, so a wall on a raised bed, or beside a driveway dug out below the original garden level, can look modest and still count as taller than it is.",
+      },
+      {
+        type: "p",
+        text: "The same limit applies to **altering, improving or rebuilding** an existing fence or wall, not only a brand-new one. Adding another course of brick to a crumbling garden wall is treated exactly the same as starting from scratch — the finished height is what matters, not how much of it is new.",
+      },
+      { type: "h2", text: "Does it matter if the boundary runs along a road or a footpath?" },
+      {
+        type: "p",
+        text: "This is the one genuinely grey area. The legislation's own wording restricts the 1m limit to a boundary fronting 'a highway used by vehicular traffic'. Planning Portal's public guidance, which Waverley and most councils point enquirers towards, applies the same 1m limit next to a footpath too, on the basis that a footpath is still legally a highway even though cars don't use it — the two readings don't quite agree. Worth a five-minute call to Waverley before building to 2m next to anything a pedestrian might use, rather than finding out afterwards which interpretation the duty planning officer prefers.",
+      },
+      {
+        type: "p",
+        text: "The same spot matters for a different reason near where a driveway crosses the pavement. A [new or altered vehicle crossing](/blog/cranleigh-driveways-permeable-paving-dropped-kerbs) needs a clear sightline for a car reversing out, and a tall new wall or gate pillar in the wrong place can create a visibility problem that has nothing to do with the GPDO height limit — Surrey County Council, as the highway authority, is a separate check from Waverley on planning.",
+      },
+      { type: "h2", text: "Does a listed building or the Cranleigh Conservation Area change the answer?" },
+      {
+        type: "p",
+        text: "For routine fencing, generally not — but **demolition** is treated differently from erection. Inside the Cranleigh Conservation Area, pulling down a wall, fence or gate over **1 metre fronting a highway** or **2 metres elsewhere** needs consent in its own right, under the direction that governs demolition in conservation areas. Those are the same thresholds as the general planning rule, so a wall that was fine to put up without an application can still need consent to take down if you later replace it with something lower. [Building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent) covers the wider picture.",
+      },
+      {
+        type: "p",
+        text: "Listed buildings are stricter again. Permitted development for fences and walls doesn't apply inside the curtilage of a listed building, and a wall that pre-dates the house and sits within its curtilage can be treated as part of the listed building in its own right — meaning any alteration, however modest, can need **Listed Building Consent**. With roughly **81** listed buildings in the parish, plus another **174** on the [Buildings of Local Merit list](/blog/cranleigh-buildings-of-local-merit) that Waverley still weighs without statutory protection, check both lists before touching an old garden wall, not just the obvious timber-framed cottage.",
+      },
+      { type: "h2", text: "Whose wall is it, and who pays? The Party Wall Act and boundary walls" },
+      {
+        type: "p",
+        text: "Most people assume the Party Wall etc. Act 1996 is only about extensions and lofts — a notice that lands because next door is digging a trench near your foundations. It also covers the fence itself, where what's going up is a wall rather than timber panels. A wall that isn't part of a building and stands astride the line between two gardens is a **party fence wall** in the Act's own terms, and building one — or rebuilding an existing one on the line — needs a **Line of Junction notice** served at least **one month** before work starts, covered in more detail in [the notice periods that set your start date](/blog/party-wall-notice-timing).",
+      },
+      {
+        type: "p",
+        text: "Timber fences aren't covered the same way — a standard panel fence on posts isn't a party structure under the Act, so most garden fencing never touches this at all; it only applies once masonry is involved. Build astride the boundary without the neighbour's written agreement and the wall has to go wholly on your own land instead; agree it, and the cost is normally shared in proportion to use. The notice itself costs nothing but a letter and a month's wait — it's failing to serve it that causes the argument.",
+      },
+      { type: "h2", text: "What about a hedge instead of a fence?" },
+      {
+        type: "p",
+        text: "A hedge isn't covered by the GPDO height limits at all — those apply to a 'fence, wall or other means of enclosure', and a planted hedge is none of those. What stops a hedge growing indefinitely is **Part 8 of the Anti-social Behaviour Act 2003**, the 'high hedges' procedure, which lets Waverley step in only once direct contact with the neighbour has genuinely failed. A formal complaint currently costs **£645**, non-refundable even if no action is needed, and the most a remedial notice can ever require is cutting back to **2 metres** — not removing the hedge. It's a genuine last resort, and a slower, costlier route to roughly the height limit a fence gives for free.",
+      },
+      { type: "h2", text: "What does a fence, gate or wall cost in Cranleigh?" },
+      {
+        type: "table",
+        caption: "National trade-guide ranges — get a site-specific quote for your boundary and ground conditions.",
+        head: ["Job", "Typical cost", "Notes"],
+        rows: [
+          ["Timber panel fence, fitted", "£90 – £150 per linear metre", "Materials, labour and basic post-holes; concrete posts and gravel boards add more"],
+          ["Single-skin brick garden wall, ~1m high", "£120 – £220 per linear metre", "Includes foundations, brick and coping; double-skin roughly doubles it"],
+          ["New or altered vehicular gate", "£600 – £2,500+", "Timber five-bar gate at the low end; wrought iron or electric opening at the top"],
+          ["Retrospective householder planning application, if one turns out to be needed", "£548, rising to ~£575 from 8 Dec 2026", "No guarantee of consent — avoided entirely by checking height first"],
+          ["Party wall surveyor, on dissent", "from £1,000", "Only arises if a boundary wall dispute isn't resolved by agreement"],
+        ],
+      },
+      { type: "h2", text: "How long does it take, and when should I sort the paperwork?" },
+      {
+        type: "table",
+        caption: "A guide only — a conservation area or listed building check, or a dissenting neighbour, is what adds real time.",
+        head: ["Stage", "Typical duration", "Can run alongside"],
+        rows: [
+          ["Checking height, highway position and listed/conservation status with Waverley", "A few days", "Getting quotes"],
+          ["Line of Junction notice, if building a wall astride the boundary", "1 month minimum; neighbour has 14 days to respond", "Design and material ordering — the step almost everyone forgets"],
+          ["Listed Building Consent or conservation area consent, if needed", "8 weeks (statutory)", "Nothing touching the existing wall until it's granted"],
+          ["Build — fence, gate or wall", "A few days – 2 weeks", "—"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "A fence is usually the quickest job we do all year — it's also one of the few where the paperwork decides how long it takes, not the build. Check the height against the road, check whether the wall's going on the line, and the actual building part looks after itself.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A Line of Junction notice costs nothing but a letter and a month's wait, served before the first post goes in. Skip it on a wall built astride the boundary and a neighbour who disputes it can force a **party wall surveyor** onto the job — from **£1,000** — to agree something the notice would have settled for free. The same logic applies to height: build to **2m**, or **1m** near a road, and the council needs nothing from you; go higher without checking and a retrospective householder planning application currently costs **£548**, rising to around **£575** from 8 December 2026, with no guarantee it's granted.",
+      },
+      {
+        type: "p",
+        text: "A fence, gate or garden wall only stays the quick, cheap job it looks like on paper if the height, the boundary line and the neighbour are all squared away before the first post goes in — exactly the kind of five-minute question worth putting to [builders in Cranleigh](/areas/cranleigh) alongside the quote, not after the wall's already up.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for a garden fence in Cranleigh?",
+        answer:
+          "Usually not. Fences, gates and walls up to 2 metres high — or 1 metre next to a road used by vehicles — are permitted development under Class A, Part 2 of the GPDO 2015, measured from ground level. The same limit applies to rebuilding or raising an existing one, not just a new structure.",
+      },
+      {
+        question: "How high can a boundary wall be without planning permission?",
+        answer:
+          "2 metres anywhere on the plot, or 1 metre where it fronts a highway used by vehicles. Planning Portal's own guidance treats a footpath the same as a road for this purpose, though the legislation's wording is narrower — worth checking with Waverley if your boundary runs along a footpath rather than a road.",
+      },
+      {
+        question: "Does the Party Wall Act apply to a garden fence?",
+        answer:
+          "Not to a timber panel fence — that isn't a party structure under the Act. It applies once a wall is involved: a masonry wall built astride the boundary line is a party fence wall, and needs a Line of Junction notice served at least a month before work starts.",
+      },
+      {
+        question: "What if my neighbour won't agree to a wall on the boundary line?",
+        answer:
+          "Without written agreement, the wall has to go wholly on your own land instead of astride the line. If the neighbour disputes an existing wall or the notice itself, a party wall surveyor is appointed to resolve it, typically from £1,000.",
+      },
+      {
+        question: "Can Waverley make my neighbour cut down a hedge?",
+        answer:
+          "Only as a last resort, under Part 8 of the Anti-social Behaviour Act 2003, and only once direct contact has failed. A formal complaint costs £645, non-refundable, and a remedial notice can never require cutting below 2 metres or removing the hedge entirely.",
+      },
+      {
+        question: "Does a wall in the Cranleigh Conservation Area need extra permission?",
+        answer:
+          "Taking down a wall, fence or gate over 1 metre fronting a highway or 2 metres elsewhere needs its own consent inside the conservation area, even where putting one up wouldn't. A wall within a listed building's curtilage can need Listed Building Consent for any alteration, regardless of height.",
+      },
+    ],
+    art: BLOG_ART["fences-gates-boundary-walls-cranleigh"],
+  },
+  {
     slug: "fire-doors-escape-routes-loft-conversion",
     title: "Fire doors and escape routes in a loft conversion: what Building Regulations actually require",
     category: "Building control",
@@ -5832,7 +5984,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trees-and-foundation-depth-cranleigh",
       "extension-value-cranleigh",
       "basements-cellars-cranleigh-weald-clay",
-      "scaffolding-licence-pavement-neighbour-access",
+      "fences-gates-boundary-walls-cranleigh",
     ],
     body: [
       {

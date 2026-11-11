@@ -16,6 +16,94 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "orangeries-glazed-extensions-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="ogaSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="ogaWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ece4d2" /><stop offset="1" stopColor="#d6ccb4" />
+          </linearGradient>
+          <linearGradient id="ogaBrick" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <linearGradient id="ogaGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="ogaGlass" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#dcebf0" stopOpacity=".92" /><stop offset="1" stopColor="#aac4cc" stopOpacity=".92" />
+          </linearGradient>
+          <linearGradient id="ogaAmber" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#f0a94a" /><stop offset="1" stopColor="#e08a2b" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="38" fill="url(#ogaSky)" />
+        <text x="200" y="21" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#1f2a30" textAnchor="middle">Same glass box, two different rulebooks</text>
+
+        <rect x="14" y="38" width="372" height="158" fill="url(#ogaSky)" opacity=".4" />
+        <rect x="14" y="178" width="372" height="18" fill="url(#ogaGrass)" />
+
+        {/* left scene: conservatory, door kept shut, exempt */}
+        <rect x="14" y="70" width="26" height="108" fill="url(#ogaWall)" stroke="#8f8468" strokeWidth="1" />
+        <rect x="21" y="86" width="12" height="16" fill="#aac4cc" opacity=".8" />
+        <polygon points="40,96 172,138 172,144 40,102" fill="url(#ogaGlass)" stroke="#5d6568" strokeWidth="1.1" />
+        <polygon points="40,102 172,144 172,178 40,178" fill="url(#ogaGlass)" opacity=".55" stroke="#5d6568" strokeWidth="1" />
+        <path d="M60 104 L60,178 M90 112 L90,178 M120 122 L120,178 M150 132 L150,178" stroke="#5d6568" strokeWidth=".7" opacity=".35" />
+        {/* door between house and conservatory, drawn shut */}
+        <rect x="38" y="138" width="10" height="40" fill="#b9823f" stroke="#7a5527" strokeWidth="1" />
+        <circle cx="45" cy="158" r="1.3" fill="#2f2213" />
+        <circle cx="40" cy="183" r="8.5" fill="#fdf1de" stroke="#4f8a3f" strokeWidth="1.3" />
+        <path d="M36.5 183 l2.5,3 l5,-6" stroke="#4f8a3f" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="106" y="63" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">CONSERVATORY</text>
+        <text x="106" y="193" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#2f6b2a" textAnchor="middle">DOOR STAYS SHUT, UNDER 30m² = EXEMPT</text>
+
+        <path d="M200 44 V190" stroke="#5d6568" strokeWidth="1.2" strokeDasharray="4 3" />
+        <circle cx="200" cy="117" r="13" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="200" y="121" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">VS</text>
+
+        {/* right scene: orangery, dividing wall removed, full regs */}
+        <rect x="360" y="70" width="26" height="108" fill="url(#ogaWall)" stroke="#8f8468" strokeWidth="1" />
+        <rect x="367" y="86" width="12" height="16" fill="#aac4cc" opacity=".8" />
+        <rect x="214" y="140" width="146" height="38" fill="url(#ogaBrick)" stroke="#6f3f28" strokeWidth="1" />
+        <path d="M214 153 H360 M214 166 H360" stroke="#6f3f28" strokeWidth=".7" opacity=".4" />
+        <rect x="210" y="92" width="154" height="8" fill="#8a8d8f" stroke="#5d6568" strokeWidth=".8" />
+        <rect x="258" y="68" width="48" height="26" fill="url(#ogaGlass)" stroke="#5d6568" strokeWidth="1.1" />
+        <path d="M282 68 V94 M258 81 H306" stroke="#5d6568" strokeWidth=".7" opacity=".5" />
+        <polygon points="214,100 360,100 360,140 214,140" fill="url(#ogaGlass)" opacity=".5" stroke="#5d6568" strokeWidth="1" />
+        {/* dashed gap where the dividing wall used to be, marked removed */}
+        <rect x="337" y="112" width="23" height="66" fill="none" stroke="#b23a2e" strokeWidth="1.3" strokeDasharray="3 2" />
+        <path d="M339 114 L358,176 M358 114 L339,176" stroke="#b23a2e" strokeWidth="1.1" opacity=".7" />
+        <text x="287" y="63" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">ORANGERY</text>
+        <text x="287" y="193" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#8a3420" textAnchor="middle">WALL OUT = FULL BUILDING REGS</text>
+
+        {/* lower strip: permitted development depth ruler and the listed-building exception */}
+        <rect x="14" y="200" width="372" height="92" rx="4" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+        <rect x="26" y="238" width="30" height="40" fill="url(#ogaBrick)" />
+        <rect x="56" y="256" width="66" height="22" fill="url(#ogaGlass)" opacity=".7" stroke="#5d6568" strokeWidth="1" />
+        <path d="M56 246 V282 M122 246 V282" stroke="#1f2a30" strokeWidth="1.1" />
+        <path d="M56 250 H122" stroke="#1f2a30" strokeWidth="1" />
+        <text x="89" y="218" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#1f2a30" textAnchor="middle">PERMITTED DEVELOPMENT DEPTH</text>
+        <text x="89" y="233" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#a8652a" textAnchor="middle">3m attached / 4m detached</text>
+        <path d="M128 262 H168" stroke="#8a97a0" strokeWidth="1" strokeDasharray="3 2" />
+        <circle cx="206" cy="245" r="15" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.6" />
+        <path d="M200 251 h12 M203 238 v13 l3,4 M200 238 h12" stroke="#a8652a" strokeWidth="1.3" fill="none" />
+        <text x="206" y="268" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44535a" textAnchor="middle">LISTED</text>
+        <text x="300" y="222" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">On one of Cranleigh&apos;s</text>
+        <text x="300" y="233" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">81 listed buildings,</text>
+        <text x="300" y="244" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">consent is needed</text>
+        <text x="300" y="255" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">whatever the size —</text>
+        <text x="300" y="266" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#8a3420" textAnchor="middle">PD limits don&apos;t apply</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Same glass box, two different rulebooks</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.4" fill="#8fa0a8">Conservatory under 30m² with the door kept shut can be exempt from most Building Regulations</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.9" fill="#8fa0a8">Open it into the kitchen and it&apos;s an orangery — full Part L, SAP and building control sign-off</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: gov.uk Building Regs exemptions; GPDO 2015 Sch.2 Pt.1 Class A</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "fences-gates-boundary-walls-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

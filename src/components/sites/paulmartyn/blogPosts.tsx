@@ -46,6 +46,150 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "orangeries-glazed-extensions-cranleigh",
+    title: "Orangeries in Cranleigh: planning permission, building regulations and what it costs",
+    category: "Planning & surveys",
+    date: "2026-11-11",
+    seoTitle: "Orangery or Conservatory in Cranleigh: Planning & Cost",
+    metaDescription:
+      "An orangery looks like a bigger conservatory, but opening it into the kitchen changes which rules apply. What Cranleigh homeowners need to check first.",
+    excerpt:
+      "A glazing brochure's \"conservatory\" and a planning officer's \"orangery\" are not the same thing, and the difference decides whether building regulations apply at all. Here's what actually changes, and what it costs either way.",
+    imageAlt:
+      "Illustration comparing two glazed garden rooms side by side under a VS divider: on the left a mostly-glass conservatory with a closed door between it and the house and a green tick marked EXEMPT, on the right an orangery with brick dwarf walls and a glazed roof lantern, with the dividing wall shown removed and marked in red. Below, a ruler shows the 3m attached / 4m detached permitted development depth limit next to a badge reading LISTED — PD limits don't apply",
+    related: [
+      "overheating-glazed-extension-part-o",
+      "cranleigh-conservation-area-consent",
+      "garden-rooms-cranleigh-permitted-development",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A conservatory under **30 square metres**, thermally separated from the house by a door or wall that stays in place, can be **exempt from most Building Regulations** — but an orangery with brick dwarf walls opened straight into the kitchen usually is not, whatever the brochure calls it.",
+          "Most single-storey rear orangeries in Cranleigh go ahead as **permitted development** under Class A: up to **3 metres** attached or **4 metres** detached without neighbour consultation, rising to **6 metres** or **8 metres** under the larger home extension scheme — except inside the **Cranleigh Conservation Area**, where that larger scheme does not apply.",
+          "**Approved Document O**, the overheating regulation, only covers new homes built since **15 June 2022** — it does not reach an extension, orangery or conservatory added to an existing Cranleigh house, however much glazing goes into it.",
+          "Any extension to one of the parish's **81 listed buildings** needs **listed building consent** regardless of size or permitted development rights, and building without it is a criminal offence.",
+          "Settling whether you're building an exempt conservatory or a fully-regulated orangery before the drawings are finished avoids a stalled building control application and an unplanned structural engineer's fee later.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The brochure called it a conservatory. By the time the drawings came back from the glazing company, it had brick dwarf walls up to worktop height, a flat roof with a glazed lantern in the middle, and the kitchen opened straight through into it with the old wall gone. Nobody had used the word orangery once, and nobody had mentioned that removing that wall meant the room no longer qualified for the one thing the salesperson's confidence rested on: that conservatories don't need building regulations.",
+      },
+      {
+        type: "p",
+        text: "That conversation comes up more in Cranleigh than in most places, because a design that reads as straightforward on a 1980s semi somewhere else runs into the settlement boundary, a conservation area designated back in 1973, or one of the parish's 81 listed buildings here. The planning question and the building regulations question are two separate tests, and getting one right doesn't answer the other — which is exactly how a straightforward garden room ends up with a stalled application, an unplanned engineer's fee, or both.",
+      },
+      { type: "h2", text: "Do I need planning permission for an orangery in Cranleigh?" },
+      {
+        type: "p",
+        text: "Most of the time, no — not as a separate application. A single-storey orangery or conservatory added to the rear of a Cranleigh house usually falls under permitted development rights, Schedule 2, Part 1, Class A of the General Permitted Development Order 2015: up to **3 metres** beyond the rear wall on an attached house, or **4 metres** detached, without needing to notify the neighbours. Go further — up to **6 metres** or **8 metres** — and the larger home extension neighbour consultation scheme can cover it instead of a full application, for a **£249** fee, rising to **£310** from 8 December 2026.",
+      },
+      {
+        type: "p",
+        text: "Two things switch that off. The larger neighbour consultation scheme does not apply on Article 2(3) land, which includes the **Cranleigh Conservation Area** — inside it, you're capped at the standard 3m/4m limits regardless of fee. A side extension, rather than a rear one, needs full planning permission whatever the size, in or out of the conservation area. And overall height matters: a single-storey addition can't exceed the height of the existing roof, and eaves within 2 metres of a boundary are capped at **3 metres** — a detail that catches a tall orangery lantern roof more often than a low conservatory.",
+      },
+      { type: "h2", text: "Orangery, conservatory or extension — why the label decides which building regulations apply" },
+      {
+        type: "p",
+        text: "Planning permission and building regulations are separate tests, and the second one often turns on wording rather than size. A conservatory can be exempt from most of the Building Regulations altogether, provided it stays under **30 square metres** of internal floor area, sits at ground level, and is thermally separated from the rest of the house — meaning the external-quality wall, door or windows between the two stay in place, and any heating in the new room is independent of the house's own system, or there isn't any. Meet those three conditions and the conservatory itself doesn't need a building regulations application at all.",
+      },
+      {
+        type: "p",
+        text: "An orangery usually fails at least one of them by design. Brick dwarf walls and a solid, insulated lantern roof are closer to a proper extension than a glass box, and the whole point for most households is to open the new room straight into the kitchen — which means taking down the separating wall. The moment that happens, the exemption ends: the new structural opening needs calculations and building control sign-off, the room has to meet the Part L insulation standard like any other extension, and if the new glazing comes to more than **25%** of the room's floor area — which a lantern roof and a run of bi-fold doors usually do — a SAP or area-weighted U-value calculation is needed as well. We've set out what that 25% threshold means for the glass itself in [overheating in a glazed extension](/blog/overheating-glazed-extension-part-o).",
+      },
+      {
+        type: "quote",
+        text: "Nine times out of ten, when someone tells me they're having \"a conservatory\" built, what's actually going up is an orangery with the kitchen wall coming down. There's nothing wrong with that — it's usually the better room — but the moment that wall goes, you're not in the exempt category any more, and the building control application needs to reflect what you're actually building, not what the brochure called it.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Will my new room overheat in summer — doesn't Part O cover that?" },
+      {
+        type: "p",
+        text: "Not for an extension, no. Approved Document O — the building regulation covering overheating — has applied to new residential buildings in England since **15 June 2022**, but gov.uk's own guidance is explicit that it does not reach an extension, orangery or conservatory added to a house that already exists, however much glazing goes into it. That's a genuine gap, not something you can rely on by accident: nobody in the planning or building control process is checking whether a heavily-glazed orangery will be usable by the second July. We've covered what to ask for instead — shading, an openable vent, solar-control glass — in [overheating in a glazed extension](/blog/overheating-glazed-extension-part-o), and it's worth raising at the same point the glazing gets ordered, not after the first warm week finds the problem for you.",
+      },
+      { type: "h2", text: "What does the Cranleigh Conservation Area or a listed cottage add?" },
+      {
+        type: "p",
+        text: "Most of Cranleigh's housing stock sits outside the conservation area, where the rules above apply in full. Where a house is inside it — the High Street was designated in **October 1973** and extended in **July 1985** and **July 2016** — a rear orangery within the standard 3m/4m limits still goes ahead as permitted development, but anything visible from outside the plot gets more scrutiny over materials: render, roof tiles and window styles are expected to match the street, not just the building regulations minimum.",
+      },
+      {
+        type: "p",
+        text: "A listed building is a different test entirely. The parish has **81** nationally listed buildings under the Cranleigh Neighbourhood Plan, and no permitted development right applies to any of them — every extension to a listed house, orangery included, needs **listed building consent** on top of planning permission, whatever the size, and building without it is a criminal offence, not just a planning breach. There's no application fee for listed building consent itself, but the statutory decision period is the same **8 weeks** as a full planning application, and it has to be granted before anything structural starts. The same care applies, in a lighter form, to the **174** Buildings of Local Merit Waverley also weighs — not a statutory designation, but a material consideration a case officer will look at. We've covered both lists in [building inside the Cranleigh Conservation Area](/blog/cranleigh-conservation-area-consent).",
+      },
+      { type: "h2", text: "What does an orangery cost in Cranleigh?" },
+      {
+        type: "p",
+        text: "Cost depends almost entirely on which of the two rooms above you're actually building, which is one more reason to settle the label early. Our own single-storey extension rate, set out in full in the [house extension cost guide](/guides/house-extension-costs-surrey), is the figure that applies once the dwarf walls, insulated roof and structural opening make it a proper orangery rather than an exempt conservatory kit.",
+      },
+      {
+        type: "table",
+        caption: "Indicative figures only — get a fixed quote against your own design and glazing specification.",
+        head: ["Route", "Typical cost", "What drives the price"],
+        rows: [
+          ["Conservatory kept under 30m², thermally separate", "Roughly £15,000 - £30,000 supplied and fitted, by national glazing trade guides", "Frame material and roof type — it isn't built to our own extension standard, because it doesn't need to be"],
+          ["Orangery built to full Building Regulations, opened into the house", "**£2,700 - £3,100 per m²**, our standard single-storey rate, often towards the top of that band", "Brick dwarf walls, a structural lantern roof, insulation and the new opening into the kitchen all add to a standard single-storey extension"],
+          ["Solar-control glazing upgrade", "Roughly **£40 - £90 per m²** of glazing, over standard units", "Keeps the room usable in summer, since Part O won't require it for you"],
+          ["Structural engineer's calculations for the new opening", "**£1,500 - £3,000**", "Needed wherever a load-bearing wall is removed to join the room to the house"],
+        ],
+      },
+      { type: "h2", text: "How long does it take to get an orangery built in Cranleigh?" },
+      {
+        type: "table",
+        head: ["Stage", "Typical timescale", "Note"],
+        rows: [
+          ["Design and glazing specification", "2 - 4 weeks", "Where the conservatory-or-orangery decision above actually gets made"],
+          ["Permitted development vs full planning", "No extra time within Class A limits; up to **8 weeks** for a full application", "Confirm the route before ordering frames"],
+          ["Listed building consent, if needed", "**8 weeks** (statutory)", "Required for any extension to a listed building, regardless of size or permitted development rights"],
+          ["Build", "8 - 14 weeks depending on structure and services", "An orangery's dwarf walls and lantern roof take longer than a straightforward conservatory kit"],
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Confirming the permitted development limits and the conservation area position before anything is drawn up avoids losing the **£548** householder planning fee — rising to roughly **£575** from 8 December 2026 — to a refused application, and the statutory **eight-week** decision period you would then have to run a second time once the design is corrected.",
+      },
+      {
+        type: "p",
+        text: "None of this is complicated once the room is correctly labelled at the drawing stage — a conservatory kept genuinely separate, or an orangery designed and costed as the proper extension it is. Getting that settled before the planning application goes in, rather than after a case officer or a building control surveyor asks the obvious question, is exactly the kind of conversation worth having with [builders in Cranleigh](/areas/cranleigh) before the glazing order is placed.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for an orangery in Cranleigh?",
+        answer:
+          "Usually not as a separate application. A single-storey rear orangery or conservatory within 3 metres (attached) or 4 metres (detached) of the original rear wall is normally permitted development. Going up to 6 or 8 metres needs the larger home extension neighbour consultation scheme instead of full planning, except inside the Cranleigh Conservation Area, where that larger scheme does not apply and the standard 3m/4m limits are capped.",
+      },
+      {
+        question: "What's the difference between a conservatory and an orangery for building regulations?",
+        answer:
+          "A conservatory can be exempt from most Building Regulations if it stays under 30 square metres, sits at ground level, and remains thermally separated from the house by a wall, door or windows that stay in place, with independent or no heating. An orangery, with brick dwarf walls and usually opened straight into the kitchen, loses that exemption and needs full building control sign-off, including structural calculations for the new opening.",
+      },
+      {
+        question: "Does the Part O overheating regulation apply to my new orangery?",
+        answer:
+          "No. Approved Document O has applied to new residential buildings since 15 June 2022, but it does not extend to an extension, orangery or conservatory added to an existing house, whatever the amount of glazing. See our post on overheating in a glazed extension for what to specify instead.",
+      },
+      {
+        question: "Do I need listed building consent for an orangery on a listed Cranleigh cottage?",
+        answer:
+          "Yes. Every extension to one of the parish's 81 listed buildings needs listed building consent on top of planning permission, regardless of size, and there is no permitted development right that gets around it. Building without consent is a criminal offence.",
+      },
+      {
+        question: "How much does an orangery cost in Cranleigh?",
+        answer:
+          "A genuinely exempt conservatory under 30 square metres typically runs from roughly £15,000 to £30,000 supplied and fitted. An orangery built to full Building Regulations is usually priced at our standard single-storey extension rate of £2,700 to £3,100 per square metre, often towards the top of that band because of the brick dwarf walls, structural roof lantern and insulation involved.",
+      },
+      {
+        question: "How long does it take to get an orangery built in Cranleigh?",
+        answer:
+          "Design and specification typically take 2 to 4 weeks. Within permitted development limits there's no extra time; a full planning application has a statutory target of up to 8 weeks, the same as listed building consent where that's needed. The build itself usually runs 8 to 14 weeks depending on structure and services.",
+      },
+    ],
+    art: BLOG_ART["orangeries-glazed-extensions-cranleigh"],
+  },
+  {
     slug: "fences-gates-boundary-walls-cranleigh",
     title: "Fences, gates and boundary walls in Cranleigh: what needs permission and what doesn't",
     category: "Planning & surveys",
@@ -1681,9 +1825,9 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration comparing two lean-to glazed extension roofs side by side under the same sun: on the left, unshaded fixed glass with a thermometer reading around 32 degrees Celsius; on the right, the same roof with an external louvre blocking the sun, an open vent, solar-control glass and a thermometer reading around 24 degrees Celsius, with a stamped badge reading PART O, NEW HOMES ONLY and a struck-through line over it",
     related: [
+      "orangeries-glazed-extensions-cranleigh",
       "garden-rooms-cranleigh-permitted-development",
       "part-l-extension-insulation",
-      "trickle-vents-approved-document-f",
     ],
     body: [
       {

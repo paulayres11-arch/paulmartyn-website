@@ -16,6 +16,77 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "asbestos-survey-pre-2000-house": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="asbSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="asbGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="asbRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7b8a90" /><stop offset="1" stopColor="#566069" />
+          </linearGradient>
+          <linearGradient id="asbWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ece4d2" /><stop offset="1" stopColor="#d6ccb4" />
+          </linearGradient>
+          <linearGradient id="asbGarageRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9aa3a6" /><stop offset="1" stopColor="#767f82" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="38" fill="url(#asbSky)" />
+        <text x="200" y="21" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">Where asbestos hides in a pre-2000 house</text>
+
+        <rect x="14" y="38" width="372" height="222" fill="url(#asbSky)" opacity=".4" />
+        <rect x="14" y="238" width="372" height="22" fill="url(#asbGrass)" />
+
+        {/* house cutaway, left: loft/ceiling, room, service cupboard */}
+        <polygon points="38,112 122,58 206,112" fill="url(#asbRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="44" y="112" width="156" height="38" fill="#efe6d8" stroke="#8f8468" strokeWidth="1" />
+        <rect x="44" y="150" width="156" height="9" fill="#cfcdb9" stroke="#8f8468" strokeWidth=".6" />
+        <path d="M48 154 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0 q4,-4.5 8,0" stroke="#8f8468" strokeWidth=".8" fill="none" opacity=".6" />
+        <rect x="44" y="159" width="156" height="51" fill="url(#asbWall)" stroke="#8f8468" strokeWidth="1" />
+        <rect x="44" y="210" width="156" height="10" fill="#c7a977" stroke="#8f8468" strokeWidth=".6" />
+        <path d="M57 210 V220 M70 210 V220 M83 210 V220 M96 210 V220 M109 210 V220 M122 210 V220 M135 210 V220 M148 210 V220 M161 210 V220 M174 210 V220 M187 210 V220" stroke="#8f8468" strokeWidth=".5" opacity=".6" />
+        <rect x="150" y="196" width="34" height="44" fill="#e3dccb" stroke="#8f8468" strokeWidth="1" />
+        <rect x="158" y="202" width="18" height="30" rx="3" fill="#d8d2c2" stroke="#6f6652" strokeWidth="1" />
+        <path d="M158 207 H176 M158 213 H176 M158 219 H176 M158 225 H176" stroke="#6f6652" strokeWidth=".9" opacity=".55" />
+        <text x="122" y="104" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">PRE-2000 HOUSE</text>
+
+        <circle cx="44" cy="154" r="8" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="44" y="157.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">1</text>
+        <circle cx="44" cy="215" r="8" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="44" y="218.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">2</text>
+        <circle cx="167" cy="194" r="8" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="167" y="197.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">3</text>
+
+        {/* garage, right: corrugated cement roof sheets, the single most common find */}
+        <path d="M244 160 L250 138 L370 138 L376 160 Z" fill="url(#asbGarageRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <path d="M248 144 H372 M248 149 H372 M248 154 H372" stroke="#5d6568" strokeWidth=".7" opacity=".55" />
+        <rect x="250" y="160" width="120" height="78" fill="url(#asbWall)" stroke="#8f8468" strokeWidth="1" />
+        <rect x="270" y="190" width="60" height="48" fill="#b9823f" stroke="#7a5527" strokeWidth="1" />
+        <path d="M270 202 H330 M270 214 H330 M270 226 H330" stroke="#7a5527" strokeWidth=".7" opacity=".5" />
+        <text x="310" y="252" fontFamily="Helvetica,Arial,sans-serif" fontSize="8.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">GARAGE</text>
+        <circle cx="310" cy="148" r="8" fill="#fdf1de" stroke="#e08a2b" strokeWidth="1.4" />
+        <text x="310" y="151.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">4</text>
+
+        {/* legend strip */}
+        <rect x="14" y="264" width="372" height="30" rx="3" fill="#f3efe4" stroke="#5d6568" strokeWidth="1" />
+        <text x="24" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#1f2a30">1 Textured ceiling coatings</text>
+        <text x="24" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#1f2a30">2 Vinyl floor tiles + black adhesive</text>
+        <text x="206" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#1f2a30">3 Pipe and tank lagging</text>
+        <text x="206" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#8a3420">4 Cement roof sheets — most common find</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Where asbestos hides in a pre-2000 house</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">Ceilings, floor tiles, pipe lagging and the garage roof are the four most common domestic finds</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">A refurbishment survey before work starts costs far less than stopping mid-job to arrange one</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: Control of Asbestos Regulations 2012; HSE HSG264 Asbestos: The Survey Guide</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "orangeries-glazed-extensions-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

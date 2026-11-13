@@ -373,7 +373,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-10-23] What an SAP assessment is and when you need one
 - [done 2026-10-30] Scaffolding, pavement licences and the neighbour conversation
 - [done 2026-11-06] Fire doors and escape routes in a loft conversion
-- [ ] Asbestos in a pre-2000 house: what a survey finds and when you need one
+- [done 2026-11-13] Asbestos in a pre-2000 house: what a survey finds and when you need one
 - [ ] Japanese knotweed and your mortgage: what a RICS survey actually checks
 - [ ] What an EPC rating actually measures, and why it matters before a renovation
 - [ ] Flood risk and new extensions: what a Flood Risk Assessment covers

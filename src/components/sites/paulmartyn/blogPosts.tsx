@@ -46,6 +46,186 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "asbestos-survey-pre-2000-house",
+    title: "Asbestos in a pre-2000 house: what a survey finds and when you need one",
+    category: "Building control",
+    date: "2026-11-13",
+    seoTitle: "Asbestos In A Pre-2000 House: When You Need A Survey",
+    metaDescription:
+      "Garage roofs, textured ceilings and old floor tiles are where asbestos actually turns up in an older house. What survey you need before building work, and what it costs.",
+    excerpt:
+      "A garage roof, a textured ceiling or the tiles under an old kitchen floor are the places asbestos actually turns up in a pre-2000 house — and a survey booked before the first wall comes down is the difference between a few hundred pounds and a job that stops dead.",
+    imageAlt:
+      "Illustration of a pre-2000 house cut away to show four common asbestos locations numbered one to four: a textured ceiling coating under the loft, vinyl floor tiles with black adhesive, lagged pipework and a hot water tank in an airing cupboard, and a detached garage with a corrugated cement sheet roof, with a legend explaining each numbered hotspot.",
+    related: [
+      "garage-conversions-cranleigh-permitted-development",
+      "extending-1930s-semi-cranleigh",
+      "cranleigh-victorian-cottage-rewire-replumb",
+      "structural-calculations-building-control",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Any house built, or last renovated, before the UK's asbestos ban took full effect in **1999 to 2000** can contain asbestos-containing materials — a garage roof, a textured ceiling, old floor tiles and pipe lagging are where it actually turns up, not somewhere exotic.",
+          "There are two different surveys and they answer two different questions. A **management survey** checks what is safe to leave alone in a building that stays in everyday use. A **refurbishment and demolition survey** is the intrusive one needed before any work that opens up the fabric of the building.",
+          "The legal duty to manage asbestos under the **Control of Asbestos Regulations 2012** does not apply inside a private home — but the **CDM Regulations 2015** still require the risk to be identified before construction work starts, so in practice the same survey gets commissioned anyway.",
+          "A straightforward domestic survey typically runs **£150 – £350**. A full refurbishment and demolition survey ahead of an extension or strip-out usually costs **£300 – £600** or more, depending on size and access — a fraction of what stopping an active job to arrange one costs in lost time.",
+          "Finding asbestos does not automatically mean a licensed contractor and weeks of delay. Much of what turns up in a domestic job is lower-risk material a trained, competent contractor can deal with safely once it has actually been identified rather than guessed at.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The usual way this comes up is halfway through a strip-out. Someone has lifted the old floor tiles to put underfloor heating in, or started pulling down a garage to build a home office, and underneath is a grey or black material nobody asked about. Work stops there and then, everyone stands in the drive while samples go off to a lab, and a two-week programme turns into four.",
+      },
+      {
+        type: "p",
+        text: "None of that has to happen. Every one of those materials — the floor tiles, the garage roof, the textured ceiling, the lagging round the old hot water tank — is exactly where a surveyor would expect to find it. A survey booked before the first wall comes down tells you what is actually there, for a few hundred pounds and no lost time at all.",
+      },
+      { type: "h2", text: "What counts as a \"pre-2000\" house, and why does the date matter?" },
+      {
+        type: "p",
+        text: "Blue asbestos (crocidolite) and brown asbestos (amosite) were banned from import, supply and use in Great Britain in **1985**. White asbestos (chrysotile) — the type used in most ordinary domestic products, including textured coatings, asbestos cement sheeting and floor tiles — was not banned outright until the **Asbestos (Prohibitions) (Amendment) Regulations 1999**, which came into force on **24 November 1999**. Anything built, or fitted out, before that date was legally allowed to contain it, and a great deal of it did.",
+      },
+      {
+        type: "p",
+        text: "That is why pre-2000 is the rule of thumb surveyors still work to, rather than a single clean cut-off. A house built in 2001 can still have an unreplaced garage roof, an older outbuilding or a kitchen floor laid before the ban, untouched for another two decades. The test is not the age of the whole house — it is whether the specific material you are about to disturb was ever replaced since.",
+      },
+      { type: "h2", text: "Where asbestos is actually found in an older house" },
+      {
+        type: "p",
+        text: "It sits in a short, predictable list of places — almost all of them exactly where you would start cutting, drilling or lifting something during a renovation:",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Garage and outbuilding roofs** — corrugated asbestos cement sheeting, by far the single most common domestic find, because so many were never replaced",
+          "**Textured ceiling coatings**, often sold under the brand name Artex, applied mainly before the early 1980s though similar products stayed on sale into the 1990s",
+          "**Vinyl or thermoplastic floor tiles**, and the black bitumen adhesive used to stick them down",
+          "**Pipe and tank lagging**, typically wrapped around pipework and a hot water cylinder in an airing cupboard",
+          "**Asbestos insulating board** — a dense board used as fire-break linings around old fireplaces and storage heaters, in partition walls and in ceiling panels",
+          "Soffits, bargeboards, gutters and downpipes made of asbestos cement",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of that is automatically dangerous sitting where it is. The risk is disturbance — drilling, cutting, sanding or demolishing — which is exactly the point at which a routine renovation and an asbestos exposure become the same job.",
+      },
+      { type: "h2", text: "What's the difference between a management survey and a refurbishment and demolition survey?" },
+      {
+        type: "p",
+        text: "HSE's own survey guide, **HSG264**, sets out two distinct survey types, and the distinction matters because one is not a substitute for the other. A **management survey** is designed for a building that stays in normal occupation — non-intrusive, locating and recording the condition of materials that might reasonably be disturbed by everyday activity and maintenance, feeding an asbestos register.",
+      },
+      {
+        type: "p",
+        text: "A **refurbishment and demolition survey**, or R&D survey, is a different exercise entirely — fully intrusive, covering the specific area affected by the work, and often involving lifting flooring and opening up voids a management survey would never go near. An old management survey or asbestos register is useful background, but it is not a substitute for an R&D survey of the area you are actually about to work on.",
+      },
+      { type: "h2", text: "Do I, as a homeowner, legally need a survey before building work?" },
+      {
+        type: "p",
+        text: "The answer sits in two places. The duty to manage asbestos under **regulation 4 of the Control of Asbestos Regulations 2012** is aimed at non-domestic premises and the shared parts of multi-occupied buildings — a block of flats' stairwell, say — and it does not apply inside someone's own private home.",
+      },
+      {
+        type: "p",
+        text: "That does not mean the obligation disappears. The **CDM Regulations 2015** require foreseeable risks to be identified before construction work starts, domestic projects included — asbestos among the obvious ones for anything built before 2000. A competent contractor will usually ask for a refurbishment survey, or price the job assuming asbestos is present. Commissioning the survey yourself, early, keeps that assumption — and the price built on it — in your control rather than theirs.",
+      },
+      { type: "h2", text: "What does a survey cost, and what happens if it finds something?" },
+      {
+        type: "p",
+        text: "Cost depends on which survey you need and how much of the house it has to cover.",
+      },
+      {
+        type: "table",
+        caption: "Figures from current UK asbestos-surveying trade guides — get two or three quotes stating what is included before booking.",
+        head: ["Survey or route", "Typical cost", "What it covers"],
+        rows: [
+          ["Management survey", "roughly £150 – £300", "Non-intrusive check of a house in normal use, usually a handful of samples"],
+          ["Refurbishment and demolition survey", "roughly £300 – £600+", "Intrusive survey of the specific area being extended, stripped out or demolished, before work starts"],
+          ["Non-licensable removal (intact asbestos cement in good condition)", "varies by job, often a few hundred pounds", "Removed by a trained, competent contractor following HSE guidance, without needing a licence"],
+          ["Licensed removal (damaged boards, sprayed coatings, lagging)", "typically runs into four figures", "Carried out by an HSE-licensed contractor, with air testing before the area is cleared for re-occupation"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Finding asbestos is not automatically the expensive outcome people assume — what matters is whether the material counts as **licensable work**. An intact asbestos cement garage roof, for instance, can often be removed by a trained, competent contractor without needing an HSE licence. Damaged boards, sprayed coatings or pipe lagging are licensable work, and have to go to an **HSE-licensed contractor**, with air testing to confirm the area is safe before anyone works there again. What should never happen on either route is drilling, cutting or sanding a suspect material \"just to see what it is\" — sampling has to be taken by someone competent and sent to a UKAS-accredited laboratory.",
+      },
+      { type: "h2", text: "How much time does an asbestos survey actually add to a project?" },
+      {
+        type: "table",
+        caption: "Booking the survey at the design stage adds days; finding asbestos mid-strip-out adds weeks.",
+        head: ["Stage", "Typical time", "Note"],
+        rows: [
+          ["Survey booked at design stage", "3 – 10 days to arrange; sample results in 24 – 72 hours", "Runs alongside the rest of the design work, not after it"],
+          ["Asbestos found mid-renovation, unexpectedly", "Work on that area stops immediately", "Samples still need to go to the lab before anyone can touch it again"],
+          ["Licensed contractor booked after the fact", "Often two to four weeks' lead time", "Popular contractors are booked up, and this was not in the original programme"],
+          ["Air clearance test before re-occupation", "1 – 2 days once the removal is complete", "Required before the area can be worked in or boarded over again"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The pattern is the same whichever way round it happens: the survey itself barely touches the programme. What costs weeks is finding the material after the job has already started, when a licensed contractor has to be found, booked and brought back a second time to a site that was already open.",
+      },
+      {
+        type: "quote",
+        text: "We assume anything built before 2000 has got something in it somewhere until a survey tells us otherwise — a garage roof, old floor tiles, the lagging on a tank in the airing cupboard. It is not being overcautious, it is just cheaper to find out on paper before the first wall is open than to find out with a crowbar in your hand.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Booking a refurbishment and demolition survey at the design stage, rather than waiting until the strip-out is under way, typically costs a few hundred pounds and adds under two weeks to the programme. Finding asbestos mid-job and then booking a licensed removal contractor from scratch regularly adds **two to four weeks** and several thousand pounds to work that was otherwise on schedule.",
+      },
+      { type: "h2", text: "Getting the order right" },
+      {
+        type: "ol",
+        items: [
+          "Get a survey quote at the same time as the builder's quote, not after the contract is signed.",
+          "Ask specifically for a **refurbishment and demolition survey** if you are extending, stripping out or demolishing anything — a management survey on its own is not enough once intrusive work is planned.",
+          "Never let anyone drill, cut or sand a suspect material \"just to check\" — sampling has to be done by someone competent and analysed by a UKAS-accredited laboratory.",
+          "If something is found, get a clear answer on whether it counts as licensable work before assuming the most expensive route is the only one available.",
+          "Keep the survey report, and any air clearance certificate, with your building control paperwork — a buyer's solicitor can ask for both when the house is eventually sold.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to be nervous about renovating an older home — it is one more thing worth checking at the costing stage, alongside the structural opening and the building control route, rather than after the first wall is already open. It is exactly the kind of question worth putting to [builders in Cranleigh](/areas/cranleigh) before a quote is finalised, not halfway through the job.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need an asbestos survey before extending my house?",
+        answer:
+          "If the house was built, or last had work done, before 2000, yes in practice. The legal duty to manage asbestos does not apply inside a private home, but the CDM Regulations 2015 require the risk to be identified before construction work starts, and most contractors will ask for a refurbishment and demolition survey — or price the job assuming asbestos is present — before starting work that disturbs the building's fabric.",
+      },
+      {
+        question: "What's the difference between a management survey and a refurbishment survey?",
+        answer:
+          "A management survey is a non-intrusive check of a building in normal use, recording the condition of materials that might be disturbed by everyday activity. A refurbishment and demolition survey is fully intrusive and is the one needed before work that opens up walls, floors or ceilings, and can involve lifting flooring or opening voids to see what is inside them.",
+      },
+      {
+        question: "How much does an asbestos survey cost?",
+        answer:
+          "A straightforward domestic survey typically costs in the region of £150 to £350. A fuller refurbishment and demolition survey ahead of an extension or strip-out usually runs £300 to £600 or more, depending on the size of the property and how much access the surveyor needs. Get the quote alongside the builder's quote, not after.",
+      },
+      {
+        question: "Where is asbestos most commonly found in an older house?",
+        answer:
+          "The garage or outbuilding roof is the single most common domestic find — corrugated asbestos cement sheeting was fitted on huge numbers of garages and sheds, and relatively few have been replaced. Textured ceiling coatings, vinyl floor tiles with their black adhesive, and lagging on old pipes and hot water tanks are the other places a surveyor checks first.",
+      },
+      {
+        question: "What happens if a survey finds asbestos in my house?",
+        answer:
+          "It depends on the material and its condition. Lower-risk material in good condition, such as an intact asbestos cement roof, can sometimes be removed safely by a trained, competent contractor without a licence. Higher-risk material — damaged boards, sprayed coatings or pipe lagging — is licensable work and needs an HSE-licensed contractor, with air testing to confirm the area is clear before work resumes.",
+      },
+      {
+        question: "Can I just leave asbestos alone if I'm not disturbing it?",
+        answer:
+          "Often, yes. Undamaged asbestos-containing material that will not be drilled, cut, sanded or demolished is usually safer recorded and left in place than removed unnecessarily. The risk is disturbance, which is exactly why a survey before construction work, rather than guesswork during it, is what the regulations are built around.",
+      },
+    ],
+    art: BLOG_ART["asbestos-survey-pre-2000-house"],
+  },
+  {
     slug: "orangeries-glazed-extensions-cranleigh",
     title: "Orangeries in Cranleigh: planning permission, building regulations and what it costs",
     category: "Planning & surveys",
@@ -510,7 +690,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "garden-rooms-cranleigh-permitted-development",
       "porches-cranleigh-permitted-development",
       "extending-1930s-semi-cranleigh",
-      "party-wall-notice-timing",
+      "asbestos-survey-pre-2000-house",
     ],
     body: [
       {

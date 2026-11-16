@@ -102,9 +102,34 @@ const BUSINESS_SCHEMA = {
    * one that matters most for the map pack.
    */
   sameAs: SAME_AS,
-  areaServed: AREAS.items.map((town) => ({ "@type": "Place", name: town })),
+  areaServed: [
+    ...AREAS.items.map((town) => ({ "@type": "Place", name: town })),
+    { "@type": "Place", name: "Surrey Hills" },
+  ],
   description:
-    "Family-run builders based in Cranleigh, Surrey. Residential renovations and extensions, new builds, listed buildings and commercial fit-outs across Surrey, Hampshire and West Sussex.",
+    "Family-run builders based in Cranleigh, in the Surrey Hills. House extensions, loft conversions, renovations, new builds, listed buildings and commercial fit-outs in Cranleigh, the Surrey Hills villages and across Surrey, Hampshire and West Sussex.",
+  slogan: "Cranleigh's builders for the Surrey Hills.",
+  /**
+   * What the business does, as entities rather than prose. AI answer engines
+   * and Google both use this to decide which queries the business is a fit
+   * for ("listed building builder Cranleigh", "loft conversion Surrey Hills").
+   */
+  knowsAbout: [
+    "House extensions",
+    "Loft conversions",
+    "Home renovations",
+    "New build houses",
+    "Listed building restoration",
+    "Heritage and conservation-area building work",
+    "Timber-framed buildings",
+    "Kitchens",
+    "Bathrooms",
+    "Staircases",
+    "Commercial and hospitality fit-outs",
+    "Construction project management",
+    "Waverley Borough Council planning",
+    "Surrey Hills National Landscape",
+  ],
   /* Omitted, not guessed, until FOUNDING_YEAR is set in src/lib/site.ts. */
   ...(FOUNDING_YEAR ? { foundingDate: String(FOUNDING_YEAR) } : {}),
   // TODO(paul): logo, image, openingHoursSpecification

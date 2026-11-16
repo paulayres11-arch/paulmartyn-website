@@ -119,9 +119,10 @@ const AREA_SCHEMA = {
     "Rudgwick",
     "Chiddingfold",
     "Godalming",
+    "Surrey Hills",
   ].map((place) => ({ "@type": "Place", name: place })),
   description:
-    "Family-run builders based on Bridge Road, Cranleigh. Extensions, renovations, listed building and heritage work across Cranleigh and the surrounding Waverley villages.",
+    "Family-run builders based on Bridge Road, Cranleigh, in the Surrey Hills. Extensions, renovations, listed building and heritage work across Cranleigh and the surrounding Surrey Hills villages.",
   ...(FOUNDING_YEAR ? { foundingDate: String(FOUNDING_YEAR) } : {}),
 };
 

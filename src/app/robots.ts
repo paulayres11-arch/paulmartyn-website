@@ -21,7 +21,33 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   }
 
   return {
-    rules: [{ userAgent: "*", allow: "/" }],
+    rules: [
+      { userAgent: "*", allow: "/" },
+      /**
+       * AI search and answer engines, named explicitly so they are welcome
+       * even where a blanket rule elsewhere might be read as excluding them.
+       * These are the crawlers that fetch pages to answer a user's question
+       * and cite the site — not the training crawlers (GPTBot, ClaudeBot,
+       * Google-Extended), which Cloudflare's managed block above this file's
+       * output still disallows. Note PerplexityBot is ALSO blocked at the
+       * Cloudflare firewall (403) unless "Block AI bots" is turned off there;
+       * robots.txt cannot override a firewall.
+       */
+      {
+        userAgent: [
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "PerplexityBot",
+          "Perplexity-User",
+          "Claude-SearchBot",
+          "Claude-User",
+          "Bingbot",
+          "Applebot",
+          "DuckAssistBot",
+        ],
+        allow: "/",
+      },
+    ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
   };

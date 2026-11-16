@@ -46,6 +46,192 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ev-chargers-cranleigh-permitted-development",
+    title: "EV charger installation at a Cranleigh home: permitted development, and the listed building exception",
+    category: "Planning & surveys",
+    date: "2026-11-16",
+    seoTitle: "EV Charger Planning Permission In Cranleigh: The Rules",
+    metaDescription:
+      "Do you need planning permission for an EV charger in Cranleigh? The permitted development rules, the listed building exception, and what changed in October 2026.",
+    excerpt:
+      "Most Cranleigh driveways can take an EV charger with no planning application at all — but a listed building's curtilage, of which the parish has 81, always needs full permission and a separate Listed Building Consent.",
+    imageAlt:
+      "Illustration contrasting two Cranleigh driveways side by side: an ordinary house with a car plugged into a wall-mounted EV charger marked with a tick for no planning application needed, and a timber-framed listed cottage with a heritage plaque, a charging cable and a warning mark showing planning permission and listed building consent are needed.",
+    related: [
+      "solar-panels-cranleigh-planning-permission",
+      "garage-conversions-cranleigh-permitted-development",
+      "cranleigh-buildings-of-local-merit",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Fitting an EV charger on an ordinary driveway in Cranleigh is normally **permitted development** — no planning application needed — under Part 2 of the Town and Country Planning (General Permitted Development) (England) Order 2015 (the GPDO).",
+          "That right was widened again on **21 October 2026**: a charge point no longer has to sit strictly inside the existing parking bay, and a new route was added for pavement-crossing cable channels run through an approved council scheme.",
+          "The exception that hasn't moved: a charger within the **curtilage of a listed building** always needs full planning permission and a separate **Listed Building Consent** — and Cranleigh's parish has **81 listed buildings**, per the Cranleigh Neighbourhood Plan.",
+          "The old £350 government grant towards a home chargepoint closed to owner-occupiers with their own driveway back in **2022** — what's left under gov.uk's EV chargepoint grant guidance is mostly for renters, leaseholders and landlords, not most Cranleigh homeowners.",
+          "Getting the planning question right before the unit is ordered saves the **£548 householder planning fee** (around £575 from 8 December 2026) and an eight-week-plus wait most Cranleigh driveways never needed to spend in the first place.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We get two kinds of phone call about EV chargers. One is a homeowner who's been told, by an installer or somewhere online, that they need planning permission for a wall box on their own driveway — and in the overwhelming majority of cases they don't, and a straightforward job has now stalled for weeks over a question that never needed asking. The other is a homeowner halfway through fitting one on a Grade II cottage who hasn't been told anything at all, because the installer assumed a driveway charger is always permitted development and nobody checked whether the house itself changes that.",
+      },
+      {
+        type: "p",
+        text: "Both calls are avoidable, and both come down to the same gap: permitted development rights for EV chargers in England are genuinely generous, but they carve out one exception that doesn't move for anybody — and Cranleigh has more houses sitting inside it than most towns its size.",
+      },
+      {
+        type: "p",
+        text: "The rules have also just changed again. An amendment that came into force on **21 October 2026** widened what counts as permitted development for a home charger, on top of an earlier change in 2025 — so advice that was correct eighteen months ago may now be more generous than you think, and anything older than that is worth re-checking either way.",
+      },
+      { type: "h2", text: "Do I need planning permission for an EV charger at a Cranleigh home?" },
+      {
+        type: "p",
+        text: "For the great majority of houses, no. Installing an electrical outlet, or an upright charging unit (an \"upstand\"), to charge a vehicle at a private house is covered by its own permitted development right, under **Part 2, Classes D and E** of the GPDO 2015 — separate from the rules covering an extension or a garden room. Subject to the conditions below, no planning application and no fee is needed.",
+      },
+      {
+        type: "p",
+        text: "The right applies to a **dwellinghouse** — a self-contained house, in planning terms — not to a flat. If your Cranleigh home is a flat or a converted maisonette, the same right doesn't automatically carry over, and it's worth checking with Waverley's planning team, or getting written confirmation, before an electrician turns up to fit one.",
+      },
+      {
+        type: "p",
+        text: "A height condition has applied to ground-mounted upstand units since the right was first introduced, and until recently the unit also had to sit within the specific part of the garden already used for off-street parking — which, in practice, is where most installers want to put it anyway, next to the car.",
+      },
+      { type: "h2", text: "What changed on 21 October 2026, and why it matters now" },
+      {
+        type: "p",
+        text: "The Town and Country Planning (General Permitted Development) (England) (Amendment) (No. 2) Order 2026 came into force on **21 October 2026**, on top of an earlier amendment from May 2025. Before this latest change, a charge point under Classes D and E had to sit within the specific part of the garden lawfully used for parking a car off the road. The October amendment widened that, so a charger can now be positioned more generally within a dwellinghouse's curtilage, subject to the same safety and height conditions, rather than being confined strictly to the parking bay itself.",
+      },
+      {
+        type: "p",
+        text: "The same order introduced a new permitted development right for a cable channel run under a pavement, connecting a house to a car parked on the road outside — but only where that channel is installed as part of a scheme a local authority has formally approved, not as a DIY cut across a public footway. A **transitional period**, running to 20 October 2027, lets work already under way be judged against whichever version of the rules applies to it. Worth checking the date on any advice you read about this, including this post.",
+      },
+      { type: "h2", text: "The listed building exception — and Cranleigh has 81 of them" },
+      {
+        type: "p",
+        text: "Neither the 2025 nor the 2026 amendment touched the one exclusion that has applied since Classes D and E were first written: permitted development for an EV charger **does not apply within the curtilage of a listed building**. That isn't a Cranleigh-specific rule, but it is a genuinely local issue here, because Cranleigh's parish has **81 nationally listed buildings** — 80 Grade II and the Grade II* **Church of St Nicolas** — per the [Cranleigh Neighbourhood Plan](/blog/cranleigh-neighbourhood-plan-householders), and a sizeable share of the village's older cottages, farmhouses and High Street buildings sit inside that list or its curtilage.",
+      },
+      {
+        type: "p",
+        text: "If your house is listed, or sits within the curtilage of one, fitting a charger — wall-mounted or on an upstand — needs **both** a full householder planning application and a separate **Listed Building Consent**, whatever the size of the unit. Waverley's conservation officers will usually want to know where the cable runs, how it's fixed to historic fabric, and whether the unit can be sited somewhere less visible than the principal elevation — much the same conversation as the one covered on [Cranleigh's second heritage list, the Buildings of Local Merit](/blog/cranleigh-buildings-of-local-merit), which non-designated older buildings can also sit on.",
+      },
+      { type: "h2", text: "Does being inside Cranleigh's conservation area change anything on its own?" },
+      {
+        type: "p",
+        text: "Not automatically — being inside the **Cranleigh Conservation Area** is a different thing from being a listed building, and the GPDO's own exclusion is written around listed buildings and scheduled monuments rather than conservation areas as a category. That said, a council can remove permitted development rights locally with an **Article 4 direction**, and the only safe way to know whether one applies to your road is to ask Waverley's planning team before ordering a unit, not after it's fitted — a five-minute phone call against a fitting that might have to come straight back off the wall.",
+      },
+      { type: "h2", text: "What about flats, rented homes, and the EV charger grant?" },
+      {
+        type: "p",
+        text: "As above, the dwellinghouse-based permitted development right generally doesn't extend to flats, so a Cranleigh flat owner or a leaseholder in a converted house should check with the freeholder, and with Waverley if there's any doubt, before assuming the driveway rules apply to them too.",
+      },
+      {
+        type: "p",
+        text: "On the money side, it's worth knowing what's no longer available. The government's original EV chargepoint grant — worth up to £350 towards a home unit — closed to owner-occupiers with their own off-street parking back in **March 2022**. What remains under gov.uk's current EV chargepoint and infrastructure grant guidance is aimed mainly at **renters and leaseholders** installing a charger with their landlord's consent, and at landlords installing for tenants, plus separate workplace and on-street chargepoint schemes — not most Cranleigh homeowners with a driveway of their own.",
+      },
+      { type: "h2", text: "What a compliant installation actually involves" },
+      {
+        type: "p",
+        text: "Permitted development status only answers the planning question — it doesn't replace the electrical one. A dedicated EV charging circuit is **notifiable work** under Part P of the Building Regulations, and the wiring itself follows **Section 722** of BS 7671, the IET Wiring Regulations — a code of practice, not a statute, but one every competent electrician works to as a matter of course for this kind of installation.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Get the installation carried out, or signed off, by a **registered electrician** — usually NICEIC or NAPIT registered — who can self-certify the Part P notification rather than involving building control separately.",
+          "Ask for a proper **load assessment** of the existing supply before the unit is ordered, not after — an older Cranleigh property with a smaller incoming supply can need load management fitted alongside the charger, which changes the quote.",
+          "If the installer proposes an upstand unit rather than a wall box, check the current height and position conditions with them before it's fitted, not after.",
+          "If the property is listed, or inside the curtilage of one, get the planning and Listed Building Consent applications in before ordering the unit — not run in parallel with the electrician's first visit.",
+        ],
+      },
+      { type: "h2", text: "What it costs, and how long each route takes" },
+      {
+        type: "p",
+        text: "Two different budgets are in play here: the planning route, and the electrical work itself.",
+      },
+      {
+        type: "table",
+        caption: "Figures from the GPDO 2015 (as amended) and Waverley's published planning fees; get written confirmation for your own property before ordering a unit.",
+        head: ["Situation", "Planning permission", "Other consent", "Typical extra cost and time"],
+        rows: [
+          ["Standard house, not listed, charger within the curtilage", "Not needed — permitted development", "None", "None — straight to installation"],
+          ["House within the curtilage of a listed building (81 in the parish)", "Full householder application needed", "Listed Building Consent needed, in parallel", "£548 planning fee (≈£575 from 8 Dec 2026) plus a separate LBC application, each typically an 8-week-plus wait"],
+          ["Flat or converted maisonette", "Not automatically covered — check first", "Freeholder consent likely needed", "A short delay to confirm, rather than a formal application in most cases"],
+          ["Property under an Article 4 direction removing this right", "Needed — check with Waverley first", "Depends on the direction", "Varies; always confirm before ordering a unit"],
+        ],
+      },
+      {
+        type: "table",
+        caption: "A straightforward driveway installation is mostly a one-day job; the planning route is what adds weeks.",
+        head: ["Step", "Typical time"],
+        rows: [
+          ["Installer site visit and load assessment", "Same visit as the quote"],
+          ["Standard permitted-development installation", "Usually 1 day on site, once the unit is ordered"],
+          ["Householder planning application (listed building)", "Determination target around 8 weeks from a valid application"],
+          ["Listed Building Consent application", "Also around 8 weeks — run alongside the planning application, not after it"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "Every EV charger job starts with the consumer unit, not the car park. Most Cranleigh driveways need no planning application at all, but every one of them needs a proper load assessment on the existing supply before we fit anything — that's the bit that actually holds a job up, far more often than the planning system does. On a listed cottage it's the opposite problem: people assume the driveway rule applies everywhere, and it doesn't.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Confirming the permitted development position before you order a unit, rather than applying for planning permission \"just in case\", saves most Cranleigh homeowners the **£548 householder planning fee** (rising to around £575 from 8 December 2026) and the **eight-week-plus wait** for a decision that was never needed. On a listed property, the saving runs the other way: getting the Listed Building Consent application in before the unit is fitted avoids an enforcement conversation, and the cost of taking a charger back off a historic wall.",
+      },
+      { type: "h2", text: "Getting the order right" },
+      {
+        type: "ol",
+        items: [
+          "Check whether the house is listed, or sits within the curtilage of one, before ordering anything — the [Cranleigh Neighbourhood Plan](/blog/cranleigh-neighbourhood-plan-householders) and Waverley's own list both confirm it.",
+          "Get a load assessment of the existing electrical supply at the same time as the installation quote, not after the unit has arrived.",
+          "If no permission is needed, confirm the current GPDO height and position conditions for an upstand unit with the installer before it's fitted.",
+          "If permission is needed, submit the planning application and the Listed Building Consent application together, not one after the other.",
+          "Keep the electrician's Part P certificate with your building paperwork — a buyer's solicitor can ask for it when the house is eventually sold.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this should put anyone off switching to electric — it's a short checklist, not a planning minefield, and most Cranleigh driveways clear it without a single form. It's exactly the kind of question worth raising with [builders in Cranleigh](/areas/cranleigh) alongside the rest of a renovation quote, so the electrician's visit and the planning position get sorted in the same conversation rather than two separate ones.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission for an EV charger at my Cranleigh home?",
+        answer:
+          "In most cases no. Fitting a wall-mounted outlet or an upright charging unit on an ordinary driveway is permitted development under Part 2 of the GPDO 2015, as amended in 2025 and again on 21 October 2026, so no planning application or fee is needed. The main exception is a house that is listed or sits within the curtilage of one.",
+      },
+      {
+        question: "My house is listed — can I still have an EV charger fitted?",
+        answer:
+          "Yes, but not under permitted development. A listed building's curtilage is excluded from the GPDO right for EV chargers, so you'll need a full householder planning application and a separate Listed Building Consent before the unit is fitted. Waverley's conservation officers will usually want it sited discreetly, with the cabling run to minimise the impact on historic fabric.",
+      },
+      {
+        question: "Does living in the Cranleigh Conservation Area stop me installing an EV charger?",
+        answer:
+          "Not on its own — the GPDO's listed building exclusion is separate from conservation area status. But a council can remove permitted development rights locally with an Article 4 direction, so it's worth a quick check with Waverley's planning team before assuming the standard rules apply to your road.",
+      },
+      {
+        question: "Can I still get a government grant for a home EV charger in Cranleigh?",
+        answer:
+          "Probably not, if you're an owner-occupier with your own driveway — that grant, worth up to £350, closed to homeowners with off-street parking back in March 2022. The grant schemes still running under gov.uk's EV chargepoint guidance are mainly for renters, leaseholders and landlords, plus separate workplace and on-street chargepoint schemes.",
+      },
+      {
+        question: "Does an EV charger installation need building regulations approval?",
+        answer:
+          "The planning question and the building regulations question are separate. A dedicated EV charging circuit is notifiable electrical work under Part P of the Building Regulations, normally self-certified by a registered electrician (NICEIC or NAPIT) following Section 722 of BS 7671, the wiring regulations' code of practice for EV charging installations.",
+      },
+      {
+        question: "What happens if I fit an EV charger without permission when I needed it?",
+        answer:
+          "On a listed building, installing a charger without the required planning permission and Listed Building Consent is a breach Waverley can take enforcement action over, which can mean removing or altering the installation at your own cost. It's far cheaper to get both applications in before the electrician's visit than to resolve it afterwards.",
+      },
+    ],
+    art: BLOG_ART["ev-chargers-cranleigh-permitted-development"],
+  },
+  {
     slug: "asbestos-survey-pre-2000-house",
     title: "Asbestos in a pre-2000 house: what a survey finds and when you need one",
     category: "Building control",
@@ -3174,6 +3360,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "cranleigh-conservation-area-consent",
       "garden-rooms-cranleigh-permitted-development",
       "cranleigh-buildings-of-local-merit",
+      "ev-chargers-cranleigh-permitted-development",
     ],
     body: [
       {

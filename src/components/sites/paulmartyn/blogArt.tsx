@@ -16,6 +16,98 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "ev-chargers-cranleigh-permitted-development": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="evSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="evGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="evRoofA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7b8a90" /><stop offset="1" stopColor="#566069" />
+          </linearGradient>
+          <linearGradient id="evRoofB" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c47a4a" /><stop offset="1" stopColor="#9c5c33" />
+          </linearGradient>
+          <linearGradient id="evWallA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eef1f2" /><stop offset="1" stopColor="#d7dde0" />
+          </linearGradient>
+          <linearGradient id="evWallB" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ece4d2" /><stop offset="1" stopColor="#d6ccb4" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="38" fill="url(#evSky)" />
+        <text x="200" y="21" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">EV chargers in Cranleigh: who needs permission?</text>
+
+        <rect x="14" y="38" width="372" height="222" fill="url(#evSky)" opacity=".4" />
+        <rect x="14" y="238" width="372" height="22" fill="url(#evGrass)" />
+
+        {/* divider between the two scenarios */}
+        <line x1="200" y1="44" x2="200" y2="260" stroke="#8a97a0" strokeWidth="1.3" strokeDasharray="4,4" />
+        <text x="104" y="52" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.2" fontWeight="700" fill="#2f6b3f" textAnchor="middle">STANDARD CURTILAGE</text>
+        <text x="298" y="52" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.2" fontWeight="700" fill="#8a3420" textAnchor="middle">CURTILAGE OF A LISTED BUILDING</text>
+
+        {/* left: ordinary house, not listed */}
+        <polygon points="40,118 110,78 180,118" fill="url(#evRoofA)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="48" y="118" width="124" height="70" fill="url(#evWallA)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="58" y="134" width="26" height="28" fill="#9cc7da" stroke="#5d6568" strokeWidth="1" />
+        <rect x="134" y="134" width="26" height="28" fill="#9cc7da" stroke="#5d6568" strokeWidth="1" />
+        <rect x="96" y="158" width="28" height="30" fill="#6f5a3f" stroke="#473a28" strokeWidth="1" />
+
+        <polygon points="40,188 180,188 196,238 24,238" fill="#c7c4bc" stroke="#9a968c" strokeWidth="1" />
+
+        {/* car, left */}
+        <rect x="66" y="206" width="60" height="18" rx="5" fill="#2f6b3f" stroke="#1f4a2a" strokeWidth="1" />
+        <rect x="78" y="196" width="34" height="14" rx="4" fill="#3c7c4c" stroke="#1f4a2a" strokeWidth="1" />
+        <circle cx="78" cy="224" r="5" fill="#2a2f33" /><circle cx="114" cy="224" r="5" fill="#2a2f33" />
+
+        {/* wall charger and cable, left */}
+        <rect x="34" y="150" width="10" height="16" rx="2" fill="#2a2f33" stroke="#e08a2b" strokeWidth="1.2" />
+        <path d="M39 166 q-6,20 30,36" stroke="#2a2f33" strokeWidth="2" fill="none" />
+        <circle cx="30" cy="150" r="9" fill="#fdf1de" stroke="#2f6b3f" strokeWidth="1.6" />
+        <text x="30" y="153.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#2f6b3f" textAnchor="middle">1</text>
+
+        {/* right: timber-framed listed cottage */}
+        <polygon points="222,112 300,68 378,112" fill="url(#evRoofB)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="230" y="112" width="140" height="76" fill="url(#evWallB)" stroke="#8f8468" strokeWidth="1" />
+        <path d="M238 112 V188 M258 112 V188 M278 112 V188 M300 112 V188 M322 112 V188 M344 112 V188 M362 112 V188" stroke="#4b3b26" strokeWidth="1.6" opacity=".55" />
+        <path d="M230 134 H370 M230 156 H370" stroke="#4b3b26" strokeWidth="1.6" opacity=".55" />
+        <rect x="252" y="140" width="20" height="24" fill="#9cc7da" stroke="#4b3b26" strokeWidth="1" />
+        <rect x="328" y="140" width="20" height="24" fill="#9cc7da" stroke="#4b3b26" strokeWidth="1" />
+        <rect x="288" y="160" width="24" height="28" fill="#6f5a3f" stroke="#473a28" strokeWidth="1" />
+
+        {/* heritage plaque */}
+        <circle cx="356" cy="104" r="11" fill="#fdf1de" stroke="#2a5fa0" strokeWidth="1.6" />
+        <text x="356" y="107" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#2a5fa0" textAnchor="middle">LISTED</text>
+
+        <polygon points="222,188 370,188 386,238 206,238" fill="#c7c4bc" stroke="#9a968c" strokeWidth="1" />
+
+        {/* car, right */}
+        <rect x="250" y="206" width="60" height="18" rx="5" fill="#7b8a90" stroke="#44515a" strokeWidth="1" />
+        <rect x="262" y="196" width="34" height="14" rx="4" fill="#8c979c" stroke="#44515a" strokeWidth="1" />
+        <circle cx="262" cy="224" r="5" fill="#2a2f33" /><circle cx="298" cy="224" r="5" fill="#2a2f33" />
+
+        {/* cable with a dashed, unresolved line and a warning badge */}
+        <path d="M322 166 q6,20 -28,36" stroke="#2a2f33" strokeWidth="2" fill="none" strokeDasharray="3,3" />
+        <circle cx="330" cy="150" r="9" fill="#fdf1de" stroke="#a8652a" strokeWidth="1.6" />
+        <text x="330" y="153.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle">2</text>
+
+        {/* legend strip */}
+        <rect x="14" y="264" width="372" height="30" rx="3" fill="#f3efe4" stroke="#5d6568" strokeWidth="1" />
+        <text x="24" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#2f6b3f">1 Standard driveway — no planning application needed</text>
+        <text x="24" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#8a3420">2 Listed curtilage — planning permission + listed building consent</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">EV chargers: permitted development vs a listed home</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">Most Cranleigh driveways need no planning application at all</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">A listed building&apos;s curtilage always needs consent — one of Cranleigh&apos;s 81</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: GPDO 2015 Parts 2 &amp; 3 (as amended); Cranleigh Neighbourhood Plan 2024</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "asbestos-survey-pre-2000-house": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

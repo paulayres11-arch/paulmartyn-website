@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { INTRO } from "./content";
 
 /**
@@ -38,6 +39,17 @@ export function IntroSection() {
               {paragraph}
             </p>
           ))}
+
+          <p className="mt-6 text-[15px] font-normal leading-[22.5px] text-pm-slate">
+            {INTRO.local.before}
+            <Link
+              href={INTRO.local.link.path}
+              className="text-pm-ink underline underline-offset-2 hover:text-pm-gold"
+            >
+              {INTRO.local.link.label}
+            </Link>
+            {INTRO.local.after}
+          </p>
         </div>
 
         <figure className="shrink-0 md:w-[37.8%]">

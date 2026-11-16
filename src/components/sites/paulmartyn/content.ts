@@ -117,6 +117,10 @@ export const NAV: NavItem[] = [
      Paul's request. It stays in FOOTER_PAGES, so the blog is still linked from
      every page on the site and loses no crawlability — only its place in the
      header. Do not remove it there as well. */
+  /* Sitewide link to the Cranleigh page (2026-11-16). "builders Cranleigh"
+     is the search the business most wants to win, and a link from every
+     page's header is the strongest internal signal the site can give it. */
+  { label: "Cranleigh", path: "/areas/cranleigh" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -156,6 +160,13 @@ export const HERO = {
  */
 export const INTRO = {
   eyebrow: "ABOUT US",
+  /** Homepage only: passes the home page's authority to /areas/cranleigh
+   *  with the anchor text the business wants to rank for. */
+  local: {
+    before: "We are based at 1 Bridge Road and are ",
+    link: { label: "builders in Cranleigh", path: "/areas/cranleigh" },
+    after: " first — most of what we build is in Cranleigh and the villages around it.",
+  },
   heading: "We build exceptional spaces for living and working.",
   body: [
     "Family-run and based in the Surrey Hills, we have spent the past 16 years delivering high-quality residential and commercial projects across Surrey and the surrounding areas.",

@@ -14,7 +14,10 @@ import {
 } from "@/components/sites/paulmartyn/shared/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Builders in Cranleigh, Surrey",
+  /* Not "Builders in Cranleigh" — that phrase belongs to the home page and
+     /areas/cranleigh. Sharing it made this page compete with them, and it was
+     the page Google showed for "builders Cranleigh" (#10, 2026-11-16). */
+  title: "Contact Us | 1 Bridge Road, Cranleigh GU6 7HH",
   description: CONTACT_CTA.body,
   alternates: { canonical: "/contact" },
 };

@@ -16,6 +16,86 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "septic-tanks-private-drainage-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="sepSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="sepGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="sepClay" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a9876a" /><stop offset="1" stopColor="#7d6248" />
+          </linearGradient>
+          <linearGradient id="sepRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7b8a90" /><stop offset="1" stopColor="#566069" />
+          </linearGradient>
+          <linearGradient id="sepWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eef1f2" /><stop offset="1" stopColor="#d7dde0" />
+          </linearGradient>
+          <linearGradient id="sepWater" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7fb6cf" /><stop offset="1" stopColor="#4c88a3" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="34" fill="url(#sepSky)" />
+        <text x="200" y="20" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fontWeight="700" fill="#1f2a30" textAnchor="middle">Septic tanks on Cranleigh&apos;s clay: where does it drain to?</text>
+
+        <rect x="14" y="34" width="372" height="30" fill="url(#sepSky)" opacity=".5" />
+        <rect x="14" y="64" width="372" height="18" fill="url(#sepGrass)" />
+        <rect x="14" y="82" width="372" height="178" fill="url(#sepClay)" />
+        {/* shrink-swell crack lines through the clay */}
+        <path d="M70 90 L62 130 L74 170 L58 230 M150 86 L158 140 L146 190 L156 250 M250 88 L260 136 L248 182 L262 240 M330 90 L322 140 L334 196 L318 250" stroke="#5e4a35" strokeWidth="1" opacity=".45" fill="none" />
+
+        <line x1="200" y1="64" x2="200" y2="260" stroke="#e8e4dc" strokeWidth="1.3" strokeDasharray="4,4" />
+        <text x="104" y="74" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#8a3420" textAnchor="middle">OLD TANK TO A DITCH</text>
+        <text x="298" y="74" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#2f6b3f" textAnchor="middle">TREATMENT PLANT TO A DRAINAGE FIELD</text>
+
+        {/* left house, gable only, above grass */}
+        <polygon points="36,58 78,36 120,58" fill="url(#sepRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="42" y="58" width="72" height="24" fill="url(#sepWall)" stroke="#8c979c" strokeWidth="1" />
+
+        {/* left: pipe down to an old grey tank, on to a ditch, discharging raw */}
+        <path d="M78 82 V116" stroke="#5d6568" strokeWidth="3" fill="none" />
+        <rect x="58" y="116" width="40" height="26" rx="2" fill="#9aa3a6" stroke="#5d6568" strokeWidth="1.3" />
+        <path d="M78 142 V168 Q78 182 56 190" stroke="#5d6568" strokeWidth="3" fill="none" />
+        <path d="M18 196 Q50 182 86 198 Q118 214 150 200 L150 232 Q118 220 86 226 Q50 234 18 226 Z" fill="url(#sepWater)" stroke="#2f5668" strokeWidth="1" />
+        <text x="84" y="214" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#e3eef4" textAnchor="middle">DITCH</text>
+
+        <circle cx="130" cy="186" r="12" fill="#fdf1de" stroke="#a8321f" strokeWidth="1.8" />
+        <text x="130" y="183" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#a8321f" textAnchor="middle">NON-</text>
+        <text x="130" y="192" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#a8321f" textAnchor="middle">COMPLIANT</text>
+
+        {/* right house, gable only */}
+        <polygon points="280,58 322,36 364,58" fill="url(#sepRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="286" y="58" width="72" height="24" fill="url(#sepWall)" stroke="#8c979c" strokeWidth="1" />
+
+        {/* right: pipe down to a green-topped treatment plant, out to a buried drainage field */}
+        <path d="M322 82 V112" stroke="#5d6568" strokeWidth="3" fill="none" />
+        <rect x="300" y="112" width="44" height="30" rx="3" fill="#8c979c" stroke="#44515a" strokeWidth="1.3" />
+        <rect x="300" y="112" width="44" height="8" rx="3" fill="#3c7c4c" stroke="#2f6b3f" strokeWidth="1" />
+        <path d="M322 142 V158" stroke="#5d6568" strokeWidth="3" fill="none" />
+        <path d="M250 158 H394" stroke="#5d6568" strokeWidth="2.6" fill="none" />
+        <path d="M250 158 L246 172 M274 158 L270 172 M298 158 L294 172 M322 158 V176 M346 158 L350 172 M370 158 L374 172 M394 158 L390 172" stroke="#2f6b3f" strokeWidth="1.6" opacity=".7" fill="none" />
+        <text x="322" y="196" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.4" fontWeight="700" fill="#e8e4dc" textAnchor="middle">DRAINAGE FIELD</text>
+
+        <circle cx="266" cy="186" r="12" fill="#fdf1de" stroke="#2f6b3f" strokeWidth="1.8" />
+        <path d="M261 186 l3.5,4.5 7,-9" stroke="#2f6b3f" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+
+        {/* legend strip */}
+        <rect x="14" y="264" width="372" height="30" rx="3" fill="#f3efe4" stroke="#5d6568" strokeWidth="1" />
+        <text x="24" y="276" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#8a3420">Raw discharge to a ditch — against the rules since 1 Jan 2020</text>
+        <text x="24" y="288" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#2f6b3f">Treated effluent to a drainage field in the ground — compliant</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Septic tanks and private drainage in Cranleigh</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">A tank draining straight to a ditch has been non-compliant since 2020</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Weald clay often fails a standard percolation test — survey the ground first</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: Environment Agency general binding rules; Approved Document H; BS 6297:2007</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "ev-chargers-cranleigh-permitted-development": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

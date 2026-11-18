@@ -46,6 +46,169 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "septic-tanks-private-drainage-cranleigh",
+    title: "Septic tanks and private drainage for Cranleigh homes off the mains network: what replacing one costs",
+    category: "Planning & surveys",
+    date: "2026-11-18",
+    seoTitle: "Septic Tanks In Cranleigh: Replacement Rules And Costs",
+    metaDescription:
+      "Replacing a septic tank or treatment plant in Cranleigh? What the general binding rules require, why Weald clay complicates a drainage field, and what it costs.",
+    excerpt:
+      "A meaningful share of Cranleigh's housing stock sits on a septic tank or private treatment plant rather than the public sewer, and a tank still draining straight to a ditch has been non-compliant since 2020. Here's what replacing one actually costs, and why the parish's clay makes the drainage field the part to get right.",
+    imageAlt:
+      "Illustration of a garden cutaway on Cranleigh's clay soil, split in two: the left side shows an old septic tank discharging through a pipe straight into a ditch marked with a red warning badge for non-compliant, the right side shows a modern sewage treatment plant discharging clean water into a properly sized drainage field under the lawn, marked with a green tick, with a house gable and sky above and the usual dark caption band below.",
+    related: [
+      "building-on-weald-clay-cranleigh-footings",
+      "basements-cellars-cranleigh-weald-clay",
+      "cranleigh-settlement-boundary",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "A meaningful share of homes in Cranleigh parish — especially beyond the **settlement boundary**, out toward Rowly and the surrounding lanes — were never connected to the public sewer and rely on a septic tank or a private sewage treatment plant instead.",
+          "Since **1 January 2020**, a septic tank discharging straight to a ditch or stream has been **non-compliant** with the Environment Agency's general binding rules. If that's still happening on your property, it needed sorting years ago, not at the next house sale.",
+          "Cranleigh sits on the **Weald clay** of the Low Weald, and clay's poor percolation is the single biggest reason a replacement drainage field fails its test — get the ground surveyed before you order a tank, not after.",
+          "There is no blanket permitted development right for replacing a septic tank, unlike a driveway or an EV charger. Most like-for-like swaps proceed without a planning fuss, but it is always worth a quick check with **Waverley Borough Council** first.",
+          "Building control sign-off under **Approved Document H** is needed regardless of the planning position — expect a Building Notice, a site inspection while the tank or plant is still in the ground and uncovered, and a completion certificate at the end.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call usually comes in one of two ways. Either the garden has started smelling of sewage after a wet week, or a buyer's solicitor has come back with a question about the septic tank nobody in the house has thought about since it was fitted. Either way, the homeowner on the phone is finding out for the first time that the rules around private drainage changed years ago, and that whatever is in the ground at the bottom of the garden might already be breaking them.",
+      },
+      {
+        type: "p",
+        text: "That's not a scare story — most systems we're asked to look at are perfectly fine. But a good number of Cranleigh's older septic tanks were installed long before anyone wrote down a rule for where the outflow was allowed to go, and the pipe nobody has looked at in twenty years sometimes turns out to run straight into the ditch at the bottom of the garden rather than into a drainage field in the ground.",
+      },
+      {
+        type: "p",
+        text: "None of this needs to be a crisis. A septic tank or treatment plant is a straightforward, well-understood piece of a house's drainage, and replacing one is a known job with a known cost once the ground has actually been surveyed. The expensive version is the one where a system gets ordered, installed, and then fails its own compliance test once it's already in the ground.",
+      },
+      { type: "h2", text: "Why doesn't my Cranleigh home have mains drainage?" },
+      {
+        type: "p",
+        text: "Cranleigh's village centre sits on the public foul sewer network, but a large share of the parish does not — the land beyond the **settlement boundary** is where the built-up area gives way to farms, smallholdings and houses down lanes a sewer was never run to, because extending the public network out to a handful of properties was never going to be cost-effective for the water company. Rowly, in the same parish, is one example of an area sitting outside the built-up area in exactly this way.",
+      },
+      {
+        type: "p",
+        text: "Those properties fall back on one of three private systems, in the order Building Regulations **Approved Document H** sets out as its own hierarchy: a connection to the public sewer where one can be reached (always the preferred option, and worth re-checking even on an older property, since networks do get extended); failing that, a septic tank or a package sewage treatment plant, which both treat wastewater on site and discharge it to the ground or, for a properly treated plant, in limited cases to a watercourse; and, as the option of last resort, a cesspool — a sealed tank with no outflow at all, which has to be emptied by tanker on a regular and fairly expensive basis. Most Cranleigh properties off mains use the middle option, which is also the one this post is about.",
+      },
+      { type: "h2", text: "Is my septic tank actually compliant? The general binding rules explained" },
+      {
+        type: "p",
+        text: "A septic tank or small sewage treatment plant can operate without an **environmental permit** from the Environment Agency, provided it meets the **general binding rules** set out under the Environmental Permitting Regulations 2016 — the current statutory version has applied since 2 October 2023. The rules exist precisely so that an ordinary household system doesn't need a permit application, but they come with real conditions attached, and it's the homeowner — the \"operator\", in the rules' own language — who is responsible for checking their own system meets them, not the Environment Agency.",
+      },
+      {
+        type: "p",
+        text: "The two conditions that matter most for an existing Cranleigh property: a discharge to the ground, via a proper drainage field, is limited to **2 cubic metres a day** — comfortably enough for an ordinary household, but worth checking on a larger house or an annexe sharing the same system; and a septic tank must **not** discharge raw, untreated effluent straight to a watercourse at all. If your system was draining to a ditch or stream, it should have been replaced with a small sewage treatment plant, or had a drainage field added, by **1 January 2020** — or at the point of sale if that came sooner. That date has now passed, so a system still doing this is not borderline or due for an upgrade soon; it is already non-compliant, and the fix needed years ago.",
+      },
+      {
+        type: "p",
+        text: "A properly treated discharge to surface water from a small sewage treatment plant (not a septic tank) is permitted under the same general binding rules up to **5 cubic metres a day**, and anything above either threshold needs a formal environmental permit application rather than relying on the exemption — gov.uk currently lists £141.43 as the fee for one specific permit tier, though it's worth confirming the current figure and the right category directly before assuming it applies to your situation.",
+      },
+      { type: "h2", text: "Why Cranleigh's clay makes this harder than it looks" },
+      {
+        type: "p",
+        text: "A septic tank only works if the drainage field it feeds can actually absorb what comes out of it, and that depends entirely on the ground. Cranleigh sits on the **Weald clay** of the Low Weald — the same stiff, fissured, shrink–swell clay that [sets local foundation depths](/blog/building-on-weald-clay-cranleigh-footings) and complicates [digging a basement](/blog/basements-cellars-cranleigh-weald-clay) — and clay is exactly the ground type that most often fails the **percolation test** a drainage field has to pass before it's installed.",
+      },
+      {
+        type: "p",
+        text: "That test is set out in **BS 6297:2007**, the British Standard code of practice for the design and installation of drainage fields — a code of practice, not a regulation in its own right, but one building control will expect to see followed as a matter of course. On genuinely heavy clay, a standard-sized field can simply fail the test, which is why a site survey before ordering equipment matters more here than in sandier parts of Surrey. The usual fixes are a larger, specially designed field, a raised mound system that gives the effluent more clean soil to pass through, or — often the simpler and more reliable route on clay — a package sewage treatment plant, which does most of the treatment mechanically before the water ever reaches the ground, rather than relying on the soil to finish the job.",
+      },
+      { type: "h2", text: "Do I need planning permission to replace a septic tank in Cranleigh?" },
+      {
+        type: "p",
+        text: "Unlike a driveway dropped kerb or an EV charger, there is no single, nationwide permitted development class written specifically for septic tank or treatment plant work, so the honest answer is \"usually not, but check\". A straightforward like-for-like replacement, in the same position, serving the same house, is routinely carried out without a planning application being raised — but a first-time package treatment plant replacing a basic tank, a system resited closer to a boundary or a neighbour's garden, work within the **Cranleigh Conservation Area** or a listed building's curtilage, or groundworks near a protected tree's root zone are all situations where it is genuinely worth a call to Waverley before the digger arrives, rather than after.",
+      },
+      {
+        type: "p",
+        text: "What is not optional, whatever the planning answer turns out to be, is **Building Regulations** sign-off under **Approved Document H**, Section H2. That means a Building Notice (or Full Plans application) to Waverley's building control team, a site inspection while the excavation and the new tank or plant are open to view — the one stage that can't be checked once it's backfilled — and a completion certificate once the connections and backfilling are done.",
+      },
+      { type: "h2", text: "What does replacing a septic tank or fitting a treatment plant cost in Cranleigh?" },
+      {
+        type: "p",
+        text: "As a guide only — every quote should follow a proper site visit and, where the ground is in doubt, a percolation test, rather than a figure taken off a chart:",
+      },
+      {
+        type: "table",
+        caption: "Indicative UK trade-cost ranges; always get a site-specific quote once the ground has been surveyed.",
+        head: ["Item", "Typical cost"],
+        rows: [
+          ["Like-for-like septic tank replacement, existing drainage field reused", "£3,000 – £8,000"],
+          ["New package sewage treatment plant, fully installed (small domestic, up to around six people)", "£6,000 – £12,000"],
+          ["Routine desludging, septic tank (typically annual)", "£150 – £300 per visit"],
+          ["Routine emptying and service, treatment plant (typically annual)", "£200 – £350 per visit"],
+        ],
+      },
+      { type: "h2", text: "How long does it take, start to finish?" },
+      {
+        type: "table",
+        caption: "A straightforward replacement on a reasonable site; a failed percolation test or a planning query adds weeks, not days.",
+        head: ["Stage", "Typical time"],
+        rows: [
+          ["Site visit, percolation test and design", "1 – 2 weeks to arrange and complete"],
+          ["Building Notice to Waverley's building control", "At least 2 working days' notice before work starts"],
+          ["Ordering the tank or treatment plant", "2 – 4 weeks, depending on the model"],
+          ["Excavation, installation and backfill", "2 – 5 days on site"],
+          ["Final building control inspection and completion certificate", "A further visit once connections and backfilling are complete"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "The job that goes wrong is always the one where the tank gets ordered before anyone's tested the ground. On Cranleigh's clay, a drainage field sized for sandy soil somewhere else can simply fail, and then you're digging it all back out. A proper percolation test costs a few hundred pounds and tells you exactly what you're dealing with before a single bag of aggregate turns up.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A percolation test and a proper site assessment, done before a tank or treatment plant is ordered rather than after, typically costs a few hundred pounds. Skip it on Cranleigh's clay and the risk is a drainage field that fails its own compliance test once it's already in the ground — meaning some or all of a **£3,000 – £8,000** groundworks job has to be dug up and redone, on top of the cost already spent.",
+      },
+      { type: "h2", text: "Will a non-compliant septic tank stop me selling my house in Cranleigh?" },
+      {
+        type: "p",
+        text: "It can certainly slow it down. The seller's Property Information Form specifically asks about any non-mains drainage system, including when it was installed and last serviced, and a buyer's solicitor who spots a system discharging to a ditch, or who can't get a straight answer about where the outflow goes, will usually ask for it to be fixed or for the price to reflect the cost of doing so. Since the 2020 deadline for surface-water discharges has already passed, that conversation is no longer a formality — it's a live compliance question a careful solicitor is trained to raise.",
+      },
+      {
+        type: "p",
+        text: "The straightforward way to avoid that conversation happening at the worst possible moment — mid-sale, with a buyer's survey already booked — is to have the system checked well before the house goes on the market, while there's time to fix it calmly rather than under pressure. It's exactly the kind of question worth raising early with [builders in Cranleigh](/areas/cranleigh) alongside anything else a pre-sale survey turns up, rather than leaving it for a buyer's solicitor to find first.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to replace a septic tank in Cranleigh?",
+        answer:
+          "Usually not for a straightforward like-for-like replacement in the same position. There is no dedicated permitted development right for septic tanks the way there is for a driveway or an EV charger, so it's worth a quick check with Waverley Borough Council first — especially for a first-time treatment plant, a system moved closer to a boundary, or work in the Cranleigh Conservation Area or a listed building's curtilage. Building Regulations sign-off under Approved Document H is needed either way.",
+      },
+      {
+        question: "What's the difference between a septic tank, a sewage treatment plant and a cesspool?",
+        answer:
+          "A septic tank settles solids and discharges the liquid to a drainage field in the ground, where the soil finishes the treatment. A package sewage treatment plant does more of that treatment mechanically on site, which generally means it needs a smaller field and can, within strict limits, discharge treated effluent to a watercourse. A cesspool has no outflow at all and simply stores waste until it's emptied by tanker — Building Regulations Approved Document H treats it as the option of last resort.",
+      },
+      {
+        question: "How do I know if my septic tank meets the general binding rules?",
+        answer:
+          "Check two things: where it discharges to, and how much. A septic tank must discharge to a drainage field in the ground, never straight to a ditch or stream — if yours does, it should have been replaced or upgraded by 1 January 2020. And a discharge to ground is limited to 2 cubic metres a day under the Environment Agency's general binding rules. If you're not sure which applies, a drainage specialist can check the system and the paperwork for you.",
+      },
+      {
+        question: "How much does a new sewage treatment plant cost in Cranleigh?",
+        answer:
+          "As a guide, a fully installed small domestic package treatment plant typically runs £6,000 – £12,000, against roughly £3,000 – £8,000 for a like-for-like septic tank replacement reusing the existing drainage field. The real cost driver is the ground: a percolation test on Cranleigh's clay sometimes means a larger field, a mound system, or a treatment plant instead of a simple tank, which changes the quote before any digging starts.",
+      },
+      {
+        question: "Will Cranleigh's clay affect my drainage field?",
+        answer:
+          "It can. Cranleigh sits on the Weald clay of the Low Weald, and clay's poor percolation is one of the most common reasons a drainage field fails the percolation test required under BS 6297:2007 before it's installed. A site-specific test before ordering any equipment tells you whether a standard field will work, or whether you need a larger field, a mound system, or a package treatment plant instead.",
+      },
+      {
+        question: "Can I sell a house in Cranleigh with a non-compliant septic tank?",
+        answer:
+          "You can, but expect it to come up. The seller's Property Information Form asks about non-mains drainage directly, and a buyer's solicitor who finds a system discharging to a ditch — against the rules since 1 January 2020 — will typically ask for it to be fixed or for the price to reflect the cost. Getting it checked and, if needed, fixed before the house is marketed avoids that conversation happening mid-sale.",
+      },
+    ],
+    art: BLOG_ART["septic-tanks-private-drainage-cranleigh"],
+  },
+  {
     slug: "ev-chargers-cranleigh-permitted-development",
     title: "EV charger installation at a Cranleigh home: permitted development, and the listed building exception",
     category: "Planning & surveys",
@@ -4039,6 +4202,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "trees-and-foundation-depth-cranleigh",
       "structural-calculations-building-control",
       "extending-1930s-semi-cranleigh",
+      "septic-tanks-private-drainage-cranleigh",
     ],
     body: [
       {

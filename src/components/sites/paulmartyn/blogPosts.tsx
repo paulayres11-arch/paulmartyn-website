@@ -46,6 +46,169 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "japanese-knotweed-mortgage-rics-survey",
+    title: "Japanese knotweed and your mortgage: what a RICS survey actually checks",
+    category: "Planning & surveys",
+    date: "2026-11-20",
+    seoTitle: "Japanese Knotweed And Your Mortgage: The 2022 Rules",
+    metaDescription:
+      "Found Japanese knotweed before a sale or a project? How RICS's 2022 risk categories A to D work, what a lender needs, and what treatment or removal costs.",
+    excerpt:
+      "RICS dropped its old \"seven-metre rule\" for Japanese knotweed in 2022 for a four-category risk assessment — and category matters more to a lender now than distance ever did. Here's what a survey actually checks, and what sorting it out costs.",
+    imageAlt:
+      "Illustration of a garden cutaway showing a Japanese knotweed clump with heart-shaped leaves and red-flecked stems, its rhizome roots creeping underground toward a house's foundation, beside a crossed-out tape measure marked 7m rule, with a legend of four coloured risk category badges A to D below and the usual dark caption band.",
+    related: [
+      "asbestos-survey-pre-2000-house",
+      "structural-calculations-building-control",
+      "extension-value-cranleigh",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "RICS scrapped its old **\"seven-metre rule\"** for Japanese knotweed in **March 2022**. Surveyors now sort an infestation into one of four management categories, **A to D**, based on how much it's actually affecting the property and neighbouring land — not simply how far away it's growing.",
+          "Having Japanese knotweed on your own land has never been illegal. What the **Wildlife and Countryside Act 1981** actually bans is causing it to spread — into the wild, onto a neighbour's garden, a verge or a watercourse.",
+          "Category is what a lender cares about now, not distance. **Category A or B** usually means a professional treatment plan and an insurance-backed guarantee before a mortgage offer is confirmed; **Category C or D** rarely holds a loan up at all.",
+          "Dug-up knotweed and any soil it has grown through counts as **controlled waste** under the Environmental Protection Act 1990 — it cannot simply go in a skip or get buried in next door's garden, and moving it off site has its own paperwork.",
+          "The seller's **TA6 property information form** asks the knotweed question directly. Answering \"no\" without being certain is a misrepresentation risk that can resurface years after completion, not just a lower offer today.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The call comes at the worst possible moment, almost every time. A buyer's survey has come back with knotweed flagged in a corner of the garden, or a builder clearing a plot before a new extension has turned up the unmistakable red-flecked stems and heart-shaped leaves along a fence line, and the first thing anyone finds online is a now out-of-date \"seven-metre rule\" that was dropped years ago. Panic sets in, and panic is expensive — a rushed, badly specified removal job costs considerably more than a calm, correctly sequenced one.",
+      },
+      {
+        type: "p",
+        text: "The second thing most people find out, usually from a lender rather than a surveyor, is that \"how far away is it\" stopped being the question some time ago. Since 2022, a RICS-qualified surveyor doing a Home Survey assesses the plant against a four-category scale, and it's the category — not the tape measure — that decides whether a mortgage offer sails through or stalls.",
+      },
+      {
+        type: "p",
+        text: "None of it has to be a crisis, and treating it like one is usually the expensive mistake. Japanese knotweed is one of the most studied, best-understood garden problems in the country — what actually matters is getting the category right, choosing the correct treatment route for your timescale, and handling the waste properly, in that order.",
+      },
+      { type: "h2", text: "Is it illegal to have Japanese knotweed in my garden?" },
+      {
+        type: "p",
+        text: "No — and this is the single most common misunderstanding about the plant. Simply having Japanese knotweed growing on your own property has never been a criminal offence in England and Wales. What **section 14 of the Wildlife and Countryside Act 1981** actually prohibits is \"planting or otherwise causing [it] to grow in the wild\" — in other words, letting it spread beyond your boundary, onto a neighbour's land, a public verge, a riverbank or any other ground you don't control. Local authorities and the police both have powers to enforce against that, and a council can also serve a **community protection notice**, under the Anti-social Behaviour, Crime and Policing Act 2014, on a landowner who lets an infestation encroach onto a neighbour's property and does nothing about it.",
+      },
+      { type: "h2", text: "What actually changed in RICS's knotweed guidance in 2022?" },
+      {
+        type: "p",
+        text: "For a decade, the industry worked from a 2012 RICS information paper built around a single rule of thumb: if the nearest knotweed stand was within seven metres of a building, it was treated as a material risk, almost regardless of anything else. A parliamentary inquiry into the plant concluded that approach was overly cautious and not well supported by the evidence on how far its underground stems, called rhizomes, actually spread, or the real damage it does to a typical building. RICS responded with a new guidance note, which took effect in **March 2022**, dropping the blanket distance rule in favour of a four-category risk assessment that looks at where the plant actually is, how it's growing, and what it's realistically affecting.",
+      },
+      { type: "h2", text: "What are the RICS A to D categories, and which one stops a mortgage?" },
+      {
+        type: "p",
+        text: "A RICS-qualified surveyor doing a Home Survey now records Japanese knotweed against four management categories rather than a single distance measurement:",
+      },
+      {
+        type: "table",
+        caption: "RICS's 2022 knotweed management categories; a lender's own policy on each one can still vary.",
+        head: ["Category", "What it means", "Typical lender response"],
+        rows: [
+          ["A", "Causing, or has already caused, actual damage to a permanent structure, a drive or a boundary wall", "Usually declined until treated, or lent against only with a full remediation plan"],
+          ["B", "Growing within 7m of a habitable space or garage, but not yet causing damage", "Normally needs a management plan and an insurance-backed guarantee before completion"],
+          ["C", "Present on the property but more than 7m from any building, or already under a monitored treatment plan", "Often proceeds with a lower-cost management plan; sometimes no guarantee required"],
+          ["D", "No live plant seen, but evidence it has been present nearby in the past three growing seasons", "Usually no lending impact beyond disclosure"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Most lenders have aligned their own policy to something close to this scale, but each one sets its own rules on top of it, and some still lean on older criteria — so a mortgage broker who knows the specific lender's current position is worth involving as soon as a survey flags it, rather than assuming the RICS category settles the question on its own.",
+      },
+      { type: "h2", text: "How is knotweed material allowed to be disposed of?" },
+      {
+        type: "p",
+        text: "Once Japanese knotweed is cut, dug up or mixed into soil, it stops being a weed problem and becomes a waste problem. Any plant material, and any soil it has grown through, is classified as **controlled waste** under the Environmental Protection Act 1990 and the regulations made under it. That means it cannot go into an ordinary skip or household bin, cannot be buried on someone else's land, and moving it off site at all requires a registered waste carrier and a transfer note recording where it went — in roughly the same way builders have to account for other hazardous material once it's identified, covered in [our guide to asbestos surveys](/blog/asbestos-survey-pre-2000-house). Burying it on your own land, deep enough and under a root barrier membrane, is permitted in limited circumstances, but it has to follow published Environment Agency practice rather than a rule of thumb from whoever's doing the digging.",
+      },
+      { type: "h2", text: "What does treatment or removal cost, and how long does it take?" },
+      {
+        type: "p",
+        text: "There are two realistic routes, and the right one depends on your timescale and whether you need a guarantee a lender will actually accept:",
+      },
+      {
+        type: "table",
+        caption: "Typical UK trade-cost ranges; get a site visit and a written treatment plan before assuming either figure.",
+        head: ["Route", "Typical cost", "Typical timescale"],
+        rows: [
+          ["Herbicide treatment programme, with insurance-backed guarantee", "roughly £1,000 – £3,000 for a domestic infestation", "2 – 3 growing seasons of repeat treatment, plus the guarantee term"],
+          ["Full excavation and removal to licensed landfill", "roughly £4,000 – £20,000+, depending on area and access", "Days to a couple of weeks on site, once the waste route is arranged"],
+          ["Routine monitoring under an existing treatment plan", "often included in the original programme price", "Annual site visits over the guarantee term"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Herbicide treatment is the slower, cheaper route — usually glyphosate-based, applied by a specialist over two or three growing seasons — and it's what most insurance-backed guarantees are actually built around, because a lender wants evidence the plant has been monitored and controlled over more than one season, not just sprayed once. Excavation is faster and suits a building project with a fixed start date, since the ground can be cleared and a guarantee issued once the material is off site, but it costs more and still needs the waste rules above followed to the letter — a contractor who just digs it out and takes it away without a transfer note is creating a second problem, not solving the first one.",
+      },
+      {
+        type: "quote",
+        text: "The question we get isn't usually \"is it dangerous\" — it's \"will it stop my mortgage going through\". If we're clearing a plot before building and knotweed turns up, the slow route and the fast route both work. What doesn't work is guessing which one you need and finding out from the lender's surveyor instead of your own.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A properly specified treatment programme with a Property Care Association-accredited contractor and an insurance-backed guarantee typically costs **£1,000 – £3,000**. Get the category wrong, or skip the guarantee a lender actually wants, and the realistic alternative is a stalled mortgage offer, a buyer walking away, or a full **£4,000 – £20,000+** excavation bill once it's been left to spread for another season.",
+      },
+      { type: "h2", text: "Do I have to declare knotweed when I sell my house?" },
+      {
+        type: "p",
+        text: "Yes, in practice. The Law Society's **TA6 property information form**, completed by the seller as part of the standard conveyancing pack, asks directly whether the property is, or has been, affected by Japanese knotweed, with an option to answer \"not known\" rather than guess. Answering \"no\" is a high bar — you need to be genuinely confident it's true, not simply unaware of a problem you haven't looked for — because a wrong answer can expose a seller to a misrepresentation claim from the buyer long after completion, once the plant resurfaces under their ownership instead.",
+      },
+      {
+        type: "p",
+        text: "The safer position, if there's any doubt at all, is \"not known\" rather than a confident \"no\" that later turns out to be wrong — or better still, getting it checked and recorded properly before the house goes on the market, so the question doesn't come up for the first time when a buyer's solicitor raises it.",
+      },
+      { type: "h2", text: "What should I do if a survey flags knotweed before I build or buy?" },
+      {
+        type: "ol",
+        items: [
+          "Get the category confirmed properly — a RICS-qualified surveyor or a specialist knotweed surveyor, not a guess based on how far away it looks.",
+          "Get a written treatment plan and, if a mortgage is involved, check what guarantee term and provider your specific lender will actually accept before signing up to one.",
+          "If you're building rather than buying, get the treatment plan priced alongside the rest of the job — much like agreeing [structural calculations with building control](/blog/structural-calculations-building-control) early, it's far cheaper to plan around knotweed from the start than to discover it mid-groundworks.",
+          "Keep every certificate — the treatment plan, the insurance-backed guarantee, any waste transfer notes — with the rest of your building paperwork. A future buyer's solicitor will ask for exactly these documents.",
+          "Don't panic-spray or dig it up yourself before getting advice — a botched DIY attempt can spread rhizome fragments further than leaving it alone, and makes the eventual professional job harder.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to walk away from a plot, a renovation or a house purchase — knotweed is one of the best-understood problems in the business, and a correctly specified treatment plan nearly always costs less than the panic the plant tends to provoke. It's exactly the kind of question worth raising early with [builders in Cranleigh](/areas/cranleigh), alongside the structural and planning side of a project, so the treatment programme and the building work get planned together rather than racing each other for time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Japanese knotweed illegal to have in my garden?",
+        answer:
+          "No. Having it on your own land has never been a criminal offence. What's illegal, under section 14 of the Wildlife and Countryside Act 1981, is causing it to spread into the wild — onto a neighbour's land, a verge or a watercourse, for example. A council can also serve a community protection notice on a landowner who lets it encroach and does nothing about it.",
+      },
+      {
+        question: "What are the RICS knotweed risk categories A to D?",
+        answer:
+          "Introduced in March 2022 to replace the old seven-metre rule, they run from Category A (actual damage to a structure, drive or wall) through B (within 7m of a habitable space, no damage yet) and C (present but further away, or already under a managed treatment plan) to D (no live plant seen, but evidence it was nearby in the past three growing seasons). Category and condition matter more to most lenders now than simple distance.",
+      },
+      {
+        question: "Will Japanese knotweed stop me getting a mortgage?",
+        answer:
+          "It can, but it depends heavily on the category and on your specific lender's own policy. Category A or B infestations usually need a professional treatment plan and an insurance-backed guarantee in place before a lender will confirm an offer. Category C or D rarely holds lending up at all. A mortgage broker who knows the lender's current criteria is worth involving as soon as a survey flags it.",
+      },
+      {
+        question: "How much does Japanese knotweed treatment cost?",
+        answer:
+          "A herbicide treatment programme with an insurance-backed guarantee typically costs in the region of £1,000 to £3,000 and runs over two to three growing seasons. Full excavation and removal to licensed landfill is quicker but costs more — typically £4,000 to £20,000 or more depending on the area affected and site access. Get a site visit and a written quote before assuming either figure applies to your garden.",
+      },
+      {
+        question: "Do I have to tell a buyer about Japanese knotweed when I sell my house?",
+        answer:
+          "In practice, yes. The TA6 property information form asks directly whether the property is or has been affected, and answering \"no\" without being genuinely certain is a misrepresentation risk that can resurface after completion. If there's any doubt, \"not known\" is the honest answer — or get it checked and treated before marketing the house, so the question doesn't come up for the first time with a buyer's solicitor.",
+      },
+      {
+        question: "Can I dig up and remove Japanese knotweed myself?",
+        answer:
+          "You can, but it rarely goes well without professional advice first. Any material you dig up, and any soil it's grown through, counts as controlled waste under the Environmental Protection Act 1990 — it can't go in a normal skip or bin, and moving it off site needs a registered waste carrier and a transfer note. A botched DIY dig can also spread rhizome fragments further than leaving the plant alone, which is why most insurance-backed guarantees require a specialist contractor rather than homeowner work.",
+      },
+    ],
+    art: BLOG_ART["japanese-knotweed-mortgage-rics-survey"],
+  },
+  {
     slug: "septic-tanks-private-drainage-cranleigh",
     title: "Septic tanks and private drainage for Cranleigh homes off the mains network: what replacing one costs",
     category: "Planning & surveys",
@@ -409,8 +572,8 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       "garage-conversions-cranleigh-permitted-development",
       "extending-1930s-semi-cranleigh",
-      "cranleigh-victorian-cottage-rewire-replumb",
       "structural-calculations-building-control",
+      "japanese-knotweed-mortgage-rics-survey",
     ],
     body: [
       {

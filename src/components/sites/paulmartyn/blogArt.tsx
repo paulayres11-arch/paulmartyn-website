@@ -16,6 +16,82 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "japanese-knotweed-mortgage-rics-survey": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="knkSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="knkGrass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9bc98a" /><stop offset="1" stopColor="#7cab6b" />
+          </linearGradient>
+          <linearGradient id="knkSoil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#a9876a" /><stop offset="1" stopColor="#7d6248" />
+          </linearGradient>
+          <linearGradient id="knkRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7b8a90" /><stop offset="1" stopColor="#566069" />
+          </linearGradient>
+          <linearGradient id="knkWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eef1f2" /><stop offset="1" stopColor="#d7dde0" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="34" fill="url(#knkSky)" />
+        <text x="200" y="20" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">Japanese knotweed: category, not distance, decides your mortgage</text>
+
+        <rect x="14" y="34" width="372" height="40" fill="url(#knkSky)" opacity=".5" />
+        <rect x="14" y="74" width="372" height="26" fill="url(#knkGrass)" />
+        <rect x="14" y="100" width="372" height="140" fill="url(#knkSoil)" />
+
+        {/* house gable, right side, foundation cutaway reaching into the soil */}
+        <polygon points="300,56 344,32 388,56" fill="url(#knkRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="306" y="56" width="76" height="44" fill="url(#knkWall)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="320" y="70" width="16" height="18" fill="#9cc7da" stroke="#5d6568" strokeWidth="1" />
+        <rect x="352" y="70" width="16" height="18" fill="#9cc7da" stroke="#5d6568" strokeWidth="1" />
+        <rect x="306" y="100" width="76" height="30" fill="#8c979c" stroke="#5d6568" strokeWidth="1.2" />
+
+        {/* knotweed clump: red-flecked stems and heart-shaped leaves */}
+        <g>
+          <path d="M150 100 V58 M160 96 V66 M140 96 V66 M168 88 V70 M132 88 V70" stroke="#5a3a28" strokeWidth="2.2" fill="none" />
+          <circle cx="150" cy="96" r="1.6" fill="#a8321f" /><circle cx="160" cy="88" r="1.6" fill="#a8321f" /><circle cx="140" cy="78" r="1.6" fill="#a8321f" />
+          <path d="M150 62 q-10,-12 -20,-2 q-4,8 10,16 q4,-2 10,-14 Z" fill="#4f8f52" stroke="#2f6b3f" strokeWidth="1" />
+          <path d="M150 62 q10,-12 20,-2 q4,8 -10,16 q-4,-2 -10,-14 Z" fill="#5aa05d" stroke="#2f6b3f" strokeWidth="1" />
+          <path d="M160 70 q-8,-10 -16,-1 q-3,7 8,13 q4,-2 8,-12 Z" fill="#4f8f52" stroke="#2f6b3f" strokeWidth="1" />
+          <path d="M140 72 q8,-10 16,-1 q3,7 -8,13 q-4,-2 -8,-12 Z" fill="#5aa05d" stroke="#2f6b3f" strokeWidth="1" />
+        </g>
+
+        {/* underground rhizome creeping from the knotweed toward the house foundation */}
+        <path d="M150 100 C190 118, 230 108, 270 122 S330 118, 352 116" stroke="#a8321f" strokeWidth="2.2" fill="none" strokeDasharray="5,4" opacity=".85" />
+        <text x="255" y="146" fontFamily="Helvetica,Arial,sans-serif" fontSize="7" fontWeight="700" fill="#f3efe4" textAnchor="middle">RHIZOME SPREAD</text>
+
+        {/* a crossed-out tape measure: the old 7m rule, dropped */}
+        <g transform="translate(60,150)">
+          <rect x="0" y="0" width="70" height="14" rx="2" fill="#f3efe4" stroke="#5d6568" strokeWidth="1.2" />
+          <path d="M8 0 V14 M20 0 V10 M32 0 V14 M44 0 V10 M56 0 V14" stroke="#5d6568" strokeWidth="1" />
+          <text x="35" y="11" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.2" fontWeight="700" fill="#44515a" textAnchor="middle">7m RULE</text>
+          <line x1="-4" y1="18" x2="74" y2="-4" stroke="#a8321f" strokeWidth="2.6" />
+        </g>
+        <text x="95" y="182" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#f3efe4" textAnchor="middle">DROPPED BY RICS, 2022</text>
+
+        {/* category legend, A to D */}
+        <rect x="14" y="248" width="372" height="40" rx="3" fill="#f3efe4" stroke="#5d6568" strokeWidth="1" />
+        <circle cx="50" cy="264" r="10" fill="#a8321f" /><text x="50" y="267.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#fff" textAnchor="middle">A</text>
+        <circle cx="150" cy="264" r="10" fill="#c47a33" /><text x="150" y="267.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#fff" textAnchor="middle">B</text>
+        <circle cx="250" cy="264" r="10" fill="#a89a3a" /><text x="250" y="267.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#fff" textAnchor="middle">C</text>
+        <circle cx="350" cy="264" r="10" fill="#2f6b3f" /><text x="350" y="267.5" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.5" fontWeight="700" fill="#fff" textAnchor="middle">D</text>
+        <text x="50" y="282" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44515a" textAnchor="middle">Damage now</text>
+        <text x="150" y="282" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44515a" textAnchor="middle">Within 7m</text>
+        <text x="250" y="282" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44515a" textAnchor="middle">Managed / further</text>
+        <text x="350" y="282" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44515a" textAnchor="middle">No live plant</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Japanese knotweed and your mortgage</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">RICS replaced the old seven-metre rule with categories A to D in 2022</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Category and condition now decide the lending risk, not distance</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: RICS Japanese Knotweed and Residential Property (2022); Wildlife and Countryside Act 1981</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "septic-tanks-private-drainage-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

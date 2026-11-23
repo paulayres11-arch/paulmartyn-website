@@ -46,6 +46,173 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "removing-chimney-capping-flue-cranleigh",
+    title: "Removing a chimney or capping a flue in a Cranleigh house: what building control and conservation ask for",
+    category: "Building control",
+    date: "2026-11-23",
+    seoTitle: "Removing A Chimney In Cranleigh: What The Rules Require",
+    metaDescription:
+      "Removing a chimney breast is notifiable building work, and conservation area or listed rules can affect the stack above it. What it costs, and what to check first.",
+    excerpt:
+      "Pulling down a chimney breast looks like a weekend job with a sledgehammer. It's actually structural work on a load-bearing part of the house, and in an older Cranleigh building there's often a planning question and a bat question stacked on top.",
+    imageAlt:
+      "Illustration comparing two house cutaways side by side: the left house has its chimney breast removed with a steel beam fitted above the stack, marked supported with a green tick, and the right house has the breast removed with only corbelled brickwork, marked unsupported with a crack and a red cross, with a small bat silhouette near the roof voids marked check for bats first.",
+    related: [
+      "cranleigh-conservation-area-consent",
+      "bat-surveys-timing-cranleigh",
+      "building-control-completion-certificate",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Removing a chimney breast is **always notifiable work under the Building Regulations**, because the breast and the masonry above it are part of the house's structure — regardless of whether the room is \"just\" being opened up for a bigger sofa.",
+          "A chimney stack above the roofline can usually come down **without planning permission** on an ordinary unlisted house outside a conservation area. Inside the **Cranleigh Conservation Area**, or on a listed building, that changes — check with **Waverley** first, not after.",
+          "Older Cranleigh roof voids and disused flues are a plausible bat roosting spot. A **preliminary roost assessment can be booked at any time of year**; the follow-up emergence survey, if one turns out to be needed, can only run **May to September**.",
+          "If the chimney breast sits on a shared wall with next door — the case in most of Cranleigh's Victorian terraces and semis — the **Party Wall etc. Act 1996** applies before work starts, not once the dust has settled.",
+          "Capping an unused flue rather than removing the whole chimney is the smaller job, but it still needs air to move through it — **sealing a flue solid is a well-known cause of trapped damp** in the breast.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every year or so we get called to a knocked-through lounge where the fireplace has gone, the chimney breast has been chased out at ground floor, and a crack has opened in the ceiling running the length of the room. Nobody set out to cause that. They hired someone to take the breast out, nobody told building control, and a year on, the chimney stack two floors up — still there, resting on nothing much — has started to move.",
+      },
+      {
+        type: "p",
+        text: "It is one of the more deceptive jobs in a house. Pulling down a chimney breast looks like demolition: a sledgehammer, a skip, a weekend. What it actually is, in regulatory terms, is structural alteration to a load-bearing part of the building, and in an older Cranleigh cottage or Victorian semi it usually comes with a second and third question stacked on top of the first — is there a bat roost up there, and does the stack above the roofline need permission to come down at all.",
+      },
+      {
+        type: "p",
+        text: "None of that is a reason to leave a dead chimney as it is — it is a reason to put the steps in the right order: survey, then structure, then consent, then the sledgehammer. The phone calls we get tend to run the other way round.",
+      },
+      { type: "h2", text: "Do I need planning permission to remove a chimney in Cranleigh?" },
+      {
+        type: "p",
+        text: "It depends what is coming down, and off what kind of building. On an ordinary unlisted house outside the conservation area, removing a chimney stack above roof level is generally not \"development\" needing planning permission — demolishing part of a building, rather than the whole of it, usually sits outside the planning system. Planning Portal's own guidance says this changes inside a conservation area, where a council may treat altering or removing a chimney as affecting the building's appearance, and advises checking with the local planning authority first.",
+      },
+      {
+        type: "p",
+        text: "Waverley is one of the councils worth asking first. The Cranleigh Conservation Area, covered in our guide to [what needs consent inside the conservation area](/blog/cranleigh-conservation-area-consent), already restricts some flues and satellite dishes on elevations facing a highway; a chimney stack on a street-facing roof slope is exactly the kind of feature a conservation officer may want kept, even where the letter of the rules does not demand a full application.",
+      },
+      {
+        type: "p",
+        text: "If the house is listed — and the parish has **81** of them under the Cranleigh Neighbourhood Plan — the position is simpler and stricter: removing, altering or capping a chimney on a listed building needs **listed building consent**, separate from both planning permission and Building Regulations approval, because the chimney is routinely part of what makes the building special.",
+      },
+      { type: "h2", text: "Does removing a chimney breast need building regulations approval?" },
+      {
+        type: "p",
+        text: "Yes, always — and this is the part people most often get wrong, because it does not feel like \"building work\" in the way a new wall does. A chimney breast is part of the structure, and several councils' own building control guidance states plainly that approval always applies to removing a chimney breast, because it is part of the building's structure, not a fixture inside it.",
+      },
+      {
+        type: "p",
+        text: "The reason is what sits above it. A chimney breast usually carries the stack running up through every floor above, and sometimes the roof too. Remove it without putting something else there to carry that weight — a steel beam built in at ceiling level, or gallows brackets suspending the stack from the floor structure above — and the stack has nothing left to stand on but the brickwork of the chimney itself, corbelled out over thin air. Council guidance is explicit that **corbelling alone is not adequate support**. Get it wrong and the first sign is usually a cracked ceiling, not a sudden collapse — which is often how it goes unnoticed until a structural survey ahead of a sale finds it.",
+      },
+      {
+        type: "p",
+        text: "Beyond structure, a proper check also covers fire safety, sound insulation, damp-proofing where the breast used to keep an outer wall dry, ventilation to any room that has lost its flue, and — in a terrace or semi — whether your neighbour's own chimney still relies on the same stack.",
+      },
+      { type: "h2", text: "What does it actually cost, and how long does it take?" },
+      {
+        type: "p",
+        text: "Cost depends mainly on how many floors are involved and whether the breast carries real weight:",
+      },
+      {
+        type: "table",
+        caption: "Trade-cost ranges; always get a written, site-specific quote, since access and the number of floors involved both move the price a lot.",
+        head: ["Job", "Typical cost", "Typical time on site"],
+        rows: [
+          ["Non-load-bearing or \"false\" chimney breast", "£500 – £1,300", "1 – 2 days"],
+          ["Load-bearing ground or first-floor breast, with steel beam and support fitted above", "£1,500 – £3,000 per floor", "3 – 5 days, plus making good"],
+          ["Stack removed down to roof level only, breast left in place", "£900 – £2,300", "1 – 2 days, plus scaffolding"],
+          ["Full removal — stack and every breast beneath it, roof reinstated", "from about £4,500", "1 – 2 weeks"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "People ring us about the sledgehammer part and never ask about the steel. The steel is the job. Any builder who will take a chimney breast out without talking you through what is holding the stack up afterwards is the one to walk away from.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "Could there be bats living in my chimney before you touch it?" },
+      {
+        type: "p",
+        text: "An open, undisturbed flue behind a capped or disused pot is a plausible roost in an older Cranleigh roof void — see our wider guide to [bat survey timing](/blog/bat-surveys-timing-cranleigh) for what else can trigger one. A chimney is not the most common roost feature — soffits, fascias and hanging tile are more usual — but an ecologist carrying out a preliminary roost assessment still checks a disused flue, and droppings or staining near the base of the breast or in the grate are the usual evidence.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Dark staining or small, crumbly droppings on the hearth or in the grate",
+          "A musty smell from a long-disused flue",
+          "Scratching or squeaking at dusk from an otherwise quiet chimney",
+          "A roof void that is open and rarely visited — the single biggest risk factor of the lot",
+        ],
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "A preliminary roost assessment can be booked **at any time of year**, including the middle of winter, and usually rules the question in or out within a day. Skip it and find evidence mid-job instead, and the follow-up emergence survey can only run **May to September** — miss that window on a Cranleigh roof and the honest answer, as on any bat-affected building, is **next May**, not next month.",
+      },
+      { type: "h2", text: "What does capping a flue instead of removing it involve?" },
+      {
+        type: "p",
+        text: "If the chimney is not in the way of a room layout and the only goal is to stop rain or draughts coming down it, capping the flue rather than removing the breast and stack is the smaller, cheaper job — but capping does not mean sealing.",
+      },
+      {
+        type: "p",
+        text: "A flue sealed completely, with no air moving through it, is a well-understood cause of damp: moisture generated inside the house has nowhere to go, condenses inside the masonry, and the breast can stay permanently damp with nothing leaking in from outside. The fix across building guidance is a **ventilated terminal** — a perforated or mushroom-shaped cowl that keeps rain and birds out while still letting air move through — rather than a solid cap with no vent. See [why damp has three different causes](/blog/damp-rising-penetrating-condensation) for why trapped moisture, not a leak, is so often the real culprit in an older house.",
+      },
+      {
+        type: "p",
+        text: "Where the flue previously served a working fire or boiler, reusing or relining it counts as building work in its own right — worth checking with building control before assuming a cowl is all that is needed.",
+      },
+      { type: "h2", text: "What does a shared chimney mean under the Party Wall Act?" },
+      {
+        type: "p",
+        text: "Cranleigh's Victorian terraces and semis — the housing stock covered in [our guide to extending a 1930s semi](/blog/extending-1930s-semi-cranleigh) and the older cottages beyond them — very often share a chimney breast and stack with next door, built straddling the boundary rather than sitting on one side of it. Where that is the case, the breast is a party structure and the **Party Wall etc. Act 1996** applies before work starts, the same as [any other party wall notice](/blog/party-wall-notice-timing).",
+      },
+      {
+        type: "p",
+        text: "It also carries a trap specific to chimneys. Where a neighbour has already removed their breast and is relying on gallows brackets to hold the remaining stack up on their side, council guidance is explicit that a second set of gallows brackets **cannot** then go into the same party wall to support your side — it was never designed to carry both. That is exactly what a party wall surveyor should be checking before either side starts work.",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to live with a dead chimney, or a crack nobody will own up to. Get the roost check and the structural engineer's sign-off — typically **£1,500 to £3,000**, the same bracket as most domestic structural work — sorted before the sledgehammer comes out, keep the completion certificate once building control has signed it off (see [what that certificate is actually for](/blog/building-control-completion-certificate)), and a job that could turn into a six-month headache stays a straightforward week or two. It is exactly the sequencing any of the [builders in Cranleigh](/areas/cranleigh) worth using will insist on before they pick up a hammer.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to remove a chimney stack in Cranleigh?",
+        answer:
+          "Usually not, if the house is unlisted and outside the Cranleigh Conservation Area — demolishing part of a building, rather than all of it, generally sits outside the planning system. Inside the conservation area, or on a listed building, check with Waverley first: some councils treat chimney removal as needing permission there, and a listed building will need listed building consent regardless.",
+      },
+      {
+        question: "Does removing a chimney breast always need building control approval?",
+        answer:
+          "Yes. Several councils' own guidance states that building regulations approval always applies to chimney breast removal, because the breast is part of the building's structure. You will need either a building notice or full plans application, and an inspection before it is covered up.",
+      },
+      {
+        question: "What holds the chimney stack up once the breast below it is removed?",
+        answer:
+          "Usually a steel beam built into the wall at the level the breast used to occupy, or gallows brackets suspending the remaining stack from the floor structure above. Corbelling the brickwork out over the gap, on its own, is not adequate support — council guidance says so explicitly.",
+      },
+      {
+        question: "Could there be bats in my chimney?",
+        answer:
+          "It is possible, especially in an older Cranleigh building with a disused or open flue — droppings, staining or a musty smell are the usual signs. A preliminary roost assessment can be done at any time of year; if evidence turns up, the follow-up emergence survey can only run May to September.",
+      },
+      {
+        question: "Is it cheaper to just cap the flue instead of removing the chimney?",
+        answer:
+          "Usually, if the room layout does not need the breast gone. But the cap needs to let air through — a fully sealed flue is a recognised cause of trapped damp in the chimney breast, so a ventilated cowl is the standard fix rather than a solid cap.",
+      },
+      {
+        question: "Do I need to tell my neighbour before removing a shared chimney breast?",
+        answer:
+          "If the chimney straddles the boundary with next door, as it does in most Cranleigh terraces and semis, yes — it is a party structure under the Party Wall etc. Act 1996, and a notice is needed before work starts, the same as for any other party wall.",
+      },
+    ],
+    art: BLOG_ART["removing-chimney-capping-flue-cranleigh"],
+  },
+  {
     slug: "japanese-knotweed-mortgage-rics-survey",
     title: "Japanese knotweed and your mortgage: what a RICS survey actually checks",
     category: "Planning & surveys",
@@ -7472,6 +7639,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a twelve-month calendar strip with May to August highlighted in amber as the optimal survey window, September shown as sub-optimal, and a barn roof with a bat silhouette above it",
     related: [
+      "removing-chimney-capping-flue-cranleigh",
       "cranleigh-settlement-boundary",
       "cranleigh-buildings-of-local-merit",
       "trees-and-foundation-depth-cranleigh",

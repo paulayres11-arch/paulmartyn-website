@@ -16,6 +16,73 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "removing-chimney-capping-flue-cranleigh": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="chmSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#bcdcee" /><stop offset="1" stopColor="#e3eef4" />
+          </linearGradient>
+          <linearGradient id="chmRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#7b8a90" /><stop offset="1" stopColor="#566069" />
+          </linearGradient>
+          <linearGradient id="chmWall" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eef1f2" /><stop offset="1" stopColor="#d7dde0" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="34" fill="url(#chmSky)" />
+        <text x="200" y="20" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">Chimney removal: what holds the stack up afterwards?</text>
+
+        <rect x="14" y="34" width="372" height="226" fill="url(#chmSky)" />
+
+        {/* dashed VS divider down the middle */}
+        <line x1="200" y1="74" x2="200" y2="260" stroke="#8c979c" strokeWidth="1.3" strokeDasharray="4,4" />
+        <circle cx="200" cy="112" r="15" fill="#1f2a30" />
+        <text x="200" y="117" fontFamily="Helvetica,Arial,sans-serif" fontSize="11" fontWeight="700" fill="#e08a2b" textAnchor="middle">VS</text>
+
+        {/* small bat silhouette hovering between the two roof voids */}
+        <g transform="translate(200,56)">
+          <circle cx="0" cy="0" r="17" fill="none" stroke="#e08a2b" strokeWidth="1.3" strokeDasharray="3,3" />
+          <path d="M0 2 C-3,-5 -10,-6 -14,-2 C-10,-1 -6,1 -3,0 C-6,3 -11,4 -14,8 C-9,7 -4,4 0,6 C4,4 9,7 14,8 C11,4 6,3 3,0 C6,1 10,-1 14,-2 C10,-6 3,-5 0,2 Z" fill="#2a2f33" />
+        </g>
+        <text x="200" y="80" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.4" fontWeight="700" fill="#44515a" textAnchor="middle">CHECK FOR BATS FIRST</text>
+
+        {/* LEFT house: supported */}
+        <polygon points="60,74 106,42 152,74" fill="url(#chmRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="66" y="74" width="80" height="186" fill="url(#chmWall)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="116" y="14" width="24" height="8" fill="#7b8a90" stroke="#44515a" strokeWidth="1" />
+        <rect x="120" y="20" width="16" height="54" fill="#9aa3a6" stroke="#5d6568" strokeWidth="1.1" />
+        <rect x="120" y="74" width="16" height="79" fill="#9b5a42" stroke="#6e3c28" strokeWidth="1" />
+        <rect x="104" y="153" width="48" height="9" fill="#5d6568" stroke="#3a4247" strokeWidth="1" />
+        <text x="128" y="148" fontFamily="Helvetica,Arial,sans-serif" fontSize="5.6" fontWeight="700" fill="#2f6b3f" textAnchor="middle">STEEL BEAM</text>
+        <line x1="88" y1="162" x2="88" y2="256" stroke="#8c979c" strokeWidth="1" strokeDasharray="3,3" />
+        <line x1="168" y1="162" x2="168" y2="256" stroke="#8c979c" strokeWidth="1" strokeDasharray="3,3" />
+        <circle cx="106" cy="200" r="13" fill="#fdf1de" stroke="#2f6b3f" strokeWidth="1.8" />
+        <path d="M100 200 l4,5 8,-10" stroke="#2f6b3f" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="106" y="232" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#2f6b3f" textAnchor="middle">SUPPORTED</text>
+
+        {/* RIGHT house: unsupported */}
+        <polygon points="248,74 294,42 340,74" fill="url(#chmRoof)" stroke="#44515a" strokeWidth="1.1" />
+        <rect x="254" y="74" width="80" height="186" fill="url(#chmWall)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="304" y="14" width="24" height="8" fill="#7b8a90" stroke="#44515a" strokeWidth="1" />
+        <rect x="308" y="20" width="16" height="54" fill="#9aa3a6" stroke="#5d6568" strokeWidth="1.1" />
+        <rect x="308" y="74" width="16" height="79" fill="#9b5a42" stroke="#6e3c28" strokeWidth="1" />
+        <path d="M296 153 q12,-5 16,0 M324,153 q12,-5 16,0" fill="none" stroke="#6e3c28" strokeWidth="1.4" />
+        <path d="M316 74 L312 108 L320 136 L310 160" stroke="#a8321f" strokeWidth="1.6" fill="none" strokeDasharray="2,2" />
+        <line x1="276" y1="162" x2="276" y2="256" stroke="#8c979c" strokeWidth="1" strokeDasharray="3,3" />
+        <line x1="356" y1="162" x2="356" y2="256" stroke="#8c979c" strokeWidth="1" strokeDasharray="3,3" />
+        <circle cx="294" cy="200" r="13" fill="#fdf1de" stroke="#a8321f" strokeWidth="1.8" />
+        <path d="M288 194 l12,12 M300 194 l-12,12" stroke="#a8321f" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+        <text x="294" y="232" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#a8321f" textAnchor="middle">UNSUPPORTED</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Removing a chimney in Cranleigh</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">A chimney breast is structural — building control approval is never optional</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Check for roosting bats first: a preliminary assessment can run any time of year</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: Planning Portal; Richmond and Thurrock building control guidance; Bat Conservation Trust</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "japanese-knotweed-mortgage-rics-survey": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

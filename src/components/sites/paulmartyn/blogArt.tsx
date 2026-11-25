@@ -16,6 +16,86 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "removing-internal-wall-cranleigh-cottage": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="iwcBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#eadfc6" /><stop offset="1" stopColor="#e2d4b4" />
+          </linearGradient>
+          <linearGradient id="iwcRoom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#e7eef0" /><stop offset="1" stopColor="#d9e3e6" />
+          </linearGradient>
+          <linearGradient id="iwcWallL" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f0e6cc" /><stop offset="1" stopColor="#dfd0a9" />
+          </linearGradient>
+          <linearGradient id="iwcWallR" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#f6f2e8" /><stop offset="1" stopColor="#e9e2d2" />
+          </linearGradient>
+          <linearGradient id="iwcOak" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#6e4a2e" /><stop offset="1" stopColor="#4a3220" />
+          </linearGradient>
+          <linearGradient id="iwcJoist" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#9b7a52" /><stop offset="1" stopColor="#7a5c3a" />
+          </linearGradient>
+        </defs>
+
+        <rect width="400" height="34" fill="url(#iwcBg)" />
+        <text x="200" y="20" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fontWeight="700" fill="#1f2a30" textAnchor="middle">Not every &quot;partition&quot; in an old cottage is one</text>
+
+        <rect x="14" y="34" width="372" height="226" fill="url(#iwcRoom)" />
+
+        {/* dashed divider with magnifying-glass badge */}
+        <line x1="200" y1="70" x2="200" y2="256" stroke="#8c979c" strokeWidth="1.3" strokeDasharray="4,4" />
+        <circle cx="200" cy="112" r="15" fill="#1f2a30" />
+        <circle cx="196" cy="108" r="5" fill="none" stroke="#e08a2b" strokeWidth="1.6" />
+        <line x1="200" y1="112" x2="205" y2="117" stroke="#e08a2b" strokeWidth="2" strokeLinecap="round" />
+        <text x="200" y="134" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.1" fontWeight="700" fill="#44515a" textAnchor="middle">CAN YOU TELL</text>
+        <text x="200" y="142" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.1" fontWeight="700" fill="#44515a" textAnchor="middle">BY EYE?</text>
+
+        {/* LEFT: timber-framed structural wall */}
+        <text x="106" y="44" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#44515a" textAnchor="middle">TIMBER FRAME</text>
+        <path d="M80 52 L80 42 M106 52 L106 40 M132 52 L132 42" stroke="#e08a2b" strokeWidth="1.8" />
+        <path d="M80 42 l-3,6 l6,0 Z M106 40 l-3,6 l6,0 Z M132 42 l-3,6 l6,0 Z" fill="#e08a2b" />
+        <rect x="72" y="52" width="16" height="20" fill="url(#iwcJoist)" stroke="#5c4327" strokeWidth="1" />
+        <rect x="98" y="52" width="16" height="20" fill="url(#iwcJoist)" stroke="#5c4327" strokeWidth="1" />
+        <rect x="124" y="52" width="16" height="20" fill="url(#iwcJoist)" stroke="#5c4327" strokeWidth="1" />
+
+        <rect x="66" y="74" width="80" height="186" fill="url(#iwcWallL)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="70" y="74" width="12" height="186" fill="url(#iwcOak)" stroke="#3a2614" strokeWidth="1" />
+        <rect x="124" y="74" width="12" height="186" fill="url(#iwcOak)" stroke="#3a2614" strokeWidth="1" />
+        <rect x="70" y="150" width="66" height="9" fill="url(#iwcOak)" stroke="#3a2614" strokeWidth="1" />
+        {/* wattle-and-daub hatching in the infill panels, between the structural posts */}
+        <path d="M88 92 l9,9 M88 104 l9,9 M88 116 l9,9 M106 92 l9,9 M106 104 l9,9 M106 116 l9,9" stroke="#c3ad84" strokeWidth="1" opacity=".55" />
+        <path d="M88 175 l9,9 M88 187 l9,9 M88 199 l9,9 M106 175 l9,9 M106 187 l9,9 M106 199 l9,9" stroke="#c3ad84" strokeWidth="1" opacity=".55" />
+
+        <circle cx="106" cy="222" r="13" fill="#fdf1de" stroke="#a8321f" strokeWidth="1.8" />
+        <path d="M100 216 l12,12 M112 216 l-12,12" stroke="#a8321f" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+        <text x="106" y="246" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#a8321f" textAnchor="middle">STRUCTURAL FRAME</text>
+
+        {/* RIGHT: lightweight non-structural stud partition */}
+        <text x="294" y="44" fontFamily="Helvetica,Arial,sans-serif" fontSize="6.6" fontWeight="700" fill="#44515a" textAnchor="middle">STUD PARTITION</text>
+        <rect x="258" y="52" width="72" height="16" rx="1.5" fill="none" stroke="#8c979c" strokeWidth="1.3" strokeDasharray="3,3" />
+        <text x="294" y="63" fontFamily="Helvetica,Arial,sans-serif" fontSize="5.8" fontWeight="700" fill="#6b757a" textAnchor="middle">NO LOAD ABOVE</text>
+
+        <rect x="254" y="74" width="80" height="186" fill="url(#iwcWallR)" stroke="#8c979c" strokeWidth="1" />
+        <rect x="261" y="74" width="4" height="186" fill="#c9ad87" stroke="#9c825f" strokeWidth="0.8" />
+        <rect x="281" y="74" width="4" height="186" fill="#c9ad87" stroke="#9c825f" strokeWidth="0.8" />
+        <rect x="301" y="74" width="4" height="186" fill="#c9ad87" stroke="#9c825f" strokeWidth="0.8" />
+        <rect x="321" y="74" width="4" height="186" fill="#c9ad87" stroke="#9c825f" strokeWidth="0.8" />
+        <path d="M258 92 H330 M258 112 H330 M258 132 H330 M258 152 H330 M258 172 H330 M258 192 H330 M258 212 H330 M258 232 H330" stroke="#c7bfa9" strokeWidth="0.7" opacity=".7" />
+
+        <circle cx="294" cy="222" r="13" fill="#fdf1de" stroke="#2f6b3f" strokeWidth="1.8" />
+        <path d="M288 222 l4,5 8,-10" stroke="#2f6b3f" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="294" y="246" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fontWeight="700" fill="#2f6b3f" textAnchor="middle">NON-STRUCTURAL</text>
+
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="324" fontFamily="Helvetica,Arial,sans-serif" fontSize="13" fontWeight="700" fill="#e8e4dc">Removing an internal wall in a Cranleigh cottage</text>
+        <text x="24" y="346" fontFamily="Helvetica,Arial,sans-serif" fontSize="10.1" fill="#8fa0a8">An old timber frame or solid wall can look like a partition — it may carry the floor above</text>
+        <text x="24" y="365" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.8" fill="#8fa0a8">Get a structural engineer&apos;s assessment and building control sign-off before anything comes out</text>
+        <text x="24" y="384" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.4" fill="#8fa0a8">Source: Approved Document A; Historic England; Waverley Borough Council building control</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "removing-chimney-capping-flue-cranleigh": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

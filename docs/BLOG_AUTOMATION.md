@@ -345,7 +345,7 @@ Cranleigh topics — work through these:
 - [done 2026-11-16] EV charger installation at a Cranleigh home: permitted development, and the listed building exception
 - [done 2026-11-18] Septic tanks and private drainage for Cranleigh homes off the mains network: what replacing one costs
 - [done 2026-11-23] Removing a chimney or capping a flue in a Cranleigh house: what building control and conservation ask for
-- [ ] Removing an internal wall in a Cranleigh cottage: when you need a structural engineer and building control sign-off
+- [done 2026-11-25] Removing an internal wall in a Cranleigh cottage: when you need a structural engineer and building control sign-off
 - [ ] Self-build and infill plots in Cranleigh: what the settlement boundary and neighbourhood plan mean for a new house
 - [ ] Drainage and soakaways for a Cranleigh extension: SuDS rules and why the Weald clay makes them harder to design
 - [ ] Render and external wall finishes on a Cranleigh house: lime render, cement render and what the conservation area expects

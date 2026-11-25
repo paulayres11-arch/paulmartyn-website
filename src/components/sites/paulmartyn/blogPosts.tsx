@@ -46,6 +46,172 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "removing-internal-wall-cranleigh-cottage",
+    title: "Removing an internal wall in a Cranleigh cottage: when you need a structural engineer and building control sign-off",
+    category: "Building control",
+    date: "2026-11-25",
+    seoTitle: "Removing An Internal Wall In A Cranleigh Cottage: The Rules",
+    metaDescription:
+      "Taking out a wall in an older Cranleigh cottage isn't always a simple stud-wall job. When you need a structural engineer, building control, and when listed building consent applies.",
+    excerpt:
+      "Pulling out a wall between two rooms looks like the easiest job in a renovation — until the 'partition' in your cottage turns out to be the timber frame holding the roof up. What a structural engineer and building control actually need to see before it comes down.",
+    imageAlt:
+      "Illustration comparing two wall cross-sections side by side inside a cottage: the left wall is an oak timber frame with wattle infill carrying floor joists above, marked structural frame with a red cross, and the right wall is a thin lath-and-plaster stud partition with no load above it, marked non-structural with a green tick, with a magnifying glass between them asking 'can you tell by eye?'",
+    related: [
+      "structural-calculations-building-control",
+      "steel-beam-padstones",
+      "cranleigh-buildings-of-local-merit",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "Removing an internal wall always starts with one question: is it holding anything up? A load-bearing wall needs a structural engineer's calculation and building control sign-off before it comes out, under **Part A of the Building Regulations 2010**.",
+          "In a Cranleigh cottage you can't judge this by eye the way you can in a 1990s stud-walled house. A **timber-framed building's internal walls are often part of the structural frame itself**, and a solid wall that looks like a plain partition can be carrying a floor above it.",
+          "If the cottage is **listed** — and the parish has **81** nationally listed buildings — removing or altering an internal wall almost always needs **Listed Building Consent** too, because the historic layout is protected. There's **no planning fee** for the application.",
+          "A structural engineer's site visit and calculation typically costs **£1,500–£3,000**, whatever the size of the opening — get this agreed before a kitchen or knock-through layout is designed around the wall coming out, not after.",
+          "If the cottage was split into two homes at some point, the wall or the floor above it can be a **party structure** under the **Party Wall etc. Act 1996**, even though it sits entirely inside what is now one half of the building.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We get the call most often from someone who has just exchanged on a cottage near the High Street and wants to knock the front room and the parlour into one before they move in. They've done this before, in a 1930s semi somewhere, where the wall between the lounge and the dining room turned out to be two sheets of plasterboard round a few timber studs, and it came out in an afternoon. They assume this one will be the same.",
+      },
+      {
+        type: "p",
+        text: "It usually isn't. A lot of Cranleigh's older housing stock — the 15th to 17th-century timber-framed cottages the parish is known for, and the brick and stone cottages refronted over them in the centuries since — was built with internal walls that are nothing like a modern stud partition. In a timber frame, the wall you're looking at might be formed by the same oak posts and rails holding up the floor above and part of the roof, with the panels between them filled with wattle and daub or brick nogging that genuinely isn't carrying anything. From inside the room, both the frame and the infill can look exactly the same: a flat, plastered wall.",
+      },
+      {
+        type: "p",
+        text: "None of that means the wall has to stay. It means the order has to be right: work out what the wall is actually doing before anyone reaches for a crowbar, not after.",
+      },
+      { type: "h2", text: "Do I need planning permission to remove an internal wall in a Cranleigh cottage?" },
+      {
+        type: "p",
+        text: "Generally not, on an ordinary unlisted house. Planning Portal's guidance on internal alterations is that moving or removing an internal wall does not usually need planning permission, because it isn't normally treated as development affecting the outside of the building. That holds across Waverley the same as everywhere else.",
+      },
+      {
+        type: "p",
+        text: "What changes it is the building's status. Inside the Cranleigh Conservation Area, an internal wall on its own rarely triggers a planning question, because conservation area control is mainly about what's visible from outside — though see our guide to [what needs consent inside the conservation area](/blog/cranleigh-conservation-area-consent) for where that line actually sits. On a listed cottage, it's a different regime entirely, covered below.",
+      },
+      { type: "h2", text: "How do you tell whether a wall in an older cottage is actually load-bearing?" },
+      {
+        type: "p",
+        text: "In a modern house there are rules of thumb: a load-bearing wall usually runs perpendicular to the floor joists above it, sits above a wall or beam on the floor below, and is thicker than a stud partition. None of those rules of thumb are reliable in an old cottage.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A solid masonry wall is not automatically structural — some were built as simple room dividers, carrying nothing but their own weight.",
+          "A stud-look partition is not automatically safe to remove — in a timber frame, what looks like a stud wall from the room can be the building's actual frame, with lightweight infill between genuinely structural posts.",
+          "The only way to be certain is to look at what the wall meets at floor and ceiling level — in the loft, under the floorboards, or from a cellar — and have someone qualified trace what each post, beam or joist is actually carrying.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Several councils' own building control guidance makes the same point about older housing generally: it is not always obvious which walls are holding the building up and which are simple partitions, and assuming from appearance alone is exactly how a wall gets opened up before anyone has worked that out.",
+      },
+      { type: "h2", text: "Do I need a structural engineer, and what's different about a timber-framed cottage?" },
+      {
+        type: "p",
+        text: "If the wall is carrying any load, yes — and in a cottage, \"any load\" deserves a careful look rather than an assumption. A structural engineer's visit and calculation for a single opening typically costs **£1,500–£3,000**, the same bracket as most domestic structural work, covering the beam or support design, the bearing detail and the drawing building control needs to see. We've covered [what a building control officer actually checks a calculation against](/blog/structural-calculations-building-control) and [why a steel beam needs a padstone](/blog/steel-beam-padstones) in detail elsewhere — the mechanics are the same whatever the house.",
+      },
+      {
+        type: "p",
+        text: "What's different in a timber frame is the support itself. An engineer working on a historic frame has to tie any new support into oak posts and rails that may be three or four hundred years old, rather than uniform blockwork — sometimes a new member let in alongside the frame, sometimes extra support below rather than a beam above. It isn't a job for a generic calculation lifted from a different house.",
+      },
+      {
+        type: "p",
+        text: "Building control approval is needed either way, through Waverley's Full Plans or Building Notice routes — Full Plans checks the calculation before you start, which matters more on a cottage than almost anywhere else, because a wrong guess on an unusual structure is hard to undo once it's built.",
+      },
+      { type: "h2", text: "Does a listed Cranleigh cottage need Listed Building Consent to remove an internal wall?" },
+      {
+        type: "p",
+        text: "Almost always, yes. Listing protects a building's interior and historic plan form, not just its façade — and the parish has a lot to protect: **81 nationally listed buildings** per the Cranleigh Neighbourhood Plan, plus a further **174 Buildings of Local Merit** that Waverley still weighs as non-designated heritage assets. See [the second heritage list your house might be on](/blog/cranleigh-buildings-of-local-merit) if you're not sure which category a cottage falls into.",
+      },
+      {
+        type: "p",
+        text: "Removing or altering an internal wall in a listed building, moving a historic partition, or taking out an original fireplace or staircase is exactly the kind of work councils' own guidance lists as needing **Listed Building Consent** — separate from, and in addition to, Building Regulations approval. Doing it without consent is a criminal offence, not a paperwork oversight to sort out afterwards. The good news: there is **no planning fee** for a listed building consent application, whatever Waverley charges for the rest of the project.",
+      },
+      {
+        type: "p",
+        text: "A Building of Local Merit carries no consent requirement, but it's still worth a call to Waverley's conservation team before an original partition comes out — the list exists so a non-designated feature doesn't get lost by accident.",
+      },
+      { type: "h2", text: "What does it cost, and how long does it take?" },
+      {
+        type: "p",
+        text: "Cost depends on whether the wall is structural, and whether a heritage consent sits on top of the building work.",
+      },
+      {
+        type: "table",
+        caption: "Trade-cost ranges; get a written, site-specific quote, since access, floor count and the condition of a historic frame all move the price.",
+        head: ["Job", "Typical cost", "Typical time"],
+        rows: [
+          ["Structural engineer's site visit and calculation", "£1,500 – £3,000", "1 – 2 weeks for the visit and the calculation"],
+          ["Removing a non-load-bearing stud or lath partition, no beam needed", "£500 – £1,200", "1 – 2 days, plus making good"],
+          ["Removing a load-bearing wall, beam or support fitted", "£1,800 – £4,500", "1 – 2 weeks, plus making good"],
+          ["Listed Building Consent application, if needed", "No planning fee", "Typically 8 weeks once submitted, longer with a conservation referral"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "In a modern house you can nearly always tell a stud wall from a brick one by knocking on it. In a three-hundred-year-old cottage that test doesn't work — I've seen a 'partition' that turned out to be the frame holding half the roof up, and a solid wall that wasn't carrying anything at all. Guessing which is which is how a ceiling cracks, or how someone does unauthorised work to a listed building without meaning to.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "That engineer's assessment is part of the same **£1,500–£3,000** you'll need for the calculation anyway — it just has to happen before, not after, a kitchen or knock-through layout is designed around the wall coming out. Skip that order, strip the wall, and find a loaded frame or a floor it was carrying, and the realistic cost is a redesigned support, reordered units, and typically **four to six weeks** added while a revised calculation goes back through building control.",
+      },
+      { type: "h2", text: "Does the Party Wall Act apply to an internal wall if my cottage has been split into two homes?" },
+      {
+        type: "p",
+        text: "Possibly, and it's easy to miss because the wall sits entirely inside what's now one half of a converted building. Several of Cranleigh's older cottages, and the Victorian terraces covered in our guide to [a sympathetic rewire and replumb](/blog/cranleigh-victorian-cottage-rewire-replumb), were split into two dwellings at some point in their history. Where that's happened, the wall or floor between the two halves is a **party structure** under the **Party Wall etc. Act 1996** — the same Act that applies to [any other party wall](/blog/party-wall-notice-timing) — and a notice is needed before work starts, even though both halves are technically next door rather than physically a different building.",
+      },
+      {
+        type: "p",
+        text: "An internal wall that sits wholly within your own half of the building, with no connection to the neighbouring home, doesn't trigger the Act. The point worth checking, on an older conversion, is whether the wall you're planning to remove is actually one of those — rather than assuming, because it's \"inside\", that it automatically isn't.",
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to live with a room shape you don't like. Get a structural engineer to look at the wall before a layout is designed around it coming out, check with Waverley if the cottage might be listed or on the Buildings of Local Merit list, and a wall that could have become a six-week argument with building control stays a straightforward fortnight's work — the sequencing any of the [builders in Cranleigh](/areas/cranleigh) who deal with these older cottages every week will insist on before anyone picks up a crowbar.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need planning permission to remove an internal wall in a Cranleigh cottage?",
+        answer:
+          "Usually not, if the cottage is unlisted — removing or moving an internal wall is generally treated as outside the planning system under Planning Portal's guidance. Inside the Cranleigh Conservation Area it's rarely an issue on its own, because conservation area control is mainly about what's visible from outside. On a listed cottage, Listed Building Consent applies instead, and that is a separate requirement.",
+      },
+      {
+        question: "How can I tell if a wall in my old cottage is load-bearing?",
+        answer:
+          "You can't reliably tell by eye in an older building — a solid masonry wall isn't automatically structural, and a stud-look partition in a timber frame can be exactly that frame. The only reliable way is to trace what the wall actually carries, from the loft, the floor void or a cellar, which is what a structural engineer's site visit is for.",
+      },
+      {
+        question: "How much does a structural engineer cost to assess an internal wall?",
+        answer:
+          "Typically £1,500–£3,000 for the visit, the calculation and the drawing building control needs, whatever the size of the opening. Get this done before you commit to a kitchen or living-room design built around the wall coming out.",
+      },
+      {
+        question: "Do I need Listed Building Consent to remove an internal wall in a listed Cranleigh cottage?",
+        answer:
+          "Almost always, yes. Listing protects a building's interior and historic layout as well as its exterior, so removing or significantly altering an internal wall, partition, fireplace or staircase in a listed building needs Listed Building Consent, in addition to Building Regulations approval. There's no planning fee for the application itself.",
+      },
+      {
+        question: "What's the difference between a Building Notice and Full Plans for removing a wall?",
+        answer:
+          "A Building Notice, through Waverley, lets work start within a couple of days, but the calculation is checked on site rather than in advance. Full Plans checks the calculation before you start, which matters more on an older or timber-framed cottage, where an unusual structural detail is harder to put right once it's built.",
+      },
+      {
+        question: "Does the Party Wall Act apply to an internal wall in my own cottage?",
+        answer:
+          "Only if the wall or the floor above it is a party structure — most often because the cottage was split into two homes at some point. A wall entirely within your own half of the building, with no connection to next door, doesn't trigger the Party Wall etc. Act 1996.",
+      },
+    ],
+    art: BLOG_ART["removing-internal-wall-cranleigh-cottage"],
+  },
+  {
     slug: "removing-chimney-capping-flue-cranleigh",
     title: "Removing a chimney or capping a flue in a Cranleigh house: what building control and conservation ask for",
     category: "Building control",
@@ -3699,7 +3865,7 @@ export const BLOG_POSTS: BlogPost[] = [
     related: [
       "structural-calculations-building-control",
       "building-control-completion-certificate",
-      "kitchen-extensions-cranleigh-layout-budget",
+      "removing-internal-wall-cranleigh-cottage",
     ],
     body: [
       {

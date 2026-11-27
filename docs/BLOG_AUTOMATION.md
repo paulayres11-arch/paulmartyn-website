@@ -380,7 +380,7 @@ a British Standard, an Act, a trade body's guidance.
 - [done 2026-11-06] Fire doors and escape routes in a loft conversion
 - [done 2026-11-13] Asbestos in a pre-2000 house: what a survey finds and when you need one
 - [done 2026-11-20] Japanese knotweed and your mortgage: what a RICS survey actually checks
-- [ ] What an EPC rating actually measures, and why it matters before a renovation
+- [done 2026-11-27] What an EPC rating actually measures, and why it matters before a renovation
 - [ ] Flood risk and new extensions: what a Flood Risk Assessment covers
 - [ ] Cavity wall insulation: when it helps, and when it causes damp
 - [ ] Minimum ceiling heights and head height: what Building Regulations actually say for a loft or basement room

@@ -16,6 +16,68 @@ import type { ReactNode } from "react";
  * corner, per the blog brief.
  */
 export const BLOG_ART: Record<string, ReactNode> = {
+  "epc-rating-what-it-actually-measures": (
+      <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="epcSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#cfe3ee" /><stop offset="1" stopColor="#eff4f7" />
+          </linearGradient>
+          <linearGradient id="epcRoof" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8b5a49" /><stop offset="1" stopColor="#6a4034" />
+          </linearGradient>
+          <linearGradient id="epcBrick" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#c58462" /><stop offset="1" stopColor="#9d6044" />
+          </linearGradient>
+          <radialGradient id="epcGlow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stopColor="#ffe3ac" stopOpacity=".95" /><stop offset="1" stopColor="#f0a94a" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        <rect width="400" height="400" fill="url(#epcSky)" />
+
+        <text x="24" y="34" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30">Same letter, two different houses</text>
+        <text x="24" y="54" fontFamily="Helvetica,Arial,sans-serif" fontSize="11.5" fill="#5d7078">The EPC model vs. what&apos;s actually happening inside</text>
+
+        <path d="M200 76 v194" stroke="#e08a2b" strokeWidth="1.6" strokeDasharray="1 6" />
+
+        {/* left: THE MODEL — flat, dashed, schematic house under a fixed sun */}
+        <circle cx="86" cy="104" r="14" fill="none" stroke="#7a93a0" strokeWidth="1.6" />
+        <path d="M86 84 v8 M86 120 v8 M66 104 h8 M98 104 h8 M72 90 l5 5 M100 90 l-5 5 M72 118 l5 -5 M100 118 l-5 -5" stroke="#7a93a0" strokeWidth="1.6" />
+        <path d="M38 196 L86 158 L134 196 Z" fill="none" stroke="#7a93a0" strokeWidth="1.8" strokeDasharray="4 3" />
+        <rect x="48" y="196" width="76" height="62" fill="#cdd8de" opacity=".55" stroke="#7a93a0" strokeWidth="1.8" strokeDasharray="4 3" />
+        <rect x="64" y="212" width="20" height="20" fill="none" stroke="#7a93a0" strokeWidth="1.4" strokeDasharray="3 2" />
+        <rect x="90" y="226" width="16" height="32" fill="none" stroke="#7a93a0" strokeWidth="1.4" strokeDasharray="3 2" />
+        <text x="86" y="280" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#5d7078" textAnchor="middle" letterSpacing=".5">THE MODEL</text>
+        <text x="86" y="294" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fill="#7a8d94" textAnchor="middle">standard occupant · standard weather</text>
+
+        {/* right: THE HOME — a real, lived-in cottage at dusk */}
+        <path d="M266 196 L314 156 L362 196 Z" fill="url(#epcRoof)" />
+        <rect x="276" y="196" width="76" height="62" fill="url(#epcBrick)" stroke="#7a4a34" strokeWidth="1.5" />
+        <circle cx="328" cy="222" r="30" fill="url(#epcGlow)" />
+        <rect x="292" y="210" width="22" height="22" fill="#f0c56a" stroke="#6a4034" strokeWidth="1.6" />
+        <path d="M303 210 v22 M292 221 h22" stroke="#6a4034" strokeWidth="1.2" />
+        <rect x="322" y="226" width="16" height="32" fill="#7c4a34" stroke="#4a3324" strokeWidth="1.4" />
+        <rect x="346" y="168" width="10" height="20" fill="#8a6a56" stroke="#5d4535" strokeWidth="1.2" />
+        <path d="M350 166 q-6 -10 2 -16 q6 8 -2 20 M351 158 q-5 -9 2 -15 q5 7 -2 18" stroke="#c7ccce" strokeWidth="2" fill="none" opacity=".75" strokeLinecap="round" />
+        <path d="M264 258 q4 -10 10 0 M276 258 q4 -10 10 0 M354 258 q4 -10 10 0 M364 258 q4 -10 10 0" stroke="#5a8a52" strokeWidth="1.6" fill="none" />
+        <text x="314" y="280" fontFamily="Helvetica,Arial,sans-serif" fontSize="9" fontWeight="700" fill="#a8652a" textAnchor="middle" letterSpacing=".5">THE HOME</text>
+        <text x="314" y="294" fontFamily="Helvetica,Arial,sans-serif" fontSize="7.6" fill="#8a6a4a" textAnchor="middle">real woodburner · real draughts</text>
+
+        {/* converging dashed lines from both houses to one shared rating badge */}
+        <path d="M110 150 q50 -40 90 0" stroke="#5d7078" strokeWidth="1.3" strokeDasharray="3 2" fill="none" />
+        <path d="M290 150 q-50 -40 -90 0" stroke="#a8652a" strokeWidth="1.3" strokeDasharray="3 2" fill="none" />
+        <rect x="178" y="94" width="44" height="30" rx="4" fill="#e3c23c" stroke="#1f2a30" strokeWidth="1.6" />
+        <text x="200" y="115" fontFamily="Helvetica,Arial,sans-serif" fontSize="16" fontWeight="700" fill="#1f2a30" textAnchor="middle">D</text>
+        <text x="200" y="138" fontFamily="Helvetica,Arial,sans-serif" fontSize="8" fontWeight="700" fill="#5d7078" textAnchor="middle">SAME EPC RATING</text>
+
+        <path d="M18 276 q4 -10 10 0 M30 276 q4 -10 10 0 M362 276 q4 -10 10 0 M374 276 q4 -10 10 0" stroke="#5a8a52" strokeWidth="1.6" fill="none" />
+        <rect y="300" width="400" height="100" fill="#1f2a30" />
+        <text x="24" y="326" fontFamily="Helvetica,Arial,sans-serif" fontSize="15" fontWeight="700" fill="#e8e4dc">An EPC rates the building, not the bill</text>
+        <text x="24" y="352" fontFamily="Helvetica,Arial,sans-serif" fontSize="12" fill="#8fa0a8">Standard occupant, weather and fuel price — not your real bill</text>
+        <text x="24" y="376" fontFamily="Helvetica,Arial,sans-serif" fontSize="9.6" fill="#8fa0a8">Source: gov.uk — What EPCs measure; EPC accuracy research</text>
+        <text x="376" y="392" fontFamily="Helvetica,Arial,sans-serif" fontSize="10" fontWeight="700" fill="#e08a2b" letterSpacing="1.3" textAnchor="end">PAUL MARTYN</text>
+      </svg>
+  ),
   "removing-internal-wall-cranleigh-cottage": (
       <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
         <defs>

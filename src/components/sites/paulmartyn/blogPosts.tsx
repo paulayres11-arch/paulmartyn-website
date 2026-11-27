@@ -46,6 +46,172 @@ import { BLOG_ART } from "./blogArt";
  */
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "epc-rating-what-it-actually-measures",
+    title: "What an EPC rating actually measures, and why it matters before you renovate",
+    category: "Insulation & energy",
+    date: "2026-11-27",
+    seoTitle: "What An EPC Rating Actually Measures, And Why It Matters",
+    metaDescription:
+      "An EPC rates the building, not your bills. What it actually measures, when you legally need one, and whether your extension, loft or annexe needs a fresh certificate.",
+    excerpt:
+      "An EPC number can look wrong against your own energy bills and still be doing exactly what it's designed to do. What the rating actually measures, when a renovation needs a fresh one, and the real saving a recent rule change makes to a heat pump grant.",
+    imageAlt:
+      "Illustration contrasting two versions of the same house at dusk: on the left a flat, dashed schematic house under a generic sun labelled 'the model, standard occupant, standard weather', and on the right a warmly lit brick cottage with a glowing window and chimney smoke labelled 'the home, real woodburner, real draughts', with dashed lines from both converging on a single amber badge marked 'D' and labelled 'same EPC rating'",
+    related: [
+      "sap-calculations-when-you-need-one",
+      "part-l-extension-insulation",
+      "trickle-vents-approved-document-f",
+    ],
+    body: [
+      {
+        type: "takeaways",
+        items: [
+          "An EPC's headline A–G rating — the **Energy Efficiency Rating** — is built from standardised assumptions about occupancy, heating and fuel prices, not your actual bills. A RdSAP assessment and your last gas statement can disagree, and both can be right.",
+          "You're legally required to hold a valid EPC whenever a home is **built, sold or let**, under the Energy Performance of Buildings (England and Wales) Regulations 2012 — and it stays valid for **ten years**, whatever happens to the property in that time.",
+          "Most renovations — an extension, a loft conversion, a new kitchen — don't trigger a fresh EPC on their own. A garden room or annexe with its **own kitchen, bathroom and entrance** is usually treated as a new dwelling, needing its own SAP calculation and certificate.",
+          "The free recommendations report that comes with every EPC is a ready-made priority list for a retrofit — and since **28 April 2026**, you no longer have to complete its loft and cavity wall insulation items before claiming a Boiler Upgrade Scheme heat pump grant.",
+          "A better rating is starting to carry a price. Several lenders now offer preferential \"green mortgage\" rates for **EPC C or above**, and policy is heading toward a similar minimum for private rented homes, on top of today's EPC E floor.",
+        ],
+      },
+      {
+        type: "p",
+        text: "We get asked about EPCs in two quite different moods. One is the homeowner who's just had the assessment done ahead of putting the house on the market, ringing up slightly annoyed because the number doesn't match what they actually pay their energy supplier. The other is halfway through costing a loft conversion or a kitchen extension, wanting to know whether the work will move the rating at all.",
+      },
+      {
+        type: "p",
+        text: "Both questions come from the same misunderstanding — that an EPC measures the house as it's actually lived in. It doesn't. It measures the building itself, assessed against a fixed, standardised assumption of how someone uses it. That's exactly why it can look \"wrong\" against your own bills and still be doing precisely what it's designed to do.",
+      },
+      {
+        type: "p",
+        text: "That distinction matters before a renovation for reasons that have nothing to do with being pedantic. Some projects move the rating and some don't. Some trigger a legal requirement for a brand new certificate, and most don't. And the report behind the rating can genuinely save money on a retrofit, read before the quote stage rather than filed away after.",
+      },
+      { type: "h2", text: "What does an EPC rating actually measure?" },
+      {
+        type: "p",
+        text: "A domestic EPC is produced using **RdSAP** — the Reduced Data Standard Assessment Procedure, a simplified, survey-based version of the government's energy model, built for assessing existing homes rather than new ones. An assessor records the building's fabric and services — wall construction, loft and cavity insulation, glazing, the age of the boiler or heat pump, the hot water system — then runs those figures through the model to produce the headline **Energy Efficiency Rating**, shown as a letter from A to G.",
+      },
+      {
+        type: "p",
+        text: "The important word is \"standardised\". gov.uk's own technical notes on what EPCs measure confirm the model assumes a standard occupancy pattern — a fixed assumption about how many people live there and how they heat, light and ventilate it — rather than the real household. The same standard weather is applied everywhere, regardless of whether the house sits on an exposed hillside or a sheltered street, and the cost estimate uses standardised fuel prices that don't track what any individual household actually pays.",
+      },
+      {
+        type: "p",
+        text: "There's also a second rating most people never notice: the **Environmental Impact Rating**, based on carbon emissions rather than running cost, lower down the same certificate. The Energy Efficiency Rating is the one everyone means by \"my EPC\", and the only one used in lending and policy decisions — but an unusually efficient heating fuel can pull the two apart.",
+      },
+      { type: "h2", text: "Why doesn't my EPC match my actual energy bill?" },
+      {
+        type: "p",
+        text: "Because it was never trying to. Government describes the model's cost estimate as indicative rather than predictive — it is very likely the modelled figure and the bill a household actually pays will differ, because real occupancy, real tariffs and real behaviour all vary from the standard assumptions. Government-commissioned research into the gap has identified specific places the model drifts, including a tendency to overpredict space heating demand in gas-heated homes.",
+      },
+      {
+        type: "p",
+        text: "We see the practical version of this on site constantly. A solid-walled Cranleigh cottage with a D rating and a woodburner going most of a winter evening can cost less to run day to day than a nominally more efficient C-rated house where the heating's left running on a timer nobody's touched since it moved in. The certificate isn't lying in either case — it describes what the building is capable of, not what's actually happening inside it this winter.",
+      },
+      {
+        type: "quote",
+        text: "An EPC tells you what the building can do, not what it's doing. We've stood in Cranleigh cottages with a D rating that are warmer on a cold evening than houses with a C, because somebody's kept on top of the loft insulation and the draughts round the old sash windows an assessment can't fully see in fifteen minutes with a torch and a tape measure.",
+        attribution: "Paul Martyn, P Martyn Co Ltd",
+      },
+      { type: "h2", text: "When am I legally required to have one?" },
+      {
+        type: "p",
+        text: "An EPC is a legal requirement whenever a home is **built, marketed for sale, or let** — the Energy Performance of Buildings (England and Wales) Regulations 2012. Once produced, it's valid for **ten years** or until a newer one is registered, whichever comes first, so a house that hasn't changed hands in that time doesn't need a repeat assessment. You can look up any property's current certificate free on gov.uk's \"Find an energy certificate\" service before paying for a new one.",
+      },
+      {
+        type: "p",
+        text: "Selling without being able to produce an EPC when asked carries a fixed penalty, commonly reported at **£200**, under the same regulations. A domestic assessment from an accredited domestic energy assessor typically costs in the region of **£60–£120**, depending on the size of the property and where you are.",
+      },
+      { type: "h2", text: "Does my renovation actually need its own EPC?" },
+      {
+        type: "table",
+        caption: "Does your project trigger a new EPC?",
+        head: ["Project", "New EPC needed?", "Why"],
+        rows: [
+          ["Extension to the existing house", "No", "Assessed for Part L on the new work; the existing certificate still applies"],
+          ["Loft conversion, extra bedrooms in the roof", "No", "Same Part L route as an extension"],
+          ["Garden room, barn conversion or annexe with its own kitchen, bathroom and entrance", "Yes — its own", "Usually a new dwelling, needing full SAP and its own EPC"],
+          ["Full retrofit — boiler, insulation, windows, no sale planned", "Optional, but worth it", "Captures the improvement rather than relying on a stale certificate later"],
+          ["Selling or letting the property afterwards", "Yes", "Required before marketing; reflects what's just been spent"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The row that catches people out is the annexe. A garden room with a shower and a kettle is one thing; a garden room with its own kitchen, bathroom and a front door independent of the main house is, in building control's eyes, usually a new dwelling — bringing in full SAP and its own EPC, not the lighter rules for an ordinary extension. We've written more on exactly where that line falls in [our guide to SAP calculations](/blog/sap-calculations-when-you-need-one), because it trips up more self-build and annexe projects than almost anything else on the planning side.",
+      },
+      {
+        type: "p",
+        text: "Outside the annexe case, most building work leaves the existing EPC technically still valid, even though it no longer reflects the house. A prospective buyer or mortgage valuer will still be shown the old certificate until a new one's commissioned — meaning a genuinely improved house can be marketed on a rating that undersells it, simply because nobody's booked the reassessment.",
+      },
+      { type: "h2", text: "How can the recommendations report help plan a retrofit budget?" },
+      {
+        type: "p",
+        text: "Every EPC comes with a free recommendations report, listing measures in a rough fabric-first order — insulation, draught-proofing and glazing before heating and renewables — each with an indicative cost and saving. Treated as a shopping list rather than small print, it's a genuinely useful way to sequence a retrofit so money spent on insulation isn't wasted heating air that a leaky wall lets straight back out.",
+      },
+      {
+        type: "callout",
+        title: "The saving",
+        text: "Ofgem's Boiler Upgrade Scheme guidance, updated from **28 April 2026**, dropped the previous rule that an EPC had to show no outstanding loft or cavity wall insulation recommendations before a heat pump grant — up to **£7,500**, or **£9,000** off the gas grid — would be approved. For a solid-walled Cranleigh cottage with no cavity to insulate in the first place, that old rule could mean weeks of delay and an extra **£1,000–£2,000** of work just to qualify. Under current guidance, that prerequisite is gone.",
+      },
+      { type: "h2", text: "Does a better rating affect what the house is worth, or what it costs to borrow against?" },
+      {
+        type: "p",
+        text: "It's starting to. Several mainstream lenders, including Halifax and HSBC, now offer preferential \"green mortgage\" pricing to borrowers whose home holds an EPC of C or above, on the reasoning that a more efficient property is lower-risk to lend against. None of that is a universal rule — terms vary by lender — but it's a real reason to care about the number beyond curiosity.",
+      },
+      {
+        type: "p",
+        text: "For landlords, the legal position today is a floor: most privately rented homes in England and Wales must hold at least an **EPC E** to be let. Government's response to its 2025/26 consultation has set a direction toward a materially higher standard — broadly a C-equivalent — for all private tenancies from **1 October 2030**, with homes already holding a valid C recognised as compliant until that certificate expires. That's the current policy position rather than settled law, so check gov.uk for the final regulations before relying on a date quoted here.",
+      },
+      {
+        type: "table",
+        caption: "Where the EPC minimum stands today",
+        head: ["Situation", "Current position"],
+        rows: [
+          ["Selling your own home", "No minimum rating — a valid certificate just has to exist"],
+          ["Letting privately, today", "EPC E or above required for a new tenancy"],
+          ["Letting privately, proposed future standard", "Broadly C-equivalent for all tenancies from 1 October 2030 (proposed)"],
+          ["Preferential \"green mortgage\" rate", "No legal minimum; C or above typically sought by lenders"],
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this is a reason to delay a renovation waiting for the \"right\" rating, or to assume a new kitchen will move the certificate when it almost certainly won't on its own. It's one more thing worth raising at the costing stage, alongside the structural survey and the planning position, so insulation, glazing and heating decisions get made in the right order rather than retrofitted around a finished room. It's exactly the kind of question worth putting to [builders in Cranleigh](/areas/cranleigh) used to the parish's older, solid-walled cottages, where a D or E rating is often just what pre-cavity-wall construction looks like on paper, not a verdict on how the house feels to live in.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need a new EPC if I extend or renovate my house?",
+        answer:
+          "Not usually. An ordinary extension, loft conversion or refit is assessed under Part L of the Building Regulations for the new work itself; your existing EPC remains technically valid. The main exception is a self-contained annexe or converted outbuilding with its own kitchen, bathroom and entrance, which is normally treated as a new dwelling needing its own SAP calculation and EPC.",
+      },
+      {
+        question: "How long does an EPC last?",
+        answer:
+          "Ten years from registration, or until a newer one is produced for the same property, whichever happens first — under the Energy Performance of Buildings (England and Wales) Regulations 2012. Check any property's current certificate free via gov.uk's \"Find an energy certificate\" service before paying for a new one.",
+      },
+      {
+        question: "What counts as a good EPC rating now?",
+        answer:
+          "C or above is increasingly the practical threshold — commonly the level lenders set for a preferential \"green mortgage\" rate, and the direction policy is heading for private rented homes by 2030. There's no legal minimum at all for selling your own home, only the requirement that a valid certificate exists.",
+      },
+      {
+        question: "How much does an EPC assessment cost?",
+        answer:
+          "Typically in the region of £60–£120, depending on the size of the property and the local assessor's pricing, though it can run higher for a larger home. It must be carried out by an accredited domestic energy assessor.",
+      },
+      {
+        question: "Will building work automatically update my EPC rating?",
+        answer:
+          "No. The certificate only changes when a new assessment is actually carried out and registered — finishing an insulation job or a new boiler doesn't retrospectively update the EPC on record, which can leave an improved house marketed on an outdated rating until someone books the reassessment.",
+      },
+      {
+        question: "Do I need a separate EPC for a granny annexe I'm planning to let out?",
+        answer:
+          "Yes, if it's genuinely self-contained — its own kitchen, bathroom and entrance separate from the main house. Letting it brings in the same legal requirement as letting any other home, on top of building control usually having required its own EPC when it was built as a new dwelling in the first place.",
+      },
+    ],
+    art: BLOG_ART["epc-rating-what-it-actually-measures"],
+  },
+  {
     slug: "removing-internal-wall-cranleigh-cottage",
     title: "Removing an internal wall in a Cranleigh cottage: when you need a structural engineer and building control sign-off",
     category: "Building control",
@@ -2319,9 +2485,9 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "Illustration of a brick extension with a glazed rear wall: the first two panels outlined with a dashed amber box labelled 'within 25% cap', the last three panels marked with a red cross and 'over the cap', a dashed arrow pointing down to a clipboard labelled 'SAP CALC' with a green checkmark, and beside it a vertical EPC rating bar in colour bands from green at the top to red at the bottom with a pointer marking band C",
     related: [
+      "epc-rating-what-it-actually-measures",
       "part-l-extension-insulation",
       "building-control-completion-certificate",
-      "annexes-multigenerational-living-cranleigh",
     ],
     body: [
       {
